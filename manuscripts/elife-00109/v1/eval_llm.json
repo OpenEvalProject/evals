@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors developed and improved a single vesicle-vesicle microscopy system that can discriminate between docking, hemifusion, and complete fusion, achieving Ca2+ sensitivity in the 250-500 \u03bcM range, which is reasonably close to physiological concentrations. The system uses membrane compositions and protein densities that mimic synaptic vesicles and plasma membranes, starting from a metastable state of docked vesicles at zero Ca2+ before Ca2+ injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26, C31-C34, and C94-C96 collectively describe the experimental system and its capabilities. The system's ability to distinguish membrane states and achieve near-physiological Ca2+ sensitivity is well-documented through methodological descriptions and validated by prior work (C32). The protein-to-lipid ratios and membrane compositions are consistent with physiological observations (C95, C96).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C86"
+    ],
+    "result": "With SNAREs and synaptotagmin 1 alone (minimal system), three characteristic membrane state changes were observed upon Ca2+ injection: immediate fusion, delayed fusion, and hemifusion-only. In this minimal system, immediate fusion instances were in the minority, and Ca2+ triggered fusion depended on the presence of both functional SNAREs and synaptotagmin 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 and C86 describe the behavior of the minimal system with experimental data from Figure 1. The observation of three distinct fusion pathways is directly supported by fluorescence time traces, and the dependence on functional SNAREs and synaptotagmin 1 is validated by prior control experiments (C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C47",
+      "C48",
+      "C49",
+      "C54",
+      "C82"
+    ],
+    "result": "Cryo-EM imaging revealed that before Ca2+ addition, 55% of vesicle interfaces were point contacts and 45% were hemifusion diaphragms. After Ca2+ addition, the distribution changed: point contacts decreased to 40%, hemifusion diaphragms increased to 49%, and extended interfaces appeared at 11%. The decrease in point contacts upon Ca2+ addition is statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41, C47-C49, C54, and C82 present quantitative cryo-EM analysis from Figure 2H. The changes in interface distribution are based on systematic counting of interfaces from multiple micrographs (78 interfaces before Ca2+, 122 after). The statistical significance of the point contact decrease is explicitly stated and supports the hypothesis that point contacts are consumed during fusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Cryo-EM analysis showed that fusion occurred after Ca2+ addition, with the mean vesicle diameter increasing from 61.3 \u00b1 18.6 nm to 65.1 \u00b1 23.9 nm (97% confidence, Student's t-test), corresponding to a mean volume increase from 1.6 \u00d7 10^5 nm^3 to 2.2 \u00d7 10^5 nm^3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 present quantitative measurements from cryo-EM images with appropriate statistical testing. The shift in diameter distribution toward larger vesicles is consistent with fusion events, and the statistical significance (97% confidence) is properly reported. The volume calculation follows logically from the diameter measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Analysis of point contacts showed that membranes are close (2.3-4.9 nm separation) but not forming stalks, as the observed distances exceed the critical distance for stalk formation (0.9 nm). Similar membrane apposition can be induced by synaptotagmin C2AB domain alone or SNAREs alone, and synaptotagmin may act as a distance regulator. Point contacts are the only interface type where proteins would be close enough to a putative transitory stalk to initiate fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 combine cryo-EM density measurements with comparisons to literature values for critical stalk formation distance (C50). The inference about protein positioning (C53) is reasonable given protein sizes. However, the claim relies on a single cited value for critical distance (Aeffner et al., 2012), and membrane separation measurements from cryo-EM have inherent uncertainty due to projection effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C56",
+      "C58",
+      "C65",
+      "C66",
+      "C68",
+      "C88"
+    ],
+    "result": "All instances of Ca2+-triggered immediate fusion started from hemifusion-free point contacts and proceeded to complete fusion without discernible hemifusion intermediates on the 100-ms time scale. No significant lipid fluorescence intensity changes were observed during the incubation period for all immediate fusion events, definitively ruling out stable hemifusion intermediates for fast Ca2+-triggered fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28, C56, C58, C65, C66, C68, and C88 represent the central finding of the paper. The conclusion is based on: (1) cryo-EM showing only two interface types before Ca2+ (point contacts and hemifusion diaphragms), (2) fluorescence microscopy showing no lipid mixing before immediate fusion events (Figure 4A), and (3) logical inference combining both observations. The claim is strong but limited by the 100-ms temporal resolution, which cannot rule out transient stalks (acknowledged in C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C57",
+      "C84"
+    ],
+    "result": "Pathways involving stable hemifusion diaphragms resulted in fusion only after many seconds, if at all. Ca2+-triggered content mixing rarely occurred during the 50-second observation period when starting from a stable hemifused state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29, C57, and C84 are supported by experimental observations in Figure 4B showing that initially hemifused vesicles rarely undergo complete fusion upon Ca2+ triggering. Out of 51 cases showing initial hemifusion, only 2 showed delayed content mixing. This provides strong evidence that hemifusion diaphragms are not productive intermediates for fast fusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C87"
+    ],
+    "result": "Hemifusion diaphragms and extended close contacts observed approximately 35 seconds after Ca2+ injection are expected to be part of delayed fusion pathways proceeding on a second-to-minute time scale via long-lived intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C87 make reasonable inferences based on the timing of cryo-EM observations (35 s after Ca2+) relative to the kinetics of immediate vs. delayed fusion. The logic is sound: structures observed at 35 s cannot be part of immediate fusion pathways that occur within the first second. This is supported by the temporal data from fluorescence microscopy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C69",
+      "C70",
+      "C89"
+    ],
+    "result": "Complexin dramatically increased the number of immediate fusion events, shifting the Ca2+-triggered fusion network toward the immediate pathway and effectively synchronizing fusion, especially at lower Ca2+ concentration (250 \u03bcM). At 500 \u03bcM Ca2+, complexin increased the fast fraction to 68% (time constant 0.36 s), and at 250 \u03bcM Ca2+, the fast fraction increased to 90%. This correlates with complexin's activating role in vivo for synchronous release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30, C61-C64, C69-C70, and C89 present the effect of complexin with quantitative data from Figure 6. The biphasic exponential fits are appropriate and show statistically significant differences (likelihood ratios of 10^7 to 10^14 compared to single exponential fits). The effect is more pronounced at lower Ca2+ concentration, which is physiologically relevant. The correlation with in vivo function (C89) is supported by citation to Maximov et al., 2009.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Complexin had little effect on lipid mixing histograms but large effects on content mixing histograms at both 500 \u03bcM and 250 \u03bcM Ca2+. This large difference in complexin-induced lipid mixing versus content mixing effects greatly amplifies previous observations and demonstrates that it is essential to monitor content mixing rather than lipid mixing to distinguish between membrane states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 highlight a critical methodological point supported by comparing Figures 6 and 8. The dissociation between lipid and content mixing effects of complexin is striking and well-documented. This observation has important implications for interpreting fusion assays and is consistent with prior literature (C80). The conclusion about the necessity of monitoring content mixing (C81) is a logical inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Starting from point contacts, a heterogeneous network of both immediate and delayed fusion pathways was observed upon Ca2+ injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 summarizes the overall finding of pathway heterogeneity, supported by the combination of cryo-EM and fluorescence microscopy data presented throughout the manuscript and summarized in Figure 7. The observation of multiple pathways from the same starting state (point contacts) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Some of the initial point contacts are the likely starting point for immediate fusion upon Ca2+ injection; those that did not fuse might be ready to undergo fusion during subsequent pulses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is a reasonable hypothesis based on the observed decrease in point contacts after Ca2+ addition (C54). The inference that unconsumed point contacts might fuse in subsequent pulses is speculative but logical. This hypothesis is testable and consistent with the data showing that not all point contacts undergo immediate fusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The position of synaptotagmin 1 in structural models would enable Ca2+-triggered membrane juxtaposition and membrane bending. Membrane bending or buckling could destabilize the membrane and, in conjunction with full zippering of the SNARE complex, lead to fusion pore opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C60 are speculative mechanistic proposals based on structural models overlaid on cryo-EM images (Figure 5). While the models are informed by prior structural and functional studies, they are approximate and the proposed mechanism for fusion pore opening is not directly tested. The speculation is reasonable but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C76"
+    ],
+    "result": "Complexin's activating function may be explained by imposing geometric restraints on trans-SNARE complexes through inter-SNARE complex interactions, thereby preventing the formation of long-lived hemifusion intermediates upon Ca2+-triggering. Factors such as complexin may have evolved to select the immediate pathway out of all possible pathways, offering a distinct advantage for fast Ca2+-evoked release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73 and C76 propose mechanistic and evolutionary explanations for complexin's function. While the experimental data show that complexin increases immediate fusion events, the proposed molecular mechanism (geometric restraints on SNARE complexes) is speculative and based on cited structural work (K\u00fcmmel et al., 2011) rather than direct evidence from this study. The evolutionary interpretation (C76) is reasonable speculation but not directly testable with the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Synaptic proteins may have evolved to select the immediate pathway out of a heterogeneous network of possible membrane fusion pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is a speculative but well-supported interpretation of the experimental findings. The observation that complexin shifts the fusion network toward the immediate pathway (C4, C30) provides evidence for pathway selection. The evolutionary interpretation is reasonable given the physiological requirement for fast, synchronized neurotransmitter release, though it cannot be directly tested with in vitro experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "It is possible that the immediate pathway proceeds from point contact to fusion pore via a transient stalk with a lifetime faster than 100 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 appropriately acknowledges the temporal resolution limitation of the technique. The authors correctly note that a transient stalk intermediate cannot be ruled out if its lifetime is below 100 ms. This is an important caveat that demonstrates scientific rigor in interpreting the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Optical tweezer experiments revealed a partially folded intermediate state of the SNARE complex that likely facilitates the metastable state of interacting vesicles during incubation at zero Ca2+. The incubation period at zero Ca2+ should reduce cis-interactions between synaptotagmin C2 domains and their own membrane, preventing interference with trans-interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 connect prior work on SNARE intermediates (Gao et al., 2012) and synaptotagmin interactions (Vennekate et al., 2012) to the experimental design. The inferences are reasonable and explain why the incubation protocol at zero Ca2+ is important for the system. These are logical connections between cited work and the current experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims establishing the biological importance of membrane fusion, the unique properties of synaptic vesicle fusion, the definition of hemifusion intermediates, prior theoretical predictions about fusion pathways, the key proteins involved in synaptic fusion, and previous observations about the dissociation between lipid mixing and content mixing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C22 provide background context supported by extensive citations to prior literature. These claims establish the knowledge gap (C1), define key concepts (C10), and summarize relevant prior work. The citations appear appropriate and the background claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "A variety of morphologies of membrane-membrane interfaces were observed by cryo-EM, as well as changes in the distribution of membrane-membrane interfaces upon Ca2+ addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is a general summary statement supported by the detailed cryo-EM observations in C38-C49. The variety of interface morphologies (point contacts, hemifusion diaphragms, extended contacts) and their changes upon Ca2+ addition are well-documented in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C71",
+      "C72",
+      "C74",
+      "C75"
+    ],
+    "result": "Prior work showed that similar extended contacts can be induced by denatured Munc18 or mutated SNAREs, that complexin prevents spontaneous fusion in other systems, that complexin has two N-terminal sequence elements required for activation (including an accessory \u03b1-helix that clamps SNAREs), and that SNAREs alone can produce various spontaneous fusion pathways. These observations suggest that biological membranes are poised to undergo fusion via multiple pathways once brought into close proximity by SNAREs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C71-C72, C74-C75 cite relevant prior work that provides context for the current findings. The citations appear appropriate and the inference about multiple fusion pathways (C75) is consistent with both the cited work and the current observations. These claims help situate the current findings within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Only a small fraction of vesicles underwent spontaneous (complete) fusion during the incubation period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by experimental observations during the incubation period. This is important for establishing that the system starts from a metastable state and that most fusion events are Ca2+-triggered rather than spontaneous. The observation is consistent with the cryo-EM data showing many intact vesicle interfaces before Ca2+ addition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The addition of other synaptic factors may further increase the Ca2+ sensitivity of the system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is a reasonable speculation about future improvements to the system. The current Ca2+ sensitivity (250-500 \u03bcM) is close to but not fully within the physiological range (starting at 10 \u03bcM). The suggestion that additional factors might improve Ca2+ sensitivity is logical and represents an appropriate acknowledgment of the system's current limitations.",
+    "result_type": "MINOR"
+  }
+]

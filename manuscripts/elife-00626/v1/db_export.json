@@ -1,0 +1,1868 @@
+{
+  "submission": {
+    "id": "025277f7-974f-48e6-ac6e-e03a00f3faad",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T05:58:34.098405Z",
+    "updated_at": "2025-11-27T05:58:34.098405Z"
+  },
+  "content": [
+    {
+      "id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "submission_id": "025277f7-974f-48e6-ac6e-e03a00f3faad",
+      "content_type": "manuscript",
+      "content_text": "# Predicting mosquito infection from Plasmodium falciparum gametocyte density and estimating the reservoir of infection\n\n## Authors\n\n- Thomas S Churcher<sup>1</sup> \u2020\n- Teun Bousema<sup>2</sup>\n- Martin Walker<sup>1</sup>\n- Chris Drakeley<sup>3</sup>\n- Petra Schneider<sup>4</sup>\n- Andr\u00e9 Lin Ou\u00e9draogo<sup>5</sup>\n- Mar\u00eda-Gloria Bas\u00e1\u00f1ez<sup>1</sup>\n\n### Affiliations\n\n1. Department of Infectious Disease Epidemiology Imperial College London London United Kingdom\n2. Department of Medical Microbiology Radboud University Nijmegen Medical Centre Nijmegen The Netherlands\n3. Department of Immunology and Infection London School of Hygiene and Tropical Medicine London United Kingdom\n4. Institutes of Evolution, Immunology and Infection Research University of Edinburgh Edinburgh United Kingdom\n5. Department of Biomedical Sciences Centre National de Recherche et de Formation sur le Paludisme Ouagadougou Burkina Faso\n\n\u2020 Corresponding author\n\n## Abstract\n\nTransmission reduction is a key component of global efforts to control and eliminate malaria; yet, it is unclear how the density of transmission stages (gametocytes) influences infection (proportion of mosquitoes infected). Human to mosquito transmission was assessed using 171 direct mosquito feeding assays conducted in Burkina Faso and Kenya. Plasmodium falciparum infects Anopheles gambiae efficiently at low densities (4% mosquitoes at 1/\u00b5l blood), although substantially more (>200/\u00b5l) are required to increase infection further. In a site in Burkina Faso, children harbour more gametocytes than adults though the non-linear relationship between gametocyte density and mosquito infection means that (per person) they only contribute slightly more to transmission. This method can be used to determine the reservoir of infection in different endemic settings. Interventions reducing gametocyte density need to be highly effective in order to halt human\u2013mosquito transmission, although their use can be optimised by targeting those contributing the most to transmission.\n\n## Introduction\n\nThe malaria parasite is transmitted among humans by anopheline mosquitoes. Male and female transmission stages (gametocytes) are ingested by the mosquito and reproduce sexually in its stomach before developing into oocysts. Once oocysts establish, it is assumed that mosquitoes will form infectious sporozoites, so the proportion of mosquitoes developing oocysts is used as a measure of mosquito infectivity. In the human malaria parasite Plasmodium falciparum, mosquito infection is thought to increase with the number of gametocytes ingested by the mosquito (Jeffery and Eyles, 1955; Graves et al., 1988; Bousema and Drakeley, 2011). However, several studies have failed to find an association (Boudin et al., 1993; Haji et al., 1996), and the precise shape of the relationship has never been rigorously quantified, particularly at very low gametocyte densities. Difficulties arise because estimates of gametocyte density have relied on microscopy, which may miss up to 80% of parasites (Dowling and Shute, 1966). More sensitive molecular methods such as Pfs25mRNA quantitative nucleic acid sequence\u2013based amplification (QT-NASBA) have been developed (Schneider et al., 2004). Unlike conventional microscopy, this technique enables gametocyte densities to be quantified over the entire epidemiologically relevant range.\n\nTransmission reduction is now a key component of global efforts to control and eliminate malaria (Alonso et al., 2011). A wide range of novel transmission-reducing drugs and vaccines are currently under development, which aim to reduce malaria incidence by restricting human to mosquito transmission. The transmission-reducing ability of front-line therapeutics (such as artemisinin-based combination therapies [ACTs], or potential combinations of ACTs with gametocytocidal drugs) is also gaining increased attention (WHO, 2012; White, 2013). It is likely that these interventions will be partially effective, but it remains unclear how much they need to reduce transmission from humans to mosquitoes in a particular location, and to which age groups they should be delivered in order to halt malaria transmission.\n\nMathematical models of malaria transmission tend not to include explicitly the relationship between gametocytaemia and mosquito infectivity, opting, for simplicity, to assume density-independent transmission probabilities (Smith et al., 2007; Griffin et al., 2010), or fit functions to the relationship between the number of asexual parasites and the probability of a blood-feeding mosquito becoming infected (Ross et al., 2006). Greater complexity, however, will be required to capture fully malaria population dynamics following the introduction of drugs and vaccines that specifically target transmission stages. For example, the World Health Organization (WHO) has recently recommended that in pre-elimination or elimination malaria programmes, single-dose primaquine (0\u00b725 mg base per kg) with an ACT should be given to all patients with falciparum malaria except pregnant women and infants <1 year old (WHO, 2012). More detailed mathematical models will allow the full impact of this change in strategy to be assessed in a range of different endemic settings.\n\nThe optimal use of transmission-reducing interventions will also require a better understanding of the human reservoir of infection, which is likely to vary between different endemic settings. Various studies have attempted to estimate the relative contribution of different age groups to mosquito infection using skin or membrane feeding assays (Muirhead-Thomson, 1957; Graves et al., 1988; Boudin et al., 1991; Githeko et al., 1992; Drakeley et al., 2000; Bonnet et al., 2003). These studies are logistically complicated and expensive, so more efficient methods of determining the reservoir of infection are required in order to target interventions optimally. A thorough understanding of the factors determining mosquito infection would allow mathematical models to predict the relative contribution of different groups to transmission from cross-sectional surveys, both before and after the introduction of transmission-reducing interventions.\n\nThis article uses data from mosquito feeding assays conducted in Burkina Faso (Ou\u00e9draogo et al., 2009, Dryad: Ou\u00e9draogo et al., 2013) and Kenya (Schneider et al., 2007, Dryad: Schneider et al., 2013) to estimate the shape of the relationship between gametocyte density and mosquito infection (processed data available at Dryad, Churcher et al., 2013). Other covariates that may influence infection such as asexual parasite density (measured by microscopy) and host age were also included to improve predictions of human to mosquito transmission. These results are combined with data from a cross-sectional survey conducted in a high transmission setting in Burkina Faso to predict the relative contribution of different age groups to overall malaria transmission.\n\n## Results\n\nThe relationship between the number of gametocytes in the blood and mosquito infection was found to be highly non-linear (Figure 1A). Plasmodium falciparum infects mosquitoes at the very low gametocyte densities that predominate in natural infections and may not be detected using standard microscopy (Bousema and Drakeley, 2011). Infection rises rapidly with increasing gametocyte density, and by 1 gametocyte per microlitre, \u223c4% (95% Bayesian credible interval [CI], 3\u20135%) of all mosquitoes develop oocysts. The subsequent increase in infection with increasing gametocyte density is best described by the Gompertz model (deviance information criterion [DIC] = 1034), which gave a significantly better fit than the linear (DIC = 1073), power (DIC = 1059), or hyperbolic (DIC = 1062) functions (Figure 1A). The best-fit model predicts that increasing density from 1 to 200 gametocytes per microlitre does not appreciably increase infection. Beyond 200 gametocytes per microlitre, infection rises again to finally plateau at \u223c18% infected mosquitoes. Gametocyte density on an arithmetic scale was a better predictor of mosquito infection than gametocyte density on a logarithmic scale. Including information on the host\u2019s asexual parasite density significantly improved model fit. Children with asexual parasite densities between 1 and 1000 parasites per microlitre were on average 27% (CI, 19\u201358%) less infectious to mosquitoes than those with no detectable asexual parasites, whereas those with asexual densities >1000 \u00b5l\u22121 were 77% (CI, 14\u2013140%) more infectious. Including age improves the fit of the model suggesting that age is an important confounder, although the Bayesian credible intervals include 0. Children >6 years old were 15% (CI, 24\u201364%) more likely to infect mosquitoes than those of younger ages, whereas no difference in the relationship between gametocyte density and mosquito infection was detected between Burkina Faso and Kenya.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00626/elife-00626-fig1-v1.jpg)\n\n**Figure 1.:** (A) The relationship between Plasmodium falciparum gametocyte density and the percentage of Anopheles gambiae mosquitoes that develop oocysts. Point colour, shading, and shape denote characteristics of the blood donor, such as location (blue = Burkina Faso; red = Kenya), asexual parasite density as measured by microscopy (no fill colour = none detectable, light shading = 1\u20131000 parasites per microlitre, dark shading \u22651000 \u00b5l\u22121), or host age (<6 years old = square, \u22656 years old = circle). The size of the point is proportional to the number of mosquitoes dissected. Coloured horizontal and vertical lines indicate 95% Bayesian credible intervals (CIs) around point estimates. The solid black line indicates the best-fit model, whereas the grey shaded area indicates the uncertainty around this line. The inset shows the relationship at very low gametocyte densities (on a logarithmic scale). The outputs show the shape of the relationship for a child with no detectable asexual parasites. A full description of data used to fit the model are given in Figure 1\u2014source data 1. Regression coefficients and a measure of goodness-of-fit of the different models are given in Figure 1\u2014source data 2. Panel (B) shows how efficacious transmission-reducing interventions would need to be (on the vertical axis) at decreasing gametocyte density in order to reduce human to mosquito transmission (contour lines). The best-fit line from (A) is used to illustrate the percentage reduction in mosquito infection that would be achieved according to the pre-intervention host\u2019s gametocyte density (on the horizontal axis) for an intervention, which reduces gametocyte density by a given percentage (which is assumed to be constant over different gametocyte densities). The colours represent the percentage reduction in mosquito infection that would be achieved, ranging from red (low, 0\u201310% reduction) to darker hues of blue (high, 70\u201380% and 80\u201390% reduction, see legend). The 90\u2013100% reduction in transmission is hardly visible and would correspond to nearly 100% efficacious interventions at the top of the graph.\n\nThe complex shape of the relationship between gametocyte density and mosquito infection will influence the success of transmission-reducing interventions and may explain why their ability to reduce the proportion of infected mosquitoes has been shown to depend on the gametocyte density of the host (Churcher et al., 2012). For example, reducing gametocyte density by 99% in a host with 200 gametocytes per microlitre may not have much effect on their immediate contribution to transmission (Figure 1B), although it will probably reduce the duration of infectivity. The same intervention efficacy at reducing gametocyte density in a host with 300 gametocytes per microlitre would cause an appreciable reduction in human to mosquito transmission from that individual. Figure 1B can be used to estimate how a reduction in the number of gametocytes will equate to a reduction in the proportion of mosquitoes becoming infected, and hence mosquito to human transmission. How this relates to the incidence of malaria and subsequent disease will depend, in part, on the degree of immunity in the human population.\n\nIn the cross-sectional survey in Burkina Faso, children harbour more gametocytes than adults, with 10 year olds having five times as many gametocytes compared to the 50 year olds (Figure 2A). However, the relationship between gametocyte density and mosquito infection established here means that adults are only 37% less likely to infect mosquitoes (infecting on average 3.5% of them, Figure 2B). Results indicate that, at the time of the survey conducted in Burkina Faso, the peak in the reservoir of infection occurs at an earlier age than the peak in gametocyte density, which will improve the (cost) effectiveness of school-based programmes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00626/elife-00626-fig2-v1.jpg)\n\n**Figure 2.:** (A) Results from a cross-sectional survey conducted in a high transmission setting in Burkina Faso showing how the mean number of gametocytes per microlitre of blood (including 0s) changes with host age. The distribution of gametocytes among hosts is highly overdispersed. A full description of data used to fit the model are given in Figure 2\u2014source data 1 with the best-fit parameter estimates shown in Figure 2\u2014source data 2. The relationship between gametocyte density and oocyst prevalence shown in Figure 1A is used to predict the percentage of mosquitoes that will become infected after biting a host of a certain age. This is shown in panel (B), which can be interpreted as the contribution of each age group towards the human to mosquito transmission. In both figures, the black solid line shows the best-fit model and the grey shaded area indicates the uncertainty (95% Bayesian credible Interval, CI) having fitted the model to the individual data (a total of 412 individuals). For illustrative purposes, the data are grouped into seven bins, namely 0\u20135, 5\u201310, 10\u201315, 15\u201320, 20\u201330, 30\u201340, 40\u201350, and \u226550 year olds, and the size of the point is proportional to the number of individuals in the group. In Figure 1A, the 10\u201315 and 15\u201320 year groups appear lower than the best-fit line due to sampling artefacts generated by the highly overdispersed data. Vertical lines indicate the 95% CI around grouped estimates.\n\n## Discussion\n\nThe complex shape of the relationship between gametocyte density and mosquito infection elucidated here will influence our understanding of the population dynamics of falciparum malaria and will determine the success of transmission-reducing interventions. The efficiency with which P. falciparum gametocytes can infect mosquitoes means that transmission-reducing interventions, which reduce gametocyte density, will need to be highly effective in order to reduce human\u2013mosquito transmission. Gametocytes can infect mosquitoes at very low densities, despite the mosquito needing to ingest both male and female parasites in the same blood meal. Substantial transmission was seen from hosts with <1 gametocyte per microlitre of blood. After this initial increase in infection, considerably more gametocytes are required in order to increase further the proportion of mosquitoes developing oocysts. The causes of this are unclear, but experimental systems may be informative. Data from the rodent malaria model Plasmodium berghei (Sinden et al., 2007) suggest that the phenomenon could be associated with parasite mortality during penetration of the mosquito gut wall or due to the mosquito\u2019s immune response. Beyond 200 gametocytes per microlitre mosquito infection rises again (although QT-NASBA measurement error makes the exact gametocyte density for this transition relatively uncertain). If an intervention can keep gametocyte density beneath 200 gametocytes per microlitre in a low transmission area, it may be sufficient to push the basic reproduction number of malaria beneath one and eliminate the disease. However, the highly overdispersed distribution of gametocytes between hosts (adequately described by the negative binomial distribution) means that in the population from Burkina Faso, 30% of transmission comes from hosts with densities beneath the microscopy detection threshold of 16 gametocytes per microlitre. This means that evaluating interventions solely on their ability to reduce microscopically detectable gametocytes, as has been suggested (Graves et al., 2012), may give misleading results.\n\nIncluding information on asexual parasite density (as measured by microscopy) significantly improved the fit of the model, with hosts harbouring intermediate densities having the highest infectivity. It is unclear whether asexual parasites directly influence parasite infectivity or are associated with other (here unmeasured) variables such as the multiplicity of infection (Nsango et al., 2012) or factors influencing the blood environment such as immunity (Bousema and Drakeley, 2011). Plasmodium falciparum has asynchronous waves of asexual and sexual parasites. Circulating gametocytes take 2\u20133 days to mature before they can infect mosquitoes (Lensen et al., 1999), which may explain the complicated relationship between infectivity and asexual density (i.e., intermediate asexual parasite densities might occur at the start of gametocyte production and have a relatively low proportion of infectious mature gametocytes). On average, older children were more infectious, supporting previous indications that transmission-reducing immunity may predominate in young children (Drakeley et al., 2006).\n\nFigure 1A indicates that individual QT-NASBA gametocyte density estimates are relatively uncertain. Despite this, they are considerably more accurate than conventional microscopy. Molecular techniques may be highly precise in a state-of-the-art laboratory, but the practicalities of collecting and processing samples in non-ideal field settings increases the risks of incurring measurement error. Even though uncertainty is generally accepted by those conducting the experiments, measures of precision such as confidence intervals or standard errors around such density estimates are rarely reported in the scientific literature. Methods such as those presented in this article can allow robust quantitative insight to be gained from uncertain molecular methods. Care should be taken when interpreting gametocyte density estimates as it has been suggested that the marker used in this analysis (Pfs25 mRNA) might be parasite female specific (Schneider, 2006). Even if the current QT-NASBA method does only detect female gametocytes, it will neither change the qualitative conclusions of this study nor their application if other studies use the same technique. However, direct comparison of our results with those of studies using different methods for quantifying gametocyte density should be aware that the shape of the relationship may differ.\n\nGametocyte density measurement error is likely to cause the majority of the uncertainty seen in model outputs, although the complexity of the membrane feeding assay is also likely to contribute. The proportion of mosquitoes infected by Plasmodium-infected blood is known to vary substantially within and between studies. This is in part due to methodological issues with the membrane feeding assay (Bousema et al., 2013) but also related to biological differences in the parasite-vector combination and the blood environment (Bousema and Drakeley, 2011). Further standardising the membrane feeding assay, improving the accuracy of QT-NASBA technique and the inclusion of additional covariates (such as estimates of gametocyte maturity, which have been investigated in Plasmodium vivax; Chansamut et al., 2012), would improve the accuracy of the relationship between gametocyte density and mosquito infection. It would also permit the patterns described here to be checked for consistency across time and space, and enable a wider range of functional forms to be tested. Care should also be taken when interpreting the results of feeding assays as the mosquitoes used, and their biting behaviour is likely to be different from that seen in wild mosquitoes in field situations (Bousema et al., 2013).\n\nTransmission reduction will become increasingly important as areas approach local elimination. Identifying host age groups that contribute most to the reservoir of infection will allow the optimal targeting of malaria control. In the high transmission site in Burkina Faso, young children harbour the majority of gametocytes but are only slightly more infective to mosquitoes than adults. The per person contribution of adults estimated here is considerably greater than that predicted by other mathematical models (Ross et al., 2006) and may increase further once age-dependent biting rates are taken into consideration (Carnevale et al., 1978; Ross et al., 2006). The contribution of different age groups to overall transmission will depend on local demography, age-dependent protection by malaria interventions (such as the use of bed nets or time spent in the house and therefore personally protected by indoor residual spraying), and human to mosquito contact patterns. The last two of these are difficult to measure and poorly understood, reducing our ability to accurately predict the sources of infection. The reservoir of infection is likely to vary between endemicity settings and over time so multiple cross-sectional surveys may be required. The relationship between gametocyte density and mosquito infection will allow estimates of the reservoir of infection from cross-sectional gametocytaemia surveys without the need for logistically complicated mosquito feeding assays. The results of this article should be included within mathematical models that capture changes in gametocyte density with time (Lawpoolsri et al., 2009) to evaluate the full impact that different transmission-reducing interventions will have on transmission and prioritise the most appropriate candidates according to transmission setting.\n\nThis article provides insights into the relationship between gametocyte density and mosquito infection that are needed to predict the outcome of transmission-reducing interventions. It shows that, given the ability of very low P. falciparum gametocyte densities to establish infection in A. gambiae, transmission-reducing interventions will need to be highly efficacious at reducing gametocyte density in order to halt human to mosquito transmission. The complex and non-linear shape of the relationship between gametocyte density and mosquito infection may explain why the ability of an interventions to reduce the proportion of infected mosquitoes has been shown to depend on the parasite load of the host (Churcher et al., 2012). Gametocyte density also changes with host age so the effectiveness of transmission-reducing interventions that target gametocytes will also vary with age. This should be considered in clinical trials of transmission-reducing candidate drugs and vaccines. The highly overdispersed distribution of gametocytes in the host population and the non-linear relationship between gametocytes/asexual parasite density and mosquito infection means that the impact of different transmission-reducing interventions on overall transmission at the population level will be far from intuitive.\n\n## Material and methods\n\n### Estimating gametocyte density and its associated uncertainty\n\nQuantitative nucleic acid sequence-based amplification (QT-NASBA) is routinely used to estimate pathogen density. Like all diagnostic methods, it is prone to measurement error. To understand fully the associated uncertainty, it is important to appreciate the causes of the variability and how the quantification process might magnify uncertainty of point density estimates. Here, the uncertainty is quantified by repeatedly testing samples with known gametocyte density and fitting a hierarchical mathematical model.\n\nNucleic acids are extracted from 50 \u00b5l of blood and then amplified in the presence of a fluorescence probe. The assay measures time to positivity (TTP), which is the time it takes for the number of target amplicons detected to exceed a defined threshold (Schneider et al., 2004). The relationship between TTP and gametocyte density is estimated by fitting a linear regression to TTP estimates generated using a sample with known gametocyte density (a 10-fold dilution series of in vitro cultured gametocytes ranging from 106 to 101 gametocytes per millilitre). Let the observed TTP be denoted by Y then,(1)Y=\u03b20+\u03b21\u2061ln\u2061x+\u03b5,where \u03b20 and \u03b21 are regression coefficients estimates, x is the (known) parasite density from the dilution series and \u03b5 represents a normally distributed random error with mean equal to 0 and constant variance, that is \u03b5 \u223c N(0,\u03c32). A full list of the parameters is given in Table 1. The so-called statistical calibration or inverse regression problem (Osborne, 1991) concerns the issue of making statistical inference on the value of an unknown (log-transformed) gametocyte density), denoted as ln x\u2032, from a new TTP observation, Y\u2032 The classical approach (Eisenhart, 1939) involves rearranging the regression model (equation 1) so that(2)ln\u2061x\u2032=Y\u2032\u2212\u03b20\u03b21,and substituting the regression parameters with their estimates \u03b2^0 and \u03b2^1 to yield an estimate lnx^\u2032. Here, we adapt this approach for use in a Bayesian hierarchical model. A number of different methods have been used to do this (see Hoadley, 1970 and Hunter and Lamboy, 1981 and for discussion see Osborne, 1991), each of which has a different method for dealing with the problem of high \u03b2^1 values (i.e., a gentle gradient, which when used in equation 2 can generate infinitely large confidence interval estimates). Here, we use the most parsimonious approach that does not require assignment of previous distributions to (the unknown) gametocyte densities. Rather, uncertainty in the estimated regression coefficients of equation 1 is propagated numerically via equation 2 to yield uncertainty in the estimated gametocyte densities. Since all the calibration line data have a relatively steep gradient, the difference between the different methods will be relatively minor, and all will generate sensibly tight confidence interval estimates.\n\n**Table 1.**\n Notation of statistical and mathematical models\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Notation</th>\n      <th>Description</th>\n      <th>Equation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Y</td>\n      <td>Time to positivity (TTP) readout generated by QT-NASBA</td>\n      <td>Equation 1</td>\n    </tr>\n    <tr>\n      <td>x</td>\n      <td>Known density of gametocytes per millilitre (generated using dilution series)</td>\n      <td>Equation 1</td>\n    </tr>\n    <tr>\n      <td>lnx^\u2032</td>\n      <td>Estimate of (unknown) gametocyte density on the logarithmic scale</td>\n      <td>Equation 2</td>\n    </tr>\n    <tr>\n      <td>x^\u2032</td>\n      <td>Estimate of gametocyte density on the arithmetic scale</td>\n      <td>Equation 2</td>\n    </tr>\n    <tr>\n      <td>\u03b20</td>\n      <td>Intercept of the calibration line fitted to the dilution series</td>\n      <td>Equation 1</td>\n    </tr>\n    <tr>\n      <td>\u03b21</td>\n      <td>Gradient of the calibration line fitted to the dilution series</td>\n      <td>Equation 1</td>\n    </tr>\n    <tr>\n      <td>\u03c32</td>\n      <td>Intra-assay variance measuring the accuracy with which the calibration line fits the TTP estimates from the dilution series</td>\n      <td>Equation 1</td>\n    </tr>\n    <tr>\n      <td>g</td>\n      <td>Proportion of mosquitoes developing oocysts</td>\n      <td>Equation 3</td>\n    </tr>\n    <tr>\n      <td>\u03d5(x^\u2032,\u03ba)</td>\n      <td>Saturating function determining the shape of the initial relationship between gametocytes and the proportion of mosquitoes developing oocysts</td>\n      <td>Equation 4</td>\n    </tr>\n    <tr>\n      <td>fi(x^\u2032)</td>\n      <td>Function determining the shape of the relationship between gametocytes and proportion of mosquitoes developing oocysts. Subscript i indicates the functional form used, be it f\u03b1(x^\u2032)=\u03b10+\u03b11x^\u2032\u03b12(1+\u03b13x^\u2032\u03b12), where constraining different parameters can generate a range of different shapes (constant \u03b11 = 0, linear \u03b12 = 1; \u03b13 = 0, power \u03b13 = 0, hyperbolic \u03b11 &gt; 0 \u03b12 = 1 \u03b13 &gt; 0, or sigmoid \u03b12 &gt; 1) or f\u03b3(x\u2032^)=\u03b30+\u03b31\u2061exp[\u03b32\u2061exp(\u03b33x\u2032^)],, which generates a Gompertz (sigmoid-like) function</td>\n      <td>Equation 3</td>\n    </tr>\n    <tr>\n      <td>\u03bc</td>\n      <td>Vector of regression coefficients</td>\n      <td>Equation 3</td>\n    </tr>\n    <tr>\n      <td>z</td>\n      <td>Vector of dummy variables denoting donor blood characteristics, z1 = asexual parasite density (0 = undetected, 1 = low, 2 = high), z2 = host age (0 = younger than 6 years old, 1 = 6 or older), z3 = study locale (0 = Burkina Faso, 1 = Kenya)</td>\n      <td>Equation 3</td>\n    </tr>\n    <tr>\n      <td>h(A)</td>\n      <td>Function describing how gametocyte density and the reservoir of infection change with host age (A). Shape determined by parameters \u03c4, \u03c8, and \u03c9</td>\n      <td>Equation 5</td>\n    </tr>\n  </tbody>\n</table>\n\nCalibration lines can vary between runs and batches of reagents. Here, we define an experiment as being a single plate run with the same batch of reagents each of which will have its own dilution series and samples with unknown density. The accuracy with which the individual TTP estimates fit the log-linear calibration line can be used to estimate assay measurement error (the intra-assay variability, \u03c3) by fitting a hierarchical mixed-effects model to multiple dilution series (allowing estimates of \u03b20 and \u03b21 to vary among experiments to determine whether this significantly improves the fit of the model). The accuracy of gametocyte density estimates can also be improved by running multiple assays on the same sample and then taking the mean of all the ln x\u2032 estimates. The application of equation 2 yields an estimate of gametocyte density, $x^^{\u2032},$ on the logarithmic scale. Estimates on the arithmetic scale are generated by taking the exponent, that is $x^{\u2032}^=exp(lnx^^{\u2032})$. These estimates are used in the functions below to determine the relationship between gametocyte density and the proportion of mosquitoes developing oocysts.\n\n### Mosquito infection\n\nPlasmodium falciparum\u2013infected blood was collected from children and fed through a membrane to A. gambiae sensu stricto mosquitoes that were dissected 7\u20139 days later to determine infection (oocyst carriage). Data from 171 mosquito feeds on patients\u2019 blood conducted in Burkina Faso (Ou\u00e9draogo et al., 2009) and Kenya (Schneider et al., 2007) were combined and used to fit a quantitative relationship between gametocyte density, asexual parasite density, host age, and mosquito infection (proportion of mosquitoes developing oocysts). A full description of these data is given in Figure 1\u2014source data 1. Gametocyte density was quantified using QT-NASBA, and the uncertainty in the density estimates (the intra-assay variability) was quantified by fitting a hierarchical model to the 16 independent dilution series. In the Burkina Faso dataset, multiple assays were carried out on the same blood sample (an average of 2.63 assays per unknown blood sample). The mean gametocyte density from these multiple assays was taken to increase the accuracy of the estimates. The precise shape of the relationship was determined by fitting a range of different functional forms (a modified constant, linear, power, hyperbolic, sigmoid, and Gompertz functions) to data presented in Figure 1\u2014source data 1 and statistically determining which gave the best fit. The proportion of mosquitoes developing oocysts, denoted by g, can be described by equation 3\n\n$$\ng=\u03d5(x^^{\u2032},\u03ba)f_{i}(x^^{\u2032})(1+\\muz_{1}+\\muz_{2}+\\muz_{3}).\n$$\n\nFunction $f_{i}(x^^{\u2032})$ describes how infection changes with increasing estimated gametocyte density with subscript i indicating the different functions tested (whose equations are given in Table 1); \u03bc is a vector of regression coefficients and z1, z2 and z3 are dummy variables denoting asexual parasite density, age of the blood donor for the membrane feeing assays, and location of provenance, respectively. Asexual parasite density (estimated by microscopy) was categorized as being either undetectable (z1 = 0), low (<1000 parasites per microlitre of blood, z1 = 1) or high (\u22651000 parasites per microlitre of blood, z1 = 2). Hosts were classified into two different age categories (<6 years [children, z2 = 0] or \u2265 6 yr [older children, z2 = 1). Mosquito infection was allowed to vary between Burkina Faso and Kenya (z3 = 0 for Burkina Faso, z3 = 1 for Kenya). The function $\u03d5(x^^{\u2032},\u03b7)$ determines the shape of the relationship at very low gametocyte densities and is motivated by the observation that the malaria parasite can adjust its sex ratio to optimise transmission (Reece et al., 2008). Evidence indicates that transmission is possible even at very low gametocyte densities (Schneider et al., 2007; Ou\u00e9draogo et al., 2009), so $\u03d5(x^^{\u2032},\u03b7)$ allows infection to rise very quickly with increasing gametocyte density at a rate determined by parameter \u03b7,\n\n$$\n\u03d5(x^^{\u2032},\u03b7)=1\u2212(1+\\frac{x^^{\u2032}}{2\u03b7})^{\u2212(\u03b7+1)}.\n$$\n\nEquation 4 was originally derived to describe the probability that a host would contain both male and female parasites according to the mean number of parasites and the aggregation (overdispersion) parameter of the negative binomial distribution (May, 1977). Reproduction in malaria is more complex than in the (helminth) system for which equation 4 was devised; hence, parameter \u03b7 is not biologically interpretable.\n\nTo investigate whether mosquito infection is best predicted by gametocyte density on the arithmetic or logarithmic scale, both hypotheses were tested in the model, substituting an estimate of gametocyte density on the logarithmic scale ($lnx^{\u2032}^$) for $x^^{\u2032}$ in equations 3 and 4 and comparing model fits. The model quantifying the uncertainty in gametocyte density estimates was fitted at the same time as the regression determining the relationship between gametocyte density (and other covariates) and the proportion of mosquitoes infected using Bayesian Markov Chain Monte Carlo methods. Fitting the models simultaneously enables the uncertainty in the gametocyte density estimates to be reflected in the uncertainty of the shape of the relationship.\n\n### Age profile of gametocyte density\n\nBlood samples were randomly collected from 412 hosts from a single village in Burkina Faso (Ou\u00e9draogo et al., 2010). QT-NASBA assays were run on the samples, and the methods described above were used to convert assay results into estimates of gametocyte density. A description of these data is given in Figure 2\u2014source data 1. To facilitate visual inspection of the age profile of gametocyte density, and to generate summary statistics, the function h(A) was fitted to these data to describe how the mean number of gametocytes per microlitre of blood changes with host age (A)\n\n$$\nh(A)=\\tau+(\u03c8A\u2212\\tau)\u2009exp(\u2212\\omegaA).\n$$\n\nParameters \u03c4, \u03c8, and \u03c9 were estimated assuming a negative binomial error structure to account for the high degree of overdispersion (aggregation) observed in gametocyte density estimates (using an overdispersion parameter that did not change with host age or gametocyte density). As above, a hierarchical model was used to estimate the gametocyte density and its associated uncertainty at the same time as the age profile allowing the full uncertainty of the shape of the function to be expressed.\n\n### Age profile of the infectious reservoir\n\nThe probability that a mosquito biting a host of a particular age will become infected can be estimated using the above model together with estimates of the host gametocyte and asexual parasite density. This was done using the cross-sectional data from Burkina Faso to generate a proxy for the human reservoir of infection at this specific time in this location (although it does not take into account how vector biting rate may vary with host age). It is important to use individual host estimates of gametocyte density instead of mean estimates as the high degree of gametocyte overdispersion among hosts may accentuate the non-linear relationship between gametocyte density and mosquito infection. For each of the 412 hosts, point estimates were obtained of the percentage of feeding mosquitoes (taking a single full blood meal) that would develop oocysts according to the age and the gametocyte/asexual parasite density of the host (equation 3). Equation 5 was used to fit a relationship between host age and their contribution towards human to mosquito transmission. This best-fit line was used to predict the percentage of overall transmission that originated from hosts who had gametocyte density estimates below the detection threshold of microscopy. Here, we define the detection threshold as the minimum (positive) density that can be estimated by sampling a certain volume of blood. It is assumed that gametocytes are counted against 500 white blood cells (WBC) and that there are on average 8000 WBC per \u00b5l of blood. This gives an average detection threshold of 16 gametocytes per microlitre of blood. This is a conservative estimate of the threshold density since densities above this value may still give false negative results both due reading errors or random sampling of gametocytes on the microscope slide.\n\nCare should be taken when interpreting the results as mosquito membrane feeding experiments were not performed with blood from adult hosts. Evidence indicates that antibodies associated with transmission-blocking activity may be lower in older age groups (Drakeley et al., 2006), which could mean that adult hosts could have a greater potential to contribute to overall transmission.\n\n### Fitting procedure\n\nBayesian Markov Chain Monte Carlo techniques were used to fit the models in OpenBUGS (Lunn et al., 2009). This approach allows the uncertainties in the assessments of gametocyte density and mosquito infection rates (generated by different numbers of mosquitoes being dissected) to be taken into consideration, propagated into parameter posterior distributions. All parameters were assigned uninformative priors and were run until convergence was reached using standard methodology (Gelman and Rubin, 1996). The most parsimonious models were selected by comparing deviance information criteria (DIC) values (the lowest value giving the most parsimonious yet adequate fit) (Spiegelhalter et al., 2002). Uncertainly around the best-fit line is indicated by showing the 95% range of 10,000 runs randomly sampled from the posterior distribution. The distribution of gametocytes between hosts was highly overdispersed, with an aggregation parameter of the negative binomial distribution of 0.185 (95% Bayesian credible interval [CI], 0.16\u20130.21).\n",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "d7605360-4393-4109-a597-95f947e594c3",
+      "submission_id": "025277f7-974f-48e6-ac6e-e03a00f3faad",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Prabhat Jha, University of Toronto , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00626.010](https://doi.org/10.7554/eLife.00626.010)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cTargeting Malaria Transmission Control: Predicting Mosquito Infectivity from Plasmodium falciparum Gametocyte Density\u201d for consideration at eLife. Your article has been favorably evaluated by Prabhat Jha as Senior editor and 3 reviewers, one of whom was Vasee Moorthy.\n\nThe reviewers discussed their comments before we reached this decision and the Senior editor has assembled the following major substantive comments to help you prepare a revised submission.\n\n1) Estimating Gametocyte Density From QT-NASBA Assays\n\nI do not know the inverse regression problem well and can appreciate that there are alternative approaches. The supplementary file indicates some uncertainty in the choice of this method \u201cfor discussion see Osbourne, 1991\u201d but this is not explained. It would be useful to give brief reasons why the particular method was chosen.\n\nThe authors say that QT-NASBA may detect only female gametocytes and elsewhere that the sex ratio of P falciparum can change to optimise transmission. This may alter the shape of the relationship between QT-NASBA results and the estimated gametocyte densities.\n\nIt would be useful to validate the model for estimating gametocyte densities from QT-NASBA assays for data other than that to what was fitted.\n\nFigure 1A shows a double hump in the relationship between gametocytes in the blood sample and mosquito infectivity. This seems unintuitive for a biological process. I wondered to what extent this might be forced by the functions chosen. Does adding extra flexibility result in the same double hump?\n\nFigure 1: An elegant presentation of this data. In the inset to part A there is a large clump of points on the x axis and it is not clear that the fit is good enough to be useful. For me this graph highlights the importance of understanding how different the line is in this model to other lines, and how much better this model fits, than the models that are the next best fit.\n\nPlease provide some discussion of this in the text (in addition to supplementary information). A listing of alternative models with their goodness of fit on a quantitative basis should be included in the manuscript itself.\n\nThe uncertainty range is huge, and ranges from very little increase in infectivity with increasing gametocyte density, to very steep increases in infectivity with increasing gametocyte density. What steps do the authors propose are taken to reduce the uncertainty range?\n\n2) Mosquito Infectivity\n\nEquation A4 includes a parameter called kappa. This is confusing since kappa is conventionally used to represent the infectious reservoir.\n\nResults: The results for age are presented as if there was evidence of an effect, but the confidence intervals suggest otherwise.\n\nThe rationale for adjusting for asexual parasite density was not clear. It \u201cimproved model fit\u201d but the aim here is not the best fitting model so much as to describe the relationship between estimated gametocyte density and infectivity. Including asexual parasite density as a main effect modifies the interpretation of the parameters.\n\n3) The Paper Estimates the Relationship Between Gametocyte Densities and Age\n\nThe data comes from a cross-sectional survey of 412 people in a village in Burkina Faso. There is likely to be seasonal variation in parasite densities and the relative densities in adults and children may vary seasonally due to different levels of acquired immunity. It should be stated when the survey was carried out and also that a single survey is a potential limitation.\n\n4) Efficacy Definition\n\nA major issue is to be quite clear what is meant by efficacy throughout the paper. This lack of clarity permeates this entire technical area (i.e., not only this manuscript) and causes a lot of confusion. I believe most or all instances of use of the word efficacy in this manuscript refers to a % reduction in the gametocyte density. How does this relate to % reduction in proportion of infected mosquitoes and how will this translate to reduced incidence of human infection? This is a critical discussion that is omitted. Discussion of efficacy without some idea what this translates to in terms of reduction in human infection is rather misleading.\n\nIf the authors mean reduced transmission from humans to mosquito, I suggest they use a narrative phrase, such as this and do not use the word efficacy at all.\n\n5) Data/Model Description\n\nThe data the model was fitted to was not well described (\u201crepeatedly testing samples with known gametocyte density\u201d). I also had trouble working out whether the fitting was simultaneous with the model for mosquito infectivity or not. The text mentions that the \u201cestimates were used in the functions below\u201d but the table presents all parameters together. My concern is that that the error in the estimated gametocyte densities, from the QT-NASBA results and also the chance of gametocytes being contained in the blood sample, is incorporated.\n\nThe model and parameters are not explained. The methods section merely mentions \u201ca mathematical model\u201d and the supplementary file gives an equation involving three parameters, but it is not clear how the equation was derived or what the parameters represent. A smooth curve is produced, but the relationship does not necessarily have to be smooth: for example, pregnant women may have higher parasitaemia and affect the age-curves.\n\nFigure 2A suggests that the relationship does not fit well for two of the age groups. This should be acknowledged and possible reasons mentioned.\n\nA negative binomial error structure was used. The Figure 2\u2014source data 1 table suggests that there were some zeros in the data and that the densities are skewed. Did the residuals suggest a good fit? If there are many zeros, then a zero-inflated negative binomial model may be more appropriate.\n\n6) Acknowledge Limitations\n\nOn a couple of occasions, the authors make statements that are not backed up by evidence from this paper.\n\nDiscussion. It is implied that this work gives direct evidence of the effectiveness of parasite strategies at low gametocyte densities such altering the sex ratio, but no direct information on strategies is obtained.\n\nAlthough the paper does include an elegant sampling approach to quantify uncertainties, Although the paper does include an elegant sampling approach to quantify uncertainties, there should be a beefed up discussion of the uncertainties underlying this work. The authors should provide more discussion on what is known about which parameters in the input data are driving uncertainty, how much confidence they have that the model they chose is superior to alternative models, and on what basis they made this decision. There should also be a discussion on the limitations related to the differences between mosquitoes used in feeding assays, and wild-type mosquitoes.\n\nAlthough uncertainty is presented in one of the figure panels, and this is very helpful, uncertainty ranges/confidence intervals should be quoted in the text where figures are provided.\n\nWe suggest that the authors consider how the paper can act as an aid to conceptualising the components underlying person-to-person transmission in field settings, and to gaining a better understanding of the uncertainties related to the component of transmission that their results speak to, and also to gain a better understanding of what the existing data gaps are that must be filled in order that the research community can determine how to test new transmission-reducing interventions, and quantify their effect on person-to-person transmission.\n",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e074e1fc-c767-4fe8-8707-72d9c4aa265b",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C1",
+      "claim": "Human to mosquito transmission was assessed using 171 direct mosquito feeding assays conducted in Burkina Faso and Kenya.",
+      "claim_type": "EXPLICIT",
+      "source": "Human to mosquito transmission was assessed using 171 direct mosquito feeding assays conducted in Burkina Faso and Kenya.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number and location of feeding assays conducted.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "7108bf46-e5fd-42b7-8171-e237b869982c",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C2",
+      "claim": "Plasmodium falciparum infects Anopheles gambiae at 4% mosquitoes at 1 gametocyte per \u00b5l blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmodium falciparum infects Anopheles gambiae efficiently at low densities (4% mosquitoes at 1/\u00b5l blood), although substantially more (>200/\u00b5l) are required to increase infection further.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "ce79e4ae-e7ef-4a84-be35-60a222dedf91",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C3",
+      "claim": "Substantially more than 200 gametocytes per \u00b5l are required to increase mosquito infection further beyond the level achieved at 1 gametocyte per \u00b5l.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmodium falciparum infects Anopheles gambiae efficiently at low densities (4% mosquitoes at 1/\u00b5l blood), although substantially more (>200/\u00b5l) are required to increase infection further.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is derived from the analysis of the relationship between gametocyte density and mosquito infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "136152be-7131-4dd2-ab30-026d8cc8b855",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C4",
+      "claim": "In Burkina Faso, children harbour more gametocytes than adults.",
+      "claim_type": "EXPLICIT",
+      "source": "In a site in Burkina Faso, children harbour more gametocytes than adults though the non-linear relationship between gametocyte density and mosquito infection means that (per person) they only contribute slightly more to transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cross-sectional survey data from Burkina Faso.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "46eab826-b9c4-4c76-bdd2-96e35c3250a1",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C5",
+      "claim": "Due to the non-linear relationship between gametocyte density and mosquito infection, children only contribute slightly more to transmission per person than adults despite having more gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In a site in Burkina Faso, children harbour more gametocytes than adults though the non-linear relationship between gametocyte density and mosquito infection means that (per person) they only contribute slightly more to transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from combining gametocyte density data with the transmission model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "fbf70863-9359-4936-9790-36f46d0c790b",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C6",
+      "claim": "Interventions reducing gametocyte density need to be highly effective in order to halt human\u2013mosquito transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Interventions reducing gametocyte density need to be highly effective in order to halt human\u2013mosquito transmission, although their use can be optimised by targeting those contributing the most to transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the non-linear relationship between gametocyte density and mosquito infection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "8443e12d-dd10-42d1-ade2-e6d960f4dc8f",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C7",
+      "claim": "Male and female gametocytes are ingested by the mosquito and reproduce sexually in its stomach before developing into oocysts.",
+      "claim_type": "EXPLICIT",
+      "source": "Male and female transmission stages (gametocytes) are ingested by the mosquito and reproduce sexually in its stomach before developing into oocysts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the malaria parasite life cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "dd3ccc82-97d5-4a01-bc1a-31962bd243bc",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C8",
+      "claim": "Once oocysts establish, it is assumed that mosquitoes will form infectious sporozoites.",
+      "claim_type": "EXPLICIT",
+      "source": "Once oocysts establish, it is assumed that mosquitoes will form infectious sporozoites, so the proportion of mosquitoes developing oocysts is used as a measure of mosquito infectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption in the manuscript based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "e5131769-8872-4de2-869b-44eb56c5fb8d",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C9",
+      "claim": "The proportion of mosquitoes developing oocysts is used as a measure of mosquito infectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Once oocysts establish, it is assumed that mosquitoes will form infectious sporozoites, so the proportion of mosquitoes developing oocysts is used as a measure of mosquito infectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the methodological approach used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "db90a4b2-1997-46dd-9f0e-a087ca0ac42a",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C10",
+      "claim": "In Plasmodium falciparum, mosquito infection is thought to increase with the number of gametocytes ingested by the mosquito.",
+      "claim_type": "EXPLICIT",
+      "source": "In the human malaria parasite Plasmodium falciparum, mosquito infection is thought to increase with the number of gametocytes ingested by the mosquito (Jeffery and Eyles, 1955; Graves et al., 1988; Bousema and Drakeley, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "07db3272-7af9-49e8-8d97-67858e6394ba",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C11",
+      "claim": "Several studies have failed to find an association between gametocyte density and mosquito infection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, several studies have failed to find an association (Boudin et al., 1993; Haji et al., 1996), and the precise shape of the relationship has never been rigorously quantified, particularly at very low gametocyte densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "232e59cc-0355-49e6-a1fd-bc32c5719216",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C12",
+      "claim": "The precise shape of the relationship between gametocyte density and mosquito infection has never been rigorously quantified, particularly at very low gametocyte densities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, several studies have failed to find an association (Boudin et al., 1993; Haji et al., 1996), and the precise shape of the relationship has never been rigorously quantified, particularly at very low gametocyte densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature prior to this study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "dae1f71e-e734-4c9b-ad66-86cfc8de3fc3",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C13",
+      "claim": "Microscopy may miss up to 80% of parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Difficulties arise because estimates of gametocyte density have relied on microscopy, which may miss up to 80% of parasites (Dowling and Shute, 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "fbff7202-5e6c-4b67-a9e4-420a9dff8d5e",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C14",
+      "claim": "Pfs25mRNA quantitative nucleic acid sequence\u2013based amplification (QT-NASBA) is a more sensitive molecular method than microscopy for detecting gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "More sensitive molecular methods such as Pfs25mRNA quantitative nucleic acid sequence\u2013based amplification (QT-NASBA) have been developed (Schneider et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "3c55e770-0235-407c-b95b-c49aff279d4c",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C15",
+      "claim": "QT-NASBA enables gametocyte densities to be quantified over the entire epidemiologically relevant range.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike conventional microscopy, this technique enables gametocyte densities to be quantified over the entire epidemiologically relevant range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated advantage of the QT-NASBA technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "8bf6d2c1-07e5-488d-ab6f-be6478664e23",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C16",
+      "claim": "Transmission reduction is now a key component of global efforts to control and eliminate malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission reduction is now a key component of global efforts to control and eliminate malaria (Alonso et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "6d1d742e-705e-44f8-baa8-fc583e98c8ff",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C17",
+      "claim": "A wide range of novel transmission-reducing drugs and vaccines are currently under development.",
+      "claim_type": "EXPLICIT",
+      "source": "A wide range of novel transmission-reducing drugs and vaccines are currently under development, which aim to reduce malaria incidence by restricting human to mosquito transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of malaria intervention development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "e7d169b5-0ebe-423b-9f99-e23ff0fb9ae6",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C18",
+      "claim": "The transmission-reducing ability of artemisinin-based combination therapies (ACTs) is gaining increased attention.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmission-reducing ability of front-line therapeutics (such as artemisinin-based combination therapies [ACTs], or potential combinations of ACTs with gametocytocidal drugs) is also gaining increased attention (WHO, 2012; White, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to WHO and other research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "f5f482a0-748c-4e14-86f5-91136070fa06",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C19",
+      "claim": "Mathematical models of malaria transmission tend not to include explicitly the relationship between gametocytaemia and mosquito infectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematical models of malaria transmission tend not to include explicitly the relationship between gametocytaemia and mosquito infectivity, opting, for simplicity, to assume density-independent transmission probabilities (Smith et al., 2007; Griffin et al., 2010), or fit functions to the relationship between the number of asexual parasites and the probability of a blood-feeding mosquito becoming infected (Ross et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "c877fa7a-8108-475c-a934-7913512f7bc2",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C20",
+      "claim": "Greater complexity in mathematical models will be required to capture fully malaria population dynamics following the introduction of drugs and vaccines that specifically target transmission stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Greater complexity, however, will be required to capture fully malaria population dynamics following the introduction of drugs and vaccines that specifically target transmission stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the needs for future modeling work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "dd5569bf-b423-49cf-8c91-531a1a5bf444",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C21",
+      "claim": "WHO has recommended that in pre-elimination or elimination malaria programmes, single-dose primaquine (0\u00b725 mg base per kg) with an ACT should be given to all patients with falciparum malaria except pregnant women and infants <1 year old.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the World Health Organization (WHO) has recently recommended that in pre-elimination or elimination malaria programmes, single-dose primaquine (0\u00b725 mg base per kg) with an ACT should be given to all patients with falciparum malaria except pregnant women and infants <1 year old (WHO, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a WHO recommendation cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "efac6aef-8f9a-4c4e-80fa-7a2cc3157560",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C22",
+      "claim": "The human reservoir of infection is likely to vary between different endemic settings.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal use of transmission-reducing interventions will also require a better understanding of the human reservoir of infection, which is likely to vary between different endemic settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about expected variation in epidemiological patterns.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "bd7f1724-43e7-49be-88b0-519732730707",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C23",
+      "claim": "Various studies have attempted to estimate the relative contribution of different age groups to mosquito infection using skin or membrane feeding assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Various studies have attempted to estimate the relative contribution of different age groups to mosquito infection using skin or membrane feeding assays (Muirhead-Thomson, 1957; Graves et al., 1988; Boudin et al., 1991; Githeko et al., 1992; Drakeley et al., 2000; Bonnet et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "0b47e665-9c21-4e5d-b8d4-103f81325aeb",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C24",
+      "claim": "Mosquito feeding assay studies are logistically complicated and expensive.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies are logistically complicated and expensive, so more efficient methods of determining the reservoir of infection are required in order to target interventions optimally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical challenges of conducting feeding assays.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "581fc3e9-a508-4625-8ac1-2f79be22fcbf",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C25",
+      "claim": "The relationship between gametocyte density and mosquito infection is highly non-linear.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between the number of gametocytes in the blood and mosquito infection was found to be highly non-linear (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "73ad4925-37c9-4644-a35c-badb2b6ee342",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C26",
+      "claim": "Plasmodium falciparum infects mosquitoes at very low gametocyte densities that predominate in natural infections and may not be detected using standard microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmodium falciparum infects mosquitoes at the very low gametocyte densities that predominate in natural infections and may not be detected using standard microscopy (Bousema and Drakeley, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "27294348-5e93-442f-b887-b475b0a04b34",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C27",
+      "claim": "Infection rises rapidly with increasing gametocyte density up to 1 gametocyte per microlitre.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection rises rapidly with increasing gametocyte density, and by 1 gametocyte per microlitre, \u223c4% (95% Bayesian credible interval [CI], 3\u20135%) of all mosquitoes develop oocysts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "eacca6b3-99ef-417b-b202-aa9141c0b0ab",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C28",
+      "claim": "The Gompertz model gave the best fit to the relationship between gametocyte density and mosquito infection with a DIC of 1034.",
+      "claim_type": "EXPLICIT",
+      "source": "The subsequent increase in infection with increasing gametocyte density is best described by the Gompertz model (deviance information criterion [DIC] = 1034), which gave a significantly better fit than the linear (DIC = 1073), power (DIC = 1059), or hyperbolic (DIC = 1062) functions (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "290ec80a-7228-4aad-a889-93de8c46d38e",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C29",
+      "claim": "The Gompertz model gave a significantly better fit than the linear, power, or hyperbolic functions.",
+      "claim_type": "EXPLICIT",
+      "source": "The subsequent increase in infection with increasing gametocyte density is best described by the Gompertz model (deviance information criterion [DIC] = 1034), which gave a significantly better fit than the linear (DIC = 1073), power (DIC = 1059), or hyperbolic (DIC = 1062) functions (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from model comparison using DIC values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "c8359edb-5f1c-4ca0-b2c0-6fc560eb30e1",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C30",
+      "claim": "The best-fit model predicts that increasing density from 1 to 200 gametocytes per microlitre does not appreciably increase infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The best-fit model predicts that increasing density from 1 to 200 gametocytes per microlitre does not appreciably increase infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the fitted Gompertz model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "83896084-bc29-4e67-b13a-832763f06286",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C31",
+      "claim": "Beyond 200 gametocytes per microlitre, infection rises again to finally plateau at approximately 18% infected mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond 200 gametocytes per microlitre, infection rises again to finally plateau at \u223c18% infected mosquitoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the fitted model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "b6b9e9f9-982e-4be1-9291-e8d701386b8f",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C32",
+      "claim": "Gametocyte density on an arithmetic scale was a better predictor of mosquito infection than gametocyte density on a logarithmic scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Gametocyte density on an arithmetic scale was a better predictor of mosquito infection than gametocyte density on a logarithmic scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from comparing different model formulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "15af5f0a-fa93-411c-ae93-b35324062e7a",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C33",
+      "claim": "Including information on the host's asexual parasite density significantly improved model fit.",
+      "claim_type": "EXPLICIT",
+      "source": "Including information on the host's asexual parasite density significantly improved model fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "9edbf108-69e7-45e4-b889-cba8deeaf783",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C34",
+      "claim": "Children with asexual parasite densities between 1 and 1000 parasites per microlitre were on average 27% (CI, 19\u201358%) less infectious to mosquitoes than those with no detectable asexual parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Children with asexual parasite densities between 1 and 1000 parasites per microlitre were on average 27% (CI, 19\u201358%) less infectious to mosquitoes than those with no detectable asexual parasites, whereas those with asexual densities >1000 \u00b5l\u22121 were 77% (CI, 14\u2013140%) more infectious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "5ee508f9-1124-4487-bc87-5476f5465740",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C35",
+      "claim": "Children with asexual densities >1000 \u00b5l\u22121 were 77% (CI, 14\u2013140%) more infectious to mosquitoes than those with no detectable asexual parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Children with asexual parasite densities between 1 and 1000 parasites per microlitre were on average 27% (CI, 19\u201358%) less infectious to mosquitoes than those with no detectable asexual parasites, whereas those with asexual densities >1000 \u00b5l\u22121 were 77% (CI, 14\u2013140%) more infectious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "de4dd067-0c32-4cd8-bab4-6706b56ac9ae",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C36",
+      "claim": "Including age improves the fit of the model suggesting that age is an important confounder.",
+      "claim_type": "EXPLICIT",
+      "source": "Including age improves the fit of the model suggesting that age is an important confounder, although the Bayesian credible intervals include 0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model comparison and statistical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "7887c3a5-204a-4d2e-a819-ae207effa304",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C37",
+      "claim": "Children >6 years old were 15% (CI, 24\u201364%) more likely to infect mosquitoes than those of younger ages.",
+      "claim_type": "EXPLICIT",
+      "source": "Children >6 years old were 15% (CI, 24\u201364%) more likely to infect mosquitoes than those of younger ages, whereas no difference in the relationship between gametocyte density and mosquito infection was detected between Burkina Faso and Kenya.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the regression analysis, though the credible interval includes negative values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "2d1acfea-d31c-4bf8-b244-60b33f58ba4e",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C38",
+      "claim": "No difference in the relationship between gametocyte density and mosquito infection was detected between Burkina Faso and Kenya.",
+      "claim_type": "EXPLICIT",
+      "source": "Children >6 years old were 15% (CI, 24\u201364%) more likely to infect mosquitoes than those of younger ages, whereas no difference in the relationship between gametocyte density and mosquito infection was detected between Burkina Faso and Kenya.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from comparing the two study sites in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "d2c7f5a7-39da-4407-9f09-51475ee51630",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C39",
+      "claim": "Reducing gametocyte density by 99% in a host with 200 gametocytes per microlitre may not have much effect on their immediate contribution to transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, reducing gametocyte density by 99% in a host with 200 gametocytes per microlitre may not have much effect on their immediate contribution to transmission (Figure 1B), although it will probably reduce the duration of infectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the non-linear relationship shown in Figure 1B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "64b2fc65-c744-448e-9d81-bab7190b1075",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C40",
+      "claim": "Reducing gametocyte density by 99% in a host with 200 gametocytes per microlitre will probably reduce the duration of infectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, reducing gametocyte density by 99% in a host with 200 gametocytes per microlitre may not have much effect on their immediate contribution to transmission (Figure 1B), although it will probably reduce the duration of infectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative statement about the temporal effects of intervention.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "9ac2a46b-7325-40d8-88e6-3b9722716c3e",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C41",
+      "claim": "The same intervention efficacy at reducing gametocyte density in a host with 300 gametocytes per microlitre would cause an appreciable reduction in human to mosquito transmission from that individual.",
+      "claim_type": "EXPLICIT",
+      "source": "The same intervention efficacy at reducing gametocyte density in a host with 300 gametocytes per microlitre would cause an appreciable reduction in human to mosquito transmission from that individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the non-linear relationship between gametocyte density and transmission.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "bbf32eec-079d-4dc0-8dd7-ae3aac7ff460",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C42",
+      "claim": "In the cross-sectional survey in Burkina Faso, 10 year olds have five times as many gametocytes compared to 50 year olds.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cross-sectional survey in Burkina Faso, children harbour more gametocytes than adults, with 10 year olds having five times as many gametocytes compared to the 50 year olds (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the cross-sectional survey data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "90da078a-a265-4c75-afb3-b2347c7e25c2",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C43",
+      "claim": "Adults in Burkina Faso are only 37% less likely to infect mosquitoes compared to children, infecting on average 3.5% of them.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the relationship between gametocyte density and mosquito infection established here means that adults are only 37% less likely to infect mosquitoes (infecting on average 3.5% of them, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from applying the transmission model to the age-stratified gametocyte data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "b68e5948-7cdf-435a-afee-4284331844b4",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C44",
+      "claim": "At the time of the survey conducted in Burkina Faso, the peak in the reservoir of infection occurs at an earlier age than the peak in gametocyte density.",
+      "claim_type": "EXPLICIT",
+      "source": "Results indicate that, at the time of the survey conducted in Burkina Faso, the peak in the reservoir of infection occurs at an earlier age than the peak in gametocyte density, which will improve the (cost) effectiveness of school-based programmes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing the age profiles of gametocyte density and transmission potential.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "d30dbd1c-ddc3-4ee9-ae3f-39a8057aed61",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C45",
+      "claim": "The earlier peak in the reservoir of infection compared to gametocyte density will improve the cost-effectiveness of school-based programmes.",
+      "claim_type": "EXPLICIT",
+      "source": "Results indicate that, at the time of the survey conducted in Burkina Faso, the peak in the reservoir of infection occurs at an earlier age than the peak in gametocyte density, which will improve the (cost) effectiveness of school-based programmes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the implications for intervention targeting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "b5852cca-ace3-4e0a-9f25-82d58d019f73",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C46",
+      "claim": "If an intervention can keep gametocyte density beneath 200 gametocytes per microlitre in a low transmission area, it may be sufficient to push the basic reproduction number of malaria beneath one and eliminate the disease.",
+      "claim_type": "EXPLICIT",
+      "source": "If an intervention can keep gametocyte density beneath 200 gametocytes per microlitre in a low transmission area, it may be sufficient to push the basic reproduction number of malaria beneath one and eliminate the disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the implications of the findings for elimination.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "3b73e0b0-a452-470a-a227-6fbba0c38d8f",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C47",
+      "claim": "The distribution of gametocytes between hosts is highly overdispersed and adequately described by the negative binomial distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the highly overdispersed distribution of gametocytes between hosts (adequately described by the negative binomial distribution) means that in the population from Burkina Faso, 30% of transmission comes from hosts with densities beneath the microscopy detection threshold of 16 gametocytes per microlitre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding about the distribution of gametocytes in the population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "84b5b602-d2a7-44ab-977e-b4bbb1e8a31e",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C48",
+      "claim": "In the population from Burkina Faso, 30% of transmission comes from hosts with densities beneath the microscopy detection threshold of 16 gametocytes per microlitre.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the highly overdispersed distribution of gametocytes between hosts (adequately described by the negative binomial distribution) means that in the population from Burkina Faso, 30% of transmission comes from hosts with densities beneath the microscopy detection threshold of 16 gametocytes per microlitre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from applying the model to the Burkina Faso population data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "78ac0ee3-30ad-41ac-8d81-657b71645d73",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C49",
+      "claim": "Evaluating interventions solely on their ability to reduce microscopically detectable gametocytes may give misleading results.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that evaluating interventions solely on their ability to reduce microscopically detectable gametocytes, as has been suggested (Graves et al., 2012), may give misleading results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the finding that substantial transmission comes from submicroscopic infections.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "7f66627a-74c5-43cd-8135-0ec8735b69e1",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C50",
+      "claim": "It is unclear whether asexual parasites directly influence parasite infectivity or are associated with other unmeasured variables such as the multiplicity of infection or factors influencing the blood environment such as immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear whether asexual parasites directly influence parasite infectivity or are associated with other (here unmeasured) variables such as the multiplicity of infection (Nsango et al., 2012) or factors influencing the blood environment such as immunity (Bousema and Drakeley, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of uncertainty about the mechanism underlying the observed association.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "d18a5cae-0a03-4b99-9cf2-70348b9ef43a",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C51",
+      "claim": "Plasmodium falciparum has asynchronous waves of asexual and sexual parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmodium falciparum has asynchronous waves of asexual and sexual parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about P. falciparum biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "062ae9f8-92ab-4bff-b89c-909ebf44cacf",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C52",
+      "claim": "Circulating gametocytes take 2\u20133 days to mature before they can infect mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Circulating gametocytes take 2\u20133 days to mature before they can infect mosquitoes (Lensen et al., 1999), which may explain the complicated relationship between infectivity and asexual density (i.e., intermediate asexual parasite densities might occur at the start of gametocyte production and have a relatively low proportion of infectious mature gametocytes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "b2d1d81f-559e-495c-bb3e-ef58a288d227",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C53",
+      "claim": "Intermediate asexual parasite densities might occur at the start of gametocyte production and have a relatively low proportion of infectious mature gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Circulating gametocytes take 2\u20133 days to mature before they can infect mosquitoes (Lensen et al., 1999), which may explain the complicated relationship between infectivity and asexual density (i.e., intermediate asexual parasite densities might occur at the start of gametocyte production and have a relatively low proportion of infectious mature gametocytes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed relationship between asexual density and infectivity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "40647425-5fc2-46a5-a655-5490bb9b55cf",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C54",
+      "claim": "On average, older children were more infectious, supporting previous indications that transmission-reducing immunity may predominate in young children.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, older children were more infectious, supporting previous indications that transmission-reducing immunity may predominate in young children (Drakeley et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis supported by citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "a15c2bf0-ab6c-43b0-be23-2dae5e53d2d3",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C55",
+      "claim": "Individual QT-NASBA gametocyte density estimates are relatively uncertain.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1A indicates that individual QT-NASBA gametocyte density estimates are relatively uncertain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation about the measurement error visible in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "6e0db0e6-fab1-44a1-82bd-1841ae9c2fd2",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C56",
+      "claim": "QT-NASBA gametocyte density estimates are considerably more accurate than conventional microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, they are considerably more accurate than conventional microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about diagnostic methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "c8624a22-0822-4d21-83dc-2863552e68ac",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C57",
+      "claim": "Measures of precision such as confidence intervals or standard errors around gametocyte density estimates are rarely reported in the scientific literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though uncertainty is generally accepted by those conducting the experiments, measures of precision such as confidence intervals or standard errors around such density estimates are rarely reported in the scientific literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about reporting practices in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "41a02583-939c-4abb-b475-c2e2f254ffde",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C58",
+      "claim": "It has been suggested that the marker used in this analysis (Pfs25 mRNA) might be parasite female specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Care should be taken when interpreting gametocyte density estimates as it has been suggested that the marker used in this analysis (Pfs25 mRNA) might be parasite female specific (Schneider, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat about the QT-NASBA method supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "22082e4a-f993-408b-8cae-0c477938d0a9",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C59",
+      "claim": "If the current QT-NASBA method does only detect female gametocytes, it will neither change the qualitative conclusions of this study nor their application if other studies use the same technique.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if the current QT-NASBA method does only detect female gametocytes, it will neither change the qualitative conclusions of this study nor their application if other studies use the same technique.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the robustness of the conclusions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "45a81a23-d665-40a7-9da9-79a97ce404ce",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C60",
+      "claim": "Direct comparison of results with those of studies using different methods for quantifying gametocyte density should be aware that the shape of the relationship may differ.",
+      "claim_type": "EXPLICIT",
+      "source": "However, direct comparison of our results with those of studies using different methods for quantifying gametocyte density should be aware that the shape of the relationship may differ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat about comparing results across different methodologies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "23d0b89c-f51a-40d8-b558-6dcc5e66833f",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C61",
+      "claim": "Gametocyte density measurement error is likely to cause the majority of the uncertainty seen in model outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Gametocyte density measurement error is likely to cause the majority of the uncertainty seen in model outputs, although the complexity of the membrane feeding assay is also likely to contribute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the sources of uncertainty in the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "3d91ca82-8ec4-4023-b97a-593b84363cba",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C62",
+      "claim": "The complexity of the membrane feeding assay is likely to contribute to uncertainty in model outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Gametocyte density measurement error is likely to cause the majority of the uncertainty seen in model outputs, although the complexity of the membrane feeding assay is also likely to contribute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the sources of uncertainty in the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "cf71c2d1-eb50-444a-adbb-8ed8329e0f81",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C63",
+      "claim": "The proportion of mosquitoes infected by Plasmodium-infected blood is known to vary substantially within and between studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of mosquitoes infected by Plasmodium-infected blood is known to vary substantially within and between studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about variability in feeding assay results.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "920bfdb0-f2ab-486c-9364-21bfd001f0d1",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C64",
+      "claim": "Variability in mosquito infection rates is in part due to methodological issues with the membrane feeding assay.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in part due to methodological issues with the membrane feeding assay (Bousema et al., 2013) but also related to biological differences in the parasite-vector combination and the blood environment (Bousema and Drakeley, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "9f8d5330-610e-4d38-bd22-b0908032b479",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C65",
+      "claim": "Variability in mosquito infection rates is related to biological differences in the parasite-vector combination and the blood environment.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in part due to methodological issues with the membrane feeding assay (Bousema et al., 2013) but also related to biological differences in the parasite-vector combination and the blood environment (Bousema and Drakeley, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "aee0e741-f61e-4d42-b3bd-b11d89e80664",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C66",
+      "claim": "Further standardising the membrane feeding assay would improve the accuracy of the relationship between gametocyte density and mosquito infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Further standardising the membrane feeding assay, improving the accuracy of QT-NASBA technique and the inclusion of additional covariates (such as estimates of gametocyte maturity, which have been investigated in Plasmodium vivax; Chansamut et al., 2012), would improve the accuracy of the relationship between gametocyte density and mosquito infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "215615b0-1cd8-4d2c-89f4-3fbfeea46e6c",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C67",
+      "claim": "Improving the accuracy of QT-NASBA technique would improve the accuracy of the relationship between gametocyte density and mosquito infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Further standardising the membrane feeding assay, improving the accuracy of QT-NASBA technique and the inclusion of additional covariates (such as estimates of gametocyte maturity, which have been investigated in Plasmodium vivax; Chansamut et al., 2012), would improve the accuracy of the relationship between gametocyte density and mosquito infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "9e2087fc-72a8-4dad-b379-d99986da1eb4",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C68",
+      "claim": "Including additional covariates such as estimates of gametocyte maturity would improve the accuracy of the relationship between gametocyte density and mosquito infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Further standardising the membrane feeding assay, improving the accuracy of QT-NASBA technique and the inclusion of additional covariates (such as estimates of gametocyte maturity, which have been investigated in Plasmodium vivax; Chansamut et al., 2012), would improve the accuracy of the relationship between gametocyte density and mosquito infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research supported by citation to work in P. vivax.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "c6fb7cad-d643-4527-9c3e-c0e7b79c7afe",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C69",
+      "claim": "Care should be taken when interpreting the results of feeding assays as the mosquitoes used and their biting behaviour is likely to be different from that seen in wild mosquitoes in field situations.",
+      "claim_type": "EXPLICIT",
+      "source": "Care should also be taken when interpreting the results of feeding assays as the mosquitoes used, and their biting behaviour is likely to be different from that seen in wild mosquitoes in field situations (Bousema et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat about the generalizability of feeding assay results, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "2de7c8e9-f6c5-4718-a672-3bc40d9386a8",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C70",
+      "claim": "Transmission reduction will become increasingly important as areas approach local elimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission reduction will become increasingly important as areas approach local elimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of transmission reduction in elimination contexts.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "1ec7a3f7-72da-462f-88f0-969604c6018c",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C71",
+      "claim": "In the high transmission site in Burkina Faso, young children harbour the majority of gametocytes but are only slightly more infective to mosquitoes than adults.",
+      "claim_type": "EXPLICIT",
+      "source": "In the high transmission site in Burkina Faso, young children harbour the majority of gametocytes but are only slightly more infective to mosquitoes than adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the Burkina Faso cross-sectional survey analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "ab009069-24c4-4a26-a8a7-c81346a251f7",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C72",
+      "claim": "The per person contribution of adults to transmission estimated in this study is considerably greater than that predicted by other mathematical models.",
+      "claim_type": "EXPLICIT",
+      "source": "The per person contribution of adults estimated here is considerably greater than that predicted by other mathematical models (Ross et al., 2006) and may increase further once age-dependent biting rates are taken into consideration (Carnevale et al., 1978; Ross et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous modeling work supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "c93177f0-022d-4df6-9ca8-df003df1e52e",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C73",
+      "claim": "The per person contribution of adults to transmission may increase further once age-dependent biting rates are taken into consideration.",
+      "claim_type": "EXPLICIT",
+      "source": "The per person contribution of adults estimated here is considerably greater than that predicted by other mathematical models (Ross et al., 2006) and may increase further once age-dependent biting rates are taken into consideration (Carnevale et al., 1978; Ross et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about factors not included in the current analysis, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "96e96eac-bd15-42e8-a548-a310e006e9a9",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C74",
+      "claim": "The contribution of different age groups to overall transmission will depend on local demography, age-dependent protection by malaria interventions, and human to mosquito contact patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The contribution of different age groups to overall transmission will depend on local demography, age-dependent protection by malaria interventions (such as the use of bed nets or time spent in the house and therefore personally protected by indoor residual spraying), and human to mosquito contact patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about factors that influence the reservoir of infection.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "bd832ee3-8758-4da6-a033-9113233587ac",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C75",
+      "claim": "Human to mosquito contact patterns are difficult to measure and poorly understood, reducing our ability to accurately predict the sources of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The last two of these are difficult to measure and poorly understood, reducing our ability to accurately predict the sources of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "40a51868-b308-4ce1-9b0a-21fed89ab89a",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C76",
+      "claim": "The reservoir of infection is likely to vary between endemicity settings and over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The reservoir of infection is likely to vary between endemicity settings and over time so multiple cross-sectional surveys may be required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about expected variation in epidemiological patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "fb81ee1f-5a1a-4ec3-8b7e-6cc8819885c8",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C77",
+      "claim": "Multiple cross-sectional surveys may be required to characterize the reservoir of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The reservoir of infection is likely to vary between endemicity settings and over time so multiple cross-sectional surveys may be required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on expected variation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "285a9c7f-a686-4f5c-a1d0-ff18b9c42eff",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C78",
+      "claim": "The relationship between gametocyte density and mosquito infection will allow estimates of the reservoir of infection from cross-sectional gametocytaemia surveys without the need for logistically complicated mosquito feeding assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between gametocyte density and mosquito infection will allow estimates of the reservoir of infection from cross-sectional gametocytaemia surveys without the need for logistically complicated mosquito feeding assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical application of the study findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "6ead70f8-701d-45d8-a62c-12020b039dc4",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C79",
+      "claim": "The results of this article should be included within mathematical models that capture changes in gametocyte density with time to evaluate the full impact that different transmission-reducing interventions will have on transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of this article should be included within mathematical models that capture changes in gametocyte density with time (Lawpoolsri et al., 2009) to evaluate the full impact that different transmission-reducing interventions will have on transmission and prioritise the most appropriate candidates according to transmission setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future modeling work supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "f030145d-4230-4011-99f7-c13c71e40225",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C80",
+      "claim": "Given the ability of very low P. falciparum gametocyte densities to establish infection in A. gambiae, transmission-reducing interventions will need to be highly efficacious at reducing gametocyte density in order to halt human to mosquito transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "It shows that, given the ability of very low P. falciparum gametocyte densities to establish infection in A. gambiae, transmission-reducing interventions will need to be highly efficacious at reducing gametocyte density in order to halt human to mosquito transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings about low-density transmission.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "8dc7e472-1ca9-4926-a6b1-94db0bf55b4f",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C81",
+      "claim": "The complex and non-linear shape of the relationship between gametocyte density and mosquito infection may explain why the ability of interventions to reduce the proportion of infected mosquitoes has been shown to depend on the parasite load of the host.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex and non-linear shape of the relationship between gametocyte density and mosquito infection may explain why the ability of an interventions to reduce the proportion of infected mosquitoes has been shown to depend on the parasite load of the host (Churcher et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the current findings to previous observations, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "a059e6ca-ccd6-42bf-8055-e70c9b8ba887",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C82",
+      "claim": "Gametocyte density changes with host age.",
+      "claim_type": "EXPLICIT",
+      "source": "Gametocyte density also changes with host age so the effectiveness of transmission-reducing interventions that target gametocytes will also vary with age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the cross-sectional survey data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "b2147d8c-8b09-44e4-8b57-0f12f5a6dbbf",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C83",
+      "claim": "The effectiveness of transmission-reducing interventions that target gametocytes will vary with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Gametocyte density also changes with host age so the effectiveness of transmission-reducing interventions that target gametocytes will also vary with age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the age-dependent gametocyte density patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "267c2e11-b364-44ba-a352-df14b08062fa",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C84",
+      "claim": "Age-dependent effectiveness of transmission-reducing interventions should be considered in clinical trials of transmission-reducing candidate drugs and vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "This should be considered in clinical trials of transmission-reducing candidate drugs and vaccines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for clinical trial design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "7040de6e-4b27-494d-9044-4ec7e1e7a467",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C85",
+      "claim": "The highly overdispersed distribution of gametocytes in the host population and the non-linear relationship between gametocytes/asexual parasite density and mosquito infection means that the impact of different transmission-reducing interventions on overall transmission at the population level will be far from intuitive.",
+      "claim_type": "EXPLICIT",
+      "source": "The highly overdispersed distribution of gametocytes in the host population and the non-linear relationship between gametocytes/asexual parasite density and mosquito infection means that the impact of different transmission-reducing interventions on overall transmission at the population level will be far from intuitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the complexity of predicting intervention impacts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "9cea840a-064c-486f-b57a-34f8a690e7df",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C86",
+      "claim": "QT-NASBA measures time to positivity (TTP), which is the time it takes for the number of target amplicons detected to exceed a defined threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "The assay measures time to positivity (TTP), which is the time it takes for the number of target amplicons detected to exceed a defined threshold (Schneider et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the QT-NASBA method supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "c171a2a1-37e0-4826-8b70-c49a9f4f0ba0",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C87",
+      "claim": "The relationship between TTP and gametocyte density is estimated by fitting a linear regression to TTP estimates generated using a sample with known gametocyte density.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between TTP and gametocyte density is estimated by fitting a linear regression to TTP estimates generated using a sample with known gametocyte density (a 10-fold dilution series of in vitro cultured gametocytes ranging from 106 to 101 gametocytes per millilitre).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the calibration method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "cfa1767d-f9cc-4d9e-996c-af06e28bbf3a",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C88",
+      "claim": "Data from 171 mosquito feeds on patients' blood conducted in Burkina Faso and Kenya were combined to fit a quantitative relationship between gametocyte density, asexual parasite density, host age, and mosquito infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from 171 mosquito feeds on patients' blood conducted in Burkina Faso (Ou\u00e9draogo et al., 2009) and Kenya (Schneider et al., 2007) were combined and used to fit a quantitative relationship between gametocyte density, asexual parasite density, host age, and mosquito infection (proportion of mosquitoes developing oocysts).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data and analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "4d9b5c47-0ca5-4831-99aa-eb9305689d26",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C89",
+      "claim": "In the Burkina Faso dataset, an average of 2.63 assays per unknown blood sample were carried out.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Burkina Faso dataset, multiple assays were carried out on the same blood sample (an average of 2.63 assays per unknown blood sample).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "90aa0699-6c1d-4d98-bab7-a74f20e3dfd6",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C90",
+      "claim": "Blood samples were randomly collected from 412 hosts from a single village in Burkina Faso.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood samples were randomly collected from 412 hosts from a single village in Burkina Faso (Ou\u00e9draogo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the cross-sectional survey data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "7d9f3763-d776-461d-9909-27114ca826ef",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C91",
+      "claim": "It is assumed that gametocytes are counted against 500 white blood cells (WBC) and that there are on average 8000 WBC per \u00b5l of blood.",
+      "claim_type": "EXPLICIT",
+      "source": "It is assumed that gametocytes are counted against 500 white blood cells (WBC) and that there are on average 8000 WBC per \u00b5l of blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption for calculating the microscopy detection threshold.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "4bf7c588-8fdf-4d3e-8ee9-10e33a27607e",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C92",
+      "claim": "The microscopy detection threshold is 16 gametocytes per microlitre of blood.",
+      "claim_type": "EXPLICIT",
+      "source": "This gives an average detection threshold of 16 gametocytes per microlitre of blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the assumptions about WBC counts and gametocyte counting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "e02f56db-7349-460d-8b76-6cab3c7e9064",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C93",
+      "claim": "Densities above 16 gametocytes per microlitre may still give false negative results both due to reading errors or random sampling of gametocytes on the microscope slide.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a conservative estimate of the threshold density since densities above this value may still give false negative results both due reading errors or random sampling of gametocytes on the microscope slide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of microscopy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "a510d24e-6ec5-4536-ab63-faf36e4b6f28",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C94",
+      "claim": "Mosquito membrane feeding experiments were not performed with blood from adult hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Care should be taken when interpreting the results as mosquito membrane feeding experiments were not performed with blood from adult hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "3c94a2e5-2479-4b16-8337-03c2fcbd870d",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C95",
+      "claim": "Antibodies associated with transmission-blocking activity may be lower in older age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence indicates that antibodies associated with transmission-blocking activity may be lower in older age groups (Drakeley et al., 2006), which could mean that adult hosts could have a greater potential to contribute to overall transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "bcf38de4-ee8a-4d00-a3ae-b4ec08030290",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C96",
+      "claim": "Adult hosts could have a greater potential to contribute to overall transmission due to lower transmission-blocking antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence indicates that antibodies associated with transmission-blocking activity may be lower in older age groups (Drakeley et al., 2006), which could mean that adult hosts could have a greater potential to contribute to overall transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on cited evidence about antibodies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "e908a4e9-6e2c-4362-a474-4a1d3c39b3dd",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C97",
+      "claim": "Bayesian Markov Chain Monte Carlo techniques were used to fit the models in OpenBUGS.",
+      "claim_type": "EXPLICIT",
+      "source": "Bayesian Markov Chain Monte Carlo techniques were used to fit the models in OpenBUGS (Lunn et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the statistical methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "c4a4691c-fa3b-4879-8aa6-423b91646bbd",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C98",
+      "claim": "The most parsimonious models were selected by comparing deviance information criteria (DIC) values.",
+      "claim_type": "EXPLICIT",
+      "source": "The most parsimonious models were selected by comparing deviance information criteria (DIC) values (the lowest value giving the most parsimonious yet adequate fit) (Spiegelhalter et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model selection approach supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "adef6ac5-1b67-447c-a69a-965dd37dcbb0",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C99",
+      "claim": "The distribution of gametocytes between hosts was highly overdispersed, with an aggregation parameter of the negative binomial distribution of 0.185 (95% Bayesian credible interval [CI], 0.16\u20130.21).",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of gametocytes between hosts was highly overdispersed, with an aggregation parameter of the negative binomial distribution of 0.185 (95% Bayesian credible interval [CI], 0.16\u20130.21).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "eb529732-09a4-4163-8c02-878debd017d6",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "claim_id": "C100",
+      "claim": "Data from the rodent malaria model Plasmodium berghei suggest that the plateau in mosquito infection at intermediate gametocyte densities could be associated with parasite mortality during penetration of the mosquito gut wall or due to the mosquito's immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "The causes of this are unclear, but experimental systems may be informative. Data from the rodent malaria model Plasmodium berghei (Sinden et al., 2007) suggest that the phenomenon could be associated with parasite mortality during penetration of the mosquito gut wall or due to the mosquito's immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citation to work in a rodent model.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2ef245dd-d85e-4b10-afd2-295be157da1a",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The relationship between P. falciparum gametocyte density and A. gambiae mosquito infection is highly non-linear. Using 171 mosquito feeding assays from Burkina Faso and Kenya, the study found that infection occurs at very low densities (~4% mosquitoes infected at 1 gametocyte/\u00b5l), plateaus between 1-200 gametocytes/\u00b5l, then rises again beyond 200 gametocytes/\u00b5l to plateau at ~18% infected mosquitoes. The Gompertz model provided the best fit (DIC=1034) compared to linear, power, or hyperbolic functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C25-C32 collectively establish a well-supported non-linear relationship using appropriate statistical methods (Bayesian MCMC, DIC model comparison) on substantial data (171 feeding assays). The Gompertz model selection is justified by significantly lower DIC values compared to alternatives. The quantitative estimates include credible intervals, and the findings are visualized in Figure 1A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "6e9b4683-d03b-4caa-b0ce-073ff5bebc82",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Asexual parasite density and host age influence mosquito infectivity. Children with intermediate asexual densities (1-1000/\u00b5l) were 27% less infectious than those without detectable asexuals, while those with >1000/\u00b5l were 77% more infectious. Older children (>6 years) were 15% more likely to infect mosquitoes, though credible intervals included zero. No difference was detected between Burkina Faso and Kenya sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C33-C38 report covariate effects, but C36-C37 acknowledge that age effects have credible intervals including zero, indicating statistical uncertainty. While asexual parasite effects (C34-C35) show clearer patterns, the wide credible intervals (e.g., 19-58%, 14-140%) suggest substantial uncertainty. The biological mechanism remains unclear (C50), limiting interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "03fe9410-85ca-4417-bd4c-56ea887a8e55",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In Burkina Faso, children harbor more gametocytes than adults (10-year-olds have 5\u00d7 more than 50-year-olds), but due to the non-linear transmission relationship, adults are only 37% less likely to infect mosquitoes (infecting 3.5% on average). The peak in the reservoir of infection occurs at an earlier age than the peak in gametocyte density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C42-C44, C71 are well-supported by cross-sectional survey data from 412 individuals in Burkina Faso (C90) and application of the validated transmission model. The finding that age-related differences in gametocyte density do not translate proportionally to transmission differences is a logical consequence of the non-linear relationship established in Result 1. Figure 2 provides visual support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "ca0bc671-736a-4d62-92a6-598ce47ddc42",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Gametocyte distribution among hosts is highly overdispersed, adequately described by a negative binomial distribution with aggregation parameter 0.185 (95% CI: 0.16-0.21). In Burkina Faso, 30% of transmission originates from hosts with gametocyte densities below the microscopy detection threshold of 16 gametocytes/\u00b5l.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48, C99 are supported by appropriate statistical modeling (negative binomial distribution) with quantified parameters and credible intervals. The finding that 30% of transmission comes from submicroscopic infections is a direct application of the fitted model to the population data, though it relies on the accuracy of both the transmission model and gametocyte density estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "a2ee5207-9db3-4988-9909-ab38d6ea282e",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Transmission-reducing interventions must be highly efficacious to halt human-mosquito transmission. P. falciparum infects 4% of mosquitoes at just 1 gametocyte/\u00b5l, and substantially more (>200/\u00b5l) are required to increase infection further. The non-linear relationship means intervention efficacy depends on baseline gametocyte density\u2014reducing density by 99% in a host with 200 gametocytes/\u00b5l may not substantially reduce immediate transmission, while the same reduction at 300 gametocytes/\u00b5l would be more effective.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C6, C39-C41, C80 logically follow from the established non-linear relationship. The intervention implications are appropriately illustrated in Figure 1B. However, C40 about duration of infectivity is speculative and not directly tested. The core conclusion about high efficacy requirements is well-supported by the data showing transmission at very low densities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "4cd48044-c7c3-46b9-8608-3c4f1f7d77b2",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The non-linear relationship enables prediction of the reservoir of infection from cross-sectional surveys without feeding assays, improving targeting of interventions. The earlier peak in transmission reservoir compared to gametocyte density improves cost-effectiveness of school-based programs. Evaluating interventions solely on microscopically detectable gametocytes may be misleading, and intervention effectiveness will vary with host age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C49, C78, C83-C85 represent valid inferences from the established results. The practical applications follow logically from the non-linear relationship and overdispersed distribution. However, these are primarily implications rather than directly tested findings. The recommendation about school-based programs (C45) is specific to the Burkina Faso setting and timing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "6dd7e2fc-9ebc-41a7-8e1f-7a5ac3f26e4f",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "QT-NASBA measures time to positivity (TTP) to quantify gametocyte density via linear regression against dilution series standards. Data from 171 feeding assays (Burkina Faso averaging 2.63 assays per sample, plus Kenya) were analyzed using Bayesian MCMC in OpenBUGS, with model selection by DIC comparison.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89, C97-C98 describe well-established methodological approaches. The QT-NASBA calibration method is appropriately cited (C86), the statistical approach is standard for this type of analysis, and the use of multiple assays per sample (C89) improves precision. The methods are adequately described for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "acd22e78-fc1e-4e62-be2f-8cfb83f838f8",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Individual QT-NASBA gametocyte density estimates are relatively uncertain but considerably more accurate than microscopy. Gametocyte density measurement error likely causes the majority of uncertainty in model outputs, though membrane feeding assay complexity also contributes. Mosquito infection rates vary substantially within and between studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57, C61-C63 appropriately acknowledge measurement uncertainty visible in Figure 1A. The hierarchical modeling approach accounts for this uncertainty by propagating it through the analysis. The comparative statement about microscopy (C56) is supported by prior literature (C13). These are honest assessments of data limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "5bff4825-874f-4b48-b72a-c874478833e9",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Pfs25 mRNA marker used in QT-NASBA may be female-specific, though this would not change qualitative conclusions if the same technique is used consistently. However, comparisons with studies using different quantification methods should be cautious. Laboratory mosquitoes and feeding behavior may differ from field conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60, C69 appropriately identify methodological caveats with supporting citations. The assessment that female-specificity wouldn't affect qualitative conclusions (C59) is reasonable given the focus on relative relationships. These are important limitations for interpreting and generalizing results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "afdcfc06-49ec-4ecc-bc55-d4d458c7485c",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The mechanism underlying the complex relationship between asexual parasites and infectivity is unclear. It may relate to gametocyte maturation timing (2-3 days required), multiplicity of infection, or immunity. Data from P. berghei suggest the plateau at intermediate densities could involve parasite mortality during gut penetration or mosquito immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C53, C100 acknowledge mechanistic uncertainty. The explanations are speculative (C53, C100) and rely on indirect evidence from rodent models (C100). While C51-C52 cite established biology, the connection to the observed patterns remains hypothetical. These represent reasonable speculation but lack direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "ddd1856d-6a77-4126-9a7f-b30c58188910",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Older children were more infectious on average, supporting previous indications that transmission-reducing immunity predominates in young children. Antibodies with transmission-blocking activity may be lower in older age groups, potentially increasing adult contribution to transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54, C95-C96 are complicated by C37 showing the age effect credible interval includes zero, and C94 noting no feeding experiments were performed with adult blood. The speculation about adult transmission potential (C96) cannot be validated with the current data. The support from prior literature (C54) is noted but the current study's evidence is weak.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "65dd08d5-ac8a-48ec-9f93-553078572827",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Future work should standardize membrane feeding assays, improve QT-NASBA accuracy, and include additional covariates like gametocyte maturity. Multiple cross-sectional surveys may be needed as the reservoir varies across settings and time. Results should be incorporated into mathematical models capturing temporal gametocyte dynamics to evaluate intervention impacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68, C76-C77, C79 are reasonable recommendations based on identified limitations and the study's findings. These represent appropriate suggestions for future research directions rather than claims requiring validation. They logically follow from the acknowledged uncertainties and the practical applications of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "62f08cdc-3148-4b84-9495-54d074b1aac6",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The per-person contribution of adults to transmission is considerably greater than predicted by other mathematical models and may increase further when age-dependent biting rates are considered. Overall transmission contributions depend on local demography, age-dependent intervention coverage, and human-mosquito contact patterns, which are poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C75 make comparisons with other models (C72) and speculate about unmeasured factors (C73). The comparison is limited by differences in model structure and assumptions. The acknowledgment that contact patterns are poorly understood (C75) undermines confidence in predicting actual transmission contributions. These represent important caveats but also highlight data gaps.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "1e89e355-72c4-45e1-8193-ebdfa2387ad9",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The microscopy detection threshold is calculated as 16 gametocytes/\u00b5l based on counting against 500 WBC with 8000 WBC/\u00b5l blood. This is a conservative estimate as densities above this may still yield false negatives due to reading errors or random sampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 use standard assumptions for microscopy detection limits. The calculation is straightforward and the acknowledgment that this is conservative (C93) is appropriate. These are reasonable estimates for comparing molecular and microscopic detection methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    },
+    {
+      "id": "4938ff45-1abf-41cc-ae9a-0b24e8bf02b1",
+      "content_id": "717efaee-267a-4b4c-ba71-057b58444836",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "If interventions can maintain gametocyte density below 200/\u00b5l in low transmission areas, it may suffice to push R0 below one and eliminate malaria. The non-linear relationship may explain why intervention efficacy at reducing mosquito infection depends on host parasite load. Gametocyte density changes with host age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C46 is highly speculative about elimination thresholds without modeling R0 or considering other transmission factors. C81 makes a reasonable connection to prior observations but remains inferential. C82 is supported by data (Result 3) but grouped here seems disconnected. These claims mix speculation with established findings inappropriately.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:34.098405Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e074e1fc-c767-4fe8-8707-72d9c4aa265b",
+      "result_id": "2ef245dd-d85e-4b10-afd2-295be157da1a"
+    },
+    {
+      "claim_id": "581fc3e9-a508-4625-8ac1-2f79be22fcbf",
+      "result_id": "2ef245dd-d85e-4b10-afd2-295be157da1a"
+    },
+    {
+      "claim_id": "73ad4925-37c9-4644-a35c-badb2b6ee342",
+      "result_id": "2ef245dd-d85e-4b10-afd2-295be157da1a"
+    },
+    {
+      "claim_id": "27294348-5e93-442f-b887-b475b0a04b34",
+      "result_id": "2ef245dd-d85e-4b10-afd2-295be157da1a"
+    },
+    {
+      "claim_id": "eacca6b3-99ef-417b-b202-aa9141c0b0ab",
+      "result_id": "2ef245dd-d85e-4b10-afd2-295be157da1a"
+    },
+    {
+      "claim_id": "290ec80a-7228-4aad-a889-93de8c46d38e",
+      "result_id": "2ef245dd-d85e-4b10-afd2-295be157da1a"
+    },
+    {
+      "claim_id": "c8359edb-5f1c-4ca0-b2c0-6fc560eb30e1",
+      "result_id": "2ef245dd-d85e-4b10-afd2-295be157da1a"
+    },
+    {
+      "claim_id": "83896084-bc29-4e67-b13a-832763f06286",
+      "result_id": "2ef245dd-d85e-4b10-afd2-295be157da1a"
+    },
+    {
+      "claim_id": "b6b9e9f9-982e-4be1-9291-e8d701386b8f",
+      "result_id": "2ef245dd-d85e-4b10-afd2-295be157da1a"
+    },
+    {
+      "claim_id": "15af5f0a-fa93-411c-ae93-b35324062e7a",
+      "result_id": "6e9b4683-d03b-4caa-b0ce-073ff5bebc82"
+    },
+    {
+      "claim_id": "9edbf108-69e7-45e4-b889-cba8deeaf783",
+      "result_id": "6e9b4683-d03b-4caa-b0ce-073ff5bebc82"
+    },
+    {
+      "claim_id": "5ee508f9-1124-4487-bc87-5476f5465740",
+      "result_id": "6e9b4683-d03b-4caa-b0ce-073ff5bebc82"
+    },
+    {
+      "claim_id": "de4dd067-0c32-4cd8-bab4-6706b56ac9ae",
+      "result_id": "6e9b4683-d03b-4caa-b0ce-073ff5bebc82"
+    },
+    {
+      "claim_id": "7887c3a5-204a-4d2e-a819-ae207effa304",
+      "result_id": "6e9b4683-d03b-4caa-b0ce-073ff5bebc82"
+    },
+    {
+      "claim_id": "2d1acfea-d31c-4bf8-b244-60b33f58ba4e",
+      "result_id": "6e9b4683-d03b-4caa-b0ce-073ff5bebc82"
+    },
+    {
+      "claim_id": "136152be-7131-4dd2-ab30-026d8cc8b855",
+      "result_id": "03fe9410-85ca-4417-bd4c-56ea887a8e55"
+    },
+    {
+      "claim_id": "46eab826-b9c4-4c76-bdd2-96e35c3250a1",
+      "result_id": "03fe9410-85ca-4417-bd4c-56ea887a8e55"
+    },
+    {
+      "claim_id": "bbf32eec-079d-4dc0-8dd7-ae3aac7ff460",
+      "result_id": "03fe9410-85ca-4417-bd4c-56ea887a8e55"
+    },
+    {
+      "claim_id": "90da078a-a265-4c75-afb3-b2347c7e25c2",
+      "result_id": "03fe9410-85ca-4417-bd4c-56ea887a8e55"
+    },
+    {
+      "claim_id": "b68e5948-7cdf-435a-afee-4284331844b4",
+      "result_id": "03fe9410-85ca-4417-bd4c-56ea887a8e55"
+    },
+    {
+      "claim_id": "1ec7a3f7-72da-462f-88f0-969604c6018c",
+      "result_id": "03fe9410-85ca-4417-bd4c-56ea887a8e55"
+    },
+    {
+      "claim_id": "3b73e0b0-a452-470a-a227-6fbba0c38d8f",
+      "result_id": "ca0bc671-736a-4d62-92a6-598ce47ddc42"
+    },
+    {
+      "claim_id": "84b5b602-d2a7-44ab-977e-b4bbb1e8a31e",
+      "result_id": "ca0bc671-736a-4d62-92a6-598ce47ddc42"
+    },
+    {
+      "claim_id": "adef6ac5-1b67-447c-a69a-965dd37dcbb0",
+      "result_id": "ca0bc671-736a-4d62-92a6-598ce47ddc42"
+    },
+    {
+      "claim_id": "7108bf46-e5fd-42b7-8171-e237b869982c",
+      "result_id": "a2ee5207-9db3-4988-9909-ab38d6ea282e"
+    },
+    {
+      "claim_id": "ce79e4ae-e7ef-4a84-be35-60a222dedf91",
+      "result_id": "a2ee5207-9db3-4988-9909-ab38d6ea282e"
+    },
+    {
+      "claim_id": "fbf70863-9359-4936-9790-36f46d0c790b",
+      "result_id": "a2ee5207-9db3-4988-9909-ab38d6ea282e"
+    },
+    {
+      "claim_id": "d2c7f5a7-39da-4407-9f09-51475ee51630",
+      "result_id": "a2ee5207-9db3-4988-9909-ab38d6ea282e"
+    },
+    {
+      "claim_id": "64b2fc65-c744-448e-9d81-bab7190b1075",
+      "result_id": "a2ee5207-9db3-4988-9909-ab38d6ea282e"
+    },
+    {
+      "claim_id": "9ac2a46b-7325-40d8-88e6-3b9722716c3e",
+      "result_id": "a2ee5207-9db3-4988-9909-ab38d6ea282e"
+    },
+    {
+      "claim_id": "f030145d-4230-4011-99f7-c13c71e40225",
+      "result_id": "a2ee5207-9db3-4988-9909-ab38d6ea282e"
+    },
+    {
+      "claim_id": "d30dbd1c-ddc3-4ee9-ae3f-39a8057aed61",
+      "result_id": "4cd48044-c7c3-46b9-8608-3c4f1f7d77b2"
+    },
+    {
+      "claim_id": "78ac0ee3-30ad-41ac-8d81-657b71645d73",
+      "result_id": "4cd48044-c7c3-46b9-8608-3c4f1f7d77b2"
+    },
+    {
+      "claim_id": "285a9c7f-a686-4f5c-a1d0-ff18b9c42eff",
+      "result_id": "4cd48044-c7c3-46b9-8608-3c4f1f7d77b2"
+    },
+    {
+      "claim_id": "b2147d8c-8b09-44e4-8b57-0f12f5a6dbbf",
+      "result_id": "4cd48044-c7c3-46b9-8608-3c4f1f7d77b2"
+    },
+    {
+      "claim_id": "267c2e11-b364-44ba-a352-df14b08062fa",
+      "result_id": "4cd48044-c7c3-46b9-8608-3c4f1f7d77b2"
+    },
+    {
+      "claim_id": "7040de6e-4b27-494d-9044-4ec7e1e7a467",
+      "result_id": "4cd48044-c7c3-46b9-8608-3c4f1f7d77b2"
+    },
+    {
+      "claim_id": "9cea840a-064c-486f-b57a-34f8a690e7df",
+      "result_id": "6dd7e2fc-9ebc-41a7-8e1f-7a5ac3f26e4f"
+    },
+    {
+      "claim_id": "c171a2a1-37e0-4826-8b70-c49a9f4f0ba0",
+      "result_id": "6dd7e2fc-9ebc-41a7-8e1f-7a5ac3f26e4f"
+    },
+    {
+      "claim_id": "cfa1767d-f9cc-4d9e-996c-af06e28bbf3a",
+      "result_id": "6dd7e2fc-9ebc-41a7-8e1f-7a5ac3f26e4f"
+    },
+    {
+      "claim_id": "4d9b5c47-0ca5-4831-99aa-eb9305689d26",
+      "result_id": "6dd7e2fc-9ebc-41a7-8e1f-7a5ac3f26e4f"
+    },
+    {
+      "claim_id": "e908a4e9-6e2c-4362-a474-4a1d3c39b3dd",
+      "result_id": "6dd7e2fc-9ebc-41a7-8e1f-7a5ac3f26e4f"
+    },
+    {
+      "claim_id": "c4a4691c-fa3b-4879-8aa6-423b91646bbd",
+      "result_id": "6dd7e2fc-9ebc-41a7-8e1f-7a5ac3f26e4f"
+    },
+    {
+      "claim_id": "a15c2bf0-ab6c-43b0-be23-2dae5e53d2d3",
+      "result_id": "acd22e78-fc1e-4e62-be2f-8cfb83f838f8"
+    },
+    {
+      "claim_id": "6e0db0e6-fab1-44a1-82bd-1841ae9c2fd2",
+      "result_id": "acd22e78-fc1e-4e62-be2f-8cfb83f838f8"
+    },
+    {
+      "claim_id": "c8624a22-0822-4d21-83dc-2863552e68ac",
+      "result_id": "acd22e78-fc1e-4e62-be2f-8cfb83f838f8"
+    },
+    {
+      "claim_id": "23d0b89c-f51a-40d8-b558-6dcc5e66833f",
+      "result_id": "acd22e78-fc1e-4e62-be2f-8cfb83f838f8"
+    },
+    {
+      "claim_id": "3d91ca82-8ec4-4023-b97a-593b84363cba",
+      "result_id": "acd22e78-fc1e-4e62-be2f-8cfb83f838f8"
+    },
+    {
+      "claim_id": "cf71c2d1-eb50-444a-adbb-8ed8329e0f81",
+      "result_id": "acd22e78-fc1e-4e62-be2f-8cfb83f838f8"
+    },
+    {
+      "claim_id": "41a02583-939c-4abb-b475-c2e2f254ffde",
+      "result_id": "5bff4825-874f-4b48-b72a-c874478833e9"
+    },
+    {
+      "claim_id": "22082e4a-f993-408b-8cae-0c477938d0a9",
+      "result_id": "5bff4825-874f-4b48-b72a-c874478833e9"
+    },
+    {
+      "claim_id": "45a81a23-d665-40a7-9da9-79a97ce404ce",
+      "result_id": "5bff4825-874f-4b48-b72a-c874478833e9"
+    },
+    {
+      "claim_id": "c6fb7cad-d643-4527-9c3e-c0e7b79c7afe",
+      "result_id": "5bff4825-874f-4b48-b72a-c874478833e9"
+    },
+    {
+      "claim_id": "7f66627a-74c5-43cd-8135-0ec8735b69e1",
+      "result_id": "afdcfc06-49ec-4ecc-bc55-d4d458c7485c"
+    },
+    {
+      "claim_id": "d18a5cae-0a03-4b99-9cf2-70348b9ef43a",
+      "result_id": "afdcfc06-49ec-4ecc-bc55-d4d458c7485c"
+    },
+    {
+      "claim_id": "062ae9f8-92ab-4bff-b89c-909ebf44cacf",
+      "result_id": "afdcfc06-49ec-4ecc-bc55-d4d458c7485c"
+    },
+    {
+      "claim_id": "b2d1d81f-559e-495c-bb3e-ef58a288d227",
+      "result_id": "afdcfc06-49ec-4ecc-bc55-d4d458c7485c"
+    },
+    {
+      "claim_id": "eb529732-09a4-4163-8c02-878debd017d6",
+      "result_id": "afdcfc06-49ec-4ecc-bc55-d4d458c7485c"
+    },
+    {
+      "claim_id": "40647425-5fc2-46a5-a655-5490bb9b55cf",
+      "result_id": "ddd1856d-6a77-4126-9a7f-b30c58188910"
+    },
+    {
+      "claim_id": "3c94a2e5-2479-4b16-8337-03c2fcbd870d",
+      "result_id": "ddd1856d-6a77-4126-9a7f-b30c58188910"
+    },
+    {
+      "claim_id": "bcf38de4-ee8a-4d00-a3ae-b4ec08030290",
+      "result_id": "ddd1856d-6a77-4126-9a7f-b30c58188910"
+    },
+    {
+      "claim_id": "aee0e741-f61e-4d42-b3bd-b11d89e80664",
+      "result_id": "65dd08d5-ac8a-48ec-9f93-553078572827"
+    },
+    {
+      "claim_id": "215615b0-1cd8-4d2c-89f4-3fbfeea46e6c",
+      "result_id": "65dd08d5-ac8a-48ec-9f93-553078572827"
+    },
+    {
+      "claim_id": "9e2087fc-72a8-4dad-b379-d99986da1eb4",
+      "result_id": "65dd08d5-ac8a-48ec-9f93-553078572827"
+    },
+    {
+      "claim_id": "40a51868-b308-4ce1-9b0a-21fed89ab89a",
+      "result_id": "65dd08d5-ac8a-48ec-9f93-553078572827"
+    },
+    {
+      "claim_id": "fb81ee1f-5a1a-4ec3-8b7e-6cc8819885c8",
+      "result_id": "65dd08d5-ac8a-48ec-9f93-553078572827"
+    },
+    {
+      "claim_id": "6ead70f8-701d-45d8-a62c-12020b039dc4",
+      "result_id": "65dd08d5-ac8a-48ec-9f93-553078572827"
+    },
+    {
+      "claim_id": "ab009069-24c4-4a26-a8a7-c81346a251f7",
+      "result_id": "62f08cdc-3148-4b84-9495-54d074b1aac6"
+    },
+    {
+      "claim_id": "c93177f0-022d-4df6-9ca8-df003df1e52e",
+      "result_id": "62f08cdc-3148-4b84-9495-54d074b1aac6"
+    },
+    {
+      "claim_id": "96e96eac-bd15-42e8-a548-a310e006e9a9",
+      "result_id": "62f08cdc-3148-4b84-9495-54d074b1aac6"
+    },
+    {
+      "claim_id": "bd832ee3-8758-4da6-a033-9113233587ac",
+      "result_id": "62f08cdc-3148-4b84-9495-54d074b1aac6"
+    },
+    {
+      "claim_id": "7d9f3763-d776-461d-9909-27114ca826ef",
+      "result_id": "1e89e355-72c4-45e1-8193-ebdfa2387ad9"
+    },
+    {
+      "claim_id": "4bf7c588-8fdf-4d3e-8ee9-10e33a27607e",
+      "result_id": "1e89e355-72c4-45e1-8193-ebdfa2387ad9"
+    },
+    {
+      "claim_id": "e02f56db-7349-460d-8b76-6cab3c7e9064",
+      "result_id": "1e89e355-72c4-45e1-8193-ebdfa2387ad9"
+    },
+    {
+      "claim_id": "b5852cca-ace3-4e0a-9f25-82d58d019f73",
+      "result_id": "4938ff45-1abf-41cc-ae9a-0b24e8bf02b1"
+    },
+    {
+      "claim_id": "8dc7e472-1ca9-4926-a6b1-94db0bf55b4f",
+      "result_id": "4938ff45-1abf-41cc-ae9a-0b24e8bf02b1"
+    },
+    {
+      "claim_id": "a059e6ca-ccd6-42bf-8055-e70c9b8ba887",
+      "result_id": "4938ff45-1abf-41cc-ae9a-0b24e8bf02b1"
+    }
+  ],
+  "comparisons": []
+}

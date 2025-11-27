@@ -2,6 +2,90 @@
   {
     "result_id": "R1",
     "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript provides background on DNA replication machinery, describing how replicative polymerases require sliding clamps for processivity, the structure of sliding clamps, and the role of clamp loaders in ATP-dependent loading of clamps onto DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 represent established knowledge about DNA replication mechanisms, supported by citations to prior work. These background claims accurately describe the generic model of holoenzyme assembly and are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The manuscript identifies gaps in knowledge about human holoenzyme assembly, noting that previous studies focused on E. coli, T4 bacteriophage, and S. cerevisiae, with distinct fates of clamp loaders in each system. Human studies are lacking and have not simultaneously monitored clamp loading and unloading activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C30 accurately characterize the state of the literature and identify legitimate gaps in knowledge. The citations to organism-specific studies support the claim that human studies are lacking, and the observation that previous studies addressed only one direction of the pathway at a time is a valid critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The manuscript presents a stepwise model of human holoenzyme assembly where RFC loads PCNA onto DNA, remains transiently bound, and in the absence of polymerase unloads all PCNA. In the presence of polymerase \u03b4, PCNA is captured from RFC, inhibiting unloading and completing holoenzyme assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 summarize the major findings supported by the FRET experiments described in the manuscript. The experimental data from Figures 2-4 demonstrate the stepwise assembly process, the transient binding of RFC, and the role of polymerase in capturing PCNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The manuscript proposes that RFC's unloading activity serves dual purposes: maximizing PCNA utilization by preventing buildup of free PCNA on DNA and recycling limited PCNA during replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 represent reasonable inferences from the experimental data showing that RFC unloads PCNA in the absence of polymerase. The biological significance is logically argued based on the scarcity of PCNA relative to P/T junctions during S-phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
       "C41",
       "C42",
       "C43",
@@ -11,23 +95,36 @@
       "C47",
       "C48"
     ],
-    "result": "The authors developed a FRET-based assay using Cy3-labeled forked DNA and Cy5-labeled PCNA (N107C mutant) to monitor RFC-catalyzed PCNA loading onto DNA. The labeled PCNA mutant is fully functional, stimulating RFC ATPase activity equal to wild-type PCNA. A truncated RFC (hRFCp140\u0394N555) lacking the N-terminal 555 amino acids was used to remove nonspecific DNA-binding affinity.",
+    "result": "The manuscript describes the FRET-based experimental system using Cy3-labeled DNA and Cy5-labeled PCNA (N107C mutant), along with a truncated RFC lacking the N-terminal 555 amino acids. The labeled PCNA is functionally equivalent to wild-type.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C41-C48 describe the experimental design and validation of the FRET assay system. The functional validation of Cy5-PCNA (C46) is supported by experimental data shown in Figure 1\u2014figure supplement 2. The structural conservation of residue 107 (C44) and its prior use for labeling (C45) are supported by citations. The experimental design is clearly described and appropriately validated.",
+    "evaluation": "Claims C41-C48 describe the experimental methodology. The functional validation of Cy5-PCNA (C46, Figure 1\u2014figure supplement 2) and the use of established labeling positions support the validity of the FRET system. The truncated RFC is justified by citations showing this region is dispensable for loading.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R2",
+    "result_id": "R6",
     "claim_ids": [
       "C49",
       "C50",
       "C51",
       "C52",
+      "C53",
+      "C54",
       "C55",
       "C56",
-      "C57",
+      "C57"
+    ],
+    "result": "Steady-state and stopped-flow FRET experiments demonstrate that RFC loads PCNA onto DNA in an ATP-dependent manner, with the loading trace displaying three distinct phases: a rapid FRET increase within the dead time, a FRET increase (kinc = 6.4 \u00b1 0.28 s\u207b\u00b9), and a FRET decrease (kdec,1 = 1.4 \u00b1 0.038 s\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 are supported by experimental data in Figures 1D and 2B. The requirement for both RFC and ATP is demonstrated by controls, and the kinetic parameters are derived from fitting the FRET traces. The observation of phases is clear from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
       "C58",
       "C59",
       "C60",
@@ -35,36 +132,37 @@
       "C62",
       "C63"
     ],
-    "result": "RFC loads PCNA onto P/T DNA in an ATP-dependent manner, as demonstrated by steady-state and stopped-flow FRET experiments. The loading process displays three distinct phases: a rapid FRET increase within the instrument dead time (likely RFC\u2022ATP\u2022PCNA binding to DNA), followed by a FRET increase (kinc = 6.4 \u00b1 0.28 s\u207b\u00b9) and a FRET decrease (kdec,1 = 1.4 \u00b1 0.038 s\u207b\u00b9). Both rate constants are independent of RFC concentration, suggesting first-order conformational changes rather than bimolecular association.",
+    "result": "The rate constants for the observed FRET increase and decrease are independent of RFC concentration, suggesting first-order conformational changes. The overall amplitude increases linearly with RFC concentration without saturation, indicating the system reaches equilibrium rather than a static endpoint.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C49-C63 describe the kinetics of PCNA loading observed by FRET. The experimental data in Figures 1D and 2B clearly support the ATP-dependent loading (C49-C50) and the multiphasic kinetics (C52, C55-C57). The independence of rate constants from RFC concentration (C58) supports the interpretation of conformational changes (C59). The linear increase in overall amplitude with RFC concentration (C61) and the inference about equilibrium (C63) are well-supported by Figure 2D.",
+    "evaluation": "Claims C58-C63 are supported by data in Figure 2\u2014figure supplement 1 and Figure 2D. The independence of rate constants from RFC concentration is consistent with conformational changes rather than bimolecular association. The linear increase in amplitude is clearly shown and the interpretation regarding equilibrium is reasonable.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R3",
+    "result_id": "R8",
     "claim_ids": [
       "C64",
       "C65",
       "C66",
       "C67",
       "C68",
+      "C69",
       "C70",
       "C71",
-      "C72",
-      "C73"
+      "C72"
     ],
-    "result": "The FRET increase (kinc) is independent of ATP concentration and occurs even at 62.5 \u03bcM ATP, demonstrating RFC's moderately high affinity for ATP. In contrast, the FRET decrease (kdec,1) requires ATP hydrolysis, as it is inhibited at high ATP concentrations and is not observed with ATP\u03b3S. These results indicate that PCNA loading proceeds through two phases: a conformational change requiring only ATP binding followed by a conformational change requiring ATP hydrolysis.",
+    "result": "ATP titration experiments show that kinc is independent of ATP concentration (maximal even at 62.5 \u03bcM), while kdec,1 is inhibited at ATP concentrations >1 mM. With ATP\u03b3S, kinc is >30-fold slower and kdec,1 is not observed, demonstrating that ATP binding is required for the first conformational change and ATP hydrolysis for the second.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C64-C73 describe the ATP dependence of the loading phases. The experimental data in Figure 2\u2014figure supplement 2 clearly show that kinc is ATP-independent (C64) while kdec,1 requires ATP hydrolysis (C70-C71). The interpretation that loading proceeds through two distinct phases (C72) is well-supported by the differential ATP requirements. The conclusion about ATP binding vs. hydrolysis (C67) is consistent with previous literature and the current data.",
+    "evaluation": "Claims C64-C72 are supported by data in Figure 2\u2014figure supplement 2. The differential ATP dependence of the two phases and the behavior with ATP\u03b3S provide strong evidence for the mechanistic interpretation. The conclusion that ATP binding drives one step and hydrolysis drives another is well-supported.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R4",
+    "result_id": "R9",
     "claim_ids": [
+      "C73",
       "C74",
       "C75",
       "C76",
@@ -75,106 +173,109 @@
       "C81",
       "C82",
       "C83",
-      "C84",
+      "C84"
+    ],
+    "result": "Pulse-chase experiments reveal that PCNA loading proceeds through four phases within a single binding encounter. In the presence of unlabeled PCNA chase, two additional FRET decrease phases appear (kdec,2 = 0.43 \u00b1 0.070 s\u207b\u00b9, kdec,3 = 0.058 \u00b1 5.7 \u00d7 10\u207b\u2074 s\u207b\u00b9), representing dissociation of PCNA from DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C84 are supported by data in Figure 3B. The pulse-chase design effectively distinguishes phases occurring within the initial binding encounter from subsequent events. The alignment of kinc and kdec,1 in the presence and absence of chase (C78-C80) supports the interpretation of a single reaction species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
       "C85",
       "C86",
-      "C87"
+      "C87",
+      "C88"
     ],
-    "result": "Pulse-chase experiments reveal that RFC-catalyzed PCNA loading proceeds through four observed phases within a single binding encounter. The rate constants for the FRET increase (kinc = 6.1 \u00b1 0.59 s\u207b\u00b9) and initial FRET decrease (kdec,1 = 1.6 \u00b1 0.33 s\u207b\u00b9) in the presence of chase match those observed without chase, demonstrating these occur within the initial binding encounter. Two additional phases (kdec,2 = 0.43 \u00b1 0.070 s\u207b\u00b9 and kdec,3 = 0.058 \u00b1 5.7 \u00d7 10\u207b\u2074 s\u207b\u00b9) appear only with chase and represent dissociation of PCNA from DNA.",
+    "result": "The manuscript contrasts the reported stability of isolated PCNA\u2022DNA complexes (half-life 22-80 min) with the rapid dissociation observed in their experiments (minimal half-life ~12 s), suggesting RFC unloads PCNA without first dissociating from DNA.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C74-C87 describe pulse-chase experiments that reveal the complete loading pathway. The experimental data in Figure 3B clearly show the four phases when chase is present (C77-C78). The agreement between rate constants with and without chase for the first two phases (C79) supports the interpretation that these occur within the initial binding encounter (C80). The appearance of two additional phases only with chase (C84) and their interpretation as PCNA dissociation (C85) is well-supported by the experimental design and data.",
+    "evaluation": "Claims C85-C87 are supported by the comparison between literature values and the experimental data from Figure 3. The dramatic difference in stability suggests active unloading by RFC. However, C88 is speculative about whether the two activities occur in the same binding encounter, though this is later confirmed by additional experiments.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R5",
+    "result_id": "R11",
     "claim_ids": [
-      "C88",
       "C89",
       "C90",
-      "C91"
-    ],
-    "result": "The results suggest that DNA-bound PCNA is unstable and rapidly dissociates with a minimal half-life of 12 seconds, in stark contrast to isolated PCNA\u2022DNA complexes which have reported half-lives of 22-80 minutes. This raises the possibility that RFC unloads PCNA without first dissociating into solution, meaning the two opposing activities of RFC (loading and unloading) may occur within the same binding encounter with DNA.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C88-C91 compare the stability of PCNA on DNA in different contexts. The calculation of the 12-second half-life (C89) is based on the measured kdec,3 rate constant from Figure 3B. The contrast with literature values for isolated PCNA\u2022DNA complexes (C88) is appropriately cited. The inference that RFC may unload PCNA without dissociating (C90-C91) is a reasonable interpretation of the rapid dissociation observed in the pulse-chase experiments.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
+      "C91",
       "C92",
       "C93",
-      "C94",
-      "C95",
-      "C96",
-      "C97"
+      "C94"
     ],
-    "result": "Direct monitoring of PCNA dissociation from pre-assembled RFC\u2022PCNA\u2022DNA complexes shows that in the absence of chase, the FRET signal remains constant at equilibrium. In the presence of chase, PCNA dissociates in a biphasic manner with rate constants of 0.40 \u00b1 0.083 s\u207b\u00b9 (fast phase, 83% amplitude) and 0.039 \u00b1 0.012 s\u207b\u00b9 (slow phase, 17% amplitude). These rate constants are independent of chase concentration, demonstrating that unlabeled PCNA serves as a passive trap and suggesting at least two populations of the ternary complex are formed.",
+    "result": "Direct monitoring of PCNA dissociation from pre-assembled RFC\u2022PCNA\u2022DNA complexes shows biphasic dissociation with rate constants of 0.40 \u00b1 0.083 s\u207b\u00b9 (83%) and 0.039 \u00b1 0.012 s\u207b\u00b9 (17%), independent of unlabeled PCNA trap concentration, suggesting at least two populations of the ternary complex.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C92-C97 describe direct PCNA dissociation experiments. The experimental data in Figure 4B clearly show the biphasic dissociation (C93) and the equilibrium behavior without chase (C92). The independence of rate constants from chase concentration (C94, shown in Figure 4\u2014figure supplement 1) supports the passive trap interpretation (C95). The inference of two populations (C97) is reasonable given the biphasic kinetics.",
+    "evaluation": "Claims C89-C94 are supported by data in Figure 4B and Table 2. The biphasic dissociation is clearly observed, and the independence from trap concentration (Figure 4\u2014figure supplement 1) confirms the trap is passive. The inference of two populations is reasonable from the biphasic kinetics.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R7",
+    "result_id": "R12",
     "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
       "C98",
       "C99",
       "C100",
       "C101",
       "C102",
       "C103",
-      "C107",
-      "C108"
+      "C104",
+      "C105",
+      "C106"
     ],
-    "result": "Only the faster of the two PCNA dissociation phases (kdec,2) is dependent on ATP concentration, remaining constant at 0.54 \u00b1 0.080 s\u207b\u00b9 up to 1 mM ATP then decreasing at higher concentrations. The slower phase (kdec,3) remains constant at 0.057 \u00b1 0.0044 s\u207b\u00b9 across all ATP concentrations. Spontaneous PCNA disassembly through subunit exchange (6.30 \u00d7 10\u207b\u00b3 s\u207b\u00b9) was never observed in the presence of ATP and is 6.7- to 67-fold slower than the observed dissociation phases, suggesting one or both populations of loaded PCNA may be actively unloaded by RFC.",
+    "result": "The faster dissociation phase (kdec,2) is ATP-dependent, remaining constant at 0.54 \u00b1 0.080 s\u207b\u00b9 up to 1 mM ATP then decreasing, while the slower phase (kdec,3 = 0.057 \u00b1 0.0044 s\u207b\u00b9) is ATP-independent. Spontaneous subunit exchange is not observed in the presence of ATP, suggesting active unloading by RFC.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C98-C108 describe the ATP dependence of PCNA dissociation and comparison to spontaneous disassembly. The experimental data in Figure 4\u2014figure supplement 2B clearly show the differential ATP dependence of the two phases (C98-C101). The comparison to subunit exchange rates (C102-C103, C107) is appropriate, though the subunit exchange rate is from unpublished data. The inference that RFC actively unloads PCNA (C108) is reasonable given the much faster observed rates compared to spontaneous disassembly.",
+    "evaluation": "Claims C95-C106 are supported by data in Figure 4\u2014figure supplement 2. The differential ATP dependence of the two phases and the comparison to subunit exchange rates provide strong evidence for active unloading. The speculation in C106 is reasonable given the data.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R8",
+    "result_id": "R13",
     "claim_ids": [
+      "C107",
+      "C108",
       "C109",
       "C110",
       "C111",
       "C112",
-      "C113",
-      "C114"
+      "C113"
     ],
-    "result": "Dissociation of RFC and PCNA from P/T DNA is intimately coordinated such that all RFC ejects simultaneously with PCNA through dissociation of both populations of the RFC\u2022PCNA\u2022P/T DNA complex. The clamp loading-unloading pathway reaches equilibrium after initial loading because subsequent loading events occur with rate constants equal to dissociation rate constants. The ratio AT,reload/AT,unload equals the fraction of labeled PCNA in the reaction, and a plot of this ratio vs. fraction of Cy5-PCNA yields a straight line with Y-intercept ~0.0 and slope ~1.0, indicating no PCNA is left behind on DNA upon RFC ejection.",
+    "result": "PCNA reloading experiments show that RFC and PCNA dissociate coordinately from DNA, with rate constants matching those for PCNA dissociation. The ratio AT,reload/AT,unload equals the fraction of labeled PCNA, demonstrating that all PCNA loaded by RFC is unloaded by RFC without leaving any behind.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C109-C114 describe the coordination between RFC and PCNA dissociation. The experimental data in Figure 4D and Table 3 show that the rate constants for FRET signal reappearance match those for disappearance (C110), supporting the equilibrium interpretation. The linear relationship between AT,reload/AT,unload and fraction of labeled PCNA (C112, shown in Figure 4\u2014figure supplement 3) with the expected slope and intercept strongly supports the conclusion that all PCNA is unloaded by RFC (C113-C114).",
+    "evaluation": "Claims C107-C113 are supported by data in Figure 4D, Table 3, and Figure 4\u2014figure supplement 3. The mirror-image kinetics and the linear relationship between AT,reload/AT,unload and the fraction of labeled PCNA provide strong quantitative evidence that RFC unloads all loaded PCNA.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R9",
+    "result_id": "R14",
     "claim_ids": [
+      "C114",
       "C115",
       "C116",
       "C117",
       "C118",
-      "C119",
-      "C120"
+      "C119"
     ],
-    "result": "Experiments on DNA substrates lacking the single-stranded flap yielded the same results, demonstrating that all PCNA dissociates via the same pathway independently of the flap. This rules out the possibility that the flap traps RFC on DNA. Instead, RFC remains at or near the P/T junction by anchoring to the adjacent single-stranded DNA of the template strand, not the flap. Subsequently, RFC dissociates back into solution taking all loaded PCNA with it, demonstrating that the opposing activities of RFC (loading and unloading) both occur within the same binding encounter with a given P/T junction.",
+    "result": "Experiments with DNA substrates lacking the single-stranded flap show identical behavior, demonstrating that RFC remains at the P/T junction by anchoring to the template strand, not the flap. The opposing activities of RFC (loading and unloading) occur within the same binding encounter.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C115-C120 describe experiments with DNA lacking the flap. The experimental data in Figure 4\u2014figure supplement 4 and Tables 2 and 3 show that removing the flap does not change the dissociation behavior (C115), supporting the conclusion that the flap is not required (C116). The inference about RFC anchoring to the template strand (C118) is reasonable given the known specificity of RFC for P/T junctions (C117, supported by citation). The conclusion that loading and unloading occur in the same binding encounter (C120) is well-supported by the cumulative data.",
+    "evaluation": "Claims C114-C119 are supported by data in Figure 4\u2014figure supplement 4 and Tables 2-3. The identical behavior with and without the flap rules out the flap-trapping model and supports the conclusion that RFC anchors to the template strand. The conclusion about same-encounter loading/unloading is well-supported.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R10",
+    "result_id": "R15",
     "claim_ids": [
+      "C120",
       "C121",
       "C122",
       "C123",
@@ -182,205 +283,312 @@
       "C125",
       "C126",
       "C127",
-      "C128",
+      "C128"
+    ],
+    "result": "In the presence of polymerase \u03b4, only the overall amplitude increases while rate constants remain unchanged and independent of polymerase concentration. This demonstrates that polymerase does not actively displace RFC; rather, RFC dissociates independently in a biphasic manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C128 are supported by data in Figure 4D, Table 3, and Figure 4\u2014figure supplement 6. The independence of rate constants from polymerase concentration is strong evidence against active displacement. The inference of two RFC forms is reasonable from the biphasic dissociation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
       "C129",
       "C130",
       "C131",
       "C132",
       "C133",
       "C134",
-      "C135"
-    ],
-    "result": "Human replicative polymerases \u03b4 and \u03b5 share common binding sites on PCNA with RFC. In the presence of pol\u03b4, AT,Reload/AT,Unload increases from 0.51 to 1.0, suggesting pol\u03b4 captures all loaded PCNA from DNA-bound RFC. RFC dissociates from P/T DNA in a biphasic manner independently of both PCNA and pol\u03b4 concentration, indicating pol\u03b4 does not actively displace RFC but rather passively captures loaded PCNA. This effectively inhibits RFC's unloading activity by physical occlusion, and RFC subsequently dissociates leaving behind the functional holoenzyme consisting of PCNA and pol\u03b4.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C121-C135 describe holoenzyme formation with pol\u03b4. The experimental data in Figure 4D and Table 3 clearly show the increase in AT,Reload/AT,Unload to 1.0 in the presence of pol\u03b4 (C127), supporting the interpretation that pol\u03b4 captures all loaded PCNA (C128). The independence of RFC dissociation rate constants from pol\u03b4 concentration (C123, shown in Figure 4\u2014figure supplement 6) supports the passive capture model (C173). The titration experiment (C130, Figure 4\u2014figure supplement 5) showing saturation at stoichiometric concentrations (C131) further supports the model.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
+      "C135",
       "C136",
       "C137",
       "C138",
       "C139",
-      "C140",
-      "C141",
-      "C142",
-      "C143",
-      "C144",
-      "C145"
+      "C140"
     ],
-    "result": "In the presence of ATP, RFC binds the C-terminal face of PCNA and opens the PCNA ring for assembly on P/T DNA, a process requiring only ATP binding and not hydrolysis. The open RFC\u2022ATP\u2022PCNA complex specifically recognizes and binds a P/T junction very rapidly, most likely in a diffusion-limited manner. Upon binding DNA, ATP-bound clamp loaders adopt a conserved 'notched screw cap' conformation that closely mimics the helical geometry of bound DNA. The kinc phase represents the RFC\u2022ATP\u2022PCNA complex adopting this notched screw cap arrangement on P/T DNA.",
+    "result": "Polymerase \u03b4 captures all loaded PCNA from DNA-bound RFC, as shown by AT,reload/AT,unload increasing from 0.51 to 1.0 in the presence of stoichiometric polymerase. This capture inhibits RFC's unloading activity by physical occlusion, and RFC subsequently dissociates, leaving behind the functional holoenzyme.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C136-C145 describe the mechanism of PCNA ring opening and RFC\u2022PCNA\u2022DNA complex formation. The requirement for ATP binding but not hydrolysis (C137) is supported by citations to previous work and confirmed by the current ATP\u03b3S experiments (C138). The rapid association (C140) is supported by the current FRET data showing binding within the instrument dead time. The notched screw cap conformation (C141-C144) is well-established in the literature through structural studies. The interpretation that kinc represents adoption of this conformation (C145) is a reasonable inference from the kinetic data.",
+    "evaluation": "Claims C129-C140 are supported by data in Table 3, Figure 4\u2014figure supplement 5, and related experiments. The quantitative relationship between polymerase concentration and PCNA stabilization provides strong evidence for the capture model. The conclusion that all loaded PCNA is competent for holoenzyme formation is well-supported.",
     "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C146",
-      "C147",
-      "C148",
-      "C149",
-      "C150"
-    ],
-    "result": "After adopting the notched screw cap arrangement, the RFC\u2022ATP\u2022PCNA\u2022P/T DNA complex undergoes a second conformational change (kdec,1) which requires ATP hydrolysis. In this arrangement, ATP hydrolysis is optimized and is essential for assembly of a PCNA clamp that can slide along DNA and associate with pol\u03b4. The authors speculate that kdec,1 reflects closing of the PCNA ring around DNA upon ATP hydrolysis by RFC. Upon hydrolysis of ATP, RFC does not immediately eject from the PCNA\u2022P/T DNA complex.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C146-C150 describe the ATP hydrolysis-dependent conformational change. The requirement for ATP hydrolysis (C146) is clearly demonstrated by the ATP\u03b3S experiments (Figure 2\u2014figure supplement 2C). The optimization of ATP hydrolysis in the notched screw cap arrangement (C147) and the requirement for ATP hydrolysis for functional PCNA loading (C148) are supported by citations to structural and biochemical studies. The speculation that kdec,1 represents ring closure (C149) is reasonable but appropriately labeled as speculation. The conclusion that RFC does not immediately eject (C150) is strongly supported by the pulse-chase and dissociation experiments.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
-      "C151",
-      "C152",
-      "C153",
-      "C154",
-      "C155",
-      "C156",
-      "C157",
-      "C158",
-      "C159",
-      "C160",
-      "C161",
-      "C162",
-      "C163",
-      "C164",
-      "C165"
-    ],
-    "result": "In the absence of pol\u03b4, all PCNA loaded onto DNA by RFC is unloaded by RFC back into solution, meaning PCNA and RFC are always present together on a given P/T DNA. The authors propose that upon ATP hydrolysis and PCNA ring closure, RFC releases PCNA onto DNA. In the absence of pol\u03b4, all loaded PCNA re-engages with DNA-bound RFC and the RFC\u2022PCNA complex together ejects from the P/T DNA. Unloading is entirely rate-limited by RFC dissociation from P/T DNA, which is biphasic with ~80% dissociating fast and ~20% dissociating ~10-fold slower, suggesting at least two forms of RFC are present.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C151-C165 describe the unloading mechanism and RFC dissociation. The conclusion that all PCNA is unloaded by RFC (C151) is strongly supported by the amplitude analysis (Figure 4\u2014figure supplement 3). The proposal that RFC releases PCNA onto DNA (C157) is reasonable given the data, though appropriately labeled as a proposal. The biphasic RFC dissociation (C161) is clearly shown in the data. The inference that only the faster phase depends on ATP hydrolysis (C162) is supported by Figure 4\u2014figure supplement 2B. The speculation about nucleotide exchange at high ATP (C163) is reasonable but appropriately labeled as speculation.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C166",
-      "C167",
-      "C168",
-      "C169",
-      "C170",
-      "C171"
-    ],
-    "result": "The proposed model suggests at least two distinct ATP hydrolysis-dependent steps occur within the initial binding encounter of RFC with a P/T junction. Previous reports on clamp loaders from E. coli, A. fulgidus, and S. cerevisiae have provided experimental evidence for sequential ATP hydrolysis, and recent crystallographic studies on the T4 bacteriophage clamp loader have provided structural insights. In this model, ATP is hydrolyzed in one clamp loader subunit causing the clamp to close, and conformational changes are propagated to remaining subunits, inducing sequential ATP hydrolysis.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C166-C171 discuss the sequential ATP hydrolysis model. The conclusion that there are at least two ATP hydrolysis-dependent steps (C166) is supported by the current kinetic data showing kdec,1 and kdec,2 both depend on ATP. The citations to previous work on sequential ATP hydrolysis (C167) and structural studies (C168-C170) appropriately place the current findings in context. However, the authors correctly note that their studies cannot distinguish between 'all or none' vs. sequential hydrolysis models, so this remains somewhat speculative for the human system.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C172",
-      "C173",
-      "C174",
-      "C175",
-      "C176",
-      "C177"
-    ],
-    "result": "Assembly of the human holoenzyme may occur by either active displacement of RFC by incoming polymerases or passive capture of PCNA while transiently disengaged from DNA-bound RFC. The data showing RFC dissociation is independent of pol\u03b4 concentration is consistent with passive capture. However, this does not rule out that DNA-bound RFC may chaperone replicative polymerases to the P/T junction, and RFC has been shown to interact with pol\u03b4.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C172-C177 discuss the mechanism of holoenzyme formation. The speculation about two possible models (C172) is appropriate given the data. The conclusion that the data support passive capture (C173) is well-supported by the pol\u03b4 concentration independence experiments (Figure 4\u2014figure supplement 6). The acknowledgment that chaperoning is not ruled out (C175) is appropriate scientific caution. The citation to RFC-pol\u03b4 interaction (C177) provides additional context.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C178",
-      "C179",
-      "C180",
-      "C181",
-      "C182",
-      "C183"
-    ],
-    "result": "In the notched screw cap complex, human RFC anchors to the single-stranded region of the P/T junction covering 12 nucleotides of the template strand and extends into the double-stranded region. The open PCNA clamp expands the protected region to ~25 bp. Due to the minimal double-stranded region (30 bp) and the Neutravidin block in the experimental substrate, loaded PCNA can slide at most 20 bp away from the P/T junction. This is believed to represent the in vivo situation where PCNA is loaded onto ~30 nt RNA-DNA hybrid primers blocked by RPA.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C178-C183 describe the structural constraints on PCNA movement. The DNA footprints of RFC and RFC\u2022PCNA (C178-C179) are supported by citations to previous footprinting studies. The calculation of maximum PCNA sliding distance (C182) is a straightforward inference from the substrate design and PCNA structure. The comparison to the in vivo situation (C183) is appropriately cited and provides biological context for the experimental design.",
-    "result_type": "MINOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
-      "C184",
-      "C185",
-      "C186",
-      "C187",
-      "C188",
-      "C189",
-      "C190",
-      "C191",
-      "C192"
+      "C141",
+      "C142",
+      "C143",
+      "C144"
     ],
-    "result": "Recent crystallographic studies from Kelch et al. on the T4 bacteriophage clamp loader\u2022clamp\u2022DNA complex show two forms: an ATP-bound form with the notched screw cap conformation, and a form where the clamp is closed and the B subunit has hydrolyzed ATP and partially disengaged, causing partial collapse of the clamp loader spiral that retracts the clamp loader toward the P/T junction. The authors speculate that as ATP hydrolysis propagates around the human clamp loader, RFC retracts toward the P/T junction. Supporting this, limiting the double-stranded region to 25 bp had no effect on PCNA unloading or holoenzyme formation.",
+    "result": "The manuscript claims to provide the first complete description of the human clamp loading-unloading pathway, addressing gaps and contested points in previous studies that were often indirect and qualitative.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C184-C192 discuss the structural basis for RFC retraction. The description of the T4 structural studies (C184-C189) is appropriately cited. The speculation about RFC retraction in the human system (C190) is reasonable extrapolation from the T4 structures. Importantly, this speculation is tested experimentally (C191), and the data in Figure 4\u2014figure supplement 8 and Tables 2 and 3 support the inference that RFC retracts toward the P/T junction (C192).",
+    "evaluation": "Claims C141-C144 are reasonable characterizations of the contribution. The manuscript does provide the first real-time monitoring of both loading and unloading activities simultaneously in the human system, and the FRET approach is more direct than previous methods.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R18",
     "claim_ids": [
-      "C193",
-      "C194",
-      "C195",
-      "C196",
-      "C197",
-      "C198"
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
     ],
-    "result": "The amount of PCNA in human cells during S-phase is estimated at ~2 \u00d7 10\u2075 per cell, and PCNA must be re-used hundreds to thousands of times per cell cycle, necessitating an efficient unloading mechanism. The results demonstrate that RFC loads PCNA onto a P/T junction and, in the absence of pol\u03b4, catalytically unloads all loaded PCNA without first dissociating into solution. This may maximize PCNA utilization by inhibiting build-up of free PCNA on DNA in the absence of polymerase. Presumably, once pol\u03b4 disengages, RFC may unload PCNA for recycling.",
+    "result": "The manuscript proposes a complete mechanistic model for human holoenzyme assembly involving: (1) RFC\u2022ATP binding and opening PCNA, (2-3) binding to P/T junction and adopting the notched screw cap arrangement, (4) ATP hydrolysis closing PCNA and releasing it onto DNA, (5-6) in the absence of polymerase, PCNA re-engagement with RFC and unloading, and (7-8) in the presence of polymerase, PCNA capture and RFC dissociation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C193-C198 discuss the biological significance of RFC's unloading activity. The estimate of PCNA abundance (C193) is appropriately cited. The inference about PCNA re-use (C194) is reasonable given genome size and the number of replication events. The conclusion that RFC unloads PCNA without dissociating (C196) is strongly supported by the experimental data. The speculation about maximizing PCNA utilization (C197) and recycling after pol\u03b4 dissociation (C198) are reasonable inferences from the data, though appropriately presented as speculation.",
+    "evaluation": "Claims C145-C152 represent the integrated model shown in Figure 5, which is well-supported by the experimental data from the FRET studies. Each step is supported by specific experimental observations, though some mechanistic details (like the exact timing of ring closure) involve reasonable inference.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R19",
     "claim_ids": [
-      "C199",
-      "C200",
-      "C201",
-      "C202",
-      "C203",
-      "C204"
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
     ],
-    "result": "In replicating eukaryotic cells, PCNA left behind on DNA serves as a cell signal for chromatin assembly, sister chromatid cohesion, and translesion synthesis. Some PCNA rings must remain on DNA after dissociation of replicative polymerases. This suggests the PCNA unloading activity of RFC is tightly coordinated with these activities, perhaps through post-translational modifications of PCNA, RFC, or both.",
+    "result": "The manuscript discusses PCNA ring opening, noting it has not been directly monitored in humans but previous studies suggest it requires only ATP binding. The current FRET experiments demonstrate that RFC\u2022ATP\u2022PCNA\u2022DNA complex assembly occurs with ATP\u03b3S, supporting this model.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C199-C204 discuss the broader biological context of PCNA stability on DNA. The roles of PCNA in chromatin assembly (C199), sister chromatid cohesion (C200), and translesion synthesis (C201-C202) are appropriately cited. The inference that some PCNA must remain on DNA (C203) is logical given these known functions. The speculation about coordination through post-translational modifications (C204) is reasonable and appropriately presented as speculation.",
+    "evaluation": "Claims C153-C157 appropriately acknowledge the limitation that ring opening was not directly observed while providing supporting evidence from ATP\u03b3S experiments. The citations to previous work and the consistency with current data support the interpretation.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R20",
     "claim_ids": [
-      "C205",
-      "C206",
-      "C207",
-      "C208",
-      "C209",
-      "C210"
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
     ],
-    "result": "SUMO is attached to PCNA during S-phase in S. cerevisiae, serving to prevent homologous recombination by recruiting the Srs2 helicase. This modification leads to accumulation of SUMO-PCNA on chromatin in the absence of ELG1-RFC, suggesting it may inhibit native RFC's unloading activity. SUMO attachment to PCNA has recently been established in humans, though its effects are unknown. Human RFC is ubiquitylated in a DNA damage-dependent manner, and it is speculated that this may inhibit RFC's PCNA unloading activity during translesion synthesis.",
+    "result": "The manuscript discusses the notched screw cap arrangement, noting that while the structure has not been determined for the human system, the DNA footprints of human RFC and RFC\u2022PCNA complexes agree with predictions from other organisms. The arrangement occurs prior to ATP hydrolysis.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C205-C210 discuss post-translational modifications of PCNA and RFC. The information about SUMO modification of PCNA in yeast (C205-C207) is appropriately cited. The statement about recent establishment in humans (C208) is appropriately cited to recent work. The information about RFC ubiquitylation (C209) is appropriately cited. The speculation about its function (C210) is reasonable given the temporal correlation with TLS and is appropriately presented as speculation.",
+    "evaluation": "Claims C158-C163 appropriately cite structural work from other systems and note the lack of human structures. The agreement between human DNA footprints and structural predictions from other organisms provides reasonable support for the model. The conclusion about timing relative to ATP hydrolysis is supported by the ATP\u03b3S data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The manuscript interprets kinc as representing the RFC\u2022ATP\u2022PCNA complex adopting the notched screw cap arrangement on DNA, based on its independence from ATP concentration up to 5 mM and its observation with ATP\u03b3S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C167 represent a reasonable interpretation of the kinetic data. The independence from ATP concentration and the observation with ATP\u03b3S are consistent with a conformational change that requires ATP binding but not hydrolysis, which fits the notched screw cap model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "The manuscript interprets kdec,1 as reflecting PCNA ring closure upon ATP hydrolysis, based on its requirement for ATP hydrolysis and the essential role of ATP hydrolysis in forming a functional PCNA clamp. The studies cannot discern the exact number of ATP molecules hydrolyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C174 represent reasonable speculation based on the data. The requirement for ATP hydrolysis is clearly demonstrated, and the interpretation as ring closure is consistent with previous work showing ATP hydrolysis is essential for functional clamp assembly. The acknowledged limitations are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "The manuscript proposes that RFC releases PCNA onto DNA after ATP hydrolysis and ring closure, based on the ability to isolate PCNA\u2022DNA complexes devoid of RFC in previous studies using circular DNA without blocks to sliding, and the decreased unloading when Neutravidin is omitted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C186 integrate current data with previous observations to propose a model where RFC releases PCNA onto DNA. The evidence from experiments without Neutravidin (C184) and the reconciliation with previous isolation of PCNA\u2022DNA complexes provide reasonable support for this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The manuscript proposes that in the absence of polymerase, loaded PCNA re-engages with RFC, which must re-open the closed ring prior to unloading. The unloading process is rate-limited by RFC dissociation from DNA, not by ring re-opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C191 are supported by the data showing coordinated dissociation of RFC and PCNA (Figure 4) and the equivalence of rate constants for RFC\u2022PCNA and RFC alone dissociation. The speculation about ATP requirements for ring re-opening (C189-C190) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "RFC dissociation from DNA is biphasic (~80% fast, ~20% slow), suggesting at least two forms of RFC with only the faster phase dependent on ATP hydrolysis. The manuscript speculates about nucleotide exchange competing with hydrolysis at high ATP concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C193 are supported by the experimental data showing biphasic dissociation. The speculation in C194-C195 about the mechanism is reasonable given the ATP concentration dependence, though it remains speculative. C196 is part of the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "The manuscript discusses whether ATP hydrolysis occurs 'all or none' or sequentially, noting that while the current studies cannot discriminate, previous work in other organisms supports sequential hydrolysis. Recent structural studies on T4 bacteriophage provide insights into this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C197-C208 appropriately acknowledge the limitation of the current study while citing relevant work from other systems. The discussion of alternative models and the evidence from other organisms is balanced and well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "The manuscript proposes that holoenzyme assembly occurs by passive capture rather than active displacement, based on the independence of RFC dissociation from polymerase concentration. However, the possibility of RFC chaperoning polymerase to the junction is not ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C209-C214 are supported by the data showing RFC dissociation is independent of polymerase (Table 3, Figure 4\u2014figure supplement 6). The acknowledgment that chaperoning is not ruled out (C212) is appropriate, and the evidence for RFC remaining transiently bound is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222"
+    ],
+    "result": "The manuscript discusses the spatial constraints at the P/T junction, noting that RFC must retract toward the junction after PCNA closure to allow polymerase binding. The experimental design with limited double-stranded DNA mimics the in vivo situation with RPA-blocked primers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C215-C222 integrate structural information from previous work with the current experimental design. The inference that RFC must retract is supported by experiments showing identical behavior with shortened DNA (Figure 4\u2014figure supplement 8). The comparison to the in vivo situation is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232"
+    ],
+    "result": "The manuscript discusses structural studies from T4 bacteriophage showing clamp loader retraction upon ATP hydrolysis, and proposes a similar mechanism may occur in the human system. Experiments with 25 bp double-stranded DNA support the retraction model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C223-C232 appropriately cite structural work from T4 bacteriophage and propose a parallel mechanism for the human system. The experimental support from the 25 bp DNA substrate (C231, Figure 4\u2014figure supplement 8) provides evidence consistent with the retraction model, though the speculation (C229-C230) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237",
+      "C238"
+    ],
+    "result": "The manuscript discusses the biological significance of RFC's unloading activity, noting that PCNA is limited during S-phase and must be recycled. The unloading activity may maximize PCNA utilization by preventing buildup of free PCNA and recycling PCNA after polymerase dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C233-C238 provide reasonable speculation about biological function based on the experimental findings and established knowledge about PCNA abundance. The dual-purpose model for RFC's unloading activity is a logical inference from the data, though C237-C238 are speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C243",
+      "C244",
+      "C245",
+      "C246",
+      "C247",
+      "C248",
+      "C249",
+      "C250",
+      "C251"
+    ],
+    "result": "The manuscript discusses the need for some PCNA to remain on DNA for chromatin assembly, sister chromatid cohesion, and translesion synthesis, suggesting RFC's unloading activity must be coordinated with these processes, possibly through post-translational modifications like SUMOylation or ubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C239-C251 appropriately cite established roles for PCNA in various cellular processes and speculate about regulatory mechanisms. The discussion of SUMO and ubiquitin modifications is supported by citations, though the speculation about their effects on RFC activity (C244, C247, C251) is appropriately qualified as speculative.",
     "result_type": "MINOR"
   }
 ]

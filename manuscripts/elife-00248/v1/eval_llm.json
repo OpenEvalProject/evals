@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors generated rsEGFP2 by introducing mutations T65A, Q69L, V163S, and A206K into EGFP, creating a fast-switching reversibly switchable fluorescent protein with a negative switching mode and an AYG chromophore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 describe the generation and basic characterization of rsEGFP2. The mutation strategy is clearly described (C24, C29, C30, C31), the switching mode is defined (C25, C26), and the chromophore composition is specified (C32, C33). The data in Figure 1 and Table 1 support these structural and functional characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "rsEGFP2 exhibits spectral properties with excitation/emission maxima at 478/503 nm, extinction coefficient of ~61,000 M\u207b\u00b9cm\u207b\u00b9, quantum yield of 0.3, and brightness similar to rsEGFP but ~60% of EGFP at low intensities and ~44% at high intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 present quantitative spectroscopic measurements supported by Figure 1A, Table 1, and Figure 1\u2014figure supplement 2. The slight brightness reduction at high intensities is attributed to dark states (C41), which is a reasonable speculation supported by FCS data described in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C53"
+    ],
+    "result": "rsEGFP2 exhibits negative switching behavior where 480 nm light induces fluorescence and switches the protein off, while 405 nm light switches it back on, likely through cis/trans isomerization accompanied by chromophore protonation state changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 describe the switching mechanism supported by absorption spectroscopy data in Figure 1B-C. The mechanistic interpretation (C45, C47, C53) is appropriately qualified as 'presumably' or 'likely' and is supported by citations to prior work on similar RSFPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "rsEGFP2 has similar single-molecule brightness to rsEGFP but shorter switching cycles, resulting in fewer photons emitted per cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 present a logical relationship between switching kinetics and photon emission. The similar brightness (C48) is supported by FCS data, while the shorter cycle time (C49) is demonstrated in Figure 1B, leading to the logical conclusion about photon emission per cycle (C50).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "rsEGFP2 has a pKa of ~5.8, which is 0.7 pH units lower than rsEGFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 report pH-dependent properties supported by Figure 1D showing absorption spectra at different pH values. The quantitative pKa determination and comparison to rsEGFP are clearly presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "rsEGFP2 accommodates approximately twice as many switching cycles as rsEGFP before photobleaching to 50% fluorescence (~2,100 vs ~1,100 cycles).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 present switching fatigue data supported by Figure 1E. The experimental conditions are clearly described, and the quantitative comparison demonstrates improved photostability of rsEGFP2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "rsEGFP2 switches off 6.5 times faster than rsEGFP at 5.5 kW/cm\u00b2, with the speed advantage increasing at lower intensities and becoming negligible above 100 kW/cm\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 describe intensity-dependent switching kinetics supported by Figure 1F. The quantitative measurements at different intensities are clearly presented, though C63 is appropriately qualified as speculative. The data demonstrate a key advantage of rsEGFP2 for low-intensity RESOLFT imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The off-state fluorescence and switching speed of rsEGFP2 depend on light intensity, irradiation time, pH, and cellular environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe environmental dependencies supported by Figure 1\u2014figure supplement 3 and experimental observations. These findings are important for optimizing imaging protocols but represent characterization rather than primary discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "rsEGFP2 is monomeric, can be fused to proteins requiring monomeric tags (H2B, \u03b1-tubulin), and matures with a halftime of ~20 min at 37\u00b0C, faster than rsEGFP (3 hr) and comparable to conventional fluorescent proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C81 describe practical properties for live-cell imaging supported by Figure 2, Figure 2\u2014figure supplement 1, and Table 1. The maturation kinetics are quantitatively measured and compared to literature values with appropriate citations. The successful fusion to H2B and \u03b1-tubulin demonstrates monomeric behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "RESOLFT imaging of Vimentin-rsEGFP2 in living cells was achieved with 380 \u00b5s pixel dwell time (25-50\u00d7 faster than rsEGFP), <50 nm resolution, and 65% fluorescence retention after 20 images over 2000 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 present live-cell RESOLFT imaging results supported by Figure 3A-B. The speed improvement, resolution measurement, and photobleaching resistance are quantitatively demonstrated. Richardson-Lucy deconvolution was applied (C84-C85), which is standard practice but should be noted when evaluating resolution claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "RESOLFT imaging of ER-targeted rsEGFP2 was achieved with 75 \u00b5s pixel dwell time (~250\u00d7 faster than rsEGFP), covering 100 \u00b5m\u00b2 in 5.9 s and revealing sub-second dynamics, though with reduced resolution (<90 nm vs <50 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 describe fast ER imaging supported by Figure 3C-D and Figure 3\u2014figure supplement 2. The speed-resolution tradeoff is explicitly acknowledged (C95), demonstrating appropriate interpretation. The ability to capture sub-second dynamics represents a significant advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "RESOLFT imaging of peroxisomes labeled with Pex16-rsEGFP2 was performed at 2 Hz, with rsEGFP2 showing substantially lower photobleaching than rsEGFP under fast imaging conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 present peroxisome imaging results supported by Figure 3E and Figure 3\u2014figure supplement 3. The direct comparison of photobleaching between rsEGFP and rsEGFP2 in the same cellular structure provides strong evidence for improved photostability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "RESOLFT microscopy with rsEGFP2 uses light intensities (1-80 kW/cm\u00b2) comparable to confocal microscopy but 3-4 orders of magnitude lower total light dose than stochastic methods (2-300 J/cm\u00b2 vs 26,000-1,000,000 J/cm\u00b2), making it the lowest-dose super-resolution method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C114 present a comprehensive comparison of light doses across super-resolution methods. The calculations are supported by experimental parameters (C109-C110) and literature values with appropriate citations (C111-C113). The conclusion about lowest light dose (C114) is justified by the quantitative comparison, though the claim is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The low light dose requirement of RESOLFT is due to using long-lived on/off states and not requiring fast photon emission for localization, with intensities determined by switching kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 explain the mechanistic basis for low light requirements in RESOLFT. The explanation is conceptually sound and supported by citation to prior work (C115). This represents established knowledge about the RESOLFT concept rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C22",
+      "C23",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "rsEGFP2 enables 25-250\u00d7 faster RESOLFT recordings than rsEGFP with pixel dwell times down to 70-75 \u00b5s, representing a bright, monomeric, photostable, fast-maturing alternative expected to outperform other green RSFPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C22-C23, C120-C123 summarize the main findings. The speed improvements are demonstrated across multiple cellular structures (Vimentin, ER, peroxisomes) with consistent results. The expectation to outperform other RSFPs (C121) is appropriately qualified as speculation but is supported by the demonstrated advantages in maturation and switching speed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "RESOLFT allows adaptation of speed and resolution to sample needs, with recording time scaling with area in point-scanning mode, but parallelization could enable 100-1000\u00d7 speedup and video-rate nanoscopy across the full field of view.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C128 discuss flexibility and future potential of RESOLFT. While C124-C125 describe demonstrated capabilities, C126-C128 are speculative about parallelized implementations. The speculation is reasonable and supported by citations, but represents future work rather than demonstrated results. The degree of parallelization (100-1000\u00d7) and video-rate capability are not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "RESOLFT microscopy uses fluorophore switching between long-lived states with low light levels to achieve super-resolution, but previous implementations with rsEGFP were limited by slow switching requiring tens of minutes for imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide background context supported by appropriate citations. These establish the motivation for developing rsEGFP2 by documenting limitations of prior work. The claims accurately represent established knowledge and prior results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Phototoxicity is a major concern in super-resolution microscopy, with STED using high intensities (5-200 MW/cm\u00b2) at long wavelengths (560-800 nm) that enable live-cell and tissue imaging including in vivo brain imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 provide context about phototoxicity in super-resolution methods with appropriate citations. These represent established knowledge used for comparison rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The RESOLFT concept offers room for accommodating novel proteins with even lower light dose requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 is speculative about future possibilities. While conceptually reasonable given that switching kinetics determine light requirements, this represents a prediction rather than a demonstrated result. No experimental evidence is provided for proteins with lower light requirements than rsEGFP2.",
+    "result_type": "MINOR"
+  }
+]

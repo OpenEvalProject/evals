@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The 20q chromosomal region is commonly deleted in myeloid malignancies. The 20q CDR affects the long arm of chromosome 20 and is predicted to harbor a tumor suppressor gene. It is detected in approximately 4% of MDS cases, 10% of polycythemia vera, 12% of primary myelofibrosis, and 1% of AML cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C11-C14 establish background knowledge about the 20q deletion in myeloid malignancies. These claims are well-supported by citations to established literature (Haase et al., 2007; Bench et al., 2000) and represent accepted knowledge in the field. The frequencies cited are specific and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Only heterozygous deletions of chromosome 20q have been found in myeloid malignancies, without evidence of homozygous deletion or mutations. This pattern implicates a gene within the 20q CDR that is essential for cell viability but whose tumor suppressor function is strongly dose-dependent and does not follow the classical Knudson two-hit model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 describe the pattern of 20q deletions and draw appropriate inferences. The observation of only heterozygous deletions is cited from Heinrichs et al., 2009 and Huh et al., 2010. The inference that this implicates a dose-dependent tumor suppressor that doesn't follow the Knudson model is logical and well-reasoned based on the cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "MYBL2 is a gene located near the center of the 20q CDR that encodes a highly conserved transcription factor acting as a major component of the dREAM complex, which controls the G2-to-M phase transition. MYBL2 was among the top-scoring genes downregulated in MDS cells with 20q aberrations compared to normal CD34+ controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C18-C21 establish MYBL2's location and function. The genomic location is supported by Figure 1\u2014figure supplement 2, the downregulation is shown in Figure 1\u2014figure supplement 1, and the functional role is appropriately cited from Korenjak et al., 2004 and Lewis et al., 2004. All claims are well-supported by data and citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "MYBL2 is expressed at sharply reduced levels (mean 32.8%, \u226445% of normal) in 65% of MDS cases (17 of 26 patients), whether or not they harbor 20q abnormalities. The mean expression in 20q aberrant cases was 39% of normal, suggesting mechanisms beyond simple haploinsufficiency. These findings suggest MYBL2 functions as a dose-dependent tumor suppressor gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C22-C29 present the core clinical finding of reduced MYBL2 expression in MDS. The data are supported by microarray analysis (Figure 1A, Figure 1\u2014figure supplement 3A), validated by qRT-PCR (Figure 1B), with high correlation (r=0.966, Figure 1\u2014figure supplement 3B). The sample size (n=26) is adequate for the initial discovery, and the validation strengthens the findings. The conclusion that MYBL2 functions as a dose-dependent tumor suppressor is appropriately cautious ('suggesting').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "MYBL2 knockdown in normal CD34+ cells results in downregulation of 81 of 89 differentially expressed genes. GSEA identified mitosis, specifically the G2-to-M phase transition, as the key biological process reflected by the MYBL2 gene signature. This signature is robustly enriched in MDS CD34+ cells, with expression levels of MYBL2-regulated genes corresponding closely with MYBL2 itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 establish the MYBL2 gene signature and its relevance to MDS. The knockdown experiments used eight different shRNAs (Figure 2A-B), which controls for off-target effects. GSEA analysis (Figure 2\u2014figure supplement 2) appropriately identifies the G2-to-M transition, consistent with MYBL2's known function. The enrichment in MDS samples (Figure 2C-D) demonstrates biological relevance. The use of multiple shRNAs and validation in patient samples strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Using a k-nearest neighbor classifier, 56% (10 of 18) of normal-karyotype MDS cases from the authors' cohort and 38% (36 of 94) from an independent cohort (Pellagatti et al., 2010) were classified as having a MYBL2-low signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 validate the MYBL2-low signature in normal karyotype MDS. The use of a KNN classifier is appropriate, and validation in an independent cohort (Pellagatti et al., 2010) strengthens the findings. The percentages differ between cohorts (56% vs 38%), which could reflect cohort differences or classification stringency, but both demonstrate substantial prevalence. The validation approach is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Two MDS cases with heterozygous somatic MYBL2 mutations were identified by resequencing 144 patients. Both mutations were in the C-terminus. Functional validation showed that the truncated mutation from patient 27 was inactivating (failed to rescue SKM1 cell viability upon MYBL2 knockdown), while the mutation from patient 28 retained function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 document MYBL2 mutations in MDS. The sequencing of 144 patients is adequate, and germline DNA validation confirms somatic origin. The functional validation using knockdown/rescue experiments (Figure 4B) is rigorous and demonstrates that at least one mutation is truly inactivating. The finding of only 2 mutations in 144 patients (1.4%) indicates mutations are rare but functionally important when present.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "DNA methylation analysis of the MYBL2 CpG island in bone marrow DNA from 30 MDS patients failed to detect methylated cytosines, indicating that DNA methylation is not a frequent mechanism for MYBL2 downregulation in MDS. This is supported by an independent study of 83 MDS cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 rule out DNA methylation as a major mechanism. The analysis of 30 patients is adequate for this negative finding, and the supporting citation (Del Rey et al., 2012) examining 83 cases strengthens the conclusion. However, the primary data are from a personal communication (JP Issa, 2012), which is less rigorous than published data, though the independent validation mitigates this concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "mir-29a and mir-30e target MYBL2, and upregulation of either miRNA was observed in three of seven cases with MYBL2 downregulation, but not in controls or cases with normal MYBL2 expression. This suggests miRNA overexpression as a mechanism for MYBL2 downregulation in a substantial fraction of MDS cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C52 propose miRNA-mediated downregulation of MYBL2. The targeting of MYBL2 by mir-29a and mir-30e is appropriately cited (Han et al., 2010; Martinez et al., 2011). However, the sample size is very small (7 low MYBL2 cases, 2 normal, 3 controls), and only 3 of 7 cases showed miRNA upregulation (Figure 4\u2014figure supplement 1). This leaves the mechanism unexplained in the majority of MYBL2-low cases. The conclusion that this is a mechanism in 'a substantial fraction' is not well-supported by the limited data. Larger studies are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In competitive reconstitution assays, Mybl2 knockdown to 20-30% of normal levels using shRNAs M3 and M4 resulted in clonal dominance of transduced cells. At 12 weeks post-transplantation, GFP+/Mybl2-shRNA cells showed significantly higher median frequency than RFP+/control cells (30.9% vs 2.6%, p<0.0001). This clonal advantage was confirmed with single hairpins and in color-swap experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 demonstrate clonal advantage from Mybl2 knockdown. The experimental design is rigorous: pooled shRNAs initially (Figure 5), then validation with single hairpins (Figure 6B), and color-swap controls (Figure 6C). The statistical significance is strong (p<0.0001), and controls show minimal expansion. The identification of M3 and M4 as the dominant shRNAs by qPCR (Figure 6\u2014figure supplement 1) and subsequent validation with these specific hairpins strengthens the findings. The 20-30% knockdown level is well-characterized (Figure 5\u2014figure supplement 1, Figure 6F).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "At 6-7 months post-transplantation, Mybl2-knockdown cells showed marked expansion in bone marrow across all blood cell lineages (lymphocytes and myeloid cells), with myeloid cells most prominently affected (>90% GFP+ in Gr1+/Mac1+ population in 3 of 5 mice). Bone marrow erythropoiesis was reduced. Mybl2 expression was confirmed at 20-30% of control levels, without affecting cell cycle phase distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C61-C67 characterize the long-term consequences of Mybl2 knockdown. The multilineage expansion (Figure 5D-F) demonstrates that the effect originates from multipotent progenitors. The reduction in erythropoiesis (Figures 5G-I, 6E) is consistent across experiments. The confirmation of Mybl2 levels by Western blot and qRT-PCR (Figure 6F) validates sustained knockdown. The lack of G2-M delay (Figure 6\u2014figure supplement 2) is important, showing that 20-30% expression is sufficient for cell cycle progression but still confers clonal advantage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "By 6-7 months post-transplantation, mice with Mybl2 knockdown developed anemia (12 of 13 mice), splenomegaly with extramedullary hematopoiesis (12 of 13 mice), and hypercellular bone marrow with >95% mature myeloid cells, <5% erythroid cells, and 2% dysplastic cells. One mouse developed erythroid leukemia. These findings indicate a clonal myeloproliferative disorder with dysplastic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 demonstrate disease development. The blood count data (Figure 7A) show consistent anemia with normal WBC and platelets, consistent with MDS. The histopathology (Figure 7B-K) is well-documented and shows clear myeloproliferative features with dysplasia. The high penetrance (12 of 13 mice) is impressive. The development of erythroid leukemia in one mouse (Figure 7\u2014figure supplement 1) suggests potential for progression. The pathologic characterization is thorough and supports the conclusion of myeloproliferative/myelodysplastic disorder.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C76",
+      "C77"
+    ],
+    "result": "The myeloproliferative/myelodysplastic disorder originates from cells with reduced Mybl2 expression. Within the LSK population, HSCs were diminished, MPPs were maintained, and LRPs were increased in Mybl2-knockdown cells compared to non-transduced cells, indicating clonal dominance first evident in the LRP fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C76-C77 identify the cellular origin of the disorder. The tracking of GFP+ cells throughout experiments demonstrates origin from Mybl2-knockdown cells. The LSK analysis (Figure 7\u2014figure supplement 2) shows expansion in the LRP (lineage-restricted progenitor) fraction, suggesting the clonal advantage manifests at this stage. The diminished HSC fraction in knockdown cells is interesting and suggests the advantage is not at the most primitive level. This characterization is important for understanding the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Secondary transplantation of bone marrow or spleen cells from primary diseased mice efficiently transmitted the disorder to secondary recipients. At 10 weeks, GFP+/Mybl2-RNAi cells showed marked clonal advantage. Secondary recipients developed more severe disease with anemia and thrombocytopenia (9 of 13 animals), bone marrow dominated by Mybl2-knockdown cells, and histologic evidence of myeloproliferative disorder with dysplasia. This demonstrates the disorder is cell autonomous and that Mybl2-knockdown cells can self-renew.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 demonstrate transplantability and self-renewal. The secondary transplantation experiments (Figure 8) are critical for establishing that this is a true neoplastic disorder with self-renewing capacity. The successful transmission from both bone marrow and spleen, from four different primary donors, demonstrates reproducibility. The more severe phenotype in secondary recipients (Figure 8B) suggests disease progression. The experimental design is rigorous and the conclusions about cell autonomy and self-renewal are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C90",
+      "C91",
+      "C92",
+      "C98",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Downregulation of MYBL2 to sub-haploinsufficient levels (20-30% of normal, below the 50% predicted by classical haploinsufficiency) underlies clonal expansion of hematopoietic progenitors in a large fraction of human myeloid malignancies. The affected cells have self-renewal and long-term repopulating ability. MYBL2 is established as a key tumor suppressor gene of the 20q CDR, targeted by diverse mechanisms including chromosomal deletion, loss-of-function mutations, and miRNA-mediated repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C90-C92, C98, and C101-C103 present the main conclusions. The sub-haploinsufficient mechanism is well-supported by the clinical data (expression at 20-30% in patients) and the mouse model (optimal clonal advantage at 20-30% knockdown). The demonstration of self-renewal through secondary transplantation (C91) is rigorous. The identification of multiple mechanisms (deletion, mutation, miRNA) supports the conclusion that MYBL2 is a key tumor suppressor. The continuum model of tumor suppression (cited from Berger et al., 2011) provides appropriate theoretical framework. These conclusions are well-supported by the combined clinical and experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The heterogeneity of MDS is such that no molecular lesion affects more than 25% of cases (prevalence of 1-15% is more common). MYBL2 has been implicated as overexpressed in several cancers with poor prognosis, but no direct evidence of oncogenic activity has been reported. The proliferative fraction in myeloid neoplasia is generally quite low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 provide context for the findings. The heterogeneity of MDS is appropriately cited (Bejar et al., 2011; Shih et al., 2012), making the 65% prevalence of MYBL2 downregulation particularly notable. The discussion of MYBL2 overexpression in other cancers (Amatschek et al., 2004; Paik et al., 2004) and the lack of direct oncogenic evidence (C88) appropriately contextualizes why reduced expression in myeloid malignancies is surprising. These are well-supported contextual claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors cannot exclude that haploinsufficiency for other genes within the 20q CDR may cooperate with MYBL2 downregulation, analogous to the 5q-syndrome where RPS14 haploinsufficiency and miRNA loss are critical. Interstitial deletion of 20q is not the only mechanism for MYBL2 reduction, as evidenced by low expression in normal karyotype cases. mir-29a may be oncogenic in part because it targets Mybl2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 present appropriate caveats and speculation. The analogy to 5q-syndrome (cited from Ebert et al., 2008; Barlow et al., 2010; Starczynowski et al., 2010) is reasonable. The acknowledgment that other 20q genes may cooperate (C93) is appropriately cautious. The inference that 20q deletion is not the only mechanism (C95) is well-supported by the normal karyotype data. The speculation about mir-29a (C97) is reasonable given the cited evidence (Han et al., 2010) but appropriately tentative. These claims represent thoughtful discussion rather than definitive conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Prior work by Clarke et al. (2012) showed that Mybl2 haploinsufficiency increases susceptibility to age-related myeloid neoplasia. Expression levels below 20% appear incompatible with cell growth, consistent with MYBL2's role in G2-to-M transition and the fact that biallelic inactivation causes embryonic lethality. Earlier studies implicated progressive inactivation of CTNNA1 and graded reduction of PU.1 in myeloid malignancies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 and C104-C106 appropriately cite and contextualize prior work. The Clarke et al. (2012) study on haploinsufficiency provides important context. The observation that <20% expression is incompatible with growth (Figure 4B) is well-supported and consistent with the known essential function of MYBL2 (cited from Tanaka et al., 1999). The citation of prior work on CTNNA1 and PU.1 (Rosenbauer et al., 2004; Liu et al., 2007) appropriately places this work in the context of dose-dependent tumor suppression in myeloid malignancies.",
+    "result_type": "MINOR"
+  }
+]

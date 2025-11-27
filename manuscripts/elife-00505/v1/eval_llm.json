@@ -12,11 +12,11 @@
       "C18",
       "C19"
     ],
-    "result": "Deletion of RAD51 in RNA biogenesis mutants (leo1\u0394, med12\u0394, sin3\u0394, kem1\u0394, rrp6\u0394) suppresses RNA-DNA hybrid formation detected by S9.6 antibody staining and associated YAC instability. Wild-type cells show <5% S9.6-positive nuclei while RNA biogenesis mutants show 80-85% positive nuclei; rad51\u0394 reduces this to near background levels (3-4 fold reduction). YAC instability increases 5-10 fold in RNA biogenesis mutants but is completely suppressed by rad51\u0394 in most mutants.",
+    "result": "Deletion of RAD51 suppresses RNA-DNA hybrid formation and associated genome instability in RNA biogenesis mutants. In RNA biogenesis mutants (leo1\u0394, med12\u0394, sin3\u0394, kem1\u0394, rrp6\u0394), 80-85% of nuclei show robust S9.6 staining for hybrids, but deletion of RAD51 reduces this to near wild-type levels (<5%). Similarly, YAC instability increases 5-10 fold in these mutants but is completely or mostly suppressed by rad51\u0394.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C11-C14 provide quantitative cytological and biochemical evidence for Rad51p-dependent hybrid formation in RNA biogenesis mutants. Claims C16-C19 demonstrate corresponding suppression of YAC instability by rad51\u0394, with appropriate controls showing rad51\u0394 alone causes no instability (C16). The convergence of multiple independent assays (chromosome spreads, dot blots, YAC instability) strongly supports this result.",
+    "evaluation": "Claims C11-C14 provide cytological evidence (S9.6 staining) showing dramatic reduction in hybrid formation when RAD51 is deleted in RNA biogenesis mutants. Claims C16-C19 provide functional evidence showing that rad51\u0394 suppresses the elevated YAC instability in these mutants. The convergence of cytological and functional data strongly supports the conclusion that Rad51p is required for hybrid formation in these mutants.",
     "result_type": "MAJOR"
   },
   {
@@ -31,11 +31,11 @@
       "C26",
       "C27"
     ],
-    "result": "A model YAC-GALpr locus demonstrates transcription-dependent, Rad51p-dependent hybrid formation and chromosome instability. Galactose induction causes ~100-fold RNA increase, dramatic DIP signal increase at proximal sequences, and 25-fold elevation in YAC instability. Both hybrid formation and instability are suppressed by glucose addition, RNase H overexpression, or RAD51 deletion.",
+    "result": "A model YAC-GALpr locus demonstrates that galactose-induced transcription causes Rad51p-dependent hybrid formation and genome instability. Galactose induction produces ~100-fold increase in RNA and dramatic increase in DIP signal for hybrids proximal to the GAL promoter. This transcription-induced YAC instability (25-fold increase) is suppressed by RNase H overexpression or RAD51 deletion.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C20-C24 establish the model system with appropriate spatial and temporal controls (distal regions, glucose repression, transcription start site). Claims C25-C27 demonstrate functional consequences with multiple suppression approaches. The convergence of qRT-PCR, DIP, and genetic instability data with proper controls provides strong support for this inducible model system.",
+    "evaluation": "Claims C20-C24 establish the model system with molecular evidence for transcription-dependent hybrid formation (qRT-PCR and DIP). Claims C25-C27 demonstrate that this leads to genome instability that is both hybrid-dependent (RNase H suppression) and Rad51p-dependent (rad51\u0394 suppression). The specificity controls (distal regions, glucose repression) strengthen the conclusions.",
     "result_type": "MAJOR"
   },
   {
@@ -46,36 +46,32 @@
       "C29",
       "C30",
       "C31",
-      "C32"
+      "C33"
     ],
-    "result": "Rad51p accumulates at the YAC-GALpr hybrid-forming locus in a transcription-dependent manner. ChIP with two independent antibodies shows significant Rad51p binding around the GAL promoter only upon galactose induction, which disappears upon transcriptional repression with dextrose. Rad51p binding extends beyond the region of hybrid formation detected by DIP.",
+    "result": "Rad51p binds to the hybrid-forming locus in a transcription-dependent manner. ChIP experiments show significant Rad51p binding around the GAL promoter on YAC-GALpr only upon galactose induction, with no binding detected in the absence of galactose or on control YAC. Rad51p binding disappears when transcription is repressed by dextrose addition.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C28-C29 provide ChIP evidence with two independent antibodies and appropriate negative controls. Claims C30-C32 address the spatial extent and reversibility of binding. The use of independent antibodies (anti-HA and polyclonal anti-Rad51p) and proper controls (no galactose, dextrose repression) strengthen this result, though the extended binding pattern (C30) requires additional interpretation.",
+    "evaluation": "Claims C28-C30 provide ChIP evidence using two independent antibodies showing transcription-dependent Rad51p binding. Claims C33 and C5 demonstrate reversibility and specificity. The tight correlation between transcription and Rad51p binding, along with appropriate controls, supports the conclusion that Rad51p localizes to sites of hybrid formation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C33",
-      "C34"
+      "C34",
+      "C35"
     ],
-    "result": "Rad51p binding at the YAC-GALpr locus occurs prior to detectable DNA damage. No \u03b3-H2AX signal is detected within 2 hours of galactose induction despite Rad51p binding, and no YAC instability occurs when transcription is repressed after 2 hours.",
+    "result": "Rad51p binding at the hybrid-forming locus occurs prior to DNA damage. No \u03b3-H2AX signal is detected within 2 hours of galactose induction despite Rad51p binding, and no YAC instability occurs when transcription is repressed after 2 hours of galactose induction.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C33-C34 provide molecular (\u03b3-H2AX ChIP) and functional (YAC instability) evidence that Rad51p binding precedes DNA damage. The use of \u03b3-H2AX as an early DSB marker and the functional test with dextrose addition provide converging lines of evidence. However, the absence of evidence for DSBs does not definitively prove Rad51p's role in hybrid formation versus repair.",
+    "evaluation": "Claims C34-C35 provide both molecular (\u03b3-H2AX ChIP) and functional (YAC instability) evidence that Rad51p binding precedes DNA damage. This temporal separation is critical for distinguishing Rad51p's role in hybrid formation from its canonical role in DNA repair. The evidence supports the interpretation that Rad51p directly promotes hybrid formation rather than responding to hybrid-induced damage.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
       "C6",
-      "C38",
-      "C39",
-      "C40",
-      "C41",
       "C42",
       "C43",
       "C44",
@@ -85,41 +81,45 @@
       "C48",
       "C49",
       "C50",
-      "C51"
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C75"
     ],
-    "result": "Rad51p mediates RNA-DNA hybrid formation in trans, where transcripts from chromosome III cause hybrid formation and instability on the YAC. DIP analysis shows galactose-dependent hybrid signals on the YAC that are eliminated by rad51\u0394. YAC instability increases 10-fold upon trans transcription, is dependent on homology, and is suppressed by RNase H overexpression or rad51\u0394. Most rearrangements (9/10) are terminal deletions rather than translocations.",
+    "result": "Rad51p mediates RNA-DNA hybrid formation in trans, where transcripts from one chromosomal location form hybrids at a homologous but distant locus. In strain LW7003, galactose-induced transcription from a YAC-GALpr module on chromosome III causes Rad51p-dependent hybrid formation on the YAC (detected by DIP with YAC-specific primers) and 10-fold increase in YAC instability. This trans-induced instability is homology-dependent, RNase H-suppressible, and rad51\u0394-suppressible.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C38-C41 provide molecular evidence for trans hybrid formation using primer sets that distinguish YAC-only versus combined signals. Claims C42-C46 demonstrate functional consequences with appropriate controls (homology dependence C44, RNase H suppression C45). Claims C47-C51 characterize the nature of instability events. The lower efficiency in trans versus cis (C48-C49) and structural analysis (C50-C51) add important mechanistic details. Multiple independent lines of evidence strongly support trans hybrid formation.",
+    "evaluation": "Claims C42-C45 provide molecular evidence (DIP) for trans hybrid formation using primer sets that distinguish YAC-only sequences. Claims C46-C50 demonstrate functional consequences (YAC instability) that are homology-dependent (C48), hybrid-dependent (C49), and Rad51p-dependent (C50). Claims C54-C55 show that most rearrangements are terminal deletions rather than translocations, supporting the trans mechanism. The convergence of molecular and functional evidence with appropriate controls strongly supports this novel finding.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C35",
-      "C36",
-      "C37"
+      "C38",
+      "C39",
+      "C40",
+      "C77"
     ],
-    "result": "Transient hybrids in wild-type cells (revealed by rnh1\u0394rnh201\u0394) are not Rad51p-dependent, indicating both Rad51p-dependent and -independent mechanisms for hybrid formation exist. Neither hybrid staining nor YAC instability is suppressed by rad51\u0394 in the rnh1\u0394rnh201\u0394 background.",
+    "result": "Both Rad51p-dependent and Rad51p-independent mechanisms for hybrid formation exist. In rnh1\u0394rnh201\u0394 mutants, which accumulate transient hybrids normally removed by RNases H, deletion of RAD51 does not suppress hybrid staining or YAC instability, indicating these naturally occurring hybrids form independently of Rad51p.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C35-C36 provide direct experimental evidence that rad51\u0394 does not suppress hybrids in rnh1\u0394rnh201\u0394 mutants, contrasting with its suppression in RNA biogenesis mutants. Claim C37 appropriately concludes that multiple mechanisms exist. This result is well-supported by the differential genetic requirements and establishes important mechanistic distinctions.",
+    "evaluation": "Claims C38-C39 provide direct experimental evidence that rad51\u0394 fails to suppress hybrids in rnh1\u0394rnh201\u0394 mutants, contrasting with its suppression in RNA biogenesis mutants. This differential effect clearly demonstrates the existence of Rad51p-independent hybrid formation mechanisms. Claims C40 and C77 appropriately interpret this as evidence for multiple mechanisms.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C52",
-      "C53",
-      "C54"
+      "C56",
+      "C57"
     ],
-    "result": "Rad52p, a canonical Rad51p cofactor required for Rad51p binding to ssDNA, is required for hybrid formation in RNA biogenesis mutants. Deletion of RAD52 completely suppresses hybrid staining in the panel of transcriptional mutants, suggesting hybrid formation occurs through the canonical Rad51p repair pathway rather than rogue Rad51p activity.",
+    "result": "Rad52p, a canonical activator of Rad51p required for its binding to ssDNA, is also required for hybrid formation in RNA biogenesis mutants. Deletion of RAD52 completely suppresses hybrid staining in the panel of transcriptional mutants.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C52 provides experimental evidence for Rad52p requirement using chromosome spreads. Claim C53 establishes the canonical function of Rad52p. Claim C54 makes a reasonable inference about pathway involvement. The authors note they could not test YAC instability suppression due to rad52\u0394 causing hybrid-independent instability, which is an appropriate limitation to acknowledge.",
+    "evaluation": "Claim C56 establishes the canonical role of Rad52p in activating Rad51p. Claim C57 provides cytological evidence that rad52\u0394 suppresses hybrid formation in RNA biogenesis mutants. This result strengthens the conclusion that hybrid formation involves the canonical Rad51p pathway rather than rogue Rad51p activity. However, the authors note they could not test YAC instability suppression due to hybrid-independent instability in rad52\u0394 alone.",
     "result_type": "MAJOR"
   },
   {
@@ -127,93 +127,117 @@
     "claim_ids": [
       "C8",
       "C10",
-      "C55",
-      "C56",
-      "C57",
       "C58",
       "C59",
       "C60",
-      "C61"
+      "C61",
+      "C62",
+      "C64",
+      "C86"
     ],
-    "result": "Srs2p antagonizes Rad51p-dependent hybrid formation and serves as a novel anti-hybrid mechanism. Deletion of SRS2 increases both hybrid staining and YAC instability in a Rad51p-dependent manner, while deletions of RAD54 and RDH54 have no effect. The srs2\u0394 mutant shows particularly high rDNA instability (23-fold increase) compared to YAC instability (4-fold), suggesting Srs2p has an important role protecting the rDNA locus.",
+    "result": "Srs2p, a helicase that removes Rad51p filaments from ssDNA, serves as a novel anti-hybrid mechanism by counteracting Rad51p's hybrid-forming activity. Deletion of SRS2 increases both hybrid staining and YAC instability in a Rad51p-dependent manner, while deletions of RAD54 and RDH54 (which remove Rad51p from dsDNA) have no effect. The srs2\u0394 mutant shows particularly strong effects at the rDNA locus (23-fold increase in instability).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C55-C57 provide clear genetic evidence distinguishing Srs2p from other Rad51p regulators. Claim C58 is well-supported by the Rad51p-dependence of srs2\u0394 phenotypes. Claims C59-C61 add important specificity about rDNA protection, though the mechanistic explanation remains speculative. The convergence of hybrid staining, YAC instability, and rDNA instability data with appropriate genetic controls strongly supports this result.",
+    "evaluation": "Claims C60-C62 provide clear differential effects: srs2\u0394 increases hybrids and instability while rad54\u0394/rdh54\u0394 do not, and the srs2\u0394 phenotypes are suppressed by rad51\u0394. This demonstrates specificity for Srs2p's role in antagonizing Rad51p-mediated hybrid formation. Claim C64 shows particularly strong effects at rDNA, suggesting regional specificity. The convergence of cytological and functional evidence with appropriate genetic controls strongly supports this novel anti-hybrid mechanism.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C4",
-      "C75",
-      "C78",
-      "C83",
-      "C86",
-      "C89",
-      "C90",
-      "C95",
-      "C96"
+      "C53",
+      "C72",
+      "C73"
     ],
-    "result": "The authors speculate about mechanisms and implications of Rad51p-mediated hybrid formation, including: direct promotion of DNA-RNA strand exchange, contribution to instability from Rad51p overexpression, potential oncogenic role in tumor cells, possible involvement in CRISPR guide RNA targeting, potential role in heterochromatin silencing, and possible mechanisms for Srs2p anti-hybrid activity.",
+    "result": "Hybrid formation in trans is less efficient than in cis. The total rate of YAC instability increases only 10-fold by hybrids formed in trans compared to 25-fold by hybrids formed in cis, likely because RNA concentration at a cis site will be higher than at a trans site.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "These claims (C4, C75, C78, C83, C86, C89, C90, C95, C96) are explicitly speculative interpretations and hypotheses based on the experimental findings. While they represent reasonable inferences and interesting directions for future work, they lack direct experimental support in this manuscript. The speculative nature is appropriately indicated by language like 'suggest,' 'may,' 'could,' and 'might.'",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C72 present the quantitative comparison showing lower efficiency in trans. Claim C73 provides a logical mechanistic explanation based on RNA concentration. This inference is reasonable given the spatial relationship between transcription and hybrid formation sites, and is supported by citation to in vitro RecA studies (C74) showing RNA concentration effects.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C1",
-      "C62",
-      "C63",
-      "C64",
-      "C65",
-      "C66",
+      "C4",
       "C67",
-      "C68",
-      "C69",
       "C70",
-      "C71",
-      "C72",
-      "C73",
-      "C74",
       "C76",
-      "C77",
-      "C79",
+      "C78",
       "C81",
-      "C82",
       "C84",
-      "C85",
-      "C87",
       "C88",
-      "C91",
-      "C92",
+      "C89",
       "C93",
-      "C94"
+      "C94",
+      "C95"
     ],
-    "result": "The manuscript provides extensive background on RNA-DNA hybrids, including their role in genome instability, prior in vitro RecA studies, prevailing cis models, RNA biogenesis factors, hybrid removal mechanisms, and known properties of Rad51p, Srs2p, and related proteins. These claims establish context from prior literature.",
+    "result": "The authors propose several speculative interpretations and implications of their findings, including: (1) Rad51p directly promotes DNA-RNA strand exchange for hybrid formation, (2) high Rad51p levels in tumor cells may be oncogenic by driving hybrid-mediated instability, (3) Rad51p may mediate guide RNA hybridization in CRISPR systems, (4) trans hybrid formation could provide a mechanism for silencing repetitive elements, and (5) Srs2p may inhibit hybrids through inverse strand exchange or direct hybrid unwinding.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims (C1, C62-C77, C79, C81-C82, C84-C85, C87-C88, C91-C94) represent established knowledge from prior work, supported by appropriate citations. They provide necessary context for interpreting the current findings. While not original results of this study, they are accurately represented and properly attributed.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent speculative interpretations and hypotheses that extend beyond the direct experimental evidence. While they are reasonable inferences based on the data presented, they require additional experiments for validation. For example, C4 and C88-C89 propose mechanisms that are not directly tested, C67 and C70 suggest implications for cancer that require validation in mammalian systems, and C81 and C84 propose applications that need experimental demonstration.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
+      "C1",
       "C3",
       "C9",
-      "C31",
-      "C53",
-      "C80"
+      "C32",
+      "C36",
+      "C37",
+      "C41",
+      "C56",
+      "C58",
+      "C59",
+      "C65",
+      "C68",
+      "C69",
+      "C71",
+      "C74",
+      "C79",
+      "C82",
+      "C83",
+      "C87",
+      "C90",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
     ],
-    "result": "The manuscript describes canonical functions of key proteins and makes one speculative claim about trans versus cis hybrid formation potency. Rad51p and Rad52p promote DNA-DNA strand exchange in homologous recombination, Srs2p is a Rad51p antagonist, and Rad51p spreads from ssDNA into dsDNA.",
+    "result": "The manuscript cites and accurately represents extensive prior work establishing: (1) RNA-DNA hybrids cause genome instability in yeast and mammals, (2) canonical functions of Rad51p, Rad52p, Srs2p, and other recombination proteins, (3) RecA promotes RNA-DNA hybrid formation in vitro, (4) previous models for co-transcriptional hybrid formation, (5) roles of RNA biogenesis factors and RNases H in preventing/removing hybrids, and (6) connections between transcription, supercoiling, and hybrid formation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3, C9, C31, and C53 describe well-established canonical functions of these proteins, appropriately cited. Claim C80 is speculative about the relative potency of trans versus cis mechanisms. These provide necessary background for interpreting the experimental results.",
+    "evaluation": "These claims accurately represent established knowledge and prior work as evidenced by appropriate citations throughout. The authors correctly distinguish between established facts (e.g., canonical Rad51p function in C3, RecA in vitro activity in C65, C103) and prior models (e.g., co-transcriptional mechanisms in C107). The background provides appropriate context for the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C31",
+      "C51",
+      "C63",
+      "C91",
+      "C92"
+    ],
+    "result": "The manuscript presents several descriptive observations and summary statements about the experimental system and anti-hybrid mechanisms, including baseline YAC instability rates, the extent of Rad51p binding relative to hybrid formation, distribution of instability events, hybrid staining patterns, and the existence of multiple non-redundant anti-hybrid pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent straightforward observations and summaries that are directly supported by the data presented. For example, C15 reports measured instability rates, C31 describes an observation from comparing ChIP and DIP data, C51 summarizes the distribution of instability events, and C91-C92 synthesize the findings about multiple anti-hybrid mechanisms. These are well-supported descriptive claims.",
     "result_type": "MINOR"
   }
 ]

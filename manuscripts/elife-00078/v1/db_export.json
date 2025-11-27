@@ -1,0 +1,1900 @@
+{
+  "submission": {
+    "id": "2446a9eb-d679-474b-9312-31806649f217",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T05:30:59.591782Z",
+    "updated_at": "2025-11-27T05:30:59.591782Z"
+  },
+  "content": [
+    {
+      "id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "submission_id": "2446a9eb-d679-474b-9312-31806649f217",
+      "content_type": "manuscript",
+      "content_text": "# Chromatin is an ancient innovation conserved between Archaea and Eukarya\n\n## Authors\n\n- Ron Ammar<sup>1</sup>\n- Dax Torti<sup>2</sup>\n- Kyle Tsui<sup>1</sup>\n- Marinella Gebbia<sup>1</sup>\n- Tanja Durbic<sup>2</sup>\n- Gary D Bader<sup>1</sup>\n- Guri Giaever<sup>1</sup>\n- Corey Nislow<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular Genetics University of Toronto Toronto Canada\n2. Donnelly Centre University of Toronto Toronto Canada\n3. Department of Pharmaceutical Sciences University of Toronto Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe eukaryotic nucleosome is the fundamental unit of chromatin, comprising a protein octamer that wraps \u223c147 bp of DNA and has essential roles in DNA compaction, replication and gene expression. Nucleosomes and chromatin have historically been considered to be unique to eukaryotes, yet studies of select archaea have identified homologs of histone proteins that assemble into tetrameric nucleosomes. Here we report the first archaeal genome-wide nucleosome occupancy map, as observed in the halophile Haloferax volcanii. Nucleosome occupancy was compared with gene expression by compiling a comprehensive transcriptome of Hfx. volcanii. We found that archaeal transcripts possess hallmarks of eukaryotic chromatin structure: nucleosome-depleted regions at transcriptional start sites and conserved \u22121 and +1 promoter nucleosomes. Our observations demonstrate that histones and chromatin architecture evolved before the divergence of Archaea and Eukarya, suggesting that the fundamental role of chromatin in the regulation of gene expression is ancient.\n\n## Introduction\n\nArchaeal nucleosome core particles protect \u223c60 bp of DNA, approximately half that of eukaryotic nucleosomes, as demonstrated by the landmark work of Pereira et al. (1997). Comparing both eukaryotic and archaeal nucleosomes, the former is an octamer composed of heterodimers of histones H2A, H2B, H3 and H4 whereas the latter histones assemble from homologs of H3 and H4 proteins (Pereira and Reeve, 1998; Talbert and Henikoff, 2010). Archaeal histones can form both homodimers and heterodimers, as well as homotetramers, whereas eukaryotic histones contain hydrophobic dimerization surfaces that restrict assembly of the octamer from H2A-H2B and H3-H4 heterodimers (Sandman and Reeve, 2006; Talbert and Henikoff, 2010).\n\nUsing single-nucleotide resolution maps of archaeal nucleosome occupancy and gene expression, we demonstrate that the architecture of archaeal chromatin and the occupancy of its nucleosomes along transcription units are conserved. We constructed a nucleosome occupancy map of the halophilic archaeon Haloferax volcanii, a member of the phylum euryarchaeota, originally discovered in the highly saline sediment of the Dead Sea (Mullakhanbhai and Larsen, 1975). The genome of Hfx. volcanii has an average GC content of 65% and a total genome length of 4 Mb (Hartman et al., 2010) composed of five circular genetic elements: a 2.8 Mb main chromosome, three smaller chromosomes pHV1, pHV3 and pHV4 and the plasmid pHV2. It is highly polyploid with \u223c15 genome copies during exponential growth and \u223c10 during stationary phase (Breuert et al., 2006). The histone protein of Hfx. volcanii, hstA (HVO_0520), has a domain architecture containing two distinct histone fold domains within the same peptide that heterodimerize similar to the Methanopyrus kandleri histone (HMk) (Geer et al., 2002; Talbert and Henikoff, 2010; Marchler-Bauer et al., 2011).\n\n## Results\n\nWe cultured Hfx. volcanii in rich media containing 2 M NaCl (Mullakhanbhai and Larsen, 1975). Genomic DNA was cross-linked and digested with micrococcal nuclease (MNase), with cell disruption accomplished by bead-beating (Tsui et al., 2012). Nucleosome-bound cross-linked genomic regions are protected from MNase digestion, in contrast to the linker DNA between nucleosomes. Mononucleosome-sized (50\u201360 bp) DNA fragments were gel purified and libraries were sequenced on an Illumina HiSeq2000 (Figure 1A). Sequence reads were aligned to the published Hfx. volcanii DS2 genome (Hartman et al., 2010) to generate a genome-wide nucleosome occupancy map. Controls included crosslinked DNA without MNase digestion as well as MNase treated nucleosome-free genomic DNA. The nucleosome occupancy data was significantly different than the control MNase digest of deproteinized \u2018naked\u2019 genomic DNA (r = 0.071), indicating that the nucleosome map is unaffected by any potential MNase sequence bias (Chung et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00078/elife-00078-fig1-v1.jpg)\n\n**Figure 1.:** (A) Formaldehyde cross-linked chromatin was subjected to MNase digestion with increasing amounts on microccocal nuclease (from 1 to 5 units). De-crosslinked DNAs were separated on a 3% agarose gel and \u223c60 bp and \u223c120 bp mono- and di-nucleosomes were observed. Markers (M) indicate *50 bp and **150 bp. (B) The counts of AA, AT, TA, TT or CC, CG, GC, GG dinucleotides are reported at each position showing an enrichment of G/C nucleotides and a depletion of A/T nucleotides at the dyad relative to the end points of the protected fragment. This differs from the observation of Bailey et al. (2000), where GC, AA and TA dinucleotides were repeated at \u223c10-bp intervals in recombinant archaeal histone B from Methanothermus fervidus (rHMfB) (Bailey et al., 2000). (C) The sequence logo of a nucleosome-binding site in Hfx. volcanii centered at the nucleosome midpoint. There is a significant GC enrichment towards the nucleosome midpoint. This is exhibited using both bit score and probability measures.\n\nTo determine nucleosome midpoints, we smoothed the occupancy data using a symmetrical convolution sum with a Gaussian filter (Smith, 1997). Extrema were detected in the smoothed signal, and maxima were defined as nucleosome midpoints. In the smoothed signal, the mean peak-to-peak distance for the main chromosome was 68.5 bp in genic regions and 76.1 bp in non-genic regions. Genic regions were defined as the transcribed region plus 40 bp (the average promoter length based on Palmer and Daniels, 1995) upstream of the 5\u2032 end. We observed a greater nucleosome density in Hfx. volcanii vs all eukaryotes likely due to the shorter length of DNA wrapped around the archaeal histone tetramer (Pereira et al., 1997). Based on our data, the Hfx. volcanii genome has 14.2 nucleosomes per kilobase compared to 5.2 nucleosomes per kilobase in Saccharomyces cerevisiae. The resulting map reveals a periodic pattern similar to that seen in all eukaryotes examined to date; with protected regions appearing as peaks and linker regions as troughs. Sequence analysis of the entire nucleosome map showed that nucleosome midpoints were enriched with G/C nucleotides from 61.4% GC at the edge of the protected fragment to 74.6% GC at the midpoint (dyad). We found an increase of G/C nucleotides and a decrease in A/T nucleotides at the midpoint, as described recently for human cell lines (Figure 1B,C) (Valouev et al., 2011). In contrast to previous studies in eukaryotes, we did not observe a periodicity in dinucleotide frequency relative to the nucleosome midpoint (Satchwell et al., 1986; Bailey et al., 2000; Albert et al., 2007).\n\nWe next investigated the relationship between nucleosome occupancy and gene expression. The existing genome annotation for Haloferax is derived almost exclusively from ORF predictions (Hartman et al., 2010). To augment these predictions, we used deep sequencing to create a high confidence transcriptome of the main chromosome of Hfx. volcanii. This map allowed us to define both 5\u2032UTR lengths, transcriptional start sites (TSSs) and transcriptional termination sites (TTSs). Total RNA was extracted from Hfx. volcanii cells, repetitive RNA was partially depleted via duplex-specific nuclease (DSN) normalization followed by RNA-seq (see \u2018Materials and methods\u2019) (Zhulidov et al., 2004). Transcript sequences were aligned, assembled and quantified using TopHat and the Genome Analysis Toolkit (Trapnell et al., 2009; McKenna et al., 2010) and transcript boundaries were further trimmed based on RNA-seq coverage information, as described previously (Wurtzel et al., 2010). The final set of transcripts were manually curated yielding 3059 transcriptional units in Hfx. volcanii, a number that is greater than observed previously in the comparable transcriptome of the sulfur-metabolizing archaeon Sulfolobus solfataricus (Wurtzel et al., 2010) but fewer than the 4073 predicted Hfx. volcanii genes. It is likely that in the rich media conditions used in this study, not all genes are expressed. Specifically 75% of the predicted transcripts were detectably expressed, and this fraction is consistent with observations obtained for yeast gene expression in rich media (David et al., 2006). Thirty-two novel transcripts (absent from the predicted sequence annotation) were identified in the RNA-seq data. Most of these 32 transcripts lack significant sequence homologs, and several were classified as transposases with paralogs in Hfx. volcanii (Supplementary file 1). Notably, the gene that was most highly expressed in the transcriptome (NTRANS_0004) was not previously annotated and contains a putative N-Acyltransferase (NAT) superfamily domain. Homology searches revealed that this transcript appears to be restricted to the genomes of other halophilic archaea (Altschul et al., 1990). The architecture of this domain is homologous to chain A of the well-characterized histone acetyltransferases Gcn5, Gna1, Hpa2 in S. cerevisiae, suggesting a possible role for this transcript in regulating transcription via histone acetylation (Marchler-Bauer et al., 2011). Additional acyltransferases with a similar architecture have been implicated in bacteriophage-encoded DNA modifiers as well as in cold and ethanol tolerance in yeast (Du and Takagi, 2007; Kaminska and Bujnicki, 2008). Thus, while histone post-translational modifications have not been observed in archaeal histones (Forbes et al., 2004), our observation suggests that some rudimentary control over chromatin accessibility may occur via the action of ancient NAT family members. Furthermore acetyltransferase and deacetylase orthologs, which appear to have enzymatic activity based on their sensitivity to the histone deacetylase (HDAC) inhibitor trichostatin A have been identified in Hfx. volcanii (Altman-Price and Mevarech, 2009). In our subsequent analysis, we focused on all genes we empirically determined to be expressed.\n\nIn eukaryotes, the TSS of the majority of expressed genes is characterized by a nucleosome-depleted region (NDR) (Jiang and Pugh, 2009). This NDR is flanked by the well-positioned \u22121 and the +1 nucleosomes. These regions direct RNA polymerase II to initiate transcription and influence the binding of promoter regulatory elements (Jiang and Pugh, 2009). This stereotypical pattern of nucleosome depletion at promoters and well-ordered nucleosomes in gene bodies is found in all eukaryotes, including yeast, Drosophila, Arabidopsis and humans. Using the RNA-seq-derived transcripts for Hfx. volcanii, we computed the degree of aggregate nucleosome occupancy for the 2343 transcripts on the main chromosome, and found that the NDR and \u22121 and +1 nucleosomes are conserved in Hfx. volcanii (Figure 2) suggesting that the interplay between chromatin and transcription is conserved in archaeal promoters. We generated nucleosome occupancy profiles for each transcript and clustered them hierarchically. Differential nucleosome density was observed with profiles encompassing between four to six nucleosomes in a 400-bp DNA segment spanning 200 bp on each side of the TSS (Figure 2C). NDRs at TTSs are also observed, and similar to those found in eukaryotes (Lee et al., 2007) they are less prominent than promoter NDRs in Hfx. volcanii (Figure 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00078/elife-00078-fig2-v1.jpg)\n\n**Figure 2.:** (A) Degree of normalized nucleosome occupancy in aggregate for the main chromosome. As observed in eukaryotes, there is a prominent nucleosome-depleted region (NDR) at the transcriptional start site (TSS) preceded by a \u22121 nucleosome and followed by a +1 nucleosome, demonstrating that promoter genome architecture is conserved between archaea and eukaryotes. (B) Hierarchical clustergram for the 2343 expressed transcripts on the main Haloferax chromosome. Green represents nucleosome-depleted regions and red represents occupied regions. (C) The clustered heatmap was subdivided into the largest six subclades, and differential density of nucleosomes can be observed with occupancy profile clusters containing between four to six nucleosomes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00078/elife-00078-fig3-v1.jpg)\n\n**Figure 3.:** As observed in eukaryotes, NDRs are also found at the transcriptional termination sites in Hfx. volcanii. Both 5\u2032 and 3\u2032 end profiles are overlaid in this figure for comparison. The 5\u2032 NDR is, on average, more depleted and longer.\n\n## Discussion\n\nOur study establishes that genome-wide nucleosome occupancy is conserved between archaea and eukaryotes (Figure 4). We further show that the nucleosomal protected fragments and NDRs are shorter in archaea than in eukaryotes. Our findings are particularly noteworthy because Hfx. volcanii likely resembles a deeply rooted ancestor that possessed eukaryotic genome architecture hallmarks such as histones, as well as bacterial hallmarks such as the Shine-Dalgarno sequence (Sartorius-Neef and Pfeifer, 2004). Archaeal histone tetramers likely resemble an ancestral state of chromatin, as it has been observed that functional (H3-H4)2 tetramers can be formed in vitro from eukaryotic histones, and these tetramers are functional; they facilitate more rapid transcription in vitro compared to native histone octamers (Puerta et al., 1993). The observation that archaea contain (H3-H4)2 tetramers is consistent with the proposal that formation of the canonical eukaryotic nucleosome octamer begins with (H3-H4)2 tetramer assembly (Talbert and Henikoff, 2010).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00078/elife-00078-fig4-v1.jpg)\n\n**Figure 4.:** Due to the smaller size of archaeal nucleosome DNA, the occupancy has a shorter periodicity. Figure adapted with permission from Chang et al. (2012).\n\nOur study demonstrates that both histones and chromatin architecture arose before the divergence of Archaea and Eukarya, suggesting that the fundamental role of chromatin in the regulation of gene expression is ancient. As well, owing to the small bacterial-sized archaeal genome, we suggest that archaeal chromatin is not required for genome compaction. This leads us to postulate that higher-order chromatin (Sajan and Hawkins, 2012) is a eukaryotic invention and that archaeal chromatin is necessary but not sufficient for genome compaction. Additionally our observations provide a rich dataset that addresses the evolution of chromatin and its fundamental role in the regulation of gene expression.\n\n## Materials and methods\n\n### Sample preparation\n\nHaloferax volcanii DS2 cells (obtained from the ATCC) were grown to mid-log phase at 42\u00b0C in ATCC 974 Halobacterium medium containing 2 M NaCl. Cells were fixed with 2% formaldehyde for 30 min then quenched with 125 mM of glycine for 5 min. An unfixed control sample was also prepared to serve as a deproteinized, \u2018naked\u2019 DNA control, as described previously (Chung et al., 2010). Cells were pelleted and snap frozen prior to MNase digestion and DNA extraction. Frozen cells were processed according to a modified protocol from Rizzo et al. (2011) and Tsui et al. (2012). Samples were digested with increasing concentrations of MNase and a no MNase control. After digestion, fragments 50\u201360 bp in length were size-selected using an Agilent Bioanalyzer High Sensitivity chip (Agilent, Santa Clara, CA, part# 5067-4626) and further processed for Illumina deep sequencing. Nucleosomal and genomic libraries were pooled equally according to qPCR quantitation, and sequenced using v3 chemistry on one single-read HiSeq2000 lane (50 \u00d7 8). Samples were demultiplexed using an 8-bp index read at the end of read 1.\n\n### Sequence read filtering and alignment\n\nIllumina sequencers require the ligation of an adapter oligonucleotide to facilitate cluster formation on the flow cell. Because the library inserts were short (\u223c60 bp), many sequence reads extended into the Illumina adapter sequences. The adapter subsequences were computationally trimmed to ensure maximal read mapping. Then, using a sequence quality cutoff of Phred20, reads were trimmed from both 5\u2032 and 3\u2032 ends to ensure accurate mapping. These trimmed reads from control and MNase-treated genomic DNA were aligned to the Hfx. volcanii DS2 genome using the Bowtie 2 gapped short read aligner (Langmead and Salzberg, 2012). Sequence coverage was computed using the Genome Analysis Toolkit (GATK) depth of coverage walker, which revealed the periodicity in the occupancy data (DePristo et al., 2011).\n\n### Nucleosome identification\n\nTo detect nucleosome midpoint positions, sequence data were Gaussian-smoothed as described previously by Shivaswamy et al. (2008) and Kaplan et al. (2009). This is appropriate because signals generated by processes that are random, such as sequence coverage noise, usually have a probability density function defined by a Gaussian distribution (Smith, 1997).\n\nThe Gaussian filter was defined as:\n\n$$\nG(x)=\\frac{1}{\\sqrt{2\\pi\\sigma}}e^{(\\frac{\u2212(x\u2212\\mu)^{2}}{2\\sigma^{2}})},\n$$\n\nwhere \u03bc is the mean of the distribution and \u03c3 is the standard deviation.\n\nA symmetrical convolution sum was applied with the following format:\n\n$$\ny[i]=\\sumj=\u2212\\frac{M}{2}\\frac{M}{2}h[j]\\timesx[i\u2212j],\n$$\n\nwhere M is an integer bandwidth, y[j] is the output, x[j] is the input and h[j] is an M-point function.\n\nSo, to smooth the coverage data, we applied the following convolution sum:\n\n$$\ny[i]=\\sumj=\u2212\\frac{M}{2}\\frac{M}{2}G[j]\\timesx[i\u2212j],\n$$\n\nwhere $\\sigma=\\frac{M}{6}$. The interval length M is constrained to 6\u03c3 because this encompasses 99.75% of the Gaussian (Smith, 1997).\n\nWe also optimized nucleosome midpoint detection by convoluting a two-pass simple moving average (SMA) filter, but the Gaussian filter detected midpoints with greater resolution. Optimal interval size for the Gaussian convolution sum, as determined by Pearson's correlation coefficient with the raw data, was 27 bp. For the two-pass SMA it was 40 bp for first-pass and 15 bp for second-pass.\n\nNucleosome occupancy was normalized genome-wide by transforming sequence coverage data into binary-like data that existed in states of \u2018occupied\u2019, \u2018depleted\u2019 or transitioning between those two states. This final occupancy map was used to define nucleosome positions. Nucleosome occupancy profiles were clustered hierarchically by average linkage using Pearson's correlation coefficient as the similarity metric in the Cluster 3.0 software package. Clusters were visualized with Java Treeview (Figure 2B).\n\n### Transcript identification and genome annotation\n\nRNA was extracted with Trizol reagent (Invitrogen, Carlsbad, CA, 15596-026), and DNase treated (Invitrogen, Carlsbad, CA, AM1907) according to manufacturer specifications. A cDNA library was generated using 100 ng of total RNA according to Illumina TruSeq RNA Sample Prep protocol (Illumina, RS-122-2001) prior to duplex-specific nuclease (DSN) treatment. 100 ng of cDNA library was incubated in hybridization buffer (50 mM HEPES, 500 mM NaCl) for 2 min at 98\u00b0C, followed by 1 hr at 68\u00b0C. Ribosomal RNA (rRNA) was not specifically depleted (He et al., 2010). Instead, we used duplex-specific nuclease (DSN) normalization to remove abundant RNA (rRNA, tRNA) from the total RNA sample, thereby enriching mRNA (Zhulidov et al., 2004). Samples were immediately treated with 4 units of DSN enzyme (Evrogen, Moscow, Russia EA001) in 1\u00d7 DSN buffer and incubated for an additional 25 min at 68\u00b0C, prior to addition of stop solution, and purification with Ampure XP beads (Beckman Coulter, Brea, CA, A63881). RNA libraries were pooled equally according to qPCR quantitation, and sequenced using v3 chemistry on a paired-end single HiSeq2000 lane (100 \u00d7 8 \u00d7 100). Samples were demultiplexed using an 8-bp index read at the end of read 1. Total RNA was sequenced at extremely high coverage (2587 \u00d7 mean coverage) so that rRNA sequences (\u223c77% of all sequence reads) could be computationally excluded, as described by Wurtzel et al. (2010).\n\nAfter quality score trimming (described earlier), sequence reads were aligned using TopHat (Trapnell et al., 2009). The RNA-seq data displayed a great deal of overlap with the predicted annotations (Hartman et al., 2010), with 92.1% of the existing annotations being confirmed. Of the 4073 predicted annotations, 3751 were confirmed, and, of these, 744 were merged with other transcripts to form longer transcripts. A heuristic approach was applied to adjust the transcript 5\u2032 and 3\u2032 positions of the Hartman et al. (2010) predicted annotations based on the boundaries of high RNA-seq coverage regions. This was vital as TSS accuracy is of great importance for NDR identification (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00078/elife-00078-fig5-v1.jpg)\n\n**Figure 5.:** The nucleosome sequence data is displayed, and the periodicity reflects protected and unprotected fragments after MNase digestion (magnitude of peak is not considered). Peaks represent nucleosome midpoints, which were detected and marked. Below are the corresponding RNA-seq and curated gene tracks. In this screenshot, one can observe seven entire ORFs in line with their NDRs and \u20131 and +1 nucleosomes.\n\nBecause 85% of the Haloferax genome is predicted to be coding (Hartman et al., 2010), transcript detection is complicated by transcript overlap. To overcome this, computationally identified transcripts were manually curated yielding a total of 3059 expressed transcripts in Hfx. volcanii. Of these, 32 transcripts are novel (Supplementary file 1). Of these transcripts, NTRANS_0004 was the most abundant transcript in the transcriptome, excluding the six rRNA genes. Homology data was obtained using BLASTX with a BLOSUM45 matrix against the non-redundant protein sequence database (Altschul et al., 1990). Conserved domains were identified using the Conserved Domain Database (Marchler-Bauer et al., 2011). Sequence data, nucleosome and transcriptome maps and supplemental tables have been deposited to the Short Read Archive and Dryad, as indicated in the datasets statement. Additionally this data is available at http://chemogenomics.med.utoronto.ca/supplemental/chromatin/.\n",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "452ac0cd-6237-410b-b5eb-1b8456159717",
+      "submission_id": "2446a9eb-d679-474b-9312-31806649f217",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Danny Reinberg, New York University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00078.009](https://doi.org/10.7554/eLife.00078.009)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \"Chromatin is an ancient innovation conserved between Archaea and Eukarya\" for consideration at eLife. Your article has been evaluated by a Senior Editor and 3 reviewers, one of whom is a member of eLife's Board of Reviewing Editors. The following individuals responsible for the peer review of your submission want to reveal their identity: Danny Reinberg (Reviewing Editor).\n\nThe Reviewing Editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing Editor has assembled the following comments based on the reviewers' reports. Our goal is to provide the essential revision requirements as a single set of instructions, so that you have a clear view of the revisions that are necessary for us to publish your work.\n\nGeneral assessment and substantive concerns to be addressed during revision:\n\n1) The reviewers\u2019 assessment is that the paper may contribute an important finding; however, this study lacks a critical control, which is the MNase digestion of naked DNA. MNase preferentially cleaves AT-rich DNA and the promoter regions are often AT-rich. A control MNase digestion of deproteinized genomic DNA followed by isolation of 50-60 bp length DNA for genome-wide sequencing analysis should be included. The requirement for this control MNase digestion is well documented in Chung et al. (2010) PLOS ONE 5(12): e15754 and is a pre-requisite for publication.\n\n2) In addition, can the authors show a time course experiment where MNase digestion of H. volcanii genomic DNA results in multiples of 50-60 bp repetitive units? If the authors were to reconstitute chromatin in vitro using a naked plasmid and recombinant H. volcanii histone, how many DNA base pairs would be protected on average? Since this DNA was subject to deep sequencing, what was the actual length distribution of the DNA that was analyzed? This is important since it has not been described for this species. Of course, any other experiment demonstrating the actual size of H. volcanii nucleosomal DNA would be perfectly acceptable.\n",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f7c8449c-817b-4e5e-b2ae-c62a87b11668",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C1",
+      "claim": "The eukaryotic nucleosome comprises a protein octamer that wraps approximately 147 bp of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The eukaryotic nucleosome is the fundamental unit of chromatin, comprising a protein octamer that wraps \u223c147 bp of DNA and has essential roles in DNA compaction, replication and gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about eukaryotic nucleosome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "03d854a8-5b65-4d0e-85bb-d723142f1a0f",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C2",
+      "claim": "Eukaryotic nucleosomes have essential roles in DNA compaction, replication and gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The eukaryotic nucleosome is the fundamental unit of chromatin, comprising a protein octamer that wraps \u223c147 bp of DNA and has essential roles in DNA compaction, replication and gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established scientific consensus about nucleosome function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "9905c499-9a65-4bfc-9358-4cc4ab2a7182",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C3",
+      "claim": "Select archaea have histone protein homologs that assemble into tetrameric nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosomes and chromatin have historically been considered to be unique to eukaryotes, yet studies of select archaea have identified homologs of histone proteins that assemble into tetrameric nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior studies referenced in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "4c1bf554-515d-4494-b0fe-8bb4b4fdca86",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C4",
+      "claim": "This study reports the first archaeal genome-wide nucleosome occupancy map.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report the first archaeal genome-wide nucleosome occupancy map, as observed in the halophile Haloferax volcanii.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding directly stated by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "98473fb5-0f5e-4d55-a4d7-3f71cf94f6a6",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C5",
+      "claim": "Archaeal transcripts possess nucleosome-depleted regions at transcriptional start sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that archaeal transcripts possess hallmarks of eukaryotic chromatin structure: nucleosome-depleted regions at transcriptional start sites and conserved \u22121 and +1 promoter nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the nucleosome occupancy and transcriptome data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "cfecf864-6ce4-45f2-8afd-92a1fab5ae02",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C6",
+      "claim": "Archaeal transcripts possess conserved \u22121 and +1 promoter nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that archaeal transcripts possess hallmarks of eukaryotic chromatin structure: nucleosome-depleted regions at transcriptional start sites and conserved \u22121 and +1 promoter nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the nucleosome occupancy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "1761a971-71b0-4a91-afa3-ccf53dddfaf2",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C7",
+      "claim": "Histones and chromatin architecture evolved before the divergence of Archaea and Eukarya.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations demonstrate that histones and chromatin architecture evolved before the divergence of Archaea and Eukarya, suggesting that the fundamental role of chromatin in the regulation of gene expression is ancient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the conservation of chromatin features observed in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "19ff14f2-2184-4b1f-8c7e-3651602e9f21",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C8",
+      "claim": "The fundamental role of chromatin in the regulation of gene expression is ancient.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations demonstrate that histones and chromatin architecture evolved before the divergence of Archaea and Eukarya, suggesting that the fundamental role of chromatin in the regulation of gene expression is ancient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the conservation of chromatin architecture between archaea and eukaryotes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "95e78aa8-1fc3-42fe-9028-1e4eae06c651",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C9",
+      "claim": "Archaeal nucleosome core particles protect approximately 60 bp of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Archaeal nucleosome core particles protect \u223c60 bp of DNA, approximately half that of eukaryotic nucleosomes, as demonstrated by the landmark work of Pereira et al. (1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pereira et al. (1997).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "0bf92b97-5200-482f-b8a7-b821ab0745d0",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C10",
+      "claim": "Archaeal nucleosomes protect approximately half the DNA length of eukaryotic nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Archaeal nucleosome core particles protect \u223c60 bp of DNA, approximately half that of eukaryotic nucleosomes, as demonstrated by the landmark work of Pereira et al. (1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of known values for archaeal (~60 bp) and eukaryotic (~147 bp) nucleosomes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "2b69e4c8-fb81-4969-9269-0fb92b25eb90",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C11",
+      "claim": "Eukaryotic nucleosomes are octamers composed of heterodimers of histones H2A, H2B, H3 and H4.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing both eukaryotic and archaeal nucleosomes, the former is an octamer composed of heterodimers of histones H2A, H2B, H3 and H4 whereas the latter histones assemble from homologs of H3 and H4 proteins (Pereira and Reeve, 1998; Talbert and Henikoff, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "123b9279-2ac6-4242-985e-f3fd3cc3801f",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C12",
+      "claim": "Archaeal histones assemble from homologs of H3 and H4 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing both eukaryotic and archaeal nucleosomes, the former is an octamer composed of heterodimers of histones H2A, H2B, H3 and H4 whereas the latter histones assemble from homologs of H3 and H4 proteins (Pereira and Reeve, 1998; Talbert and Henikoff, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "df1561e8-293c-4122-bab2-fd6f477679fd",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C13",
+      "claim": "Archaeal histones can form both homodimers and heterodimers, as well as homotetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "Archaeal histones can form both homodimers and heterodimers, as well as homotetramers, whereas eukaryotic histones contain hydrophobic dimerization surfaces that restrict assembly of the octamer from H2A-H2B and H3-H4 heterodimers (Sandman and Reeve, 2006; Talbert and Henikoff, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "9654d655-cb78-4c69-98d1-c98633e3f36c",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C14",
+      "claim": "Eukaryotic histones contain hydrophobic dimerization surfaces that restrict assembly of the octamer from H2A-H2B and H3-H4 heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Archaeal histones can form both homodimers and heterodimers, as well as homotetramers, whereas eukaryotic histones contain hydrophobic dimerization surfaces that restrict assembly of the octamer from H2A-H2B and H3-H4 heterodimers (Sandman and Reeve, 2006; Talbert and Henikoff, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "65eb3cfa-d16a-4d9e-ac32-b60ce90bd9f9",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C15",
+      "claim": "Haloferax volcanii is a halophilic archaeon and a member of the phylum euryarchaeota.",
+      "claim_type": "EXPLICIT",
+      "source": "We constructed a nucleosome occupancy map of the halophilic archaeon Haloferax volcanii, a member of the phylum euryarchaeota, originally discovered in the highly saline sediment of the Dead Sea (Mullakhanbhai and Larsen, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established taxonomic information supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "cef066b3-4252-4ef8-9bda-c5c1811f9124",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C16",
+      "claim": "Haloferax volcanii was originally discovered in the highly saline sediment of the Dead Sea.",
+      "claim_type": "EXPLICIT",
+      "source": "We constructed a nucleosome occupancy map of the halophilic archaeon Haloferax volcanii, a member of the phylum euryarchaeota, originally discovered in the highly saline sediment of the Dead Sea (Mullakhanbhai and Larsen, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original discovery.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "afd8040d-0e83-4d76-8a8e-7176d3d867e7",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C17",
+      "claim": "The genome of Hfx. volcanii has an average GC content of 65%.",
+      "claim_type": "EXPLICIT",
+      "source": "The genome of Hfx. volcanii has an average GC content of 65% and a total genome length of 4 Mb (Hartman et al., 2010) composed of five circular genetic elements: a 2.8 Mb main chromosome, three smaller chromosomes pHV1, pHV3 and pHV4 and the plasmid pHV2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the genome publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "98a0e6b0-c7ca-4682-8b55-639a7d8e60ac",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C18",
+      "claim": "The genome of Hfx. volcanii has a total genome length of 4 Mb.",
+      "claim_type": "EXPLICIT",
+      "source": "The genome of Hfx. volcanii has an average GC content of 65% and a total genome length of 4 Mb (Hartman et al., 2010) composed of five circular genetic elements: a 2.8 Mb main chromosome, three smaller chromosomes pHV1, pHV3 and pHV4 and the plasmid pHV2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the genome publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "35327b1b-8488-4442-affe-e1e958d2ff8e",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C19",
+      "claim": "The Hfx. volcanii genome is composed of five circular genetic elements: a 2.8 Mb main chromosome, three smaller chromosomes pHV1, pHV3 and pHV4 and the plasmid pHV2.",
+      "claim_type": "EXPLICIT",
+      "source": "The genome of Hfx. volcanii has an average GC content of 65% and a total genome length of 4 Mb (Hartman et al., 2010) composed of five circular genetic elements: a 2.8 Mb main chromosome, three smaller chromosomes pHV1, pHV3 and pHV4 and the plasmid pHV2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the genome publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "8d24d5b2-c078-47ea-a2b8-d8f907dc09c4",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C20",
+      "claim": "Hfx. volcanii is highly polyploid with approximately 15 genome copies during exponential growth.",
+      "claim_type": "EXPLICIT",
+      "source": "It is highly polyploid with \u223c15 genome copies during exponential growth and \u223c10 during stationary phase (Breuert et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "0bbd8110-f711-416b-9992-410659766381",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C21",
+      "claim": "Hfx. volcanii has approximately 10 genome copies during stationary phase.",
+      "claim_type": "EXPLICIT",
+      "source": "It is highly polyploid with \u223c15 genome copies during exponential growth and \u223c10 during stationary phase (Breuert et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "36302f4f-40be-4121-a0b2-b6ecc749e64a",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C22",
+      "claim": "The histone protein of Hfx. volcanii is hstA (HVO_0520).",
+      "claim_type": "EXPLICIT",
+      "source": "The histone protein of Hfx. volcanii, hstA (HVO_0520), has a domain architecture containing two distinct histone fold domains within the same peptide that heterodimerize similar to the Methanopyrus kandleri histone (HMk) (Geer et al., 2002; Talbert and Henikoff, 2010; Marchler-Bauer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by domain analysis and citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "4118ae7a-653c-4509-95bc-15543089f6d1",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C23",
+      "claim": "The hstA protein has a domain architecture containing two distinct histone fold domains within the same peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "The histone protein of Hfx. volcanii, hstA (HVO_0520), has a domain architecture containing two distinct histone fold domains within the same peptide that heterodimerize similar to the Methanopyrus kandleri histone (HMk) (Geer et al., 2002; Talbert and Henikoff, 2010; Marchler-Bauer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by domain analysis and citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "5617e472-12fe-40ad-8be6-c2f79d3dab9e",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C24",
+      "claim": "The hstA histone fold domains heterodimerize similar to the Methanopyrus kandleri histone (HMk).",
+      "claim_type": "EXPLICIT",
+      "source": "The histone protein of Hfx. volcanii, hstA (HVO_0520), has a domain architecture containing two distinct histone fold domains within the same peptide that heterodimerize similar to the Methanopyrus kandleri histone (HMk) (Geer et al., 2002; Talbert and Henikoff, 2010; Marchler-Bauer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "4dacd875-2832-4d09-ad29-96757ce700fc",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C25",
+      "claim": "Hfx. volcanii was cultured in rich media containing 2 M NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "We cultured Hfx. volcanii in rich media containing 2 M NaCl (Mullakhanbhai and Larsen, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "988b191f-2ca6-4c60-83b7-114edf9ff6ae",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C26",
+      "claim": "Mononucleosome-sized DNA fragments in Hfx. volcanii are 50-60 bp in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Mononucleosome-sized (50\u201360 bp) DNA fragments were gel purified and libraries were sequenced on an Illumina HiSeq2000 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data and Figure 1A showing the gel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "fad62c84-0170-4600-9333-f82b20b33861",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C27",
+      "claim": "The nucleosome occupancy data was significantly different than the control MNase digest of deproteinized 'naked' genomic DNA (r = 0.071).",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleosome occupancy data was significantly different than the control MNase digest of deproteinized 'naked' genomic DNA (r = 0.071), indicating that the nucleosome map is unaffected by any potential MNase sequence bias (Chung et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "386cbcc9-5ac2-4fb6-921e-c4c14af84ab2",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C28",
+      "claim": "The nucleosome map is unaffected by any potential MNase sequence bias.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleosome occupancy data was significantly different than the control MNase digest of deproteinized 'naked' genomic DNA (r = 0.071), indicating that the nucleosome map is unaffected by any potential MNase sequence bias (Chung et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low correlation with naked DNA control.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "51cceb44-d0f8-4d0d-9159-26dff66ffef5",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C29",
+      "claim": "The mean peak-to-peak distance for the main chromosome was 68.5 bp in genic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the smoothed signal, the mean peak-to-peak distance for the main chromosome was 68.5 bp in genic regions and 76.1 bp in non-genic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the nucleosome occupancy analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "73467995-fe05-4893-8422-35bf3fb72648",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C30",
+      "claim": "The mean peak-to-peak distance for the main chromosome was 76.1 bp in non-genic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the smoothed signal, the mean peak-to-peak distance for the main chromosome was 68.5 bp in genic regions and 76.1 bp in non-genic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the nucleosome occupancy analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "3ebd1427-6595-4bdf-8db7-b3cb226b480f",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C31",
+      "claim": "Genic regions were defined as the transcribed region plus 40 bp upstream of the 5\u2032 end.",
+      "claim_type": "EXPLICIT",
+      "source": "Genic regions were defined as the transcribed region plus 40 bp (the average promoter length based on Palmer and Daniels, 1995) upstream of the 5\u2032 end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the operational definition used in the analysis, based on cited promoter length.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "d4b75294-7107-42ff-8891-e3356d43ab0b",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C32",
+      "claim": "The average promoter length in Hfx. volcanii is 40 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "Genic regions were defined as the transcribed region plus 40 bp (the average promoter length based on Palmer and Daniels, 1995) upstream of the 5\u2032 end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to Palmer and Daniels, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "d42b06ef-6ac1-4322-bbbd-5067d45f729f",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C33",
+      "claim": "Greater nucleosome density is observed in Hfx. volcanii vs all eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a greater nucleosome density in Hfx. volcanii vs all eukaryotes likely due to the shorter length of DNA wrapped around the archaeal histone tetramer (Pereira et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the measured nucleosome density with known eukaryotic values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "8b0c05e7-7315-434d-be64-b37e3f094de1",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C34",
+      "claim": "The greater nucleosome density in Hfx. volcanii is likely due to the shorter length of DNA wrapped around the archaeal histone tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a greater nucleosome density in Hfx. volcanii vs all eukaryotes likely due to the shorter length of DNA wrapped around the archaeal histone tetramer (Pereira et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known structural differences between archaeal and eukaryotic nucleosomes.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "1285d1b4-c9ee-4579-834c-c4ae77d535d2",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C35",
+      "claim": "The Hfx. volcanii genome has 14.2 nucleosomes per kilobase.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our data, the Hfx. volcanii genome has 14.2 nucleosomes per kilobase compared to 5.2 nucleosomes per kilobase in Saccharomyces cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the nucleosome occupancy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "ba2b7e88-3e79-485d-9dc5-07b8daeec851",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C36",
+      "claim": "Saccharomyces cerevisiae has 5.2 nucleosomes per kilobase.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our data, the Hfx. volcanii genome has 14.2 nucleosomes per kilobase compared to 5.2 nucleosomes per kilobase in Saccharomyces cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison value, likely from prior knowledge or literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "ce34239f-f0a5-4d4e-9f4b-cea2bd9270b7",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C37",
+      "claim": "The nucleosome map reveals a periodic pattern similar to that seen in all eukaryotes examined to date.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting map reveals a periodic pattern similar to that seen in all eukaryotes examined to date; with protected regions appearing as peaks and linker regions as troughs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the observed pattern with known eukaryotic patterns.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "cb536069-b138-4925-b6df-95b6623784a3",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C38",
+      "claim": "Nucleosome midpoints in Hfx. volcanii were enriched with G/C nucleotides from 61.4% GC at the edge of the protected fragment to 74.6% GC at the midpoint (dyad).",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence analysis of the entire nucleosome map showed that nucleosome midpoints were enriched with G/C nucleotides from 61.4% GC at the edge of the protected fragment to 74.6% GC at the midpoint (dyad).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from sequence analysis of the nucleosome map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "8d4c0ad2-e642-40cf-b989-3e9ea19d83be",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C39",
+      "claim": "There is an increase of G/C nucleotides and a decrease in A/T nucleotides at the nucleosome midpoint in Hfx. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "We found an increase of G/C nucleotides and a decrease in A/T nucleotides at the midpoint, as described recently for human cell lines (Figure 1B,C) (Valouev et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 1B,C and comparison with human cell lines.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "19fb46f2-fa80-48ea-9e2f-82982c4f329d",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C40",
+      "claim": "An increase of G/C nucleotides and a decrease in A/T nucleotides at the nucleosome midpoint has been described recently for human cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We found an increase of G/C nucleotides and a decrease in A/T nucleotides at the midpoint, as described recently for human cell lines (Figure 1B,C) (Valouev et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Valouev et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "098b74b1-ad53-452b-98c9-b81102e846d2",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C41",
+      "claim": "No periodicity in dinucleotide frequency relative to the nucleosome midpoint was observed in Hfx. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previous studies in eukaryotes, we did not observe a periodicity in dinucleotide frequency relative to the nucleosome midpoint (Satchwell et al., 1986; Bailey et al., 2000; Albert et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative result from the sequence analysis, contrasting with eukaryotic studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "a422f99c-2acf-420e-ab1c-0cfa24d8d65a",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C42",
+      "claim": "Periodicity in dinucleotide frequency relative to the nucleosome midpoint has been observed in previous studies in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previous studies in eukaryotes, we did not observe a periodicity in dinucleotide frequency relative to the nucleosome midpoint (Satchwell et al., 1986; Bailey et al., 2000; Albert et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior eukaryotic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "0cc48223-7005-437e-a19b-31b7afe63702",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C43",
+      "claim": "The existing genome annotation for Haloferax is derived almost exclusively from ORF predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "The existing genome annotation for Haloferax is derived almost exclusively from ORF predictions (Hartman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the genome annotation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "7a700b83-e381-4b45-b043-b7cca734ed57",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C44",
+      "claim": "Deep sequencing was used to create a high confidence transcriptome of the main chromosome of Hfx. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "To augment these predictions, we used deep sequencing to create a high confidence transcriptome of the main chromosome of Hfx. volcanii.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "2c4b693e-dd9d-4a31-aac9-c2b1a2e139fc",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C45",
+      "claim": "The transcriptome map allowed definition of 5\u2032UTR lengths, transcriptional start sites (TSSs) and transcriptional termination sites (TTSs).",
+      "claim_type": "EXPLICIT",
+      "source": "This map allowed us to define both 5\u2032UTR lengths, transcriptional start sites (TSSs) and transcriptional termination sites (TTSs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the information obtained from the transcriptome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "af2e4148-951e-4ec5-b84d-29ecbca9b92e",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C46",
+      "claim": "Duplex-specific nuclease (DSN) normalization was used to partially deplete repetitive RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Total RNA was extracted from Hfx. volcanii cells, repetitive RNA was partially depleted via duplex-specific nuclease (DSN) normalization followed by RNA-seq (see 'Materials and methods') (Zhulidov et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "4e372e44-5d78-4ea4-8222-9159e524e8c7",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C47",
+      "claim": "The final set of transcripts were manually curated yielding 3059 transcriptional units in Hfx. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "The final set of transcripts were manually curated yielding 3059 transcriptional units in Hfx. volcanii, a number that is greater than observed previously in the comparable transcriptome of the sulfur-metabolizing archaeon Sulfolobus solfataricus (Wurtzel et al., 2010) but fewer than the 4073 predicted Hfx. volcanii genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the transcriptome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "91772954-efa1-4e62-916c-a19363f05cee",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C48",
+      "claim": "The number of transcriptional units in Hfx. volcanii (3059) is greater than observed previously in the comparable transcriptome of Sulfolobus solfataricus.",
+      "claim_type": "EXPLICIT",
+      "source": "The final set of transcripts were manually curated yielding 3059 transcriptional units in Hfx. volcanii, a number that is greater than observed previously in the comparable transcriptome of the sulfur-metabolizing archaeon Sulfolobus solfataricus (Wurtzel et al., 2010) but fewer than the 4073 predicted Hfx. volcanii genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with prior work supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "30201734-3231-48c8-a7db-2581d461ee43",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C49",
+      "claim": "The number of transcriptional units in Hfx. volcanii (3059) is fewer than the 4073 predicted Hfx. volcanii genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The final set of transcripts were manually curated yielding 3059 transcriptional units in Hfx. volcanii, a number that is greater than observed previously in the comparable transcriptome of the sulfur-metabolizing archaeon Sulfolobus solfataricus (Wurtzel et al., 2010) but fewer than the 4073 predicted Hfx. volcanii genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with the predicted gene count.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "062a1e8f-2437-4c5e-8c6e-3b182bbb9cb3",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C50",
+      "claim": "75% of the predicted transcripts were detectably expressed in the rich media conditions used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that in the rich media conditions used in this study, not all genes are expressed. Specifically 75% of the predicted transcripts were detectably expressed, and this fraction is consistent with observations obtained for yeast gene expression in rich media (David et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the transcriptome data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "b95832bb-10b9-41b0-88e6-9a8050420611",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C51",
+      "claim": "The fraction of expressed genes (75%) is consistent with observations obtained for yeast gene expression in rich media.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that in the rich media conditions used in this study, not all genes are expressed. Specifically 75% of the predicted transcripts were detectably expressed, and this fraction is consistent with observations obtained for yeast gene expression in rich media (David et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with cited yeast data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "819c996d-899d-4fb4-9d1d-89bb2f76477b",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C52",
+      "claim": "Thirty-two novel transcripts absent from the predicted sequence annotation were identified in the RNA-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty-two novel transcripts (absent from the predicted sequence annotation) were identified in the RNA-seq data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the transcriptome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "d1e68b6d-14e2-42f2-9d72-b982d51069cf",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C53",
+      "claim": "Most of the 32 novel transcripts lack significant sequence homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these 32 transcripts lack significant sequence homologs, and several were classified as transposases with paralogs in Hfx. volcanii (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on homology analysis of the novel transcripts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "b565c826-60e1-41f9-8424-28f789b8c21b",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C54",
+      "claim": "Several of the 32 novel transcripts were classified as transposases with paralogs in Hfx. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these 32 transcripts lack significant sequence homologs, and several were classified as transposases with paralogs in Hfx. volcanii (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence classification and homology analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "01579713-8c72-4ed0-86f3-5886432275e8",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C55",
+      "claim": "NTRANS_0004 was the most highly expressed gene in the transcriptome and was not previously annotated.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the gene that was most highly expressed in the transcriptome (NTRANS_0004) was not previously annotated and contains a putative N-Acyltransferase (NAT) superfamily domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the transcriptome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "edbd3657-ba15-4946-b561-fc40156a0632",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C56",
+      "claim": "NTRANS_0004 contains a putative N-Acyltransferase (NAT) superfamily domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the gene that was most highly expressed in the transcriptome (NTRANS_0004) was not previously annotated and contains a putative N-Acyltransferase (NAT) superfamily domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on domain analysis of the sequence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "10fae029-6af4-41a0-a044-88df405c827d",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C57",
+      "claim": "NTRANS_0004 appears to be restricted to the genomes of other halophilic archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "Homology searches revealed that this transcript appears to be restricted to the genomes of other halophilic archaea (Altschul et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on homology searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "4b0e6b03-313d-4c05-bf45-b5c49c0e326c",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C58",
+      "claim": "The architecture of the NTRANS_0004 domain is homologous to chain A of the well-characterized histone acetyltransferases Gcn5, Gna1, Hpa2 in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of this domain is homologous to chain A of the well-characterized histone acetyltransferases Gcn5, Gna1, Hpa2 in S. cerevisiae, suggesting a possible role for this transcript in regulating transcription via histone acetylation (Marchler-Bauer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on domain architecture comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "bb1302bd-1652-4d32-be7f-28d076245922",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C59",
+      "claim": "NTRANS_0004 may have a possible role in regulating transcription via histone acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of this domain is homologous to chain A of the well-characterized histone acetyltransferases Gcn5, Gna1, Hpa2 in S. cerevisiae, suggesting a possible role for this transcript in regulating transcription via histone acetylation (Marchler-Bauer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on domain homology.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "509bd54e-115b-4480-b519-d22167025fc7",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C60",
+      "claim": "Additional acyltransferases with a similar architecture have been implicated in bacteriophage-encoded DNA modifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional acyltransferases with a similar architecture have been implicated in bacteriophage-encoded DNA modifiers as well as in cold and ethanol tolerance in yeast (Du and Takagi, 2007; Kaminska and Bujnicki, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "2cc34ae0-b405-4ca4-a9fd-bca5e548ac48",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C61",
+      "claim": "Additional acyltransferases with a similar architecture have been implicated in cold and ethanol tolerance in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional acyltransferases with a similar architecture have been implicated in bacteriophage-encoded DNA modifiers as well as in cold and ethanol tolerance in yeast (Du and Takagi, 2007; Kaminska and Bujnicki, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "9f81cdc3-6a62-4f2a-972c-96074bd03274",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C62",
+      "claim": "Histone post-translational modifications have not been observed in archaeal histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while histone post-translational modifications have not been observed in archaeal histones (Forbes et al., 2004), our observation suggests that some rudimentary control over chromatin accessibility may occur via the action of ancient NAT family members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "407ffa3c-611c-4e80-af63-50cb635fead9",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C63",
+      "claim": "Some rudimentary control over chromatin accessibility may occur via the action of ancient NAT family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while histone post-translational modifications have not been observed in archaeal histones (Forbes et al., 2004), our observation suggests that some rudimentary control over chromatin accessibility may occur via the action of ancient NAT family members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the identification of NAT domain-containing proteins.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "0d064c79-17d7-494d-8799-2435b7401d10",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C64",
+      "claim": "Acetyltransferase and deacetylase orthologs have been identified in Hfx. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore acetyltransferase and deacetylase orthologs, which appear to have enzymatic activity based on their sensitivity to the histone deacetylase (HDAC) inhibitor trichostatin A have been identified in Hfx. volcanii (Altman-Price and Mevarech, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "62199a3d-252e-4a2d-aa34-9e7fe818a9d9",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C65",
+      "claim": "Acetyltransferase and deacetylase orthologs in Hfx. volcanii appear to have enzymatic activity based on their sensitivity to the histone deacetylase (HDAC) inhibitor trichostatin A.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore acetyltransferase and deacetylase orthologs, which appear to have enzymatic activity based on their sensitivity to the histone deacetylase (HDAC) inhibitor trichostatin A have been identified in Hfx. volcanii (Altman-Price and Mevarech, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "5bc208cc-5d41-432a-8f37-def01bf104a1",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C66",
+      "claim": "In eukaryotes, the TSS of the majority of expressed genes is characterized by a nucleosome-depleted region (NDR).",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, the TSS of the majority of expressed genes is characterized by a nucleosome-depleted region (NDR) (Jiang and Pugh, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about eukaryotic chromatin structure supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "99b7dbbf-87c4-4dfd-a899-55ced8df1215",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C67",
+      "claim": "In eukaryotes, the NDR is flanked by the well-positioned \u22121 and the +1 nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This NDR is flanked by the well-positioned \u22121 and the +1 nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about eukaryotic chromatin structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "78104e24-8923-4a08-93cd-57da5e497bb3",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C68",
+      "claim": "NDRs and flanking nucleosomes direct RNA polymerase II to initiate transcription and influence the binding of promoter regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "These regions direct RNA polymerase II to initiate transcription and influence the binding of promoter regulatory elements (Jiang and Pugh, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "bd418692-c865-4dd7-b9c3-aec40fe39394",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C69",
+      "claim": "The stereotypical pattern of nucleosome depletion at promoters and well-ordered nucleosomes in gene bodies is found in all eukaryotes, including yeast, Drosophila, Arabidopsis and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "This stereotypical pattern of nucleosome depletion at promoters and well-ordered nucleosomes in gene bodies is found in all eukaryotes, including yeast, Drosophila, Arabidopsis and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about eukaryotic chromatin structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "528a740b-c85d-401e-9ab8-53bd3d0bb032",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C70",
+      "claim": "The NDR and \u22121 and +1 nucleosomes are conserved in Hfx. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the RNA-seq-derived transcripts for Hfx. volcanii, we computed the degree of aggregate nucleosome occupancy for the 2343 transcripts on the main chromosome, and found that the NDR and \u22121 and +1 nucleosomes are conserved in Hfx. volcanii (Figure 2) suggesting that the interplay between chromatin and transcription is conserved in archaeal promoters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by the nucleosome occupancy data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "c5659eda-3e0a-4459-840d-17e39807e8fe",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C71",
+      "claim": "The interplay between chromatin and transcription is conserved in archaeal promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the RNA-seq-derived transcripts for Hfx. volcanii, we computed the degree of aggregate nucleosome occupancy for the 2343 transcripts on the main chromosome, and found that the NDR and \u22121 and +1 nucleosomes are conserved in Hfx. volcanii (Figure 2) suggesting that the interplay between chromatin and transcription is conserved in archaeal promoters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the conservation of NDR and flanking nucleosomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "20951ca4-b0c3-46a3-bd61-7497d340eab4",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C72",
+      "claim": "Differential nucleosome density was observed with profiles encompassing between four to six nucleosomes in a 400-bp DNA segment spanning 200 bp on each side of the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated nucleosome occupancy profiles for each transcript and clustered them hierarchically. Differential nucleosome density was observed with profiles encompassing between four to six nucleosomes in a 400-bp DNA segment spanning 200 bp on each side of the TSS (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the hierarchical clustering analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "d13d7391-0a75-4e22-bb30-2803dab6d8dd",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C73",
+      "claim": "NDRs at TTSs are observed in Hfx. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "NDRs at TTSs are also observed, and similar to those found in eukaryotes (Lee et al., 2007) they are less prominent than promoter NDRs in Hfx. volcanii (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "cfe90ec3-f741-484a-9500-f64c41d1b2e7",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C74",
+      "claim": "NDRs at TTSs in Hfx. volcanii are less prominent than promoter NDRs.",
+      "claim_type": "EXPLICIT",
+      "source": "NDRs at TTSs are also observed, and similar to those found in eukaryotes (Lee et al., 2007) they are less prominent than promoter NDRs in Hfx. volcanii (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "180821b8-018f-4d66-b983-0ab352e892d8",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C75",
+      "claim": "NDRs at TTSs in eukaryotes are less prominent than promoter NDRs.",
+      "claim_type": "EXPLICIT",
+      "source": "NDRs at TTSs are also observed, and similar to those found in eukaryotes (Lee et al., 2007) they are less prominent than promoter NDRs in Hfx. volcanii (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "e243e5f2-6f75-4935-8765-5851838e1e15",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C76",
+      "claim": "Genome-wide nucleosome occupancy is conserved between archaea and eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study establishes that genome-wide nucleosome occupancy is conserved between archaea and eukaryotes (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion of the study supported by the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "8b071a0a-6f5c-4b01-826d-9d230c55a663",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C77",
+      "claim": "Nucleosomal protected fragments are shorter in archaea than in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that the nucleosomal protected fragments and NDRs are shorter in archaea than in eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the measured fragment sizes with known eukaryotic values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "25992c3a-498f-403d-93bd-fba69ae428d5",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C78",
+      "claim": "NDRs are shorter in archaea than in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that the nucleosomal protected fragments and NDRs are shorter in archaea than in eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the measured NDR sizes with known eukaryotic values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "eadf1e68-e506-429b-8f74-36db444147f3",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C79",
+      "claim": "Hfx. volcanii likely resembles a deeply rooted ancestor that possessed eukaryotic genome architecture hallmarks such as histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are particularly noteworthy because Hfx. volcanii likely resembles a deeply rooted ancestor that possessed eukaryotic genome architecture hallmarks such as histones, as well as bacterial hallmarks such as the Shine-Dalgarno sequence (Sartorius-Neef and Pfeifer, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the phylogenetic position and features of Hfx. volcanii.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "e048de8f-97ae-4e2e-8b09-8385ae09f14c",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C80",
+      "claim": "Hfx. volcanii possesses bacterial hallmarks such as the Shine-Dalgarno sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are particularly noteworthy because Hfx. volcanii likely resembles a deeply rooted ancestor that possessed eukaryotic genome architecture hallmarks such as histones, as well as bacterial hallmarks such as the Shine-Dalgarno sequence (Sartorius-Neef and Pfeifer, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "0a0877df-232d-4527-a9d9-40f83babfeaa",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C81",
+      "claim": "Archaeal histone tetramers likely resemble an ancestral state of chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Archaeal histone tetramers likely resemble an ancestral state of chromatin, as it has been observed that functional (H3-H4)2 tetramers can be formed in vitro from eukaryotic histones, and these tetramers are functional; they facilitate more rapid transcription in vitro compared to native histone octamers (Puerta et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ability of eukaryotic H3-H4 to form functional tetramers.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "e5bcc476-7587-44d8-9053-c3a4a95056be",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C82",
+      "claim": "Functional (H3-H4)2 tetramers can be formed in vitro from eukaryotic histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Archaeal histone tetramers likely resemble an ancestral state of chromatin, as it has been observed that functional (H3-H4)2 tetramers can be formed in vitro from eukaryotic histones, and these tetramers are functional; they facilitate more rapid transcription in vitro compared to native histone octamers (Puerta et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "5b6dce90-1af4-4cf4-94ca-9d4d3c239426",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C83",
+      "claim": "Eukaryotic (H3-H4)2 tetramers facilitate more rapid transcription in vitro compared to native histone octamers.",
+      "claim_type": "EXPLICIT",
+      "source": "Archaeal histone tetramers likely resemble an ancestral state of chromatin, as it has been observed that functional (H3-H4)2 tetramers can be formed in vitro from eukaryotic histones, and these tetramers are functional; they facilitate more rapid transcription in vitro compared to native histone octamers (Puerta et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "e949ca16-3432-45d9-877a-d271b8ba84bd",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C84",
+      "claim": "The observation that archaea contain (H3-H4)2 tetramers is consistent with the proposal that formation of the canonical eukaryotic nucleosome octamer begins with (H3-H4)2 tetramer assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that archaea contain (H3-H4)2 tetramers is consistent with the proposal that formation of the canonical eukaryotic nucleosome octamer begins with (H3-H4)2 tetramer assembly (Talbert and Henikoff, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the archaeal structure with eukaryotic assembly models.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "951345f7-57c0-49a1-8a96-3cb0a400a410",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C85",
+      "claim": "Archaeal chromatin is not required for genome compaction.",
+      "claim_type": "EXPLICIT",
+      "source": "As well, owing to the small bacterial-sized archaeal genome, we suggest that archaeal chromatin is not required for genome compaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the small genome size.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "218621f4-31bf-4798-8582-b1900d46140e",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C86",
+      "claim": "Higher-order chromatin is a eukaryotic invention.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads us to postulate that higher-order chromatin (Sajan and Hawkins, 2012) is a eukaryotic invention and that archaeal chromatin is necessary but not sufficient for genome compaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings and comparison with eukaryotes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "e8d9559f-0956-41f9-988a-bb9133359e67",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C87",
+      "claim": "Archaeal chromatin is necessary but not sufficient for genome compaction.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads us to postulate that higher-order chromatin (Sajan and Hawkins, 2012) is a eukaryotic invention and that archaeal chromatin is necessary but not sufficient for genome compaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "e546ef78-911d-40ac-85f7-af457fe4cb54",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C88",
+      "claim": "Approximately 60 bp and 120 bp mono- and di-nucleosomes were observed in MNase-digested Hfx. volcanii chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Formaldehyde cross-linked chromatin was subjected to MNase digestion with increasing amounts on microccocal nuclease (from 1 to 5 units). De-crosslinked DNAs were separated on a 3% agarose gel and \u223c60 bp and \u223c120 bp mono- and di-nucleosomes were observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the gel image in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "6efd45e0-ba7a-495e-a9d2-557bdd2fde7e",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C89",
+      "claim": "There is an enrichment of G/C nucleotides and a depletion of A/T nucleotides at the dyad relative to the end points of the protected fragment in Hfx. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "The counts of AA, AT, TA, TT or CC, CG, GC, GG dinucleotides are reported at each position showing an enrichment of G/C nucleotides and a depletion of A/T nucleotides at the dyad relative to the end points of the protected fragment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "f7e8217a-aae9-4802-a0a3-f030b0c816b5",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C90",
+      "claim": "The dinucleotide pattern in Hfx. volcanii differs from the observation of Bailey et al. (2000), where GC, AA and TA dinucleotides were repeated at approximately 10-bp intervals in recombinant archaeal histone B from Methanothermus fervidus.",
+      "claim_type": "EXPLICIT",
+      "source": "This differs from the observation of Bailey et al. (2000), where GC, AA and TA dinucleotides were repeated at \u223c10-bp intervals in recombinant archaeal histone B from Methanothermus fervidus (rHMfB) (Bailey et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison with prior work cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "b3a5635a-a9e2-48d0-bbcc-3a8a4a90982a",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C91",
+      "claim": "There is a significant GC enrichment towards the nucleosome midpoint in Hfx. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence logo of a nucleosome-binding site in Hfx. volcanii centered at the nucleosome midpoint. There is a significant GC enrichment towards the nucleosome midpoint.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "c1bb85d3-4802-493c-9a03-14b81f1fc91a",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C92",
+      "claim": "Archaeal occupancy has a shorter periodicity due to the smaller size of archaeal nucleosome DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the smaller size of archaeal nucleosome DNA, the occupancy has a shorter periodicity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4 comparing archaeal and eukaryotic patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "363adcd4-a701-4d49-a6fa-d0759e3ff3b6",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C93",
+      "claim": "The 5\u2032 NDR is, on average, more depleted and longer than the 3\u2032 NDR in Hfx. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in eukaryotes, NDRs are also found at the transcriptional termination sites in Hfx. volcanii. Both 5\u2032 and 3\u2032 end profiles are overlaid in this figure for comparison. The 5\u2032 NDR is, on average, more depleted and longer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "74cc1f80-9965-4021-b941-f34c1ae447a2",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C94",
+      "claim": "Haloferax volcanii DS2 cells were grown to mid-log phase at 42\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Haloferax volcanii DS2 cells (obtained from the ATCC) were grown to mid-log phase at 42\u00b0C in ATCC 974 Halobacterium medium containing 2 M NaCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "c4b69e55-dd48-4073-a4c3-5022be1f5cc3",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C95",
+      "claim": "Cells were fixed with 2% formaldehyde for 30 min then quenched with 125 mM of glycine for 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were fixed with 2% formaldehyde for 30 min then quenched with 125 mM of glycine for 5 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "2c92de8b-33b0-4732-9fbd-2fd999596224",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C96",
+      "claim": "Optimal interval size for the Gaussian convolution sum was 27 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimal interval size for the Gaussian convolution sum, as determined by Pearson's correlation coefficient with the raw data, was 27 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optimization of the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "954746c6-37dd-4023-8174-8a26a2a9074a",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C97",
+      "claim": "For the two-pass SMA filter, optimal interval size was 40 bp for first-pass and 15 bp for second-pass.",
+      "claim_type": "EXPLICIT",
+      "source": "For the two-pass SMA it was 40 bp for first-pass and 15 bp for second-pass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optimization of an alternative analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "bc4b1dee-191f-46da-8c23-f5f70579b9d9",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C98",
+      "claim": "Total RNA was sequenced at extremely high coverage (2587 \u00d7 mean coverage).",
+      "claim_type": "EXPLICIT",
+      "source": "Total RNA was sequenced at extremely high coverage (2587 \u00d7 mean coverage) so that rRNA sequences (\u223c77% of all sequence reads) could be computationally excluded, as described by Wurtzel et al. (2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing depth achieved.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "b633c336-4167-4fdf-981b-392de7ff5735",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C99",
+      "claim": "rRNA sequences comprised approximately 77% of all sequence reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Total RNA was sequenced at extremely high coverage (2587 \u00d7 mean coverage) so that rRNA sequences (\u223c77% of all sequence reads) could be computationally excluded, as described by Wurtzel et al. (2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "3d0e8ef8-4874-4937-ac49-743c3cac6c54",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C100",
+      "claim": "The RNA-seq data displayed 92.1% overlap with the predicted annotations.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA-seq data displayed a great deal of overlap with the predicted annotations (Hartman et al., 2010), with 92.1% of the existing annotations being confirmed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from comparison of RNA-seq with predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "69d3a26d-cc23-4449-95bf-db0b03a614b2",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C101",
+      "claim": "Of the 4073 predicted annotations, 3751 were confirmed by RNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 4073 predicted annotations, 3751 were confirmed, and, of these, 744 were merged with other transcripts to form longer transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the transcriptome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "c60f019b-72d7-42e5-8ae7-929615d56113",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C102",
+      "claim": "Of the confirmed annotations, 744 were merged with other transcripts to form longer transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 4073 predicted annotations, 3751 were confirmed, and, of these, 744 were merged with other transcripts to form longer transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the transcript assembly process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "0955541a-2db7-483d-ae3c-d705b4aaaab8",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C103",
+      "claim": "85% of the Haloferax genome is predicted to be coding.",
+      "claim_type": "EXPLICIT",
+      "source": "Because 85% of the Haloferax genome is predicted to be coding (Hartman et al., 2010), transcript detection is complicated by transcript overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the genome annotation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "02f192db-2013-466b-812b-c9ff835c30a8",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "claim_id": "C104",
+      "claim": "NTRANS_0004 was the most abundant transcript in the transcriptome, excluding the six rRNA genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these transcripts, NTRANS_0004 was the most abundant transcript in the transcriptome, excluding the six rRNA genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the transcriptome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "284b77bf-98e5-4245-89c4-b7e12c8a5fd3",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors generated the first archaeal genome-wide nucleosome occupancy map in Haloferax volcanii using MNase-seq. Mononucleosome-sized DNA fragments (50-60 bp) were isolated and sequenced, with appropriate controls including naked DNA to rule out MNase sequence bias (r=0.071 with naked DNA control).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C25-28, C88, C94-95 collectively describe the experimental approach and validation. The low correlation with naked DNA control (C27) appropriately validates that the observed patterns reflect nucleosome positioning rather than MNase bias. The gel image (Figure 1A) confirms the expected fragment sizes for archaeal nucleosomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "ca415de8-97a4-4f07-a9b7-ac64c46ca8f2",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nucleosome spacing in Hfx. volcanii is shorter than in eukaryotes, with mean peak-to-peak distances of 68.5 bp in genic regions and 76.1 bp in non-genic regions. The genome has 14.2 nucleosomes per kilobase compared to 5.2 in S. cerevisiae, likely due to the shorter DNA wrapped around archaeal histone tetramers (~60 bp vs ~147 bp).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-37 provide quantitative measurements of nucleosome density and spacing. The higher nucleosome density in archaea is logically explained by the shorter DNA footprint per nucleosome (C34), and the comparison with yeast provides appropriate context. The periodic pattern observation (C37) is supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "3fde5ef3-735d-426a-89d4-725128e1a68b",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Nucleosome midpoints in Hfx. volcanii are enriched for G/C nucleotides (from 61.4% at fragment edges to 74.6% at the dyad) with corresponding A/T depletion, similar to patterns observed in human cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-40, C89, C91 describe GC enrichment at nucleosome dyads with quantitative data. Figure 1B,C visually supports this finding. The comparison with human cells (C40) provides evolutionary context, though the manuscript notes this differs from some other archaeal studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "90e0411b-d7ac-480f-b4a1-5b7e439f7b1c",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Unlike eukaryotes and some other archaea, no 10-bp periodicity in dinucleotide frequency was observed relative to the nucleosome midpoint in Hfx. volcanii.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-42, C90 report a negative finding that contrasts with prior eukaryotic studies and with Bailey et al. (2000) observations in M. fervidus. This is a valid observation, though the biological significance of this difference is not explored. The absence of periodicity is clearly stated and appropriately contrasted with prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "57936b76-429b-4c80-8c52-5e3899d74d29",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Deep RNA-seq (2587\u00d7 coverage) was used to create a comprehensive transcriptome map of Hfx. volcanii, identifying 3059 transcriptional units. This confirmed 92.1% of predicted annotations, with 75% of predicted genes detectably expressed under rich media conditions, consistent with yeast expression patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-51, C98-102 describe the transcriptome generation and validation. The high sequencing depth (C98) and DSN normalization (C46) are appropriate methods. The 92.1% confirmation rate (C100) and 75% expression rate (C50) are well-documented. The comparison with yeast (C51) provides validation, though condition-specific expression limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "af4c24e1-5d61-4631-ae3e-e72fd78e3e44",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Thirty-two novel transcripts were identified, including NTRANS_0004, the most highly expressed non-rRNA transcript, which contains a putative N-Acyltransferase (NAT) domain and appears restricted to halophilic archaea.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-57, C104 describe novel transcript discovery. The identification of 32 novel transcripts (C52) and characterization of NTRANS_0004 (C55-57) are data-driven findings. The domain analysis (C56) and phylogenetic restriction (C57) are appropriately documented, though functional validation is absent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "833407f1-b26d-47a9-83c4-6b00b3b7acf8",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NTRANS_0004's NAT domain shows homology to yeast histone acetyltransferases (Gcn5, Gna1, Hpa2), suggesting a possible role in chromatin regulation via histone acetylation, though histone PTMs have not been directly observed in archaeal histones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-65 propose a functional role based on domain homology (C58) and cite prior work on acetyltransferases in Hfx. volcanii (C64-65). However, this remains speculative (C59, C63) as no direct functional evidence is provided. The contradiction with C62 (no observed archaeal histone PTMs) weakens the inference, making this hypothesis uncertain without experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "32cc0ecb-7d4c-461c-90b7-3944c6aff0b6",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Archaeal transcripts in Hfx. volcanii exhibit conserved eukaryotic chromatin features: nucleosome-depleted regions (NDRs) at transcriptional start sites flanked by well-positioned -1 and +1 nucleosomes, with differential nucleosome density (4-6 nucleosomes per 400 bp) across transcript clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-6, C70-72 represent the central finding of chromatin architecture conservation. Figure 2 clearly shows the NDR and flanking nucleosomes. The hierarchical clustering (C72, Figure 2C) demonstrates variability in nucleosome density. This is well-supported by the aggregate analysis of 2343 transcripts and appropriate statistical methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "f5038273-fd09-40e4-940e-a6b8571f94ee",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NDRs are also present at transcriptional termination sites in Hfx. volcanii but are less prominent than promoter NDRs, with 5' NDRs being more depleted and longer than 3' NDRs, similar to eukaryotic patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-75, C93 describe TTS-associated NDRs. Figure 3 supports the observation that 3' NDRs are less prominent than 5' NDRs (C74, C93). The comparison with eukaryotes (C75) is appropriately cited. This finding extends the conservation of chromatin architecture beyond promoters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "f7d069d7-ffea-4d35-abf6-f3561f63bcfe",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The conservation of nucleosome occupancy patterns between archaea and eukaryotes demonstrates that histones and chromatin architecture evolved before the Archaea-Eukarya divergence, suggesting the ancient origin of chromatin's role in gene regulation. Archaeal nucleosomal fragments and NDRs are shorter than eukaryotic counterparts due to smaller nucleosome size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-8, C76-78, C92 present the main evolutionary conclusion. The conservation of NDRs and positioned nucleosomes (established in prior results) strongly supports pre-divergence evolution of chromatin architecture. The shorter periodicity (C92) and fragment sizes (C77-78) are logical consequences of the ~60 bp vs ~147 bp difference. This is a well-supported inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "8aacf716-2062-43c2-8cdc-fcec5d221e1a",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Hfx. volcanii represents a deeply rooted ancestor with both eukaryotic features (histones) and bacterial features (Shine-Dalgarno sequences). Archaeal histone tetramers likely resemble an ancestral chromatin state, consistent with the ability of eukaryotic (H3-H4)2 tetramers to form functional nucleosomes and the proposal that eukaryotic octamer assembly begins with tetramer formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-84 provide evolutionary context. The phylogenetic position of Hfx. volcanii (C79-80) is supported by citations. The inference about ancestral state (C81, C84) is reasonable given the structural similarities and cited evidence that eukaryotic H3-H4 tetramers are functional (C82-83). This interpretation is logically sound though inherently speculative about evolutionary history.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "638a8593-bf2f-4e12-9368-1fb129a4d7ca",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors postulate that archaeal chromatin is not required for genome compaction due to the small genome size, suggesting that higher-order chromatin is a eukaryotic invention and that archaeal chromatin is necessary but not sufficient for compaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-87 are explicitly speculative (\"suggest,\" \"postulate\"). While the small genome size provides circumstantial support, no direct evidence is presented that archaeal chromatin lacks compaction function or that higher-order structure is absent. This hypothesis requires experimental validation of chromatin structure and compaction mechanisms in archaea.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    },
+    {
+      "id": "392df34a-28e4-4ad6-8aec-8e0ed5af920b",
+      "content_id": "8781c706-3cc3-4b22-99b7-6b252dccd3aa",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Nucleosome midpoint detection was optimized using Gaussian convolution (27 bp optimal interval) and compared with two-pass simple moving average filtering (40 bp first-pass, 15 bp second-pass), with Gaussian filtering providing better resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-97 describe computational method optimization. The use of Pearson correlation to determine optimal parameters is appropriate. The comparison of methods and selection of Gaussian filtering based on performance is methodologically sound. This is a minor technical detail supporting the main analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:59.591782Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4c1bf554-515d-4494-b0fe-8bb4b4fdca86",
+      "result_id": "284b77bf-98e5-4245-89c4-b7e12c8a5fd3"
+    },
+    {
+      "claim_id": "4dacd875-2832-4d09-ad29-96757ce700fc",
+      "result_id": "284b77bf-98e5-4245-89c4-b7e12c8a5fd3"
+    },
+    {
+      "claim_id": "988b191f-2ca6-4c60-83b7-114edf9ff6ae",
+      "result_id": "284b77bf-98e5-4245-89c4-b7e12c8a5fd3"
+    },
+    {
+      "claim_id": "fad62c84-0170-4600-9333-f82b20b33861",
+      "result_id": "284b77bf-98e5-4245-89c4-b7e12c8a5fd3"
+    },
+    {
+      "claim_id": "386cbcc9-5ac2-4fb6-921e-c4c14af84ab2",
+      "result_id": "284b77bf-98e5-4245-89c4-b7e12c8a5fd3"
+    },
+    {
+      "claim_id": "e546ef78-911d-40ac-85f7-af457fe4cb54",
+      "result_id": "284b77bf-98e5-4245-89c4-b7e12c8a5fd3"
+    },
+    {
+      "claim_id": "74cc1f80-9965-4021-b941-f34c1ae447a2",
+      "result_id": "284b77bf-98e5-4245-89c4-b7e12c8a5fd3"
+    },
+    {
+      "claim_id": "c4b69e55-dd48-4073-a4c3-5022be1f5cc3",
+      "result_id": "284b77bf-98e5-4245-89c4-b7e12c8a5fd3"
+    },
+    {
+      "claim_id": "51cceb44-d0f8-4d0d-9159-26dff66ffef5",
+      "result_id": "ca415de8-97a4-4f07-a9b7-ac64c46ca8f2"
+    },
+    {
+      "claim_id": "73467995-fe05-4893-8422-35bf3fb72648",
+      "result_id": "ca415de8-97a4-4f07-a9b7-ac64c46ca8f2"
+    },
+    {
+      "claim_id": "3ebd1427-6595-4bdf-8db7-b3cb226b480f",
+      "result_id": "ca415de8-97a4-4f07-a9b7-ac64c46ca8f2"
+    },
+    {
+      "claim_id": "d4b75294-7107-42ff-8891-e3356d43ab0b",
+      "result_id": "ca415de8-97a4-4f07-a9b7-ac64c46ca8f2"
+    },
+    {
+      "claim_id": "d42b06ef-6ac1-4322-bbbd-5067d45f729f",
+      "result_id": "ca415de8-97a4-4f07-a9b7-ac64c46ca8f2"
+    },
+    {
+      "claim_id": "8b0c05e7-7315-434d-be64-b37e3f094de1",
+      "result_id": "ca415de8-97a4-4f07-a9b7-ac64c46ca8f2"
+    },
+    {
+      "claim_id": "1285d1b4-c9ee-4579-834c-c4ae77d535d2",
+      "result_id": "ca415de8-97a4-4f07-a9b7-ac64c46ca8f2"
+    },
+    {
+      "claim_id": "ba2b7e88-3e79-485d-9dc5-07b8daeec851",
+      "result_id": "ca415de8-97a4-4f07-a9b7-ac64c46ca8f2"
+    },
+    {
+      "claim_id": "ce34239f-f0a5-4d4e-9f4b-cea2bd9270b7",
+      "result_id": "ca415de8-97a4-4f07-a9b7-ac64c46ca8f2"
+    },
+    {
+      "claim_id": "cb536069-b138-4925-b6df-95b6623784a3",
+      "result_id": "3fde5ef3-735d-426a-89d4-725128e1a68b"
+    },
+    {
+      "claim_id": "8d4c0ad2-e642-40cf-b989-3e9ea19d83be",
+      "result_id": "3fde5ef3-735d-426a-89d4-725128e1a68b"
+    },
+    {
+      "claim_id": "19fb46f2-fa80-48ea-9e2f-82982c4f329d",
+      "result_id": "3fde5ef3-735d-426a-89d4-725128e1a68b"
+    },
+    {
+      "claim_id": "6efd45e0-ba7a-495e-a9d2-557bdd2fde7e",
+      "result_id": "3fde5ef3-735d-426a-89d4-725128e1a68b"
+    },
+    {
+      "claim_id": "b3a5635a-a9e2-48d0-bbcc-3a8a4a90982a",
+      "result_id": "3fde5ef3-735d-426a-89d4-725128e1a68b"
+    },
+    {
+      "claim_id": "098b74b1-ad53-452b-98c9-b81102e846d2",
+      "result_id": "90e0411b-d7ac-480f-b4a1-5b7e439f7b1c"
+    },
+    {
+      "claim_id": "a422f99c-2acf-420e-ab1c-0cfa24d8d65a",
+      "result_id": "90e0411b-d7ac-480f-b4a1-5b7e439f7b1c"
+    },
+    {
+      "claim_id": "f7e8217a-aae9-4802-a0a3-f030b0c816b5",
+      "result_id": "90e0411b-d7ac-480f-b4a1-5b7e439f7b1c"
+    },
+    {
+      "claim_id": "7a700b83-e381-4b45-b043-b7cca734ed57",
+      "result_id": "57936b76-429b-4c80-8c52-5e3899d74d29"
+    },
+    {
+      "claim_id": "2c4b693e-dd9d-4a31-aac9-c2b1a2e139fc",
+      "result_id": "57936b76-429b-4c80-8c52-5e3899d74d29"
+    },
+    {
+      "claim_id": "af2e4148-951e-4ec5-b84d-29ecbca9b92e",
+      "result_id": "57936b76-429b-4c80-8c52-5e3899d74d29"
+    },
+    {
+      "claim_id": "4e372e44-5d78-4ea4-8222-9159e524e8c7",
+      "result_id": "57936b76-429b-4c80-8c52-5e3899d74d29"
+    },
+    {
+      "claim_id": "91772954-efa1-4e62-916c-a19363f05cee",
+      "result_id": "57936b76-429b-4c80-8c52-5e3899d74d29"
+    },
+    {
+      "claim_id": "30201734-3231-48c8-a7db-2581d461ee43",
+      "result_id": "57936b76-429b-4c80-8c52-5e3899d74d29"
+    },
+    {
+      "claim_id": "062a1e8f-2437-4c5e-8c6e-3b182bbb9cb3",
+      "result_id": "57936b76-429b-4c80-8c52-5e3899d74d29"
+    },
+    {
+      "claim_id": "b95832bb-10b9-41b0-88e6-9a8050420611",
+      "result_id": "57936b76-429b-4c80-8c52-5e3899d74d29"
+    },
+    {
+      "claim_id": "bc4b1dee-191f-46da-8c23-f5f70579b9d9",
+      "result_id": "57936b76-429b-4c80-8c52-5e3899d74d29"
+    },
+    {
+      "claim_id": "b633c336-4167-4fdf-981b-392de7ff5735",
+      "result_id": "57936b76-429b-4c80-8c52-5e3899d74d29"
+    },
+    {
+      "claim_id": "3d0e8ef8-4874-4937-ac49-743c3cac6c54",
+      "result_id": "57936b76-429b-4c80-8c52-5e3899d74d29"
+    },
+    {
+      "claim_id": "69d3a26d-cc23-4449-95bf-db0b03a614b2",
+      "result_id": "57936b76-429b-4c80-8c52-5e3899d74d29"
+    },
+    {
+      "claim_id": "c60f019b-72d7-42e5-8ae7-929615d56113",
+      "result_id": "57936b76-429b-4c80-8c52-5e3899d74d29"
+    },
+    {
+      "claim_id": "819c996d-899d-4fb4-9d1d-89bb2f76477b",
+      "result_id": "af4c24e1-5d61-4631-ae3e-e72fd78e3e44"
+    },
+    {
+      "claim_id": "d1e68b6d-14e2-42f2-9d72-b982d51069cf",
+      "result_id": "af4c24e1-5d61-4631-ae3e-e72fd78e3e44"
+    },
+    {
+      "claim_id": "b565c826-60e1-41f9-8424-28f789b8c21b",
+      "result_id": "af4c24e1-5d61-4631-ae3e-e72fd78e3e44"
+    },
+    {
+      "claim_id": "01579713-8c72-4ed0-86f3-5886432275e8",
+      "result_id": "af4c24e1-5d61-4631-ae3e-e72fd78e3e44"
+    },
+    {
+      "claim_id": "edbd3657-ba15-4946-b561-fc40156a0632",
+      "result_id": "af4c24e1-5d61-4631-ae3e-e72fd78e3e44"
+    },
+    {
+      "claim_id": "10fae029-6af4-41a0-a044-88df405c827d",
+      "result_id": "af4c24e1-5d61-4631-ae3e-e72fd78e3e44"
+    },
+    {
+      "claim_id": "02f192db-2013-466b-812b-c9ff835c30a8",
+      "result_id": "af4c24e1-5d61-4631-ae3e-e72fd78e3e44"
+    },
+    {
+      "claim_id": "4b0e6b03-313d-4c05-bf45-b5c49c0e326c",
+      "result_id": "833407f1-b26d-47a9-83c4-6b00b3b7acf8"
+    },
+    {
+      "claim_id": "bb1302bd-1652-4d32-be7f-28d076245922",
+      "result_id": "833407f1-b26d-47a9-83c4-6b00b3b7acf8"
+    },
+    {
+      "claim_id": "509bd54e-115b-4480-b519-d22167025fc7",
+      "result_id": "833407f1-b26d-47a9-83c4-6b00b3b7acf8"
+    },
+    {
+      "claim_id": "2cc34ae0-b405-4ca4-a9fd-bca5e548ac48",
+      "result_id": "833407f1-b26d-47a9-83c4-6b00b3b7acf8"
+    },
+    {
+      "claim_id": "9f81cdc3-6a62-4f2a-972c-96074bd03274",
+      "result_id": "833407f1-b26d-47a9-83c4-6b00b3b7acf8"
+    },
+    {
+      "claim_id": "407ffa3c-611c-4e80-af63-50cb635fead9",
+      "result_id": "833407f1-b26d-47a9-83c4-6b00b3b7acf8"
+    },
+    {
+      "claim_id": "0d064c79-17d7-494d-8799-2435b7401d10",
+      "result_id": "833407f1-b26d-47a9-83c4-6b00b3b7acf8"
+    },
+    {
+      "claim_id": "62199a3d-252e-4a2d-aa34-9e7fe818a9d9",
+      "result_id": "833407f1-b26d-47a9-83c4-6b00b3b7acf8"
+    },
+    {
+      "claim_id": "98473fb5-0f5e-4d55-a4d7-3f71cf94f6a6",
+      "result_id": "32cc0ecb-7d4c-461c-90b7-3944c6aff0b6"
+    },
+    {
+      "claim_id": "cfecf864-6ce4-45f2-8afd-92a1fab5ae02",
+      "result_id": "32cc0ecb-7d4c-461c-90b7-3944c6aff0b6"
+    },
+    {
+      "claim_id": "528a740b-c85d-401e-9ab8-53bd3d0bb032",
+      "result_id": "32cc0ecb-7d4c-461c-90b7-3944c6aff0b6"
+    },
+    {
+      "claim_id": "c5659eda-3e0a-4459-840d-17e39807e8fe",
+      "result_id": "32cc0ecb-7d4c-461c-90b7-3944c6aff0b6"
+    },
+    {
+      "claim_id": "20951ca4-b0c3-46a3-bd61-7497d340eab4",
+      "result_id": "32cc0ecb-7d4c-461c-90b7-3944c6aff0b6"
+    },
+    {
+      "claim_id": "d13d7391-0a75-4e22-bb30-2803dab6d8dd",
+      "result_id": "f5038273-fd09-40e4-940e-a6b8571f94ee"
+    },
+    {
+      "claim_id": "cfe90ec3-f741-484a-9500-f64c41d1b2e7",
+      "result_id": "f5038273-fd09-40e4-940e-a6b8571f94ee"
+    },
+    {
+      "claim_id": "180821b8-018f-4d66-b983-0ab352e892d8",
+      "result_id": "f5038273-fd09-40e4-940e-a6b8571f94ee"
+    },
+    {
+      "claim_id": "363adcd4-a701-4d49-a6fa-d0759e3ff3b6",
+      "result_id": "f5038273-fd09-40e4-940e-a6b8571f94ee"
+    },
+    {
+      "claim_id": "1761a971-71b0-4a91-afa3-ccf53dddfaf2",
+      "result_id": "f7d069d7-ffea-4d35-abf6-f3561f63bcfe"
+    },
+    {
+      "claim_id": "19ff14f2-2184-4b1f-8c7e-3651602e9f21",
+      "result_id": "f7d069d7-ffea-4d35-abf6-f3561f63bcfe"
+    },
+    {
+      "claim_id": "e243e5f2-6f75-4935-8765-5851838e1e15",
+      "result_id": "f7d069d7-ffea-4d35-abf6-f3561f63bcfe"
+    },
+    {
+      "claim_id": "8b071a0a-6f5c-4b01-826d-9d230c55a663",
+      "result_id": "f7d069d7-ffea-4d35-abf6-f3561f63bcfe"
+    },
+    {
+      "claim_id": "25992c3a-498f-403d-93bd-fba69ae428d5",
+      "result_id": "f7d069d7-ffea-4d35-abf6-f3561f63bcfe"
+    },
+    {
+      "claim_id": "c1bb85d3-4802-493c-9a03-14b81f1fc91a",
+      "result_id": "f7d069d7-ffea-4d35-abf6-f3561f63bcfe"
+    },
+    {
+      "claim_id": "eadf1e68-e506-429b-8f74-36db444147f3",
+      "result_id": "8aacf716-2062-43c2-8cdc-fcec5d221e1a"
+    },
+    {
+      "claim_id": "e048de8f-97ae-4e2e-8b09-8385ae09f14c",
+      "result_id": "8aacf716-2062-43c2-8cdc-fcec5d221e1a"
+    },
+    {
+      "claim_id": "0a0877df-232d-4527-a9d9-40f83babfeaa",
+      "result_id": "8aacf716-2062-43c2-8cdc-fcec5d221e1a"
+    },
+    {
+      "claim_id": "e5bcc476-7587-44d8-9053-c3a4a95056be",
+      "result_id": "8aacf716-2062-43c2-8cdc-fcec5d221e1a"
+    },
+    {
+      "claim_id": "5b6dce90-1af4-4cf4-94ca-9d4d3c239426",
+      "result_id": "8aacf716-2062-43c2-8cdc-fcec5d221e1a"
+    },
+    {
+      "claim_id": "e949ca16-3432-45d9-877a-d271b8ba84bd",
+      "result_id": "8aacf716-2062-43c2-8cdc-fcec5d221e1a"
+    },
+    {
+      "claim_id": "951345f7-57c0-49a1-8a96-3cb0a400a410",
+      "result_id": "638a8593-bf2f-4e12-9368-1fb129a4d7ca"
+    },
+    {
+      "claim_id": "218621f4-31bf-4798-8582-b1900d46140e",
+      "result_id": "638a8593-bf2f-4e12-9368-1fb129a4d7ca"
+    },
+    {
+      "claim_id": "e8d9559f-0956-41f9-988a-bb9133359e67",
+      "result_id": "638a8593-bf2f-4e12-9368-1fb129a4d7ca"
+    },
+    {
+      "claim_id": "2c92de8b-33b0-4732-9fbd-2fd999596224",
+      "result_id": "392df34a-28e4-4ad6-8aec-8e0ed5af920b"
+    },
+    {
+      "claim_id": "954746c6-37dd-4023-8174-8a26a2a9074a",
+      "result_id": "392df34a-28e4-4ad6-8aec-8e0ed5af920b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C31",
+      "C93",
+      "C94"
+    ],
+    "result": "The study used fMRI with MVPA to decode hand and tool movement plans in 13 subjects performing grasp and reach actions with either their hand or reverse tongs. The experimental design included a delayed-movement paradigm that isolated planning-related neural responses from visual and execution responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25, C31, C93-C94 describe the experimental design and methods. The methodology is clearly described with appropriate controls (reverse tongs requiring opposite kinematics, delayed paradigm, position changes between effectors). The design allows for isolation of planning signals and testing of effector-specific vs effector-independent representations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C40",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Tool use is subserved by multiple distributed neural representations that are both shared with and distinct from hand representations. SPOC and EBA showed hand-specific coding, SMG and pMTG showed tool-specific coding, anterior parietal regions and motor cortex showed separate coding for both effectors, while posterior IPS and premotor cortex showed effector-independent coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C26-C30, C40, C52-C55 present the core findings supported by MVPA decoding results. The experimental design with reverse tongs and position changes rules out low-level confounds (C41). Statistical tests confirm significant differences in decoding patterns across regions (C45-C48). The hierarchical organization is well-supported by converging evidence across multiple ROIs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Time-resolved decoding revealed that preparatory movement information arises in the two time points prior to movement initiation, never before subjects are aware of which action to execute, and can be fully disentangled from execution-related activity. Nearly all frontoparietal regions could decode planned actions for both hand and tool effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39, C102-C104 describe temporal dynamics of decoding. The time-resolved analysis shows appropriate temporal separation between planning and execution phases. The sensory control region (SS-cortex) behaves as expected (C39), validating the approach. The findings are consistent with the delayed paradigm design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C56"
+    ],
+    "result": "Accurate across-effector classification cannot be attributed to low-level similarities between hand and tool trials because the reverse tool required opposite kinematics and object position changed between runs. Brain areas showing cross-decoding encoded the action performed rather than specific muscle movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C56 address critical interpretational issues. The experimental design explicitly controls for kinematic and visual confounds through use of reverse tongs and position changes. The logic is sound: if cross-decoding succeeds despite these differences, it must reflect higher-level action goals rather than low-level features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Statistical analyses revealed significant differences in decoding accuracies across regions: SPOC showed higher hand than tool decoding, SMG showed higher tool than hand decoding, motor cortex showed higher hand than across-effector decoding, and pMTG showed higher tool than hand decoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 report specific statistical comparisons with p-values and F-statistics. The statistical tests are appropriate (repeated-measures ANOVA with follow-up t-tests). However, the omnibus test showed only a trend (p=0.069), and only a few specific comparisons reached significance after correction. The pattern is consistent but statistical power appears limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Visual inspection of voxel weightings failed to reveal structured or consistent topography within or across subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 reports a null finding regarding voxel weight topography. The authors appropriately acknowledge this limitation and provide reasonable explanations (relatively low decoding accuracies, trial-to-trial variability). They cite similar findings in other studies, suggesting this is a known characteristic of MVPA with planning signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Accurate across-effector classification in primary auditory cortex (Heschl's gyrus) arises earlier in the Plan phase than in frontoparietal areas, making it unlikely that effector-invariant responses in frontoparietal cortex are attributable to auditory commonalities in planning cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 address an important alternative explanation. The temporal dissociation between auditory cortex cross-decoding (4th volume) and frontoparietal cross-decoding (5th-6th volumes) provides evidence against a simple auditory confound. This control analysis strengthens the interpretation of frontoparietal findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C30",
+      "C57",
+      "C60",
+      "C64",
+      "C69",
+      "C70",
+      "C83"
+    ],
+    "result": "Hand- and tool-related actions are represented separately at earlier levels of sensorimotor processing before becoming integrated in frontoparietal cortex. The hierarchical organization suggests that in the majority of regions, neural representations remain linked to either hand or tool, with only posterior IPS and premotor cortex showing effector-independent coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C30, C57, C60, C64, C69-C70, C83 present interpretations of the hierarchical organization. These interpretations are well-supported by the pattern of results across regions. The claim that representations are 'separate at earlier levels' is consistent with the occipitotemporal findings (SPOC, EBA, SMG, pMTG) and anterior parietal findings (aIPS, motor cortex).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C87",
+      "C92"
+    ],
+    "result": "There is strong coupling between the categorical-selectivity of brain regions defined through visual-perceptual processing and their specific role in movement planning. Preparatory activity in body-selective EBA and tool-selective pMTG decoded movement plans for hand and tool actions respectively, indicating that hand- and tool-related action plans can be decoded from body- and tool-selective occipitotemporal cortex areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C87, C92 describe the coupling between perceptual selectivity and motor planning. The localizer experiment independently identified EBA and pMTG based on visual selectivity, and the motor experiment showed corresponding motor selectivity. This provides strong evidence for the coupling, though the sample size for the localizer experiment was smaller (n=8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Upcoming movements for both hand and tool could be decoded from the independently defined tool-selective t-aIPS. This decoding is congruent with t-aIPS activation in observation-based tool tasks and its proximity to parietal areas involved in hand preshaping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 describe t-aIPS findings. The region shows both hand and tool decoding despite being defined as tool-selective in the localizer. This is interpreted as reflecting the transition from effector-specific to effector-independent coding at the level of parietal cortex. The interpretation is reasonable given the anatomical location and functional properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The signals in EBA and pMTG reflect the intention to perform a motor act rather than sensory feedback responses. These occipitotemporal cortex areas may play a significant role in action planning by predicting sensory consequences of actions before they unfold, with forward-state estimations remaining linked to the type of effector.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C86 present interpretations about the nature of signals in EBA and pMTG. While the delayed paradigm does isolate planning from execution, the claim that these signals represent 'forward-state estimations' is speculative (C85 is marked as SPECULATION). The interpretation is plausible but goes beyond what the data directly demonstrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The findings fit within hierarchical theories of motor control, with different brain regions situated at different levels of abstraction. SPOC and EBA code hand movements, SMG and pMTG code tool movements, anterior parietal regions and motor cortex code effector-specific kinematics, and posterior IPS and premotor cortex code higher-level action goals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C74 integrate the findings with prior knowledge and theoretical frameworks. The interpretations are well-grounded in the data and appropriately cite relevant literature. The hierarchical interpretation is consistent with the pattern of results and with established theories of motor control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The organization of occipitotemporal cortex may emerge as a by-product of distinct connectivity patterns with downstream motor structures. The neural specificity for visual presentation of body parts and tools in OTC may reflect anatomical connectivity with frontoparietal areas involved in generating movements of the body and interacting with tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C91 present theoretical interpretations about the organization of OTC. These are based on citations to previous theoretical work (C88-C89) and neurophysiological findings (C90-C91). While the current findings are consistent with these theories, the study does not directly test connectivity or provide new evidence for these organizational principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Tool use involves transfer of proximal hand goals to distal tool goals. Previous research in macaque monkeys showed that neurons encoding hand grasping subsequently encoded tool grasping, suggesting effector-independent representation. Tools may become incorporated into the body schema following training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 summarize prior work that motivated the current study. These are appropriately cited and provide important context. However, these are not results of the current study but rather background claims from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C32",
+      "C33",
+      "C75",
+      "C76"
+    ],
+    "result": "Previous fMRI research has identified specialized regions in frontoparietal and occipitotemporal cortex that selectively represent tools and bodies. SMG, pMTG, and PMd show evolutionary expansion in humans and are co-activated during tool use tasks. However, almost all prior neuroimaging studies used proxies for real tool use rather than actual tool actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C19, C32-C33, C75-C76 provide background on prior research. These are well-cited and accurately represent the literature. The claim about proxies for tool use (C19) is important for establishing the novelty of the current study. These are not results of the current study but provide essential context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The localizer experiment used static color photos to identify body-selective EBA and tool-selective pMTG and t-aIPS. EBA and pMTG have been implicated in perceptual functions related to bodies and tools respectively, and are also activated by self-generated movements. pMTG was consistently positioned lateral, ventral, and anterior to EBA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 describe the localizer experiment methods and results. The methods are standard and well-described. The localizer successfully identified the target ROIs in individual subjects. The spatial relationship between EBA and pMTG (C101) is consistent with previous work. However, only 8 of 13 subjects participated in the localizer experiment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Sophisticated tool use is a defining characteristic of the primate species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a general statement about primate characteristics based on established knowledge. While accurate, this is background information rather than a result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "SS-cortex was selected as a sensory control region not expected to accurately decode movements until stimulation of the hand's mechanoreceptors at movement onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 describes the rationale for including SS-cortex as a control. This is appropriate experimental design. The expectation was confirmed by the results (C39), validating the approach.",
+    "result_type": "MINOR"
+  }
+]

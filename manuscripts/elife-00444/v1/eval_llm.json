@@ -1,0 +1,404 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Complete genetic deficiency of SEC24A is compatible with normal survival, development, and fertility in mice. Multiple independent SEC24A-deficient mouse lines (Sec24agt/gt, Sec24acgt/cgt, Sec24agt2/gt2) were generated and characterized, showing normal Mendelian ratios, no detectable SEC24A protein, normal body weight, survival, fertility, and tissue morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C32-C48 provide strong converging evidence from multiple independent alleles demonstrating that SEC24A is dispensable for mouse viability. The generation of three independent SEC24A-deficient lines with consistent phenotypes (C45-C47), normal Mendelian ratios (C34, C46), absence of SEC24A protein (C37, C47), and normal physiological parameters (C40-C44) robustly support this surprising finding. Minor CBC changes (C44) do not affect overall viability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "SEC24A-deficient mice exhibit markedly reduced plasma cholesterol levels (~40-60% reduction) across multiple lipoprotein fractions (HDL, LDL, VLDL). This phenotype was confirmed in multiple independent SEC24A-deficient alleles, in both sexes, and at different ages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C49-C58 provide consistent evidence for hypocholesterolemia in SEC24A-deficient mice. The reduction in plasma cholesterol is demonstrated by multiple methods (SDS-PAGE, mass spectrometry, FPLC fractionation, colorimetric assays) across multiple alleles (Sec24agt/gt, Sec24agt2/gt2), both sexes, and different ages. The identification of reduced APO-A1 (C50-C53) provides mechanistic insight into the lipoprotein changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Loss of hepatic SEC24A expression is sufficient to explain the hypocholesterolemia phenotype. Removal of the gene trap cassette restored SEC24A expression and normalized cholesterol levels, while hepatic-specific deletion of SEC24A reduced plasma cholesterol by ~25%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 demonstrate tissue-specific causality through genetic rescue (C60-C61) and hepatic-specific deletion experiments (C64-C65). The restoration of normal cholesterol upon gene trap removal (C61) excludes passenger gene effects, while the hepatic-specific deletion (C64-C65) identifies the liver as the primary tissue responsible. The incomplete reduction with partial hepatic deletion (C65-C66) is appropriately interpreted given incomplete Cre-mediated excision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C4",
+      "C125",
+      "C126"
+    ],
+    "result": "The hypocholesterolemia in SEC24A-deficient mice is mediated through a receptor-mediated lipoprotein clearance mechanism. Genetic epistasis experiments show that mutations in Apoe and Ldlr completely suppress the low cholesterol phenotype of SEC24A deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C81-C85, C4, C125-C126 provide strong genetic evidence for the mechanism through classical epistasis analysis. The complete suppression of the SEC24A hypocholesterolemia phenotype in both Apoe-/- (C82) and Ldlr-/- (C84) backgrounds demonstrates that the effect requires functional APOE and LDLR, indicating a receptor-mediated clearance mechanism rather than altered lipoprotein production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Hepatic LDLR protein levels are elevated in SEC24A-deficient mice through a post-transcriptional mechanism. LDLR protein is increased while LDLR mRNA levels remain unchanged, and other liver proteins (APOE, APOB, APO-A1) are unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C86-C89 demonstrate increased LDLR protein (C86) without changes in mRNA (C88), indicating post-transcriptional regulation. The specificity is supported by unchanged levels of other proteins (C87). The inference of post-translational mechanism (C89) is logical given the mRNA-protein discordance, though the exact mechanism is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "PCSK9 depends on SEC24A for efficient ER exit and secretion. SEC24A-deficient mice show ~55% reduction in plasma PCSK9, accumulation of PCSK9 in the liver, and EndoH sensitivity indicating ER retention, all without changes in PCSK9 mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C93-C99 provide multiple lines of evidence for PCSK9 secretion defect: reduced plasma levels (C93), intracellular accumulation (C97), ER localization by EndoH sensitivity (C98-C99), and unchanged mRNA (C95). The convergence of these observations strongly supports that SEC24A is required for PCSK9 ER exit. The post-translational mechanism (C96) is appropriately inferred from the mRNA-protein discordance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "PCSK9 secretion is dependent on COPII-mediated ER-Golgi transport. BFA treatment blocks PCSK9 secretion, PCSK9 is packaged into COPII vesicles in vitro, and dominant-negative SAR1 prevents PCSK9 secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 provide strong mechanistic evidence through multiple complementary approaches: pharmacological disruption with BFA (C101), in vitro COPII budding assays (C102-C103), and genetic inhibition with dominant-negative SAR1 (C104). The convergence of these independent methods robustly demonstrates COPII-dependence of PCSK9 secretion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "SEC24A and SEC24B, but not SEC24C or SEC24D, selectively mediate PCSK9 ER exit and secretion. Co-immunoprecipitation shows PCSK9 associates with SEC24A/B but not SEC24C/D, overexpression of SEC24A/B enhances PCSK9 secretion, and siRNA depletion of SEC24A/B reduces PCSK9 packaging into COPII vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C115 provide comprehensive evidence for SEC24 paralog selectivity through biochemical (co-IP, C106), gain-of-function (overexpression, C108-C110), and loss-of-function (siRNA depletion, C112-C113) approaches. The specificity is demonstrated by lack of effect with SEC24C/D (C110) and appropriate controls with non-selective cargo LMAN1 (C115) and selective cargo SEC22B (C114). The BFA control (C111) confirms COPII-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C116",
+      "C117",
+      "C118",
+      "C138"
+    ],
+    "result": "There is partial functional overlap between SEC24A and SEC24B in vivo. Mice with combined SEC24A deficiency and SEC24B haploinsufficiency show an additional ~25% reduction in plasma cholesterol compared to SEC24A deficiency alone, indicating partial compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C116-C118, C138 demonstrate genetic interaction through double mutant analysis. The normal phenotype of double heterozygotes (C116) and the enhanced cholesterol reduction in Sec24agt/gtSec24b+/- mice (C117) provide clear evidence for partial functional overlap. This is consistent with the in vitro data showing SEC24B can partially compensate for SEC24A in PCSK9 secretion (C109).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C139"
+    ],
+    "result": "SEC24A and SEC24D have distinct, non-overlapping functions. Compound heterozygous Sec24a+/gtSec24d+/gt mice are phenotypically normal, and Sec24agt/gtSec24d+/gt mice show no further cholesterol reduction compared to Sec24agt/gt mice alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122, C139 demonstrate lack of genetic interaction between SEC24A and SEC24D through double mutant analysis. The normal phenotype of compound heterozygotes (C119) and lack of enhanced phenotype in Sec24agt/gtSec24d+/gt mice (C121) indicate distinct functions. This is consistent with the biochemical data showing SEC24D does not interact with PCSK9 (C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C141",
+      "C142"
+    ],
+    "result": "SEC24B protein levels are increased in SEC24A-deficient mice without changes in SEC24B mRNA, while SEC24C/D levels remain unchanged. This suggests SEC24A/B are balanced in a cytoplasmic pool distinct from SEC24C/D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C141-C142 demonstrate compensatory upregulation of SEC24B protein (C38, C141) without mRNA changes, while SEC24C/D remain unchanged (C39). The inference of distinct cytoplasmic pools (C142) is reasonable given the selective compensation within the SEC24A/B subfamily, though the molecular mechanism is not directly demonstrated. This observation supports the functional overlap between SEC24A/B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "SREBP signaling is unaltered in SEC24A-deficient mice. Transcriptome analysis shows minimal changes in gene expression, no correlation with SREBP-deficient profiles, unchanged expression of SREBP target genes (except SCD1), and normal SREBP1/2 cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C76 provide comprehensive evidence that SREBP signaling is not affected by SEC24A deficiency through multiple approaches: transcriptome analysis (C69-C72), comparison with SREBP-deficient profiles (C73), qPCR of target genes (C74), and protein analysis of SREBP cleavage (C76). The SCD1 reduction (C75) is noted but does not indicate global SREBP dysfunction. This effectively rules out a major alternative mechanism for the cholesterol phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "All four SEC24 paralogs are expressed in the liver, with SEC24C/D expressed at higher levels than SEC24A/B. SEC24C/D protein levels are similar to SEC24A and do not change in SEC24A-deficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide mRNA-Seq (C77-C78) and quantitative immunoblotting (C79-C80) data characterizing SEC24 paralog expression in liver. The data support that all paralogs are expressed and that SEC24C/D do not compensate for SEC24A loss. This is important context for understanding the specificity of the PCSK9 phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The E3 ligase IDOL does not contribute to increased LDLR levels in SEC24A-deficient mice, as IDOL protein levels are unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 rule out IDOL as the mechanism for increased LDLR through immunoblotting showing unchanged IDOL levels (C92). This is appropriate negative control data that helps focus on PCSK9 as the mechanism. However, the evaluation is limited to steady-state protein levels and does not assess IDOL activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C136",
+      "C149",
+      "C150"
+    ],
+    "result": "PCSK9 represents the first example of a soluble vertebrate cargo that is differentially regulated by specific SEC24 paralogs, demonstrating that cargo selectivity heterogeneity extends to soluble proteins and is inconsistent with the bulk flow model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C136, C149-C150 make an important conceptual point supported by the experimental data showing PCSK9's specific dependence on SEC24A/B. The claim that this is the 'first example' (C150) is supported by the literature context provided but cannot be independently verified from the data presented. The inconsistency with bulk flow (C149) is a valid interpretation of the selective SEC24 dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C140",
+      "C143",
+      "C158"
+    ],
+    "result": "The data suggest extensive heterogeneity in COPII vesicle composition and cargo selectivity, with overlapping specificities within the SEC24A/B subfamily but distinct from SEC24C/D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140, C143, C158 synthesize the experimental findings into a broader model of COPII heterogeneity. The conclusion is well-supported by the genetic (C116-C122), biochemical (C106-C115), and functional (C38-C39) data demonstrating paralog-specific cargo selectivity. However, this remains a model that would benefit from additional direct evidence of vesicle heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The viability of SEC24A-deficient mice is surprising given SEC24A's ubiquitous expression and fundamental role in the secretory pathway, but examination revealed an unexpected hypocholesterolemia due to blocked PCSK9 secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 provide appropriate interpretation and synthesis of the major findings. The surprise (C123) is justified given the essential nature of COPII function in yeast and the fundamental role of SEC24 in cargo selection. The connection between SEC24A deficiency, PCSK9 secretion, and cholesterol levels (C124) is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "Intrinsic cargo selectivity among SEC24 paralogs is a key determinant of SEC24 function, as demonstrated by VANGL2's specific dependence on SEC24B and PCSK9's dependence on SEC24A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 synthesize the current findings with prior work on VANGL2 (C135, cited from Merte et al.). The conclusion about intrinsic cargo selectivity (C134) is well-supported by the PCSK9 data and consistent with the VANGL2 precedent. This represents an important mechanistic principle for COPII function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C165"
+    ],
+    "result": "The SEC24A-deficient phenotype suggests potential relevance for human cholesterol control and therapeutic targeting, though GWAS have not identified common variants and the tolerability of pharmacologic inhibition remains speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C161-C163, C165 extrapolate from mouse findings to potential human relevance and therapeutic applications. While the mouse data are robust, the human relevance is speculative. The absence of GWAS signals (C162) does not exclude rare variant effects (C163), but no human data are presented. The therapeutic speculation (C165) is reasonable given the mouse viability but remains untested. These claims represent appropriate discussion of implications but lack direct supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background on the secretory pathway, COPII machinery, and phenotypes of COPII component deficiencies in various organisms provides context for the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C31 provide established background knowledge from cited literature. These claims are appropriately referenced and provide important context for interpreting the significance of SEC24A deficiency. The accuracy of these background claims depends on the cited literature, which appears appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Discussion of potential mechanisms for cargo selectivity, including cargo receptors, direct SEC24 interactions, and alternative models for soluble cargo sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C133, C144-C148, C151-C157 discuss various mechanistic models and prior findings relevant to cargo selectivity. Many of these are speculative (C132, C133, C151, C156, C157) or cite prior work (C130-C131, C144-C148, C152-C155). While these provide valuable context and hypotheses, they are not directly tested in the current work. The speculation about PCSK9 cargo receptors (C151, C155) is reasonable but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C164"
+    ],
+    "result": "Complete SEC24A deficiency (even with SEC24B haploinsufficiency) is compatible with mouse viability, though no human patients with SEC24 deficiencies have been identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C160, C164 summarize key findings about viability. The mouse data (C159, C164) are well-supported by the experimental results. The absence of human patients (C160) is an observation about the current state of knowledge but does not indicate whether such patients exist or would be viable.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C37",
+      "C38",
+      "C64",
+      "C65"
+    ],
+    "result": "Direct electron detectors exhibit superior detective quantum efficiency (DQE) compared to conventional CCD and film detectors, particularly at high resolution. This improved DQE leads to improved signal-to-noise ratios in individual particles and better alignment precision (2\u00b0 vs 4\u00b0 for CCD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C37, C38 establish the superior DQE of direct electron detectors through citations to prior characterization work. Claims C64 and C65 demonstrate the practical impact through experimental comparison showing 2\u00b0 alignment precision versus 4\u00b0 for CCD, with the improvement attributed to better SNR from improved DQE. The experimental validation supports the technical specifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C60",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "A novel statistical movie processing approach was developed that uses Bayesian refinement with Gaussian priors centered on 16-frame average orientations to compensate for beam-induced movement. This method achieved 5.1 \u00c5 resolution for 70S ribosomes and outperformed straightforward multi-frame averaging approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C60, C81-C82 describe the methodological development with clear implementation details. Claims C83-C85 provide experimental validation showing 5.1 \u00c5 resolution and superiority over multi-frame averaging through FSC curves, B-factors, and visual inspection (Figure 2C-F). The statistical approach is well-documented and experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C69",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "High-resolution ribosome reconstructions (5.1-6.5 \u00c5 for 70S, 4.5-4.6 \u00c5 for 80S) were obtained from 15,202-35,813 particles, representing nearly two orders of magnitude fewer particles than the previous best ribosome structure (1.4 million particles at 5.5 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C69, C99-C102 establish the unprecedented efficiency of the approach through direct comparison with prior work (C101 cites Armache et al. 2010). The particle counts and resolutions are explicitly stated with experimental validation through FSC curves. However, the claim of 'unprecedented resolutions' (C10) is somewhat overstated given that the 70S resolution (5.1-6.5 \u00c5) is not dramatically better than prior work, though the particle efficiency is genuinely unprecedented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C58",
+      "C59"
+    ],
+    "result": "Tilt-pair analysis of 15,202 particle pairs from 70S T. thermophilus ribosomes demonstrated 2\u00b0 alignment precision, validating the accuracy of the video frame alignment approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 describe the experimental design and results, with C63 providing the specific 2\u00b0 precision estimate supported by Figure 2A. Claims C58-C59 establish the methodological rationale using the Rosenthal and Henderson (2003) tilt-pair analysis approach. The experimental validation is rigorous and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Analysis of particle movement during exposure by partitioning videos into multi-frame averages revealed that alignment precision decreases with fewer frames, later frames show more radiation damage, and optimal reconstruction (5.4 \u00c5) was achieved with 4-6 frame averages. Overall particle movements were 1.7\u00b11.2\u00b0 rotation and 4.2\u00b12.3 \u00c5 translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 describe a systematic experimental analysis with clear results shown in Figure 2B-C. The trends are logical and well-supported by tilt-pair analysis. The quantification of movements (C76) provides important characterization data. The interpretation that 4-6 frame averages represent an optimum (C75) is reasonable given the FSC data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Application to 80S S. cerevisiae ribosomes identified two conformational states differing by ~2\u00b0 ratchet rotation, yielding 4.5 \u00c5 and 4.6 \u00c5 reconstructions from 35,813 and 22,638 particles. The 60S subunit showed near-atomic detail including separated \u03b2-strands, \u03b1-helix pitch, side chains, and RNA bases, while the 40S subunit exhibited more heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C98 describe comprehensive experimental results with clear documentation of particle numbers, resolutions, and structural features. The observation of heterogeneity (C91) and variable resolution across the map (C92-C93, C96) is honestly reported. Visual evidence in Figures 3A-K supports the claims. The FSC validation against crystal structures (C97-C98) provides independent confirmation of resolution estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C181"
+    ],
+    "result": "Observed particle movements showed complicated spatial patterns (1.5-10 \u00c5 in different areas) that were not consistent with simple stage drift, suggesting beam-induced effects as the primary cause.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 and C181 describe observations from Figure 1A showing spatially variable movement patterns. The inference that movements are beam-induced rather than stage drift is reasonable given the spatial complexity. However, the mechanism remains speculative (C78 explicitly states 'poorly understood'), which is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Higher SNRs from improved detectors provide dual benefits: fewer particles needed to overcome noise, and smaller alignment errors leading to less blurring, both contributing to higher-resolution maps from fewer particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 describe well-established principles of signal averaging and image reconstruction supported by general knowledge in the field. The experimental results (C69) are consistent with these principles. This represents sound theoretical reasoning validated by the experimental outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The ability to calculate maps with useful information up to 90% of the Nyquist frequency exceeded initial expectations and demonstrates the potential of direct electron detectors combined with video processing for cryo-EM structure determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by the experimental results showing high-quality density near the Nyquist limit. The statement about exceeding expectations (C104) is subjective but reasonable given the unprecedented particle efficiency. The inference about potential (C105) is justified by the demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Future applications with automated data collection could enable high-resolution reconstruction of multiple structural states from large datasets, with theoretical projections suggesting 3.3 \u00c5 resolution from 1 million particles, significantly expanding the scope of specimens amenable to de novo atomic model building.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C110 are entirely speculative about future applications (all marked as SPECULATION in evidence_type). While the projections are based on reasonable theoretical considerations (C109 cites Rosenthal and Henderson 2003), they represent predictions rather than demonstrated results. The caveat in C109 ('provided no other resolution-degrading factors play a role') is important but may be optimistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The advantages of direct electron detectors and video processing may extend to smaller complexes (<300-500 kDa) by using longer videos with higher doses for low-resolution alignment combined with dose-dependent weighting for high-resolution information, though accurately tracking movement of small particles will be more challenging and require further investigation into beam-induced blurring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C121 discuss potential applications to smaller particles but are largely speculative (C116-C118, C120-C121 marked as SPECULATION). While the reasoning is sound and based on established principles (C113-C115 cite prior work on differential radiation sensitivity), the approach has not been experimentally validated. The acknowledgment of challenges (C119) and need for further investigation (C120) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Cryo-EM single-particle analysis has become important for structural biology but has not reached full potential due to fundamental limits from radiation damage, poor detectors, and beam-induced movement. A new generation of direct electron detectors may ameliorate detector and movement limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 represent well-established knowledge about cryo-EM limitations supported by the field's consensus and prior literature. Claim C6 is speculative but reasonable given the technical improvements demonstrated in the manuscript. This provides appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The statistical video processing method implements Gaussian priors on frame orientations centered at 16-frame average positions, uses running averages of 5 frames, and employs specific search parameters (\u00b13\u00b0 rotation, \u00b12 pixels translation) within the RELION Bayesian refinement framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C177 provide detailed methodological documentation of the statistical approach. The implementation is clearly described with specific parameters. The method is implemented in publicly available software (C166-C167), enhancing reproducibility. This represents thorough methodological reporting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Detailed experimental methods are provided for sample preparation, data collection, image processing, and structure determination, including specific parameters for microscopy, particle selection, classification, refinement, and validation procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C160 provide comprehensive methodological documentation with specific parameters, software citations, and procedural details. The methods are sufficiently detailed for reproduction. Gold-standard FSC calculations (C153) and appropriate resolution criteria (C154) demonstrate rigorous validation practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Currently available direct electron detectors combined with video processing algorithms will enable higher-resolution structures for many more samples, with continued improvements expected from emerging technologies including single-electron counting detectors, phase-plate imaging, and better sample preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C125 are entirely speculative about future developments and field-wide impact (all marked as SPECULATION). While optimistic projections are reasonable given the demonstrated results, they represent predictions rather than established findings. The citations to emerging technologies (C123) provide some basis for optimism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Alternative approaches for optimizing prior widths include using gold-standard FSC curves, estimating parameters from the data using the Bayesian framework, and incorporating more detailed dose-dependent priors as understanding of beam-induced movements improves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C178-C180 describe potential methodological refinements that were not implemented in the study (C179 explicitly states 'not pursued'). These represent reasonable suggestions for future work but are speculative. The Bayesian framework could theoretically support these extensions, but they remain unvalidated.",
+    "result_type": "MINOR"
+  }
+]

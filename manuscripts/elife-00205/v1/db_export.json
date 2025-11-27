@@ -1,0 +1,1385 @@
+{
+  "submission": {
+    "id": "d47504b6-c912-4cbf-8c43-4bbff64e25be",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T05:30:38.557922Z",
+    "updated_at": "2025-11-27T05:30:38.557922Z"
+  },
+  "content": [
+    {
+      "id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "submission_id": "d47504b6-c912-4cbf-8c43-4bbff64e25be",
+      "content_type": "manuscript",
+      "content_text": "# KDM2B links the Polycomb Repressive Complex 1 (PRC1) to recognition of CpG islands\n\n## Authors\n\n- Anca M Farcas<sup>1</sup>\n- Neil P Blackledge<sup>1</sup>\n- Ian Sudbery<sup>2</sup>\n- Hannah K Long<sup>1</sup>\n- Joanna F McGouran<sup>4</sup>\n- Nathan R Rose<sup>1</sup>\n- Sheena Lee<sup>5</sup>\n- David Sims<sup>2</sup>\n- Andrea Cerase<sup>1</sup>\n- Thomas W Sheahan<sup>1</sup>\n- Haruhiko Koseki<sup>6</sup>\n- Neil Brockdorff<sup>1</sup>\n- Chris P Ponting<sup>2</sup>\n- Benedikt M Kessler<sup>4</sup>\n- Robert J Klose<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Oxford Oxford UK\n2. CGAT, MRC Functional Genomics Unit, Department of Physiology, Anatomy and Genetics University of Oxford UK\n3. Molecular Haematology Unit, Weatherall Institute of Molecular Medicine, John Radcliffe Hospital University of Oxford Oxford UK\n4. Ubiquitin Proteolysis Group, Central Proteomics Facility, Nuffield Department of Clinical Medicine, Centre for Cellular and Molecular Physiology University of Oxford UK\n5. Department of Physiology, Anatomy and Genetics University of Oxford Oxford UK\n6. Laboratory for Developmental Genetics RIKEN Research Center for Allergy and Immunology Yokohama Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nCpG islands (CGIs) are associated with most mammalian gene promoters. A subset of CGIs act as polycomb response elements (PREs) and are recognized by the polycomb silencing systems to regulate expression of genes involved in early development. How CGIs function mechanistically as nucleation sites for polycomb repressive complexes remains unknown. Here we discover that KDM2B (FBXL10) specifically recognizes non-methylated DNA in CGIs and recruits the polycomb repressive complex 1 (PRC1). This contributes to histone H2A lysine 119 ubiquitylation (H2AK119ub1) and gene repression. Unexpectedly, we also find that CGIs are occupied by low levels of PRC1 throughout the genome, suggesting that the KDM2B-PRC1 complex may sample CGI-associated genes for susceptibility to polycomb-mediated silencing. These observations demonstrate an unexpected and direct link between recognition of CGIs by KDM2B and targeting of the polycomb repressive system. This provides the basis for a new model describing the functionality of CGIs as mammalian PREs.\n\n## Introduction\n\nThe capacity to segregate and functionalize regulatory elements within large and complex vertebrate genomes relies on the activity of chromatin modifying and epigenetic systems (Kouzarides, 2007). Nevertheless, it remains very poorly understood how the enzymes responsible for initiating these functional chromatin states are targeted to and recognize defined regions of the genome. Understanding the molecular mechanisms that underpin these processes is becoming increasingly important given the mounting genetic evidence implicating misregulation of chromatin modifying activities in human disease and cancer (Greer and Shi, 2012; Butler et al., 2012). In mammals, the majority of CpG dinucleotides are methylated on the 5 position of cytosine and this epigenetic modification can be stably transmitted across cell divisions (Klose and Bird, 2006). DNA methylation is thought to be a highly stable modification that helps maintain intergenic and heterochromatic regions in a transcriptionally inert chromatin state (Bird, 2002; Klose and Bird, 2006). A major exception to this pervasive methylation is short contiguous regions of the genome, called CpG islands (CGIs), which lack DNA methylation and are associated with roughly two-thirds of human gene promoters (Illingworth and Bird, 2009). It is thought that CGIs function to buffer gene regulatory elements from the repressive effects of surrounding DNA methylation and therefore play a central role in the regulatory capacity of the genome (Blackledge and Klose, 2011).\n\nAlthough for the past two decades CGIs were considered to play a largely passive role in promoter and regulatory element function, we and others recently discovered that the non-methylated CpG dinucleotides found within CGIs act as a binding site for proteins that contain the ZF-CxxC DNA binding domain (Blackledge et al., 2010; Thomson et al., 2010). ZF-CxxC domain-containing proteins are found in chromatin modifying complexes and therefore play an unexpected and proactive role in specifying unique chromatin modification architecture at CGI associated gene promoters. For example, the ZF-CxxC domain containing protein CFP1 is a core component of the SET1 histone H3 lysine 4 (H3K4) methyltransferase complex (Lee and Skalnik, 2005) and targets this transcriptionally permissive modification to CGIs genome-wide. Similarly, the KDM2A histone H3K36 demethylase enzyme contains a ZF-CxxC domain that targets the enzyme directly to CGIs where it removes histone H3 lysine 36 (H3K36) dimethylation (Blackledge et al., 2010). In mammals H3K36me1/me2 is found broadly across the genome (Peters et al., 2003; Robin et al., 2007; Blackledge et al., 2010) and may be inhibitory to transcriptional initiation (Strahl et al., 2002; Carrozza et al., 2005). Specific targeting of KDM2A to CGIs appears to remove H3K36me2 at CGIs as part of a mechanism to mark these regions with transcriptionally permissive chromatin (Blackledge et al., 2010). Importantly, the targeting of these modifications to CGI associated gene promoters generally occurs independently of the transcriptional state of the associated gene (Blackledge et al., 2010). This suggests that ZF-CxxC mediated chromatin modifications function upstream of transcription to create a permissive chromatin environment at gene promoters and demarcate these regions from surrounding non-regulatory regions of the genome (Blackledge and Klose, 2011; Deaton and Bird, 2011).\n\nUnlike the majority of CGIs which are marked with a permissive chromatin architecture controlled by the ZF-CxxC dependent chromatin modification system, a subset of CGIs can exist in an alternative more repressed chromatin state. This is dictated by the action of the two central polycomb repressive complexes (PRCs) in mammals, called PRC1 and PRC2 (Mikkelsen et al., 2007; Simon and Kingston, 2009). PRC1 complexes have E3 ubiquitin ligase activity that mono-ubiquitylates H2A on position 119 (H2AK119ub1) (Wang et al., 2004b; de Napoles et al., 2004) and PRC2 complexes have histone H3 lysine 27 (H3K27) methyltransferase activity (Cao et al., 2002; Czermin et al., 2002; Kuzmichev et al., 2002; M\u00fcller et al., 2002). In contrast to the permissive and accessible chromatin state found at most CGIs, polycomb mediated chromatin modifications are thought to generate a more compact and inhibitory chromatin environment, limiting transcription of associated genes (Shao et al., 1999; Lavigne et al., 2004; Francis et al., 2004; Eskeland et al., 2010).\n\nIn Drosophila, which lack CGIs, polycomb repressive complexes are targeted to regions of the genome called polycomb response elements (PREs) through the action of transcription factors (reviewed in (Schuettengruber et al., 2007; Ringrose and Paro, 2007; Simon and Kingston, 2009)). Interestingly, in mammals this situation is very different in that PREs predominantly correspond to CGIs (Ku et al., 2008; Woo et al., 2010) and there is mounting evidence that chromatin features specific to CGIs may play an important role in guiding PRC complexes to these particular regions of the genome (Mendenhall et al., 2010; Kanhere et al., 2010; Lynch et al., 2012). At the mechanistic level, how CGIs can function as mammalian PREs remains unknown, constituting a major gap in our understanding of how CGIs are functionally linked to the polycomb repressive systems in mammals.\n\nIn addressing this question, here we demonstrate that KDM2B, a paralogue of KDM2A, plays an important role in targeting the polycomb repressive complex 1 (PRC1) to CGIs and regulating gene expression in mouse embryonic stem cells (ESCs). This provides the first evidence linking direct recognition of CGIs with recruitment of a polycomb repressive complex in mammals.\n\n## Results\n\n### KDM2B binds specifically to non-methylated CpG dinucleotides and associates with CGIs genome-wide\n\nWe recently demonstrated that the KDM2A protein binds to CpG islands genome-wide (Blackledge et al., 2010). However, its paralogue, KDM2B, was reported to be concentrated in the nucleolus. Therefore, to examine the properties of endogenous KDM2B and understand how it functions in comparison to KDM2A, an antibody against KDM2B was raised. In contrast to previous reports, we observe that KDM2B is distributed throughout the nucleus and excluded from nucleoli (Figure 1\u2014figure supplement 1). Based on these observations, and considering that KDM2B also encodes a ZF-CxxC domain, we set out to examine whether KDM2B had a similar role to KDM2A in binding non-methylated DNA and CGIs (Blackledge et al., 2010). In agreement with previous work, recombinant KDM2B was found to bind non-methylated DNA in vitro (Koyama-Nasu et al., 2007; Yamagishi et al., 2008; Blackledge et al., 2012) in a manner that is comparable to that of KDM2A (Figure 1A,B). This suggests that KDM2B, like KDM2A, may recognize non-methylated DNA in vivo and bind CGI elements. To examine this possibility a chromatin immunoprecipitation sequencing (ChIP-seq) analysis was carried out to determine the binding profiles of KDM2A and KDM2B genome-wide in mouse ESCs. A visual inspection of these profiles suggests that both KDM2A and KDM2B localize to promoter associated CGIs and are excluded from non-CGI associated promoters (Figure 1C). When KDM2A and KDM2B ChIP-seq signal was plotted over all transcription start sites (TSSs) that had been segregated based on their classification as CGI or non-CGI associated there was a very specific enrichment of both KDM2A and KDM2B at the CGI associated class of transcription start site (Figure 1D). Furthermore, when KDM2A and KDM2B signal was plotted over all CGIs, including those away from gene promoters, there was a very specific spatial localization of both proteins at CGIs with signal intensity peaking at the centre of the island (Figure 1E). Together these observations demonstrate in vivo that KDM2A and B are both bound to CGIs genome-wide.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig1-v1.jpg)\n\n**Figure 1.:** (A) Electrophoretic mobility shift assay (EMSA) demonstrating that the recombinant KDM2B ZF-CxxC domain binds to a DNA probe containing non-methylated CpGs (left panel) in a concentration-dependent manner. Binding is abrogated by CpG methylation (right panel). (B) An analogous EMSA to part (A) using the known CGI binding factor KDM2A for comparison. (C) Input, KDM2A, and KDM2B ChIP-seq profiles over a region of the genome containing CGI and non-CGI associated genes. Bio-CAP-seq profiles are shown to indicate the location of non-methylated DNA (Blackledge et al., 2012). Above the sequencing traces individual genes are shown with the arrow indicating the transcription start site and vertical black lines corresponding to exons. The location of CGIs are indicated by green bars. Both KDM2A and KDM2B associate specifically with CGIs containing non-methylated DNA. (D) KDM2A and KDM2B ChIP-seq signal segregates specifically with CGI associated gene promoters (left panel) and is excluded from gene promoters not associated with CGIs (right panel). (E) KDM2A and KDM2B ChIP-seq signal is centred over CGIs, in agreement with their capacity to recognize non-methylated DNA at these sites.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Endogenous KDM2B immunofluorescence in five different mammalian cell lines. KDM2B signal is in red (left) and DAPI signal in blue (right). In all cell types KDM2B is a broadly distributed throughout the nucleus and not concentrated in the nucleolus as previously reported (Frescas et al., 2007). (B) Immunofluorescence in HeLa cells for Flag-tagged KDM2B and endogenous fibrillarin, a nucleolus marker. KDM2B is largely excluded from nucleoli. (C) The KDM2A and KDM2B antibodies specifically recognize their respective antigens. Empty expression vector, Flag-KDM2A, and Flag-KDM2B were transiently transfected into 293T cells. Whole cell extracts were made and probed with anti-KDM2A (left panel), anti-KDM2B (centre panel), or anti-Flag (right panel).\n\n### KDM2B is enriched and KDM2A depleted at polycomb occupied CGIs\n\nKDM2A and KDM2B profiles at CGI associated genes appeared largely similar (Figure 1). However when the levels of KDM2A and B were directly compared at individual CGIs genome-wide, a subset of CGIs was found that were preferentially enriched for KDM2B and depleted of KDM2A (Figure 2A). To begin examining whether there is a specific feature shared amongst KDM2B enriched CGIs, the genes associated with these CGIs were extracted and subjected to gene ontology (GO) enrichment analysis (Figure 2B). Interestingly, these genes were significantly associated with GO terms related to embryo development, morphogenesis, and cellular differentiation. In early development and embryonic stem cells, these classes of genes are often targeted by the polycomb repressive complexes and maintained in a poised but silent state until their expression is induced during lineage commitment (Lee et al., 2006; Boyer et al., 2006; Bracken et al., 2006; Mikkelsen et al., 2007). The enrichment of KDM2B at these specific classes of genes suggests that KDM2B may play a unique role in their regulation perhaps related to polycomb mediated repression.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig2-v1.jpg)\n\n**Figure 2.:** (A) An MA-like plot depicting the relative enrichment of KDM2A and KDM2B at all gene associated CGIs in mouse ESC cells. The log2 mean read intensity is displayed on x-axis and the log2 relative enrichment of KDM2B compared to KDM2A is displayed on the y-axis. The subset of CGIs highly enriched for KDM2B is coloured blue. (B) A histogram displaying fold enrichment values for GO term analysis of the genes which are over twofold enriched for KDM2B (blue data points, part (A)) at a FDR <5%. (C) A heat map illustrating ChIP-seq signal at all CGI transcription start sites (TSSs) in mouse ESC cells indicating depletion of KDM2A and enrichment of KDM2B at polycomb target CGIs marked by RING1B and EZH2. The scatter plot (far right in red) illustrates the log ratio of KDM2B to KDM2A enrichment at the same intervals depicted in the heat map as a scatter plot. (D) ChIP-seq profiles for KDM2A and KDM2B at the Adss non-polycomb target CGI gene indicating similar binding of both KDM2A and B (upper panels). (E) ChIP-seq for KDM2A, KDM2B, RING1B (PRC1), and EZH2 (PRC2) at the Lhx4 gene (lower panels). KDM2B is specifically enriched and KDM2A depleted at this polycomb repressed CGI. In all cases Bio-CAP-seq indicates the location of underlying non-methylated DNA and clearly depicts the spatial relationship between KDM2B, polycomb group proteins, and non-methylated DNA.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u2013(C) ChIP-seq profiles for KDM2A and KDM2B over a series of non-polycomb associated CGIs. Similar enrichment of KDM2A and B is observed at these sites. (D)\u2013(F) ChIP-seq profiles for KDM2A, KDM2B, RING1B, and EZH2 over a series of polycomb associated CGIs. KDM2B is enriched and KDM2A depleted at these sites.\n\nTo examine this possibility, the binding profiles of KDM2A, KDM2B, and components of the polycomb repressive complexes were examined in more detail. In mammals, there are two general polycomb repressive complexes (PRC) called PRC1 and PRC2 (Shao et al., 1999; Cao et al., 2002; Czermin et al., 2002; Kuzmichev et al., 2002; M\u00fcller et al., 2002; Levine et al., 2002). Previously, ChIP-seq based analysis has been used extensively to examine the location of PRC1 (via RING1B) (Tavares et al., 2012) and PRC2 (via EZH2) genome-wide (Peng et al., 2009). Using this information, KDM2A and KDM2B ChIP-seq was compared to the polycomb repressive complexes in mouse ESCs by examining the signal intensity around all CGI associated gene promoters (Figure 2C). From the heat maps it was immediately apparent that KDM2A and KDM2B bind in a seemingly equal manner to most CGI associated genes, but a subset of genes are specifically enriched for KDM2B and depleted of KDM2A. In keeping with the gene ontology analysis, the KDM2B enriched target genes segregate almost exclusively with genes enriched for polycomb repressive complex members RING1B and EZH2. Perhaps more surprisingly, the profile of the PRC1/2 components over CGI-associated target genes did not map precisely to the gene TSS but instead tracked with KDM2B binding and the underlying non-methylated DNA signal at these same regions. This striking spatial relationship is apparent at individual genes and also more generally when PRC1/2 components are examined at all polycomb bound genes (Figure 2C\u2013E and Figure 2\u2014figure supplement 1). Together these observations suggest that KDM2B, unlike KDM2A and CFP1 (Thomson et al., 2010), is enriched at polycomb associated CGIs. Furthermore, the clear spatial relationship between polycomb repressive proteins, KDM2B, and non-methylated DNA indicates there may be a mechanistic relationship between recognition of non-methylated DNA at CGIs and polycomb repressive complex nucleation.\n\n### KDM2B forms a variant PRC1 complex characterized by the PCGF1 subunit\n\nBased on the clear enrichment of KDM2B at polycomb associated CGIs in ESCs in vivo, we sought to understand if KDM2B is part of a protein complex in ESCs that might contribute to this localization. To achieve this we isolated stable ESC lines expressing epitope-tagged KDM2B and carried out affinity purification from nuclear extract followed by mass spectrometry to identify associated proteins (Figure 3A\u2013C). To ensure that any identified interactions were not mediated through DNA or non-specific interactions with the affinity matrix, we also carried out parallel purifications in which the extract had been pre-treated with nuclease to remove any DNA contamination and from a cell line containing only the empty expression vector. In the purifications from extracts containing epitope-tagged KDM2B a series of proteins in addition to KDM2B were identified (Figure 3B,C). These included RING1B, YAF2, RYBP, PCGF1, BCOR, and BCORL1. Importantly RING1B is the E3 ubiquitin ligase that functions as the catalytic core of the PRC1 complex and is responsible for mono-ubiquitylation of H2A at position 119 (H2AK119ub1). To verify that endogenous KDM2B interacts with RING1B, KDM2B was immunoprecipitated from ESC nuclear extract and the presence of RING1B in the immunoprecipitates verified by western blotting (Figure 3D). Therefore, KDM2B exists as part of a variant PRC1 complex in mouse embryonic stem cells. This observation is in agreement with recent work in cancer cell lines that identified KDM2B as part of a similar variant PRC1 complex (Gearhart et al., 2006; S\u00e1nchez et al., 2007; Gao et al., 2012).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig3-v1.jpg)\n\n**Figure 3.:** (A) To purify KDM2B and associated proteins, a mouse ESC cell line stably expressing Flag-2XStrepII-tagged KDM2B was generated. Nuclear extract was isolated from this cell line, KDM2B affinity purified, and the purified proteins subject to mass spectrometry. (B) Purified KDM2B fractions were resolved by gradient SDS-PAGE and visualized by SyproRuby staining. The purifications were performed in the absence and presence of benzonase to exclude DNA-mediated interactions and a cell line containing only the empty vector was used to control for non-specific binding to the affinity matrix. The elutions were probed by western blot for KDM2B as indicated. (C) Elutions from the KDM2B affinity purification were directly analysed by tryptic digestion followed by peptide identification by LC\u2013MS/MS. The Mascot scores and peptide coverage are shown for the respective affinity purifications. KDM2B in ESCs associates with a variant PRC1 complex containing RING1B, BCOR/BCORL1, PCGF1, RYBP, YAF2 and SKP1. (D) Western blot analysis of endogenous KDM2B immunoprecipitation from ESC nuclear extract, verifying that KDM2B interacts with RING1B, but not the PRC2 component EZH2. Flag immunoprecipitation was performed as negative control. (E) Reciprocal affinity purifications and subsequent LC-MS/MS for RING1B, YAF2, RYBP, and PCGF1 confirm the interaction between KDM2B and these PRC1 components. This analysis further indicates that PCGF1 is unique to the KDM2B-PRC1 complex. Protein identification scores and sequence coverage (Cov [%]) are indicated. (F) A schematic representation of the variant KDM2B PRC1 complex (left panel) in comparison to canonical PRC1 complexes (right panel).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u2013(D) Stable cell lines expressing Flag-2XStrepII tagged RING1B (A), YAF2 (B), RYBP (C), and PCGF1 (D) were generated and each protein affinity purified from mouse ESC nuclear extract. Purified fractions were resolved by gradient SDS-PAGE and visualized by SyproRuby staining. In each case the input, flowthrough, and elution is indicated above. The elutions were probed by western blot against the tagged protein as indicated below each SyproRuby stained gel.\n\nTo understand in more detail the composition and specificity of the KDM2B/PRC1 complex in ESCs, we generated individual stable cell lines expressing epitope tagged RING1B, YAF2, RYBP, and PCGF1 (Figure 3E and Figure 3\u2014figure supplement 1). Nuclear extracts were prepared from each cell line, epitope-tagged factors were affinity purified, and the associated proteins identified by mass spectrometry. Importantly KDM2B was identified in all purifications validating the association between KDM2B and these PRC1 components. Recently it has become apparent that different PRC1 complexes form in a manner that is dependent on a central dimerization partner that interacts with the RING1A/B catalytic core (Gao et al., 2012). These dimerization partners, called polycomb group ring fingers (PCGFs), act as bridging molecules that convey unique subunit composition to RING1B containing complexes and are required for H2AK119ub1 catalysis (Cao et al., 2005; Li et al., 2006; Ben-Saadon et al., 2006; Buchwald et al., 2006) (Figure 3F). There are six characterized RING1B dimerization partners PCGF1 (NSPC1), PCGF2 (MEL18), PCGF3 (DONG1), PCGF4 (BMI1), PCGF5 (RNF159), and PCGF6 (MBLR). In purifying RING1B complexes we identified five of the six known PCGF subunits and most of the major auxiliary factors known to interact with these complexes (Figure 3E). This supports previous observations that RING1B is the central enzymatic component of most PRC1 complexes in ESCs (Illingworth et al., 2012). Although YAF2 and RYBP were both identified in our KDM2B purification, when these proteins were purified independently it became apparent that they are also found in multiple other PCGF containing PRC1 complexes (Figure 3E). This indicates that both YAF2 and RYBP can form part of the KDM2B-PRC1 variant complex, but also function as part of other PRC1 complexes (Figure 3E). YAF2 and RYBP are thought to interact directly with RING1B (Wang et al., 2010) suggesting that they are likely to be recruited to the KDM2B-PRC1 complex via RING1B. In the KDM2B purification the only PCGF identified was PCGF1, suggesting that this factor is unique to the KDM2B-PRC1 variant complex. When the PCGF1 complex was purified (Figure 3E) its composition was almost identical to the KDM2B complex, with the exception that it also included RING1A, an alternative catalytic core of PRC1 that is highly sequence-similar to RING1B but is expressed at greatly reduced levels in ESCs. Therefore, based on our detailed reciprocal complex purifications, KDM2B forms a PRC1 variant complex that includes BCOR, BCORL1, PCGF1, RING1, and YAF2 or RYBP (Figure 3F). Interestingly, in agreement with PRC1 purifications from cancer cell lines (Gao et al., 2012), the PCGF1-containing complex associates with RYBP or YAF2 but fails to integrate chromobox domain-containing (CBX) proteins that recognize H3K27me3 (Cao et al., 2002; Wang et al., 2004a). CBX proteins and RYBP/YAF2 are thought to interact with RING1B in a mutually exclusive manner (Wang et al., 2010). This suggests that PCGF1 may play an important role in specifying the capacity of RYBP and YAF2 to associate with RING1B in the KDM2B variant PRC1 complex. Importantly, the inclusion of KDM2B in a PRC1 complex in ESCs suggest that the relationship between KDM2B and polycomb repressed CGIs may be mediated through its direct interaction with PRC1 components.\n\n### KDM2B relies on its ZF-CxxC domain and not its interaction with PRC1 to bind polycomb repressed CGIs\n\nBoth KDM2A (Figure 2C) and CFP1 (Thomson et al., 2010) are inhibited from binding to polycomb repressed CGIs in vivo despite the presence of non-methylated CpG at these sites. This may be related to the compact nature of polycomb-repressed regions and the distinct requirement for the ZF-CxxC domain to bind accessible linker DNA (Zhou et al., 2012). However, KDM2B differs from KDM2A and CFP1 in that it is enriched at polycomb repressed CGIs (Figure 2). Based on our biochemical purifications that indicate KDM2B in ESCs is part of a variant PRC1 complex (Figure 3), it remained possible that KDM2B was enriched at polycomb repressed CGIs via a ZF-CxxC domain independent mechanism relying on PRC1. To test this hypothesis we obtained mouse ESCs which lack RING1A and have a floxed allele of RING1B that can be conditionally removed by addition of the drug tamoxifen (Figure 4A) (Endoh et al., 2008). Removal of the catalytic core of PRC1 is known to destabilize the remainder of the core PRC1 complex (Leeb and Wutz, 2007; Endoh et al., 2008). Therefore, we first isolated chromatin from wild type and RING1A/B deleted ESC cells and carried out chromatin immunoprecipitation for RING1B and KDM2B. As would be expected, there were high levels of RING1B at polycomb repressed CGI containing genes and the RING1B signal was lost following tamoxifen treatment (Figure 4B). We then analysed the levels of KDM2B at a series of polycomb repressed and non-polycomb repressed CGI associated genes by ChIP and observed only small or no changes in KDM2B binding in the absence of RING1A/B (Figure 4C). This suggests that an intact PRC1 complex is not required to target KDM2B to polycomb repressed sites in vivo.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic representation showing removal of RING1B in ESC Ring1a\u2212/\u2212 Ring1bfl/fl cells by tamoxifen treatment. (B) ChIP analysis indicating that RING1B is enriched at polycomb target CGIs in untreated cells (red bars). After 48 hr of tamoxifen treatment RING1B binding is lost at polycomb targets (blue bars). Error bars represent SEM of three biological replicates. (C) ChIP analysis demonstrating that removal of RING1B does not lead to loss of KDM2B binding at regular or polycomb associated target CGIs (compare red and green bars). This demonstrates that RING1B is not required to recruit KDM2B to polycomb repressed sites. Error bars represent SEM of three biological replicates. (D) ChIP analysis in ESC cells stably expressing tagged wild-type (WT) KDM2B or a mutant KDM2B that disrupts its DNA-binding capacity (K643A).The ZF-CxxC domain of KDM2B is required for KDM2B binding to CGIs regardless of their polycomb status. Error bars represent SEM of two biological replicates.\n\nGiven that KDM2B does not appear to rely on an intact PRC1 complex to localize to polycomb CGIs, we hypothesized its recognition of polycomb targets must be achieved at least in part through the function of its ZF-CxxC non-methylated DNA binding domain. To test this hypothesis we generated stable ESC lines expressing either epitope tagged wild type KDM2B or a version of KDM2B containing a point mutation in the ZF-CxxC domain that ablates binding to CpG dinucleotides. We then isolated chromatin from these cell lines and analysed binding of exogenous KDM2B to CGI targets (Figure 4D). Importantly, WT KDM2B localized specifically to CGIs but a ZF-CxxC mutant failed to bind any class of CGI. This demonstrates that although KDM2B is part of a PRC1 complex its localisation to regular and polycomb repressed CGIs requires the recognition of non-methylated DNA via the ZF-CxxC domain. The capacity of KDM2B to target CGIs in the absence of PRC1 components suggests that KDM2B could function as targeting module for PRC1 and may contribute to polycomb mediated repression.\n\n### Depletion of KDM2B leads to up-regulation of a subset of polycomb repressed target genes\n\nBased on the clear enrichment of KDM2B at polycomb repressed genes and the inclusion of KDM2B in a PRC1 complex we examined whether depletion of KDM2B would affect the expression of polycomb repressed gene targets in mouse ESCs. To achieve this we stably knocked down KDM2B in ESCs using a lentiviral mediated shRNA approach. Knockdown was approximately by 80% at the RNA level (Figure 5A) and there was a clear reduction of KDM2B at the protein level (Figure 5B). Importantly, depletion of KMD2B did not result in destabilization of either the PRC1 or PRC2 complexes allowing us to specifically examine defects resulting from reduced KDM2B (Figure 5B). Microarray based gene expression profiling was then carried out to compare gene expression in the scrambled and KDM2B shRNA lines (Figure 5C). Gene expression profiling revealed a substantial number of expression changes with genes being both down-regulated and up-regulated. In total 653 genes changed expression by more than 1.5-fold: 329 had reduced gene expression and 324 had increased gene expression. Based on the association of KDM2B with polycomb repressed genes we then focussed in on the set of 324 genes that are up-regulated in the KDM2B depletion line. Interestingly 24% of these genes are characterized by RING1B occupancy. This is significantly greater than would be expected by chance (1.9-fold enrichment, hypergeometric p=1.3 \u00d7 10\u22128) and is similar to the percentage of up-regulated genes in the RING1B null ESC cells that are PRC1 targets (Leeb et al., 2010). Furthermore, when all gene expression changes are depicted in a volcano plot there is a clear propensity for RING1B occupied genes to have increased gene expression when KDM2B is depleted (Figure 5C). In order to validate the observed up-regulation of polycomb targets in the KDM2B depletion cell lines we analysed a panel of 12 genes determined to be up-regulated based on the microarray using quantitative RT-PCR (Figure 5D). In this analysis we observed corresponding increases in transcription in the KDM2B depletion line at these polycomb targets. Together these findings indicate that as with the removal of RING1B, depletion of KDM2B leads to up regulation of a subset of polycomb repressed target genes in mouse embryonic stem cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig5-v1.jpg)\n\n**Figure 5.:** (A) RT-PCR showing reduction of KDM2B at the mRNA level in the knockdown (KD) but not control cell line. The levels of the closely related KDM2A mRNA were not affected. Error bars represent SEM of three biological replicates. (B) Western blot analysis showing that KDM2B knockdown depletes KDM2B but not the closely related KDM2A protein. Importantly depletion of KDM2B does not destabilize other polycomb group proteins including RING1B, EZH2 or EED. Lamin A/C indicates equal loading. (C) A volcano plot illustrating the gene expression changes in the KDM2B depletion line compared to the control cell line. The x-axis corresponds to fold change and the y-axis to the significance level. RING1B associated genes are coloured red and show preferential enrichment in the genes up-regulated upon KDM2B knockdown. (D) A panel of polycomb target genes identified in microarray analysis that were up-regulated upon depletion of KDM2B were validated by RT-PCR analysis. In most cases the level of up-regulation was more pronounced when analysed by RT-PCR. Error bars represent SEM of four biological replicates. Values are normalized to Gapdh and expression in the control line set to 1.\n\n### KDM2B targets RING1B to CGIs\n\nThe up-regulation of a subset of polycomb repressed genes following KDM2B depletion and its physical association with a PRC1 complex suggests that KDM2B may play a role in polycomb function at CGIs, perhaps acting as a targeting factor for the PRC1 complex via its capacity to recognize CGI DNA. To examine this possibility we carried out ChIP-seq analysis for RING1B and KDM2B in the control and KDM2B knockdown cell lines. As expected KDM2B occupancy was greatly reduced in the knockdown cell line, in fitting with the global reduction of KDM2B at the RNA and protein level (Figure 6A). Next we examined RING1B occupancy in the control cell line. We confirmed high levels of RING1B at previously identified RING1B sites (Figure 6B e.g. Atf3 gene). Interestingly however, based on our highly optimized RING1B ChIP protocol we also observed a large number of lower magnitude binding events (\u2018novel\u2019 sites) that did not correspond to sites previously characterized as being occupied by RING1B (\u2018established\u2019 sites) (Figure 6B). To verify that these are bona fide RING1B binding events we carried out conventional ChIP followed by quantitative PCR on a series of these novel peaks in cells where we can conditionally delete RING1B and observed a clear loss of RING1B signal following deletion (Figure 6\u2014figure supplement 1). This indicates these lower magnitude peaks correspond to novel RING1B binding events. Interestingly, 68% of the 15,740 newly identified RING1B binding sites overlapped with CGIs, and 77% of these were coupled to transcription start sites. Importantly, a minority of these novel RING1B occupied CGI sites showed detectable EZH2 (23%) or H3K27me3 (20%), indicating that these sites are largely devoid of appreciable PRC2. Including the already characterized RING1B associated CGIs, this means that clear RING1B peaks are detectable at nearly 70% of the 22,849 mouse CGIs genome-wide (Illingworth et al., 2010), and 88% of RING1B occupied CGIs also are bound by detectable levels of KDM2B.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig6-v1.jpg)\n\n**Figure 6.:** (A) KDM2B ChIP-seq signal was plotted at CGIs in the control (solid blue line) and knockdown cell line (dotted blue line). Sequencing signal in the input samples over the same regions are indicated as solid or dotted black lines. KDM2B ChIP-seq signal is specifically lost over CGIs genome-wide in the KDM2B knockdown cell line. (B) A snapshot showing RING1B ChIP-seq signal in the control cell line illustrating a previously identified high magnitude RING1B binding sites (i.e. Atf3) and novel low magnitude RING1B binding sites. Input sequencing traces over the same region are shown in black. Bio-CAP-seq signal indicates regions containing non-methylated DNA. Above the sequencing traces gene promoters are show by black arrows and exons by vertical black lines. CGIs are shown as green bars with previously identified RING1B peaks and novel RING1B peaks indicated with purple boxes. (C) RING1B ChIP-seq signal from the control (solid purple line) and KDM2B knockdown cell line (dotted purple line) were plotted over previously identified CGI associated RING1B binding sites. Input sequencing signal was plotted over same regions. In the KDM2B knockdown line there is a specific reduction of RING1B binding over the CGI. (D) The same ChIP-seq signal as in part (C) was plotted over novel low magnitude binding sites identified in part (B). In the KDM2B knockdown cell line there is an even more severe loss of RING1B binding at these novel RING1B occupied sites. (E),(F) Examples of ChIP-seq profiles at individual high (E) and low (F) magnitude RING1B binding sites showing clear reduction of RING1B following KDM2B knockdown.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Eight genes corresponding to novel RING1B peaks identified in ChIP-seq were examined by ChIP quantitative-PCR (bar graphs) in the RING1B conditional ESC cells before (blue bars) and after (red bars) deletion of RING1B by addition of tamoxifen. In all cases deletion of RING1B leads to a loss of RING1B ChIP signal by quantitative-PCR, indicating that these are bona fide RING1B occupied sites. RING1B ChIP-seq traces are shown in each case for comparison. Error bars indicate the SEM for three biological replicates.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) ChIP q-PCR analysis demonstrating that KDM2B depletion results in a clear reduction of KDM2B occupancy at polycomb and non-polycomb CGIs. Error bars represent SEM of three biological replicates (B) ChIP analysis demonstrating that KDM2B depletion does not result in major effects on KDM2A occupancy. Error bars represent SEM of three biological replicates. (C) ChIP analysis demonstrating that KDM2B depletion causes a reduction in RING1B occupancy at polycomb associated CGIs. Error bars represent SEM of four biological replicates. In all cases ChIP material was analysed by qPCR using primers specific for (i) non-CGI promoters, (ii) gene bodies, (iii) non-PcG target CGIs, (iv) PcG target CGIs, and (v) PcG target CGIs of genes upregulated in KDM2B knockdown cells.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Average microarray signal intensity for genes characterized as associated with established RING1B CGIs (top panel), novel RING1B CGIs (middle panel), and non-RING1B associated CGIs (bottom panel). On average, novel RING1B associated CGI associated genes are expressed at similar levels to non-RING1B associated CGI genes (median signal of 10.47 vs 10.24). In contrast, established RING1B associated CGIs are on average expressed at lower levels (median signal of 8.47).\n\nTo examine whether KDM2B is required for RING1B association with CGIs, RING1B ChIP-seq signal from the control and KDM2B KD cell lines was initially plotted over previously identified RING1B CGI associated target sites (Figure 6C). This revealed a specific reduction in RING1B signal at these sites following KDM2B knockdown in fitting with a role for KDM2B in RING1B targeting. This reduction in RING1B binding was evident when the ChIP-seq signal was visualized at individual target genes (Figure 6E) and similar changes in RING1B occupancy were observed by conventional ChIP q-PCR analysis at selected RING1B bound CGIs (Figure 6\u2014figure supplement 2). Importantly, at sites where RING1B occupancy was affected, loss of binding correlated with the underlying non-methylated DNA signal and KDM2B occupancy (Figure 6E). These observations indicate that depletion of KDM2B causes a loss of normal RING1B targeting at polycomb occupied CGI regions of the genome, in accordance with the observed reactivation of a subset of polycomb repressed genes in the KDM2B knockdown line.\n\nBased on the observation that RING1B is more widely associated with CGI elements than previously appreciated (Figure 6B), we next examined whether KDM2B contributes to RING1B binding at these novel sites by plotting RING1B signal in the control and KDM2B knockdown cell lines over these regions (Figure 6D,F). Interestingly, depletion of KDM2B resulted in an even more dramatic effect on RING1B occupancy at these novel low magnitude sites, suggesting that these RING1B binding events are more dependent on KDM2B. Importantly, the observed reduction in RING1B occupancy at high and low magnitude sites was not due to destabilization of polycomb repressive systems, as the protein levels of both PRC1 and PRC2 components were similar in the wild type and KD cell lines (Figure 5B). Together these observations indicate that KDM2B plays a widespread role in targeting RING1B in vivo both at previously identified established polycomb-repressed CGI-associated genes and a novel class of lower magnitude RING1B occupied CGI sites.\n\n### KDM2B is required for normal H2AK119ub1 levels\n\nA major function of the PRC1 complexes is to mono-ubiquitylate histone H2A on position 119 (H2AK119ub1) and this activity is essential for PRC1 mediated gene repression (Endoh et al., 2012). A monoclonal antibody for H2AK119ub1 (Vassilev et al., 1995) has been widely used to evaluate H2AK119ub1 in vivo. Unfortunately, this antibody performs poorly under some experimental conditions, notably chromatin immunoprecipitation. To overcome this limitation we generated a novel antibody against a branched peptide encompassing the isopeptide junction between H2AK119 and the Ub chain. Following immunization, a double affinity purification strategy yielded a highly specific H2AK119ub1 antibody that recognizes native H2AK119ub and functions in ChIP (Figure 7\u2014figure supplements 1\u20133). Using this novel H2AK119ub1 specific antibody we set out to examine whether depletion of KDM2B affected PRC1 catalysed chromatin modification in vivo. To achieve this we first compared the global level of H2AK119ub1 in the WT and KD cell lines (Figure 7A,B). Interestingly, depletion of KDM2B results in an approximately 40% global reduction of this modification, indicating that KDM2B contributes significantly to H2AK119ub1 at the genome scale, most likely due to its widespread role in guiding RING1B occupancy. This was not the result of more general changes in chromatin modification as other histone marks including H3K4me3 and H3K27me3 were largely unaffected (Figure 7C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig7-v1.jpg)\n\n**Figure 7.:** (A) KDM2B knockdown results in a global loss of H2AK119ub1, as demonstrated by western blot for H2AK119ub1 in KDM2B knockdown and control cells. Western blot for total H2A is shown as a loading control. (B) Quantification of H2AK119ub1 levels by fluorescence based quantitative western blotting. The levels of H2AK119ub1 are approximately 40% lower in KDM2B knockdown compared to control cells. The western blot signal for H2AK119ub1 was quantified relative to H2A and the error bars represent the SEM of six biological replicates. (C) KDM2B knockdown does not cause global changes in levels of H3K27me3, H3K4me3 or H3K36me2, as demonstrated by western blot in the KDM2B knockdown and control cells. Western for total Histone H3 is shown as a loading control. (D) KDM2B knockdown cells show locus specific depletion of H2AK119ub1 at genes up-regulated in the KDM2B knockdown cell line. Comparatively there are only small changes in H3K27me3 and H3K4me3 at these same sites. ChIP material was analysed by qPCR using primers specific for (i) non-CGI promoters, (ii) gene bodies, (iii) Non-PcG target CGIs, (iv) PcG target CGIs, and (v) PcG target CGIs of genes up-regulated in KDM2B knockdown cells. Error bars represent the SEM of four biological replicates.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** A rabbit was immunized with a synthetic branched peptide containing H2AK119ub1. Serum from the immunized animal was tested against histone extracts from cells that contain a conditional allele of Ring1b that can be deleted by the addition of the drug tamoxifen. Drug treatment removes the RING1B H2AK119 E3 ligase and eliminates H2AK119ub1. In the crude serum from the immunized animal there is a clear H2AK119ub1 signal in the RING1B containing cell line that is lost upon drug treatment (panel i), however there was some cross-reactivity with unmodified H2A. To remove the H2A cross-reactivity the serum was first depleted of H2A reactivity (panel ii) and the flowthrough (panel iii) was then affinity purified on a column containing the H2AK119ub1 antigen (panel iv) yielding a highly specific antibody against H2AK119ub1 when compared to the commercially available H2AK119ub1 monoclonal antibody (panel v).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** The H2AK119ub1 antibody recognizes native H2AK119ub1 in cells as indicated by specific immunofluorescence staining of a Xist inactivated chromosome in mouse embryonic stem cells. H3K27me3 specific antibodies are used to identify the Xist inactivated chromosome and the merged image shows a clear overlap between H3K27me3 and H2AK119ub1.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00205/elife-00205-fig7-figsupp3-v1.jpg)\n\n**Figure 7\u2014figure supplement 3.:** The H2AK119ub1 antibody works specifically in chromatin immunoprecipitation as indicated by a loss of H2AK119ub1 ChIP signal following removal of RING1B in the conditional mouse ESCs.\n\nTo understand whether these global reductions in H2AK119ub1 were also evident at polycomb repressed target genes, we analysed H2AK119ub1 at a panel of CGI associated genes. Interestingly reductions in H2AK119ub1 appeared to be restricted to the polycomb target CGIs that were up-regulated in the absence of KMD2B (Figure 7D). This also correlated with a more subtle reduction in H3K27me3 but largely unchanged levels of H3K4me3 (Figure 7D). This suggests that although KDM2B plays a role in the nucleation of RING1B at most polycomb associated CGIs, the level of RING1B reduction at individual genes likely dictates the effects on H2AK119ub1 and gene expression. This is in accordance with the recent observation that H2AK119ub1 is important for gene repression mediated by PRC1 (Endoh et al., 2012). Interestingly, the level of H2AK119ub1 reduction at individual loci did not appear as dramatic as the global reductions observed by western blotting. One possibility for this difference may be that pervasive KDM2B dependent targeting of PRC1 to CGIs leads to low level deposition of H2AK119ub1 away from established polycomb sites. One can envisage how loss of KDM2B would more dramatically affect this additional pool of H2AK119ub1 resulting in significant global reduction in its abundance. Together these observations suggest that some polycomb repressed sites rely more specifically on KDM2B mediated RING1B occupancy for normal H2AK119ub1 and polycomb mediated gene repression (Endoh et al., 2012).\n\n## Discussion\n\nHere we demonstrate that KDM2B recognizes CGI elements via its ZF-CxxC domain and in contrast to its paralogue, KDM2A, is preferentially enriched at polycomb-repressed CGIs in mouse ESCs (Figure 2). By virtue of its physical association with a variant PRC1 complex (Figure 3) and through the functionality of its ZF-CxxC domain (Figure 4), KDM2B is required for normal targeting of the catalytic component of the PRC1 complex, RING1B, to CGI elements (Figure 6). Depletion of KDM2B results in a reduction of RING1B at polycomb repressed CGIs and leads to diminished global H2AK119ub1 (Figure 7). This causes reactivation of a subset of polycomb repressed target genes (Figure 5). Surprisingly, we also uncover a more widespread association of RING1B with CGIs that is also dependent on KDM2B (Figure 6). Together these observations provide an unexpected and direct link between CGIs, recognition of non-methylated DNA by KDM2B, and binding of the PRC1 complex to target sites in vivo.\n\nThe mechanisms underpinning how polycomb repressive complexes are recruited to target sites in mammals have remained largely elusive, with the exception that CGIs appear to function as the mammalian equivalent of the Drosophila polycomb response element (Simon and Kingston, 2009). In most species PRC1 is thought to be mechanistically recruited in a hierarchical manner through chromo-domain mediated recognition of H3K27 methylation at pre-existing PRC2 modified sites (Cao et al., 2002; Min et al., 2003; Wang et al., 2004b). This largely places PRC1 as a subservient reader of silencing events initiated by PRC2. However, the singularity of the hierarchal recruitment mechanism has recently been challenged by a series of elegant experiments in mammals demonstrating that although genetic perturbation of the PRC2 complexes reduces PRC1 localization to polycomb repressed CGIs (Tavares et al., 2012), H3K27 independent PRC1 targeting mechanisms are sufficient to maintain H2AK119ub1 and repression at many PRC1 bound targets (Schoeftner et al., 2006; Pasini et al., 2007; Leeb et al., 2010; Tavares et al., 2012). The specific molecular mechanisms underpinning H3K27me3 independent PRC1 targeting nevertheless remain unclear. For example, a PRC1 variant complex containing RYBP and lacking chromobox domain-containing proteins appears to be involved in this process but it is unclear how RYBP would achieve specificity for polycomb targets as it has no inherent chromatin or DNA binding specificity (Arrigoni et al., 2006; Neira et al., 2009; Tavares et al., 2012; Gao et al., 2012; Hisada et al., 2012). Furthermore RYBP depletion appears to destabilize the RING1B protein (Tavares et al., 2012), reducing the effective pool of the enzyme and making it difficult to determine the specific contribution of RYBP to targeting.\n\nBased on our observations that KDM2B is important for RING1B binding to CGI elements, the KDM2B-PRC1 complex provides an alternative mechanism for PRC1 recognition of polycomb repressed CGIs in mammals. KDM2B forms a variant PRC1 complex lacking CBX proteins but interestingly contains RYBP or the related YAF2 protein. In contrast to depletion of RYBP, reduction of KDM2B did not destabilize RING1B, allowing us to demonstrate that KDM2B contributes to the localization of RING1B to target sites in vivo. This targeting event appears to play an important role in the repression of a subset of polycomb target genes through H2AK119 ubiquitylation. Together these observations provide the first mechanistic evidence for the existence of a PRC1 targeting pathway that does not rely on recognition of H3K27me3 but instead interrogates the underlying non-methylated DNA sequence present at CGIs. Based on this work we propose an alternative to the hierarchical model of PRC1 targeting whereby CGIs are recognized by a variant PRC1 complex containing KDM2B through direct binding to non-methylated DNA. Other direct recognition mechanisms based on interactions between site specific DNA binding transcription factors and PRC1 have recently been identified further supporting the concept that DNA information at polycomb repressed sites is important for PRC1 targeting in vivo (Ren and Kerppola, 2011; Dietrich et al., 2012; Yu et al., 2012). Together, the hierarchical recruitment system and alternative direct targeting mechanisms likely function in a complementary and in some cases redundant fashion at many polycomb targets in vivo. This is supported by the observation that KDM2B depletion in embryonic stem cells results in up-regulation of only a subset of PRC1 target genes. Therefore, one can envision that polycomb repression, which must be maintained over cell divisions and developmental time scales, may rely on the combined activity of these separate pathways as an important stability component for maintenance of the silenced state.\n\nKDM2B is enriched at polycomb repressed sites in vivo, but genome-wide analysis revealed it is also more broadly associated with CGIs. Based on this observation, an interesting question remains regarding how KDM2B specifically contributes to PRC1 recognition of polycomb targets, while also binding to CGIs throughout the genome. Our surprising observation that RING1B is detectable at nearly 70% of all CGIs is supportive of a model whereby KDM2B may act as a sampling module allowing PRC1 to be recruited at very low levels to most or all CGIs by virtue of its capacity to recognize CGIs. This would then imply that productive PRC1 enrichment and polycomb mediated silencing is in turn only achieved at a subset of these sampled targets. Fittingly, novel RING1B associated CGIs do not differ in expression from the average gene (Figure 6\u2014figure supplement 3), whereas established polycomb CGIs show reduced expression. This is largely in agreement with recent mechanistic work in mammalian systems studying the capacity of CGIs to attract polycomb mediated repression, where it has been suggested that the default state for CGIs is indeed to acquire polycomb mediated silencing but local chromatin features and other activating marks appear to function to counteract this process (Mendenhall et al., 2010; Lynch et al., 2012). Conceptually this parallels the long held view from genetic and molecular studies in Drosophila that indicate a continual antagonism exists between the function of positively acting trithorax chromatin modifying systems and repressive polycomb systems at PREs (Poux et al., 2002; Klymenko and M\u00fcller, 2004). In Drosophila, ultimately this balance is resolved by the local activity of transcriptional regulators. In analogy to the situation at Drosophila PREs, the KDM2B-PRC1 complex may therefore function to continually recruit PRC1 to CGIs at low levels but ultimately only establish the fully PRC1/PRC2 occupied and polycomb repressed state if the appropriate local chromatin and transcriptional environment is met. It is tempting to speculate that PRC1, and perhaps even PRC2 via its poorly characterized DNA binding components (Cao et al., 2002; Kim et al., 2009; Li et al., 2010), may be continually interfacing CGIs in a dynamic manner in order to constantly sample their susceptibility to polycomb repression. Once the conditions are met for polycomb mediated silencing, one can envision a simple feed forward loop may exist where the combined activities of PRC1 and PRC2 stabilize each other through canonical PRC1 complexes that contain CBX proteins recognising H3K27me3 placed by PRC2 (Cao et al., 2002; Wang et al., 2004b) and PRC2 activity favouring the increasingly compacted chromatin state associated with PRC1 occupancy (Francis et al., 2004; Eskeland et al., 2010; Yuan et al., 2012). This could account for the remarkable spatial correlation between mammalian polycomb repression domains and CGIs at established polycomb repressed sites (Ku et al., 2008). This speculative model is appealing as it would in part explain the co-occupancy of PRC1 and PRC2 at most established polycomb sites in vivo and could reconcile why only certain CGIs are susceptible to acquiring full polycomb complex nucleation and silencing in vivo.\n\nIn order to fully realize the complexities and interplay between polycomb silencing activities, more detailed molecular and biochemical understanding of this system is clearly required. For example, our study has focussed on ESCs where polycomb factors are highly abundant, so it will be imperative to understand if similar KDM2B dependent PRC1 targeting mechanisms function in more committed cell types. Also, it is known that H3K27me3 and CBX dependent PRC1 targeting activities play an important role in RING1B occupancy. Therefore, KDM2B dependent targeting of the PCGF1-PRC1 complex on its own is insufficient to account for the functionality of PRC1 in vivo. This suggests that a complex set of PRC1 targeting mechanisms, perhaps utilizing specific PRC1 complexes, and based on both direct and indirect recognition of CGI associated sites is required for normal PRC1 function. In agreement with this idea, knockdown of KDM2B leads to reactivation of only a subset of polycomb repressed genes. Although this may be due to incomplete removal of KDM2B by RNAi, it may also be related to compensatory function of other PRC1 complexes. Nevertheless, our demonstration that KDM2B links PRC1 to recognition of CGIs provides an important new piece of the puzzle and demonstrates for the first time a direct mechanism for polycomb recognition of CGIs elements in vivo. Importantly, it also provides a novel conceptual framework on which to consider initiation of polycomb mediated silencing.\n\n## Materials and methods\n\n### DNA constructs\n\nThe full length human KDM2B, mouse RING1B, mouse YAF2 (IMAGE clone 3488691), human PCGF1 (IMAGE clone 3621400), mouse RYBP (IMAGE clone 8861345) were PCR-amplified and inserted via ligation independent cloning (LIC) into a pCAG-IRES-puro eukaryotic expression vector that has been modified to express a N-terminal Flag and 2XStrep2 tag and contain LIC cloning sites. All PCR generated constructs were verified by sequencing. Mutation of the KDM2B ZF-CxxC DNA binding domain (K643A) was introduced into the wild type KDM2B construct by Quikchange mutagenesis XL kit (Stratagene, Santa Clara, CA).\n\n### Antibodies\n\nA polyclonal antibody against KDM2B was generated by immunizing a rabbit (PTU/BS Scottish National Blood Transfusion Service) with a Hisx6-tag fusion protein encoding amino acids 755\u2013917 of human KDM2B protein. KDM2B antigen was coupled to AffiGel10 resin (BioRad, Hemel Hempstead, UK) and the antibody was affinity purified. The RING1B mouse monoclonal antibody has been described previously (Atsuta et al., 2001). To obtain a highly pure RING1B antibody preparation, hybridoma cells were cultured and the antibody was purified from tissue culture supernatant by protein A agarose (RepliGen, Waltham, MA) based affinity chromatography. A rabbit polyclonal antibody against Flag-2XStrepII sequence was generated by immunization of a rabbit with a synthetically synthesized peptide conjugated to mariculture KLH carrier protein (ThermoScientific, Waltham, MA). Flag-2XStrepII peptide was covalently immobilized on SulfoLink resin (ThermoScientific) and antibody was affinity purified prior to use. Polyclonal antibody against histone H3 and histone H3 lysine 4 trimethylation (H3K4me3) were generated using the synthetic peptides CIQLARRIRGERA, and ART (K)QTARKSTGGC (where brackets indicate position of trimethyl mark), respectively. For both antibodies, peptides were conjugated to mariculture KLH carrier protein (ThermoScientific) prior to rabbit immunization, and after obtaining serum from immunized animals the antibodies were affinity purified using the respective peptide antigen coupled to SulfoLink resin (ThermoScientific). A polyclonal antibody against histone H3 lysine 36 dimethylation (H3K36me2) has been described previously (Blackledge et al., 2010), and commercially available antibodies were used to detect Histone H3K27 trimethylation (H3K27me3) (Diagenode, Liege, Belgium; 069-050) and total histone H2A (Millipore, Billerica, MA; 07-146).\n\n### H2AK119ub antibody production\n\nA branched peptide was synthesised (by GL Biochem, Shanghai, China) with the sequence H2N-CVLLPKK (H2N-LRGG)TESHHK-NH2, where the H2N-LRGG branch is coupled to the Lys119 residue through a Lys\u2013Gly isopeptide bond. This branched peptide was conjugated to maleimide-activated KLH (Pierce Protein Biology Products, Rockford, IL) and a rabbit was immunised with the peptide-conjugate KLH.\n\nFollowing immunisation H2AK119ub1 specific antibodies were purified in a two-step process. First, a peptide of the sequence H2N-CVLLPKKTESHHK-NH2, corresponding to amino acids 114\u2013125 of histone H2A, was immobilised on SulfoLink Resin (Pierce Protein Biology Products). Serum was purified over this resin to remove antibodies cross-reactive with unmodified H2A. Secondly, the flow-through from this resin was then applied to a second Sulfolink Resin on which was immobilised the original branched peptide (H2N-CVLLPKK [H2N-LRGG]TESHHK-NH2) used for immunisation.\n\n### Cell culture\n\nMurine V6.5 ESC cells (C57BL/6 (F) \u00d7 129/sv (M)) were cultured on Mitomycin C inactivated mouse embryonic fibroblasts (MEFs) in DMEM (Gibco, Carlsbad, CA) supplemented with 15% FBS, 10 ng/mL leukemia-inhibiting factor (LIF), penicillin/streptomycin, beta-mercaptoethanol, l-glutamine and non-essential amino-acids. Prior to use in ChIP experiments, V6.5 cells were cultured for two passages under feeder-free conditions. Feeder-independent E14 and EFC-1 mouse embryonic stem cells were grown on 0.1% gelatine. Ring1A\u2212/\u2212; RING1Bfl/fl; Rosa26::CreERT2 ESCs were allowed to settle overnight without feeders and cultured in the absence or presence of 4-hydroxy tamoxifen (800 \u03bcM) for 48 hr to deplete RING1B. For generation of stable cell lines, 3 \u03bcg expression constructs were transfected into E14 or EFC-1 cells using Lipofectamine 2000 (Invitrogen, Carlsbad, CA), and stable integrants were selected using 1.5 \u03bcg/mL puromycin.\n\n### Immunofluorescence\n\nStaining was performed in HeLa, 293T, IMR90 and U2OS cells, which were cultured in DMEM (Lonza, Basel, Switzerland) supplemented with 10% FCS and penicillin/streptomycin. Transient transfection in HeLa cells was achieved using Fugene HD reagent (Roche, Basel, Switzerland) and 2 \u03bcg of Flag-tagged KDM2B expression plasmid. Briefly, cells seeded on cover slips were fixed with 4% paraformaldehyde for 20 min, permeabilized with 0.5% Triton X-100 for 10 min and blocked using 3% BSA for 30 min. Fixation was done approximately 24 hr after transfections. Cells were incubated with KDM2B rabbit polyclonal primary antibody for 2 hr or the Flag mouse monoclonal M2 antibody (Sigma, St Louis, MO) in case of exogenous expression, followed by incubation in secondary antibody conjugated with Rhodamine or FITC (Jackson ImmunoResearch Laboratories, West Grove, PA) for 1 hr. All intermediary washing steps and dilutions were performed in 1\u00d7 PBS. After 4,6-diamidino-2-phenylindole dihydrochloride (DAPI) nuclear staining, the cover slips were mounted on glass slides in fluorescent mounting medium (DAKO, Glostrup, Denmark) and allowed to dry overnight. Images were aquired using a Zeiss AxioSkop fluorescent microscope.\n\n### Electrophoretic mobility shift assay (EMSA)\n\nRecombinant ZF-CxxC constructs encompassing human KDM2A (encoding amino acids 558\u2013704) and KDM2B (encoding amino acids 600\u2013750) were engineered to include an N-terminal 6-his tag followed by a tobacco etch virus (TEV) protease cleavage site as previously described (Blackledge et al., 2010; Blackledge et al., 2012). The ZF-CxxC protein was isolated by Ni-NTA-mediated purification as described before and TEV-cleavage as described previously (Blackledge et al., 2012; Klose and Bird, 2004). EMSA probes were generated and labelled and EMSA was performed as previously described with samples analysed on a 1.3% agarose gel (Blackledge et al., 2010).\n\n### KDM2B knockdown\n\nScrambled or KDM2B shRNAs were cloned into pLKO.1puro (Addgene, Cambridge, MA) and sequence verified. For producing recombinant lentiviral particles, the shRNA constructs were co-transfected with psPAX2 packaging plasmid and pMD2.G envelope helper plasmid into 293T cells using FuGene (Roche, Basel, Switzerland). The 21mer shRNA sequences used were: (Kdm2b) 5\u2032-CGCTGTGGAAATATCTGTCAT-3\u2032, (control) 5\u2032-CCTAAGGTTAAGTCGCCCTCG-3\u2032. Lentiviral infection of E14 cells was performed overnight in the presence of 4 \u03bcg/mL polybrene. The following day, cells were diluted into fresh growth media and allowed to settle onto gelatine-coated dishes. Puromycin selection (1.5 \u03bcg/mL) was started 48 hr following transduction and stable lines were isolated and expanded.\n\n### KDM2B protein complex purification\n\nCells were harvested by scraping, washed with 1\u00d7 PBS and equilibrated in 10 pellet volumes of buffer A (10 mM Hepes pH 7.9, 1.5 mM MgCl2, 10 mM KCl, 0.5 mM DTT, 0.5 mM PMSF, and complete protease inhibitors [Roche, Basel, Switzerland]). The cells were incubated on ice for 10 min and recovered by centrifugation at 1500\u00d7g for 5 min. The pellet was resuspended in 3 volumes of buffer A supplemented with 0.1% NP-40 and incubated on ice for 10 min with gentle agitation. Nuclei were recovered by centrifugation at 1500\u00d7 rpm for 5 min. Recovered nuclei were then resuspended in 1\u00d7 pellet volume of buffer B (5 mM Hepes [pH 7.9], 26% glycerol, 1.5 mM MgCl2, 0.2 mM EDTA, and complete protease inhibitors [Roche], 0.5 mM DTT) supplemented with 400 mM NaCl. The nuclei were first resuspended in a buffer with 250 mM salt. The volume of the buffer and the cells was taken into account, and the salt concentration was increased to 400 mM by gently adding concentrated 5 M NaCl dropwise while mixing. The extraction was allowed to proceed for 1 hr on ice with occasional agitation, and then the nuclei were pelleted at 13,000 rpm for 20 min at 4\u00b0C. The supernatant was taken as the nuclear extract.\n\nFor purification of KDM2B-Flag/StrepII, the salt concentration of the nuclear extract was first reduced to 150 mM NaCl by dilution into nuclear extraction buffer B without salt. Between 10\u201315 mg of nuclear extract were used for each large-scale affinity purification. Avidin (IBA, Goettingen, Germany; 20 \u03bcg/1 mg extract) was added to remove biotinylated molecules which would bind unspecifically to the matrix. If benzonase treatment was performed, 75 U/mL nuclear extract benzonase nuclease (Novagen, Darmstadt, Germany) was added at this point. Extracts were pre-cleared for 30 min at 4\u00b0C, followed by a max speed centrifugation (13000\u00d7 rpm) for 5 min. Cleared extract was then added to 50 \u03bcL packed StrepTactin superflow high-capacity resin (IBA) and allowed to rotate gently for 3 hr at 4\u00b0C. Eight wash steps were performed (20 mM Tris pH 8.0, 500 mM NaCl, 0.2% NP-40, 1 mM DTT (fresh) and 5% glycerol) in 1.5 mL low bind tubes (Eppendorf, Hamburg, Germany). Bound material was eluted in buffer containing 20 mM Tris pH 8.0, 150 mM NaCl, 0.2% NP-40, 1 mM DTT (fresh), 5% glycerol and 10 mM D-desthiobiotin (IBA). The same experimental setup was used to identify associated polypeptides for RING1B, YAF2, RYBP and PCGF1.\n\n### Liquid chromatography\u2014tandem mass spectrometry (LC\u2013MS/MS) and data analysis\n\nThe immunoprecipitated solution was desalted using chloroform-methanol extraction, followed by overnight in-solution tryptic digestion and subsequent peptide purification using Waters C18 Sep-Pak cartridges. The analysis of immunoprecipitated digested material was performed by LC\u2013MS/MS using an Orbitrap Velos (Thermo mass spectrometer) coupled to a nano-UPLC system (NanoAcquity, Waters, Milford, MA) using a reversed phase 75 \u03bcm \u00d7 250 mm, 1.7\u03bcm particle size column, as described (Fischer et al., 2012). MS/MS spectra were searched against the UniProt SwissProt Mus database (v2011.11.18, 16,460 sequences) in Mascot v2.3.01, allowing one missed cleavage and 20 ppm/0.5 Da mass deviations in MS/MSMS, respectively. Carbamidomethylation of cysteine was a fixed modification. Oxidation of methionine, and deamidation of asparagine and glutamine were used as variable modifications. Protein assignment was based on at least two peptides identified.\n\n### KDM2B immunoprecipitation\n\nFor each immunoprecipitation, 0.5 mg nuclear extract was used in buffer BC150 (150 mM KCl, 10% glycerol, 50 mM HEPES [pH 7.9], 0.5 mM EDTA, 0.5 mM DTT [added fresh]). Approximately 3 \u03bcg of antibody of interest was added and the reaction allowed to incubate overnight at 4\u00b0C. The next morning, 20 \u03bcL of packed protein A beads (RepliGen, Waltham, MA) were added, and the samples rotated for 1 hr at 4\u00b0C. Following washing with BC300 (300 mM KCl, 10% glycerol, 50 mM HEPES [pH 7.9], 0.5 mM EDTA, 0.5 mM DTT [added fresh]), the beads were resuspended in a small volume of SDS-PAGE loading dye and boiled at 95\u00b0C for 5 min. After spinning at 1000\u00d7g for 5 min, the supernatant was used for western blotting.\n\n### Gene expression analysis\n\nTotal RNA was extracted using the Qiagen RNeasy Mini kit. Approximately 10 \u03bcg nucleic acid were treated with Turbo DNase (Ambion, Carlsbad, CA) at 37\u00b0C for 30 min, according to the manufacturer's instructions. Genomic DNA-free RNA samples were further purified using the RNeasy kit RNA cleanup protocol. Samples were run on an 1% agarose gel to check quality of RNA preparation and integrity of 18S and 28S rRNA bands. For subsequent RT-PCR analysis, cDNA was synthesized with the ImProm-II Reverse Transcription System (Promega, Madison, WI). Quantitative real-time PCR was performed in duplicate by using Quantace SYBR Green master mix, using Gapdh as housekeeping gene.\n\nFor microarray studies, RNA integrity was assessed on a BioAnalyzer; all samples had a RNA Integrity Number (RIN) \u22659.5 (Agilent Laboratories, Santa Clara, CA). Sense ssDNA was generated from 300 ng starting RNA with the Ambion WT Expression Kit according to the manufacturer's instructions. Sense ssDNA was fragmented and labeled using the GeneChip WT Terminal Labeling and Controls Kit. The fragmented peak size was measured on the BioAnalyzer and was in the expected 40\u201370 nt range. The labeled ssDNA from four biological replicates was hybridized to Affymetrix Mouse Gene 1.0 ST Array (Affymetrix, Santa Clara, CA). Chips were processed on an Affymetrix GeneChip Fluidics Station 450 and Scanner 3000. Cel files were generated using Command Console (Affymetrix).\n\n### Microarray analysis\n\nAffymetrix microarray probe intensities were normalised using RMA normalisation via the Bioconductor/R package oligo (version 1.18.1) (Carvalho and Irizarry, 2010) and differences tested using the Bioconductor/R package limma (version 3.10.3) (Smyth, 2004). In order for expression to have been considered changed, a majority of the probe sets targeting the gene needed a Benjamini and Hochberg corrected FDR of less than 0.05 and the most significant probe required a fold change of at least 1.5-fold between KDM2B knockdown and scrambled control samples. Enrichments in RING1B marked genes were tested by calculating the proportion of genes significantly changed compared to the fraction of genes on the array marked. Differences were tested using the hypergeometric test. Odds ratio for the RING1B marked genes to increase in expression vs decrease was tested using Fisher's exact test.\n\n### Chromatin immunoprecipitation\n\nChromatin immunoprecipitation was performed as previously described (Schmidt et al., 2009), with minor modifications. For KDM2A, KDM2B and RING1B ChIP, cells were fixed for 1 hr in 2 mM EGS, followed by 15 min in 1% formaldehyde, while for histone modification ChIP cells were fixed for 10 min in 1% formaldehyde alone. In both cases, formaldehyde was quenched by the addition of glycine to a final concentration of 125 \u03bcM.\n\nSonication was performed using a BioRuptor sonicator (Diagenode, Liege, Belgium) to produce fragments of approximately 0.5\u20131 kb. Immunoprecipitation was performed overnight at 4\u00b0C with approximately 3 \u00b5g of antibody and chromatin corresponding to 5 \u00d7 106 cells. Antibody bound proteins were isolated on protein A agarose beads (RepliGen, Waltham, CA) or protein A magnetic Dynabeads (Invitrogen, Carlsbad, CA), washed extensively, eluted, and cross-links reversed according to the Upstate protocol. Samples were then sequentially treated with RNase and proteinase K before being purified on a PureLink PCR micro column (Invitrogen). Real-time qPCR was performed using Sybr Green (Quantace, London, UK) on a Rotor-Gene 6000 (Corbett, Hilden, Germany) or sequencing libraries were generated as described previously (Blackledge et al., 2010) and sequenced on the Illumina HiSeq2000 platform with 51 bp reads.\n\n### ChIP-seq analysis\n\nPublished datasets for CpG island (CGI) intervals were obtained from (Illingworth et al., 2010). Published RING1B ChIP-seq and input reads from mouse ESCs were obtained from GSM585229 (Tavares et al., 2012) and intervals were called as described below. EZH2 ChIP-seq from mouse ESCs was obtained from GSM480161 (Peng et al., 2009). TSS annotation and GO slim categories were obtained from Ensembl 66.\n\nAll sequence was mapped using Bowtie (Langmead et al., 2009) version 0.12.7 against the mouse genome (mm9). Up to two mismatches were allowed and only uniquely mapping reads were kept. Mapped reads were then de-duplicated using Picard to remove potential PCR-duplicates. Where appropriate, sets of mapped reads were normalized by random sampling of the larger set to the size of the smaller. Peak intervals were generated by MACS 1.4.2 (Zhang et al., 2008) using normalized chip and input samples. A p-value threshold of 1 \u00d7 10\u22125 and a fold enrichment over input threshold of 6 was used to filter the resulting peak intervals. Intervals closer than 200 bp were merged.\n\nProfile plots were generated using the custom script bam2geneprofile by counting reads mapping over each base of a pre-defined set of intervals and averaging the depth. In the case of Figure 6C, interval lengths were normalised. In all other cases a fixed window size about a point was used. Where two samples are shown on the same plot, the numbers of mapping reads has been normalised. Results are normalised over the number of intervals in the input set.\n\nTo calculate enrichment of KDM2B over KDM2A at CGIs overlapping TSSs, the coverage of each factor which overlapped a 1 kb window around any TSS was calculated using the coverageBed tool from BedTools (Quinlan and Hall, 2010) on normalised read sets. For each CGI the ratio of KDM2B to KDM2A reads was calculated. The genes associated with CGIs that showed a greater than twofold enrichment of KDM2B over KDM2A were used to perform GO analysis. Enrichment of GO terms from the Biological Function category of the GO slim hierarchy was tested using the custom script GO.py. The significance of each category was tested using a hypergeometric test and FDRs calculated using the method of Benjamini and Hochberg (Benjamini and Hochberg, 1995). Terms with an FDR <0.05 and fold enrichment greater than 3.5 are shown.\n\nChIP-seq heatmaps were generated using the custom script bam2peakshape.py. Briefly, each CGI window was divided into 25 bp bins and the number of reads mapping to each bin counted. Reads were then normalised to the total number of reads mapping across all intervals. Intervals were then ranked by the number of reads in the RING1B set that map to that interval.\n\n### Source code\n\nSource code for custom scripts described is available in the mercurial repository at www.cgat.org/hg/cgat. The change-set used was 114addb46882.\n\n### Data access\n\nSequencing and microarray data can be accessed via the geo accession GSE41267.\n",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "47dc35d5-2129-4b8c-94e4-5a805a6cd55c",
+      "submission_id": "d47504b6-c912-4cbf-8c43-4bbff64e25be",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kevin Struhl, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00205.019](https://doi.org/10.7554/eLife.00205.019)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \"KDM2B links the Polycomb Repressive Complex 1 (PRC1) to recognition of CpG islands\" for consideration at eLife. Your article has been evaluated by a Senior Editor and 3 reviewers, one of whom, Kevin Struhl, is a member of our Board of Reviewing Editors.\n\nThe Reviewing Editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing Editor has assembled the following comments based on the reviewers' reports.\n\nRepression by polycomb complexes is of high biological importance yet is not well understood mechanistically. An important question, particularly in mammalian cells, is how Pc complexes are recruited to specific sites. Here, the authors provide evidence that the histone demethylase KDM2B recruits the PRC1 complex to CpG islands. The reviewers agree that the work is interesting and the manuscript is acceptable in principle for publication in eLife. No new experiments are needed. However, it is essential to address the following comments in the text:\n\n* What are H3K36 demethylases doing at sites not expected to contain H3K36 methylation?\n\n* Is this recruitment mechanism typical or is it specific for ESC cells?\n\n* What excludes KDM2A from Polycomb target CGIs?\n\n* What PRC1 protein(s) does KDM2B interact with? With what protein domain? Why does it not recruit CBX-containing complexes?\n\n* Only a small subset of KDM2B binding sites are also occupied by RING1B so other features or factors must be involved in the recruitment of PRC1. Please discuss them.\n\n* How is PRC2 recruited to KDM2B/RING1B sites? It seems to be there according to Figure 2, for example. Is a CBX protein associated with these sites? Is there H3K27me3 associated with KDM2B/RING1B binding sites?\n\n* It is unclear why, if KDM2B is required for all Ring1b binding sites, loss of KDM2B only derepresses a very small subset. If Ring1b is found at 70% of all genomic CpG islands, it must be found also at sites that bind KDM2A. Does RING1B antagonize binding of KDM2A? Does KDM2A now bind to these CpG islands when no PRC1 is present?\n\n* Without a mechanism to recruit PRC2 to the same sites, the model is not very explanatory. Furthermore, nothing was said about recruitment of CBX-containing PRC1. Evidently these are not recruited by KDM2B. So there are several links missing in the causal chain in the scenario proposed, which should be accounted for.\n\n* How are Polycomb-repressed target genes identified? By the binding of Ring1b? By H3K27me3?\n\n* The loss of H2Aub even from those genes that are supposed to be derepressed after KDM2B knockdown is not impressive: in most cases it is no more than 20% lower. That means that the 40% loss in global H2Aub is not concentrated in these genes and suggests that KDM2B plays a minor role in recruiting some kind of PRC1. Things are even worse at PcG target CGIs that do not become derepressed.\n\n* There continues to be a misguided insistence on the assumption that binding PRC1 automatically compacts chromatin, although in ES cells it is clear that many binding sites are the typical bivalent sites that also have methylated H3K4 and bind RNA polymerase.\n",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "47b271c1-898f-4daf-b4f4-f098b2f83ed0",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C1",
+      "claim": "KDM2B is distributed throughout the nucleus and excluded from nucleoli.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previous reports, we observe that KDM2B is distributed throughout the nucleus and excluded from nucleoli (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "c83a4e43-5172-4868-ad3c-7e7e379bf21b",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C2",
+      "claim": "Recombinant KDM2B binds non-methylated DNA in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous work, recombinant KDM2B was found to bind non-methylated DNA in vitro (Koyama-Nasu et al., 2007; Yamagishi et al., 2008; Blackledge et al., 2012) in a manner that is comparable to that of KDM2A (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EMSA data in Figure 1A,B and cited previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "ba18548b-9c60-4747-8461-3cade23d0116",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C3",
+      "claim": "KDM2B binding to non-methylated DNA is abrogated by CpG methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophoretic mobility shift assay (EMSA) demonstrating that the recombinant KDM2B ZF-CxxC domain binds to a DNA probe containing non-methylated CpGs (left panel) in a concentration-dependent manner. Binding is abrogated by CpG methylation (right panel).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Demonstrated by EMSA data in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "e9fc5b84-f90c-4188-baa8-95173c51347e",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C4",
+      "claim": "Both KDM2A and KDM2B localize to promoter associated CGIs and are excluded from non-CGI associated promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "A visual inspection of these profiles suggests that both KDM2A and KDM2B localize to promoter associated CGIs and are excluded from non-CGI associated promoters (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq profiles shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "6493bb7d-cea0-4127-9323-8160667a95b5",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C5",
+      "claim": "KDM2A and KDM2B are specifically enriched at CGI associated transcription start sites.",
+      "claim_type": "EXPLICIT",
+      "source": "When KDM2A and KDM2B ChIP-seq signal was plotted over all transcription start sites (TSSs) that had been segregated based on their classification as CGI or non-CGI associated there was a very specific enrichment of both KDM2A and KDM2B at the CGI associated class of transcription start site (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ChIP-seq analysis shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "302aaa58-5192-42a6-9679-e11b072b26d1",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C6",
+      "claim": "KDM2A and KDM2B signal peaks at the centre of CGIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when KDM2A and KDM2B signal was plotted over all CGIs, including those away from gene promoters, there was a very specific spatial localization of both proteins at CGIs with signal intensity peaking at the centre of the island (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ChIP-seq analysis shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "e64618a5-d639-47b7-bbd6-3a0fd48669d3",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C7",
+      "claim": "KDM2A and KDM2B are both bound to CGIs genome-wide in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these observations demonstrate in vivo that KDM2A and B are both bound to CGIs genome-wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ChIP-seq data presented in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "e6037c84-76c8-4c38-b780-1a81c827469c",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C8",
+      "claim": "A subset of CGIs are preferentially enriched for KDM2B and depleted of KDM2A.",
+      "claim_type": "EXPLICIT",
+      "source": "However when the levels of KDM2A and B were directly compared at individual CGIs genome-wide, a subset of CGIs was found that were preferentially enriched for KDM2B and depleted of KDM2A (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by MA-like plot in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "d31c9366-8b62-4667-8b03-b1d987397adc",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C9",
+      "claim": "Genes associated with KDM2B enriched CGIs are significantly associated with GO terms related to embryo development, morphogenesis, and cellular differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these genes were significantly associated with GO terms related to embryo development, morphogenesis, and cellular differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GO enrichment analysis shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "1818d7e9-6905-4048-99b8-974a41fb1b25",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C10",
+      "claim": "Genes involved in early development and embryonic stem cells are often targeted by polycomb repressive complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In early development and embryonic stem cells, these classes of genes are often targeted by the polycomb repressive complexes and maintained in a poised but silent state until their expression is induced during lineage commitment (Lee et al., 2006; Boyer et al., 2006; Bracken et al., 2006; Mikkelsen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple cited studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "030b6cea-f7d1-48ab-b725-fe42cf2f135f",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C11",
+      "claim": "KDM2B is enriched and KDM2A depleted at polycomb occupied CGIs marked by RING1B and EZH2.",
+      "claim_type": "EXPLICIT",
+      "source": "A heat map illustrating ChIP-seq signal at all CGI transcription start sites (TSSs) in mouse ESC cells indicating depletion of KDM2A and enrichment of KDM2B at polycomb target CGIs marked by RING1B and EZH2.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Demonstrated by heat map analysis in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "3858b029-0523-4109-818a-f5fa4c855b94",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C12",
+      "claim": "The profile of PRC1/2 components over CGI-associated target genes tracks with KDM2B binding and underlying non-methylated DNA signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps more surprisingly, the profile of the PRC1/2 components over CGI-associated target genes did not map precisely to the gene TSS but instead tracked with KDM2B binding and the underlying non-methylated DNA signal at these same regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ChIP-seq profiles shown in Figure 2C-E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "04b983ae-b58f-4627-b448-5d277a0ee529",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C13",
+      "claim": "There is a spatial relationship between polycomb repressive proteins, KDM2B, and non-methylated DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the clear spatial relationship between polycomb repressive proteins, KDM2B, and non-methylated DNA indicates there may be a mechanistic relationship between recognition of non-methylated DNA at CGIs and polycomb repressive complex nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from spatial correlation observed in ChIP-seq data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "e7e0d820-2178-4bf3-b31f-f3b9267530e1",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C14",
+      "claim": "KDM2B associates with RING1B, YAF2, RYBP, PCGF1, BCOR, and BCORL1 in ESC nuclear extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "In the purifications from extracts containing epitope-tagged KDM2B a series of proteins in addition to KDM2B were identified (Figure 3B,C). These included RING1B, YAF2, RYBP, PCGF1, BCOR, and BCORL1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by mass spectrometry analysis shown in Figure 3B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "469da06d-6013-4860-9305-cf53764a09dc",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C15",
+      "claim": "RING1B is the E3 ubiquitin ligase that functions as the catalytic core of the PRC1 complex and is responsible for mono-ubiquitylation of H2A at position 119.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly RING1B is the E3 ubiquitin ligase that functions as the catalytic core of the PRC1 complex and is responsible for mono-ubiquitylation of H2A at position 119 (H2AK119ub1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about RING1B function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "8675b749-f6c4-49ce-a442-e80099207627",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C16",
+      "claim": "Endogenous KDM2B interacts with RING1B in ESC nuclear extract.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify that endogenous KDM2B interacts with RING1B, KDM2B was immunoprecipitated from ESC nuclear extract and the presence of RING1B in the immunoprecipitates verified by western blotting (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunoprecipitation and western blot in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "aa69c321-7acd-43cc-9a52-88a288955b4d",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C17",
+      "claim": "KDM2B exists as part of a variant PRC1 complex in mouse embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, KDM2B exists as part of a variant PRC1 complex in mouse embryonic stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from protein complex purification and mass spectrometry data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "85bf8d68-bac9-466a-bfb0-46e7a1f4e43d",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C18",
+      "claim": "PCGF1 is unique to the KDM2B-PRC1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the KDM2B purification the only PCGF identified was PCGF1, suggesting that this factor is unique to the KDM2B-PRC1 variant complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by mass spectrometry analysis of KDM2B purification",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "3c6941e7-0418-491f-9e49-29bd685ae17f",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C19",
+      "claim": "The PCGF1-containing complex associates with RYBP or YAF2 but fails to integrate chromobox domain-containing (CBX) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in agreement with PRC1 purifications from cancer cell lines (Gao et al., 2012), the PCGF1-containing complex associates with RYBP or YAF2 but fails to integrate chromobox domain-containing (CBX) proteins that recognize H3K27me3 (Cao et al., 2002; Wang et al., 2004a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mass spectrometry data and cited studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "f5b1f979-a2d3-4358-8569-ea76fcbbcacb",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C20",
+      "claim": "KDM2B forms a PRC1 variant complex that includes BCOR, BCORL1, PCGF1, RING1, and YAF2 or RYBP.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, based on our detailed reciprocal complex purifications, KDM2B forms a PRC1 variant complex that includes BCOR, BCORL1, PCGF1, RING1, and YAF2 or RYBP (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by reciprocal affinity purifications and mass spectrometry",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "21eede8f-cdd4-41be-97c8-37460a282151",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C21",
+      "claim": "An intact PRC1 complex is not required to target KDM2B to polycomb repressed sites in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We then analysed the levels of KDM2B at a series of polycomb repressed and non-polycomb repressed CGI associated genes by ChIP and observed only small or no changes in KDM2B binding in the absence of RING1A/B (Figure 4C). This suggests that an intact PRC1 complex is not required to target KDM2B to polycomb repressed sites in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ChIP analysis in RING1A/B deleted cells shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "df6fa255-92bf-453b-924f-12d4db9cb5d9",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C22",
+      "claim": "The ZF-CxxC domain of KDM2B is required for KDM2B binding to CGIs regardless of their polycomb status.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP analysis in ESC cells stably expressing tagged wild-type (WT) KDM2B or a mutant KDM2B that disrupts its DNA-binding capacity (K643A).The ZF-CxxC domain of KDM2B is required for KDM2B binding to CGIs regardless of their polycomb status.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Demonstrated by ChIP analysis of wild-type and mutant KDM2B shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "74eb5472-19ff-4ab9-b18f-fd3f4ed5916d",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C23",
+      "claim": "KDM2B localization to regular and polycomb repressed CGIs requires the recognition of non-methylated DNA via the ZF-CxxC domain.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that although KDM2B is part of a PRC1 complex its localisation to regular and polycomb repressed CGIs requires the recognition of non-methylated DNA via the ZF-CxxC domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by ChIP analysis of ZF-CxxC mutant KDM2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "041668a0-3f2c-43c1-b07d-39cdc796a50a",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C24",
+      "claim": "Depletion of KDM2B results in approximately 80% reduction at the RNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown was approximately by 80% at the RNA level (Figure 5A) and there was a clear reduction of KDM2B at the protein level (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RT-PCR and western blot in Figure 5A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "a841bb8d-9424-4ac4-812e-a59c4d28adc5",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C25",
+      "claim": "Depletion of KDM2B does not result in destabilization of either the PRC1 or PRC2 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, depletion of KMD2B did not result in destabilization of either the PRC1 or PRC2 complexes allowing us to specifically examine defects resulting from reduced KDM2B (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "52304c70-de4a-41c5-8060-b28a29c9c015",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C26",
+      "claim": "In KDM2B depletion, 653 genes changed expression by more than 1.5-fold: 329 had reduced gene expression and 324 had increased gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In total 653 genes changed expression by more than 1.5-fold: 329 had reduced gene expression and 324 had increased gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by microarray gene expression profiling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "e9d43330-9508-44a4-8120-b241c6fb8e24",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C27",
+      "claim": "24% of genes up-regulated in KDM2B depletion are characterized by RING1B occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly 24% of these genes are characterized by RING1B occupancy. This is significantly greater than would be expected by chance (1.9-fold enrichment, hypergeometric p=1.3 \u00d7 10\u22128) and is similar to the percentage of up-regulated genes in the RING1B null ESC cells that are PRC1 targets (Leeb et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by statistical analysis of microarray and ChIP-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "28b290d4-8722-488e-8a5c-ab7017124ba8",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C28",
+      "claim": "RING1B occupied genes have a clear propensity to have increased gene expression when KDM2B is depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when all gene expression changes are depicted in a volcano plot there is a clear propensity for RING1B occupied genes to have increased gene expression when KDM2B is depleted (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by volcano plot analysis in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "aa1ed27d-935b-436c-9548-f4b5f1298ee0",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C29",
+      "claim": "Depletion of KDM2B leads to up regulation of a subset of polycomb repressed target genes in mouse embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these findings indicate that as with the removal of RING1B, depletion of KDM2B leads to up regulation of a subset of polycomb repressed target genes in mouse embryonic stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microarray and RT-PCR validation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "50273f5d-fcd6-4e74-a924-0306e5351da0",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C30",
+      "claim": "68% of newly identified RING1B binding sites overlap with CGIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 68% of the 15,740 newly identified RING1B binding sites overlapped with CGIs, and 77% of these were coupled to transcription start sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by ChIP-seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "bd074257-b95c-4592-8dd5-de465279da64",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C31",
+      "claim": "Clear RING1B peaks are detectable at nearly 70% of the 22,849 mouse CGIs genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Including the already characterized RING1B associated CGIs, this means that clear RING1B peaks are detectable at nearly 70% of the 22,849 mouse CGIs genome-wide (Illingworth et al., 2010), and 88% of RING1B occupied CGIs also are bound by detectable levels of KDM2B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by ChIP-seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "232d9d4b-7480-406b-8f47-3a206ad799f7",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C32",
+      "claim": "88% of RING1B occupied CGIs are bound by detectable levels of KDM2B.",
+      "claim_type": "EXPLICIT",
+      "source": "Including the already characterized RING1B associated CGIs, this means that clear RING1B peaks are detectable at nearly 70% of the 22,849 mouse CGIs genome-wide (Illingworth et al., 2010), and 88% of RING1B occupied CGIs also are bound by detectable levels of KDM2B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by ChIP-seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "157d3166-7acd-47b3-b84d-88c86aec2944",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C33",
+      "claim": "Depletion of KDM2B causes a specific reduction in RING1B signal at previously identified RING1B CGI associated target sites.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine whether KDM2B is required for RING1B association with CGIs, RING1B ChIP-seq signal from the control and KDM2B KD cell lines was initially plotted over previously identified RING1B CGI associated target sites (Figure 6C). This revealed a specific reduction in RING1B signal at these sites following KDM2B knockdown in fitting with a role for KDM2B in RING1B targeting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ChIP-seq analysis in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "2ad879e4-1659-4cd1-b7d5-bbf4269cd78c",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C34",
+      "claim": "Depletion of KDM2B results in an even more dramatic effect on RING1B occupancy at novel low magnitude sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, depletion of KDM2B resulted in an even more dramatic effect on RING1B occupancy at these novel low magnitude sites, suggesting that these RING1B binding events are more dependent on KDM2B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by ChIP-seq analysis shown in Figure 6D,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "ee4274ff-2817-40ae-a9b2-c467810da702",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C35",
+      "claim": "KDM2B plays a widespread role in targeting RING1B in vivo both at established polycomb-repressed CGI-associated genes and a novel class of lower magnitude RING1B occupied CGI sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these observations indicate that KDM2B plays a widespread role in targeting RING1B in vivo both at previously identified established polycomb-repressed CGI-associated genes and a novel class of lower magnitude RING1B occupied CGI sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ChIP-seq analysis of RING1B in KDM2B knockdown cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "66f29ed4-3b7b-4299-8c69-a4ee5b5a84f3",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C36",
+      "claim": "Depletion of KDM2B results in an approximately 40% global reduction of H2AK119ub1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, depletion of KDM2B results in an approximately 40% global reduction of this modification, indicating that KDM2B contributes significantly to H2AK119ub1 at the genome scale, most likely due to its widespread role in guiding RING1B occupancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by western blot quantification in Figure 7A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "c3c784e4-8a3c-498d-8ce7-065e660d344b",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C37",
+      "claim": "KDM2B knockdown does not cause global changes in levels of H3K27me3, H3K4me3 or H3K36me2.",
+      "claim_type": "EXPLICIT",
+      "source": "This was not the result of more general changes in chromatin modification as other histone marks including H3K4me3 and H3K27me3 were largely unaffected (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "76dfb646-2c60-47a1-bcca-fc180db82622",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C38",
+      "claim": "Reductions in H2AK119ub1 in KDM2B knockdown cells appear to be restricted to polycomb target CGIs that were up-regulated in the absence of KDM2B.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly reductions in H2AK119ub1 appeared to be restricted to the polycomb target CGIs that were up-regulated in the absence of KMD2B (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ChIP analysis in Figure 7D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "d3c6b6ef-4fac-4280-bc93-a9aa2c0148ac",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C39",
+      "claim": "H2AK119ub1 reduction at individual genes correlates with a more subtle reduction in H3K27me3 but largely unchanged levels of H3K4me3.",
+      "claim_type": "EXPLICIT",
+      "source": "This also correlated with a more subtle reduction in H3K27me3 but largely unchanged levels of H3K4me3 (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ChIP analysis in Figure 7D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "f5c5c22f-5647-4e90-8be4-e303411dc3ac",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C40",
+      "claim": "Some polycomb repressed sites rely more specifically on KDM2B mediated RING1B occupancy for normal H2AK119ub1 and polycomb mediated gene repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these observations suggest that some polycomb repressed sites rely more specifically on KDM2B mediated RING1B occupancy for normal H2AK119ub1 and polycomb mediated gene repression (Endoh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ChIP and gene expression data, supported by cited study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "2b1b36eb-c42b-4f69-a026-48c09978c407",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C41",
+      "claim": "KDM2B specifically recognizes non-methylated DNA in CGIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that KDM2B recognizes CGI elements via its ZF-CxxC domain and in contrast to its paralogue, KDM2A, is preferentially enriched at polycomb-repressed CGIs in mouse ESCs (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by EMSA and ChIP-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "4d393d3e-972a-4053-8e53-b0a414352adb",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C42",
+      "claim": "KDM2B recruits the polycomb repressive complex 1 (PRC1) to CGIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we discover that KDM2B (FBXL10) specifically recognizes non-methylated DNA in CGIs and recruits the polycomb repressive complex 1 (PRC1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by protein complex purification, ChIP-seq, and functional studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "069c2719-ac7b-447e-a5cb-bf3d7b6e9f1f",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C43",
+      "claim": "KDM2B contributes to histone H2A lysine 119 ubiquitylation (H2AK119ub1) and gene repression.",
+      "claim_type": "EXPLICIT",
+      "source": "This contributes to histone H2A lysine 119 ubiquitylation (H2AK119ub1) and gene repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by H2AK119ub1 ChIP and gene expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "e0a9495c-d46c-4704-857a-f03e9a382317",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C44",
+      "claim": "CGIs are occupied by low levels of PRC1 throughout the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we also find that CGIs are occupied by low levels of PRC1 throughout the genome, suggesting that the KDM2B-PRC1 complex may sample CGI-associated genes for susceptibility to polycomb-mediated silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by ChIP-seq analysis revealing widespread low-level RING1B binding",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "18d8adcc-a6ce-4bb8-917f-e06945354fb5",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C45",
+      "claim": "The KDM2B-PRC1 complex may sample CGI-associated genes for susceptibility to polycomb-mediated silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we also find that CGIs are occupied by low levels of PRC1 throughout the genome, suggesting that the KDM2B-PRC1 complex may sample CGI-associated genes for susceptibility to polycomb-mediated silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of widespread low-level RING1B binding data",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "de93e6d7-e94f-4ff0-aed6-c5c9f70aa4a3",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C46",
+      "claim": "CGIs function as mammalian PREs.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations demonstrate an unexpected and direct link between recognition of CGIs by KDM2B and targeting of the polycomb repressive system. This provides the basis for a new model describing the functionality of CGIs as mammalian PREs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the mechanistic link between KDM2B, CGI recognition, and PRC1 targeting",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "ba77e7e3-f571-4380-96ba-4dbcfe2ed9df",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C47",
+      "claim": "In mammals, the majority of CpG dinucleotides are methylated on the 5 position of cytosine.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, the majority of CpG dinucleotides are methylated on the 5 position of cytosine and this epigenetic modification can be stably transmitted across cell divisions (Klose and Bird, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by cited reference",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "01da73b8-054a-439f-bbe9-8cdb47968100",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C48",
+      "claim": "DNA methylation is thought to be a highly stable modification that helps maintain intergenic and heterochromatic regions in a transcriptionally inert chromatin state.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation is thought to be a highly stable modification that helps maintain intergenic and heterochromatic regions in a transcriptionally inert chromatin state (Bird, 2002; Klose and Bird, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by cited references",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "aa31ef46-6ec3-41e0-88e0-10db6e88c616",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C49",
+      "claim": "CGIs lack DNA methylation and are associated with roughly two-thirds of human gene promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "A major exception to this pervasive methylation is short contiguous regions of the genome, called CpG islands (CGIs), which lack DNA methylation and are associated with roughly two-thirds of human gene promoters (Illingworth and Bird, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by cited reference",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "291570a0-20d8-4e39-9e8b-7621a6de555d",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C50",
+      "claim": "CGIs function to buffer gene regulatory elements from the repressive effects of surrounding DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thought that CGIs function to buffer gene regulatory elements from the repressive effects of surrounding DNA methylation and therefore play a central role in the regulatory capacity of the genome (Blackledge and Klose, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established model supported by cited reference",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "25da0c38-fc18-46d4-b565-73568bad3567",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C51",
+      "claim": "Non-methylated CpG dinucleotides found within CGIs act as a binding site for proteins that contain the ZF-CxxC DNA binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Although for the past two decades CGIs were considered to play a largely passive role in promoter and regulatory element function, we and others recently discovered that the non-methylated CpG dinucleotides found within CGIs act as a binding site for proteins that contain the ZF-CxxC DNA binding domain (Blackledge et al., 2010; Thomson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies including authors' previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "0596a949-2153-414d-a336-58db3e7d8000",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C52",
+      "claim": "CFP1 is a core component of the SET1 histone H3 lysine 4 (H3K4) methyltransferase complex.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the ZF-CxxC domain containing protein CFP1 is a core component of the SET1 histone H3 lysine 4 (H3K4) methyltransferase complex (Lee and Skalnik, 2005) and targets this transcriptionally permissive modification to CGIs genome-wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by cited reference",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "17ca7505-5274-47ba-92d6-c6a98d0c23bc",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C53",
+      "claim": "KDM2A histone H3K36 demethylase enzyme contains a ZF-CxxC domain that targets the enzyme directly to CGIs where it removes histone H3 lysine 36 (H3K36) dimethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the KDM2A histone H3K36 demethylase enzyme contains a ZF-CxxC domain that targets the enzyme directly to CGIs where it removes histone H3 lysine 36 (H3K36) dimethylation (Blackledge et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study from authors' previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "3994797a-ede4-4d5a-83c7-20bec3c40f74",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C54",
+      "claim": "H3K36me1/me2 is found broadly across the genome in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals H3K36me1/me2 is found broadly across the genome (Peters et al., 2003; Robin et al., 2007; Blackledge et al., 2010) and may be inhibitory to transcriptional initiation (Strahl et al., 2002; Carrozza et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple cited references",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "81814a2b-d48f-4220-b890-48fc8b16baa1",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C55",
+      "claim": "Targeting of chromatin modifications to CGI associated gene promoters generally occurs independently of the transcriptional state of the associated gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the targeting of these modifications to CGI associated gene promoters generally occurs independently of the transcriptional state of the associated gene (Blackledge et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study from authors' previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "f18ffe31-3118-4af8-b68a-dee2386b8a6f",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C56",
+      "claim": "PRC1 complexes have E3 ubiquitin ligase activity that mono-ubiquitylates H2A on position 119 (H2AK119ub1).",
+      "claim_type": "EXPLICIT",
+      "source": "PRC1 complexes have E3 ubiquitin ligase activity that mono-ubiquitylates H2A on position 119 (H2AK119ub1) (Wang et al., 2004b; de Napoles et al., 2004) and PRC2 complexes have histone H3 lysine 27 (H3K27) methyltransferase activity (Cao et al., 2002; Czermin et al., 2002; Kuzmichev et al., 2002; M\u00fcller et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by cited references",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "ef1122ca-f5c6-4ab3-9a87-c198247c6f3b",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C57",
+      "claim": "PRC2 complexes have histone H3 lysine 27 (H3K27) methyltransferase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "PRC1 complexes have E3 ubiquitin ligase activity that mono-ubiquitylates H2A on position 119 (H2AK119ub1) (Wang et al., 2004b; de Napoles et al., 2004) and PRC2 complexes have histone H3 lysine 27 (H3K27) methyltransferase activity (Cao et al., 2002; Czermin et al., 2002; Kuzmichev et al., 2002; M\u00fcller et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by cited references",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "001ec591-27af-4b3b-b776-49312133bcc0",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C58",
+      "claim": "Polycomb mediated chromatin modifications are thought to generate a more compact and inhibitory chromatin environment, limiting transcription of associated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the permissive and accessible chromatin state found at most CGIs, polycomb mediated chromatin modifications are thought to generate a more compact and inhibitory chromatin environment, limiting transcription of associated genes (Shao et al., 1999; Lavigne et al., 2004; Francis et al., 2004; Eskeland et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by cited references",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "56904542-20f9-413d-9eff-ccaf89cd344e",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C59",
+      "claim": "In Drosophila, polycomb repressive complexes are targeted to polycomb response elements (PREs) through the action of transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, which lack CGIs, polycomb repressive complexes are targeted to regions of the genome called polycomb response elements (PREs) through the action of transcription factors (reviewed in (Schuettengruber et al., 2007; Ringrose and Paro, 2007; Simon and Kingston, 2009)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by cited reviews",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "2c420073-b829-4819-ad46-c0dc94000558",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C60",
+      "claim": "In mammals, PREs predominantly correspond to CGIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in mammals this situation is very different in that PREs predominantly correspond to CGIs (Ku et al., 2008; Woo et al., 2010) and there is mounting evidence that chromatin features specific to CGIs may play an important role in guiding PRC complexes to these particular regions of the genome (Mendenhall et al., 2010; Kanhere et al., 2010; Lynch et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple cited references",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "d9c2155b-a46e-494a-b045-b3b1a9b6c18c",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C61",
+      "claim": "Novel RING1B associated CGI genes are expressed at similar levels to non-RING1B associated CGI genes.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, novel RING1B associated CGI associated genes are expressed at similar levels to non-RING1B associated CGI genes (median signal of 10.47 vs 10.24).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Demonstrated by microarray analysis shown in Figure 6\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "0d8d7ce8-2bff-431a-bbc6-7028550f14e3",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C62",
+      "claim": "Established RING1B associated CGIs are on average expressed at lower levels than novel RING1B CGIs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, established RING1B associated CGIs are on average expressed at lower levels (median signal of 8.47).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Demonstrated by microarray analysis shown in Figure 6\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "f3072f83-4c33-4784-a480-528af1824236",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C63",
+      "claim": "PRC1 is thought to be mechanistically recruited in a hierarchical manner through chromo-domain mediated recognition of H3K27 methylation at pre-existing PRC2 modified sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In most species PRC1 is thought to be mechanistically recruited in a hierarchical manner through chromo-domain mediated recognition of H3K27 methylation at pre-existing PRC2 modified sites (Cao et al., 2002; Min et al., 2003; Wang et al., 2004b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established model supported by cited references",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "4a67a9ec-08c8-4cc0-894c-7188d62f9482",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C64",
+      "claim": "H3K27 independent PRC1 targeting mechanisms are sufficient to maintain H2AK119ub1 and repression at many PRC1 bound targets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the singularity of the hierarchal recruitment mechanism has recently been challenged by a series of elegant experiments in mammals demonstrating that although genetic perturbation of the PRC2 complexes reduces PRC1 localization to polycomb repressed CGIs (Tavares et al., 2012), H3K27 independent PRC1 targeting mechanisms are sufficient to maintain H2AK119ub1 and repression at many PRC1 bound targets (Schoeftner et al., 2006; Pasini et al., 2007; Leeb et al., 2010; Tavares et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "9b64f86b-2f62-458c-9f5c-874cd900c746",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C65",
+      "claim": "The KDM2B-PRC1 complex provides an alternative mechanism for PRC1 recognition of polycomb repressed CGIs in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our observations that KDM2B is important for RING1B binding to CGI elements, the KDM2B-PRC1 complex provides an alternative mechanism for PRC1 recognition of polycomb repressed CGIs in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing KDM2B-dependent RING1B targeting",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "a3e18574-ee6c-4ed1-948f-7cd516a2a872",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C66",
+      "claim": "KDM2B depletion in embryonic stem cells results in up-regulation of only a subset of PRC1 target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by the observation that KDM2B depletion in embryonic stem cells results in up-regulation of only a subset of PRC1 target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by gene expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "1ae06c8d-1c8d-4dc3-b2ab-8fce3c913c95",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "claim_id": "C67",
+      "claim": "Polycomb repression may rely on the combined activity of hierarchical recruitment and alternative direct targeting mechanisms as an important stability component for maintenance of the silenced state.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, one can envision that polycomb repression, which must be maintained over cell divisions and developmental time scales, may rely on the combined activity of these separate pathways as an important stability component for maintenance of the silenced state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative model based on experimental observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "360db5d3-8440-44d3-9c6b-f8ce2c24fa57",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "KDM2B is distributed throughout the nucleus (not nucleolar) and binds non-methylated DNA in vitro in a manner abrogated by CpG methylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are supported by immunofluorescence data (Figure 1\u2014figure supplement 1) and EMSA experiments (Figure 1A,B) showing KDM2B nuclear localization and specific binding to non-methylated DNA. The in vitro DNA binding assay provides clear biochemical evidence for sequence-specific recognition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "7ef65d85-85ad-4e67-b536-ba2d523055b1",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both KDM2A and KDM2B localize to CGIs genome-wide in vivo, with enrichment at CGI-associated transcription start sites and signal peaking at the center of CGIs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 are well-supported by ChIP-seq data (Figures 1C-E) showing specific enrichment of both proteins at CGI-associated TSSs but not non-CGI TSSs, with spatial localization centered on CGIs. The genome-wide analysis provides robust evidence for CGI targeting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "1f49580f-1ca4-43c6-bf85-2cf528fbd58b",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A subset of CGIs are preferentially enriched for KDM2B and depleted of KDM2A, corresponding to polycomb-repressed genes involved in development and differentiation, with spatial correlation between KDM2B, polycomb proteins (RING1B/EZH2), and non-methylated DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 are supported by MA-plot analysis (Figure 2A), GO enrichment analysis (Figure 2B), and heat map/ChIP-seq profiles (Figures 2C-E). The spatial correlation between KDM2B, PRC1/2 components, and non-methylated DNA is clearly demonstrated, though the mechanistic relationship (C13) remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "835a5580-5d1f-460c-a892-0afb760b3166",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "KDM2B forms a variant PRC1 complex in mouse ESCs containing RING1B, PCGF1, BCOR/BCORL1, and RYBP or YAF2, but lacking CBX proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C20 are well-supported by affinity purification and mass spectrometry (Figures 3B,C,E), reciprocal immunoprecipitations, and western blot validation (Figure 3D). The complex composition is rigorously characterized through multiple orthogonal approaches, establishing PCGF1 as unique to the KDM2B-PRC1 variant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "7af42b37-6dfa-4f44-8ff3-4aa38c8081d0",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "KDM2B localization to CGIs (both polycomb-repressed and regular) requires its ZF-CxxC DNA-binding domain but not an intact PRC1 complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by ChIP analysis in RING1A/B deleted cells (Figure 4C) showing maintained KDM2B binding, and by ChIP of ZF-CxxC mutant KDM2B (Figure 4D) showing loss of binding. These experiments clearly demonstrate that DNA binding, not PRC1 interaction, is required for CGI targeting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "7a6cc695-301e-485b-b93a-8ddf28e125e7",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Depletion of KDM2B (~80% knockdown) leads to up-regulation of 324 genes, with significant enrichment for RING1B-occupied polycomb targets, without destabilizing PRC1 or PRC2 complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 are supported by RT-PCR and western blot validation (Figures 5A,B), microarray analysis showing 653 genes with >1.5-fold expression changes, statistical enrichment analysis (1.9-fold enrichment, p=1.3\u00d710\u207b\u2078), and volcano plot visualization (Figure 5C). The specificity for polycomb targets is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "c6479395-2160-471a-bcd4-66a3a61401c0",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "KDM2B targets RING1B to CGIs genome-wide, with RING1B detectable at ~70% of all mouse CGIs (including 15,740 novel low-magnitude sites), and KDM2B depletion causing reduction in RING1B occupancy at both established and novel sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 are supported by ChIP-seq analysis showing widespread RING1B binding at CGIs (68% of novel sites overlap CGIs), validation of novel peaks by ChIP-qPCR in RING1B deletion cells (Figure 6\u2014figure supplement 1), and demonstration of RING1B reduction upon KDM2B knockdown (Figures 6C,D,F). The genome-wide role of KDM2B in RING1B targeting is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "91544d9e-f6bf-4aa4-8b18-807eab94584c",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "KDM2B depletion causes ~40% global reduction in H2AK119ub1 without affecting H3K27me3, H3K4me3, or H3K36me2 globally, with locus-specific H2AK119ub1 reductions at polycomb target CGIs that were up-regulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 are supported by quantitative western blotting (Figures 7A,B) showing global H2AK119ub1 reduction, western blots showing other marks unchanged (Figure 7C), and ChIP analysis (Figure 7D) showing locus-specific effects. The novel H2AK119ub1 antibody is well-validated (Figure 7\u2014figure supplements 1-3). The functional link between KDM2B, RING1B targeting, and H2AK119ub1 is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "6d354d4c-af76-4337-9480-72613febaac2",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "KDM2B specifically recognizes non-methylated DNA in CGIs via its ZF-CxxC domain and recruits PRC1, contributing to H2AK119ub1 and gene repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 represent the main conclusions of the study, synthesizing results from EMSA (DNA binding), ChIP-seq (CGI localization), protein purification (PRC1 association), functional studies (RING1B targeting), and gene expression/chromatin modification analyses. All supporting data converge to support this mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "0eae83ef-1e65-45bb-8968-8ef49facea0b",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CGIs are occupied by low levels of PRC1 throughout the genome, suggesting the KDM2B-PRC1 complex may sample CGI-associated genes for susceptibility to polycomb-mediated silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C44 is supported by ChIP-seq data showing widespread low-level RING1B binding at CGIs. However, C45 is explicitly speculative (\"suggesting\") and represents an interpretive model rather than a directly tested hypothesis. The sampling model is plausible but requires additional functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "ec08c652-8930-4d81-981b-83bc1c89e72e",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CGIs function as mammalian PREs through KDM2B-mediated recognition and PRC1 recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by the mechanistic link demonstrated between KDM2B CGI recognition (via ZF-CxxC domain), PRC1 recruitment, and polycomb-mediated repression. This provides a molecular basis for understanding CGIs as functional PREs in mammals, though the model represents an inference from the collective data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "8903879e-57e9-4920-92bd-11a41d1a4d6a",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Novel RING1B-associated CGI genes are expressed at similar levels to non-RING1B CGI genes, while established RING1B CGIs show lower expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 are supported by microarray analysis (Figure 6\u2014figure supplement 3) showing median expression signals of 10.47 vs 10.24 for novel vs non-RING1B CGIs, and 8.47 for established RING1B CGIs. This supports the functional distinction between high-magnitude repressive RING1B sites and low-magnitude sampling sites.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "93f5fec1-0378-4c45-92c2-620a6930bbf1",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The KDM2B-PRC1 complex provides an H3K27me3-independent mechanism for PRC1 targeting to CGIs, and polycomb repression may rely on combined hierarchical and direct targeting mechanisms for stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 are supported by the demonstration that KDM2B targets PRC1 independently of H3K27me3 recognition, and that only a subset of PRC1 targets are affected by KDM2B depletion. C67 is somewhat speculative but represents a reasonable synthesis of the data with prior literature on hierarchical recruitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    },
+    {
+      "id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0",
+      "content_id": "d8b44d56-bcc3-41fa-b731-0a4338f28338",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background knowledge claims about DNA methylation, CGIs, chromatin modifications, polycomb complexes, and their functions in mammals and Drosophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C60, C63-C64 represent established knowledge supported by appropriate citations. These provide necessary context for the study but are not novel findings. The citations appear appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:30:38.557922Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "47b271c1-898f-4daf-b4f4-f098b2f83ed0",
+      "result_id": "360db5d3-8440-44d3-9c6b-f8ce2c24fa57"
+    },
+    {
+      "claim_id": "c83a4e43-5172-4868-ad3c-7e7e379bf21b",
+      "result_id": "360db5d3-8440-44d3-9c6b-f8ce2c24fa57"
+    },
+    {
+      "claim_id": "ba18548b-9c60-4747-8461-3cade23d0116",
+      "result_id": "360db5d3-8440-44d3-9c6b-f8ce2c24fa57"
+    },
+    {
+      "claim_id": "e9fc5b84-f90c-4188-baa8-95173c51347e",
+      "result_id": "7ef65d85-85ad-4e67-b536-ba2d523055b1"
+    },
+    {
+      "claim_id": "6493bb7d-cea0-4127-9323-8160667a95b5",
+      "result_id": "7ef65d85-85ad-4e67-b536-ba2d523055b1"
+    },
+    {
+      "claim_id": "302aaa58-5192-42a6-9679-e11b072b26d1",
+      "result_id": "7ef65d85-85ad-4e67-b536-ba2d523055b1"
+    },
+    {
+      "claim_id": "e64618a5-d639-47b7-bbd6-3a0fd48669d3",
+      "result_id": "7ef65d85-85ad-4e67-b536-ba2d523055b1"
+    },
+    {
+      "claim_id": "e6037c84-76c8-4c38-b780-1a81c827469c",
+      "result_id": "1f49580f-1ca4-43c6-bf85-2cf528fbd58b"
+    },
+    {
+      "claim_id": "d31c9366-8b62-4667-8b03-b1d987397adc",
+      "result_id": "1f49580f-1ca4-43c6-bf85-2cf528fbd58b"
+    },
+    {
+      "claim_id": "1818d7e9-6905-4048-99b8-974a41fb1b25",
+      "result_id": "1f49580f-1ca4-43c6-bf85-2cf528fbd58b"
+    },
+    {
+      "claim_id": "030b6cea-f7d1-48ab-b725-fe42cf2f135f",
+      "result_id": "1f49580f-1ca4-43c6-bf85-2cf528fbd58b"
+    },
+    {
+      "claim_id": "3858b029-0523-4109-818a-f5fa4c855b94",
+      "result_id": "1f49580f-1ca4-43c6-bf85-2cf528fbd58b"
+    },
+    {
+      "claim_id": "04b983ae-b58f-4627-b448-5d277a0ee529",
+      "result_id": "1f49580f-1ca4-43c6-bf85-2cf528fbd58b"
+    },
+    {
+      "claim_id": "e7e0d820-2178-4bf3-b31f-f3b9267530e1",
+      "result_id": "835a5580-5d1f-460c-a892-0afb760b3166"
+    },
+    {
+      "claim_id": "469da06d-6013-4860-9305-cf53764a09dc",
+      "result_id": "835a5580-5d1f-460c-a892-0afb760b3166"
+    },
+    {
+      "claim_id": "8675b749-f6c4-49ce-a442-e80099207627",
+      "result_id": "835a5580-5d1f-460c-a892-0afb760b3166"
+    },
+    {
+      "claim_id": "aa69c321-7acd-43cc-9a52-88a288955b4d",
+      "result_id": "835a5580-5d1f-460c-a892-0afb760b3166"
+    },
+    {
+      "claim_id": "85bf8d68-bac9-466a-bfb0-46e7a1f4e43d",
+      "result_id": "835a5580-5d1f-460c-a892-0afb760b3166"
+    },
+    {
+      "claim_id": "3c6941e7-0418-491f-9e49-29bd685ae17f",
+      "result_id": "835a5580-5d1f-460c-a892-0afb760b3166"
+    },
+    {
+      "claim_id": "f5b1f979-a2d3-4358-8569-ea76fcbbcacb",
+      "result_id": "835a5580-5d1f-460c-a892-0afb760b3166"
+    },
+    {
+      "claim_id": "21eede8f-cdd4-41be-97c8-37460a282151",
+      "result_id": "7af42b37-6dfa-4f44-8ff3-4aa38c8081d0"
+    },
+    {
+      "claim_id": "df6fa255-92bf-453b-924f-12d4db9cb5d9",
+      "result_id": "7af42b37-6dfa-4f44-8ff3-4aa38c8081d0"
+    },
+    {
+      "claim_id": "74eb5472-19ff-4ab9-b18f-fd3f4ed5916d",
+      "result_id": "7af42b37-6dfa-4f44-8ff3-4aa38c8081d0"
+    },
+    {
+      "claim_id": "041668a0-3f2c-43c1-b07d-39cdc796a50a",
+      "result_id": "7a6cc695-301e-485b-b93a-8ddf28e125e7"
+    },
+    {
+      "claim_id": "a841bb8d-9424-4ac4-812e-a59c4d28adc5",
+      "result_id": "7a6cc695-301e-485b-b93a-8ddf28e125e7"
+    },
+    {
+      "claim_id": "52304c70-de4a-41c5-8060-b28a29c9c015",
+      "result_id": "7a6cc695-301e-485b-b93a-8ddf28e125e7"
+    },
+    {
+      "claim_id": "e9d43330-9508-44a4-8120-b241c6fb8e24",
+      "result_id": "7a6cc695-301e-485b-b93a-8ddf28e125e7"
+    },
+    {
+      "claim_id": "28b290d4-8722-488e-8a5c-ab7017124ba8",
+      "result_id": "7a6cc695-301e-485b-b93a-8ddf28e125e7"
+    },
+    {
+      "claim_id": "aa1ed27d-935b-436c-9548-f4b5f1298ee0",
+      "result_id": "7a6cc695-301e-485b-b93a-8ddf28e125e7"
+    },
+    {
+      "claim_id": "50273f5d-fcd6-4e74-a924-0306e5351da0",
+      "result_id": "c6479395-2160-471a-bcd4-66a3a61401c0"
+    },
+    {
+      "claim_id": "bd074257-b95c-4592-8dd5-de465279da64",
+      "result_id": "c6479395-2160-471a-bcd4-66a3a61401c0"
+    },
+    {
+      "claim_id": "232d9d4b-7480-406b-8f47-3a206ad799f7",
+      "result_id": "c6479395-2160-471a-bcd4-66a3a61401c0"
+    },
+    {
+      "claim_id": "157d3166-7acd-47b3-b84d-88c86aec2944",
+      "result_id": "c6479395-2160-471a-bcd4-66a3a61401c0"
+    },
+    {
+      "claim_id": "2ad879e4-1659-4cd1-b7d5-bbf4269cd78c",
+      "result_id": "c6479395-2160-471a-bcd4-66a3a61401c0"
+    },
+    {
+      "claim_id": "ee4274ff-2817-40ae-a9b2-c467810da702",
+      "result_id": "c6479395-2160-471a-bcd4-66a3a61401c0"
+    },
+    {
+      "claim_id": "66f29ed4-3b7b-4299-8c69-a4ee5b5a84f3",
+      "result_id": "91544d9e-f6bf-4aa4-8b18-807eab94584c"
+    },
+    {
+      "claim_id": "c3c784e4-8a3c-498d-8ce7-065e660d344b",
+      "result_id": "91544d9e-f6bf-4aa4-8b18-807eab94584c"
+    },
+    {
+      "claim_id": "76dfb646-2c60-47a1-bcca-fc180db82622",
+      "result_id": "91544d9e-f6bf-4aa4-8b18-807eab94584c"
+    },
+    {
+      "claim_id": "d3c6b6ef-4fac-4280-bc93-a9aa2c0148ac",
+      "result_id": "91544d9e-f6bf-4aa4-8b18-807eab94584c"
+    },
+    {
+      "claim_id": "f5c5c22f-5647-4e90-8be4-e303411dc3ac",
+      "result_id": "91544d9e-f6bf-4aa4-8b18-807eab94584c"
+    },
+    {
+      "claim_id": "2b1b36eb-c42b-4f69-a026-48c09978c407",
+      "result_id": "6d354d4c-af76-4337-9480-72613febaac2"
+    },
+    {
+      "claim_id": "4d393d3e-972a-4053-8e53-b0a414352adb",
+      "result_id": "6d354d4c-af76-4337-9480-72613febaac2"
+    },
+    {
+      "claim_id": "069c2719-ac7b-447e-a5cb-bf3d7b6e9f1f",
+      "result_id": "6d354d4c-af76-4337-9480-72613febaac2"
+    },
+    {
+      "claim_id": "e0a9495c-d46c-4704-857a-f03e9a382317",
+      "result_id": "0eae83ef-1e65-45bb-8968-8ef49facea0b"
+    },
+    {
+      "claim_id": "18d8adcc-a6ce-4bb8-917f-e06945354fb5",
+      "result_id": "0eae83ef-1e65-45bb-8968-8ef49facea0b"
+    },
+    {
+      "claim_id": "de93e6d7-e94f-4ff0-aed6-c5c9f70aa4a3",
+      "result_id": "ec08c652-8930-4d81-981b-83bc1c89e72e"
+    },
+    {
+      "claim_id": "d9c2155b-a46e-494a-b045-b3b1a9b6c18c",
+      "result_id": "8903879e-57e9-4920-92bd-11a41d1a4d6a"
+    },
+    {
+      "claim_id": "0d8d7ce8-2bff-431a-bbc6-7028550f14e3",
+      "result_id": "8903879e-57e9-4920-92bd-11a41d1a4d6a"
+    },
+    {
+      "claim_id": "9b64f86b-2f62-458c-9f5c-874cd900c746",
+      "result_id": "93f5fec1-0378-4c45-92c2-620a6930bbf1"
+    },
+    {
+      "claim_id": "a3e18574-ee6c-4ed1-948f-7cd516a2a872",
+      "result_id": "93f5fec1-0378-4c45-92c2-620a6930bbf1"
+    },
+    {
+      "claim_id": "1ae06c8d-1c8d-4dc3-b2ab-8fce3c913c95",
+      "result_id": "93f5fec1-0378-4c45-92c2-620a6930bbf1"
+    },
+    {
+      "claim_id": "ba77e7e3-f571-4380-96ba-4dbcfe2ed9df",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "01da73b8-054a-439f-bbe9-8cdb47968100",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "aa31ef46-6ec3-41e0-88e0-10db6e88c616",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "291570a0-20d8-4e39-9e8b-7621a6de555d",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "25da0c38-fc18-46d4-b565-73568bad3567",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "0596a949-2153-414d-a336-58db3e7d8000",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "17ca7505-5274-47ba-92d6-c6a98d0c23bc",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "3994797a-ede4-4d5a-83c7-20bec3c40f74",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "81814a2b-d48f-4220-b890-48fc8b16baa1",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "f18ffe31-3118-4af8-b68a-dee2386b8a6f",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "ef1122ca-f5c6-4ab3-9a87-c198247c6f3b",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "001ec591-27af-4b3b-b776-49312133bcc0",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "56904542-20f9-413d-9eff-ccaf89cd344e",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "2c420073-b829-4819-ad46-c0dc94000558",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "f3072f83-4c33-4784-a480-528af1824236",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    },
+    {
+      "claim_id": "4a67a9ec-08c8-4cc0-894c-7188d62f9482",
+      "result_id": "73e4601b-0b0f-41af-b2df-a29ac8aad6f0"
+    }
+  ],
+  "comparisons": []
+}

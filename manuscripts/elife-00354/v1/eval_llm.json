@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "All regenerated rice plants tested showed significant losses of DNA methylation compared to wild-type plants. On average, 1344 CG hypomethylation DMRs (ranging 100-3200 bp) were identified in regenerated plants versus only 8 in wild-type inbred lines, with all regenerated samples significantly enriched for CG hypomethylation DMRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19, C20, C27-C30 are well-supported by BS-seq data with adequate coverage (15\u00d7) and low error rates (C25-C26). The dramatic difference between regenerated plants (~1344 DMRs) and wild-type controls (~8 DMRs) provides strong quantitative evidence. Figure 1B-C visually confirms this finding across all samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C90"
+    ],
+    "result": "DNA methylation losses in regenerated plants were largely stable across generations. 84% of sites that lost CG methylation in T2 remained hypomethylated through T4 and T6 generations, while ~10% recovered in T4 and maintained recovery in T6, and ~2% showed unstable switching between states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C42, C90 are supported by longitudinal BS-seq data across T2, T4, and T6 generations (samples 4, 6, 8) shown in Figure 2. The quantitative breakdown of methylation stability patterns is clearly documented. The 70% methylation reduction threshold (C81) provides confidence that analyzed sites are likely homozygous, supporting stability conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34"
+    ],
+    "result": "Certain genomic sites were particularly susceptible to loss of methylation, with significant overlaps of hypomethylation DMRs among different regenerated lines, though methylation loss did not always occur at identical sites across all lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C34 are supported by overlap analysis in Figure 1E and heat map visualization in Figure 1D. The data show both stochastic variation (different patterns between lines) and non-random targeting (significant overlaps), indicating site-specific susceptibility. Statistical significance of overlaps is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C50",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C93"
+    ],
+    "result": "Loss of DNA methylation at gene promoters was associated with deregulated expression of protein-coding genes. DMRs were significantly enriched at promoters, and genes with promoter hypomethylation showed altered expression, with closer proximity to TSS correlating with higher likelihood of misregulation and predominantly increased (rather than decreased) expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23-C24, C50, C56-C60, C93 are supported by integrated BS-seq and mRNA-seq data (Figure 4A-C). The enrichment analysis shows significant promoter targeting, and expression analysis demonstrates directional bias toward upregulation. The distance-dependent effect (C57) and directional bias (C58) support causality. However, the claim of causality (C59) is inferential and could benefit from additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C21",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C79",
+      "C88",
+      "C89"
+    ],
+    "result": "Loss of methylation is stochastically induced at the tissue culture step, not due to transformation. Individual plants regenerated from untransformed callus showed different methylation loss patterns, with strong losses in regenerated plants but more modest losses in pooled callus samples. Methylation losses in callus occurred at largely the same sites as in regenerated plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C21, C61-C68, C79, C88-C89 are supported by BS-seq data from callus and non-transformed regenerated plants (samples 13-17, Figure 5). The observation that non-transgenic segregants (C31-C32) also show hypomethylation strengthens the conclusion that tissue culture, not transformation, is responsible. The stochastic nature is demonstrated by variation among individual plants (Figure 5B). The modest callus signal with explanation of pooling effects (C63) is reasonable speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C44",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Loss of DNA methylation was associated with loss of small RNAs. CG methylation loss was generally associated with CHG and CHH methylation loss, and 24-nt siRNAs were enriched over CHH hypomethylation DMRs in wild-type but eliminated in regenerated plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C44, C46-C48 are supported by integrated BS-seq and smRNA-seq data (Figure 3A-C). The association between methylation contexts is shown in Figure 3A-B, and the siRNA depletion at hypomethylated sites (Figure 3C) provides independent confirmation of epigenetic changes. The concordance between methylation loss and siRNA loss supports the mechanistic link established in prior literature (C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C92",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Changes in methylation may explain a component of somaclonal variation. The stable epigenetic footprint from tissue culture, combined with stochastic hypomethylation and associated gene misregulation, likely explains part of the phenotypic variability observed in plants derived from tissue culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C92, C94-C96 represent the main interpretive conclusion linking observed methylation changes to somaclonal variation. This is supported by: (1) stable methylation changes across generations, (2) stochastic variation between individual regenerants, (3) enrichment at gene promoters, and (4) associated gene expression changes. However, this remains correlative\u2014no direct phenotypic measurements or functional validation of specific genes is provided. The conclusion is reasonable but would be strengthened by phenotypic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Rice callus showed CHH hypermethylation throughout the genome, specifically at promoter regions, with high concordance between callus samples. This CHH hypermethylation was completely lost upon plant regeneration, suggesting it may be linked to the dedifferentiated state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 are supported by BS-seq data from callus samples (13-14) shown in Figure 6. The context-specific hypermethylation (CHH only), promoter enrichment, reproducibility between samples, and complete loss upon regeneration are all documented. The speculation about linkage to dedifferentiated state (C77) is reasonable given the data pattern but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Hypomethylation was observed in T2/T4 non-transgenic plants where transgenes had segregated away, suggesting methylation loss is due to tissue culture/transformation process rather than transgene presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by BS-seq data from non-transgenic segregants (samples 5, 7, 12). This control is critical for establishing that the epigenetic changes are not transgene-dependent. The inference (C32) is well-supported by the data, though the distinction between \"tissue culture\" and \"transformation process\" could be clearer\u2014the callus experiments (C68) help resolve this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Genes with promoter hypomethylation were not significantly associated with any particular biological processes and appeared to be a random set of genes involved in different processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by gene ontology analysis (stated as \"data not shown\" for C51, with gene list in Figure 4\u2014source data 1). While the lack of enrichment is a negative result, it is clearly stated and appears to have been properly tested. This finding is important for understanding the non-targeted nature of the methylation changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Most DNA hypomethylation occurred near genes and was depleted at TE-related sequences, though some hypomethylation (average 62.1 TE genes per line) occurred proximal to TE genes. Very subtle methylation depletion was observed over reactivated TE genes, suggesting methylation loss may partially contribute to TE reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C87 are partially supported but with important caveats. The enrichment near genes and depletion at TEs is shown in Figure 4A (C83). However, the association with TE reactivation is explicitly stated as \"not clear\" (C85), and the methylation depletion is described as \"very subtle\" (C86). The speculation about causality (C87) is weakly supported. This result would benefit from more robust analysis of TE methylation and expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Lines derived from the same original regenerated plant show very similar methylation profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by overlap analysis in Figure 1E showing high similarity between samples 4-8 and 11-12, which are derived from the same original plants. This demonstrates that the methylation changes, once established, are stably inherited, consistent with the generational stability data (C3, C35-C42).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Global hypomethylation at TEs was not observed in rice callus, contrasting with previous findings in Arabidopsis cell culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by analysis of BS-seq data from callus samples. This is an important negative result distinguishing rice from Arabidopsis (C9) and is clearly stated. The finding is consistent with the observation that hypomethylation is targeted to specific sites rather than being global.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The crosses utilized in introgression schemes are likely to correct the vast majority of tissue culture-induced epigenetic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is pure speculation without supporting data. While the authors note that agricultural plants undergo introgression (C97-C98), no data on the effect of crossing on methylation patterns is provided. This speculation may be reasonable based on general principles of epigenetic inheritance, but it remains untested in this study and could be incorrect if the methylation changes are highly stable through meiosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "BS-seq data quality was high, with average genome coverage of 15\u00d7 and low error rates (1.5%, 1.2%, 0.8% for CG, CHG, CHH methylation respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are directly supported by data in Table 1. These quality metrics are appropriate for BS-seq and indicate the data is reliable. Error rates were calculated using chloroplast genome methylation levels, which is a standard approach. The coverage and error rates support the validity of all downstream analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "BS-seq libraries were generated using established methods with premethylated adapters, sequenced on HiSeq 2000, and analyzed using standard bioinformatics pipelines with stringent thresholds for DMR identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C110 describe methodological details that are clearly stated and appropriately referenced. The use of premethylated adapters (C100), mapping parameters (C103), DMR calling criteria (C106-C110), and statistical thresholds (FDR < 0.01, C107) are all standard and appropriate. The stringent thresholds (70% reduction for CG, C108) ensure high-confidence DMR calls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Loss of DNA methylation in regenerated plants also occurred in non-CG contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by data in Figure 1\u2014source data 1 and is consistent with the integrated analysis in Figure 3A-B showing coordinated loss across CG, CHG, and CHH contexts. This is an important observation for understanding the mechanism of methylation loss.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "All sequencing data have been deposited in NCBI GEO with accession GSE42410.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is a data availability statement that can be verified. This is appropriate practice for ensuring reproducibility and data sharing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C45",
+      "C53",
+      "C69",
+      "C82",
+      "C97",
+      "C98"
+    ],
+    "result": "Background knowledge and literature context: Tissue culture is widely used for crop transformation, previous studies have shown epigenetic changes in Arabidopsis cell culture, somaclonal variation has been proposed to have epigenetic origins, and genome-wide methylation changes in regenerated plants had not been previously assessed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C18, C45, C53, C69, C82, C97-C98 represent background knowledge and literature citations that establish context. These are appropriately cited and accurately represent prior work. The gap in knowledge (C12) is correctly identified and justifies the current study. Claim C14 (Arabidopsis not being a good model) is a reasonable inference from C13.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C63",
+      "C80"
+    ],
+    "result": "Speculative mechanistic explanations: The authors speculate about potential mechanisms including accelerated spontaneous methylation changes, distinct phenomena from natural variation, pooling effects in callus, and segregating hemizygous DMRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55, C63, C80 are explicitly speculative (\"It is possible that...\", \"may be because...\"). These represent reasonable hypotheses but lack direct experimental support. C54-C55 compare to Arabidopsis spontaneous changes (C53) but note differences in genomic distribution. C63 explains modest callus signal through pooling, which is plausible but untested. C80 about hemizygous DMRs is speculation, though C81 argues against this for the analyzed sites.",
+    "result_type": "MINOR"
+  }
+]

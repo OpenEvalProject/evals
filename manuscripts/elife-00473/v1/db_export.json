@@ -1,0 +1,2318 @@
+{
+  "submission": {
+    "id": "8e3df27a-72b3-4716-ae8c-9b2dde78174d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T05:59:26.034171Z",
+    "updated_at": "2025-11-27T05:59:26.034171Z"
+  },
+  "content": [
+    {
+      "id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "submission_id": "8e3df27a-72b3-4716-ae8c-9b2dde78174d",
+      "content_type": "manuscript",
+      "content_text": "# Accurate timekeeping is controlled by a cycling activator in Arabidopsis\n\n## Authors\n\n- Polly Yingshan Hsu<sup>1</sup>\n- Upendra K Devisetty<sup>1</sup>\n- Stacey L Harmer<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Plant Biology University of California, Davis Davis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTranscriptional feedback loops are key to circadian clock function in many organisms. Current models of the Arabidopsis circadian network consist of several coupled feedback loops composed almost exclusively of transcriptional repressors. Indeed, a central regulatory mechanism is the repression of evening-phased clock genes via the binding of morning-phased Myb-like repressors to evening element (EE) promoter motifs. We now demonstrate that a related Myb-like protein, REVEILLE8 (RVE8), is a direct transcriptional activator of EE-containing clock and output genes. Loss of RVE8 and its close homologs causes a delay and reduction in levels of evening-phased clock gene transcripts and significant lengthening of clock pace. Our data suggest a substantially revised model of the circadian oscillator, with a clock-regulated activator essential both for clock progression and control of clock outputs. Further, our work suggests that the plant clock consists of a highly interconnected, complex regulatory network rather than of coupled morning and evening feedback loops.\n\n## Introduction\n\nCircadian clocks are widespread in nature, presumably because they help diverse organisms prepare for predictable day/night cycles. Although specific components are not widely conserved, eukaryotic clocks are composed of interlocking negative transcriptional feedback loops (Harmer, 2009). In Arabidopsis, the first-identified clock genes function in a double negative feedback loop, with two morning-phased Myb-like transcription factors, CIRCADIAN CLOCK ASSOCIATED 1 (CCA1) and LATE ELONGATED HYPOCOTYL (LHY), repressing expression of an evening-phased pseudo-response regulator, TIMING OF CAB EXPRESSION 1 (TOC1 or PRR1), which in turn represses expression of CCA1 and LHY (Schaffer et al., 1998; Wang and Tobin, 1998; Strayer et al., 2000; Alabadi et al., 2001; Gendron et al., 2012; Huang et al., 2012; Pokhilko et al., 2012). CCA1 and LHY also promote the expression of PRR7 and 9, two day-phased genes, and are in turn repressed by these PRRs and their homolog PRR5, forming another negative feedback circuit (Farre et al., 2005; Nakamichi et al., 2010). Finally, TOC1, GIGANTEA (GI), and the evening complex components including LUX ARRHYTHMO (LUX), EARLY FLOWERING 3 (ELF3) and 4 (ELF4), act in double negative feedback loops with CCA1, LHY, and PRR7 and 9 (Fowler et al., 1999; Park et al., 1999; Dixon et al., 2011; Helfer et al., 2011; Nusinow et al., 2011; Huang et al., 2012; Pokhilko et al., 2012). Thus most characterized clock components repress expression of other clock components.\n\nA cis-regulatory element named the evening element (EE) [(A)AAATATCT] has been found to be central to circadian clock function in plants. Most evening-phased central clock genes (including TOC1, PRR5, GI, LUX and ELF4) contain the EE in their promoter regions (Covington et al., 2008; Harmer, 2009) and the two morning-phased components, CCA1 and LHY, bind directly to the EE to repress evening-phased clock gene expression (Alabadi et al., 2001). The EE was first identified by its overrepresentation in the promoters of evening-phased genes (Harmer et al., 2000) and is sufficient to confer evening-phased expression on a reporter gene (Harmer and Kay, 2005). In addition to these two morning-phased transcriptional repressors that act via the EE, two pieces of evidence suggest that there is also a transcriptional activator(s) present in the afternoon that regulates the EE. First, if only repressors bind to the EE, loss of protein binding to the EE should result in constitutively high expression of EE-regulated genes; however, mutation of the EE causes decreased expression of an EE-regulated reporter gene (Harmer and Kay, 2005). Second, an afternoon/evening-phased activity that specifically binds the EE is present in plant extracts and persists in cca1 lhy mutants, consistent with the existence of a clock-regulated, afternoon-phased activator of the EE (Harmer and Kay, 2005). A clock-regulated activator of the EE might help to explain why evening-phased clock genes are expressed with a circadian rhythm in cca1 lhy plants rather than being arrhythmic (Mizoguchi et al., 2002).\n\nA candidate activator of the EE is REVEILLE 8/ LHY-CCA1-LIKE 5 (RVE8/LCL5) (Farinas and Mas, 2011; Rawat et al., 2011). RVE8 has been shown to bind to the EE in vitro and in planta, and its protein levels display a circadian rhythm that peaks in the afternoon (Gong et al., 2008; Rawat et al., 2011). Furthermore, rve8 loss of function mutations cause a long circadian period (Farinas and Mas, 2011; Rawat et al., 2011) which is opposite to the phenotypes of cca1 or lhy loss of function mutants (Green and Tobin, 1999; Mizoguchi et al., 2002). However, despite its ability to bind to the EE in the TOC1 and PRR5 promoters in planta, loss of RVE8 function does not significantly affect the transcript levels of these evening genes (Farinas and Mas, 2011; Rawat et al., 2011; Hsu and Harmer, 2012), perhaps due to genetic redundancy or complex feedback regulation within the clock system. Here, we used an inducible RVE8 line and genome-wide expression profiling to identify hundreds of clock-regulated genes controlled by RVE8. Experiments with an inhibitor of translation revealed that most evening-phased clock genes are directly induced by RVE8. Consistent with RVE8 acting via the EE regulatory motif, we found that genes induced by RVE8 are enriched for the EE in their promoter regions. Furthermore, plants mutant for RVE8 and its two closest homologs, RVE4 and RVE6, have lost the afternoon-phased EE-binding activity. Finally, rve4 rve6 rve8 triple mutants display an extremely long circadian period, with delayed and reduced expression of evening-phased clock genes. Together, these data suggest a considerably revised model of the plant clock, with an indispensable role for activators of transcription within the circadian regulatory network. Our work shows that rather than consisting of discrete, interlocked feedback loops, the plant circadian oscillator is more accurately described as a highly interconnected complex network.\n\n## Results\n\n### RVE8 activity is stronger in the afternoon\n\nTo identify RVE8 target genes, we generated a line with rapidly inducible RVE8 activity. A translational fusion between RVE8 and the glucocorticoid receptor (GR), driven by the native RVE8 promoter, was introduced into rve8-1 plants. GR fusion proteins are held in the cytoplasm unless the synthetic ligand for GR, dexamethasone (DEX), is applied, which allows the chimeric factor to move into the nucleus (Picard et al., 1988). Both rve8-1 and rve8-1 RVE8::RVE8:GR plants have a long-period phenotype that is only rescued by DEX treatment of the rve8-1 RVE8::RVE8:GR line (Figure 1A,B), demonstrating that the RVE8:GR fusion protein retains RVE8 function and acts in a drug-inducible manner.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00473/elife-00473-fig1-v1.jpg)\n\n**Figure 1.:** (A) and (B) Luciferase activity in mock (A) and DEX-treated (B) Col, rve8-1 and rve8-1 RVE8::RVE8:GR plants transgenic for the CCR2::LUC reporter. Plants were entrained in 12:12 light/dark (LD) cycles for 6 days and then sprayed with 30 \u00b5M DEX or 0.05% ethanol (mock treatment) plus luciferin before release to constant red light (30 \u00b5Ei) for imaging of bioluminescence. Mean + SEM from 17 to 25 plants are represented. (C) and (D) Transcript levels of PRR5 in response to induction of RVE8 activity in rve8-1 RVE8::RVE8:GR (C) or rve8-1 35S::RVE8:GR (D) at different time of day. 30 \u00b5M DEX or 0.05% ethanol (mock) was applied at the times indicated and the plants were harvested 2 hr later. Expression levels were quantified by qRT-PCR and normalized to PP2A. Mean \u00b1 SEM from three biological replicates are represented.\n\nWe next examined the ability of DEX-inducible RVE8-GR to activate expression of a known RVE8 target, the evening-phased clock gene PRR5 (Rawat et al., 2011). Since RVE8 protein levels are circadian-regulated, with peak protein abundance in the subjective afternoon (Rawat et al., 2011), we tested the ability of RVE8 to activate PRR5 after DEX induction in the morning or afternoon. Induction of PRR5 by RVE8 is much stronger when RVE8 activity is induced in the afternoon (Zeitgeber Time 6 [ZT6], or 6 hr after lights on) than when RVE8 is induced in the morning (ZT0) (Figure 1C). Similarly, although induction of constitutively expressed RVE8 (35S::RVE8:GR) in the morning (ZT0) is sufficient to induce PRR5, this induction is much stronger when the DEX treatment is given in the afternoon (ZT6) (Figure 1D). These data indicate the ability of RVE8 to induce target genes is gated, with maximum activity in the afternoon.\n\n### RVE8 preferentially regulates clock-controlled genes, inducing evening genes and repressing morning genes\n\nTo globally identify RVE8 target genes, we induced RVE8 activity near the time of normal peak RVE8 protein accumulation (Figure 2A) and used RNA-seq analysis to characterize the transcriptome in response to RVE8 induction (experimental design, Figure 2B; analysis summary, Supplementary file 1A,B). Verification of RNA-seq results using qRT-PCR showed excellent correlation between the two techniques, suggesting our RNA-seq results are reliable (Figure 2\u2014figure supplement 1). Comparing mock- and DEX-treated RVE8:GR and rve8-1 plants, we found that 583 genes are specifically up- and 850 are down-regulated in response to RVE8 induction (Figure 2C,D and Supplementary file 1C\u2013F). Interestingly, a significantly higher proportion of both the up- and down-regulated RVE8 targets are clock-controlled (Figure 2E,F, 64% and 62%, respectively) than the one-third of the transcriptome expected by chance (Covington et al., 2008; Hsu and Harmer, 2012). RVE8 thus preferentially regulates clock-controlled genes (CCGs).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00473/elife-00473-fig2-v1.jpg)\n\n**Figure 2.:** (A) Relative timing of RVE8 induction and RVE8 protein abundance during a day. Adapted from Rawat et al. (2011). (B) Scheme of experimental design. (C) and (D) Weighted Venn diagrams of genes significantly responsive to RVE8 induction and/or DEX treatment. Genes up-regulated (C) or down-regulated (D) by RVE8 and/or DEX. Differentially expressed genes were identified using edgeR (Robinson et al., 2010) with an adjusted p-value <0.01 as the cutoff. Genes significantly different between \u2018RVE8:GR + DEX\u2019 and \u2018RVE8:GR + mock\u2019 or between \u2018RVE8:GR + DEX\u2019 and \u2018rve8 + DEX\u2019 are grouped into the RVE8-induced (C) or RVE8-repressed sets (D) shown in red circles. Genes significantly different between \u2018rve8 + DEX\u2019 and \u2018rve8 + mock\u2019 are grouped into the \u2018DEX-induced\u2019 (C) or \u2018DEX-repressed\u2019 (D) sets shown in blue circles. The genes uniquely induced or repressed by RVE8 (the 583 and 850 genes shown in green areas in (C) and (D), respectively) were defined as RVE8-regulated and used for further analysis. (E) and (F) The relative proportion of clock-controlled genes (CCGs) and non-clock-controlled genes (NCGs) among RVE8 targets. RVE8-induced genes (E); RVE8-repressed genes (F). (G) and (H) Circadian phase distributions of RVE8-regulated CCGs. CCGs up-regulated by RVE8 (G); CCGs down-regulated by RVE8 (H). White box: subjective day; grey box: subjective night. X-axis, 0: subjective dawn, 12: subjective dusk. Phase estimates are from previously published data (Hsu and Harmer, 2012). See also Supplementary file 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00473/elife-00473-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Expression levels of selected genes defined as RVE8-regulated in the RNA-seq experiment were examined using qRT-PCR. The logarithm of fold change values in the RNA-seq and the qRT-PCR data were plotted along with the linear regression line to examine the correlation relationship between the two methods. Pearson and Spearman correlation tests were performed in R.\n\nCCGs regulated by RVE8 are enriched for two complementary circadian phases, with the RVE8-induced genes enriched for an evening (Figure 2G) and the RVE8-repressed genes enriched for a morning phase (Figure 2H). Many evening-phased oscillator genes are induced by RVE8, including PRR5, TOC1, PRR3, GI, LUX, and ELF4 (Supplementary file 1G). In contrast, morning-phased oscillator genes including CCA1, LHY, RVE8 itself, and a day-phased central clock gene, PRR9, are found to be repressed by RVE8 (Supplementary file 1G). Activation of evening-phased and repression of morning-phased central clock genes suggests that RVE8 acts as a key regulator within the central system.\n\n### EE promoter motifs are enriched among RVE8-induced target genes\n\nTo identify possible in vivo RVE8 binding sites, we identified promoter motifs found more frequently than expected by chance among the CCGs up- or down-regulated in response to RVE8 induction. EE and EE-like sequences are significantly overrepresented in the RVE8-induced CCGs, both when compared to their frequency in all genes in the genome (Supplementary file 2A) and in all evening-phased CCGs (Table 1A). This indicates that RVE8 preferentially regulates evening-phased genes containing an EE or EE-like promoter sequence. Since RVE8 directly binds to the EE in vitro and in vivo (Rawat et al., 2011), this suggests that RVE8 may directly activate many evening genes via binding to the EE in their promoters.\n\n**Table 1.**\n Enrichment of EE, G-box-like and ME-like motifs in CCGs regulated by RVE8 compared to their occurrence in all CCGs previously defined as either evening-phased or morning-phased (Hsu and Harmer, 2012)\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"7\">(A) Evening-phased genes (CT 8 to CT 14)</th>\n    </tr>\n    <tr>\n      <th rowspan=\"2\">Motif</th>\n      <th rowspan=\"2\">Sequence</th>\n      <th colspan=\"2\">CCGs (2709 genes)</th>\n      <th colspan=\"2\">RVE8-induced CCGs (278 genes)</th>\n      <th rowspan=\"2\">p</th>\n    </tr>\n    <tr>\n      <th>Genes with the motif</th>\n      <th>Coverage (%)</th>\n      <th>Genes with the motif</th>\n      <th>Coverage (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Short EE</td>\n      <td>AAATATCT</td>\n      <td>794</td>\n      <td>29.3</td>\n      <td>152</td>\n      <td>54.5</td>\n      <td>&lt;2.2 \u00d7 10\u221216***</td>\n    </tr>\n    <tr>\n      <td>Long EE</td>\n      <td>AAAATATCT</td>\n      <td>444</td>\n      <td>16.4</td>\n      <td>104</td>\n      <td>37.5</td>\n      <td>2.06 \u00d7 10\u221215***</td>\n    </tr>\n    <tr>\n      <td>EE-like</td>\n      <td>AATATCT</td>\n      <td>1360</td>\n      <td>50.2</td>\n      <td>190</td>\n      <td>68.2</td>\n      <td>7.39 \u00d7 10\u221209***</td>\n    </tr>\n  </tbody>\n</table>\n\n_To determine whether the over-represented motifs found in RVE8 targets (Supplementary file 2) are enriched when compared to the morning-phased and evening-phased CCG groups, the number of genes containing the motif in each phase group was compared to that in the up- or down-regulated RVE8 targets. Fisher's exact test was performed to determine if the ratios in both groups are significantly different (*p<0.05; **p<0.01; ***p<0.001)._\n\nAmong CCGs repressed by RVE8, we found motifs related to the G-box and morning element (ME) to be overrepresented when compared to all genes in the genome (Supplementary file 2B). Since most RVE8-repressed genes are also morning-phased CCGs (Figure 2H), we compared the frequency of these motifs between RVE8-repressed and all morning-phased CCGs. Unlike our results for the EE, the G-box and ME motifs are found at a similar rate in RVE8-repressed and in phase-matched CCGs (Table 1B). The similar frequency of these two motifs in these two groups indicates that RVE8 activity is not preferentially correlated with the morning-phased related cis-regulatory elements. The preferential correlation of RVE8 activity with the EE, but not with the morning-associated motifs, suggests that RVE8 may directly activate evening-phased clock genes that then go on to repress morning-phased CCGs.\n\n### RVE8 directly activates evening genes but represses morning genes indirectly\n\nTo investigate whether RVE8 regulates morning and evening clock genes directly or indirectly, we induced RVE8 activity in the presence of cycloheximide (CHX), a protein synthesis inhibitor, and then examined transcript levels of genes identified as RVE8-regulated in our RNA-seq experiment. Genes regulated by RVE8 both in the presence or absence of CHX would be considered direct targets while those only regulated by RVE8 in the absence of CHX would be considered indirect targets. CHX treatment increased the accumulation of transcripts regulated by the nonsense mediated mRNA decay (NMD) pathway (Carter et al., 1995; Arciga-Reyes et al., 2006; Kurihara et al., 2009), suggesting that CHX treatment reduced or blocked translation as expected (Figure 3\u2014figure supplement 1A\u2013C). Consistent with a role for RVE8 in activation of evening genes via direct binding to the EE, all of the EE-containing, evening-phased central clock and output genes examined are robustly induced by RVE8 even in the presence of CHX (Figure 3A\u2013F). In contrast, the RVE8-mediated repression of expression of all tested morning genes is reduced or abolished in the presence of CHX (Figure 3\u2014figure supplement 1D\u2013G), suggesting that RVE8 represses these genes indirectly. In the case of PRR9, induction of RVE8 in the presence of CHX actually causes increased expression levels rather than the decrease seen in the absence of CHX (Figure 3\u2014figure supplement 1E). RVE8-mediated activation of PRR9 is likely masked in the absence of CHX by the concomitant induction of strong repressors of PRR9 expression such as TOC1 and LUX (Helfer et al., 2011; Gendron et al., 2012; Huang et al., 2012) (Figure 3C,E) and is only revealed when the translation of these repressors is blocked. In summary, for all of the genes examined, we found that RVE8 directly activates evening-phased genes but indirectly represses the morning-phased genes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00473/elife-00473-fig3-v1.jpg)\n\n**Figure 3.:** (A)\u2013(F) Transcript levels of evening genes in response to RVE8 induction in the absence or presence of cycloheximide (CHX). 7-day-old rve8-1 and rve8-1 RVE8::RVE8:GR plants were grown in light:dark (LD) cycles and mock- or DEX-treated in the absence or presence of CHX at ZT4 (4 hr after dawn) and harvested at ZT8 (8 hr after dawn). (A\u2013E) Evening-phased clock genes. (F) Evening-phased clock output gene. Transcript levels were determined by qRT-PCR and then normalized to PP2A. Mean \u00b1 SEM from three biological replicates are represented.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00473/elife-00473-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u2013(C) Levels of transcripts controlled by nonsense-mediated mRNA decay (NMD) in response to cycloheximide (CHX) treatment. N.D.: not detectable. (D)\u2013(G) Transcript levels of morning genes in response to RVE8 induction in the absence or presence of CHX. 7-day-old rve8-1 and rve8-1 RVE8::RVE8:GR plants were grown in light:dark (LD) cycles and mock- or DEX-treated in the absence or presence of CHX at ZT4 (4 hr after dawn) and harvested at ZT8 (8 hr after dawn). (D)\u2013(F) Morning-phased clock genes. (G) Morning-phased clock output gene. Transcript levels were determined by qRT-PCR and then normalized to PP2A. Mean \u00b1 SEM from three biological replicates are represented.\n\nSince our data suggest that RVE8 is primarily (perhaps exclusively) an activator of transcription, we examined the physiological functions of all RVE8-induced genes in order to identify clock output pathways that may be directly influenced by RVE8. Functional classifications in which RVE8-induced genes are statistically overrepresented include regulation of the central oscillator (Supplementary file 1H), as expected given the clock phenotype of rve8 plants (Farinas and Mas, 2011; Rawat et al., 2011; Hsu and Harmer, 2012). In addition, genes acting in pathways related to responses to the environments (including external stimulus, defense, temperature and stress), hormone regulation and metabolic processes are also enriched (Supplementary file 1H). Together, these data suggest that RVE8 shapes the evening-phased expression of hundreds of genes, directly influencing a large number of circadian output pathways.\n\n### RVE8-family proteins act through the EE\n\nComparison of the phases of expression of RVE8-induced CCGs that have EE promoter motifs to the phases of all CCGs with EE sequences showed that the RVE8-regulated genes have a much narrower range of phases (Figure 4A). Almost all RVE8-induced EE-containing genes have peak expression in the subjective evening. Interestingly, the mean peak phase for RVE8-regulated EE-containing CCGs is significantly earlier than that of all EE-containing CCGs, indicating that RVE8 regulates a subset of evening genes that have slightly earlier phase than average EE-containing evening genes (Figure 4A). These data are consistent with the afternoon-phased RVE8 binding to the EE to induce expression of a subset of evening-phased genes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00473/elife-00473-fig4-v1.jpg)\n\n**Figure 4.:** (A) Circadian phase distributions of all EE-containing CCGs and RVE8-induced EE-containing CCGs. The RVE8-induced EE-containing CCGs are enriched for an earlier phase than that of all EE-containing CCGs. The means of the phase distribution in these two groups (10.03 for RVE8-induced EE-containing CCGs; 10.75 for all EE-containing CCGs) are significantly different (p=0.007; Student's t-test). (B) Period of CCR2::LUC activity in rve4-1, rve6-1 and rve8-1 single, double and triple mutants. Seedlings were grown in LD for 6 days and released to constant red plus blue light. Mean \u00b1 SEM from 34 to 50 plants. (C) Circadian rhythms are lengthened but still robust in rve4 rve6 rve8 mutants. Averaged bioluminescence of CCR2::LUC activity in Col, rve8-1 and rve4 rve6 rve8 triple mutants. Mean \u00b1 SEM from 20 to 25 plants. (D) An electrophoretic mobility shift (EMSA) assay with protein extracts made from Col and rve4 rve6 rve8 plants grown in LD for 11 days. Plants were harvested at the indicated times. A 50-fold molar excess of unlabeled EE (WT competitor) or mutated EE (mutant competitor) double-stranded DNA was added as indicated. Arrow: the predominant afternoon EE-binding activity, arrowhead: unbound probe. See also Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00473/elife-00473-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u2013(C) RVE4, RVE6 and RVE8 transcript levels in Col and the rve4 rve6 rve8 triple mutant. 7-day-old seedlings (about 30 plants each) were grown in 12:12 LD and harvested at ZT 0 and ZT 4. RNA was isolated and qRT-PCR was performed. RVE4 and RVE8 transcripts are not detectable (N.D.) but \u223c30% of normal RVE6 transcript levels are apparent in the triple mutant. Expression levels are normalized to PP2A. Mean \u00b1 SEM from three technical replicates are presented.\n\nLoss of RVE8 function has neither a strong effect on clock function nor on expression levels of evening-phased genes (Farinas and Mas, 2011; Rawat et al., 2011; Hsu and Harmer, 2012). This may be due to partial genetic redundancy, since there are four other close RVE8 homologs (RVE3, 4, 5, and 6) in the Arabidopsis genome (Rawat et al., 2009) and all of these proteins were found to bind to the EE (Gong et al., 2008; Rawat et al., 2011). To investigate whether RVE8 homologs play a partially redundant role with RVE8 in the circadian clock, we identified plants mutant for the two closest RVE8 homologs, RVE4 and RVE6 (Figure 4\u2014figure supplement 1A\u2013C) and examined clock function in single and higher order mutants. The pace of the clock in rve4-1 and rve6-1 single mutants is not significantly different from wild-type (Figure 4B). However, combining loss-of-function RVE4 or RVE6 alleles with rve8-1 makes the period length much longer than rve8-1 alone, while the rve4 rve6 rve8 triple mutant has a period approximately 4 hr longer than wild-type (Figure 4B). These data suggest that RVE4, 6 and 8 play a partially redundant role in speeding up the pace of the clock. Despite the severe long period phenotype, the rve4 rve6 rve8 triple mutant displays robust circadian rhythms (Figure 4C).\n\nWe previously identified an afternoon-phased activity in plant extracts that specifically binds the EE, suggesting it might represent a cycling activator(s) for the EE (Harmer and Kay, 2005). Since we found RVE8 is an afternoon-phased activator of genes with EE in their promoters and that RVE4 and RVE6 play a partially redundant role with RVE8 in setting clock pace, we examined circadian-regulated EE-binding activity in the rve4 rve6 rve8 triple mutant plants in an in vitro EE-binding assay. As expected, extracts from wild-type plants have an afternoon-phased EE binding activity (Figure 4D). Remarkably, this cycling EE-binding activity is abolished in the triple mutant (Figure 4D). Given that we have previously found that RVE4, RVE6 and RVE8 can all be affinity purified from plant extracts using EE sequences (Rawat et al., 2011), this strongly suggests that RVE4, 6 and 8 comprise a clock-regulated, evening-phased EE-binding activity.\n\n### Transcripts of central clock genes are misregulated in rve4 rve6 rve8 triple mutants\n\nTo further examine the functions of these RVEs (RVE4, 6 and 8) in plants, we examined the transcript profiles of genes we identified as RVE8 targets in the higher order rve mutants. In contrast to the rve8-1 single mutant, which has normal expression levels of evening genes (Rawat et al., 2011; Hsu and Harmer, 2012), rve6 rve8 double and rve4 rve6 rve8 triple mutants grown in constant light (LL) display significantly reduced levels of PRR5 transcripts (Figure 5\u2014figure supplement 1A). Consistent with the progressively longer period in rve6 rve8 and rve4 rve6 rve8 mutants (Figure 4B), these mutants also have a greater delay in onset of PRR5 transcript accumulation (Figure 5\u2014figure supplement 1A).\n\nWe next examined expression levels of other clock genes in the triple mutant. The evening-phased genes, PRR5 and TOC1, show a significant delay in onset of expression and reduced levels in the triple mutants compared to wild-type in both light/dark (LD) cycles (Figure 5A,B) and in constant light (LL) (Figure 5E\u2013F). Although the peak phase of PRR5 is not altered in the mutant in LD conditions (Figure 5A), the delay in the timing of increasing PRR5 expression in rve4 rve6 rve8 in the afternoon suggests that this is due to complex regulation of PRR5 transcript levels by both light and the circadian clock. The morning-phased clock genes CCA1 and LHY do not show any obvious differences in expression levels in rve4 rve6 rve8 and wild-type plants during the day either when grown in LD (Figure 5C,D) or in LL (Figure 5G,H). However, these two morning-phased genes display slightly reduced transcript levels in the late night when grown in LD (ZT 21) (Figure 5C,D). This might be explained either by the long period phenotype of the rve4 rve6 rve8 mutants or by elevated TOC1 levels at the end of the night (Figure 5B) since TOC1 is a repressor of CCA1 and LHY (Gendron et al., 2012; Huang et al., 2012; Pokhilko et al., 2012).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00473/elife-00473-fig5-v1.jpg)\n\n**Figure 5.:** (A), (B), (E), (F), (I), (J), (M) and (N) Expression of evening genes in Col and rve4 rve6 rve8. (C), (D), (G), (H), (K), (L), (O) and (P) Expression of morning genes in Col and rve4 rve6 rve8. (A)\u2013(D) transcript levels in diurnal cycles. Seedlings were grown in LD for 7 days. White box: day, grey box: night. Data in (A\u2013D) are double plotted to facilitate comparisons. (E)\u2013(P) Transcript levels in LL. (E)\u2013(H) Gene expression plotted on a linear scale. (I)\u2013(L) The data shown in (E\u2013H) are plotted with a log10 scale on the y-axis to better visualize differences in trough levels between the two genotypes. Horizontal brackets highlight the phase delay between Col and rve4 rve6 rve8 mutants. (M)\u2013(P) Transcript levels derived from a 1-hr resolution time course are presented with either every time point (M and O) or every third time point (N and P) displayed. Green arrows highlight the phase difference between Col and rve4 rve6 rve8 mutants at ZT30. Transcript levels were determined by qRT-PCR and normalized to PP2A. Values represent mean \u00b1 SEM.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00473/elife-00473-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) PRR5 expression in Col, rve6 rve8 and rve4 rve6 rve8 in LL. Seedlings were grown in LD for 7 days, released to constant light, and then harvested at the indicated times after the last dark-to-light transition. (B) and (C) Expression of GI and PRR9 in diurnal cycles. Seedlings were grown in LD for 7 days. White box: day, grey box: night. Values represent mean \u00b1 SEM. Data in (B) and (C) are double plotted to facilitate comparisons. (D) and (E) Transcript levels of GI and PRR9 in LL. Seedlings were entrained in 12:12 LD for 7 days and then released to constant light at time 0. Samples were harvested at the times indicated. RNA was isolated and qRT-PCR was performed. Expression levels are normalized to PP2A. Data are presented as mean \u00b1 SEM from three technical replicates.\n\nIn addition to these expression level changes, de-synchronization between the evening and morning genes is observed in the rve4 rve6 rve8 triple mutants. At the end of the second subjective day in LL (around ZT36), the peak times of PRR5 and TOC1 transcript accumulation are delayed approximately 6 hr in the triple mutant relative to wild-type (Figure 5E,F). In contrast, in these same samples, an approximately 3-hr phase delay is observed for trough levels of CCA1 and LHY in the mutant relative to controls (Figure 5K,L). Similarly, at the third subjective morning (around ZT48), PRR5 and TOC1 trough levels display an approximately 9-hr phase delay in the triple mutant (Figure 5I,J) while an approximately 6-hr phase delay is observed in the peak expression levels for CCA1 and LHY at that time (Figure 5G,H). This greater phase delay for evening compared to morning genes can be seen more clearly when plants grown in constant conditions are sampled at 1-hr intervals (Figure 5M,O). In addition, a significant change in the waveform of the evening gene TOC1 (Figure 5M) but not the morning gene LHY (Figure 5O) is observed in the triple mutant in this high-resolution time course. Notably, the obvious change in the TOC1 waveform is lost when these same data are plotted at 3-hr resolution (compare Figure 5N,M). Our data show that loss of multiple RVEs has an immediate effect on expression of evening genes and a delayed effect on morning genes, further supporting the main role of RVE8 as an activator of evening genes. Given the highly reticulated nature of the circadian network, altered expression of evening genes indirectly affects expression of morning genes.\n\nSimilarly reduced and delayed expression was also observed for GI, an evening-phased EE-containing clock gene, in LD and in LL (Figure 5\u2014figure supplement 1B,D). Interestingly, the EE-containing day-phased gene, PRR9 also showed reduced levels in LD (Figure 5\u2014figure supplement 1C) and on the third day in LL (Figure 5\u2014figure supplement 1E), consistent with PRR9 being directly activated by RVE8 as suggested by the induction experiments carried out in the presence of an inhibitor of translation (Figure 3\u2014figure supplement 1E).\n\n### Expression of RVE8 is controlled by other clock components, likely via PRR5, 7 and 9\n\nTo further explore regulatory interactions between RVE8 and other clock components, we examined RVE8 expression in several clock mutants, including toc1-4 (Hazen et al., 2005a), lux-1 (Hazen et al., 2005b) and CCA1-OX (Wang and Tobin, 1998). RVE8 expression is significantly reduced in all of these clock mutants in LD (Figure 6A), indicating that TOC1, LUX and CCA1 directly or indirectly regulate RVE8 expression. Since TOC1, LUX, and CCA1 are thought to directly regulate expression of one or more of the PRR5, 7, and 9 genes (Farre et al., 2005; Helfer et al., 2011; Huang et al., 2012), we hypothesized that reduced RVE8 expression in the toc1-4, lux-1 and CCA1-OX mutants might be due to up-regulation of the PRRs. Indeed, we found that at dawn (ZT0), when RVE8 transcript levels normally peak (Farinas and Mas, 2011; Rawat et al., 2011), multiple PRR genes are up-regulated in each of these mutants (Figure 6B). These results are consistent with a model in which the PRRs directly repress RVE8 expression and other clock genes indirectly control RVE8 expression via regulation of PRR5, 7, and 9 (Figure 6C). This model is supported by the increased RVE8 expression seen in prr5 prr7 prr9 mutants (Rawat et al., 2011) and the reported direct binding of PRR5 to the RVE8 promoter (Nakamichi et al., 2012). Our findings that both PRR5 and PRR9 are directly activated by RVE8 (Figure 3A; Figure 3\u2014figure supplement 1E) and that peak transcript levels of these genes are reduced in rve4 rve6 rve8 mutants (Figure 5A,E; Figure 5\u2014figure supplement 1C,E) further support the model that the PRRs and RVEs regulate each other to form a negative transcriptional feedback loop.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00473/elife-00473-fig6-v1.jpg)\n\n**Figure 6.:** (A) RVE8 expression in Col, toc1-4, lux-1 and CCA1-OX in LD. 7-day-old seedlings were collected at the times indicated and qRT-PCR was performed. Data are double-plotted to facilitate visualization. Values represent mean \u00b1 SEM. (B) Transcript levels of PRR5, PRR7 and PRR9 at ZT 0 (when RVE8 transcript levels normally peak) in wild-type (Col), toc1-4, lux-1, and CCA1-OX. Expression levels are normalized to PP2A. Data are represented as mean \u00b1 SEM from three technical replicates. (C) A proposed clock model integrating RVE8 as an activator of evening clock genes. The relative time of action of each component during diurnal cycles is shown from left to right. White box: day, grey box: night. REVEILLE/CCA1/LHY family proteins are shown in yellow; pseudo-response regulators are shown in blue; the evening complex components are shown in green. Clock components with one or more EE in their promoter regions are marked with red boxes. Red solid arrow: activation, red dashed arrow: activation only displayed in specific condition (red arrows are based on the current study), black perpendicular bars: repression, black arrow: activation. In this study, we demonstrated that RVE8 directly activates multiple evening-phased clock and output genes and that RVE8 is regulated by TOC1, LUX and CCA1, likely indirectly through their control of PRR5, 7 and 9 expression. For clarity, only transcriptional regulation is represented.\n\n## Discussion\n\n### RVE8 promotes expression of both central oscillator and output genes\n\nCircadian rhythms coordinate numerous physiological and behavioral events with the appropriate time of day, in large part through genome-wide circadian regulation of gene expression (Lowrey and Takahashi, 2011; Farre and Weise, 2012). Mechanisms governing the precise timing of circadian clock and output gene expression are therefore of great interest. It has previously been reported in both plants and mammals that central clock genes can directly regulate many output genes (Gendron et al., 2012; Menet et al., 2012; Nakamichi et al., 2012). Our finding that hundreds of clock-regulated genes are induced or repressed upon induction of RVE8 suggests RVE8 is an important regulator of both the clock itself and output pathways.\n\nIt seems likely that RVE8 is a direct activator of many evening-phased genes. EE sequences are significantly enriched among RVE8-induced targets relative to all evening-phased genes (Table 1A). In addition, RVE8 binds to EE sequences in vivo and in vitro (Gong et al., 2008; Rawat et al., 2011) and plants mutant for RVE8 and its close homologs RVE4 and RVE6 have lost an afternoon-phased EE binding activity (Figure 4D). Furthermore, for all genes tested, activation of evening-phased genes by RVE8 does not require new protein synthesis (Figure 3). In contrast, genes repressed upon induction of RVE8 activity are primarily morning-phased and are not enriched for any promoter motif relative to all clock-regulated morning-phased genes (Table 1B), suggesting RVE8 regulates these genes indirectly. In support of a largely indirect role for RVE8 in repression of gene expression, inhibition of translation reduced or eliminated decreases in gene expression upon RVE8 induction (Figure 3\u2014figure supplement 1D\u2013G). Thus RVE8 is unique among Arabidopsis clock genes in that it acts primarily, and perhaps even exclusively, as an activator of gene expression.\n\nUnlike CCA1 and LHY, which were shown to have similar activity at different time of day in ethanol-inducible lines (Knowles et al., 2008), we have found that RVE8 activity is gated with maximum activity in the afternoon (Figure 1D). This discrepancy in gating regulation may explain why overexpression of CCA1 or LHY causes arrhythmicity (Schaffer et al., 1998; Wang and Tobin, 1998) while overexpression of RVE8 instead causes an advanced phase and short period phenotype (Rawat et al., 2011).\n\n### RVE8 shapes evening phase\n\nRVE8 transcript levels peak at dawn, but RVE8 protein levels peak in the subjective afternoon (Rawat et al., 2011). Most RVE8-induced transcripts have a peak circadian phase between CT8 and CT12 (Figure 2G), approximately 2\u20136 hr after the peak phase of RVE8 protein levels. This delay in RVE8 target gene transcript accumulation relative to RVE8 protein might be explained by antagonistic regulation of target genes by RVE8 and the cycling repressors CCA1 and LHY. CCA1 and LHY protein levels peak in the subjective morning (Wang and Tobin, 1998; Kim et al., 2003), well before RVE8. A mathematical model investigating the consequences of oppositely acting transcription factors on regulation of a common target gene predicted that when the phase of a cycling transcriptional repressor precedes that of a cycling transcriptional activator (\u2018repressor-precedes activator\u2019), the peak phase of expression of the output would occur after that of the activator (Ueda et al., 2005).\n\nThe genes both induced by RVE8 and containing EE motifs in their promoter regions are the most likely direct targets of RVE8. Although most clock-controlled genes containing an EE have an evening phase, the EE-containing RVE8-induced genes are more specifically enriched for an early-evening phase (Figure 4A), suggesting that RVE8 controls a subset of EE-containing genes. How these RVE8 targets are distinct from the rest of the EE-containing CCGs remains unclear. The clock may fine-tune expression of EE-containing genes through the action of multiple clock-controlled promoter motifs, generating the wide range of phases seen across all EE-containing genes (Figure 4A). For example, it has been reported that a combination of morning-, day-, and night-phased DNA elements generates the day-phased expression of Cry1 in mammalian cells. In this case, the strength of night-phased repressors relative to the day-phased activators modulates the extent of phase delay (Ukai-Tadenuma et al., 2011).\n\nThe RVE8 homologs RVE4, 5 and 6 have also been found associated with the EE in extracts made from plants harvested in the afternoon, suggesting that they might act in a similar manner to RVE8 (Rawat et al., 2011). This possibility is supported by the further lengthening in circadian period seen in higher order mutants combining rve4 or rve6 with rve8 (Figure 4B), suggesting these factors play partially redundant roles in speeding up the pace of the clock. The loss of afternoon-phased EE binding activity seen in the rve4 rve6 rve8 triple mutants but not in rve8 single mutants (data not shown) suggests these RVEs contribute to the activity of the clock-regulated afternoon-phased EE activator.\n\n### The long period in rve4 rve6 rve8 is likely due to delayed expression of evening genes\n\nAmong the evening-phased central clock genes examined, all show significantly reduced and delayed expression in LD and in LL in rve4 rve6 rve8 (Figure 5 and Figure 5\u2014figure supplement 1). The long period in rve4 rve6 rve8 mutants might in principle be due either to a decrease in peak levels or a delay in onset of expression of evening genes. However, consideration of the phenotypes of plants mutant for various evening-phased clock genes makes us favor the latter possibility. toc1 and prr5 mutants have short-period phenotypes (Strayer et al., 2000; Eriksson et al., 2003; Yamamoto et al., 2003); loss of GI causes a short period in most conditions (Park et al., 1999; Mizoguchi et al., 2005; Martin-Tryon et al., 2007); and lux and elf4 mutants are arrhythmic (Doyle et al., 2002; Onai and Ishiura, 2005; Hazen et al., 2005b). Therefore, reduced expression of any of these EE-containing evening genes is unlikely to cause the long period phenotype displayed by rve4 rve6 rve8. On the other hand, the delayed phase of expression of clock genes can first be observed in evening-phased genes and only later in morning-phased genes (Figure 5). This suggests that the long period seen in rve4 rve6 rve8 is mainly caused by delayed expression of evening genes, which then indirectly causes a delayed phase of expression of morning genes. In support of this idea, in RVE8-overexpressing plants (which have a short-period phenotype), the peak phase of expression of TOC1 is clearly advanced soon after plants are released into free-run whereas phase advances are not seen for the morning-phased genes CCA1 and LHY until much later (Rawat et al., 2011). Similarly, delays in the phase of post-transcriptional processes have previously been suggested to contribute to long-period phenotypes in animals (Rothenfluh et al., 2000; Syed et al., 2011).\n\n### The EE is a regulatory nexus crucial for clock function\n\nMost clock components in Arabidopsis are either regulated by the EE (including most evening-phased genes and one day-phased gene, PRR9) or regulate the EE (two morning-phased components, CCA1 and LHY, and the afternoon-phased activator, RVE8) (Figure 6C). However, plants mutant for CCA1 and LHY, the sole previously defined circadian regulators of EE-containing clock genes, have persistent circadian rhythms, albeit with a short period (Alabadi et al., 2002; Mizoguchi et al., 2002; Locke et al., 2005). Our discovery that RVE8 and its homologs are activators of the EE may explain the rhythmicity of cca1 lhy mutants. As modeled using Ueda et al's \u2018repressor-precedes-activator\u2019 formula (Ueda et al., 2005), inhibition in the morning by CCA1 and LHY and activation by RVE8 in the afternoon would result in rhythmic expression of EE target genes with peak expression delayed relative to peak RVE8 protein levels. Reduction or loss of activity of the cycling repressor function (CCA1/LHY) would result in a phase advance, causing earlier expression of EE-containing target genes, but rhythms would persist due to clock-regulated RVE8 activity. Such a phase advance and consequent short-period phenotype is indeed observed in cca1 and lhy single and double mutants (Green and Tobin, 1999; Mizoguchi et al., 2002).\n\nInterestingly, CCA1/LHY and RVE8 contain a similar Myb-like DNA binding domain and belong to the same family of transcription factors (Rawat et al., 2009, 2011). Even though they have distinct biochemical functions, with CCA1 and LHY serving as repressors and RVE8 as an activator of EE-containing genes, both CCA1/LHY and RVE8 are responsible for shaping the circadian pattern of expression of evening-phased genes. This joint regulation of common targets may explain why circadian rhythms persist upon mutation of the repressor Mybs or the activator Mybs alone.\n\n### The plant circadian clock consists of a highly interconnected, complex network\n\nCurrent models of the plant clock suggest that it is composed of transcription factors that are primarily repressors of gene expression which interact to form interlocked morning and evening feedback loops (Gendron et al., 2012; Huang et al., 2012; Pokhilko et al., 2012). However, our findings substantially revise this view. We have demonstrated that the RVEs are an integral part of the circadian oscillator but are primarily (and perhaps exclusively) activators of gene expression. In addition, our findings suggest that the view of the plant clock as constituted of coupled morning and evening transcriptional feedback loops is inadequate. RVE8 itself, with its morning-phased peak in transcript levels but afternoon-phased peak in protein levels (Rawat et al., 2011), doesn't fit neatly into either the \u2018morning\u2019 or \u2018evening\u2019 category. Furthermore, the highly interconnected nature of the regulatory interactions underlying the plant clock (Figure 6C) make it virtually impossible to identify discrete regulatory feedback loops and suggest that the plant clock is best viewed as a highly interconnected, complex regulatory network.\n\n## Materials and methods\n\n### DNA and plant materials\n\nThe RVE8::RVE8:GR construct was created using a PCR fusion-based approach (Hobert, 2002), placing a 2.5 kb genomic fragment of RVE8 (containing \u223c0.7 kb upstream of the translational start site) and a 1.7 kb DNA fragment containing the GR coding sequence and OCS 3\u2032 from pART7-GR (donated by John Harada) together. The PCR fusion product was then cloned into the NotI site in the binary vector pML-BART. The 35S::RVE8:GR construct was created by cloning RVE8 coding sequence into pART7-GR via Xho\u0399 and Sma\u0399 sites, and then subcloning into the NotI site in the binary vector pML-BART. The RVE8::RVE8:GR and 35S::RVE8:GR clones were transformed into rve8-1 CCR2::LUC+ via the floral dip method (Zhang et al., 2006). Homozygous single-insertion site transformants were selected based on BASTA resistance in the T2 and T3 generations.\n\nT-DNA insertion mutants rve4-1 (Salk_137617) and rve6-1 (Salk_069978) (Alonso et al., 2003) were obtained from the Arabidopsis Biological Resources Center. Homozygous mutants were identified by PCR of genomic DNA using primers flanking the insertion site and complementary to the T-DNA left border (primers are listed in Supplementary file 3). rve4-1 and rve6-1 were crossed to rve8-1 CCR2::LUC+ to generate rve4 rve8 and rve6 rve8 double mutants and rve4 and rve6 single mutants, all carrying the CCR2::LUC+ reporter. The rve4 6 8 triple mutant was created by crossing rve4 rve8 CCR2::LUC+ and rve6 rve8 CCR2::LUC+.\n\nlux-1, toc1-4 and CCA1-OX were previously described (Wang and Tobin, 1998; Hazen et al., 2005a, 2005b).\n\n### Dexamethasone (DEX) and/or cycloheximide (CHX) treatment\n\nrve8-1 and rve8-1 RVE8::RVE8:GR seeds were sterilized and stratified on fine nylon mesh (Small Parts, Logansport, IN; 100 \u00b5M 44%) on Murashige and Skoog (MS) agar media containing 3% sucrose at 4\u00b0C in the dark for 2 days. The seedlings were grown under 12-hr light:12-hr dark condition with 50\u201360 \u00b5mol/m2/s white fluorescent light at 22\u00b0C for 7\u20138 days. At ZT4 (4 hr after lights on), the mesh and seedlings were transferred to liquid MS media containing 3% sucrose with 30 \u00b5M DEX (Sigma D1881, St. Louis, MO; 60 mM DEX stock solution was made in ethanol and stored at \u221220\u00b0C) or 0.05% ethanol (mock treatment). For cycloheximide treatment, 200 \u00b5M CHX (Sigma C4859; stock solutions were 100 \u00b5g/\u00b5l in DMSO) or 0.056% DMSO (mock treatment) was added at the time of DEX or ethanol mock treatment. After 2 or 4 hr incubation as indicated with gentle agitation, plants were quickly harvested, frozen in liquid nitrogen and stored in \u221280\u00b0C until processed.\n\n### RNA isolation and RNA-seq library construction\n\nTotal RNA from three biological replicates (\u223c30 plants each) for each condition was isolated using Trizol (Invitrogen, Grand Island, NY), treated with DNase (Qiagen, Germantown, MD), and purified using the RNeasy MinElute Cleanup Kit (Qiagen). The quality of the isolated total RNA was determined by NanoDrop ND 1000 (NanoDrop Technologies, Wilmington, DE). Samples with both a 260 nm:280 nm ratio and a 260 nm:230 nm ratio between 2 and 2.3 were processed further. The RNA-seq libraries were prepared using a customized Illumina-based strand-specific multiplex library construction protocol modified from Wang et al. (2011). Briefly, mRNA was isolated from 8 \u00b5g of total RNA using Dynabeads mRNA DIRECT Kit (Invitrogen) and fragmented to \u223c200 nucleotide pieces. After the first strand cDNA synthesis was carried out using random primers, the second strand cDNA was synthesized using a special dNTP mix in which dTTP is replaced by dUTP. Following end-repair (Y9140-LC-L; Enzymatics, Beverly, MA) and addition of a dA to the 3\u2032 end, both ends of cDNA were ligated with Y-shaped adaptors containing an index unique to each library. The second strand cDNA was then digested using Uracil DNA glycosylase (Enzymatics). Primers partially complementary to the adaptor sequences were used to amplify the libraries for 12 PCR cycles using High-Fidelity Polymerase (Phusion, Ipswich, MA). The libraries were further size-selected using a 1:1 volume of AMPure XP beads (Beckman Coulter, Brea CA). The size and quality of resulting libraries were examined using a Bioanalyzer 2100 (Agilent, Santa Clara, CA). The 12 libraries were then quantified by qPCR and equally pooled for 2 lanes of single end 50 bp sequencing in HiSeq 2000 machine (Illumina, San Diego, CA). The adaptors containing index sequences and primers used for amplification are listed in Supplementary file 3.\n\n### Quality filtering and alignment of RNA-seq data\n\nThe raw reads (\u223c310.3 million reads) were initially subjected to quality filtering to remove low quality reads using the FASTX-toolkit (Pearson et al., 1997) with the following parameters (\u2212q 20, minimum quality score to keep: 20; \u2212p 85, minimum percent of bases that must satisfy the quality score cut-off: 85). A custom perl script was then used to remove Illumina adapter sequences from the resulting reads. The reads were then separated by their custom barcode sequences (de-multiplexing) using Fastx_barcode_splitter (included in the FASTX toolkit) allowing up to one mismatch per barcode. 16 to 22 million reads per libraries were obtained and aligned against the Arabidopsis cDNA representative_gene_model (TAIR 10) using BWA (Li and Durbin, 2009) and Samtools (Li et al., 2009). (The parameter used to map the reads for BWA was aln -l 20.) The resulting BAM files from the two lanes were merged using Samtools and then converted to SAM files. The reads from these SAM files were then separated based on their alignment to the forward or reverse strand. Only the reads mapped to the reverse strand were used to calculate the read counts using a custom R script, and these counts were then used in analysis of differential expression.\n\n### Differential expression analysis of RNA-seq data\n\nedgeR was used to generate the pseudo-normalized counts for visualization and to carry out differential gene expression analysis (Robinson et al., 2010) using R 2.14.1 (R Development Core Team, 2011). Transcripts that have at least one count per million in at least three samples were considered expressed genes and kept for downstream analysis. Exact tests were performed using tagwise dispersion and the prior n was set to 6.25. FDR 0.01 was used as a cut-off for differentially expressed genes. Genes significantly differentially expressed between the mock- and DEX-treated transgenic line (rve8 RVE8::RVE8:GR), or between the DEX-treated rve8 RVE8::RVE8:GR and rve8 plants, were grouped into RVE8-induced or RVE8-repressed genes. Genes that are responsive to DEX treatment in rve8 mutant (i.e., the genes significantly differentially expressed between \u2018rve8 + DEX\u2019 and \u2018rve8 + mock\u2019) were removed from the RVE8-induced and RVE8-repressed gene lists. Only the genes uniquely induced or repressed by RVE8 (i.e., not showing the same trend in rve8) were used for further analysis. The significant gene sets (both RVE-regulated or DEX-regulated) are listed in Supplementary file 1C\u2013F.\n\n### Phase and motif analysis for RVE8 target genes\n\nCircadian phases of the 583 RVE8-induced genes and 850 RVE8-repressed targets were determined in a previous study using JTK_CYCLE (Hsu and Harmer, 2012). The 376 RVE8-induced cycling genes (64% of the induced genes) and 525 RVE8-repressed cycling genes (62% of the repressed genes) were subjected to phase and motif analysis. Distributions of the phases of the RVE8-induced and -repressed clock-regulated genes were plotted using the density function in R (R Development Core Team, 2011). Overrepresented motifs in the promoters of RVE8-regulated genes were identified using the SCOPE motif finder (Carlson et al., 2007). Fixed regions of 1500 bp upstream of the translational start site (corresponding to both strands) of RVE8-regulated genes were used for computation of significance compared to all the genes in the genome. Significance is the negative logarithm of expectation. Significance greater than zero is statistically meaningful; the larger the significance value, the higher its statistical significance. Coverage indicates the percentage of genes that have at least one occurrence of the motif in question. The fractions of genes containing the top-scoring motifs among the evening-phased (CT 8 to CT 14) and morning-phased (CT 20 to CT 2) RVE8 targets were compared to the fractions found in all of the clock-regulated genes in the corresponding phase group. Fisher's exact test was performed in R to examine if the presence of these motifs in RVE8 targets is enriched compared to their presence in the evening- and morning-phased genes.\n\n### Analysis of gene expression (qRT-PCR)\n\nFor gene expression in diurnal cycles, around 30 seedlings per sample were grown under 12 hr white light (50\u201360 \u00b5mol/m2/s, generated using cool white fluorescent bulbs):12 hr dark at 22\u00b0C for 7 days and harvested at the times indicated. For gene expression in free-run, seedlings were released to constant white light after entrainment in diurnal cycles for 7 days, and harvested at the times indicated. RNA was isolated using Trizol (Invitrogen) and was then treated with DNase (Qiagen). cDNA was synthesized using SuperScriptase \u0399\u0399 (Invitrogen) following the manufacturer's protocol. qRT-PCR was performed as previously described (Martin-Tryon et al., 2007). Three technical triplicates for each sample were run using iQ5 Real Time PCR machine (Bio-Rad, Hercules, CA), and starting quantity was estimated from critical thresholds using the standard curve method. Data for each sample were normalized to the respective PROTEIN PHOSPHATASE 2A (PP2A) expression level. The primer sets for each transcript are listed in Supplementary file 3.\n\n### Luciferase imaging\n\nLuciferase imaging was performed and analyzed as previously described (Martin-Tryon et al., 2007). Seedlings were entrained in 12 hr white light (50\u201360 \u00b5mol/m2./s; cool white fluorescent bulbs):12 hr dark at 22\u00b0C for 6 days before being released to constant red plus blue light (33\u00b5Ei red light, 20\u00b5Ei blue light) for luciferase activity analysis using an ORCA \u0399\u0399 ER (Hamamatsu, Bridgewater, NJ) CCD camera. Illumination was provided by monochromatic red and blue LED lights (XtremeLux, Santa Clara, CA). Images were analyzed using MetaMorph (Molecular Devices, Sunnyvale, CA) and free-running periods were estimated using Fast Fourier Transform Non-Linear Least Squares (Plautz et al., 1997).\n\n### Electrophoretic mobility shift assay (EMSA)\n\n11-day-old seedlings grown in 12 hr white light (50\u201360 \u00b5mol/m2/s; cool white fluorescent bulbs):12 hr dark cycle at 22\u00b0C were harvested at the times indicated. Plant whole-cell extracts were made and the electrophoretic mobility shift assay was performed as previously described (Harmer and Kay, 2005). Briefly around 1.5 g of tissue per sample was harvested, frozen in liquid nitrogen immediately and stored at \u221280\u00b0C until processed. The frozen tissue was ground to a fine powder, suspended in homogenization buffer (15 mM HEPES, pH 7.6, 40 mM KCl, 5 mM MgCl2, 1 mM DTT, 0.1 mM PMSF, and 1X complete protease inhibitor cocktail) and (NH4)2SO4 was added to 0.4 M. The insoluble components were pelleted by ultracentrifugation and removed, then solid (NH4)2SO4 was added to the supernatant to \u223c90% saturation. Proteins were pelleted by ultracentrifugation, resuspended in resuspension buffer (20 mM HEPES, pH 7.6, 40 mM KCl, 0.1 mM EDTA, 10% glycerol, 1 mM DTT, 0.1 mM PMSF, and 1\u00d7 complete protease inhibitor cocktail), and dialyzed using dialysis cartridges (7000 MWCO Slide-A-Lyzer; Pierce, Rockford, IL) against dialysis buffer (20 mM HEPES, pH 7.2, 40 mM KCl, 0.1 mM EDTA, 10% glycerol, 2.5 mM DTT, 0.1 mM PMSF). The dialyzed proteins were quantified, aliquoted and saved at \u221280\u00b0C until used. 15 \u00b5g of the dialyzed protein was incubated with 20 fmol of radiolabelled double-stranded DNA containing the EE and flanking sequences from the CCR2 promoter in reaction buffer (20 mM HEPES, pH 7.2, 80 mM KCl, 0.1 mM EDTA, 10% glycerol, 2.5 mM DTT, 8 ng/\u00b5l poly [dI-dC]) with or without the competitors as indicated for 15 min at room temperature. A 50-fold molar excess of unlabeled CCR2-EE (WT competitor) or mutated CCR2-EE (mutated competitor) DNA was added as indicated for binding-specificity control. The binding assays were resolved by electrophoresis on 5% non-denaturing polyacrylamide gels. The dried gel was imaged using a Storm PhosphorImager (Molecular Dynamics, Sunnyvale, CA). The probe and competitor DNA sequences are listed in Supplementary file 3.\n",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "6dd81f60-b5a6-40ed-b9df-04a3a8710abe",
+      "submission_id": "8e3df27a-72b3-4716-ae8c-9b2dde78174d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joanne Chory, Salk Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00473.017](https://doi.org/10.7554/eLife.00473.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cAccurate timekeeping is controlled by a cycling activator in Arabidopsis\u201d for consideration at eLife. Your article has been evaluated by a Senior editor, Detlef Weigel, and 2 reviewers, one of whom, Joanne Chory, is a member of our Board of Reviewing Editors. The reviewers were enthusiastic about your studies and found them to be very timely. We are thus is pleased to provisionally accept your paper for publication in eLife, subject to you performing one additional experiment.\n\nAfter consultation, the reviewers agreed that the major unresolved issue is that the triple rve mutant is not arrhythmic, precluding you from concluding whether these proteins are integral members of the clock, or more accurately, should be considered an input of clock activity. The final test would require having a sextuple mutant (cca1 lhy rve8 rve6 rve5 rve4) and then there would be two predictions. 1) The mutant is arrhythmic, making a convincing case that all the members of this set of single Myb domain proteins are key clock components, essential for generating circadian rhythms. 2) Alternatively, the shortening and lengthening period effects of the CCA1 and RVE8 subsets are compensated and you might conclude that these Mybs simply modulate the clock, presumably linking it to the light input. The reviewers felt it would be extremely important to be able to test the above possibilities with the sextuple knock out, but this is perhaps outside the range of the present manuscript. Rather, the following solution is offered: to strengthen your case for desynchronization of morning/evening genes, the reviewers are asking you to sample additional time points of the triple KO vs wt for a single representative each of the morning and evening genes (e.g., CCA1 and TOC1).\n\nA second, minor point was mentioned by one of the reviewers. To quote:\n\n\u201cThe current view in the field is that CCA1 and LHY are both repressors of evening genes such as PRR1, and activators of morning genes such as PRR9 and PRR7. So, the current model still has one set of activators, which in addition are positively regulated by light. The authors indicate in the text that the actual model is \u2018mostly\u2019 based on repressors, so I understand that you are acknowledging that at least one set of activators are present. The information added is substantial anyway. So far, only the morning loop had activators (CCA1 and LHY activating PRR9 and PRR7), the evening loop had only repressors, and both loops were connected through repressors. The results of the genomic analysis of RVE8 targets, combined with knowledge that RVE8 binds to the EE, and the bioinformatic evaluation of the distribution of the EE among targets, shows that RVE8 is mainly a direct activator of evening genes and an indirect repressor of morning genes. This makes RVE8 and its close homologs RVE4 and RVE6 the only components of the clock that positively connect morning and evening loops. The authors should state the novelty of their finding a bit more explicitly, so they avoid leading the readers to the erroneous conclusion that the current clock is \u2018exclusively\u2019 based on repressors.\u201d\n",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fd5dfea4-5c48-4c0c-93e0-679b0de4ff24",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C1",
+      "claim": "Current models of the Arabidopsis circadian network consist of several coupled feedback loops composed almost exclusively of transcriptional repressors.",
+      "claim_type": "EXPLICIT",
+      "source": "Current models of the Arabidopsis circadian network consist of several coupled feedback loops composed almost exclusively of transcriptional repressors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about existing models in the field, supported by the broader scientific literature on Arabidopsis circadian clocks.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "100a03e3-5287-42a4-a8a3-df5632798d37",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C2",
+      "claim": "A central regulatory mechanism is the repression of evening-phased clock genes via the binding of morning-phased Myb-like repressors to evening element (EE) promoter motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a central regulatory mechanism is the repression of evening-phased clock genes via the binding of morning-phased Myb-like repressors to evening element (EE) promoter motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes established knowledge about circadian clock regulation in Arabidopsis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "b6ff25a2-c75c-481c-a47e-0147c300acaf",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C3",
+      "claim": "RVE8 is a direct transcriptional activator of EE-containing clock and output genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We now demonstrate that a related Myb-like protein, REVEILLE8 (RVE8), is a direct transcriptional activator of EE-containing clock and output genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data including induction experiments and cycloheximide treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "4d827985-a41a-4680-9999-51baa30e4a0f",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C4",
+      "claim": "Loss of RVE8 and its close homologs causes a delay and reduction in levels of evening-phased clock gene transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of RVE8 and its close homologs causes a delay and reduction in levels of evening-phased clock gene transcripts and significant lengthening of clock pace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from mutant analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "e4990402-74a3-42f8-b30c-62b21b22d734",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C5",
+      "claim": "Loss of RVE8 and its close homologs causes significant lengthening of clock pace.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of RVE8 and its close homologs causes a delay and reduction in levels of evening-phased clock gene transcripts and significant lengthening of clock pace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by period measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "288944c7-3076-4d34-8d60-819bafc39d66",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C6",
+      "claim": "A clock-regulated activator is essential both for clock progression and control of clock outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest a substantially revised model of the circadian oscillator, with a clock-regulated activator essential both for clock progression and control of clock outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental findings regarding RVE8 function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "9479ed08-1e52-402f-93a3-335fb7417c5c",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C7",
+      "claim": "The plant clock consists of a highly interconnected, complex regulatory network rather than of coupled morning and evening feedback loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, our work suggests that the plant clock consists of a highly interconnected, complex regulatory network rather than of coupled morning and evening feedback loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data showing extensive regulatory interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "e22faf7c-284f-4d72-8bc4-14f5ba866fb1",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C8",
+      "claim": "Eukaryotic clocks are composed of interlocking negative transcriptional feedback loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Although specific components are not widely conserved, eukaryotic clocks are composed of interlocking negative transcriptional feedback loops (Harmer, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "fc597b6a-01a6-4bbd-824c-e6a1d5c8722a",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C9",
+      "claim": "CCA1 and LHY repress expression of TOC1.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis, the first-identified clock genes function in a double negative feedback loop, with two morning-phased Myb-like transcription factors, CIRCADIAN CLOCK ASSOCIATED 1 (CCA1) and LATE ELONGATED HYPOCOTYL (LHY), repressing expression of an evening-phased pseudo-response regulator, TIMING OF CAB EXPRESSION 1 (TOC1 or PRR1), which in turn represses expression of CCA1 and LHY (Schaffer et al., 1998; Wang and Tobin, 1998; Strayer et al., 2000; Alabadi et al., 2001; Gendron et al., 2012; Huang et al., 2012; Pokhilko et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "c202dbe9-1ac4-4c97-b77a-a294656dfefe",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C10",
+      "claim": "TOC1 represses expression of CCA1 and LHY.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis, the first-identified clock genes function in a double negative feedback loop, with two morning-phased Myb-like transcription factors, CIRCADIAN CLOCK ASSOCIATED 1 (CCA1) and LATE ELONGATED HYPOCOTYL (LHY), repressing expression of an evening-phased pseudo-response regulator, TIMING OF CAB EXPRESSION 1 (TOC1 or PRR1), which in turn represses expression of CCA1 and LHY (Schaffer et al., 1998; Wang and Tobin, 1998; Strayer et al., 2000; Alabadi et al., 2001; Gendron et al., 2012; Huang et al., 2012; Pokhilko et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "5fa391a5-4117-4a82-bb40-6b1194a3e42b",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C11",
+      "claim": "CCA1 and LHY promote the expression of PRR7 and PRR9.",
+      "claim_type": "EXPLICIT",
+      "source": "CCA1 and LHY also promote the expression of PRR7 and 9, two day-phased genes, and are in turn repressed by these PRRs and their homolog PRR5, forming another negative feedback circuit (Farre et al., 2005; Nakamichi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "9db4c680-332d-4817-922b-0b098c5e876b",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C12",
+      "claim": "PRR5, PRR7, and PRR9 repress CCA1 and LHY.",
+      "claim_type": "EXPLICIT",
+      "source": "CCA1 and LHY also promote the expression of PRR7 and 9, two day-phased genes, and are in turn repressed by these PRRs and their homolog PRR5, forming another negative feedback circuit (Farre et al., 2005; Nakamichi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "e392fb02-3bb4-42c0-be65-6144e54dd06b",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C13",
+      "claim": "Most evening-phased central clock genes contain the EE in their promoter regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Most evening-phased central clock genes (including TOC1, PRR5, GI, LUX and ELF4) contain the EE in their promoter regions (Covington et al., 2008; Harmer, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "1e080155-518d-4a68-b6b4-0cc0116f7f06",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C14",
+      "claim": "CCA1 and LHY bind directly to the EE to repress evening-phased clock gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "and the two morning-phased components, CCA1 and LHY, bind directly to the EE to repress evening-phased clock gene expression (Alabadi et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "ea39d7a2-ffe0-461e-949a-86f7a53c64a9",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C15",
+      "claim": "The EE was first identified by its overrepresentation in the promoters of evening-phased genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The EE was first identified by its overrepresentation in the promoters of evening-phased genes (Harmer et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "f2bdb31e-ef9e-491e-8421-b74faf142e15",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C16",
+      "claim": "The EE is sufficient to confer evening-phased expression on a reporter gene.",
+      "claim_type": "EXPLICIT",
+      "source": "and is sufficient to confer evening-phased expression on a reporter gene (Harmer and Kay, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "02131af9-7e4a-4b7f-ae8d-dc26e6d573db",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C17",
+      "claim": "Mutation of the EE causes decreased expression of an EE-regulated reporter gene.",
+      "claim_type": "EXPLICIT",
+      "source": "First, if only repressors bind to the EE, loss of protein binding to the EE should result in constitutively high expression of EE-regulated genes; however, mutation of the EE causes decreased expression of an EE-regulated reporter gene (Harmer and Kay, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "f9965262-9154-4b8c-a804-4220b740e3fd",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C18",
+      "claim": "An afternoon/evening-phased activity that specifically binds the EE is present in plant extracts and persists in cca1 lhy mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, an afternoon/evening-phased activity that specifically binds the EE is present in plant extracts and persists in cca1 lhy mutants, consistent with the existence of a clock-regulated, afternoon-phased activator of the EE (Harmer and Kay, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "999ba4ed-2bc7-411a-8ed0-249104d759e7",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C19",
+      "claim": "Evening-phased clock genes are expressed with a circadian rhythm in cca1 lhy plants rather than being arrhythmic.",
+      "claim_type": "EXPLICIT",
+      "source": "A clock-regulated activator of the EE might help to explain why evening-phased clock genes are expressed with a circadian rhythm in cca1 lhy plants rather than being arrhythmic (Mizoguchi et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "2da45fe3-a694-4105-ad20-856a6a00b416",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C20",
+      "claim": "RVE8 has been shown to bind to the EE in vitro and in planta.",
+      "claim_type": "EXPLICIT",
+      "source": "RVE8 has been shown to bind to the EE in vitro and in planta, and its protein levels display a circadian rhythm that peaks in the afternoon (Gong et al., 2008; Rawat et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "ec8bb6f9-e9b1-42e2-8011-ab1e9e204adf",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C21",
+      "claim": "RVE8 protein levels display a circadian rhythm that peaks in the afternoon.",
+      "claim_type": "EXPLICIT",
+      "source": "RVE8 has been shown to bind to the EE in vitro and in planta, and its protein levels display a circadian rhythm that peaks in the afternoon (Gong et al., 2008; Rawat et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "b65efd8f-6ab0-481d-bdfd-0bde39f29f83",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C22",
+      "claim": "rve8 loss of function mutations cause a long circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, rve8 loss of function mutations cause a long circadian period (Farinas and Mas, 2011; Rawat et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "0e6b43f4-a3e8-485b-9d90-956890e43ceb",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C23",
+      "claim": "cca1 or lhy loss of function mutants have phenotypes opposite to rve8 loss of function mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "which is opposite to the phenotypes of cca1 or lhy loss of function mutants (Green and Tobin, 1999; Mizoguchi et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "5aa168e5-de71-4ca6-9b4d-0716c787d85c",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C24",
+      "claim": "Loss of RVE8 function does not significantly affect the transcript levels of TOC1 and PRR5.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite its ability to bind to the EE in the TOC1 and PRR5 promoters in planta, loss of RVE8 function does not significantly affect the transcript levels of these evening genes (Farinas and Mas, 2011; Rawat et al., 2011; Hsu and Harmer, 2012), perhaps due to genetic redundancy or complex feedback regulation within the clock system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "97e4ac83-8cbc-4057-8127-abc0c779d543",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C25",
+      "claim": "RVE8 used an inducible system to identify hundreds of clock-regulated genes controlled by RVE8.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used an inducible RVE8 line and genome-wide expression profiling to identify hundreds of clock-regulated genes controlled by RVE8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "3b548e77-ff87-4873-926b-aee2623a05e5",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C26",
+      "claim": "Most evening-phased clock genes are directly induced by RVE8.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments with an inhibitor of translation revealed that most evening-phased clock genes are directly induced by RVE8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cycloheximide experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "3a88ec77-3c40-455d-a6b0-cb015c3f5d39",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C27",
+      "claim": "Genes induced by RVE8 are enriched for the EE in their promoter regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with RVE8 acting via the EE regulatory motif, we found that genes induced by RVE8 are enriched for the EE in their promoter regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motif analysis shown in Table 1 and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "53143760-2c41-4bce-9529-675426a6ca42",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C28",
+      "claim": "Plants mutant for RVE8 and its two closest homologs, RVE4 and RVE6, have lost the afternoon-phased EE-binding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, plants mutant for RVE8 and its two closest homologs, RVE4 and RVE6, have lost the afternoon-phased EE-binding activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EMSA data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "c85d671f-0127-4a81-89ba-d5458e86bbab",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C29",
+      "claim": "rve4 rve6 rve8 triple mutants display an extremely long circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, rve4 rve6 rve8 triple mutants display an extremely long circadian period, with delayed and reduced expression of evening-phased clock genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by period measurements shown in Figure 4B and expression data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "4a516f10-6ee4-42f4-a926-6b45d4d19734",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C30",
+      "claim": "rve4 rve6 rve8 triple mutants have delayed and reduced expression of evening-phased clock genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, rve4 rve6 rve8 triple mutants display an extremely long circadian period, with delayed and reduced expression of evening-phased clock genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "7d432f5d-54aa-40fe-a7a5-9630eca77ef3",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C31",
+      "claim": "Both rve8-1 and rve8-1 RVE8::RVE8:GR plants have a long-period phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Both rve8-1 and rve8-1 RVE8::RVE8:GR plants have a long-period phenotype that is only rescued by DEX treatment of the rve8-1 RVE8::RVE8:GR line (Figure 1A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase imaging data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "874d5e83-21d5-4207-b8ff-ede3f29d2ff2",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C32",
+      "claim": "The RVE8:GR fusion protein retains RVE8 function and acts in a drug-inducible manner.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrating that the RVE8:GR fusion protein retains RVE8 function and acts in a drug-inducible manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rescue of the rve8-1 phenotype by DEX treatment shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "476cc7ba-f42b-4b8f-84a5-d290253e2d30",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C33",
+      "claim": "Induction of PRR5 by RVE8 is much stronger when RVE8 activity is induced in the afternoon (ZT6) than when RVE8 is induced in the morning (ZT0).",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of PRR5 by RVE8 is much stronger when RVE8 activity is induced in the afternoon (Zeitgeber Time 6 [ZT6], or 6 hr after lights on) than when RVE8 is induced in the morning (ZT0) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "e2580428-dac4-47d5-bf71-be65cbf930e4",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C34",
+      "claim": "The ability of RVE8 to induce target genes is gated, with maximum activity in the afternoon.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate the ability of RVE8 to induce target genes is gated, with maximum activity in the afternoon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential induction of PRR5 at different times of day shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "db6938e9-799e-4cdf-adc0-37de5d2bdf78",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C35",
+      "claim": "583 genes are specifically up-regulated in response to RVE8 induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing mock- and DEX-treated RVE8:GR and rve8-1 plants, we found that 583 genes are specifically up- and 850 are down-regulated in response to RVE8 induction (Figure 2C,D and Supplementary file 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq analysis shown in Figure 2C and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "5bd062b0-0f03-4fdb-9532-0ca22ad9bf8e",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C36",
+      "claim": "850 genes are specifically down-regulated in response to RVE8 induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing mock- and DEX-treated RVE8:GR and rve8-1 plants, we found that 583 genes are specifically up- and 850 are down-regulated in response to RVE8 induction (Figure 2C,D and Supplementary file 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq analysis shown in Figure 2D and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "4852c351-6419-4a46-b19a-28c0629f8855",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C37",
+      "claim": "64% of RVE8-induced genes are clock-controlled.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a significantly higher proportion of both the up- and down-regulated RVE8 targets are clock-controlled (Figure 2E,F, 64% and 62%, respectively) than the one-third of the transcriptome expected by chance (Covington et al., 2008; Hsu and Harmer, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 2E and cited previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "20ef0bca-92b8-4c05-9d46-1c85c231ee94",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C38",
+      "claim": "62% of RVE8-repressed genes are clock-controlled.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a significantly higher proportion of both the up- and down-regulated RVE8 targets are clock-controlled (Figure 2E,F, 64% and 62%, respectively) than the one-third of the transcriptome expected by chance (Covington et al., 2008; Hsu and Harmer, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 2F and cited previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "9af3b872-d6d5-4eb5-a2d6-ac5be7051f18",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C39",
+      "claim": "RVE8 preferentially regulates clock-controlled genes.",
+      "claim_type": "EXPLICIT",
+      "source": "RVE8 thus preferentially regulates clock-controlled genes (CCGs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enrichment of clock-controlled genes among RVE8 targets shown in Figure 2E,F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "c5fc9a24-f568-4629-8dc9-b5f37529a68c",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C40",
+      "claim": "RVE8-induced CCGs are enriched for an evening phase.",
+      "claim_type": "EXPLICIT",
+      "source": "CCGs regulated by RVE8 are enriched for two complementary circadian phases, with the RVE8-induced genes enriched for an evening (Figure 2G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phase distribution analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "be1024c7-324b-47fa-9553-9c114af78a8e",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C41",
+      "claim": "RVE8-repressed CCGs are enriched for a morning phase.",
+      "claim_type": "EXPLICIT",
+      "source": "and the RVE8-repressed genes enriched for a morning phase (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phase distribution analysis shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "123e4142-6f2c-4d1f-99d3-db091f9c2d1d",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C42",
+      "claim": "Many evening-phased oscillator genes are induced by RVE8, including PRR5, TOC1, PRR3, GI, LUX, and ELF4.",
+      "claim_type": "EXPLICIT",
+      "source": "Many evening-phased oscillator genes are induced by RVE8, including PRR5, TOC1, PRR3, GI, LUX, and ELF4 (Supplementary file 1G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data in Supplementary file 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "5246a082-d1b5-4775-a053-0d0d2a89ad1b",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C43",
+      "claim": "Morning-phased oscillator genes including CCA1, LHY, RVE8 itself, and PRR9 are repressed by RVE8.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, morning-phased oscillator genes including CCA1, LHY, RVE8 itself, and a day-phased central clock gene, PRR9, are found to be repressed by RVE8 (Supplementary file 1G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data in Supplementary file 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "df042626-3526-4cb9-8c9d-bb419d0f39eb",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C44",
+      "claim": "EE and EE-like sequences are significantly overrepresented in the RVE8-induced CCGs compared to their frequency in all genes in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "EE and EE-like sequences are significantly overrepresented in the RVE8-induced CCGs, both when compared to their frequency in all genes in the genome (Supplementary file 2A) and in all evening-phased CCGs (Table 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motif analysis shown in Supplementary file 2A and Table 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "aabf4988-a393-44a7-94d6-959aba4b98c7",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C45",
+      "claim": "EE and EE-like sequences are significantly overrepresented in the RVE8-induced CCGs compared to all evening-phased CCGs.",
+      "claim_type": "EXPLICIT",
+      "source": "EE and EE-like sequences are significantly overrepresented in the RVE8-induced CCGs, both when compared to their frequency in all genes in the genome (Supplementary file 2A) and in all evening-phased CCGs (Table 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motif analysis shown in Table 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "c9277a5b-2960-4c00-a7db-4b29d5f63673",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C46",
+      "claim": "RVE8 may directly activate many evening genes via binding to the EE in their promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Since RVE8 directly binds to the EE in vitro and in vivo (Rawat et al., 2011), this suggests that RVE8 may directly activate many evening genes via binding to the EE in their promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enrichment of EE motifs in RVE8-induced genes and previous binding data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "8efad5fc-28e4-4518-b43d-0bd5f586cf32",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C47",
+      "claim": "G-box and ME motifs are found at a similar rate in RVE8-repressed and in phase-matched CCGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike our results for the EE, the G-box and ME motifs are found at a similar rate in RVE8-repressed and in phase-matched CCGs (Table 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motif analysis shown in Table 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "a45af41c-3a8e-43bf-b486-2f46743c978d",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C48",
+      "claim": "RVE8 activity is not preferentially correlated with the morning-associated motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "The similar frequency of these two motifs in these two groups indicates that RVE8 activity is not preferentially correlated with the morning-phased related cis-regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the motif analysis shown in Table 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "e23146a5-9c9e-470e-b973-3d774bd3e007",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C49",
+      "claim": "RVE8 may directly activate evening-phased clock genes that then go on to repress morning-phased CCGs.",
+      "claim_type": "EXPLICIT",
+      "source": "The preferential correlation of RVE8 activity with the EE, but not with the morning-associated motifs, suggests that RVE8 may directly activate evening-phased clock genes that then go on to repress morning-phased CCGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the motif analysis and the observation that RVE8-repressed genes are not enriched for specific motifs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "2eb090ad-538c-4128-ba0c-76c5589fc364",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C50",
+      "claim": "CHX treatment increased the accumulation of transcripts regulated by the nonsense mediated mRNA decay (NMD) pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "CHX treatment increased the accumulation of transcripts regulated by the nonsense mediated mRNA decay (NMD) pathway (Carter et al., 1995; Arciga-Reyes et al., 2006; Kurihara et al., 2009), suggesting that CHX treatment reduced or blocked translation as expected (Figure 3\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 3\u2014figure supplement 1A\u2013C and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "38490008-3a6d-4127-b6da-1966a4feb4cb",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C51",
+      "claim": "All of the EE-containing, evening-phased central clock and output genes examined are robustly induced by RVE8 even in the presence of CHX.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role for RVE8 in activation of evening genes via direct binding to the EE, all of the EE-containing, evening-phased central clock and output genes examined are robustly induced by RVE8 even in the presence of CHX (Figure 3A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 3A\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "3bbe8236-cf0c-4513-a63c-7ad3e6ea6d28",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C52",
+      "claim": "The RVE8-mediated repression of expression of all tested morning genes is reduced or abolished in the presence of CHX.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the RVE8-mediated repression of expression of all tested morning genes is reduced or abolished in the presence of CHX (Figure 3\u2014figure supplement 1D\u2013G), suggesting that RVE8 represses these genes indirectly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 3\u2014figure supplement 1D\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "ab05245d-e32c-440c-b205-d7cee0b0d7d3",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C53",
+      "claim": "RVE8 directly activates evening-phased genes but indirectly represses the morning-phased genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, for all of the genes examined, we found that RVE8 directly activates evening-phased genes but indirectly represses the morning-phased genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the cycloheximide experiments shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "2108b32a-e8cb-496b-9ce2-2567cfffd700",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C54",
+      "claim": "RVE8 shapes the evening-phased expression of hundreds of genes, directly influencing a large number of circadian output pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that RVE8 shapes the evening-phased expression of hundreds of genes, directly influencing a large number of circadian output pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RNA-seq data and functional classification analysis in Supplementary file 1H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "a898965e-3712-45b2-a814-6e04417f4d24",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C55",
+      "claim": "The mean peak phase for RVE8-regulated EE-containing CCGs is significantly earlier than that of all EE-containing CCGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mean peak phase for RVE8-regulated EE-containing CCGs is significantly earlier than that of all EE-containing CCGs, indicating that RVE8 regulates a subset of evening genes that have slightly earlier phase than average EE-containing evening genes (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phase distribution analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "688bb6c5-0722-4113-9288-c0ad36dc36ea",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C56",
+      "claim": "The pace of the clock in rve4-1 and rve6-1 single mutants is not significantly different from wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "The pace of the clock in rve4-1 and rve6-1 single mutants is not significantly different from wild-type (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by period measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "b877ed65-4a48-4927-b6b9-c89688f97820",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C57",
+      "claim": "Combining loss-of-function RVE4 or RVE6 alleles with rve8-1 makes the period length much longer than rve8-1 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, combining loss-of-function RVE4 or RVE6 alleles with rve8-1 makes the period length much longer than rve8-1 alone, while the rve4 rve6 rve8 triple mutant has a period approximately 4 hr longer than wild-type (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by period measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "1a5c878d-3349-4d5b-b3c3-136f7140265d",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C58",
+      "claim": "The rve4 rve6 rve8 triple mutant has a period approximately 4 hr longer than wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, combining loss-of-function RVE4 or RVE6 alleles with rve8-1 makes the period length much longer than rve8-1 alone, while the rve4 rve6 rve8 triple mutant has a period approximately 4 hr longer than wild-type (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by period measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "97b29d8a-25f4-4f9b-8760-21012371ef8b",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C59",
+      "claim": "RVE4, 6 and 8 play a partially redundant role in speeding up the pace of the clock.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that RVE4, 6 and 8 play a partially redundant role in speeding up the pace of the clock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the additive period lengthening in higher order mutants shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "dbc20f5e-eac1-4fab-8966-623438be91e4",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C60",
+      "claim": "The rve4 rve6 rve8 triple mutant displays robust circadian rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the severe long period phenotype, the rve4 rve6 rve8 triple mutant displays robust circadian rhythms (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase imaging data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "8353b90d-5205-4bcb-b4a2-4d765e45b1e3",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C61",
+      "claim": "Extracts from wild-type plants have an afternoon-phased EE binding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, extracts from wild-type plants have an afternoon-phased EE binding activity (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EMSA data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "b4ae75d1-bcbb-4759-a5d5-edb658260372",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C62",
+      "claim": "The cycling EE-binding activity is abolished in the rve4 rve6 rve8 triple mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, this cycling EE-binding activity is abolished in the triple mutant (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EMSA data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "314ec16c-98b7-48c8-a9c1-67f5a8375285",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C63",
+      "claim": "RVE4, 6 and 8 comprise a clock-regulated, evening-phased EE-binding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that we have previously found that RVE4, RVE6 and RVE8 can all be affinity purified from plant extracts using EE sequences (Rawat et al., 2011), this strongly suggests that RVE4, 6 and 8 comprise a clock-regulated, evening-phased EE-binding activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the loss of EE-binding activity in the triple mutant and previous affinity purification data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "266fc0ba-8690-4770-aafe-ed2ba9319201",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C64",
+      "claim": "rve6 rve8 double and rve4 rve6 rve8 triple mutants grown in constant light display significantly reduced levels of PRR5 transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the rve8-1 single mutant, which has normal expression levels of evening genes (Rawat et al., 2011; Hsu and Harmer, 2012), rve6 rve8 double and rve4 rve6 rve8 triple mutants grown in constant light (LL) display significantly reduced levels of PRR5 transcripts (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5\u2014figure supplement 1A and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "6ee52d55-6030-41df-8a13-43ec90b7287e",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C65",
+      "claim": "rve6 rve8 and rve4 rve6 rve8 mutants have a greater delay in onset of PRR5 transcript accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the progressively longer period in rve6 rve8 and rve4 rve6 rve8 mutants (Figure 4B), these mutants also have a greater delay in onset of PRR5 transcript accumulation (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "329ee0ac-ef7f-4764-9db5-482db7f82a84",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C66",
+      "claim": "The evening-phased genes, PRR5 and TOC1, show a significant delay in onset of expression and reduced levels in the triple mutants compared to wild-type in both LD and LL.",
+      "claim_type": "EXPLICIT",
+      "source": "The evening-phased genes, PRR5 and TOC1, show a significant delay in onset of expression and reduced levels in the triple mutants compared to wild-type in both light/dark (LD) cycles (Figure 5A,B) and in constant light (LL) (Figure 5E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5A,B,E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "4699abec-351b-4d02-afee-508c7ea41196",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C67",
+      "claim": "The morning-phased clock genes CCA1 and LHY do not show any obvious differences in expression levels in rve4 rve6 rve8 and wild-type plants during the day either when grown in LD or in LL.",
+      "claim_type": "EXPLICIT",
+      "source": "The morning-phased clock genes CCA1 and LHY do not show any obvious differences in expression levels in rve4 rve6 rve8 and wild-type plants during the day either when grown in LD (Figure 5C,D) or in LL (Figure 5G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5C,D,G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "f3e98f08-04e3-439b-b85a-f11ffc4e1928",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C68",
+      "claim": "CCA1 and LHY display slightly reduced transcript levels in the late night when grown in LD (ZT 21) in rve4 rve6 rve8 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these two morning-phased genes display slightly reduced transcript levels in the late night when grown in LD (ZT 21) (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "2728fdbd-ff6a-4ad7-95f2-09f774cda928",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C69",
+      "claim": "De-synchronization between the evening and morning genes is observed in the rve4 rve6 rve8 triple mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these expression level changes, de-synchronization between the evening and morning genes is observed in the rve4 rve6 rve8 triple mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the differential phase delays observed for evening vs. morning genes shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "79dc7288-f5d3-44c1-bffc-6c04149c20a5",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C70",
+      "claim": "At the end of the second subjective day in LL (around ZT36), the peak times of PRR5 and TOC1 transcript accumulation are delayed approximately 6 hr in the triple mutant relative to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of the second subjective day in LL (around ZT36), the peak times of PRR5 and TOC1 transcript accumulation are delayed approximately 6 hr in the triple mutant relative to wild-type (Figure 5E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "14e4fe30-1368-4a3e-aa1a-4b5b5fdbf105",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C71",
+      "claim": "An approximately 3-hr phase delay is observed for trough levels of CCA1 and LHY in the mutant relative to controls at ZT36.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in these same samples, an approximately 3-hr phase delay is observed for trough levels of CCA1 and LHY in the mutant relative to controls (Figure 5K,L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5K,L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "d22b068d-83e1-46a1-97d2-8a045d4c6e40",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C72",
+      "claim": "At the third subjective morning (around ZT48), PRR5 and TOC1 trough levels display an approximately 9-hr phase delay in the triple mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, at the third subjective morning (around ZT48), PRR5 and TOC1 trough levels display an approximately 9-hr phase delay in the triple mutant (Figure 5I,J)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "e74e4737-5e0a-4820-9c43-6aa1ed5f435e",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C73",
+      "claim": "An approximately 6-hr phase delay is observed in the peak expression levels for CCA1 and LHY at ZT48.",
+      "claim_type": "EXPLICIT",
+      "source": "while an approximately 6-hr phase delay is observed in the peak expression levels for CCA1 and LHY at that time (Figure 5G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "a1f686f2-d847-4562-bd12-ecefba55a99b",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C74",
+      "claim": "A significant change in the waveform of the evening gene TOC1 but not the morning gene LHY is observed in the triple mutant in a high-resolution time course.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a significant change in the waveform of the evening gene TOC1 (Figure 5M) but not the morning gene LHY (Figure 5O) is observed in the triple mutant in this high-resolution time course.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5M,O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "fc5182f3-8cd1-4d85-bca8-c8c46d5090d1",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C75",
+      "claim": "Loss of multiple RVEs has an immediate effect on expression of evening genes and a delayed effect on morning genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that loss of multiple RVEs has an immediate effect on expression of evening genes and a delayed effect on morning genes, further supporting the main role of RVE8 as an activator of evening genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential timing of effects on evening vs. morning genes shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "62295860-b9c0-4746-8659-a175e8be1c28",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C76",
+      "claim": "RVE8 expression is significantly reduced in toc1-4, lux-1 and CCA1-OX mutants in LD.",
+      "claim_type": "EXPLICIT",
+      "source": "RVE8 expression is significantly reduced in all of these clock mutants in LD (Figure 6A), indicating that TOC1, LUX and CCA1 directly or indirectly regulate RVE8 expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "dc1f97da-415a-42dc-a52b-93cb094ff9cb",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C77",
+      "claim": "TOC1, LUX and CCA1 directly or indirectly regulate RVE8 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "RVE8 expression is significantly reduced in all of these clock mutants in LD (Figure 6A), indicating that TOC1, LUX and CCA1 directly or indirectly regulate RVE8 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reduced RVE8 expression in these mutants shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "dc5ae44e-7b00-4e89-b07c-39e4a483088e",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C78",
+      "claim": "At dawn (ZT0), when RVE8 transcript levels normally peak, multiple PRR genes are up-regulated in toc1-4, lux-1 and CCA1-OX mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that at dawn (ZT0), when RVE8 transcript levels normally peak (Farinas and Mas, 2011; Rawat et al., 2011), multiple PRR genes are up-regulated in each of these mutants (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 6B and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "4ac9f605-ec0b-4a80-9a9e-7198b4cf59cc",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C79",
+      "claim": "The PRRs directly repress RVE8 expression and other clock genes indirectly control RVE8 expression via regulation of PRR5, 7, and 9.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with a model in which the PRRs directly repress RVE8 expression and other clock genes indirectly control RVE8 expression via regulation of PRR5, 7, and 9 (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model inferred from the data shown in Figure 6A,B and previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "c22b1edd-8c65-43f1-96bd-95f2672ee2fd",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C80",
+      "claim": "RVE8 expression is increased in prr5 prr7 prr9 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is supported by the increased RVE8 expression seen in prr5 prr7 prr9 mutants (Rawat et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "833ba5e1-7793-43f3-85bc-598efc885218",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C81",
+      "claim": "PRR5 directly binds to the RVE8 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "and the reported direct binding of PRR5 to the RVE8 promoter (Nakamichi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "4532cdbd-de5c-46fb-b247-8713f83ada67",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C82",
+      "claim": "PRR5 and PRR9 are directly activated by RVE8.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings that both PRR5 and PRR9 are directly activated by RVE8 (Figure 3A; Figure 3\u2014figure supplement 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cycloheximide experiments shown in Figure 3A and Figure 3\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "8ea1aa4a-7ddc-4758-9e00-9fae34891e35",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C83",
+      "claim": "Peak transcript levels of PRR5 and PRR9 are reduced in rve4 rve6 rve8 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "and that peak transcript levels of these genes are reduced in rve4 rve6 rve8 mutants (Figure 5A,E; Figure 5\u2014figure supplement 1C,E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5A,E and Figure 5\u2014figure supplement 1C,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "88cc6de4-c36b-4356-ab25-10327222882d",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C84",
+      "claim": "The PRRs and RVEs regulate each other to form a negative transcriptional feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "further support the model that the PRRs and RVEs regulate each other to form a negative transcriptional feedback loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutual regulation between PRRs and RVEs shown in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "d597e5f4-1bac-4edc-a93b-621c990c521c",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C85",
+      "claim": "Central clock genes can directly regulate many output genes in both plants and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "It has previously been reported in both plants and mammals that central clock genes can directly regulate many output genes (Gendron et al., 2012; Menet et al., 2012; Nakamichi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "6efc3ce1-a184-4bd2-8cb3-de30a4f5d467",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C86",
+      "claim": "RVE8 is an important regulator of both the clock itself and output pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that hundreds of clock-regulated genes are induced or repressed upon induction of RVE8 suggests RVE8 is an important regulator of both the clock itself and output pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RNA-seq data showing hundreds of RVE8-regulated genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "d7ab44d4-32dd-4a6c-a90e-bad5907ad529",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C87",
+      "claim": "RVE8 is unique among Arabidopsis clock genes in that it acts primarily, and perhaps even exclusively, as an activator of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus RVE8 is unique among Arabidopsis clock genes in that it acts primarily, and perhaps even exclusively, as an activator of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cycloheximide experiments showing direct activation but indirect repression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "742dd9d2-a273-422f-b47c-ee946bed2199",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C88",
+      "claim": "CCA1 and LHY have similar activity at different time of day in ethanol-inducible lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike CCA1 and LHY, which were shown to have similar activity at different time of day in ethanol-inducible lines (Knowles et al., 2008), we have found that RVE8 activity is gated with maximum activity in the afternoon (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "cda23917-3581-42de-b101-bf1adee88d7d",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C89",
+      "claim": "Overexpression of CCA1 or LHY causes arrhythmicity.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy in gating regulation may explain why overexpression of CCA1 or LHY causes arrhythmicity (Schaffer et al., 1998; Wang and Tobin, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "a8b73dad-9923-4553-8aba-a8cac23ffdbc",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C90",
+      "claim": "Overexpression of RVE8 causes an advanced phase and short period phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "while overexpression of RVE8 instead causes an advanced phase and short period phenotype (Rawat et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "b4e09dba-abc6-48b1-87f5-44a1bf933875",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C91",
+      "claim": "Most RVE8-induced transcripts have a peak circadian phase between CT8 and CT12.",
+      "claim_type": "EXPLICIT",
+      "source": "Most RVE8-induced transcripts have a peak circadian phase between CT8 and CT12 (Figure 2G), approximately 2\u20136 hr after the peak phase of RVE8 protein levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phase distribution analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "6e222f1b-f74b-43e7-8483-d3244009ec7c",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C92",
+      "claim": "CCA1 and LHY protein levels peak in the subjective morning.",
+      "claim_type": "EXPLICIT",
+      "source": "CCA1 and LHY protein levels peak in the subjective morning (Wang and Tobin, 1998; Kim et al., 2003), well before RVE8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "ad61de27-24dd-4c41-9ee0-b1bb81800672",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C93",
+      "claim": "When the phase of a cycling transcriptional repressor precedes that of a cycling transcriptional activator, the peak phase of expression of the output would occur after that of the activator.",
+      "claim_type": "EXPLICIT",
+      "source": "A mathematical model investigating the consequences of oppositely acting transcription factors on regulation of a common target gene predicted that when the phase of a cycling transcriptional repressor precedes that of a cycling transcriptional activator ('repressor-precedes activator'), the peak phase of expression of the output would occur after that of the activator (Ueda et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "fb8cd25d-1f74-44a9-b17b-4d9f052a52bd",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C94",
+      "claim": "The clock may fine-tune expression of EE-containing genes through the action of multiple clock-controlled promoter motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "The clock may fine-tune expression of EE-containing genes through the action of multiple clock-controlled promoter motifs, generating the wide range of phases seen across all EE-containing genes (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on the observed phase distribution shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "b17a2954-016e-4e3f-a9e1-1236f9794f96",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C95",
+      "claim": "A combination of morning-, day-, and night-phased DNA elements generates the day-phased expression of Cry1 in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it has been reported that a combination of morning-, day-, and night-phased DNA elements generates the day-phased expression of Cry1 in mammalian cells. In this case, the strength of night-phased repressors relative to the day-phased activators modulates the extent of phase delay (Ukai-Tadenuma et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "201970d0-336d-42c5-8457-d36f55a0cef1",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C96",
+      "claim": "RVE4, 5 and 6 have been found associated with the EE in extracts made from plants harvested in the afternoon.",
+      "claim_type": "EXPLICIT",
+      "source": "The RVE8 homologs RVE4, 5 and 6 have also been found associated with the EE in extracts made from plants harvested in the afternoon, suggesting that they might act in a similar manner to RVE8 (Rawat et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "ce386602-01b1-486f-8f21-817f0fedc940",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C97",
+      "claim": "toc1 and prr5 mutants have short-period phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "toc1 and prr5 mutants have short-period phenotypes (Strayer et al., 2000; Eriksson et al., 2003; Yamamoto et al., 2003);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "441c3f57-3c27-4deb-a41f-879b4df2b108",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C98",
+      "claim": "Loss of GI causes a short period in most conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "loss of GI causes a short period in most conditions (Park et al., 1999; Mizoguchi et al., 2005; Martin-Tryon et al., 2007);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "9783238b-d232-4933-9415-0d8b3b8106eb",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C99",
+      "claim": "lux and elf4 mutants are arrhythmic.",
+      "claim_type": "EXPLICIT",
+      "source": "and lux and elf4 mutants are arrhythmic (Doyle et al., 2002; Onai and Ishiura, 2005; Hazen et al., 2005b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "0b707a13-2ef4-4b0a-88df-3869b6c3e643",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C100",
+      "claim": "The long period seen in rve4 rve6 rve8 is mainly caused by delayed expression of evening genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the long period seen in rve4 rve6 rve8 is mainly caused by delayed expression of evening genes, which then indirectly causes a delayed phase of expression of morning genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential timing of phase delays for evening vs. morning genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "80c9e929-e7ee-49cf-8e01-8e0217802bee",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C101",
+      "claim": "In RVE8-overexpressing plants, the peak phase of expression of TOC1 is clearly advanced soon after plants are released into free-run whereas phase advances are not seen for CCA1 and LHY until much later.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this idea, in RVE8-overexpressing plants (which have a short-period phenotype), the peak phase of expression of TOC1 is clearly advanced soon after plants are released into free-run whereas phase advances are not seen for the morning-phased genes CCA1 and LHY until much later (Rawat et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "f65e2eab-5b7e-4cfb-924d-a65bcf17ecd0",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C102",
+      "claim": "Delays in the phase of post-transcriptional processes have been suggested to contribute to long-period phenotypes in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, delays in the phase of post-transcriptional processes have previously been suggested to contribute to long-period phenotypes in animals (Rothenfluh et al., 2000; Syed et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "c5568d83-444a-4751-b6b7-b72630eef673",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C103",
+      "claim": "Plants mutant for CCA1 and LHY have persistent circadian rhythms, albeit with a short period.",
+      "claim_type": "EXPLICIT",
+      "source": "However, plants mutant for CCA1 and LHY, the sole previously defined circadian regulators of EE-containing clock genes, have persistent circadian rhythms, albeit with a short period (Alabadi et al., 2002; Mizoguchi et al., 2002; Locke et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "b1729f3c-1224-4238-bf97-e3f554bc23bc",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C104",
+      "claim": "The discovery that RVE8 and its homologs are activators of the EE may explain the rhythmicity of cca1 lhy mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Our discovery that RVE8 and its homologs are activators of the EE may explain the rhythmicity of cca1 lhy mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings about RVE8 function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "07cb3f2a-5e17-4357-9a61-e6c2644197a4",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C105",
+      "claim": "Reduction or loss of activity of the cycling repressor function (CCA1/LHY) would result in a phase advance, causing earlier expression of EE-containing target genes, but rhythms would persist due to clock-regulated RVE8 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction or loss of activity of the cycling repressor function (CCA1/LHY) would result in a phase advance, causing earlier expression of EE-containing target genes, but rhythms would persist due to clock-regulated RVE8 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the Ueda model and the findings about RVE8.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "5c28cc40-8de3-49f4-9198-b63b36fe69ed",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C106",
+      "claim": "cca1 and lhy single and double mutants show a phase advance and short-period phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a phase advance and consequent short-period phenotype is indeed observed in cca1 and lhy single and double mutants (Green and Tobin, 1999; Mizoguchi et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "a9afc4a8-24d6-4a5d-813f-cb8aba1b781c",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C107",
+      "claim": "CCA1/LHY and RVE8 contain a similar Myb-like DNA binding domain and belong to the same family of transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CCA1/LHY and RVE8 contain a similar Myb-like DNA binding domain and belong to the same family of transcription factors (Rawat et al., 2009, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "80dbe922-1cf0-4581-beb2-ec472b1c28ef",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C108",
+      "claim": "CCA1 and LHY serve as repressors and RVE8 as an activator of EE-containing genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though they have distinct biochemical functions, with CCA1 and LHY serving as repressors and RVE8 as an activator of EE-containing genes, both CCA1/LHY and RVE8 are responsible for shaping the circadian pattern of expression of evening-phased genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "179ca4a9-4d39-4fa5-b725-7c075ced425e",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C109",
+      "claim": "Both CCA1/LHY and RVE8 are responsible for shaping the circadian pattern of expression of evening-phased genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though they have distinct biochemical functions, with CCA1 and LHY serving as repressors and RVE8 as an activator of EE-containing genes, both CCA1/LHY and RVE8 are responsible for shaping the circadian pattern of expression of evening-phased genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data on CCA1/LHY and RVE8 function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "1adbb084-83a1-4fdf-8c57-7cd848539830",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C110",
+      "claim": "Current models of the plant clock suggest that it is composed of transcription factors that are primarily repressors of gene expression which interact to form interlocked morning and evening feedback loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Current models of the plant clock suggest that it is composed of transcription factors that are primarily repressors of gene expression which interact to form interlocked morning and evening feedback loops (Gendron et al., 2012; Huang et al., 2012; Pokhilko et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "0412eda1-be66-44e7-9b5a-47acad00655b",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C111",
+      "claim": "The RVEs are an integral part of the circadian oscillator but are primarily (and perhaps exclusively) activators of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We have demonstrated that the RVEs are an integral part of the circadian oscillator but are primarily (and perhaps exclusively) activators of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "b303772c-abaf-42ec-837f-4fc2ba3e8c57",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C112",
+      "claim": "RVE8 itself, with its morning-phased peak in transcript levels but afternoon-phased peak in protein levels, doesn't fit neatly into either the 'morning' or 'evening' category.",
+      "claim_type": "EXPLICIT",
+      "source": "RVE8 itself, with its morning-phased peak in transcript levels but afternoon-phased peak in protein levels (Rawat et al., 2011), doesn't fit neatly into either the 'morning' or 'evening' category.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on previous work cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "6abf804d-ead1-45cd-b252-23e3fe698be5",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C113",
+      "claim": "The highly interconnected nature of the regulatory interactions underlying the plant clock make it virtually impossible to identify discrete regulatory feedback loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the highly interconnected nature of the regulatory interactions underlying the plant clock (Figure 6C) make it virtually impossible to identify discrete regulatory feedback loops and suggest that the plant clock is best viewed as a highly interconnected, complex regulatory network.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the regulatory model shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "92d3f05c-60ab-4094-84f4-9185b152a0fc",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "claim_id": "C114",
+      "claim": "The plant clock is best viewed as a highly interconnected, complex regulatory network.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the highly interconnected nature of the regulatory interactions underlying the plant clock (Figure 6C) make it virtually impossible to identify discrete regulatory feedback loops and suggest that the plant clock is best viewed as a highly interconnected, complex regulatory network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ec7ff0ca-e3f2-479c-80d3-4918c1046910",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The RVE8:GR fusion protein is functional and exhibits time-of-day-dependent (gated) activity, with maximum induction of target genes in the afternoon. The fusion protein rescues the rve8-1 long-period phenotype when induced with DEX, and PRR5 induction is much stronger at ZT6 (afternoon) than at ZT0 (morning).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 are well-supported by luciferase imaging (Figure 1A,B) and qRT-PCR data (Figure 1C,D). The rescue of the rve8-1 phenotype by DEX treatment demonstrates functionality of the fusion protein, and the differential induction at different times of day is clearly shown. The gating conclusion is appropriately inferred from the time-of-day differences in target gene induction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "0e530d30-4edd-4d74-9e2e-7972a17ff441",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RVE8 regulates hundreds of genes genome-wide, with 583 genes up-regulated and 850 genes down-regulated upon RVE8 induction. RVE8 preferentially regulates clock-controlled genes (64% of induced and 62% of repressed genes are clock-controlled, compared to one-third expected by chance). RVE8-induced genes are enriched for evening phase while RVE8-repressed genes are enriched for morning phase. Many evening-phased oscillator genes (PRR5, TOC1, PRR3, GI, LUX, ELF4) are induced by RVE8, while morning-phased genes (CCA1, LHY, RVE8 itself, PRR9) are repressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C43 are strongly supported by RNA-seq data (Figure 2, Supplementary file 1). The statistical enrichment of clock-controlled genes among RVE8 targets is properly compared to genome-wide expectations. Phase distribution analysis clearly shows the complementary enrichment patterns. The specific clock genes regulated are documented in the supplementary data. The experimental design appropriately controls for DEX effects by comparing multiple genotypes and treatments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "62cdf931-649e-45a8-a2c5-22c3b7c13bd9",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Evening Element (EE) and EE-like sequences are significantly overrepresented in RVE8-induced clock-controlled genes compared to both all genes in the genome and all evening-phased clock-controlled genes. This suggests RVE8 may directly activate many evening genes via binding to the EE in their promoters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 and C27 are supported by motif analysis (Table 1A, Supplementary file 2A). The statistical overrepresentation is properly demonstrated using appropriate comparisons. The inference that RVE8 directly activates genes via EE binding (C46) is reasonable given the motif enrichment combined with previous binding data (cited), though the word 'may' appropriately indicates this is an inference rather than direct demonstration in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "4d8efa8f-69f3-49be-8faf-369fca644f19",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "G-box and morning element (ME) motifs are found at similar rates in RVE8-repressed genes and phase-matched clock-controlled genes, indicating RVE8 activity is not preferentially correlated with morning-associated motifs. This suggests RVE8 may directly activate evening-phased clock genes that then repress morning-phased genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by motif analysis (Table 1B). The lack of enrichment for morning-associated motifs in RVE8-repressed genes is properly demonstrated. The inference that RVE8 acts indirectly on morning genes (C49) is reasonable given the motif analysis, though this is further validated by the cycloheximide experiments discussed in other results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "aeafadff-1d20-4a48-9973-1851ef193e6a",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RVE8 directly activates evening-phased genes but indirectly represses morning-phased genes. All tested EE-containing evening-phased clock and output genes are robustly induced by RVE8 even in the presence of cycloheximide (CHX), while RVE8-mediated repression of morning genes is reduced or abolished in the presence of CHX.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are well-supported by cycloheximide experiments (Figure 3, Figure 3\u2014figure supplement 1). The CHX treatment is validated by showing increased accumulation of NMD pathway transcripts (C50). The differential response of evening vs. morning genes to CHX treatment provides strong evidence for direct vs. indirect regulation. The conclusion (C53) is appropriately inferred from the comprehensive set of genes tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "a284b93a-7201-443a-b4cd-2b1713fdc3ef",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RVE8 shapes the evening-phased expression of hundreds of genes, directly influencing a large number of circadian output pathways including responses to environment, hormone regulation, and metabolic processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is supported by the RNA-seq data showing hundreds of RVE8-regulated genes and functional classification analysis (Supplementary file 1H). The inference that RVE8 directly influences output pathways is reasonable given the combination of genome-wide expression data and the cycloheximide experiments showing direct activation of many genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "5d214e8c-12dd-4c62-beb9-dbb216c504de",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The mean peak phase for RVE8-regulated EE-containing clock-controlled genes is significantly earlier than that of all EE-containing clock-controlled genes, indicating RVE8 regulates a subset of evening genes with slightly earlier phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is supported by phase distribution analysis (Figure 4A) with appropriate statistical testing (p=0.007, Student's t-test). The data clearly show the narrower and earlier phase distribution of RVE8-regulated EE-containing genes compared to all EE-containing genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "9ef71bd2-4602-4d59-84fc-2ff486aea891",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RVE4, RVE6, and RVE8 play partially redundant roles in controlling circadian period. Single mutants rve4-1 and rve6-1 have normal period, but combining these with rve8-1 progressively lengthens the period. The rve4 rve6 rve8 triple mutant has a period approximately 4 hours longer than wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59, C5, and C29 are strongly supported by period measurements from luciferase imaging (Figure 4B). The additive genetic interactions clearly demonstrate partial redundancy. The approximately 4-hour period lengthening in the triple mutant is substantial and well-documented. Sample sizes appear adequate (34-50 plants per genotype).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "2e9540ab-b0d8-4367-baea-a8d20bdb3660",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Despite the severe long period phenotype, the rve4 rve6 rve8 triple mutant displays robust circadian rhythms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 is supported by luciferase imaging data (Figure 4C) showing clear rhythmic oscillations in the triple mutant. This is an important observation as it indicates the clock is still functional despite the severe period defect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "0d3fef20-f6f9-4a84-afd7-96107decd240",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The afternoon-phased EE-binding activity present in wild-type plant extracts is abolished in the rve4 rve6 rve8 triple mutant. Combined with previous affinity purification data, this strongly suggests RVE4, RVE6, and RVE8 comprise the clock-regulated, evening-phased EE-binding activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 and C28 are supported by EMSA data (Figure 4D) showing clear afternoon-phased binding in wild-type that is lost in the triple mutant. The inference that these three proteins comprise the afternoon EE-binding activity (C63) is well-supported by combining the loss-of-function data with previous affinity purification results (cited). The word 'strongly suggests' appropriately indicates this is a well-supported inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "8fb19819-b7d1-4607-a19e-de2058b72ede",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Higher-order rve mutants (rve6 rve8 double and rve4 rve6 rve8 triple) display significantly reduced and delayed expression of evening-phased clock genes (PRR5, TOC1) in both light/dark cycles and constant light conditions. The delay in onset of expression is progressively greater in higher-order mutants, consistent with their longer periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66, C4, and C30 are supported by qRT-PCR data (Figure 5A,B,E,F and Figure 5\u2014figure supplement 1A). The reduced and delayed expression of evening genes is clearly demonstrated across multiple conditions. The correlation between the degree of delay and period length strengthens the conclusion. The contrast with the rve8-1 single mutant (which has normal evening gene expression) demonstrates the importance of genetic redundancy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "5542b32c-fd08-4a1e-a122-5b7fc32275bd",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Morning-phased clock genes CCA1 and LHY show no obvious differences in expression levels during the day in rve4 rve6 rve8 mutants compared to wild-type, but display slightly reduced transcript levels in the late night (ZT21) in light/dark cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by qRT-PCR data (Figure 5C,D,G,H). The lack of daytime differences and the slight late-night reduction are clearly shown. The authors appropriately note this might be explained by the long period phenotype or elevated TOC1 levels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "b6a9d871-78ba-4bec-946e-557970a9f707",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "De-synchronization between evening and morning genes is observed in rve4 rve6 rve8 triple mutants, with evening genes showing greater phase delays than morning genes. At ZT36, evening genes (PRR5, TOC1) show ~6 hr delay while morning genes (CCA1, LHY) show ~3 hr delay. At ZT48, evening genes show ~9 hr delay while morning genes show ~6 hr delay. The evening gene TOC1 shows significant waveform changes not seen in the morning gene LHY. This suggests the long period is mainly caused by delayed expression of evening genes, which then indirectly causes delayed expression of morning genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C75 and C100 are strongly supported by detailed time-course qRT-PCR data (Figure 5E-P). The differential phase delays for evening vs. morning genes are clearly documented at multiple time points. The waveform analysis (Figure 5M,O) provides additional evidence. The inference that evening gene delays are primary and morning gene delays are secondary (C75, C100) is well-supported by the temporal pattern of effects and is consistent with the direct activation of evening genes by RVE8 shown in the cycloheximide experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "5fddb1e0-f00c-43c9-bde9-9eb24514a3a8",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RVE8 expression is significantly reduced in toc1-4, lux-1, and CCA1-OX mutants. Multiple PRR genes are up-regulated at dawn (ZT0) in these mutants. This is consistent with a model in which PRRs directly repress RVE8 expression and other clock genes indirectly control RVE8 expression via regulation of PRR5, 7, and 9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 are supported by qRT-PCR data (Figure 6A,B). The reduced RVE8 expression and elevated PRR expression in the mutants are clearly shown. The model (C79) is appropriately presented as an inference ('consistent with') and is supported by the data combined with previous work showing PRR5 binds the RVE8 promoter (cited).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "25e8d6e0-69db-4987-87ae-735106adc64f",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PRRs and RVEs regulate each other to form a negative transcriptional feedback loop. PRR5 and PRR9 are directly activated by RVE8, and their peak transcript levels are reduced in rve4 rve6 rve8 mutants. RVE8 expression is increased in prr5 prr7 prr9 mutants, and PRR5 directly binds to the RVE8 promoter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 are supported by combining data from this study (cycloheximide experiments showing direct activation of PRR5 and PRR9 by RVE8, Figure 3A and Figure 3\u2014figure supplement 1E; reduced PRR expression in triple mutants, Figure 5) with cited previous work (increased RVE8 in prr mutants, PRR5 binding to RVE8 promoter). The conclusion of a negative feedback loop (C84) is well-supported by the mutual regulation demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "ac9cd2f5-8a79-47e6-8763-fe03b5f35d17",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "RVE8 is an important regulator of both the clock itself and output pathways, and is unique among Arabidopsis clock genes in that it acts primarily, and perhaps even exclusively, as an activator of gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 are supported by the comprehensive data showing hundreds of RVE8-regulated genes (RNA-seq), direct activation of evening genes (cycloheximide experiments), and indirect repression of morning genes. The uniqueness claim (C87) is appropriately qualified ('primarily, and perhaps even exclusively') and is supported by the contrast with other characterized clock components that act as repressors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "eb4dd96e-374d-403e-ac0b-bbf358d7b2a2",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Most RVE8-induced transcripts peak between CT8 and CT12, approximately 2-6 hours after peak RVE8 protein levels. This delay is consistent with a mathematical model predicting that when a cycling repressor (CCA1/LHY, peaking in morning) precedes a cycling activator (RVE8, peaking in afternoon), the output peak occurs after the activator peak.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 are supported by phase distribution data (Figure 2G) and cited previous work on CCA1/LHY protein timing and mathematical modeling. The observed timing is consistent with the 'repressor-precedes-activator' model. This provides a mechanistic explanation for the phase of RVE8 target genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "0a0ab0df-4235-4474-9d94-2929ae9d75ef",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "RVE8 is a direct transcriptional activator of EE-containing clock and output genes, and a clock-regulated activator is essential for both clock progression and control of clock outputs. The RVEs are an integral part of the circadian oscillator but are primarily (and perhaps exclusively) activators of gene expression. The plant clock is best viewed as a highly interconnected, complex regulatory network rather than discrete feedback loops.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C6, C7, C111, C113, and C114 represent the major conclusions of the study. These are well-supported by the comprehensive experimental evidence: (1) direct activation demonstrated by cycloheximide experiments, (2) essentiality for clock function shown by severe period phenotype in triple mutants, (3) control of outputs shown by genome-wide expression profiling, (4) activator function demonstrated by cycloheximide experiments, and (5) network complexity shown by the extensive regulatory interactions documented (Figure 6C). The conclusions appropriately synthesize the multiple lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background knowledge about the Arabidopsis circadian clock: Current models consist of coupled feedback loops of transcriptional repressors, with CCA1/LHY repressing evening genes via EE motifs. The EE is overrepresented in evening gene promoters and sufficient for evening-phased expression. Previous evidence suggested an afternoon-phased EE activator exists. RVE8 was a candidate activator based on EE binding, afternoon protein peak, and long-period phenotype in mutants, though single mutants showed no effect on evening gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C24 represent background knowledge and prior work, all supported by appropriate citations. These claims establish the context and rationale for the current study. The citations appear appropriate and the statements accurately represent the cited work based on the context provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "22e0885e-9613-46e2-9c62-dab4a3395176",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Additional background and comparative information: Clock genes can directly regulate output genes in plants and mammals. CCA1/LHY have ungated activity while RVE8 is gated, explaining different overexpression phenotypes. Mathematical models predict phase relationships between repressors and activators. RVE4, 5, 6 associate with EE. Various clock mutants have characteristic period phenotypes. cca1 lhy mutants maintain rhythms with short period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C110 (selected) represent additional background information and comparisons to other systems, all supported by appropriate citations. These provide important context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "ee4bdc99-1f5d-4dbf-a43a-d789e3e451e1",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Speculative interpretations: The clock may fine-tune EE-containing gene expression through multiple promoter motifs. The discovery that RVE8 and homologs are EE activators may explain rhythmicity in cca1 lhy mutants. Loss of CCA1/LHY repressor function would cause phase advance but rhythms would persist due to RVE8 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94, C104, and C105 are explicitly speculative ('may explain', 'would result'). While these are reasonable hypotheses based on the data and models discussed, they are not directly tested in this study. C94 is speculation about mechanisms of phase diversity. C104-C105 are speculative explanations for the cca1 lhy mutant phenotype. These are appropriately presented as speculation rather than demonstrated conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "3f731887-0683-4abf-a32f-b37b606b35a9",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "CCA1/LHY serve as repressors and RVE8 as an activator of EE-containing genes, and both are responsible for shaping the circadian pattern of expression of evening-phased genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C109 synthesize findings from this study (RVE8 as activator) with previous work (CCA1/LHY as repressors). The conclusion that both shape evening gene expression (C109) is well-supported by the combined evidence, including the persistence of rhythms in cca1 lhy mutants and the severe phenotype when RVE activators are removed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    },
+    {
+      "id": "1cb7f629-03f2-46e0-846a-f23906c2ae8a",
+      "content_id": "06e48b81-db88-46a9-97a7-7e4dfaedc47a",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "RVE8, with its morning-phased transcript peak but afternoon-phased protein peak, doesn't fit neatly into either the 'morning' or 'evening' category.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C112 is an observation based on cited previous work showing the discordant timing of RVE8 transcript and protein. This observation supports the broader conclusion that the simple morning/evening loop model is inadequate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:59:26.034171Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7d432f5d-54aa-40fe-a7a5-9630eca77ef3",
+      "result_id": "ec7ff0ca-e3f2-479c-80d3-4918c1046910"
+    },
+    {
+      "claim_id": "874d5e83-21d5-4207-b8ff-ede3f29d2ff2",
+      "result_id": "ec7ff0ca-e3f2-479c-80d3-4918c1046910"
+    },
+    {
+      "claim_id": "476cc7ba-f42b-4b8f-84a5-d290253e2d30",
+      "result_id": "ec7ff0ca-e3f2-479c-80d3-4918c1046910"
+    },
+    {
+      "claim_id": "e2580428-dac4-47d5-bf71-be65cbf930e4",
+      "result_id": "ec7ff0ca-e3f2-479c-80d3-4918c1046910"
+    },
+    {
+      "claim_id": "97e4ac83-8cbc-4057-8127-abc0c779d543",
+      "result_id": "0e530d30-4edd-4d74-9e2e-7972a17ff441"
+    },
+    {
+      "claim_id": "db6938e9-799e-4cdf-adc0-37de5d2bdf78",
+      "result_id": "0e530d30-4edd-4d74-9e2e-7972a17ff441"
+    },
+    {
+      "claim_id": "5bd062b0-0f03-4fdb-9532-0ca22ad9bf8e",
+      "result_id": "0e530d30-4edd-4d74-9e2e-7972a17ff441"
+    },
+    {
+      "claim_id": "4852c351-6419-4a46-b19a-28c0629f8855",
+      "result_id": "0e530d30-4edd-4d74-9e2e-7972a17ff441"
+    },
+    {
+      "claim_id": "20ef0bca-92b8-4c05-9d46-1c85c231ee94",
+      "result_id": "0e530d30-4edd-4d74-9e2e-7972a17ff441"
+    },
+    {
+      "claim_id": "9af3b872-d6d5-4eb5-a2d6-ac5be7051f18",
+      "result_id": "0e530d30-4edd-4d74-9e2e-7972a17ff441"
+    },
+    {
+      "claim_id": "c5fc9a24-f568-4629-8dc9-b5f37529a68c",
+      "result_id": "0e530d30-4edd-4d74-9e2e-7972a17ff441"
+    },
+    {
+      "claim_id": "be1024c7-324b-47fa-9553-9c114af78a8e",
+      "result_id": "0e530d30-4edd-4d74-9e2e-7972a17ff441"
+    },
+    {
+      "claim_id": "123e4142-6f2c-4d1f-99d3-db091f9c2d1d",
+      "result_id": "0e530d30-4edd-4d74-9e2e-7972a17ff441"
+    },
+    {
+      "claim_id": "5246a082-d1b5-4775-a053-0d0d2a89ad1b",
+      "result_id": "0e530d30-4edd-4d74-9e2e-7972a17ff441"
+    },
+    {
+      "claim_id": "df042626-3526-4cb9-8c9d-bb419d0f39eb",
+      "result_id": "62cdf931-649e-45a8-a2c5-22c3b7c13bd9"
+    },
+    {
+      "claim_id": "aabf4988-a393-44a7-94d6-959aba4b98c7",
+      "result_id": "62cdf931-649e-45a8-a2c5-22c3b7c13bd9"
+    },
+    {
+      "claim_id": "c9277a5b-2960-4c00-a7db-4b29d5f63673",
+      "result_id": "62cdf931-649e-45a8-a2c5-22c3b7c13bd9"
+    },
+    {
+      "claim_id": "3a88ec77-3c40-455d-a6b0-cb015c3f5d39",
+      "result_id": "62cdf931-649e-45a8-a2c5-22c3b7c13bd9"
+    },
+    {
+      "claim_id": "8efad5fc-28e4-4518-b43d-0bd5f586cf32",
+      "result_id": "4d8efa8f-69f3-49be-8faf-369fca644f19"
+    },
+    {
+      "claim_id": "a45af41c-3a8e-43bf-b486-2f46743c978d",
+      "result_id": "4d8efa8f-69f3-49be-8faf-369fca644f19"
+    },
+    {
+      "claim_id": "e23146a5-9c9e-470e-b973-3d774bd3e007",
+      "result_id": "4d8efa8f-69f3-49be-8faf-369fca644f19"
+    },
+    {
+      "claim_id": "2eb090ad-538c-4128-ba0c-76c5589fc364",
+      "result_id": "aeafadff-1d20-4a48-9973-1851ef193e6a"
+    },
+    {
+      "claim_id": "38490008-3a6d-4127-b6da-1966a4feb4cb",
+      "result_id": "aeafadff-1d20-4a48-9973-1851ef193e6a"
+    },
+    {
+      "claim_id": "3b548e77-ff87-4873-926b-aee2623a05e5",
+      "result_id": "aeafadff-1d20-4a48-9973-1851ef193e6a"
+    },
+    {
+      "claim_id": "3bbe8236-cf0c-4513-a63c-7ad3e6ea6d28",
+      "result_id": "aeafadff-1d20-4a48-9973-1851ef193e6a"
+    },
+    {
+      "claim_id": "ab05245d-e32c-440c-b205-d7cee0b0d7d3",
+      "result_id": "aeafadff-1d20-4a48-9973-1851ef193e6a"
+    },
+    {
+      "claim_id": "2108b32a-e8cb-496b-9ce2-2567cfffd700",
+      "result_id": "a284b93a-7201-443a-b4cd-2b1713fdc3ef"
+    },
+    {
+      "claim_id": "a898965e-3712-45b2-a814-6e04417f4d24",
+      "result_id": "5d214e8c-12dd-4c62-beb9-dbb216c504de"
+    },
+    {
+      "claim_id": "688bb6c5-0722-4113-9288-c0ad36dc36ea",
+      "result_id": "9ef71bd2-4602-4d59-84fc-2ff486aea891"
+    },
+    {
+      "claim_id": "b877ed65-4a48-4927-b6b9-c89688f97820",
+      "result_id": "9ef71bd2-4602-4d59-84fc-2ff486aea891"
+    },
+    {
+      "claim_id": "1a5c878d-3349-4d5b-b3c3-136f7140265d",
+      "result_id": "9ef71bd2-4602-4d59-84fc-2ff486aea891"
+    },
+    {
+      "claim_id": "97b29d8a-25f4-4f9b-8760-21012371ef8b",
+      "result_id": "9ef71bd2-4602-4d59-84fc-2ff486aea891"
+    },
+    {
+      "claim_id": "e4990402-74a3-42f8-b30c-62b21b22d734",
+      "result_id": "9ef71bd2-4602-4d59-84fc-2ff486aea891"
+    },
+    {
+      "claim_id": "c85d671f-0127-4a81-89ba-d5458e86bbab",
+      "result_id": "9ef71bd2-4602-4d59-84fc-2ff486aea891"
+    },
+    {
+      "claim_id": "dbc20f5e-eac1-4fab-8966-623438be91e4",
+      "result_id": "2e9540ab-b0d8-4367-baea-a8d20bdb3660"
+    },
+    {
+      "claim_id": "8353b90d-5205-4bcb-b4a2-4d765e45b1e3",
+      "result_id": "0d3fef20-f6f9-4a84-afd7-96107decd240"
+    },
+    {
+      "claim_id": "b4ae75d1-bcbb-4759-a5d5-edb658260372",
+      "result_id": "0d3fef20-f6f9-4a84-afd7-96107decd240"
+    },
+    {
+      "claim_id": "53143760-2c41-4bce-9529-675426a6ca42",
+      "result_id": "0d3fef20-f6f9-4a84-afd7-96107decd240"
+    },
+    {
+      "claim_id": "314ec16c-98b7-48c8-a9c1-67f5a8375285",
+      "result_id": "0d3fef20-f6f9-4a84-afd7-96107decd240"
+    },
+    {
+      "claim_id": "266fc0ba-8690-4770-aafe-ed2ba9319201",
+      "result_id": "8fb19819-b7d1-4607-a19e-de2058b72ede"
+    },
+    {
+      "claim_id": "6ee52d55-6030-41df-8a13-43ec90b7287e",
+      "result_id": "8fb19819-b7d1-4607-a19e-de2058b72ede"
+    },
+    {
+      "claim_id": "329ee0ac-ef7f-4764-9db5-482db7f82a84",
+      "result_id": "8fb19819-b7d1-4607-a19e-de2058b72ede"
+    },
+    {
+      "claim_id": "4d827985-a41a-4680-9999-51baa30e4a0f",
+      "result_id": "8fb19819-b7d1-4607-a19e-de2058b72ede"
+    },
+    {
+      "claim_id": "4a516f10-6ee4-42f4-a926-6b45d4d19734",
+      "result_id": "8fb19819-b7d1-4607-a19e-de2058b72ede"
+    },
+    {
+      "claim_id": "4699abec-351b-4d02-afee-508c7ea41196",
+      "result_id": "5542b32c-fd08-4a1e-a122-5b7fc32275bd"
+    },
+    {
+      "claim_id": "f3e98f08-04e3-439b-b85a-f11ffc4e1928",
+      "result_id": "5542b32c-fd08-4a1e-a122-5b7fc32275bd"
+    },
+    {
+      "claim_id": "2728fdbd-ff6a-4ad7-95f2-09f774cda928",
+      "result_id": "b6a9d871-78ba-4bec-946e-557970a9f707"
+    },
+    {
+      "claim_id": "79dc7288-f5d3-44c1-bffc-6c04149c20a5",
+      "result_id": "b6a9d871-78ba-4bec-946e-557970a9f707"
+    },
+    {
+      "claim_id": "14e4fe30-1368-4a3e-aa1a-4b5b5fdbf105",
+      "result_id": "b6a9d871-78ba-4bec-946e-557970a9f707"
+    },
+    {
+      "claim_id": "d22b068d-83e1-46a1-97d2-8a045d4c6e40",
+      "result_id": "b6a9d871-78ba-4bec-946e-557970a9f707"
+    },
+    {
+      "claim_id": "e74e4737-5e0a-4820-9c43-6aa1ed5f435e",
+      "result_id": "b6a9d871-78ba-4bec-946e-557970a9f707"
+    },
+    {
+      "claim_id": "a1f686f2-d847-4562-bd12-ecefba55a99b",
+      "result_id": "b6a9d871-78ba-4bec-946e-557970a9f707"
+    },
+    {
+      "claim_id": "fc5182f3-8cd1-4d85-bca8-c8c46d5090d1",
+      "result_id": "b6a9d871-78ba-4bec-946e-557970a9f707"
+    },
+    {
+      "claim_id": "0b707a13-2ef4-4b0a-88df-3869b6c3e643",
+      "result_id": "b6a9d871-78ba-4bec-946e-557970a9f707"
+    },
+    {
+      "claim_id": "62295860-b9c0-4746-8659-a175e8be1c28",
+      "result_id": "5fddb1e0-f00c-43c9-bde9-9eb24514a3a8"
+    },
+    {
+      "claim_id": "dc1f97da-415a-42dc-a52b-93cb094ff9cb",
+      "result_id": "5fddb1e0-f00c-43c9-bde9-9eb24514a3a8"
+    },
+    {
+      "claim_id": "dc5ae44e-7b00-4e89-b07c-39e4a483088e",
+      "result_id": "5fddb1e0-f00c-43c9-bde9-9eb24514a3a8"
+    },
+    {
+      "claim_id": "4ac9f605-ec0b-4a80-9a9e-7198b4cf59cc",
+      "result_id": "5fddb1e0-f00c-43c9-bde9-9eb24514a3a8"
+    },
+    {
+      "claim_id": "c22b1edd-8c65-43f1-96bd-95f2672ee2fd",
+      "result_id": "25e8d6e0-69db-4987-87ae-735106adc64f"
+    },
+    {
+      "claim_id": "833ba5e1-7793-43f3-85bc-598efc885218",
+      "result_id": "25e8d6e0-69db-4987-87ae-735106adc64f"
+    },
+    {
+      "claim_id": "4532cdbd-de5c-46fb-b247-8713f83ada67",
+      "result_id": "25e8d6e0-69db-4987-87ae-735106adc64f"
+    },
+    {
+      "claim_id": "8ea1aa4a-7ddc-4758-9e00-9fae34891e35",
+      "result_id": "25e8d6e0-69db-4987-87ae-735106adc64f"
+    },
+    {
+      "claim_id": "88cc6de4-c36b-4356-ab25-10327222882d",
+      "result_id": "25e8d6e0-69db-4987-87ae-735106adc64f"
+    },
+    {
+      "claim_id": "6efc3ce1-a184-4bd2-8cb3-de30a4f5d467",
+      "result_id": "ac9cd2f5-8a79-47e6-8763-fe03b5f35d17"
+    },
+    {
+      "claim_id": "d7ab44d4-32dd-4a6c-a90e-bad5907ad529",
+      "result_id": "ac9cd2f5-8a79-47e6-8763-fe03b5f35d17"
+    },
+    {
+      "claim_id": "b4e09dba-abc6-48b1-87f5-44a1bf933875",
+      "result_id": "eb4dd96e-374d-403e-ac0b-bbf358d7b2a2"
+    },
+    {
+      "claim_id": "6e222f1b-f74b-43e7-8483-d3244009ec7c",
+      "result_id": "eb4dd96e-374d-403e-ac0b-bbf358d7b2a2"
+    },
+    {
+      "claim_id": "ad61de27-24dd-4c41-9ee0-b1bb81800672",
+      "result_id": "eb4dd96e-374d-403e-ac0b-bbf358d7b2a2"
+    },
+    {
+      "claim_id": "b6ff25a2-c75c-481c-a47e-0147c300acaf",
+      "result_id": "0a0ab0df-4235-4474-9d94-2929ae9d75ef"
+    },
+    {
+      "claim_id": "288944c7-3076-4d34-8d60-819bafc39d66",
+      "result_id": "0a0ab0df-4235-4474-9d94-2929ae9d75ef"
+    },
+    {
+      "claim_id": "9479ed08-1e52-402f-93a3-335fb7417c5c",
+      "result_id": "0a0ab0df-4235-4474-9d94-2929ae9d75ef"
+    },
+    {
+      "claim_id": "0412eda1-be66-44e7-9b5a-47acad00655b",
+      "result_id": "0a0ab0df-4235-4474-9d94-2929ae9d75ef"
+    },
+    {
+      "claim_id": "6abf804d-ead1-45cd-b252-23e3fe698be5",
+      "result_id": "0a0ab0df-4235-4474-9d94-2929ae9d75ef"
+    },
+    {
+      "claim_id": "92d3f05c-60ab-4094-84f4-9185b152a0fc",
+      "result_id": "0a0ab0df-4235-4474-9d94-2929ae9d75ef"
+    },
+    {
+      "claim_id": "fd5dfea4-5c48-4c0c-93e0-679b0de4ff24",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "100a03e3-5287-42a4-a8a3-df5632798d37",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "e22faf7c-284f-4d72-8bc4-14f5ba866fb1",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "fc597b6a-01a6-4bbd-824c-e6a1d5c8722a",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "c202dbe9-1ac4-4c97-b77a-a294656dfefe",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "5fa391a5-4117-4a82-bb40-6b1194a3e42b",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "9db4c680-332d-4817-922b-0b098c5e876b",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "e392fb02-3bb4-42c0-be65-6144e54dd06b",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "1e080155-518d-4a68-b6b4-0cc0116f7f06",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "ea39d7a2-ffe0-461e-949a-86f7a53c64a9",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "f2bdb31e-ef9e-491e-8421-b74faf142e15",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "02131af9-7e4a-4b7f-ae8d-dc26e6d573db",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "f9965262-9154-4b8c-a804-4220b740e3fd",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "999ba4ed-2bc7-411a-8ed0-249104d759e7",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "2da45fe3-a694-4105-ad20-856a6a00b416",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "ec8bb6f9-e9b1-42e2-8011-ab1e9e204adf",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "b65efd8f-6ab0-481d-bdfd-0bde39f29f83",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "0e6b43f4-a3e8-485b-9d90-956890e43ceb",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "5aa168e5-de71-4ca6-9b4d-0716c787d85c",
+      "result_id": "3c8a57b1-daf3-4dfc-af62-2df7a1988fee"
+    },
+    {
+      "claim_id": "d597e5f4-1bac-4edc-a93b-621c990c521c",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "742dd9d2-a273-422f-b47c-ee946bed2199",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "cda23917-3581-42de-b101-bf1adee88d7d",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "a8b73dad-9923-4553-8aba-a8cac23ffdbc",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "6e222f1b-f74b-43e7-8483-d3244009ec7c",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "ad61de27-24dd-4c41-9ee0-b1bb81800672",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "b17a2954-016e-4e3f-a9e1-1236f9794f96",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "201970d0-336d-42c5-8457-d36f55a0cef1",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "ce386602-01b1-486f-8f21-817f0fedc940",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "441c3f57-3c27-4deb-a41f-879b4df2b108",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "9783238b-d232-4933-9415-0d8b3b8106eb",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "80c9e929-e7ee-49cf-8e01-8e0217802bee",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "f65e2eab-5b7e-4cfb-924d-a65bcf17ecd0",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "c5568d83-444a-4751-b6b7-b72630eef673",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "5c28cc40-8de3-49f4-9198-b63b36fe69ed",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "a9afc4a8-24d6-4a5d-813f-cb8aba1b781c",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "1adbb084-83a1-4fdf-8c57-7cd848539830",
+      "result_id": "22e0885e-9613-46e2-9c62-dab4a3395176"
+    },
+    {
+      "claim_id": "fb8cd25d-1f74-44a9-b17b-4d9f052a52bd",
+      "result_id": "ee4bdc99-1f5d-4dbf-a43a-d789e3e451e1"
+    },
+    {
+      "claim_id": "b1729f3c-1224-4238-bf97-e3f554bc23bc",
+      "result_id": "ee4bdc99-1f5d-4dbf-a43a-d789e3e451e1"
+    },
+    {
+      "claim_id": "07cb3f2a-5e17-4357-9a61-e6c2644197a4",
+      "result_id": "ee4bdc99-1f5d-4dbf-a43a-d789e3e451e1"
+    },
+    {
+      "claim_id": "80dbe922-1cf0-4581-beb2-ec472b1c28ef",
+      "result_id": "3f731887-0683-4abf-a32f-b37b606b35a9"
+    },
+    {
+      "claim_id": "179ca4a9-4d39-4fa5-b725-7c075ced425e",
+      "result_id": "3f731887-0683-4abf-a32f-b37b606b35a9"
+    },
+    {
+      "claim_id": "b303772c-abaf-42ec-837f-4fc2ba3e8c57",
+      "result_id": "1cb7f629-03f2-46e0-846a-f23906c2ae8a"
+    }
+  ],
+  "comparisons": []
+}

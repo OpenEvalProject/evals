@@ -2,13 +2,221 @@
   {
     "result_id": "R1",
     "claim_ids": [
+      "C7",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors identified loop 5-6 (L5-6) of AMT1;3 as a suitable insertion site for mcpGFP. Insertion at position K233 in L5-6 was tolerated and maintained transport activity, while insertions in other loops or with different fluorescent proteins (mTFP, Venus) abolished activity. L5-6 connects transmembrane helices V and VI, which are proposed to undergo conformational changes during transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 provide converging experimental evidence from growth complementation assays (Figure 1B) and structural modeling (Figure 1C) that L5-6 is uniquely permissive for mcpGFP insertion while maintaining function. The structural rationale linking L5-6 to TMH-V and -VI movement is supported by cited literature and provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Through systematic linker optimization, the authors generated AmTrac, a functional sensor with a 40% fluorescence intensity change upon ammonium addition. The optimal variant had mcpGFP inserted at position 233 with Leu-Glu and Phe-Asn linkers. Both transport activity and fluorescence response were highest with central L5-6 insertions, showing clear correlation. All fluorescence-responsive variants were functional transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 describe a systematic optimization process with clear experimental support (Figures 2-3). The correlation between transport activity and fluorescence response (C37, Figure 3B) is quantitatively demonstrated. The finding that all responsive variants maintain transport function (C39) is critical for establishing the sensor reports transport-related processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "AmTrac exhibits concentration-dependent, reversible fluorescence responses to ammonium with kinetics matching transport activity. The EC50 for fluorescence response (55 \u00b1 7 \u00b5M) closely matches the Km for ammonium transport measured by TEVC in oocytes (~50 \u00b5M) and previously reported transport kinetics in Arabidopsis roots (57 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 demonstrate tight correlation between sensor response and transport kinetics across multiple experimental systems (yeast, oocytes, plants). The near-identical affinity constants (EC50 vs Km) provide strong quantitative evidence that fluorescence reports transport-related processes. Single-cell reversibility data (C43, Figure 4D) further validates the sensor's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "AmTrac retains the substrate selectivity of AMT1;3, responding specifically to ammonium but not to potassium or other cations (Na+, K+, Ca2+, Mg2+, Mn2+, Zn2+). Different ammonium salts (NH4Cl, NH4NO3, (NH4)2SO4) elicited equivalent responses, demonstrating the anion does not affect fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are well-supported by systematic specificity testing (Figure 4E). The retention of ammonium selectivity over potassium is particularly important given the structural similarity of these ions. Statistical significance is reported (SNK test: p<0.01), strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Linker optimization generated AmTrac-LS, a variant ~5-fold brighter than AmTrac while maintaining equivalent ammonium responsiveness (~40% FI change). Spectroscopic characterization revealed excitation maxima at ~380 nm and ~495 nm with emission at ~513 nm. Ammonium addition caused intensity decreases without spectral shifts. Linker modifications did not significantly affect transport kinetics or EC50.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 describe successful sensor optimization with clear experimental support (Figures 5B-D). The spectroscopic characterization (C48-C50) provides important mechanistic insight that the sensor operates via intensity modulation rather than spectral shifts. The preservation of kinetic parameters (C51-C52) validates that optimization did not compromise sensor fidelity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Mutations (D202N, G460D, T464D) that abolish AMT1 transport activity eliminated both transport and fluorescence response without affecting plasma membrane localization. Transport-deficient AmTrac variants showed no fluorescence response when expressed in wild-type yeast with functional endogenous transporters. Intracellular ammonium generation from arginine catabolism failed to trigger AmTrac response, indicating the sensor responds to extracellular, not intracellular, ammonium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 provide multiple lines of evidence that fluorescence reports transporter activity rather than cytosolic ammonium accumulation. The wild-type yeast experiment (C55, Figure 6D) is particularly compelling as a negative control. The arginine catabolism experiment (C56, Figure 6E) further excludes intracellular ammonium as the trigger. These controls are essential for validating the sensor mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "A suppressor screen of inactive AmTrac-T464D identified eight gain-of-function mutations, seven in the pore region and one pseudo-reversion (D464V). The extent of transport activity restoration correlated highly with fluorescence response restoration (R\u00b2=0.72), further supporting the link between transport and fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 describe an elegant genetic approach to validate sensor function. The high correlation (R\u00b2=0.72, Figure 7E-F) between restored transport and restored fluorescence response provides strong independent evidence that the sensor reports transport activity. The identification of pore region mutations is consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The suppressor mutant AmTrac-T464D-A141E (AmTrac-100\u00b5) functions as a low-affinity/high-capacity transporter with Km ~3.5 mM and EC50 = 101 \u00b1 10 \u00b5M, demonstrating that altered transport kinetics are reflected in altered fluorescence response kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 demonstrate that the sensor faithfully reports altered transport properties. The parallel shift in both Km (transport) and EC50 (fluorescence) provides additional evidence for tight coupling between transport and sensor response. This result extends the sensor's utility to different affinity ranges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The sensor design strategy was successfully transferred to AMT1;2 and yeast MEP2, generating functional AmTrac1;2 and MepTrac sensors in a single step using optimized linker and position information. MepTrac-H194E showed enhanced response consistent with its broader pH optimum. All sensors showed dose-dependent responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 demonstrate the generalizability of the approach across evolutionarily distant transporters (22% identity between AMT1;3 and MEP2). The single-step generation (C67) validates the design principles. The H194E result (C65) shows the sensor reports known functional properties, further validating the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C75"
+    ],
+    "result": "The fluorescence responses of AmTrac variants and MepTrac support the hypothesis that these transporters undergo conformational changes during transport, specifically that TMH-V and -VI move relative to each other, affecting L5-6 conformation and gating mcpGFP fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C75 present mechanistic interpretations consistent with the experimental data. While the exact conformational changes cannot be definitively determined without structural studies (as the authors acknowledge), the data strongly support conformational rearrangements during transport. This challenges the 'rigid gas channel' model (C70) and is consistent with LeuT-like transport mechanisms (C72-C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C80"
+    ],
+    "result": "The characteristics of AmTrac\u2014including indistinguishable transport and fluorescence kinetics, reversibility, tight correlation between transport activity and fluorescence response, correlated affinity shifts, and restoration of fluorescence by reconstitution of transport\u2014indicate that AmTrac sensors measure processes occurring during the transport cycle or intimately connected to transport activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C80 synthesize multiple lines of evidence presented throughout the manuscript. The five characteristics listed provide converging support for the conclusion that the sensor reports transport-related processes. This is the central claim of the paper and is well-supported by the comprehensive experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C84"
+    ],
+    "result": "The authors acknowledge that the data do not exclude the possibility that sensors report extracellular ammonium binding rather than the full transport cycle, as binding is part of the transport cycle. The fluorescence change could result from ammonium binding, specific transport cycle steps, or the full transport cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C84 represent appropriate scientific caution about mechanistic interpretation. The authors correctly note that distinguishing between binding and transport steps requires additional experiments. This honest assessment of limitations is appropriate and does not diminish the utility of the sensors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
       "C1",
       "C2",
       "C3",
       "C4",
       "C5",
       "C6",
-      "C14",
+      "C13"
+    ],
+    "result": "The authors establish the biological importance of ammonium transport and the limitations of existing methods. Ammonium is a key nitrogen source but toxic in excess. While transport can be characterized in heterologous systems, measuring transporter activity in vivo has been challenging, and direct monitoring of transporter activity and regulation in vivo was not previously possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C13 provide established background knowledge that contextualizes the need for the developed sensors. These claims are well-supported by the cited literature and represent accurate statements about the field. They establish the motivation for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C14"
+    ],
+    "result": "The authors review existing technologies for studying cellular processes, noting that patch clamping is limited to membrane processes or surface cells, while fluorescent proteins and FRET sensors have enabled monitoring of cellular processes and analyte levels in live cells. Circularly-permutated GFP has been successfully used to monitor conformational changes in proteins like calmodulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C14 accurately summarize established technologies and their limitations, supported by appropriate citations. This background establishes the conceptual foundation for the sensor design strategy and positions the work within the broader field of biosensor development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
       "C16",
       "C17",
       "C18",
@@ -21,248 +229,52 @@
       "C25",
       "C26"
     ],
-    "result": "Background knowledge on ammonium transport and regulation. Ammonium is a key nitrogen source but toxic in excess. Ammonium transporters (AMTs/MEPs) mediate uptake and are subject to complex regulation, including allosteric feedback inhibition via phosphorylation. However, measuring transporter activity in vivo remains challenging, limiting understanding of regulatory networks.",
+    "result": "The authors provide comprehensive background on ammonium transporters, including their biological roles, electrogenic transport mechanism, genetic organization in Arabidopsis, regulation by feedback inhibition and phosphorylation, and dual transceptor functions in controlling development.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims establish the biological and technical context for the study. They are supported by appropriate citations to prior literature (C17-C26) and represent established knowledge in the field (C1-C6, C14, C16). The claims accurately describe the state of knowledge and technical limitations that motivate the current work.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R2",
-    "claim_ids": [
-      "C7",
-      "C8",
-      "C9",
-      "C10"
-    ],
-    "result": "Development of fluorescent ammonium transporter activity sensors (AmTrac and MepTrac). The authors created novel sensors by inserting circularly-permutated GFP into ammonium transporters, which produce concentration-dependent fluorescence changes that correlate with transporter activity, enabling in vivo monitoring of transport processes.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "This is the central finding of the manuscript. Claims C7-C9 are directly supported by extensive experimental data throughout the figures (Figures 2-9), showing functional sensors with concentration-dependent responses. Claim C10 is a reasonable inference about the utility of this technology. The correlation between fluorescence and activity is demonstrated in multiple independent experiments (C9, C39, C42, C68).",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R3",
-    "claim_ids": [
-      "C27",
-      "C28",
-      "C29",
-      "C30",
-      "C31"
-    ],
-    "result": "Identification of loop 5-6 as a suitable insertion site for cpGFP. Loop 5-6 (L5-6) of AMT1;3 tolerated insertion of mcpGFP while maintaining transport activity, whereas insertions in other loops or with other fluorescent proteins abolished function. L5-6 connects transmembrane helices involved in substrate translocation and may undergo conformational changes during transport.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C27-C29 are directly supported by experimental data in Figure 1B showing differential tolerance to insertions. Claims C30-C31 are supported by structural modeling (Figure 1C) and citations to prior structural studies. The strategic choice of L5-6 as the insertion site is well-justified by both experimental results and structural considerations.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C32",
-      "C33",
-      "C34",
-      "C35",
-      "C36",
-      "C37"
-    ],
-    "result": "Optimization of linker sequences to generate functional AmTrac sensor. Initial mcpGFP insertion did not produce fluorescence changes, but systematic variation of linker sequences connecting mcpGFP to AMT1;3 yielded 24 functional variants, with the best variant (AmTrac) showing 40% fluorescence change upon ammonium addition.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C32-C36 are supported by experimental data in Figure 2A-B showing the linker screen results. Claim C37 provides structural details of the AmTrac construct supported by Figure 2C-D. The systematic optimization approach and identification of the best variant are well-documented. This demonstrates the importance of linker optimization for sensor function.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
-      "C38",
-      "C39",
-      "C40",
-      "C41",
-      "C42"
-    ],
-    "result": "Position and loop length requirements for AmTrac function. Both transport activity and fluorescence response were highest when mcpGFP was inserted in central positions of L5-6, with clear correlation between activity and fluorescence change. Deletion of four or more residues from L5-6 abolished both transport and fluorescence response. All fluorescence-responsive variants were functional transporters.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C38-C42 are directly supported by experimental data in Figure 3B-C. The correlation between insertion position, transport activity, and fluorescence response is clearly demonstrated. The finding that all responsive variants are functional transporters (C42) is critical for establishing that fluorescence reports transport activity rather than other cellular processes.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
-      "C43",
-      "C44",
-      "C45",
-      "C46"
-    ],
-    "result": "AmTrac fluorescence response kinetics match transport kinetics. The fluorescence response was proportional to ammonium concentration with EC50 ~55 \u03bcM, nearly identical to the Km for transport measured by electrophysiology (~50 \u03bcM) and in planta (~57 \u03bcM). Responses were detectable in single cells, concentration-dependent, and reversible.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C43-C46 are supported by experimental data in Figure 4A-D. The striking similarity between EC50 for fluorescence and Km for transport (C45) provides strong evidence that the sensor reports transport activity. The reversibility demonstrated in single cells (C46, Figure 4D) is important for establishing the sensor as a dynamic reporter. The comparison to published in planta data strengthens the validation.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C47",
-      "C48",
-      "C49",
-      "C50",
-      "C51"
-    ],
-    "result": "AmTrac retains substrate selectivity of AMT1;3. The sensor showed selectivity for ammonium over potassium and other cations (Na+, K+, Ca2+, Mg2+, Mn2+, Zn2+). Different ammonium salts (NH4Cl, NH4NO3, (NH4)2SO4) produced identical responses, demonstrating that the anion does not affect fluorescence.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C47-C51 are supported by experimental data in Figure 4E. The selectivity for ammonium over other cations and independence from the counter-ion are important controls demonstrating that the sensor specifically reports ammonium interaction with the transporter. This validates that the fluorescence change is not due to non-specific ionic effects.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C52",
-      "C53",
-      "C54",
-      "C55",
-      "C56",
-      "C57",
-      "C58",
-      "C59"
-    ],
-    "result": "Development of improved AmTrac variants with enhanced brightness. Random mutagenesis of the N-terminal linker identified variants with Ser instead of Glu that were ~5-fold brighter while maintaining responsiveness. AmTrac-LS showed excitation maxima at 380 nm and 495 nm, emission at 513 nm, with 30-40% fluorescence decrease upon ammonium addition. Linker modifications did not affect transport kinetics or EC50.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C52-C59 are supported by experimental data in Figures 5A-E and 4B. The identification of brighter variants (C52-C53) improves the practical utility of the sensor. The spectroscopic characterization (C54-C57) provides important photophysical properties. The demonstration that linker modifications preserve transport kinetics (C58) is critical for validating that improved variants remain faithful reporters of transport activity.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
-      "C60",
-      "C61",
-      "C62",
-      "C63",
-      "C64",
-      "C65"
-    ],
-    "result": "AmTrac fluorescence response requires transport activity and reports extracellular ammonium. Mutations that inactivate transport (D202N, G460D, T464D) abolished fluorescence response without affecting membrane localization. Transport-deficient variants showed no response even when expressed in wild-type yeast with functional endogenous transporters. Intracellular ammonium generation from arginine catabolism did not trigger AmTrac response.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C60-C65 are supported by experimental data in Figure 6A-E. These experiments provide critical evidence that the fluorescence change reports transport activity rather than intracellular ammonium accumulation (C62-C65). The use of transport-deficient mutants in wild-type yeast (C62) and arginine catabolism (C64) are elegant controls that rule out alternative explanations. This strongly supports that AmTrac reports transporter conformational changes associated with transport.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
-      "C66",
-      "C67",
-      "C68"
-    ],
-    "result": "Suppressor screen validates correlation between transport and fluorescence. A genetic suppressor screen of inactive AmTrac-T464D identified eight gain-of-function mutations, seven in the pore region. The extent of transport activity restoration correlated highly with fluorescence response (R\u00b2=0.72).",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C66-C68 are supported by experimental data in Figure 7A-F and Table 1. The suppressor screen provides independent genetic validation that fluorescence and transport are tightly coupled (C68). The high correlation (R\u00b2=0.72) between growth (transport) and fluorescence across multiple independent suppressor mutations strongly supports the conclusion that AmTrac reports transport activity. This is a particularly rigorous validation approach.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
-      "C69",
-      "C70",
-      "C71"
-    ],
-    "result": "Engineering of low-affinity sensor variant AmTrac-100\u03bc. The suppressor mutant AmTrac-T464D-A141E functions as a low-affinity/high-capacity transporter (Km ~3.5 mM) and shows correspondingly shifted fluorescence response (EC50 ~101 \u03bcM), demonstrating that sensor properties can be tuned by mutagenesis.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C69-C71 are supported by experimental data in Figures 7A and 8A-B. The identification of a low-affinity variant with correspondingly shifted fluorescence response provides additional evidence that the sensor faithfully reports transport properties. This also demonstrates the potential to engineer sensors with different dynamic ranges for different applications. The parallel shift in both Km and EC50 further validates the tight coupling between transport and fluorescence.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C72",
-      "C73",
-      "C74",
-      "C75",
-      "C76",
-      "C77",
-      "C78",
-      "C79"
-    ],
-    "result": "Generalization of sensor design to other ammonium transporters. Using the same design principles, functional sensors were created for AMT1;2 (AmTrac1;2) and yeast MEP2 (MepTrac) in a single step. MepTrac-H194E variant showed improved response consistent with its broader pH optimum. All sensors showed dose-dependent responses.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C72-C79 are supported by experimental data in Figure 9A-B. The successful single-step generation of sensors for distantly related transporters (C72-C73, C79) demonstrates the generalizability of the approach. The rational improvement of MepTrac based on known pH-sensitivity (C74-C77) shows that sensor properties can be predicted and optimized based on transporter properties. This significantly extends the impact of the work beyond a single transporter.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
-      "C80",
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C88"
-    ],
-    "result": "Evidence for conformational changes during ammonium transport. The fluorescence response of AmTrac variants and MepTrac supports the hypothesis that these transporters undergo conformational changes during transport, challenging the 'rigid gas channel' model. Results are consistent with movement of TMH-V and -VI relative to each other during substrate binding or translocation.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C80-C84 and C88 integrate prior structural knowledge (C80, citations) with the current findings to propose a mechanistic model. The fluorescence changes observed with AmTrac provide functional evidence for conformational dynamics (C83, C88) that were not detected in static crystal structures (C80). The interpretation that TMH-V and -VI move relative to each other (C84) is a reasonable inference based on the insertion site and prior proposals about TMH-V oscillation (C31). However, the authors appropriately note that crystal structures of different states are needed for definitive proof.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C11",
-      "C12",
-      "C13",
-      "C15"
-    ],
-    "result": "Prior methodological context for sensor development. Patch clamping is limited to surface cells, while fluorescent proteins and FRET sensors enable live-cell imaging. Circularly-permutated GFP has been successfully used to monitor conformational changes in other proteins like calmodulin.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims provide methodological context and are supported by appropriate citations (C12, C13, C15). They accurately describe established techniques and their limitations (C11) that motivate the development of the new approach. These are well-established facts in the field.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C85",
-      "C86",
-      "C87"
-    ],
-    "result": "Structural comparison to LeuT transporter. AMTs share pseudo-symmetric architecture with LeuT transporter, with the transport pore located between two pseudo-symmetric halves. TMH-V and -VI carry key residues for substrate translocation, analogous to LeuT's substrate-binding interface.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C85-C87 are supported by citations to structural studies and represent established structural knowledge. The comparison to LeuT provides useful context for understanding the potential for conformational changes in AMTs. This is appropriate background information that helps interpret the results.",
+    "evaluation": "Claims C15-C26 provide accurate background on ammonium transporter biology, well-supported by appropriate citations. This establishes the biological context and importance of the transporters being studied. The information on AMT1;3 specifically (C23-C25) justifies its selection as the initial target for sensor development.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R16",
     "claim_ids": [
-      "C89",
-      "C90"
+      "C70",
+      "C72",
+      "C73",
+      "C74"
     ],
-    "result": "Proposed future applications of sensors from different organisms. The combination of sensors from different organisms (AmTrac and MepTrac) could be useful for dissecting endogenous regulatory mechanisms, as heterologous proteins may not be subject to the same regulatory controls.",
+    "result": "The authors discuss prior structural studies showing AMT crystal structures without obvious conformational differences in presence/absence of ammonium, leading to the 'rigid gas channel' hypothesis. They note structural similarities between AMTs and LeuT, which undergoes conformational changes during transport, with both having substrate-binding sites at the interface of pseudo-symmetric repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C72-C74 accurately represent prior structural work and provide important context for interpreting the current results. The comparison to LeuT is well-supported by citation and provides a mechanistic framework. These claims set up the contrast between prior models and the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C85"
+    ],
+    "result": "The authors speculate that the sensor approach is particularly valuable for analytes lacking radiotracers and for cell-specific/subcellular transport processes, and hypothesize that other transporters with twofold pseudo-symmetry could be converted into activity sensors.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C89 is speculative about future applications and is not directly tested in this manuscript. Claim C90 is based on general knowledge about heterologous expression but the specific utility for dissecting regulation is not demonstrated here. While this is a reasonable proposal, it represents future work rather than a result of the current study. The evaluation is UNCERTAIN because the utility has not been experimentally validated.",
+    "evaluation": "Claims C77 and C85 represent speculation about future applications and generalizability. While the successful generation of AmTrac1;2 and MepTrac (C63-C67) provides some support for generalizability, broader application to other transporter families remains to be demonstrated. These are reasonable hypotheses but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The authors discuss the dual transceptor function of AMTs and other transporters, noting that some transporter-like receptors (SNF3p, RGT1p) appear unable to transport, suggesting binding alone can trigger conformational changes detected by signaling proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 accurately represent prior work on transceptor mechanisms, supported by appropriate citations. This discussion provides important context for interpreting whether the sensors report binding, transport, or both, and acknowledges the complexity of transceptor signaling mechanisms.",
     "result_type": "MINOR"
   }
 ]

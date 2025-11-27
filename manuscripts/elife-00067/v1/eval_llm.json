@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C70"
+    ],
+    "result": "RecA filament slides along dsDNA during homology search with a diffusion coefficient of approximately 7700-8000 bp\u00b2/s. This sliding is demonstrated through FRET fluctuations that depend on filament length, cross-correlation analysis showing length-dependent timescales, and three-color FRET experiments showing anticorrelated FRET changes between two acceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C32, C39-C42, C44-C46, C49-C52, and C70 provide converging evidence from multiple experimental approaches (two-color FRET, three-color FRET, filament length dependence, cross-correlation analysis, Monte Carlo simulations) that collectively support the sliding model. The diffusion coefficient is derived from simulations fitted to experimental data, and control experiments rule out alternative explanations like duplex end separation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C7",
+      "C8",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Homology recognition can occur during RecA filament sliding for as few as 6 nt of complementary base pairs, with recognition efficiency increasing with longer homology (7 nt shows ~1.5-fold improvement over 6 nt). Recognition is stochastic, and the RecA filament can transition between homology sites without full dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C7-C8, C53-C57, C60-C61, C73-C75 demonstrate homology detection during sliding using DNA constructs with embedded homology sites. HMM analysis of FRET transitions provides quantitative rate constants showing stabilization at homology sites. The stochastic nature and length-dependence of recognition are well-documented through transition density plots and recognition efficiency calculations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C64",
+      "C65"
+    ],
+    "result": "RecA filament can sample 60-300 bp (several hundred base pairs) during each encounter with dsDNA before dissociation, based on the measured diffusion coefficient and heterologous synapse lifetimes of 0.5-10 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C64-C65 are supported by combining the experimentally determined diffusion coefficient (~8000 bp\u00b2/s) with measured and literature-reported lifetimes. The calculation is straightforward and the range accounts for variability in lifetime measurements under different conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Sliding can accelerate homology search by approximately 200-fold compared to 3D collision-based search alone, even with recognition probabilities as low as 1%. Combined with intersegmental transfer, sliding dramatically accelerates homology search.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C66-C68 rely on theoretical modeling with uncertain parameters. The authors acknowledge they 'do not know the exact microscopic rate constants which determine the binding probability' (pbind). While the modeling framework is reasonable, the 200-fold enhancement depends critically on assumed recognition probabilities that are not experimentally validated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The interaction between RecA filament and dsDNA is electrostatic in nature, as demonstrated by decreased lifetime with increasing salt concentrations and increased lifetime when negative charges are removed from RecA C-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 provide consistent evidence for electrostatic interactions: salt-dependent lifetime changes (Figure 1D-F) and increased binding lifetime with RecA \u0394C17 mutant lacking acidic residues (Figure 1\u2014figure supplement 3). The interpretation is well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The lifetime of the encounter complex is independent of ssDNA filament length (50 or 99 nt) but increases with dsDNA length, consistent with more contact points between longer dsDNA and the RecA filament.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by experimental data in Figure 1\u2014figure supplement 2. The independence from filament length and dependence on dsDNA length support the proposed mechanism where dsDNA length determines the number of contacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "dsDNA cannot flip 180\u00b0 while remaining bound to RecA filament, meaning dsDNA bound in the wrong orientation must fully dissociate and rebind to establish the correct orientation for homology recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by control experiments in Figure 4\u2014figure supplement 4 showing that dsDNA labeled at opposite ends exhibits different behavior, with no evidence of orientation switching during binding events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C23",
+      "C62",
+      "C63"
+    ],
+    "result": "This is the first example of a DNA-bound multi-protein complex that can slide along another DNA to facilitate target search during homology recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C23, C62-C63 establish novelty by citing that RecA filament diffusion on DNA 'has not been observed before' and distinguishing this from single-protein sliding. The claim is appropriately contextualized with prior literature showing other proteins slide on DNA but not multi-protein complexes bound to one DNA sliding on another.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The timescale of sliding is independent of sodium or magnesium ion concentrations but increases twofold when ATP is used instead of ATP\u03b3S as cofactor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by experimental data in Figure 2\u2014figure supplement 3. The salt-independence of sliding timescale contrasts with salt-dependence of binding lifetime, suggesting different mechanisms control these processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C81",
+      "C82"
+    ],
+    "result": "The RecA filament was modeled as a rigid rod in Monte Carlo simulations based on its large persistence length (~800 nm or ~2300 bp) and known structural parameters (5.1 \u00c5 rise per nucleotide).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C81-C82 describe modeling assumptions that are well-justified by cited structural data. The persistence length of ~800 nm is much larger than the filament lengths studied (21-99 nt = 10-50 nm), making the rigid rod approximation reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Non-homologous dsDNA was used experimentally to avoid stable product formation and monitor RecA filament during homology search. RecA filaments formed with ATP\u03b3S are stable and functional for strand exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 describe the experimental design rationale, which is sound and supported by prior work (Ragunathan et al., 2011). This approach allows observation of the search process without complications from stable product formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "While off-axis motions between dsDNA and RecA filament cannot be ruled out, on-axis motion (sliding) is the dominant source of FRET fluctuations based on DNA length dependence experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 appropriately acknowledge limitations while providing evidence that on-axis motion dominates. The filament length dependence of cross-correlation time (Figure 2C) strongly supports that linear sliding is the primary mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "1D sliding during homology search could help RecA reorganize the initial synaptic complex without full dissociation and rapidly scan neighboring sequences for optimal seed sequences for heteroduplex extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78 propose functional interpretations of sliding that are plausible but speculative. While consistent with the data, these functional roles are not directly tested and represent hypotheses for future investigation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Sliding might also play a role in homology search mediated by Rad51 based on structural and functional similarities between RecA and Rad51.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is explicitly speculative ('it is likely that sliding might also play a role'). While the structural similarity between RecA and Rad51 is established, extrapolation of the sliding mechanism to Rad51 requires experimental validation.",
+    "result_type": "MINOR"
+  }
+]

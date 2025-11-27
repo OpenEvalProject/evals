@@ -1,0 +1,2086 @@
+{
+  "submission": {
+    "id": "95ace197-bb12-4219-b905-8b644aeac5e8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T06:05:16.915899Z",
+    "updated_at": "2025-11-27T06:05:16.915899Z"
+  },
+  "content": [
+    {
+      "id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "submission_id": "95ace197-bb12-4219-b905-8b644aeac5e8",
+      "content_type": "manuscript",
+      "content_text": "# Temporal transcriptional response to ethylene gas drives growth hormone cross-regulation in Arabidopsis\n\n## Authors\n\n- Katherine Noelani Chang<sup>1</sup>\n- Shan Zhong<sup>2</sup>\n- Matthew T Weirauch<sup>3</sup>\n- Gary Hon<sup>4</sup>\n- Mattia Pelizzola<sup>1</sup>\n- Hai Li<sup>1</sup>\n- Shao-shan Carol Huang<sup>1</sup>\n- Robert J Schmitz<sup>1</sup>\n- Mark A Urich<sup>1</sup>\n- Dwight Kuo<sup>6</sup>\n- Joseph R Nery<sup>7</sup>\n- Hong Qiao<sup>1</sup>\n- Ally Yang<sup>3</sup>\n- Abdullah Jamali<sup>1</sup>\n- Huaming Chen<sup>7</sup>\n- Trey Ideker<sup>8</sup>\n- Bing Ren<sup>4</sup>\n- Ziv Bar-Joseph<sup>2</sup>\n- Timothy R Hughes<sup>3</sup>\n- Joseph R Ecker<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Plant Biology Laboratory, and Genomic Analysis Laboratory The Salk Institute for Biological Studies La Jolla United States\n2. Lane Center for Computational Biology, School of Computer Science Carnegie Mellon University Pittsburgh United States\n3. Department of Molecular Genetics and Banting and Best Department of Medical Research University of Toronto Ontario Canada\n4. Ludwig Institute for Cancer Research University of California, San Diego La Jolla United States\n5. Howard Hughes Medical Institute, The Salk Institute for Biological Studies La Jolla United States\n6. Department of Bioengineering, Department of Medicine, The Institute for Genomic Medicine University of California, San Diego La Jolla United States\n7. Genomic Analysis Laboratory The Salk Institute for Biological Studies La Jolla United States\n8. Departments of Medicine and Bioengineering University of California, San Diego San Diego United States\n9. Department of Cellular and Molecular Medicine University of California, San Diego School of Medicine San Diego United States\n10. Machine Learning Department School of Computer Science, Carnegie Mellon University Pittsburgh United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe gaseous plant hormone ethylene regulates a multitude of growth and developmental processes. How the numerous growth control pathways are coordinated by the ethylene transcriptional response remains elusive. We characterized the dynamic ethylene transcriptional response by identifying targets of the master regulator of the ethylene signaling pathway, ETHYLENE INSENSITIVE3 (EIN3), using chromatin immunoprecipitation sequencing and transcript sequencing during a timecourse of ethylene treatment. Ethylene-induced transcription occurs in temporal waves regulated by EIN3, suggesting distinct layers of transcriptional control. EIN3 binding was found to modulate a multitude of downstream transcriptional cascades, including a major feedback regulatory circuitry of the ethylene signaling pathway, as well as integrating numerous connections between most of the hormone mediated growth response pathways. These findings provide direct evidence linking each of the major plant growth and development networks in novel ways.\n\n## Introduction\n\nDespite the importance of the plant hormone ethylene, we lack a comprehensive understanding of how its linear signaling pathway mediates many different morphological responses. The dynamic ethylene physiological response, a rapid growth inhibition independent of the master transcriptional regulator ETHYLENE INSENSITIVE3 (EIN3), followed by an EIN3-dependent sustained growth inhibition, calls for a temporal study of ethylene transcriptional regulation (Binder et al., 2004a). EIN3 has been shown to be necessary and sufficient for the ethylene response and accumulates upon a duration of exogenous ethylene gas treatment (Guo and Ecker, 2003). Although hundreds of ethylene response genes have been identified, because some of the targets of EIN3 are transcription factors (e.g. ETHYLENE RESPONSE FACTOR1 [ERF1]), it is challenging to distinguish immediate early targets from those further downstream. To understand the dynamics of the EIN3-mediated ethylene transcriptional response, we performed a genome-wide study of the ethylene-induced EIN3 protein-DNA interactions using chromatin immunoprecipitation followed by sequencing (ChIP-Seq) and simultaneously determined the repertoire of target genes that are transcriptionally regulated by ethylene (mRNA-Seq). Tracing the transcriptional cascade, we asked if EIN3-mediated genes contribute to a component of the ethylene transcriptional response. For a select number of EIN3 targets that are putative transcriptional regulators, DNA-binding motifs were identified using protein binding microarrays (PBM) and the enrichment for these motifs in the promoters of ethylene response genes was determined.\n\n## Results\n\nWe performed ChIP-Seq using a native antibody that recognizes EIN3 (Guo and Ecker, 2003) as well as mRNA-Seq in three-day-old dark grown seedlings during a timecourse of ethylene treatment (Figure 1\u2014figure supplements 1, 2; Supplementary file 1A). By stringent analysis of the temporal ChIP-Seq data (see \u2018Materials and methods\u2019), we identified 1460 EIN3 binding regions in the Arabidopsis genome associated with 1314 genes (Supplementary file 1B). We refer to genes associated with EIN3 binding regions as EIN3 candidate targets. In the sequences of EIN3 binding regions, we found significant enrichment of the consensus TEIL motif (Hypergeometric p<10\u221287) (Kosugi and Ohashi, 2000), and de novo motif analysis identified the known EIN3 motif (Figure 1\u2014figure supplement 3). We detected three previously described EIN3 targets using our stringent analysis (Figure 1\u2014figure supplements 3, 4) (Solano et al., 1998; Konishi and Yanagisawa, 2008; Chen et al., 2009; Zhong et al., 2009; Boutrot et al., 2010). One example of a known target of EIN3, EIN3-BINDING F-BOX PROTEIN 2 (EBF2), is shown in Figure 1A. EBF2 directs the proteolysis of EIN3 and exhibits ethylene-induced transcription (Figure 1A), resulting in feedback regulation of the ethylene signaling pathway. Our study identified additional distal EIN3 binding in the EBF2 promoter region (Figure 1A, Figure 1\u2014figure supplement 4).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig1-v1.jpg)\n\n**Figure 1.:** (A) Ethylene treatment results in an increase of EIN3 binding in three regions of the EBF2 promoter, corresponding to an increase in steady-state mRNA levels. Binding and transcription levels are indicated by reads per kilobase per million reads in sample (RPKM). Gene model: green (exon), red (UTR), grey (intron/transposon). (B) Patterns of EIN3 binding and expression of ethylene-regulated targets are strikingly evident over a timecourse of ethylene gas treatment. EIN3 binding increases with ethylene treatment to a maximum at 4 hr of ethylene treatment for all candidate targets. Each line in the heatmap represents the RPKM value for the representative EIN3 binding site (left panel) and transcript (right panel). (C) (Upper panel) Equivalent numbers of genes are up- and down-regulated upon ethylene treatment. (Lower panel) Majority of EIN3 targets differentially expressed upon ethylene treatment are up-regulated. (D) A subset of EIN3 targets is transcriptionally regulated by ethylene (EIN3-R).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Enrichment of the known target of EIN3, the promoter of ERF1, using Dynabeads Protein A and Dynabeads Sheep anti-Rabbit IgG to collect protein-DNA complexes. The average fold change for two technical ChIP replicates with three QPCR technical replicates each is shown. (B) Reproducibility in the two biological replicates for EIN3 ChIP performed upon treatment of ethylene gas for 0, 0.5, 1, and 4 hr. (C) Average RPKM of EIN3 binding sites 0, 0.5, 1, and 4 hr of ethylene gas treatment. (D) EIN3 binding preferentially occurs in the promoter regions of genes (1000 bp upstream of the TSS).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Reproducibility of RNA-Seq experiments. Ethylene-regulated have a higher reproducibility amongst replicates than non-replicates. (B) Genes that are both up- and down-regulated occur at different timepoints of ethylene treatment. (C) The majority of EIN3 targets exhibit increased binding upon ethylene treatment, however, changes in steady-state levels of mRNA do not occur for the majority of these targets. EIN3-NR genes are indicated by the blue rectangle.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) De novo motif from the top 50 EIN3 binding sites with the best match to the known EIN3 motif (E-value = 1.12 \u00d7 10\u22125). EIN3 binding of the promoters of (B) ERF1, (C) EDF1, and (D) FLS2.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Binding of EIN3 to the EBF2 promoter increases upon ethylene gas treatment. EIN3 binding is strongest in the most proximal site to the TSS, and weakest in the most distal site to the TSS, which is not called by our stringent analysis. The most distal EIN3 binding site was not detected by our analysis but displays the characteristic ChIP-Seq binding pattern. (B) Alignment of motifs of the three binding sites in the EBF2 promoter.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Network was generated using BiNGO (v.2.44) using the GOSlim_Plants ontology, Benjamini and Hochberg p-value legend is indicated below.\n\nThe majority of studies that exist in the literature have shown that EIN3 acts as an activator, and we observed this activation at the genome-wide level (Figure 1B). We found that a majority of EIN3 candidate targets that are regulated by ethylene (referred to as EIN3-R) are induced (85%), Moreover, when compared to the regulation of all genes that respond to ethylene, we observed an over-representation of up-regulation of EIN3 candidate targets (Figure 1B,C). Interestingly, many EIN3-R are transcription factors (\u223c14%); EIN3 candidate targets are significantly enriched in gene ontology (GO) terms related to transcription factor regulation, confirming that EIN3 activates a transcriptional cascade (Figure 1\u2014figure supplement 5; Supplementary file 1C) (Maere, 2005).\n\nNumerous studies have reported that transcription factor binding does not necessarily coincide with changes in transcription (Macquarrie et al., 2011; Menet et al., 2012), especially for master regulators targeting other transcription factors or other factors involved in chromatin state regulation. Only about 30% of the EIN3 binding sites were associated with transcriptional changes, but at least two-thirds were not (Figure 1D, Figure 1\u2014figure supplement 2). EIN3 candidate targets that are not transcriptionally activated may require cofactors to induce a change in expression for a specific environmental response or developmental program. Quantitatively, the changes in EIN3 binding and steady-state transcription upon ethylene treatment do not correlate because the temporal transcription patterns are very diverse (Figure 2\u2014figure supplement 1). However, relatively high levels of EIN3 occupancy in etiolated seedlings treated with ethylene indeed correspond to increases in steady-state levels of transcription (Figure 2A). In fact, we were able to differentiate the characteristics of EIN3 candidate targets that exhibited a transcriptional response to ethylene from those that do not (Figure 2A). EIN3 candidate targets that exhibit increased occupancy and increased levels of transcription (EIN3-R) are functional targets, enriched in gene families with specific functions, for example BZR, TIFY, and bHLH transcription factor families, which play a role in other hormone pathways (p<0.05) (Figure 2B). The highest percentage of hormone-associated genes occurs in EIN3 candidate targets that are ethylene-regulated (EIN3-R) (Figure 2B, inset), and it is likely that these EIN3-R targets are direct and/or functional. Other EIN3 candidate targets may play roles in different developmental stages/tissue types, or may be under spatial regulation, requiring specific cofactors.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig2-v1.jpg)\n\n**Figure 2.:** (A) Ethylene-regulated EIN3 targets (EIN3-R) exhibit increased binding at transcription start sites (TSS) upon ethylene treatment (black arrows) in comparison to those not transcriptionally regulated by ethylene (EIN3-NR and EIN3-ND). Each boxplot represents the distribution of EIN3 ChIP-Seq RPKMs near the TSS. (B) Distribution of gene families among EIN3-R targets reveals over-representation of gene families related to hormone responses function. (Inset) Percentage of hormone-related genes in EIN3 binding and transcription categories. (C) DREM paths representing waves of induction of steady-state levels of transcription by ethylene for genes that are regulated by EIN3, implicating different modes of transcriptional regulation in the ethylene response. Right panels contain all genes for each wave.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Linear regression revealed that there is no quantitative correlation of changes in EIN3 binding and ethylene-regulated steady-state levels of transcription.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The EIN3-modulated ethylene transcriptional response occurs in four waves with various levels of noise. A decrease in standard deviation correlates to an increase of hormone-related genes. (B) The kinetics of the ethylene transcriptional response on a linear scale. Approximately 35\u201350% of the ethylene-regulated genes are transcriptionally affected by the first 4 hr of ethylene treatment, for all ethylene transcriptional response genes and EIN3-modulated ethylene transcriptional response genes, respectively.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** This dynamic regulatory map contains major bifurcation or convergence events in temporal expression data and determines the transcription factors potentially responsible for these events. EIN3-modulation is significant (10\u221210) in the expression trajectories labeled EIN3 (teal, dark brown, purple, green-blue; first four endpoint trajectories from the top of the figure). The EIN3-associated trajectories represent the four waves of ethylene-regulated expression regulated by EIN3, as further discussed in the main text. The TF associations are based on motifs from AGRIS and the PBM data in this paper. There are two caveats based on the TF association annotation: (1) It is possible the TF controlling these RNA is not represented in the database, and (2) Genes may not be regulated by the specific TF indicated, but instead by a homolog or other TF that has a similar target sequence not in the database.\n\nProjection of the dynamic EIN3 binding (ChIP-Seq) onto the transcriptional ethylene response (mRNA-Seq) using the Dynamic Regulatory Events Miner (DREM) (Ernst et al., 2007) revealed that the ethylene response occurs in four waves of transcription significantly regulated by EIN3 (Pathway hypergeometric p<10\u221210) (Figure 2C). These waves display distinct temporal transcription behaviors (Hypergeometric p<0.001), and the reduction of transcriptional noise occurs in successive temporal waves (Figure 2C, Figure 2\u2014figure supplement 2). Genes that were enriched in specific biological functions within these four transcriptional waves include RNA binding/translation (Wave 1, Wave 3), cell wall maintenance (Wave 2), and response to endogenous stimulus (Wave 4). The second wave is also enriched for genes involved in cell wall maintenance, and the expression of these genes steadily increases following 1 hr of ethylene treatment, consistent with kinetics of EIN3-dependent growth inhibition (Binder et al., 2004a; Vandenbussche et al., 2012).\n\nThe four waves of the ethylene transcriptional response each contain a unique subset of EIN3 candidate targets. The first wave is highly variable, lower in steady-state levels of transcription, and it also contains the lowest percentage of EIN3 candidate targets and hormone-related genes (Figure 2C). Previous ethylene growth rate inhibition studies have shown that low amounts of ethylene can result in adaptation and desensitization to subsequent ethylene stimulation (Binder et al., 2004a, 2004b) . This first wave may serve as the immediate ethylene response, activating initial ethylene response genes as well as those that serve to desensitize the plant to subsequent ethylene stimulation, but this has yet to be shown. The next three waves of transcription are successively less variable and contain higher percentages of EIN3 candidate targets and hormone-related genes. The four waves of ethylene-induced transcription account for 50% of the transcriptionally ethylene-regulated EIN3 targets (EIN3-R), and the remaining EIN3 candidate targets are distributed among other patterns of transcription that do not contain significant numbers of EIN3 candidate targets in each transcriptional trajectory (Pathway hypergeometric p<10\u221210) (Figure 2\u2014figure supplement 3). The expression kinetics and reduction of transcriptional noise we observe in the ethylene-induced waves may be tied to distinct mechanisms of transcriptional control, or they may reflect heterogeneity of the ethylene response in different tissues, which can be resolved using single cell analysis. From the temporal ethylene transcriptional response patterns, it appears that the initial early ethylene transcriptional response is noisy and less focused functionally. During sustained exogenous ethylene application, EIN3 accumulates, and the established ethylene transcriptional response is hormone-focused and less noisy, but feed-forward and feed-back mechanisms mentioned below may serve to establish this functional specificity.\n\nA recurring theme throughout this study is that the key players in the ethylene transcriptional response regulated by EIN3 are involved in plant hormone response pathways, and we anticipate a dense network of interconnections between the coregulated hormone pathways because hormones operate in concert, synergistically/antagonistically regulating growth and development. Although hormone pathway interconnections have been previously described by many groups (Kaufmann et al., 2009, 2010; Sun et al., 2010; Yu et al., 2011), here we show that these interconnections exist at many regulatory levels and that the targets of EIN3 may regulate genes in these responses. Among the EIN3 candidate targets, we observed the enrichment of hormone-related targets among many different categorical sets (Figure 2B, inset). These EIN3 targets include downstream effectors of the ethylene response, key ethylene signaling players, and genes involved in other hormone pathways/responses. Many of the EIN3-modulated downstream effectors are members of the AP2/ERF transcription factor family, and as expected, these transcriptional initiators are up-regulated by ethylene (Figure 3A, inset, green font).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig3-v1.jpg)\n\n**Figure 3.:** (A) Feedback (ethylene signaling components, above) of the ethylene response and feedforward (downstream effectors, below). Downstream effectors in green are transcriptionally induced by ethylene. Known EIN3 targets are noted by asterisks; all other EIN3 candidate targets were discovered by this study. (B and C) EIN3 candidate targets are involved in hormone co-regulation. Node color represents hormone annotation, as indicated in B; large nodes are EIN3 candidate targets. Dark grey edges represent protein-protein interactions (PPI) and light grey edges are protein\u2013DNA interactions (PDI). Hormone annotation legend: abscisic acid (ABA), brassinosteroid (BR), cytokinin (CK), ethylene (ETH), gibberellin (GA), auxin (IAA), methyl jasmonate (MJ), salicylic acid (SA), >1, more than one hormone. (D) EIN3-mediated ethylene co-regulation occurs at many different levels. PPIs are from the Arabidopsis Interactome Mapping Consortium, and EIN3 PDIs are from this study.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig3-figsupp1-v1.jpg)\n\nGiven that EIN3, the master regulator of the ethylene transcriptional response, acts at the culmination of the ethylene signal transduction pathway and is the transcriptional initiator of the ethylene response, one would expect a large number of downstream effectors to coordinate the transcriptional cascade and feedback regulators to maintain the circuitry in a homeostatic state as opposed to a feed-forward runaway response. Analysis of the ethylene-regulated EIN3 targets reveals a number of sites of ethylene signaling modulation of which the majority are negative regulators, supporting the idea that EIN3 is at the end of a signal transduction pathway, and that this regulatory logic dictates a negative feedback loop for homeostatic adaptable systems. More specifically, several negative regulators of the ethylene signaling pathway (Kendrick and Chang, 2008) were targets of EIN3 (Figure 3A), including three ethylene receptors (ETHYLENE RESPONSE2 [ETR2], ETHYLENE RESPONSE SENSOR1/2 [ERS1/2]), as well as REVERSION-TO-ETHYLENE SENSITIVITY1 (RTE1), CONSTITUTIVE TRIPLE RESPONSE1 (CTR1), and the previously mentioned EBF1/2. The induction of ETR2, ERS1/2 by ethylene was previously reported and has been suggested to restore ethylene receptor activity, resensitizing the plant to ethylene (Binder et al., 2004b; Vandenbussche et al., 2012). The negative regulation of ethylene signaling by EIN3 through induction of CTR1 and ETR2 is further supported by the literature (Chen et al., 2007), suggesting that these proteins exhibit an increase in stabilization upon ethylene treatment (Gao et al., 2003).\n\nThe EIN3 candidate targets account for more than twice the proportion of hormone genes than in the genome (46%, Hypergeometric p=10\u221296) (Figure 2B, inset) (Alonso et al., 2003a; Nemhauser et al., 2006; Peng et al., 2008). Many of the genes were involved in more than one hormone response, highlighting the extensive hormone co-regulation in Arabidopsis (Figure 3B). Hormone co-regulation is evident in the protein-protein as well as the transcriptional regulator interactions and this network reveals interconnectivity suggestive of robust regulatory co-regulation (Figure 3C). Many detailed examples of hormone co-regulation exist in the literature, but often the mechanism(s) of co-regulation is unknown. Previous ChIP-chip or ChIP-Seq studies from plants have also revealed cross-regulation within pathways involved in flowering and in roots (Yant et al., 2010; Iyer-Pascuzzi et al., 2011; Winter et al., 2011; Immink et al., 2012) . The findings presented in our study suggest that (1) hormone co-regulation can occur through the binding of EIN3, (2) EIN3 targets hormone pathways at multiple levels, and (3) some of these events are transcriptionally regulated by ethylene (Figure 3D).\n\nEthylene and jasmonate co-regulation occurs at the transcriptional level, sharing a complement of genes responsive to both hormones, for example RAP2.6L, ERF1. EIN3 also targets four JAZ repressors, two of which are transcriptionally regulated by ethylene (JAZ1, JAZ6). In general, ethylene and jasmonate are known to function synergistically and in the presence of jasmonate, JAZ1 proteins bound to EIN3 are degraded, relieving the EIN3 transcriptional activation (Zhu et al., 2011). Here, the presence of an exogenous ethylene stimulus primes cells for a jasmonate response, by loading the promoters of jasmonate/ethylene response genes with EIN3 and JAZ proteins, poising the plant for a jasmonate-ethylene driven transcriptional program, as required for plant pathogen response. Reports of anticipatory binding in other organisms have been forth coming (Macquarrie et al., 2011; Lickwar et al., 2012).\n\nEthylene and gibberellin co-regulation through EIN3 occurs at signal reception (GID1B, GID1C) and transcription (PIF3). The regulatory logic of EIN3 binding results in an up-regulation of the gibberellin response; GID receptors target DELLA repressors for degradation, which releases PIF3 from repression, resulting in the activation of the gibberellin transcriptional response. Additional support for feed-forward transcription is provided by over-representation of the PIF3 motif in the promoter sequences of the ethylene transcriptional response genes (Supplementary file 1E, Figure 3\u2014figure supplement 1). Hormone co-regulation may also occur bidirectionally as a recent study reported negative regulation of ethylene by FUSCA3 (FUS3), known to regulate and be regulated by gibberellin and abscisic acid in embryonic and vegetative timing (Lumba et al., 2012). FUS3 negatively regulates genes upstream and downstream of EIN3 (EIN2 and ERF1) in leaf aging (Lumba et al., 2012).\n\nEthylene and auxin co-regulation occurs at both the level of transport and transcriptional response, as EIN3 modulates a regulator of auxin efflux (PID) and its upstream activator (PBP1), and at least seven auxin response proteins (Supplementary file 1B). EIN3 also targets the auxin transporter (AUX1) and an auxin signaling gene (IAA29), but these candidate targets are not responsive to ethylene in etiolated seedlings (Supplementary file 1B). Ethylene has been reported to stimulate auxin transport through AUX1 away from the root apex, to decrease lateral root primordia (Lewis et al., 2011). Therefore, it is likely these binding events have functional outcomes in specific tissue types or developmental programs not addressed in this study.\n\nThe establishment of a transcriptional program tailored to result in a specific growth and development process requires multiple levels of transcriptional modulation. EIN3 was previously suggested to initiate a transcriptional cascade because it activates AP2/ERF transcription factors ERF1/EDF1 (Solano et al., 1998). To determine additional candidate downstream effectors that may modulate the ethylene transcriptional response cascade, we used in vitro protein binding microarrays to generate DNA-binding motifs for 12 transcription factors that were ethylene-regulated targets of EIN3 (see \u2018Materials and methods\u2019). We then used the in vitro DNA-binding motifs to scan the promoter sequences of all ethylene transcriptional response genes (Lam et al., 2011). EIN3 targets that may regulate a secondary transcriptional ethylene response include AP2/ERFs AT-ERF1, ERF5, and WRKY14/47, PIF3, NAC6, and RAP2.2, and the DNA-binding motifs of the aforementioned transcription factors are over-represented in the promoter regions of genes that are regulated by ethylene (Hypergeometric p<10\u22125) (Supplementary file 1E, Figure 3\u2014figure supplement 1). Future in vivo analyses of the targets of these transcription factors may help elucidate their contribution to the transcriptional cascade of the ethylene response.\n\nThe extensive hormone co-regulation that occurs in waves of transcription leads to certain testable predictions regarding the key regulatory hubs and transcriptional cascades at a genome-wide level. Using a global approach, we are able to determine not only if one gene is a candidate target of EIN3, but whether its homologs are targets as well. Transcription factor targeting of genes that are homologous, with overlapping and unique functions, can add diversity to the outputs of transcriptional programs (Macquarrie et al., 2011). One of the most striking and surprising example we found was the direct regulation of the three homologs by EIN3, HOOKLESS1 (HLS1) and HLS1-LIKE HOMOLOG2 (HLH2), and to a lesser extent HLH1 (Figure 4A, HLH1 in Figure 4\u2014figure supplement 1). This led us to experimentally test the functionality of all four members of the HLS1 gene family in etiolated seedling growth and development. HLS1 is a well-known signal integrator of ethylene, light, auxin, sugar, and brassinolide (de Grauwe et al., 2005; Hou et al., 1993; Li et al., 2004; Ohto et al., 2006) and was previously hypothesized to be a target of ERF1 because of the presence of a GCC box motif in the HLS1 promoter region sequence (Lehman et al., 1996). The binding of EIN3 to the promoters of HLS1, HLH2, and HLH1 increased upon ethylene treatment (Figure 4\u2014figure supplement 1) and is specific to EIN3 (Figure 4B). The EIN3 binding sites in these promoters contain known EIN3 motifs (Figure 4\u2014figure supplement 1). The functional significance of the HLS1 EIN3 binding site is supported by a previous study that identified two allelic mutations in the HLS1 promoter sufficient to yield a \u2018hookless\u2019 phenotype (Lehman et al., 1996). Previous studies have also shown that ein2 is deficient in the accumulation of EIN3 protein (Guo and Ecker, 2003) and HLS1 mRNA, (Lehman et al., 1996). We also observed HLS1 steady-state transcript levels were significantly reduced in the ein3-1 eil1-1 mutant (Figure 4\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig4-v1.jpg)\n\n**Figure 4.:** (A) (Top panel) EIN3 targets HLS1 and HLH2. Temporal EIN3 binding and expression patterns are shown with known EIN3 targets as a control. HLH1 and HLH3 are not expressed in etiolated seedlings. (B) Binding of EIN3 to HLS1/HLH2 promoters is dependent on presence of EIN3. (C)\u2013(F) Mutations in HLS1 and its homologs reveal severe growth and developmental defects. (C) Tri-cotyledon phenotypes in apical hook of quadruple mutants. Images were taken at the same magnification. (D) HLS1 gene family has a role in embryo patterning. SEM image scale bar, 50 \u03bcm. (E) Adult three-week-old plants displayed dwarfed phenotypes similar to axr1. (F) Quadruple mutants display floral defects similar to arf3/ettin. Inset and panels on the right show abnormal guard cell patterning. SEM scale bars, 100 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) EIN3 binding in HLS1, HLH1, HLH2 promoters. (B) EIN3 binding motifs in HLS1, HLH2 reveal a consensus. ERF1 and EBF2 motifs are shown as a reference.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig4-figsupp2-v1.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Conservation of HLS1 and HLHs proteins. Amino acid sequence alignment of HLS1 and its three homologs are shown. Gaps are represented as \u2018.\u2019. Shading indicates identical sequences (black), conserved changes (gray), similar residues (light gray). (B) Phylogeny of HLS1 and HLHs and proteins from other organisms containing acetyltransferase domains. Amino acid sequences were aligned using Clustal, then a bootstrap 50% majority-rule consensus tree was constructed using PAUP. Abbreviations for species are as follows: Hs, Homo sapiens; Sc, Saccharomyces ceravisiae; Mm, Mus musculus; At, Arabidopsis thaliana; Bn, Brassica napus; Zm, Zea mays; Os, Oryza sativa; Ps, Pisum sativum; Ec, E. coli. (C) Location of T-DNA insertions in HLH genes. Boxes represent the exons of each HLH gene. Triangles represent the T-DNA alleles that are characterized in detail. Not all T-DNA insertion alleles in the HLH genes are shown.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00675/elife-00675-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** EIN3 ChIP-Seq DNA binding motif is shown for comparison. EIN3 ChIPSeq and protein binding motif alignment was performed with STAMP (E-value = 1.59 \u00d7 10\u22126).\n\nEthylene and auxin co-regulate plant growth and development and it is likely that this co-regulation is mediated in part by EIN3 regulation of HLS1/HLHs. To understand this hormone co-regulation, we generated quadruple mutants for the HLS1 gene family and also further characterized their role as regulatory hub signal integrators (Figure 4\u2014figure supplement 3). The pleiotropic phenotypes we observed support the role of the HLS1 gene family in auxin regulated plant growth and development (Figure 4C\u2013F). We observed severe defects in the embryonic patterning, etiolated seedlings, adult plant morphology, and floral morphology. The adult quadruple mutants display a dwarf phenotype, similar to the auxin mutant axr1 (Leyser et al., 1993), and floral morphology of the quadruple mutants display two stigmas atop a gynoecium, similar to the arf3/ettin mutant floral phenotype (Sessions and Zambryski, 1995). Although HLS1 is known to be involved in the differential growth of the apical hook and is necessary for the accumulation of AUXIN RESPONSE FACTOR2 (ARF2) DNA-binding protein (Li et al., 2004; Ohto et al., 2006), the biochemical function of these putative N-acetyltransferases remains to be determined. Using a genome-wide approach, we found that not only HLS1, but other gene family members are targets of EIN3 and that the requirement of the HLS proteins for hormone responses extends beyond apical hook development to many other processes from embryo patterning to flowering, linking the regulation of growth and development by ethylene to many new biological processes in novel ways.\n\n## Discussion\n\nTo date, few temporal transcription factor binding studies have been undertaken (Hiroi, 2004; Ni et al., 2009; Zinzen et al., 2009). Temporal protein\u2013DNA interactions are often difficult to reconcile with gene expression profiles and the complexity of regulation that occurs transcriptionally is very challenging to characterize and interpret biologically. Here, by jointly analyzing the temporal expression and genome-wide binding data of one key transcription factor in response to hormone stimulus, we were able to reveal several important properties of the hormone responsive transcriptional program and identify new components in the signaling pathway. We found that upon a timecourse of ethylene treatment, EIN3 binding was induced, resulting in various transcriptional patterns and that the ethylene transcriptional response occurred in waves of transcription that were temporally distinct and could be attributed to different biological functions, variable in the amount of noise, and significantly regulated by EIN3. EIN3 modulated genes were over-represented in hormone co-regulation, and the specific targets in the other hormone pathways, as reported in this study, suggest these \u2018cross-talk\u2019 events may involve multiple levels of regulation. Interestingly, feedback regulation of the ethylene response by EIN3 enabled the identification of the majority of known ethylene signaling pathway components. Moreover, the temporal resolution of steady-state levels of transcription confirmed the role of these genes in the ethylene transcriptional response. Other signaling networks utilize feedback regulation for overall system control/homeostasis, and this type of study may be used to identify novel components in signaling pathways (Rosenfeld et al., 2002; Amit et al., 2007; Tsang et al., 2007; Avraham and Yarden, 2011; Fang et al., 2011; Feng et al., 2011; Yosef and Regev, 2011).\n\nThe implication that EIN3 regulates the coordination of other hormone pathways is extensive because the transcriptional control by EIN3 is likely conserved in plants. EIN3 orthologs exist in poplar, soybean, rice, maize, moss, and multicellular algae, among many others (www.phytozome.net) and, in fact, we found that the Physcomitrella patens (moss) EIN3 protein binds a very similar motif sequence to that of the Arabidopsis thaliana EIN3 (Figure 4\u2014figure supplement 4). The role of EIN3 in the coordination of the initiation of the ethylene transcriptional cascade, the negative feedback regulation of the ethylene signaling pathway, and the orchestration of other hormone pathways suggests that adaptable system homeostasis in plants requires robust hormone co-regulation.\n\n## Materials and methods\n\n### Plant material\n\nThe Arabidopsis thaliana ecotype Columbia (Col-0) was the parent strain for these experiments. Genotypes used for this study include wild-type Col-0, and mutants ein3-1 (Chao et al., 1997), ein3-1/eil1-1 (Alonso et al., 2003b), hls1-1 (hls1) (Lehman et al., 1996), hlh1, hlh2, hlh3 (Figure 4\u2014figure supplement 3).\n\n### Growth of Arabidopsis seedlings\n\nThree-day-old etiolated seedling tissue was used for these experiments unless otherwise noted. Seeds were sterilized and sown on Murashige and Skoog (cat#LSP03, Caisson) media pH5.7, containing 1% sucrose and 1.8% agar. After stratification for 3 days in the dark at 4\u00b0C, exposure to light for 2\u20134 hr to induce germination, seeds were dark-grown in hydrocarbon free air at 24\u00b0C for 3 days. Etiolated seedlings were subsequently treated with ethylene gas at 10 \u03bcl l\u22121 for 0, 0.25, 0.5, 1, 4, 12, and 24 hr.\n\n### Chromatin preparation and immunoprecipitation\n\nEtiolated seedlings were collected in the dark, immersed in 1% formaldehyde solution, and cross-linked under vacuum for 15 min. A final concentration of 125 mM glycine was used to quench the formaldehyde for 5 min under vacuum. Cross-linking under vacuum resulted in translucent etiolated seedling tissue. Tissue was liquid nitrogen ground and extraction of chromatin was performed as described in (Lippman et al., 2005).\n\nChromatin immunoprecipitation (ChIP) was performed as described in (Lippman et al., 2005) with modifications, including the use of the Bioruptor sonicator (Diagenode, Belgium). Bioruptor settings used were: H, 25 cycles of 0.5 min on, 0.5 min off, with 5 min rests between every 5 cycles. Sonication was performed in a cooling water bath at 4\u00b0C. A small amount of chromatin (10 \u03bcl) was evaluated for shearing; the size range of chromatin was 150\u2013700 bp, the majority of fragments at 300\u2013400 bp.\n\nAffinity-purified rabbit polyclonal antibodies capable of detecting the C-terminus of EIN3 were used in immunoprecipitation reactions. Details regarding the generation of EIN3 antibodies were previously described (Guo and Ecker, 2003). Prior to the experiments in this study, the amount of purified EIN3 antisera per immunoprecipitation reaction was optimized and 8 \u03bcl of purified EIN3 antisera was determined to yield the optimal enrichment of the ERF1 promoter, the known target of EIN3 (data not shown). We then substituted Dynabeads Protein A (Invitrogen, cat#100-1D) and Dynabeads M-280 Sheep anti-Rabbit IgG (Invitrogen, cat#112-04D) for the salmon sperm DNA blocked Protein A agarose beads recommended in the protocol (4), as to avoid sequencing of salmon sperm DNA. Immunoprecipitation and washing of Dynabeads were performed using the buffers in (Lippman et al., 2005), otherwise Dynabeads were used as per the manufacturer\u2019s instructions. Multiple pipetting steps were performed while washing the beads to reduce non-specific binding carryover. Resulting ChIP DNA was purified as in (Lippman et al., 2005).\n\nQuantitative PCR revealed that relative ChIP enrichment for the promoter of ERF1 performed with the Dynabeads M-280 Sheep anti-Rabbit IgG was higher in comparison to Dynabeads Protein A (Figure 1\u2014figure supplement 1A). Thus, Dynabeads M-280 Sheep anti-Rabbit IgG was used in all subsequent experiments. Primers for the ERF1 promoter encompassing the EIN3 binding site, are as follows: F-GGGGGCATGTATCTTGAATC, R-TGCTGGATCAACTCAACAAAA. Actin primers were as in Mathieu et al. (Mathieu et al., 2003). Enrichment was calculated using the Delta-Delta-Ct method with normalization to the reference Actin; fold change was calculated relative to the control for non-specific binding (EIN3 ChIP performed in ein3-1 mutant).\n\nChIP was performed in chromatin derived from wild-type Col-0 three-day-old etiolated seedlings treated with 0, 0.25, 0.5, 1, 4, 12, and 24 hr of ethylene. Two independent biological replicates were used in two replicates experiments for timepoints, 0, 0.5, 1, 4 hr ethylene gas treatment. Single replicates exist for 0.25, 12, 24 hr of ethylene gas treatment.\n\n### Total RNA extraction\n\nTotal RNA was extracted from liquid nitrogen ground etiolated seedlings using the Qiagen RNeasy Plant Mini Kit with Qiashredder columns (cat#74,904), with DNaseI (Qiagen, cat#79,254) treatment prior to RNA precipitation in sodium acetate and ethanol. Concentrations of RNA were determined using the ND-1000 spectrometer (Nanodrop, Wilmington, DE). Experiments were performed in three biological replicates for timepoints, 0, 0.25, 0.5, 1, 4, 12, 24 hr ethylene gas treatment.\n\n### ChIP-seq library generation and sequencing\n\nResulting ChIP DNA from two pooled ChIP reactions above was used to generate a sequencing library as per the Illumina ChIP-Seq manufacturer\u2019s instructions. The Illumina Genome Analyzer II (Illumina, San Diego, CA) was used to sequence the single-read ChIP-Seq libraries as per manufacturer\u2019s instructions, for 36\u201343 bps (Supplementary file 1A). Raw sequencing data was analyzed using the Genome Analyzer Pipeline v.1.4.0. Reproducibility of the data is shown in Figure 1\u2014figure supplement 1. Although the general reproducibility of the data is lower than what was previously reported (Kaufmann et al., 2009; 2010), it is clear that the reproducibility between biological replicates is much higher than that with respect to the control 0 hr ethylene gas treatment timepoint. We did not extend raw reads for calculation of reproducibility but instead determined the reproducibility of RPKM values between replicates.\n\n### PolyA selection and mRNA-Seq library generation\n\nAt least 80 \u03bcg total RNA was subject to polyA selection using the Poly(A)Purist MAG Kit (Ambion, cat#AM1922). PolyA RNA was subsequently concentrated by ammonium acetate ethanol precipitation and concentrations were determined using the Qubit fluorometer (Invitrogen, Carlsbad, CA) and the Quant-iT RNA Assay Kit (Invitrogen, cat#Q33140). 50\u2013100 ng of polyA RNA was used in a strand-specific library preparation as per the SOLiD Total RNA-Seq Kit protocol (Invitrogen, cat#4445374) and AMPure XP beads (Agencourt, cat#A63881) were used for purification of cDNA and amplified DNA. Samples were barcoded for multiplexing using the SOLiD RNA Barcoding Kit (Invitrogen, Module 1-16 cat#4427046, Module 17-32 cat#4453189, Module 33-48 cat#4453191) as per manufacturer\u2019s instructions; final size selection was performed using AMPure XP beads instead of the PAGE purification recommended in the protocol. Size selected libraries were then purified using the MinElute Gel Extraction Kit (Qiagen, cat#28,604). Resulting concentrations of libraries were detecting using the Qubit fluorometer and Quant-iT dsDNA High-Sensitivity Assay Kit (Invitrogen, cat #Q33120). RNA libraries were sequenced for 50 bps on the SOLiD4 platform (Life Technologies, Carlsbad, CA) (Supplementary file 1A).\n\n### ChIP-seq data analysis\n\nThe Illumina GERALD module was used to align the sequenced reads to the Col-0 reference genome, version TAIR10 (ftp://ftp.arabidopsis.org/). The analysis variable for the ELAND alignment program was set to eland_extended, as read length was greater than 32 bases (e.g., 36\u201343). Resulting aligned unique single copy reads were used in ChIP-Seq peak analysis (Supplementary file 1A).\n\nSaturation analysis of the ChIP libraries was conducted using the spp software (Kharchenko et al., 2008) revealed that all samples were at least within 15% of saturation. Peak analysis was performed individually on each timepoint in each biological replicate using the corresponding 0 hr ethylene treated wild-type Col-0 EIN3 ChIP sample as a control. Two additional ethylene treated (4 hr) wild-type EIN3 ChIP biological replicates were included in the analysis, with corresponding mutant ein3-1 ethylene treated (4 hr) EIN3 ChIP samples as controls. Three software packages: spp (Kharchenko et al., 2008), MACS (Zhang et al., 2008), PeakSeq (Rozowsky et al., 2009) were originally used to identify peaks/regions of binding. Parameters for each software were as follows: MACS (p=0.01), spp (FDR = 0.1), PeakSeq (FDR = 0.1, mingap = 200, minhit = 20, minratio = 3.5). Binding regions were merged when the maximum gap between two peaks was less than 200 bp determined by separate software packages. Subsequent analysis was performed in R. Overlapping peaks in one biological replicate in one timepoint by more than one software package were retained as binding regions. Because of the variation of the number of called peaks in each software and each timepoint, we used a majority vote to call peaks to identify all high stringency EIN3 candidate targets. PeakSeq results differed significantly from spp and MACS (12\u201376%), therefore only spp and MACS were ultimately used.\n\nUsing this method, 1460 EIN3 binding regions were identified (Supplementary file 1B). For each EIN3 binding region, the reads per kbp of binding site per million sample reads (RPKM) were calculated. Median normalization of the RPKM values between timecourse biological replicates was performed in R. Resulting RPKMs were log2 transformed with respect to the 0 hr ethylene treatment wild-type Col-0 EIN3 ChIP. Normalization with respect to an input genomic control did not produce distinctively different EIN3 binding pattern profiles (data not shown). EIN3 binding regions were then associated to a gene if located within 5 kbp. The nearest expressed gene (RPKM>1) was assigned if there were more than one gene within 5 kbp. If both genes were not expressed, the nearest gene was selected. Distance was determined from the binding region center to the gene feature using the TAIR10 annotation (ftp://ftp.arabidopsis.org) (Figure 1\u2014figure supplement 1).\n\nEIN3 binding profiles of previously determined targets are shown in Figure 1\u2014figure supplement 3. Data from biological replicate 1 is shown; biological replicate 2 results were similar. Four of seven previously determined EIN3 targets were identified as EIN3 candidate targets in our dataset. Browser images of data were generated using AnnoJ (Lister et al., 2008). ChIP browser images display read tracks normalized per library, the lowest number of reads for all ChIP samples was used as a minimum. This minimum number of reads was randomly selected from all other libraries for display, to effectively visualize enrichment among different samples. The trends in the data were reproducible statistically (Figure 1\u2014figure supplement 1), and also evident in the visualization of data (see example of EIN3 binding for both biological replicates in EBF2 promoter depicted in Figure 1\u2014figure supplement 4).\n\nMotif identification was performed with the matrix screening software Patser (Hertz and Stormo, 1999) and the known EIN3 consensus motif (TEIL) from TRANSFAC previously determined using SELEX (Kosugi and Ohashi, 2000). ClustalW2 was used to align motifs (www.ebi.ac.uk/Tools/msa/clustalw2/). Consensus motif representation of the three EIN3 binding sites in the promoter of EBF2 is shown in Figure 1\u2014figure supplement 4.\n\n### Gene ontology over-representation of ethylene-regulated EIN3 targets (EIN3-R)\n\nGene ontology over-representation of selected groups of genes were visualized and determined using the Cytoscape v.2.8.1 (Shannon et al., 2003) plugin BiNGO v.2.44 (Maere, 2005) (Supplementary file 1C). The hypergeometric test was used with Benjamini and Hochberg multiple testing correction (FDR = 0.05). The GOSlim_Plants Ontology was used for Arabidopsis thaliana (Figure 1\u2014figure supplement 5).\n\n### Motif analysis of EIN3 binding regions\n\nEIN3 binding sites were ranked using the R package timecourse, which has been previously used to analyze microarray timecourse data. We used this R package because no available software to analyze timecourse data for ChIP-Seq data exists. The top 50 EIN3 binding regions were determined and the repeatmasked. De novo motif analysis of these top 50 EIN3 binding regions was performed using SOMBRERO (Mahony et al., 2005), and alignment to known Arabidopsis motifs (AGRIS, http://arabidopsis.med.ohio-state.edu/) was performed using STAMP (Mahony and Benos, 2007) (Figure 1\u2014figure supplement 3).\n\n### Protein-binding microarray experiments\n\nTwelve transcription factors that are ethylene-regulated EIN3 targets were analyzed on protein binding microarrays (PBMs). Details of the design and use of universal PBMs has been described elsewhere (Berger et al., 2006; Badis et al., 2009; Berger and Bulyk, 2009). Here, we used two different universal PBM array designs, designated \u2018ME\u2019 and \u2018HK\u2019, after the initials of their designers (Lam et al., 2011). Information about individual plasmids is available in Supplementary file 1D. We identified the DNA Binding Domain (DBD) of each TF by searching for Pfam domains (Finn et al., 2009) using the HMMER tool (Eddy, 2009). DBD sequences along with 50 amino acid residue \u2018pads\u2019 on either side were cloned as SacI\u2013BamHI fragments into pTH5325, a modified T7-driven GST expression vector. Briefly, we used 150 ng of plasmid DNA in a 15 \u03bcl in vitro transcription/ translation reaction using a PURExpress In Vitro Protein Synthesis Kit (New England BioLabs) supplemented with RNase inhibitor (Invitrogen) and 50 \u03bcM zinc acetate. After a 2 hr incubation at 37\u00b0C, 12.5 ml of the mix was added to 137.5 ml of protein-binding solution for a final mix of PBS/2% skim milk/0.2 mg per ml BSA/50 \u03bcM zinc acetate/0.1% Tween-20. This mixture was added to an array previously blocked with PBS/2% skim milk and washed once with PBS/0.1% Tween-20 and once with PBS/0.01% Triton-X 100. After a 1 hr incubation at room temperature, the array was washed once with PBS/0.5% Tween-20/50 mM zinc acetate and once with PBS/0.01% Triton-X 100/50 mM zinc acetate. Cy5-labeled anti-GST antibody was added, diluted in PBS/2% skim milk/50 mM zinc acetate. After a 1 hr incubation at room temperature, the array was washed three times with PBS/0.05% Tween-20/50 mM zinc acetate and once with PBS/50 mM zinc acetate. The array was then imaged using an Agilent microarray scanner at 2 mM resolution. Images were scanned at two power settings: 100% photomultiplier tube (PMT) voltage (high), and 10% PMT (low). The two resulting grid images were then manually examined, and the scan with the fewest number of saturated spots was used. Image spot intensities were quantified using ImaGene software (BioDiscovery).\n\n### Motif analysis of EIN3 targets regulating the ethylene transcriptional response\n\nThe creation of a position frequency matrix (PFM) from a PBM experiment is non-trivial. For each TF, we therefore evaluated a panel of three algorithms and chose the PFM with the highest performance. For each TF, we ran each algorithm individually on both PBM experiments (HK and ME array designs). The resulting PFMs were then used to score the probe sequences of the opposite array, and these predictions were evaluated based on their Pearson correlation with the actual intensities across all probes. Based on these evaluations, a final PFM was chosen for each TF from the six possible PFMs (three algorithms times two array designs).\n\nWe chose three algorithms based on their high performance on an independent PBM dataset (data not shown). Two of the methods, BEEML-PBM (Zhao and Stormo, 2011), and FeatureREDUCE (PWM modification of [Foat et al., 2006]) are based on biophysical models of TF-DNA interactions. The third algorithm (PWM_align) is an in-house method that aligns all 8mers with E-scores > 0.45 (Berger et al., 2008) using ClustalW (Chenna, 2003), and trims the resulting alignment by restricting to positions present in at least half of the sequences in the alignment.\n\nThe presence of these motifs in the promoter region (\u22121000bp) of genes that were transcriptionally induced/repressed by ethylene was evaluated to find candidate transcription factors that may be involved in regulating the secondary ethylene transcriptional response. The matrix screening software Patser (Hertz and Stormo, 1999) was used to scan the promoter region of all genes that were transcriptionally regulated by ethylene, with the PBM motifs (Figure 3\u2014figure supplement 1; Supplementary file 1E).\n\n### mRNA-seq analysis\n\nThe SOLiD Bioscope v.1.3 software was used to align the reads to the Col-0 reference genome TAIR10 (ftp://ftp.arabidopsis.org/). Two perfect matches per location were allowed. Exonic expression was determined (RPKM) using mRNA-Seq reads mapping in exons in the direction of transcription. Genes were denoted as expressed if they contained RPKM values greater than one for at least one biological replicate in one timepoint. Differentially expressed genes were then called (t-test p=0.05, 50% difference from prior timepoint of ethylene gas treatment), and log2 normalized with respect to the 0 hr ethylene gas treatment control (Figure 1\u2014figure supplement 2). Overlap of up- and down-regulated genes was \u223c1%.\n\n### Correlation of EIN3 binding and changes in mRNA steady-state levels\n\nEIN3 ChIP candidate targets were classified as ethylene regulated (EIN3-R), non-ethylene-regulated (EIN3-NR), and transcription not detected in etiolated seedlings (EIN3-ND). The heatmap (Figure 1\u2014figure supplement 2) revealed that there is a singular binding pattern but various transcription profiles, as displayed in Figure 2. Although the majority of EIN3 candidate targets were up-regulated by ethylene, consistent with the previously determined role of EIN3 as an activator, a subset of EIN3 candidate targets was repressed upon ethylene treatment; one instance of EIN3 as a repressor has been previously reported (Chen et al., 2009). The correlation of EIN3 binding and ethylene-regulated transcription was calculated at from 4 hr of ethylene treatment (0 hr ethylene as a control), for all EIN3 and EIN3-R (ethylene-induced) targets. The R2 values were much less than 0.50, suggesting a lack of correlation of EIN3 binding levels and ethylene-regulated steady-state transcription.\n\nThe kinetics of transcription was determined for all genes that were transcriptionally regulated by ethylene, and EIN3-R, and reflects the previous growth inhibition study kinetics (Figure 2\u2014figure supplement 2). The ethylene transcriptional response was further analyzed in context of the dynamic EIN3 binding data. To reconstruct the dynamic regulatory networks that were activated following ethylene treatment, we used the Dynamic Regulatory Events Miner (DREM) (Ernst et al., 2007). DREM integrates time-series gene expression data with static transcription factor (TF)\u2014gene interaction data to reconstruct these dynamic networks. DREM searches for bifurcation events; places in the time series data where the expression of one set of genes diverges from the expression of another set, and annotates these events with the TFs that can explain them. This allows us to assign a time of activation to static TF-gene interactions data. To obtain the static interaction data we extracted 11,355 TF-gene interactions from the AtRegNet AGRIS database (Yilmaz et al., 2010). In addition, for this work we have extended DREM so that it can utilize temporal EIN3 binding profiles as well as allowing us to identify functional binding events (those with direct impact on expression). This is done by changing the set of targets for EIN3 so that different binding values are used at each time point. For each EIN3 candidate target gene, the average RPKM values from two input control samples at 0 and 4 hr were used as a cutoff to determine whether it was bound by EIN3 or not at each time point. We ran the modified DREM algorithm using the mRNA-Seq data allowing for 3-way splits. We filtered out genes that did not change at least twofold (up or down) at any time point, and we used the default values for all other parameters.\n\nFour temporally distinct (Hypergeometric p<0.001) EIN3-modulated waves of transcription (Pathway hypergeometric p<10\u221210) were observed. There was a variable amount of noise and percentage of hormone-related genes in each wave of transcription (Figure 2\u2014figure supplement 2). The comprehensive DREM analysis results are shown (Figure 2\u2014figure supplement 3), including all observed patterns of ethylene transcriptional regulation. The over path significance was used to determine whether these waves were regulated by EIN3. A stringent threshold (10\u221210) was used to identify groups of genes with a significant percentage (>15%) of EIN3 candidate targets.\n\n### Generation of hormone co-regulation network\n\nThe most current protein-protein interaction network for Arabidopsis (Arabidopsis Interactome Mapping Consortium, 2011) containing high throughput yeast two hybrid and literature curated data was used as the foundation for the hormone co-regulation network. The protein-DNA interaction network AtRegNet from AGRIS (http://arabidopsis.med.ohio-state.edu/; 7918 nodes, 10,640 edges) included high throughput data (ChIP-chip and ChIP-Seq) for several transcription factors including AGL15, HY5, GL3, AtbHLH15, WRKY53, GL1, E2F, and SEP3 as well as literature curated data (Yilmaz et al., 2010). Transcription factor-DNA binding interactions from six additional studies were added, including TGA2 (Thibaud-Nissen et al., 2006), AP1 (Kaufmann et al., 2010), BES1 (Yu et al., 2011), BZR1 (Sun et al., 2010), FLC (Deng et al., 2011) in addition to our data. This generated a protein-DNA interaction network of 8531 nodes and 11,953 edges, which was then merged with the protein-protein interaction network. Protein\u2013protein interaction and protein\u2013DNA interaction edges were indicated by dark and light grey lines, respectively.\n\nTo identify genes associated with a hormone signal or response (e.g., hormone-related), we used the annotation in the Arabidopsis Hormone Database (Peng et al., 2008) (http://ahd.cbi.pku.edu.cn/) in addition to other datasets including relevant ethylene microrarray studies in etiolated seedlings (Alonso et al., 2003a; Nemhauser et al., 2006). Hormone annotation attributes were imported into Cytoscape (Shannon et al., 2003) and colored according to hormone. The amount of genes involved in hormone responses in the genome was 21% (5729/27,416), whereas the amount of genes involved in our EIN3 target group was 46% (Figure 1\u2014figure supplement 2, inset).\n\n### Identification of loss-of-function mutants for the HLS1 homologs\n\nWe identified loss-of-function mutants and performed thorough genetic analyses of HLS1 and its homologs to characterize the effect, if any, these genes have on the ethylene response. Three HLS1 homologs (HLHs) exist in Arabidopsis genome. The protein sequences of the HLHs are homologous to the full-length protein (Figure 4\u2014figure supplement 3). Like HLS1, these homologs contain acetyltransferase domains at the N-terminal portion of the protein. Phylogenetic analysis of HLS1-like genes with acetyltransferase domain containing proteins from various organisms revealed that the HLS1 family of acetyltransferases form a unique plant-specific class (Figure 4\u2014figure supplement 3). We isolated the bona fide loss-of-function mutants in the coding regions of the genes for all the HLH genes using the Salk T-DNA mutant collection (Figure 4\u2014figure supplement 3) (Alonso et al., 2003a). The single knockout mutants of the HLHs exhibited normal apical hook development and had no obvious developmental defects compared to wild type (data not shown), indicating functional redundancy among HLS1 family members.\n",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "9fe3ec67-20c9-407b-89b0-9323373cf148",
+      "submission_id": "95ace197-bb12-4219-b905-8b644aeac5e8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Detlef Weigel, Max Planck Institute for Developmental Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00675.021](https://doi.org/10.7554/eLife.00675.021)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cTemporal transcriptional response to ethylene gas drives growth hormone cross-regulation in Arabidopsis\u201d for consideration at eLife. Your article has been favorably reviewed by Detlef Weigel (eLife Deputy Editor) and an outside peer reviewer. Both discussed their comments and the following reflects their combined assessment of your work.\n\nThe manuscript by Chang et al. greatly advances our understanding of how the effects of the plant hormone ethylene are mediated at the molecular level. The authors present a coordinated analysis of transcriptional changes and genome-wide binding of the key transcription factor EIN3 (which accumulates upon ethylene treatment and which is both necessary and sufficient for most ethylene responses) during a time course after addition of ethylene. There are very few reports in the literature tracking genome-wide transcription factor binding after a stimulus, and the integration with gene expression measurements greatly increases the inferences that can be drawn from the genome-wide DNA binding studies. This tour de force will set a new bar for the analysis of transcription factor networks.\n\nUsing ChIP-Seq and RNA-Seq, the authors analyzed young Arabidopsis seedlings for EIN3 binding and transcriptional modulation after addition of ethylene. Important findings are that there are several discrete waves of transcriptional responses; that a negative feedback loop represses ethylene receptor expression; and that much of the previously known cross-talk between hormone pathways involves EIN3 binding to genes regulated by several hormones. The interaction with other hormone pathways is nicely demonstrated with the knockout of a small family of closely related EIN3 targets, which reproduces aspects of phenotypes seen in mutants deficient in the response to another hormone, auxin.\n\nThe authors also introduce a clever shortcut for understanding the regulatory logic of the later waves of ethylene triggered gene expression. They first nominate candidates for transcription factors that themselves are transcriptionally responsive to EIN3 and that mediate these later responses. The authors then use microarrays to identify sequences that 12 such candidate factors can bind to in vitro. These motifs are then confirmed to be overrepresented in the promoters of the late EIN3 targets.\n\nThe only major criticism is that the authors should think a bit harder about their nomenclature. It seems that \u201ctargets\u201d refer to any genomic sequence that is bound by EIN3 (or any gene that is within a certain distance from an EIN3 binding site). More commonly, \u201ctarget\u201d is reserved for bona fide repressed or activated genes. For example, the sentence \u201cmany EIN3 targets were not transcriptionally ethylene-regulated (EIN3-NR) (67%), while a subset of the EIN3 targets was transcriptionally ethylene-regulated\u201d should be rephrased as \u201conly about 30% of EIN3 binding sites were associated with transcriptional changes; at least two third were not\u201d.\n\nMinor comments:\n\n1) The first wave of transcriptional regulation does not look very much like a set of coordinated genes. There are many genes that appear to move in the opposite fashion at different time points. This would appear to go beyond the \u201cnoise\u201d that the authors use to describe it. Either this should be cleaned up in the sense that the genes that are most coordinated are kept and the others are removed, or the authors need to better explain their rationale for keeping this cluster.\n\n2) Results: over-representation of DNA binding motifs for the 12 candidate factors in EIN3 targets: we suspect it matters which wave is examined; please comment.\n\n3) Results: is the binding of EIN3 to promoters of HLS paralogs associated with overall sequence conservation of the promoters?\n\n4) In addition, it would be nice to know if transcript levels of the other family members decreased in an ein3-1 eil1-1 double mutant background.\n\n5) Similarly, one would want to know if other auxin related functions like root gravitropism or bud emergence were impaired in the quadruple mutant and if any of its phenotypes could be rescued by exogenous addition of auxin and/or ethylene.\n",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cbb6c7eb-3590-4368-a6f6-edabb3a95644",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C1",
+      "claim": "The gaseous plant hormone ethylene regulates a multitude of growth and developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The gaseous plant hormone ethylene regulates a multitude of growth and developmental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about ethylene's role in plant biology, drawing from established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "a18677c8-dd2d-407e-8d6f-af4c5b08e7f6",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C2",
+      "claim": "The dynamic ethylene physiological response includes a rapid growth inhibition independent of EIN3, followed by an EIN3-dependent sustained growth inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic ethylene physiological response, a rapid growth inhibition independent of the master transcriptional regulator ETHYLENE INSENSITIVE3 (EIN3), followed by an EIN3-dependent sustained growth inhibition, calls for a temporal study of ethylene transcriptional regulation (Binder et al., 2004a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Binder et al., 2004a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "ee4ae04e-5e5c-4a78-b6e3-c6fde0b07141",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C3",
+      "claim": "EIN3 has been shown to be necessary and sufficient for the ethylene response.",
+      "claim_type": "EXPLICIT",
+      "source": "EIN3 has been shown to be necessary and sufficient for the ethylene response and accumulates upon a duration of exogenous ethylene gas treatment (Guo and Ecker, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Guo and Ecker, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "1a51024e-01ed-4a65-ab7a-d66d6c65699e",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C4",
+      "claim": "EIN3 accumulates upon a duration of exogenous ethylene gas treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "EIN3 has been shown to be necessary and sufficient for the ethylene response and accumulates upon a duration of exogenous ethylene gas treatment (Guo and Ecker, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Guo and Ecker, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "86b3ff81-a3f4-4bc0-987a-45c507380344",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C5",
+      "claim": "1460 EIN3 binding regions were identified in the Arabidopsis genome associated with 1314 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "By stringent analysis of the temporal ChIP-Seq data (see 'Materials and methods'), we identified 1460 EIN3 binding regions in the Arabidopsis genome associated with 1314 genes (Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ChIP-Seq experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "4c6a284d-63b9-4cfb-a069-eeb2f36b690c",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C6",
+      "claim": "EIN3 binding regions show significant enrichment of the consensus TEIL motif.",
+      "claim_type": "EXPLICIT",
+      "source": "In the sequences of EIN3 binding regions, we found significant enrichment of the consensus TEIL motif (Hypergeometric p<10\u221287) (Kosugi and Ohashi, 2000), and de novo motif analysis identified the known EIN3 motif (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by both the data analysis (hypergeometric test) and citation to Kosugi and Ohashi, 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "9ac04d80-76ff-4749-9342-b249e0672d36",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C7",
+      "claim": "De novo motif analysis identified the known EIN3 motif.",
+      "claim_type": "EXPLICIT",
+      "source": "In the sequences of EIN3 binding regions, we found significant enrichment of the consensus TEIL motif (Hypergeometric p<10\u221287) (Kosugi and Ohashi, 2000), and de novo motif analysis identified the known EIN3 motif (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the de novo motif analysis data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "b17874d4-88c8-473d-a8aa-b6de9569951c",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C8",
+      "claim": "EBF2 directs the proteolysis of EIN3.",
+      "claim_type": "EXPLICIT",
+      "source": "EBF2 directs the proteolysis of EIN3 and exhibits ethylene-induced transcription (Figure 1A), resulting in feedback regulation of the ethylene signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about EBF2 function in the ethylene signaling pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "9c3d259e-cb3b-4830-92c9-237a27394654",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C9",
+      "claim": "EBF2 exhibits ethylene-induced transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "EBF2 directs the proteolysis of EIN3 and exhibits ethylene-induced transcription (Figure 1A), resulting in feedback regulation of the ethylene signaling pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "3c41d50c-42a6-49ab-8ce1-0b7f326eba74",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C10",
+      "claim": "EIN3 binding to EBF2 results in feedback regulation of the ethylene signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "EBF2 directs the proteolysis of EIN3 and exhibits ethylene-induced transcription (Figure 1A), resulting in feedback regulation of the ethylene signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relationship between EIN3 and EBF2 described in the text.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "0be23726-3db8-4e7d-a060-30f7bc4aa09b",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C11",
+      "claim": "Additional distal EIN3 binding was identified in the EBF2 promoter region.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study identified additional distal EIN3 binding in the EBF2 promoter region (Figure 1A, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the ChIP-Seq data shown in Figure 1A and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "3dc53549-d72c-4f13-b931-cbe53b6fca7e",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C12",
+      "claim": "EIN3 binding increases with ethylene treatment to a maximum at 4 hr of ethylene treatment for all candidate targets.",
+      "claim_type": "EXPLICIT",
+      "source": "EIN3 binding increases with ethylene treatment to a maximum at 4 hr of ethylene treatment for all candidate targets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the heatmap data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "dcd4567d-5cc5-4806-8da9-e3f1fc32510a",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C13",
+      "claim": "Equivalent numbers of genes are up- and down-regulated upon ethylene treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "(Upper panel) Equivalent numbers of genes are up- and down-regulated upon ethylene treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1C upper panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "e1cba306-cbc7-4a38-a8df-3ce9fc78b2d8",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C14",
+      "claim": "The majority of EIN3 targets differentially expressed upon ethylene treatment are up-regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "(Lower panel) Majority of EIN3 targets differentially expressed upon ethylene treatment are up-regulated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1C lower panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "fa0f49b9-c5a6-4541-8395-0495540aeffe",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C15",
+      "claim": "A majority of EIN3 candidate targets that are regulated by ethylene (EIN3-R) are induced (85%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a majority of EIN3 candidate targets that are regulated by ethylene (referred to as EIN3-R) are induced (85%), Moreover, when compared to the regulation of all genes that respond to ethylene, we observed an over-representation of up-regulation of EIN3 candidate targets (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data analysis and shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "cc222d3a-11d2-4f18-8e4a-e1ce3871b8f8",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C16",
+      "claim": "There is an over-representation of up-regulation of EIN3 candidate targets compared to all genes that respond to ethylene.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a majority of EIN3 candidate targets that are regulated by ethylene (referred to as EIN3-R) are induced (85%), Moreover, when compared to the regulation of all genes that respond to ethylene, we observed an over-representation of up-regulation of EIN3 candidate targets (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparative data analysis shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "e45d787d-fbf0-4754-95c4-bf0b28cfec2b",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C17",
+      "claim": "Many EIN3-R are transcription factors (\u223c14%).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, many EIN3-R are transcription factors (\u223c14%); EIN3 candidate targets are significantly enriched in gene ontology (GO) terms related to transcription factor regulation, confirming that EIN3 activates a transcriptional cascade (Figure 1\u2014figure supplement 5; Supplementary file 1C) (Maere, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data analysis of EIN3-R targets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "bd7641fb-0131-420b-9392-931c97dfd81f",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C18",
+      "claim": "EIN3 candidate targets are significantly enriched in gene ontology (GO) terms related to transcription factor regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, many EIN3-R are transcription factors (\u223c14%); EIN3 candidate targets are significantly enriched in gene ontology (GO) terms related to transcription factor regulation, confirming that EIN3 activates a transcriptional cascade (Figure 1\u2014figure supplement 5; Supplementary file 1C) (Maere, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the GO enrichment analysis shown in Figure 1\u2014figure supplement 5 and Supplementary file 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "3fe1e611-b071-40b6-bb52-b5a04feca25b",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C19",
+      "claim": "EIN3 activates a transcriptional cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, many EIN3-R are transcription factors (\u223c14%); EIN3 candidate targets are significantly enriched in gene ontology (GO) terms related to transcription factor regulation, confirming that EIN3 activates a transcriptional cascade (Figure 1\u2014figure supplement 5; Supplementary file 1C) (Maere, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the enrichment of transcription factors among EIN3 targets.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "4888f1e1-7620-4ffe-907a-ff19e9c6eb8f",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C20",
+      "claim": "Only about 30% of the EIN3 binding sites were associated with transcriptional changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Only about 30% of the EIN3 binding sites were associated with transcriptional changes, but at least two-thirds were not (Figure 1D, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1D and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "dfb0958f-611b-4764-a2e3-631e44c361ca",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C21",
+      "claim": "EIN3 candidate targets that are not transcriptionally activated may require cofactors to induce a change in expression for a specific environmental response or developmental program.",
+      "claim_type": "EXPLICIT",
+      "source": "EIN3 candidate targets that are not transcriptionally activated may require cofactors to induce a change in expression for a specific environmental response or developmental program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observation that many EIN3 binding sites do not show transcriptional changes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "4bf0bd88-4f0a-43a4-8c46-734d9c32ce14",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C22",
+      "claim": "Relatively high levels of EIN3 occupancy in etiolated seedlings treated with ethylene correspond to increases in steady-state levels of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "However, relatively high levels of EIN3 occupancy in etiolated seedlings treated with ethylene indeed correspond to increases in steady-state levels of transcription (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "e754b16e-a19a-4ab7-af57-5ece24c76e64",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C23",
+      "claim": "EIN3-R targets are enriched in gene families with specific functions, including BZR, TIFY, and bHLH transcription factor families.",
+      "claim_type": "EXPLICIT",
+      "source": "EIN3 candidate targets that exhibit increased occupancy and increased levels of transcription (EIN3-R) are functional targets, enriched in gene families with specific functions, for example BZR, TIFY, and bHLH transcription factor families, which play a role in other hormone pathways (p<0.05) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the gene family enrichment analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "000d82c8-ad40-4335-9998-7ef7f3a7803c",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C24",
+      "claim": "BZR, TIFY, and bHLH transcription factor families play a role in other hormone pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "EIN3 candidate targets that exhibit increased occupancy and increased levels of transcription (EIN3-R) are functional targets, enriched in gene families with specific functions, for example BZR, TIFY, and bHLH transcription factor families, which play a role in other hormone pathways (p<0.05) (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about these transcription factor families.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "40e17013-6ece-4205-a24d-88c1d41ab812",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C25",
+      "claim": "The highest percentage of hormone-associated genes occurs in EIN3 candidate targets that are ethylene-regulated (EIN3-R).",
+      "claim_type": "EXPLICIT",
+      "source": "The highest percentage of hormone-associated genes occurs in EIN3 candidate targets that are ethylene-regulated (EIN3-R) (Figure 2B, inset), and it is likely that these EIN3-R targets are direct and/or functional.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2B inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "ce37547f-5c0e-4408-a43b-7c9bc2cb219e",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C26",
+      "claim": "EIN3-R targets are likely direct and/or functional.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest percentage of hormone-associated genes occurs in EIN3 candidate targets that are ethylene-regulated (EIN3-R) (Figure 2B, inset), and it is likely that these EIN3-R targets are direct and/or functional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high percentage of hormone-associated genes in EIN3-R targets.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "25ff35fd-7230-4ba8-b0ca-a853189d723b",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C27",
+      "claim": "The ethylene response occurs in four waves of transcription significantly regulated by EIN3.",
+      "claim_type": "EXPLICIT",
+      "source": "Projection of the dynamic EIN3 binding (ChIP-Seq) onto the transcriptional ethylene response (mRNA-Seq) using the Dynamic Regulatory Events Miner (DREM) (Ernst et al., 2007) revealed that the ethylene response occurs in four waves of transcription significantly regulated by EIN3 (Pathway hypergeometric p<10\u221210) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the DREM analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "187db42e-6759-4716-8ea2-dca0a13d68d0",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C28",
+      "claim": "The four waves of ethylene transcription display distinct temporal transcription behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "These waves display distinct temporal transcription behaviors (Hypergeometric p<0.001), and the reduction of transcriptional noise occurs in successive temporal waves (Figure 2C, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the statistical analysis and data shown in Figure 2C and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "3f406675-1598-4a71-ae53-adab32ca7194",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C29",
+      "claim": "The reduction of transcriptional noise occurs in successive temporal waves of ethylene response.",
+      "claim_type": "EXPLICIT",
+      "source": "These waves display distinct temporal transcription behaviors (Hypergeometric p<0.001), and the reduction of transcriptional noise occurs in successive temporal waves (Figure 2C, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2C and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "172af0ae-26d6-4180-974d-30e09a6703df",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C30",
+      "claim": "Wave 1 is enriched for genes involved in RNA binding/translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes that were enriched in specific biological functions within these four transcriptional waves include RNA binding/translation (Wave 1, Wave 3), cell wall maintenance (Wave 2), and response to endogenous stimulus (Wave 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the functional enrichment analysis of genes in Wave 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "c76bd17a-3606-4c62-8051-5f4068613e4c",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C31",
+      "claim": "Wave 2 is enriched for genes involved in cell wall maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes that were enriched in specific biological functions within these four transcriptional waves include RNA binding/translation (Wave 1, Wave 3), cell wall maintenance (Wave 2), and response to endogenous stimulus (Wave 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the functional enrichment analysis of genes in Wave 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "c54c8c37-2097-4aab-b67b-696d99ec6376",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C32",
+      "claim": "Wave 3 is enriched for genes involved in RNA binding/translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes that were enriched in specific biological functions within these four transcriptional waves include RNA binding/translation (Wave 1, Wave 3), cell wall maintenance (Wave 2), and response to endogenous stimulus (Wave 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the functional enrichment analysis of genes in Wave 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "5445e6f5-dc74-4164-80e8-b2d47007150d",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C33",
+      "claim": "Wave 4 is enriched for genes involved in response to endogenous stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes that were enriched in specific biological functions within these four transcriptional waves include RNA binding/translation (Wave 1, Wave 3), cell wall maintenance (Wave 2), and response to endogenous stimulus (Wave 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the functional enrichment analysis of genes in Wave 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "7b2558ec-3b89-4dac-b505-55ac0010ccf0",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C34",
+      "claim": "The expression of cell wall maintenance genes steadily increases following 1 hr of ethylene treatment, consistent with kinetics of EIN3-dependent growth inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The second wave is also enriched for genes involved in cell wall maintenance, and the expression of these genes steadily increases following 1 hr of ethylene treatment, consistent with kinetics of EIN3-dependent growth inhibition (Binder et al., 2004a; Vandenbussche et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data analysis and citations to Binder et al., 2004a and Vandenbussche et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "e6fcfa9d-c54a-4496-b24a-f08921bf6385",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C35",
+      "claim": "The first wave is highly variable, lower in steady-state levels of transcription, and contains the lowest percentage of EIN3 candidate targets and hormone-related genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The first wave is highly variable, lower in steady-state levels of transcription, and it also contains the lowest percentage of EIN3 candidate targets and hormone-related genes (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "196a8379-a0d0-44d1-bf86-443da1f9896f",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C36",
+      "claim": "Low amounts of ethylene can result in adaptation and desensitization to subsequent ethylene stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous ethylene growth rate inhibition studies have shown that low amounts of ethylene can result in adaptation and desensitization to subsequent ethylene stimulation (Binder et al., 2004a, 2004b) .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Binder et al., 2004a and 2004b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "35562ecf-fc33-4dc5-a1ec-233d94d27f78",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C37",
+      "claim": "The first wave may serve as the immediate ethylene response, activating initial ethylene response genes as well as those that serve to desensitize the plant to subsequent ethylene stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This first wave may serve as the immediate ethylene response, activating initial ethylene response genes as well as those that serve to desensitize the plant to subsequent ethylene stimulation, but this has yet to be shown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the function of the first wave.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "a3dda60e-8e6e-4661-af4c-5b62ee0da408",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C38",
+      "claim": "The next three waves of transcription are successively less variable and contain higher percentages of EIN3 candidate targets and hormone-related genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The next three waves of transcription are successively less variable and contain higher percentages of EIN3 candidate targets and hormone-related genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data analysis of the four waves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "838a80f4-2fb9-49fe-bdea-3f2b80fbc29a",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C39",
+      "claim": "The four waves of ethylene-induced transcription account for 50% of the transcriptionally ethylene-regulated EIN3 targets (EIN3-R).",
+      "claim_type": "EXPLICIT",
+      "source": "The four waves of ethylene-induced transcription account for 50% of the transcriptionally ethylene-regulated EIN3 targets (EIN3-R), and the remaining EIN3 candidate targets are distributed among other patterns of transcription that do not contain significant numbers of EIN3 candidate targets in each transcriptional trajectory (Pathway hypergeometric p<10\u221210) (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "a7d4188f-c908-4f6c-b37a-85e3746ac22f",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C40",
+      "claim": "The key players in the ethylene transcriptional response regulated by EIN3 are involved in plant hormone response pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "A recurring theme throughout this study is that the key players in the ethylene transcriptional response regulated by EIN3 are involved in plant hormone response pathways, and we anticipate a dense network of interconnections between the coregulated hormone pathways because hormones operate in concert, synergistically/antagonistically regulating growth and development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing enrichment of hormone-related genes among EIN3 targets.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "18418d18-ca4f-47ad-97c4-5584402d3703",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C41",
+      "claim": "Hormones operate in concert, synergistically/antagonistically regulating growth and development.",
+      "claim_type": "EXPLICIT",
+      "source": "A recurring theme throughout this study is that the key players in the ethylene transcriptional response regulated by EIN3 are involved in plant hormone response pathways, and we anticipate a dense network of interconnections between the coregulated hormone pathways because hormones operate in concert, synergistically/antagonistically regulating growth and development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about hormone interactions in plants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "815e50cf-b300-4be6-9957-b46a49357452",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C42",
+      "claim": "Many of the EIN3-modulated downstream effectors are members of the AP2/ERF transcription factor family.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the EIN3-modulated downstream effectors are members of the AP2/ERF transcription factor family, and as expected, these transcriptional initiators are up-regulated by ethylene (Figure 3A, inset, green font).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "ed74b86f-b063-46c4-bb1d-4781101ffcb7",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C43",
+      "claim": "AP2/ERF transcription factors are up-regulated by ethylene.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the EIN3-modulated downstream effectors are members of the AP2/ERF transcription factor family, and as expected, these transcriptional initiators are up-regulated by ethylene (Figure 3A, inset, green font).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "8577a405-c962-42fb-bfc5-28965454d0f0",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C44",
+      "claim": "Several negative regulators of the ethylene signaling pathway are targets of EIN3, including ETR2, ERS1/2, RTE1, CTR1, and EBF1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, several negative regulators of the ethylene signaling pathway (Kendrick and Chang, 2008) were targets of EIN3 (Figure 3A), including three ethylene receptors (ETHYLENE RESPONSE2 [ETR2], ETHYLENE RESPONSE SENSOR1/2 [ERS1/2]), as well as REVERSION-TO-ETHYLENE SENSITIVITY1 (RTE1), CONSTITUTIVE TRIPLE RESPONSE1 (CTR1), and the previously mentioned EBF1/2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the ChIP-Seq data shown in Figure 3A and citation to Kendrick and Chang, 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "7b03a32a-fa72-45f5-b08c-448fd39e9e44",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C45",
+      "claim": "The induction of ETR2, ERS1/2 by ethylene has been suggested to restore ethylene receptor activity, resensitizing the plant to ethylene.",
+      "claim_type": "EXPLICIT",
+      "source": "The induction of ETR2, ERS1/2 by ethylene was previously reported and has been suggested to restore ethylene receptor activity, resensitizing the plant to ethylene (Binder et al., 2004b; Vandenbussche et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Binder et al., 2004b and Vandenbussche et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "b160c176-38a7-4e8c-af55-eebbffa1ec27",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C46",
+      "claim": "The negative regulation of ethylene signaling by EIN3 through induction of CTR1 and ETR2 is supported by literature showing these proteins exhibit an increase in stabilization upon ethylene treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The negative regulation of ethylene signaling by EIN3 through induction of CTR1 and ETR2 is further supported by the literature (Chen et al., 2007), suggesting that these proteins exhibit an increase in stabilization upon ethylene treatment (Gao et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chen et al., 2007 and Gao et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "fcceccfe-5251-4ae0-89da-e7f202dc14aa",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C47",
+      "claim": "The EIN3 candidate targets account for more than twice the proportion of hormone genes than in the genome (46%).",
+      "claim_type": "EXPLICIT",
+      "source": "The EIN3 candidate targets account for more than twice the proportion of hormone genes than in the genome (46%, Hypergeometric p=10\u221296) (Figure 2B, inset) (Alonso et al., 2003a; Nemhauser et al., 2006; Peng et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the statistical analysis and data shown in Figure 2B inset, with citations to Alonso et al., 2003a, Nemhauser et al., 2006, and Peng et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "98d4ed3b-10c2-4597-a136-77e46b9f3220",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C48",
+      "claim": "Many of the genes were involved in more than one hormone response, highlighting the extensive hormone co-regulation in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the genes were involved in more than one hormone response, highlighting the extensive hormone co-regulation in Arabidopsis (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "c641441b-ec2b-4248-a768-d8131c121f1e",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C49",
+      "claim": "Hormone co-regulation is evident in the protein-protein as well as the transcriptional regulator interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Hormone co-regulation is evident in the protein-protein as well as the transcriptional regulator interactions and this network reveals interconnectivity suggestive of robust regulatory co-regulation (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the network analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "cd165a2d-b1fe-4134-9d22-8a1a4091ecc9",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C50",
+      "claim": "Hormone co-regulation can occur through the binding of EIN3.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings presented in our study suggest that (1) hormone co-regulation can occur through the binding of EIN3, (2) EIN3 targets hormone pathways at multiple levels, and (3) some of these events are transcriptionally regulated by ethylene (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the data showing EIN3 binding to genes in multiple hormone pathways.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "385383aa-6104-4c18-9c00-562f8f5d5a39",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C51",
+      "claim": "EIN3 targets hormone pathways at multiple levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings presented in our study suggest that (1) hormone co-regulation can occur through the binding of EIN3, (2) EIN3 targets hormone pathways at multiple levels, and (3) some of these events are transcriptionally regulated by ethylene (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the data showing EIN3 binding to different components of hormone pathways.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "63dc7ed2-5eac-4fb5-aa5d-d3be18f6c983",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C52",
+      "claim": "Some hormone co-regulation events are transcriptionally regulated by ethylene.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings presented in our study suggest that (1) hormone co-regulation can occur through the binding of EIN3, (2) EIN3 targets hormone pathways at multiple levels, and (3) some of these events are transcriptionally regulated by ethylene (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "c38d1190-a97b-43d7-b110-57bb2eaac4c6",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C53",
+      "claim": "Ethylene and jasmonate co-regulation occurs at the transcriptional level, sharing a complement of genes responsive to both hormones, for example RAP2.6L, ERF1.",
+      "claim_type": "EXPLICIT",
+      "source": "Ethylene and jasmonate co-regulation occurs at the transcriptional level, sharing a complement of genes responsive to both hormones, for example RAP2.6L, ERF1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ethylene-jasmonate co-regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "648f9ac9-8655-47cd-a431-409017050af5",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C54",
+      "claim": "EIN3 targets four JAZ repressors, two of which are transcriptionally regulated by ethylene (JAZ1, JAZ6).",
+      "claim_type": "EXPLICIT",
+      "source": "EIN3 also targets four JAZ repressors, two of which are transcriptionally regulated by ethylene (JAZ1, JAZ6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ChIP-Seq and mRNA-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "9b5e6371-c88c-40b3-958f-6ff5df5fc6a6",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C55",
+      "claim": "In the presence of jasmonate, JAZ1 proteins bound to EIN3 are degraded, relieving the EIN3 transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, ethylene and jasmonate are known to function synergistically and in the presence of jasmonate, JAZ1 proteins bound to EIN3 are degraded, relieving the EIN3 transcriptional activation (Zhu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zhu et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "750df5d5-8386-4527-b87e-eac9af1c07c2",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C56",
+      "claim": "The presence of an exogenous ethylene stimulus primes cells for a jasmonate response, by loading the promoters of jasmonate/ethylene response genes with EIN3 and JAZ proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the presence of an exogenous ethylene stimulus primes cells for a jasmonate response, by loading the promoters of jasmonate/ethylene response genes with EIN3 and JAZ proteins, poising the plant for a jasmonate-ethylene driven transcriptional program, as required for plant pathogen response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing EIN3 binding to JAZ genes and the known function of these proteins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "84599637-f9a7-44b0-83de-1f21ffa15e04",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C57",
+      "claim": "Ethylene and gibberellin co-regulation through EIN3 occurs at signal reception (GID1B, GID1C) and transcription (PIF3).",
+      "claim_type": "EXPLICIT",
+      "source": "Ethylene and gibberellin co-regulation through EIN3 occurs at signal reception (GID1B, GID1C) and transcription (PIF3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ChIP-Seq data showing EIN3 binding to these genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "41bf1284-b547-4753-8f8f-1a8ef76ef14e",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C58",
+      "claim": "The regulatory logic of EIN3 binding results in an up-regulation of the gibberellin response through GID receptors targeting DELLA repressors for degradation, which releases PIF3 from repression.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulatory logic of EIN3 binding results in an up-regulation of the gibberellin response; GID receptors target DELLA repressors for degradation, which releases PIF3 from repression, resulting in the activation of the gibberellin transcriptional response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the known functions of GID receptors, DELLA repressors, and PIF3 in the gibberellin pathway.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "f5e01f37-5b75-4068-87f1-df9fb5ac2222",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C59",
+      "claim": "The PIF3 motif is over-represented in the promoter sequences of the ethylene transcriptional response genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional support for feed-forward transcription is provided by over-representation of the PIF3 motif in the promoter sequences of the ethylene transcriptional response genes (Supplementary file 1E, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the motif enrichment analysis shown in Supplementary file 1E and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "d03f4fae-c2b2-4287-b2cb-86603fd3b837",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C60",
+      "claim": "FUSCA3 (FUS3) negatively regulates ethylene by regulating genes upstream and downstream of EIN3 (EIN2 and ERF1) in leaf aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Hormone co-regulation may also occur bidirectionally as a recent study reported negative regulation of ethylene by FUSCA3 (FUS3), known to regulate and be regulated by gibberellin and abscisic acid in embryonic and vegetative timing (Lumba et al., 2012). FUS3 negatively regulates genes upstream and downstream of EIN3 (EIN2 and ERF1) in leaf aging (Lumba et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lumba et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "414b5eb8-e82e-491b-a647-6741247595e0",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C61",
+      "claim": "Ethylene and auxin co-regulation occurs at both the level of transport and transcriptional response, as EIN3 modulates a regulator of auxin efflux (PID) and its upstream activator (PBP1), and at least seven auxin response proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Ethylene and auxin co-regulation occurs at both the level of transport and transcriptional response, as EIN3 modulates a regulator of auxin efflux (PID) and its upstream activator (PBP1), and at least seven auxin response proteins (Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ChIP-Seq data showing EIN3 binding to these genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "f40fcdca-00d1-4f41-8210-52f73670a7a2",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C62",
+      "claim": "EIN3 targets the auxin transporter (AUX1) and an auxin signaling gene (IAA29), but these candidate targets are not responsive to ethylene in etiolated seedlings.",
+      "claim_type": "EXPLICIT",
+      "source": "EIN3 also targets the auxin transporter (AUX1) and an auxin signaling gene (IAA29), but these candidate targets are not responsive to ethylene in etiolated seedlings (Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ChIP-Seq and mRNA-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "2ddbf606-9abb-40f4-b72c-3d2a1a0200f2",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C63",
+      "claim": "Ethylene has been reported to stimulate auxin transport through AUX1 away from the root apex, to decrease lateral root primordia.",
+      "claim_type": "EXPLICIT",
+      "source": "Ethylene has been reported to stimulate auxin transport through AUX1 away from the root apex, to decrease lateral root primordia (Lewis et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lewis et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "ffec3159-edbf-4264-86e7-e57cdea57a7e",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C64",
+      "claim": "EIN3 binding events to AUX1 and IAA29 likely have functional outcomes in specific tissue types or developmental programs not addressed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is likely these binding events have functional outcomes in specific tissue types or developmental programs not addressed in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that these genes are not responsive to ethylene in etiolated seedlings but are known to function in other contexts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "7f45d0fb-6003-488f-8f2e-4a27cd3d2223",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C65",
+      "claim": "DNA-binding motifs of AT-ERF1, ERF5, WRKY14/47, PIF3, NAC6, and RAP2.2 are over-represented in the promoter regions of genes that are regulated by ethylene.",
+      "claim_type": "EXPLICIT",
+      "source": "EIN3 targets that may regulate a secondary transcriptional ethylene response include AP2/ERFs AT-ERF1, ERF5, and WRKY14/47, PIF3, NAC6, and RAP2.2, and the DNA-binding motifs of the aforementioned transcription factors are over-represented in the promoter regions of genes that are regulated by ethylene (Hypergeometric p<10\u22125) (Supplementary file 1E, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the motif enrichment analysis shown in Supplementary file 1E and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "2acb423d-5afc-4f8e-b6af-0c03de571c46",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C66",
+      "claim": "EIN3 directly regulates the three homologs HLS1, HLH2, and to a lesser extent HLH1.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most striking and surprising example we found was the direct regulation of the three homologs by EIN3, HOOKLESS1 (HLS1) and HLS1-LIKE HOMOLOG2 (HLH2), and to a lesser extent HLH1 (Figure 4A, HLH1 in Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the ChIP-Seq data shown in Figure 4A and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "2e62fe93-8700-4a44-8f67-5de83b17dc89",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C67",
+      "claim": "HLS1 is a well-known signal integrator of ethylene, light, auxin, sugar, and brassinolide.",
+      "claim_type": "EXPLICIT",
+      "source": "HLS1 is a well-known signal integrator of ethylene, light, auxin, sugar, and brassinolide (de Grauwe et al., 2005; Hou et al., 1993; Li et al., 2004; Ohto et al., 2006) and was previously hypothesized to be a target of ERF1 because of the presence of a GCC box motif in the HLS1 promoter region sequence (Lehman et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to de Grauwe et al., 2005, Hou et al., 1993, Li et al., 2004, Ohto et al., 2006, and Lehman et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "da6f4876-5425-4db8-a31b-e35dd9ad10fb",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C68",
+      "claim": "HLS1 was previously hypothesized to be a target of ERF1 because of the presence of a GCC box motif in the HLS1 promoter region sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "HLS1 is a well-known signal integrator of ethylene, light, auxin, sugar, and brassinolide (de Grauwe et al., 2005; Hou et al., 1993; Li et al., 2004; Ohto et al., 2006) and was previously hypothesized to be a target of ERF1 because of the presence of a GCC box motif in the HLS1 promoter region sequence (Lehman et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lehman et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "6ea8851c-3011-4f64-a9bc-64b29ccafc44",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C69",
+      "claim": "The binding of EIN3 to the promoters of HLS1, HLH2, and HLH1 increased upon ethylene treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of EIN3 to the promoters of HLS1, HLH2, and HLH1 increased upon ethylene treatment (Figure 4\u2014figure supplement 1) and is specific to EIN3 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the ChIP-Seq data shown in Figure 4\u2014figure supplement 1 and Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "353a9534-fb97-41da-af7e-547a5292ea18",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C70",
+      "claim": "The binding of EIN3 to the promoters of HLS1, HLH2, and HLH1 is specific to EIN3.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of EIN3 to the promoters of HLS1, HLH2, and HLH1 increased upon ethylene treatment (Figure 4\u2014figure supplement 1) and is specific to EIN3 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the ChIP-Seq data in ein3 mutant shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "f3fea53f-fa4f-424d-9dfe-5e03daac28cc",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C71",
+      "claim": "The EIN3 binding sites in HLS1, HLH2, and HLH1 promoters contain known EIN3 motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "The EIN3 binding sites in these promoters contain known EIN3 motifs (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the motif analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "9dddce79-29ea-426d-a8bd-ae689b904f44",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C72",
+      "claim": "Two allelic mutations in the HLS1 promoter are sufficient to yield a 'hookless' phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional significance of the HLS1 EIN3 binding site is supported by a previous study that identified two allelic mutations in the HLS1 promoter sufficient to yield a 'hookless' phenotype (Lehman et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lehman et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "369e5feb-21fb-44fe-9655-2f520fa3f4d5",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C73",
+      "claim": "ein2 is deficient in the accumulation of EIN3 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have also shown that ein2 is deficient in the accumulation of EIN3 protein (Guo and Ecker, 2003) and HLS1 mRNA, (Lehman et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Guo and Ecker, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "a680ef39-1975-48a7-86e8-0c83fa779f60",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C74",
+      "claim": "ein2 is deficient in the accumulation of HLS1 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have also shown that ein2 is deficient in the accumulation of EIN3 protein (Guo and Ecker, 2003) and HLS1 mRNA, (Lehman et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lehman et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "1fc20b64-06f9-4f01-9508-4070bec36fa5",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C75",
+      "claim": "HLS1 steady-state transcript levels were significantly reduced in the ein3-1 eil1-1 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed HLS1 steady-state transcript levels were significantly reduced in the ein3-1 eil1-1 mutant (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the mRNA-Seq data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "725c53df-da8e-423c-b275-550760946e85",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C76",
+      "claim": "Quadruple mutants of the HLS1 gene family display tri-cotyledon phenotypes in apical hook.",
+      "claim_type": "EXPLICIT",
+      "source": "(C) Tri-cotyledon phenotypes in apical hook of quadruple mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the phenotypic data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "2e3c0104-4432-465b-986c-d9728d8734a6",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C77",
+      "claim": "The HLS1 gene family has a role in embryo patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) HLS1 gene family has a role in embryo patterning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the SEM images shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "a55368ca-fde3-4e2d-845f-e184e04b61b8",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C78",
+      "claim": "Adult quadruple mutants display dwarfed phenotypes similar to axr1.",
+      "claim_type": "EXPLICIT",
+      "source": "(E) Adult three-week-old plants displayed dwarfed phenotypes similar to axr1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the phenotypic data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "02ba8857-d824-4af7-910a-e3f50bbbd907",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C79",
+      "claim": "Quadruple mutants display floral defects similar to arf3/ettin.",
+      "claim_type": "EXPLICIT",
+      "source": "(F) Quadruple mutants display floral defects similar to arf3/ettin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the phenotypic data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "049dd313-9844-4614-9043-71f3642d9cb8",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C80",
+      "claim": "Quadruple mutants display abnormal guard cell patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "Inset and panels on the right show abnormal guard cell patterning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the SEM images shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "e8145f08-24d1-40e5-8acb-449a157f667b",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C81",
+      "claim": "The adult quadruple mutants display a dwarf phenotype, similar to the auxin mutant axr1.",
+      "claim_type": "EXPLICIT",
+      "source": "The adult quadruple mutants display a dwarf phenotype, similar to the auxin mutant axr1 (Leyser et al., 1993), and floral morphology of the quadruple mutants display two stigmas atop a gynoecium, similar to the arf3/ettin mutant floral phenotype (Sessions and Zambryski, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the phenotypic data and citation to Leyser et al., 1993.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "76f139b6-26b7-4ea6-ae04-511b0d059886",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C82",
+      "claim": "Floral morphology of the quadruple mutants display two stigmas atop a gynoecium, similar to the arf3/ettin mutant floral phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The adult quadruple mutants display a dwarf phenotype, similar to the auxin mutant axr1 (Leyser et al., 1993), and floral morphology of the quadruple mutants display two stigmas atop a gynoecium, similar to the arf3/ettin mutant floral phenotype (Sessions and Zambryski, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the phenotypic data and citation to Sessions and Zambryski, 1995.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "7169e408-f4e9-4f11-9058-b9e12f621c9b",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C83",
+      "claim": "HLS1 is known to be involved in the differential growth of the apical hook and is necessary for the accumulation of AUXIN RESPONSE FACTOR2 (ARF2) DNA-binding protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Although HLS1 is known to be involved in the differential growth of the apical hook and is necessary for the accumulation of AUXIN RESPONSE FACTOR2 (ARF2) DNA-binding protein (Li et al., 2004; Ohto et al., 2006), the biochemical function of these putative N-acetyltransferases remains to be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Li et al., 2004 and Ohto et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "63228ea5-330a-4c65-a8f2-94e48a0f0d28",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C84",
+      "claim": "The biochemical function of HLS1 family putative N-acetyltransferases remains to be determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Although HLS1 is known to be involved in the differential growth of the apical hook and is necessary for the accumulation of AUXIN RESPONSE FACTOR2 (ARF2) DNA-binding protein (Li et al., 2004; Ohto et al., 2006), the biochemical function of these putative N-acetyltransferases remains to be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge regarding HLS1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "a2e6c807-2591-4bea-8dcd-2bbd72ecaafd",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C85",
+      "claim": "Not only HLS1, but other gene family members are targets of EIN3.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a genome-wide approach, we found that not only HLS1, but other gene family members are targets of EIN3 and that the requirement of the HLS proteins for hormone responses extends beyond apical hook development to many other processes from embryo patterning to flowering, linking the regulation of growth and development by ethylene to many new biological processes in novel ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ChIP-Seq data showing EIN3 binding to HLS1, HLH1, and HLH2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "8ff80c25-5441-4963-be3d-1b4d6cd0ae11",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C86",
+      "claim": "The requirement of the HLS proteins for hormone responses extends beyond apical hook development to many other processes from embryo patterning to flowering.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a genome-wide approach, we found that not only HLS1, but other gene family members are targets of EIN3 and that the requirement of the HLS proteins for hormone responses extends beyond apical hook development to many other processes from embryo patterning to flowering, linking the regulation of growth and development by ethylene to many new biological processes in novel ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the phenotypic analysis of the quadruple mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "c97dcc08-7d13-4f6f-8d36-aa30799766eb",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C87",
+      "claim": "Temporal protein\u2013DNA interactions are often difficult to reconcile with gene expression profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Temporal protein\u2013DNA interactions are often difficult to reconcile with gene expression profiles and the complexity of regulation that occurs transcriptionally is very challenging to characterize and interpret biologically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the challenges in analyzing temporal transcription factor binding data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "46091623-bc09-4004-b61f-4a6828d54622",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C88",
+      "claim": "Upon a timecourse of ethylene treatment, EIN3 binding was induced, resulting in various transcriptional patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that upon a timecourse of ethylene treatment, EIN3 binding was induced, resulting in various transcriptional patterns and that the ethylene transcriptional response occurred in waves of transcription that were temporally distinct and could be attributed to different biological functions, variable in the amount of noise, and significantly regulated by EIN3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ChIP-Seq and mRNA-Seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "83dce4fd-2bee-4b92-a1ba-26d84fd409d2",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C89",
+      "claim": "The ethylene transcriptional response occurred in waves of transcription that were temporally distinct and could be attributed to different biological functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that upon a timecourse of ethylene treatment, EIN3 binding was induced, resulting in various transcriptional patterns and that the ethylene transcriptional response occurred in waves of transcription that were temporally distinct and could be attributed to different biological functions, variable in the amount of noise, and significantly regulated by EIN3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the DREM analysis of the mRNA-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "27f0111a-1415-4ee5-afba-eb500da4cf00",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C90",
+      "claim": "EIN3 modulated genes were over-represented in hormone co-regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "EIN3 modulated genes were over-represented in hormone co-regulation, and the specific targets in the other hormone pathways, as reported in this study, suggest these 'cross-talk' events may involve multiple levels of regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the enrichment analysis of hormone-related genes among EIN3 targets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "64a2b7a4-48aa-40a5-8d92-001752d9d4b1",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C91",
+      "claim": "Hormone 'cross-talk' events may involve multiple levels of regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "EIN3 modulated genes were over-represented in hormone co-regulation, and the specific targets in the other hormone pathways, as reported in this study, suggest these 'cross-talk' events may involve multiple levels of regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing EIN3 binding to genes at different levels of hormone pathways.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "020855cc-b30c-420b-853b-addab2333409",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C92",
+      "claim": "Feedback regulation of the ethylene response by EIN3 enabled the identification of the majority of known ethylene signaling pathway components.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, feedback regulation of the ethylene response by EIN3 enabled the identification of the majority of known ethylene signaling pathway components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ChIP-Seq data showing EIN3 binding to known ethylene signaling components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "caed68a1-4b24-4d68-8905-534e48e0f90b",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C93",
+      "claim": "The temporal resolution of steady-state levels of transcription confirmed the role of ethylene signaling genes in the ethylene transcriptional response.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the temporal resolution of steady-state levels of transcription confirmed the role of these genes in the ethylene transcriptional response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the mRNA-Seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "b28d8c2b-8bb5-451f-983b-86e37a62e7b0",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C94",
+      "claim": "Other signaling networks utilize feedback regulation for overall system control/homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Other signaling networks utilize feedback regulation for overall system control/homeostasis, and this type of study may be used to identify novel components in signaling pathways (Rosenfeld et al., 2002; Amit et al., 2007; Tsang et al., 2007; Avraham and Yarden, 2011; Fang et al., 2011; Feng et al., 2011; Yosef and Regev, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies of feedback regulation in other systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "c4293b61-1e65-454f-badc-4007e4d28ec8",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C95",
+      "claim": "The transcriptional control by EIN3 is likely conserved in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "The implication that EIN3 regulates the coordination of other hormone pathways is extensive because the transcriptional control by EIN3 is likely conserved in plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the presence of EIN3 orthologs in multiple plant species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "5420a25a-8343-4519-9519-87a2c5f34846",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C96",
+      "claim": "EIN3 orthologs exist in poplar, soybean, rice, maize, moss, and multicellular algae, among many others.",
+      "claim_type": "EXPLICIT",
+      "source": "EIN3 orthologs exist in poplar, soybean, rice, maize, moss, and multicellular algae, among many others (www.phytozome.net) and, in fact, we found that the Physcomitrella patens (moss) EIN3 protein binds a very similar motif sequence to that of the Arabidopsis thaliana EIN3 (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by database information from phytozome.net.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "dae6130d-f16d-4255-b131-65990c9e33ce",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C97",
+      "claim": "The Physcomitrella patens (moss) EIN3 protein binds a very similar motif sequence to that of the Arabidopsis thaliana EIN3.",
+      "claim_type": "EXPLICIT",
+      "source": "EIN3 orthologs exist in poplar, soybean, rice, maize, moss, and multicellular algae, among many others (www.phytozome.net) and, in fact, we found that the Physcomitrella patens (moss) EIN3 protein binds a very similar motif sequence to that of the Arabidopsis thaliana EIN3 (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the PBM data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "41c1f99f-99fc-4257-b722-9dab081eb923",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "claim_id": "C98",
+      "claim": "Adaptable system homeostasis in plants requires robust hormone co-regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of EIN3 in the coordination of the initiation of the ethylene transcriptional cascade, the negative feedback regulation of the ethylene signaling pathway, and the orchestration of other hormone pathways suggests that adaptable system homeostasis in plants requires robust hormone co-regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the multiple roles of EIN3 in hormone regulation identified in this study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8749469b-adee-4a61-b07e-d6a86df52f42",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study identified 1460 EIN3 binding regions in the Arabidopsis genome associated with 1314 genes using ChIP-Seq. These binding regions show significant enrichment of the consensus TEIL motif (p<10\u207b\u2078\u2077) and de novo motif analysis confirmed the known EIN3 motif.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 are well-supported by ChIP-Seq data with stringent analysis methods. The motif enrichment is statistically significant with hypergeometric testing, and the de novo analysis independently confirms the known EIN3 binding motif, providing converging evidence for the validity of the identified binding regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "413db655-7636-4d91-b1c3-110da158ae4e",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "EIN3 binding increases with ethylene treatment to a maximum at 4 hours, and the majority (85%) of EIN3 candidate targets that are regulated by ethylene (EIN3-R) are induced, showing over-representation of up-regulation compared to all ethylene-responsive genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C15, C16, and C14 are supported by temporal ChIP-Seq and mRNA-Seq data shown in Figures 1B and 1C. The quantitative analysis demonstrates both the temporal dynamics of EIN3 binding and the directional bias toward transcriptional activation, consistent with EIN3's known role as a transcriptional activator.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "8fa1d483-286b-4a6d-8db4-df632ddf661f",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Only about 30% of EIN3 binding sites were associated with transcriptional changes, with the remaining two-thirds showing no transcriptional response. The authors speculate that non-activated targets may require cofactors for expression changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C20 is supported by data in Figures 1D and Figure 1\u2014figure supplement 2, but C21 is purely speculative without experimental validation. The lack of transcriptional response at most binding sites is documented, but the proposed cofactor requirement remains an untested hypothesis requiring additional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "86f43d0c-be1c-408c-9c48-329fb50ab645",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The ethylene response occurs in four temporally distinct waves of transcription significantly regulated by EIN3 (p<10\u207b\u00b9\u2070), with each wave displaying distinct temporal behaviors (p<0.001), reduced transcriptional noise in successive waves, and enrichment for specific biological functions (RNA binding/translation in Waves 1 and 3, cell wall maintenance in Wave 2, and response to endogenous stimulus in Wave 4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 are supported by DREM analysis integrating ChIP-Seq and mRNA-Seq data (Figure 2C). The statistical significance of EIN3 regulation and temporal distinctness is well-documented. However, the functional enrichment claims would benefit from additional validation, and the biological interpretation of noise reduction could reflect technical or biological heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "8b59dce5-cd33-40fe-93d3-761caa01ab80",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Many EIN3-R targets are transcription factors (~14%), and EIN3 candidate targets are significantly enriched in GO terms related to transcription factor regulation, confirming that EIN3 activates a transcriptional cascade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 are supported by data analysis and GO enrichment shown in Figure 1\u2014figure supplement 5 and Supplementary file 1C. The enrichment of transcription factors among EIN3 targets provides strong evidence for a transcriptional cascade, though the term 'confirming' in C19 may be overstated as this is correlative rather than mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "16f639f3-23fd-4f92-9547-e51663a6c843",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "EIN3 targets several negative regulators of the ethylene signaling pathway (ETR2, ERS1/2, RTE1, CTR1, EBF1/2), establishing feedback regulation. This enabled identification of the majority of known ethylene signaling components, with temporal transcription data confirming their roles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46, C92-C93 are well-supported by ChIP-Seq data (Figure 3A) and citations to prior literature. The identification of negative feedback regulation is consistent with homeostatic control mechanisms. The temporal mRNA-Seq data provides additional validation of the transcriptional response of these components.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "7f0aec9b-256f-438e-9c90-9e5f425f5e9f",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "EIN3 candidate targets account for more than twice the proportion of hormone genes than in the genome (46%, p=10\u207b\u2079\u2076), with many genes involved in multiple hormone responses. Hormone co-regulation occurs through EIN3 binding at multiple levels of hormone pathways, with some events transcriptionally regulated by ethylene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 and C90 are supported by statistical analysis and network data shown in Figures 2B, 3B-D. The significant enrichment of hormone-related genes among EIN3 targets is well-documented. However, the mechanistic claims about co-regulation (C50-C52) are partially inferred from binding data and would benefit from functional validation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "cefc5250-e7d7-4444-8091-12082cf66875",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EIN3 targets four JAZ repressors (two transcriptionally regulated by ethylene: JAZ1, JAZ6), and ethylene treatment primes cells for jasmonate response by loading promoters with EIN3 and JAZ proteins, poising the plant for a jasmonate-ethylene transcriptional program.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C54 is supported by ChIP-Seq and mRNA-Seq data, and C55 is supported by citation to Zhu et al., 2011. However, C56 is an inference about 'priming' that lacks direct experimental validation in this study. The proposed mechanism is plausible based on known JAZ-EIN3 interactions, but requires functional experiments to confirm the priming hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "f7321636-1b02-4718-83df-e9c9b6060ced",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ethylene and gibberellin co-regulation through EIN3 occurs at signal reception (GID1B, GID1C) and transcription (PIF3), with the regulatory logic resulting in up-regulation of the gibberellin response. The PIF3 motif is over-represented in promoters of ethylene transcriptional response genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by ChIP-Seq data showing EIN3 binding to these genes. Claim C58 is inferred from known functions of these pathway components, which is reasonable but not directly tested. Claim C59 is supported by motif enrichment analysis (Supplementary file 1E, Figure 3\u2014figure supplement 1), providing evidence for feed-forward regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "13045fb7-c8f6-4a6c-8994-a705fe2af464",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DNA-binding motifs of AT-ERF1, ERF5, WRKY14/47, PIF3, NAC6, and RAP2.2 are over-represented in promoter regions of ethylene-regulated genes (p<10\u207b\u2075), suggesting these EIN3 targets may regulate a secondary transcriptional ethylene response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by PBM experiments and motif enrichment analysis shown in Supplementary file 1E and Figure 3\u2014figure supplement 1. The statistical significance is appropriate. However, the conclusion about secondary transcriptional response is inferential and would require ChIP-Seq or functional validation of these transcription factors to confirm their direct roles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "febb1584-e9c5-4a25-96c2-6446c7ad8681",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "EIN3 directly regulates HLS1, HLH2, and to a lesser extent HLH1. EIN3 binding to these promoters increases upon ethylene treatment, is specific to EIN3, contains known EIN3 motifs, and HLS1 transcript levels are significantly reduced in ein3-1 eil1-1 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C69-C71, and C75 are well-supported by ChIP-Seq data in wild-type and ein3 mutant backgrounds (Figures 4A-B, Figure 4\u2014figure supplements 1-2). The specificity control using ein3 mutant is appropriate, motif analysis confirms EIN3 binding sites, and the genetic evidence from ein3-1 eil1-1 mutants supports functional regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "dc175767-613f-425d-80d7-1d758fef019b",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Quadruple mutants of the HLS1 gene family display pleiotropic phenotypes including tri-cotyledon phenotypes, defects in embryo patterning, dwarfed adult plants similar to axr1, floral defects similar to arf3/ettin, and abnormal guard cell patterning. These phenotypes demonstrate that HLS protein requirements extend beyond apical hook development to embryo patterning and flowering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C82 and C86 are supported by phenotypic data and SEM images shown in Figures 4C-F. The phenotypes are well-documented and comparisons to known auxin mutants (axr1, arf3/ettin) are supported by citations. The pleiotropic nature of the phenotypes provides strong evidence for broad developmental roles of the HLS gene family.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "a1eca57b-8868-448a-9e91-8f88a6a45d15",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "High levels of EIN3 occupancy correspond to increases in steady-state transcription levels. EIN3-R targets (those with increased occupancy and transcription) are enriched in specific gene families (BZR, TIFY, bHLH) involved in hormone pathways, with the highest percentage of hormone-associated genes occurring in EIN3-R targets, suggesting these are direct and/or functional targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 and C25 are supported by data in Figures 2A-B. The correlation between high EIN3 occupancy and transcription is demonstrated, and gene family enrichment is statistically significant (p<0.05). However, C26's conclusion that targets are 'likely direct and/or functional' is inferential. While the enrichment data is strong, functional validation would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "e696f090-7b7d-46b8-b37d-8c77b70906dc",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "EBF2 directs proteolysis of EIN3 and exhibits ethylene-induced transcription, resulting in feedback regulation of the ethylene signaling pathway. Additional distal EIN3 binding was identified in the EBF2 promoter region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C8 is established knowledge about EBF2 function. Claims C9 and C11 are supported by data in Figure 1A and Figure 1\u2014figure supplement 4. Claim C10 about feedback regulation is a reasonable inference from the known relationship between EIN3 and EBF2. The identification of additional distal binding sites is a novel contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "10d8c3ce-e83e-4408-bcdc-48500cf428a9",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The first wave of ethylene response is highly variable, lower in transcription levels, and contains the lowest percentage of EIN3 targets and hormone-related genes. This wave may serve as the immediate ethylene response including desensitization genes, while the next three waves are successively less variable with higher percentages of EIN3 targets. The four waves account for 50% of EIN3-R targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C35, C38-C39 are supported by data in Figures 2C and Figure 2\u2014figure supplement 3. However, C36 is supported by citations but C37 is speculative ('may serve', 'but this has yet to be shown'). The characterization of the waves is data-driven, but the functional interpretation of the first wave as serving desensitization requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "f50656b7-e130-4f5f-aec0-70111d52e636",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Ethylene and auxin co-regulation occurs at transport and transcriptional response levels, with EIN3 modulating auxin efflux regulator PID, its activator PBP1, and auxin response proteins. EIN3 also targets AUX1 and IAA29, which are not ethylene-responsive in etiolated seedlings but likely have functional outcomes in other tissues or developmental programs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 are supported by ChIP-Seq and mRNA-Seq data. Claim C63 is supported by citation to Lewis et al., 2011. Claim C64 is a reasonable inference given the tissue-specific expression patterns, though it remains speculative without direct experimental validation in other tissues or developmental stages.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "627f86aa-214b-4ff6-a223-459b3a4802c0",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The expression of cell wall maintenance genes in Wave 2 steadily increases following 1 hour of ethylene treatment, consistent with kinetics of EIN3-dependent growth inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is supported by data analysis and citations to Binder et al., 2004a and Vandenbussche et al., 2012. The temporal pattern of cell wall gene expression aligns with known growth inhibition kinetics, providing functional context for the transcriptional waves.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "2702f458-789f-4e3d-87dd-f3d8cd9dbd60",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Two allelic mutations in the HLS1 promoter are sufficient to yield a 'hookless' phenotype. The ein2 mutant is deficient in accumulation of both EIN3 protein and HLS1 mRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are all supported by citations to prior literature (Lehman et al., 1996; Guo and Ecker, 2003). These claims provide important context from previous work that supports the functional significance of EIN3 binding to HLS1 and validates the regulatory relationship.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "7239e4c6-b833-42dd-8eb5-4523cc975f5e",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "EIN3 orthologs exist in multiple plant species including poplar, soybean, rice, maize, moss, and multicellular algae. The Physcomitrella patens (moss) EIN3 protein binds a very similar motif sequence to Arabidopsis thaliana EIN3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C96 is supported by database information from phytozome.net. Claim C97 is supported by PBM data shown in Figure 4\u2014figure supplement 4. This provides evidence for conservation of EIN3 function across plant evolution, though functional studies in these species would strengthen the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "2fabf914-e296-49aa-81e1-5b19b7f9882c",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Ethylene regulates multiple growth and developmental processes. The ethylene response includes rapid EIN3-independent growth inhibition followed by EIN3-dependent sustained inhibition. EIN3 is necessary and sufficient for the ethylene response and accumulates upon ethylene treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is general knowledge. Claims C2-C4 are supported by citations to prior literature (Binder et al., 2004a; Guo and Ecker, 2003). These claims establish the background and rationale for the study but do not represent novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "88a3b4d6-5a10-4160-8036-18bb92d6ac8a",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "HLS1 is a known signal integrator of ethylene, light, auxin, sugar, and brassinolide, and is necessary for ARF2 accumulation. HLS1 was previously hypothesized to be an ERF1 target. The biochemical function of HLS1 family putative N-acetyltransferases remains to be determined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 and C83 are supported by multiple citations to prior literature. Claim C84 acknowledges the gap in knowledge regarding HLS1 biochemical function. These claims provide important context but represent prior knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "14306afc-30bf-4f5d-b393-59de47fd5729",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Upon ethylene treatment, EIN3 binding was induced resulting in various transcriptional patterns, and the ethylene transcriptional response occurred in temporally distinct waves attributable to different biological functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 are supported by ChIP-Seq and mRNA-Seq data analysis using DREM. These are summary statements of major findings that integrate the temporal binding and expression data, well-supported by the experimental evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "d7aa9611-c139-42a1-b4b9-ac30b26ce649",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Key players in the EIN3-regulated ethylene transcriptional response are involved in hormone response pathways. Hormones operate synergistically/antagonistically in concert. Hormone cross-talk may involve multiple regulatory levels. EIN3 transcriptional control is likely conserved in plants, and adaptable system homeostasis requires robust hormone co-regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40 and C90 are supported by enrichment data. Claim C41 is general knowledge. Claims C91, C95, and C98 are inferences from the data. While the enrichment of hormone-related genes is well-documented, the broader conclusions about conservation and homeostasis are speculative and would benefit from comparative functional studies across species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "8a243c56-6f63-42a5-994a-bc5b40c152af",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Many EIN3-modulated downstream effectors are AP2/ERF transcription factors, which are up-regulated by ethylene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by data shown in Figure 3A. This is consistent with the known role of AP2/ERF family members as downstream effectors in the ethylene response pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "85ac6a32-350b-4499-b7d9-a29c63c085b8",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Not only HLS1, but other gene family members (HLH1, HLH2) are targets of EIN3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is supported by ChIP-Seq data showing EIN3 binding to HLS1, HLH1, and HLH2. This represents a novel finding extending the known regulatory relationship beyond HLS1 to its homologs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "3e249038-1604-44fd-8916-86f30d23e7cb",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "BZR, TIFY, and bHLH transcription factor families play roles in other hormone pathways. Ethylene and jasmonate co-regulation occurs at the transcriptional level, sharing genes like RAP2.6L and ERF1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24 and C53 represent established knowledge about these transcription factor families and hormone interactions. These provide context for interpreting the enrichment of these gene families among EIN3 targets.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    },
+    {
+      "id": "f2741d2c-6b53-40c6-85ed-38b807b0d6cc",
+      "content_id": "ae1a574b-299c-4067-b13f-63ad05b4a274",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Temporal protein-DNA interactions are difficult to reconcile with gene expression profiles. Other signaling networks utilize feedback regulation for system control/homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87 and C94 are general statements about challenges in the field and principles of signaling networks, supported by multiple citations. These provide context for the study's approach and findings but do not represent novel results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:05:16.915899Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "86b3ff81-a3f4-4bc0-987a-45c507380344",
+      "result_id": "8749469b-adee-4a61-b07e-d6a86df52f42"
+    },
+    {
+      "claim_id": "4c6a284d-63b9-4cfb-a069-eeb2f36b690c",
+      "result_id": "8749469b-adee-4a61-b07e-d6a86df52f42"
+    },
+    {
+      "claim_id": "9ac04d80-76ff-4749-9342-b249e0672d36",
+      "result_id": "8749469b-adee-4a61-b07e-d6a86df52f42"
+    },
+    {
+      "claim_id": "3dc53549-d72c-4f13-b931-cbe53b6fca7e",
+      "result_id": "413db655-7636-4d91-b1c3-110da158ae4e"
+    },
+    {
+      "claim_id": "fa0f49b9-c5a6-4541-8395-0495540aeffe",
+      "result_id": "413db655-7636-4d91-b1c3-110da158ae4e"
+    },
+    {
+      "claim_id": "cc222d3a-11d2-4f18-8e4a-e1ce3871b8f8",
+      "result_id": "413db655-7636-4d91-b1c3-110da158ae4e"
+    },
+    {
+      "claim_id": "e1cba306-cbc7-4a38-a8df-3ce9fc78b2d8",
+      "result_id": "413db655-7636-4d91-b1c3-110da158ae4e"
+    },
+    {
+      "claim_id": "4888f1e1-7620-4ffe-907a-ff19e9c6eb8f",
+      "result_id": "8fa1d483-286b-4a6d-8db4-df632ddf661f"
+    },
+    {
+      "claim_id": "dfb0958f-611b-4764-a2e3-631e44c361ca",
+      "result_id": "8fa1d483-286b-4a6d-8db4-df632ddf661f"
+    },
+    {
+      "claim_id": "25ff35fd-7230-4ba8-b0ca-a853189d723b",
+      "result_id": "86f43d0c-be1c-408c-9c48-329fb50ab645"
+    },
+    {
+      "claim_id": "187db42e-6759-4716-8ea2-dca0a13d68d0",
+      "result_id": "86f43d0c-be1c-408c-9c48-329fb50ab645"
+    },
+    {
+      "claim_id": "3f406675-1598-4a71-ae53-adab32ca7194",
+      "result_id": "86f43d0c-be1c-408c-9c48-329fb50ab645"
+    },
+    {
+      "claim_id": "172af0ae-26d6-4180-974d-30e09a6703df",
+      "result_id": "86f43d0c-be1c-408c-9c48-329fb50ab645"
+    },
+    {
+      "claim_id": "c76bd17a-3606-4c62-8051-5f4068613e4c",
+      "result_id": "86f43d0c-be1c-408c-9c48-329fb50ab645"
+    },
+    {
+      "claim_id": "c54c8c37-2097-4aab-b67b-696d99ec6376",
+      "result_id": "86f43d0c-be1c-408c-9c48-329fb50ab645"
+    },
+    {
+      "claim_id": "5445e6f5-dc74-4164-80e8-b2d47007150d",
+      "result_id": "86f43d0c-be1c-408c-9c48-329fb50ab645"
+    },
+    {
+      "claim_id": "e45d787d-fbf0-4754-95c4-bf0b28cfec2b",
+      "result_id": "8b59dce5-cd33-40fe-93d3-761caa01ab80"
+    },
+    {
+      "claim_id": "bd7641fb-0131-420b-9392-931c97dfd81f",
+      "result_id": "8b59dce5-cd33-40fe-93d3-761caa01ab80"
+    },
+    {
+      "claim_id": "3fe1e611-b071-40b6-bb52-b5a04feca25b",
+      "result_id": "8b59dce5-cd33-40fe-93d3-761caa01ab80"
+    },
+    {
+      "claim_id": "8577a405-c962-42fb-bfc5-28965454d0f0",
+      "result_id": "16f639f3-23fd-4f92-9547-e51663a6c843"
+    },
+    {
+      "claim_id": "7b03a32a-fa72-45f5-b08c-448fd39e9e44",
+      "result_id": "16f639f3-23fd-4f92-9547-e51663a6c843"
+    },
+    {
+      "claim_id": "b160c176-38a7-4e8c-af55-eebbffa1ec27",
+      "result_id": "16f639f3-23fd-4f92-9547-e51663a6c843"
+    },
+    {
+      "claim_id": "020855cc-b30c-420b-853b-addab2333409",
+      "result_id": "16f639f3-23fd-4f92-9547-e51663a6c843"
+    },
+    {
+      "claim_id": "caed68a1-4b24-4d68-8905-534e48e0f90b",
+      "result_id": "16f639f3-23fd-4f92-9547-e51663a6c843"
+    },
+    {
+      "claim_id": "fcceccfe-5251-4ae0-89da-e7f202dc14aa",
+      "result_id": "7f0aec9b-256f-438e-9c90-9e5f425f5e9f"
+    },
+    {
+      "claim_id": "98d4ed3b-10c2-4597-a136-77e46b9f3220",
+      "result_id": "7f0aec9b-256f-438e-9c90-9e5f425f5e9f"
+    },
+    {
+      "claim_id": "c641441b-ec2b-4248-a768-d8131c121f1e",
+      "result_id": "7f0aec9b-256f-438e-9c90-9e5f425f5e9f"
+    },
+    {
+      "claim_id": "cd165a2d-b1fe-4134-9d22-8a1a4091ecc9",
+      "result_id": "7f0aec9b-256f-438e-9c90-9e5f425f5e9f"
+    },
+    {
+      "claim_id": "385383aa-6104-4c18-9c00-562f8f5d5a39",
+      "result_id": "7f0aec9b-256f-438e-9c90-9e5f425f5e9f"
+    },
+    {
+      "claim_id": "63dc7ed2-5eac-4fb5-aa5d-d3be18f6c983",
+      "result_id": "7f0aec9b-256f-438e-9c90-9e5f425f5e9f"
+    },
+    {
+      "claim_id": "27f0111a-1415-4ee5-afba-eb500da4cf00",
+      "result_id": "7f0aec9b-256f-438e-9c90-9e5f425f5e9f"
+    },
+    {
+      "claim_id": "648f9ac9-8655-47cd-a431-409017050af5",
+      "result_id": "cefc5250-e7d7-4444-8091-12082cf66875"
+    },
+    {
+      "claim_id": "9b5e6371-c88c-40b3-958f-6ff5df5fc6a6",
+      "result_id": "cefc5250-e7d7-4444-8091-12082cf66875"
+    },
+    {
+      "claim_id": "750df5d5-8386-4527-b87e-eac9af1c07c2",
+      "result_id": "cefc5250-e7d7-4444-8091-12082cf66875"
+    },
+    {
+      "claim_id": "84599637-f9a7-44b0-83de-1f21ffa15e04",
+      "result_id": "f7321636-1b02-4718-83df-e9c9b6060ced"
+    },
+    {
+      "claim_id": "41bf1284-b547-4753-8f8f-1a8ef76ef14e",
+      "result_id": "f7321636-1b02-4718-83df-e9c9b6060ced"
+    },
+    {
+      "claim_id": "f5e01f37-5b75-4068-87f1-df9fb5ac2222",
+      "result_id": "f7321636-1b02-4718-83df-e9c9b6060ced"
+    },
+    {
+      "claim_id": "7f45d0fb-6003-488f-8f2e-4a27cd3d2223",
+      "result_id": "13045fb7-c8f6-4a6c-8994-a705fe2af464"
+    },
+    {
+      "claim_id": "2acb423d-5afc-4f8e-b6af-0c03de571c46",
+      "result_id": "febb1584-e9c5-4a25-96c2-6446c7ad8681"
+    },
+    {
+      "claim_id": "6ea8851c-3011-4f64-a9bc-64b29ccafc44",
+      "result_id": "febb1584-e9c5-4a25-96c2-6446c7ad8681"
+    },
+    {
+      "claim_id": "353a9534-fb97-41da-af7e-547a5292ea18",
+      "result_id": "febb1584-e9c5-4a25-96c2-6446c7ad8681"
+    },
+    {
+      "claim_id": "f3fea53f-fa4f-424d-9dfe-5e03daac28cc",
+      "result_id": "febb1584-e9c5-4a25-96c2-6446c7ad8681"
+    },
+    {
+      "claim_id": "1fc20b64-06f9-4f01-9508-4070bec36fa5",
+      "result_id": "febb1584-e9c5-4a25-96c2-6446c7ad8681"
+    },
+    {
+      "claim_id": "725c53df-da8e-423c-b275-550760946e85",
+      "result_id": "dc175767-613f-425d-80d7-1d758fef019b"
+    },
+    {
+      "claim_id": "2e3c0104-4432-465b-986c-d9728d8734a6",
+      "result_id": "dc175767-613f-425d-80d7-1d758fef019b"
+    },
+    {
+      "claim_id": "a55368ca-fde3-4e2d-845f-e184e04b61b8",
+      "result_id": "dc175767-613f-425d-80d7-1d758fef019b"
+    },
+    {
+      "claim_id": "02ba8857-d824-4af7-910a-e3f50bbbd907",
+      "result_id": "dc175767-613f-425d-80d7-1d758fef019b"
+    },
+    {
+      "claim_id": "049dd313-9844-4614-9043-71f3642d9cb8",
+      "result_id": "dc175767-613f-425d-80d7-1d758fef019b"
+    },
+    {
+      "claim_id": "e8145f08-24d1-40e5-8acb-449a157f667b",
+      "result_id": "dc175767-613f-425d-80d7-1d758fef019b"
+    },
+    {
+      "claim_id": "76f139b6-26b7-4ea6-ae04-511b0d059886",
+      "result_id": "dc175767-613f-425d-80d7-1d758fef019b"
+    },
+    {
+      "claim_id": "8ff80c25-5441-4963-be3d-1b4d6cd0ae11",
+      "result_id": "dc175767-613f-425d-80d7-1d758fef019b"
+    },
+    {
+      "claim_id": "4bf0bd88-4f0a-43a4-8c46-734d9c32ce14",
+      "result_id": "a1eca57b-8868-448a-9e91-8f88a6a45d15"
+    },
+    {
+      "claim_id": "e754b16e-a19a-4ab7-af57-5ece24c76e64",
+      "result_id": "a1eca57b-8868-448a-9e91-8f88a6a45d15"
+    },
+    {
+      "claim_id": "40e17013-6ece-4205-a24d-88c1d41ab812",
+      "result_id": "a1eca57b-8868-448a-9e91-8f88a6a45d15"
+    },
+    {
+      "claim_id": "ce37547f-5c0e-4408-a43b-7c9bc2cb219e",
+      "result_id": "a1eca57b-8868-448a-9e91-8f88a6a45d15"
+    },
+    {
+      "claim_id": "b17874d4-88c8-473d-a8aa-b6de9569951c",
+      "result_id": "e696f090-7b7d-46b8-b37d-8c77b70906dc"
+    },
+    {
+      "claim_id": "9c3d259e-cb3b-4830-92c9-237a27394654",
+      "result_id": "e696f090-7b7d-46b8-b37d-8c77b70906dc"
+    },
+    {
+      "claim_id": "3c41d50c-42a6-49ab-8ce1-0b7f326eba74",
+      "result_id": "e696f090-7b7d-46b8-b37d-8c77b70906dc"
+    },
+    {
+      "claim_id": "0be23726-3db8-4e7d-a060-30f7bc4aa09b",
+      "result_id": "e696f090-7b7d-46b8-b37d-8c77b70906dc"
+    },
+    {
+      "claim_id": "e6fcfa9d-c54a-4496-b24a-f08921bf6385",
+      "result_id": "10d8c3ce-e83e-4408-bcdc-48500cf428a9"
+    },
+    {
+      "claim_id": "196a8379-a0d0-44d1-bf86-443da1f9896f",
+      "result_id": "10d8c3ce-e83e-4408-bcdc-48500cf428a9"
+    },
+    {
+      "claim_id": "35562ecf-fc33-4dc5-a1ec-233d94d27f78",
+      "result_id": "10d8c3ce-e83e-4408-bcdc-48500cf428a9"
+    },
+    {
+      "claim_id": "a3dda60e-8e6e-4661-af4c-5b62ee0da408",
+      "result_id": "10d8c3ce-e83e-4408-bcdc-48500cf428a9"
+    },
+    {
+      "claim_id": "838a80f4-2fb9-49fe-bdea-3f2b80fbc29a",
+      "result_id": "10d8c3ce-e83e-4408-bcdc-48500cf428a9"
+    },
+    {
+      "claim_id": "414b5eb8-e82e-491b-a647-6741247595e0",
+      "result_id": "f50656b7-e130-4f5f-aec0-70111d52e636"
+    },
+    {
+      "claim_id": "f40fcdca-00d1-4f41-8210-52f73670a7a2",
+      "result_id": "f50656b7-e130-4f5f-aec0-70111d52e636"
+    },
+    {
+      "claim_id": "2ddbf606-9abb-40f4-b72c-3d2a1a0200f2",
+      "result_id": "f50656b7-e130-4f5f-aec0-70111d52e636"
+    },
+    {
+      "claim_id": "ffec3159-edbf-4264-86e7-e57cdea57a7e",
+      "result_id": "f50656b7-e130-4f5f-aec0-70111d52e636"
+    },
+    {
+      "claim_id": "7b2558ec-3b89-4dac-b505-55ac0010ccf0",
+      "result_id": "627f86aa-214b-4ff6-a223-459b3a4802c0"
+    },
+    {
+      "claim_id": "9dddce79-29ea-426d-a8bd-ae689b904f44",
+      "result_id": "2702f458-789f-4e3d-87dd-f3d8cd9dbd60"
+    },
+    {
+      "claim_id": "369e5feb-21fb-44fe-9655-2f520fa3f4d5",
+      "result_id": "2702f458-789f-4e3d-87dd-f3d8cd9dbd60"
+    },
+    {
+      "claim_id": "a680ef39-1975-48a7-86e8-0c83fa779f60",
+      "result_id": "2702f458-789f-4e3d-87dd-f3d8cd9dbd60"
+    },
+    {
+      "claim_id": "5420a25a-8343-4519-9519-87a2c5f34846",
+      "result_id": "7239e4c6-b833-42dd-8eb5-4523cc975f5e"
+    },
+    {
+      "claim_id": "dae6130d-f16d-4255-b131-65990c9e33ce",
+      "result_id": "7239e4c6-b833-42dd-8eb5-4523cc975f5e"
+    },
+    {
+      "claim_id": "cbb6c7eb-3590-4368-a6f6-edabb3a95644",
+      "result_id": "2fabf914-e296-49aa-81e1-5b19b7f9882c"
+    },
+    {
+      "claim_id": "a18677c8-dd2d-407e-8d6f-af4c5b08e7f6",
+      "result_id": "2fabf914-e296-49aa-81e1-5b19b7f9882c"
+    },
+    {
+      "claim_id": "ee4ae04e-5e5c-4a78-b6e3-c6fde0b07141",
+      "result_id": "2fabf914-e296-49aa-81e1-5b19b7f9882c"
+    },
+    {
+      "claim_id": "1a51024e-01ed-4a65-ab7a-d66d6c65699e",
+      "result_id": "2fabf914-e296-49aa-81e1-5b19b7f9882c"
+    },
+    {
+      "claim_id": "2e62fe93-8700-4a44-8f67-5de83b17dc89",
+      "result_id": "88a3b4d6-5a10-4160-8036-18bb92d6ac8a"
+    },
+    {
+      "claim_id": "da6f4876-5425-4db8-a31b-e35dd9ad10fb",
+      "result_id": "88a3b4d6-5a10-4160-8036-18bb92d6ac8a"
+    },
+    {
+      "claim_id": "7169e408-f4e9-4f11-9058-b9e12f621c9b",
+      "result_id": "88a3b4d6-5a10-4160-8036-18bb92d6ac8a"
+    },
+    {
+      "claim_id": "63228ea5-330a-4c65-a8f2-94e48a0f0d28",
+      "result_id": "88a3b4d6-5a10-4160-8036-18bb92d6ac8a"
+    },
+    {
+      "claim_id": "46091623-bc09-4004-b61f-4a6828d54622",
+      "result_id": "14306afc-30bf-4f5d-b393-59de47fd5729"
+    },
+    {
+      "claim_id": "83dce4fd-2bee-4b92-a1ba-26d84fd409d2",
+      "result_id": "14306afc-30bf-4f5d-b393-59de47fd5729"
+    },
+    {
+      "claim_id": "a7d4188f-c908-4f6c-b37a-85e3746ac22f",
+      "result_id": "d7aa9611-c139-42a1-b4b9-ac30b26ce649"
+    },
+    {
+      "claim_id": "18418d18-ca4f-47ad-97c4-5584402d3703",
+      "result_id": "d7aa9611-c139-42a1-b4b9-ac30b26ce649"
+    },
+    {
+      "claim_id": "64a2b7a4-48aa-40a5-8d92-001752d9d4b1",
+      "result_id": "d7aa9611-c139-42a1-b4b9-ac30b26ce649"
+    },
+    {
+      "claim_id": "c4293b61-1e65-454f-badc-4007e4d28ec8",
+      "result_id": "d7aa9611-c139-42a1-b4b9-ac30b26ce649"
+    },
+    {
+      "claim_id": "41c1f99f-99fc-4257-b722-9dab081eb923",
+      "result_id": "d7aa9611-c139-42a1-b4b9-ac30b26ce649"
+    },
+    {
+      "claim_id": "815e50cf-b300-4be6-9957-b46a49357452",
+      "result_id": "8a243c56-6f63-42a5-994a-bc5b40c152af"
+    },
+    {
+      "claim_id": "ed74b86f-b063-46c4-bb1d-4781101ffcb7",
+      "result_id": "8a243c56-6f63-42a5-994a-bc5b40c152af"
+    },
+    {
+      "claim_id": "a2e6c807-2591-4bea-8dcd-2bbd72ecaafd",
+      "result_id": "85ac6a32-350b-4499-b7d9-a29c63c085b8"
+    },
+    {
+      "claim_id": "000d82c8-ad40-4335-9998-7ef7f3a7803c",
+      "result_id": "3e249038-1604-44fd-8916-86f30d23e7cb"
+    },
+    {
+      "claim_id": "c38d1190-a97b-43d7-b110-57bb2eaac4c6",
+      "result_id": "3e249038-1604-44fd-8916-86f30d23e7cb"
+    },
+    {
+      "claim_id": "c97dcc08-7d13-4f6f-8d36-aa30799766eb",
+      "result_id": "f2741d2c-6b53-40c6-85ed-38b807b0d6cc"
+    },
+    {
+      "claim_id": "b28d8c2b-8bb5-451f-983b-86e37a62e7b0",
+      "result_id": "f2741d2c-6b53-40c6-85ed-38b807b0d6cc"
+    }
+  ],
+  "comparisons": []
+}

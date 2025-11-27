@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript establishes background knowledge about microtubule polarity in neurons across species. Axonal MTs are uniformly plus-end-out from worms to rodents, while dendritic MTs show mixed polarity that varies between vertebrates (mixed proximally, plus-end-out distally) and invertebrates (mixed with minus-end-out predominant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7-C9 present established knowledge from prior literature with appropriate citations. These are well-documented characteristics of neuronal MT organization that provide necessary context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "In wild-type C. elegans DA9 neurons, fluorescently tagged motor proteins localize according to MT polarity: plus-end motor UNC-104 accumulates at the axon tip but is absent from dendrites, while minus-end motors (DHC-1 and KLP-16) accumulate at dendrite tips. This pattern indicates uniformly plus-end-out MTs in axons and predominantly minus-end-out MTs in dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 present consistent experimental observations using multiple motor protein markers (Figure 1B-D). The motor-dead control (C14-C15) validates that localization depends on motor activity. The inference about MT polarity (C16-C17) is well-supported by the motor localization patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Time-lapse imaging of EBP-2::GFP comets in wild-type DA9 and PHC neurons confirms MT polarity: comets move away from soma in axons (plus-end-out) and toward soma in dendrites (minus-end-out).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 present direct visualization of dynamic MT plus-ends using the established EB1 family marker (Figure 2, Videos 1-3). This provides independent confirmation of the MT polarity inferred from motor localization and is consistent with cited prior work (Maniar et al., 2012).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "In unc-116 mutants, dendritic MT polarity is reversed to an axon-like plus-end-out organization. Plus-end motor UNC-104 now accumulates in dendrite tips, minus-end motors (DHC-1, KLP-16) lose dendrite tip accumulation, and EBP-2 comets predominantly move away from soma in dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 present consistent observations across multiple markers (Figures 1E-G, 2, Videos 4-5). Both steady-state motor localization and dynamic MT imaging converge on the same conclusion. The phenotype is specific to dendrites with no effect on axonal MT polarity (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "UNC-116/kinesin-1 is required for establishing minus-end-out MT organization in dendrites. Multiple partial loss-of-function alleles show similar phenotypes, and cell-autonomous rescue confirms UNC-116 functions within the DA9 neuron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 establish genetic requirements through multiple alleles (e2310, wy270, rh24sb79) and rescue experiments (Figure 1\u2014figure supplements 2-3). The viability of e2310 despite null lethality (C29-C31) appropriately identifies it as hypomorphic. Cell-autonomous rescue (C33-C34) demonstrates direct neuronal function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In unc-116 mutants, dendrite outgrowth timing and directionality are normal, and axon length is unchanged, but dendrites are dramatically longer than wild-type at all developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 describe developmental phenotypes with appropriate controls. The cited developmental timeline (C36-C37) provides context. The increased dendrite length (C40, Figure 3\u2014figure supplement 1) is a secondary consequence distinct from the MT polarity defect, as later shown by rescue experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In unc-116 mutants, synaptic vesicles accumulate ectopically in dendrites due to altered MT polarity allowing plus-end motor UNC-104 to enter dendrites. Double mutant analysis shows UNC-116 is not directly involved in SV transport but rather creates the minus-end-out MT polarity that normally excludes UNC-104 from dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 present a clear genetic epistasis analysis (Figure 3). The unc-104;unc-116 double mutant phenotype (C46) demonstrates that dendritic SV accumulation in unc-116 mutants requires UNC-104, establishing that the primary defect is MT polarity rather than direct cargo transport. This logic is sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Active zone proteins (SYD-2/liprin) and other synaptic vesicle markers (SNG-1/synaptogyrin) also show ectopic dendritic localization in unc-116 mutants, indicating that MT polarity changes affect the entire presynaptic structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 extend the SV findings to other presynaptic components (Figure 3\u2014figure supplement 2). The inference that MT polarity affects the entire presynaptic structure (C52) is reasonable given multiple independent markers show similar mislocalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Dendritic proteins (ACR-2, CAM-1, FBN-1) fail to localize properly in unc-116 mutants, accumulating in cell bodies instead of dendrites. This demonstrates that minus-end-out MT polarity is instructive for dendritic cargo transport, encouraging minus-end motors and discouraging plus-end motors from entering dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 show that MT polarity affects both axonal and dendritic protein localization (Figure 4). The observations of dendritic protein mislocalization (C57) complement the axonal protein mislocalization findings. The mechanistic interpretation (C59-C62) is well-supported by the bidirectional effects on cargo distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Kinesin-1 has a C-terminal tail domain that can bind directly to microtubules in addition to its N-terminal motor domain, and has been shown to cross-link and glide microtubules in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 present established structural and biochemical knowledge about kinesin-1 with appropriate citations. This provides necessary background for the subsequent in vitro experiments and structure-function analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In vitro, kinesin-1 with mNUDC cross-links microtubules into bundles with ~80 nm spacing. Analysis of MT polarity shows 69% of bundles are anti-parallel (95% CI: 39-91%), indicating kinesin-1-mNUDC complex preferentially cross-links anti-parallel microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C75 present in vitro EM data (Figure 5). While the observations are clear, the statistical analysis (C74) has a very wide confidence interval (39-91%) with the lower bound close to 50%, making the preference for anti-parallel orientation less definitive than stated. The sample size (13 pairs) is small. Additionally, the role of mNUDC is unclear\u2014it's described as an adapter protein but its necessity and mechanism are not established. The inference that cross-bridges represent kinesin-1-mNUDC complexes (C73) is reasonable but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The C-terminal MT-binding domain of UNC-116 is highly conserved across species, and the C-terminal domain (521-863) can bind to microtubules when expressed in HEK293 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C80 present sequence conservation (C77, Figure 6A) and cite prior work on MT-binding residues (C78). However, the HEK293 cell colocalization data (C79-C80) is not shown ('data not shown'), making it impossible to evaluate the quality of this evidence. While the conservation and prior literature support MT-binding capability, the lack of presented data weakens this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Analysis of unc-116 alleles shows e2310 truncates the C-terminal MT-binding domain while wy270 and rh24sb79 have motor domain mutations, suggesting both motor activity and C-terminal MT-binding are required for regulating dendritic MT polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 present molecular characterization of alleles with appropriate citations. The inference that both domains are required (C85) is reasonable given that different domain mutations produce similar phenotypes, though definitive structure-function analysis requires rescue experiments (presented later).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Structure-function analysis using UNC-116MT (mutant C-terminal MT-binding domain) shows it rescues mitochondrial transport but not MT polarity defects, demonstrating the C-terminal MT-binding motif is specifically required for establishing dendritic MT polarity but not for organelle transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 present elegant structure-function analysis (Figure 6B, Figure 6\u2014figure supplement 1). The differential rescue of mitochondrial transport versus MT polarity by UNC-116MT provides strong evidence for separable functions. This is a key experiment supporting the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "UNC-116MT rescues the abnormally long dendrite phenotype, indicating dendrite length is independent of MT polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 show that dendrite length can be rescued independently of MT polarity. This demonstrates that the length phenotype is a secondary consequence of other UNC-116 functions, not the MT polarity defect. The logic is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Kinesin light chains (KLCs) are required for organelle transport function of UNC-116 but are dispensable for MT polarity function. KLC-2 is required for mitochondrial localization, but klc-1;klc-2 double mutants show no MT polarity defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 present clear genetic separation of functions (Figure 6\u2014figure supplement 1). The klc double mutant analysis (C97-C98) definitively shows KLCs are not required for MT polarity regulation. Citation of similar findings in Drosophila S2 cells (C99) provides independent support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "UNC-116 has a novel function in regulating dendritic MT polarity that requires both motor activity and C-terminal MT binding, and can be separated from canonical cargo transport function at the level of cargo-binding domains and KLC dependency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 synthesize the structure-function analyses. The separation of functions is well-demonstrated through multiple lines of evidence: UNC-116MT rescues transport but not polarity, and klc mutants affect transport but not polarity. This is a major conclusion well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "In unc-116 mutants, dendritic MT density increases (dendrite/axon tubulin ratio changes from 0.6 to 1.2, and EBP-2 comet frequency increases 3-fold), supporting a model where UNC-116 maintains minus-end-out MT polarity by selectively sliding plus-end-out MTs out of dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 present quantitative measurements of MT density using two independent methods: tubulin fluorescence (C103-C105, Figure 6C-E) and EBP-2 comet frequency (C107, Figures 2C, 6F). Both show increased dendritic MTs in mutants. This supports the 'sliding out' model (C109) over a 'sliding in' model, as increased MT density is consistent with failure to remove plus-end-out MTs rather than failure to import minus-end-out MTs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Prior work has shown that dynein regulates axonal MT polarity in Drosophila (affecting axons but not dendrites), and UNC-33/CRMP affects MT organization in both axons and dendrites in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 accurately cite prior work on other regulators of MT polarity. These provide important context showing that different mechanisms regulate MT polarity in different compartments and organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Minus-end-out MT polarity in dendrites is critical for both accumulating dendritic proteins and excluding axonal components (synaptic vesicles, active zone proteins). MT polarity affects dendrite length, suggesting both structural and transport functions depend on polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 synthesize the functional consequences of MT polarity. The bidirectional effects on protein localization (accumulation of dendritic proteins, exclusion of axonal proteins) are well-demonstrated. The inference about structural and transport functions (C118) is reasonable given the multiple phenotypes observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Dendrite outgrowth direction and timing are normal in unc-116 mutants, suggesting MT polarity does not play a critical role in dendrite outgrowth, a process where actin cytoskeleton is known to be important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 present observations about dendrite outgrowth with appropriate citation for actin's role (C121). The inference that MT polarity is not critical for outgrowth (C120) is reasonable given normal outgrowth despite polarity defects, though 'not critical' may be too strong\u2014MT polarity may still play some role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Polarized MT tracks play instructive roles in formation of axonal and dendritic identities and in compartmentalization of axonal and dendritic constituents (SVs, active zone proteins, neurotransmitter receptors).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 present the major conceptual conclusion. The extensive data on cargo mislocalization when MT polarity is disrupted strongly support this conclusion. This represents a significant advance in understanding how neuronal polarity is established and maintained.",
+    "result_type": "MAJOR"
+  }
+]

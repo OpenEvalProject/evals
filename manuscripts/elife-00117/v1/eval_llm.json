@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Meiosis consists of a single round of DNA replication followed by two consecutive nuclear divisions (meiosis I and meiosis II), with homologous chromosomes segregating in meiosis I while sister chromatids remain together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 describe well-established, fundamental features of meiosis that represent textbook knowledge in cell biology. These are background claims that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C8"
+    ],
+    "result": "Preventing microtubule-kinetochore interactions during premeiotic S phase and prophase I is essential for establishing the meiosis I chromosome segregation pattern, as premature interactions transform meiosis I into a mitosis-like division by disrupting sister kinetochore coorientation and centromeric cohesin protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central finding of the manuscript, supported by extensive experimental data showing that premature CLB3 expression causes sister chromatid segregation in meiosis I (C32, C46, C48), disrupts monopolin localization (C52-C54), and causes premature loss of centromeric cohesin (C58, C61). The rescue experiments with ndc80-1 (C86-C93) provide strong evidence that premature microtubule-kinetochore interactions are the causal mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The timing of CLB3 expression, rather than the amount of Clb3 protein, is the primary determinant of sister chromatid segregation in meiosis I, as both GAL-CLB3 and CUP-CLB3 (with 5-fold higher protein levels) produce similar phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by Western blot data (Figure 1B) and GFP dot segregation analysis (Figure 1C) showing that despite different protein levels, the extent of sister chromatid segregation is similar. This establishes that timing is more critical than dosage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Expression of CLB1, CLB3, or CLB4 is sufficient to induce bipolar spindle formation in prophase I-arrested cells, but only CLB1 and CLB3 can promote stable microtubule-kinetochore attachments, and this ability does not correlate with total CDK activity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by spindle formation data (Figure 2A), live cell imaging showing sister kinetochore splitting only in CLB1/CLB3 cells (Figure 2B,C), and CDK activity assays (Figure 1F) demonstrating that similar CDK activity levels produce different phenotypes. This dissociation between spindle formation and productive attachments is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CUP-CLB3 cells segregate sister chromatids during the first meiotic division (39-41% of cells), with segregation occurring immediately after Pds1 degradation (median 7 min), indicating defects in both sister kinetochore coorientation and centromeric cohesion maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by GFP dot segregation data (Figure 2D) and live cell imaging with Pds1-tdTomato (Figure 2E) showing the timing of sister chromatid separation relative to securin degradation. The inference that both coorientation and cohesion are defective (C49) is logical given that sister chromatid segregation requires both defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Premature CLB3 expression does not cause major defects in DSB formation, synaptonemal complex assembly, or recombination product generation, and preventing homologous recombination does not affect CLB3-induced phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by data in Figure 2\u2014figure supplements 5-8 showing normal DSB formation, Rad51 and Zip1 localization, and recombination products in CUP-CLB3 cells, plus the observation that spo11\u0394 does not suppress the phenotype. This rules out recombination defects as the cause of chromosome missegregation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Premature CLB3 expression prevents monopolin association with kinetochores, as evidenced by dramatically reduced colocalization of Lrs4 and Mam1 with Ndc10 and reduced Lrs4 hyperphosphorylation in CUP-CLB3 but not CUP-CLB4 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by chromosome spread data (Figure 3A, Figure 3\u2014figure supplements 1-2) and Western blot analysis (Figure 3B, Figure 3\u2014figure supplement 3) showing monopolin localization and phosphorylation defects specifically in CUP-CLB3 cells. The specificity to CLB3 (not CLB4) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61"
+    ],
+    "result": "Loading of cohesin factors (Rec8 and Pds5) onto chromosomes is normal in CUP-CLB3 cells during prophase I and metaphase I, but centromeric Rec8 is lost prematurely during anaphase I, indicating that both centromeric and arm cohesin are removed at the onset of anaphase I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by ChIP-chip and chromosome spread data (Figure 4A, Figure 4\u2014figure supplements 1-2) showing normal cohesin loading, and chromosome spreads of binucleate cells (Figure 4B) showing loss of centromeric Rec8 in CUP-CLB3 cells. The functional assay with mam1\u0394 (C60) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Rec8 phosphorylation is required for cohesin removal in CUP-CLB3 cells, as the rec8-29A allele (with 29 phosphorylation sites mutated) prevents Rec8 cleavage and causes a similar metaphase I delay in both wild-type and CUP-CLB3 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by Western blot data (Figure 4C, Figure 4\u2014figure supplement 4) showing that rec8-29A is not cleaved in CUP-CLB3 cells, and cell cycle progression data (Figure 4D, Figure 4\u2014figure supplements 5-6) showing similar delays. This establishes that the separase-dependent pathway requires Rec8 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "CUP-CLB3 cells show increased phosphorylation of centromeric Rec8 compared to wild-type cells (though not to the extent of sgo1-mn cells), indicating that these cells are compromised in preventing centromeric Rec8 phosphorylation during meiosis I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by ChIP data using phospho-specific antibodies (Figure 4E) showing increased centromeric phospho-Rec8 in CUP-CLB3 cells. The inference in C68 is logical given this data, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Sgo1, Rts1, and Spo13 localize normally to kinetochores in prophase I and metaphase I-arrested CUP-CLB3 cells, but show moderate reduction in binucleate cells during anaphase I, which is likely a consequence rather than a cause of premature cohesin loss, indicating that premature CLB3 expression impairs Sgo1-PP2A function but not localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by ChIP and chromosome spread data (Figure 4F-H, Figure 4\u2014figure supplements 7-10) showing normal localization in prophase I/metaphase I but reduced localization in anaphase I. The inference that this is a consequence (C71, C73) is supported by data showing similar reduction in rec8-4D cells (C72, Figure 4\u2014figure supplement 11). The conclusion about function vs. localization (C74) is a reasonable inference from the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Both CLB3 and CLB4 induce spindle formation in prophase I, but only CLB3 allows chromosomes to attach and experience pulling forces, and this ability to form tension-generating attachments correlates with defects in meiosis I chromosome morphogenesis, suggesting that premature microtubule-kinetochore engagement is the underlying cause of chromosome missegregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by spindle formation data (Figure 2A) and sister kinetochore splitting analysis (Figure 2B,C) showing the differential effects of CLB3 vs. CLB4. The correlation (C77) and inference about causation (C78) are logical but require further validation through rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In a mitotic system, overexpression of MAM1 and CDC5 induces sister chromatid cosegregation when expressed before microtubule-kinetochore attachments form, but not after attachments are established; disrupting attachments with nocodazole restores cosegregation (48%), demonstrating that microtubule-kinetochore interactions modulate monopolin's ability to induce sister chromatid cosegregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by data in Figure 5A showing differential effects of monopolin induction timing and nocodazole treatment. This mitotic system provides independent evidence that microtubule-kinetochore interactions antagonize monopolin function, supporting the meiotic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Transient inactivation of Ndc80 restores Lrs4 association with kinetochores and Lrs4 phosphorylation in CUP-CLB3 cells, demonstrating that premature microtubule-kinetochore interactions prevent sister kinetochore coorientation by disrupting monopolin localization, and suggesting that Lrs4 hyperphosphorylation occurs at kinetochores rather than during nucleolar release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by chromosome spread data (Figure 5C) and Western blot analysis (Figure 5D) showing restoration of monopolin localization and phosphorylation in CUP-CLB3 ndc80-1 cells. This is a key rescue experiment that establishes causality. The inference about phosphorylation timing (C89) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Transient disruption of microtubule-kinetochore interactions (by ndc80-1, dam1-1, or benomyl treatment) restores centromeric Rec8 retention, homolog segregation, overall chromosome segregation, and spore viability in CUP-CLB3 cells, demonstrating that the defects are due to premature microtubule-kinetochore interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by chromosome spreads (Figure 5E), GFP dot segregation (Figure 5F, Figure 5\u2014figure supplements 2-6), and spore viability data (Figure 5G,H). The use of multiple independent methods to disrupt microtubule-kinetochore interactions strengthens the conclusion. This is a critical set of rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The suppression of chromosome missegregation in CUP-CLB3 ndc80-1 cells does not depend on the spindle assembly checkpoint or reduced Clb3-CDK activity, confirming that the defects are specifically due to premature microtubule-kinetochore interactions and that preventing such interactions during premeiotic S phase and prophase I is necessary to establish meiosis I-specific chromosome architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by data showing that mad3\u0394 does not affect suppression (Figure 5\u2014figure supplements 7-8) and that CDK activity is not reduced in ndc80-1 cells (Figure 5\u2014figure supplement 9). These controls rule out alternative explanations and strengthen the conclusion that microtubule-kinetochore interactions are the key factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C107"
+    ],
+    "result": "The timing of CLB3 induction affects the extent of sister chromatid segregation in meiosis I, with later induction causing less segregation, and this ability correlates tightly with Ndc80 protein levels, which decline during premeiotic S phase and become undetectable during late prophase I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by GFP dot segregation data at different induction times (Figure 6A) and Western blot analysis of Ndc80 levels (Figure 6E). The correlation between Ndc80 levels and CLB3's ability to induce sister chromatid segregation is a key observation linking outer kinetochore assembly to the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Cluster analysis of kinetochore components reveals two major expression classes: an early class enriched for inner kinetochore components (16 of 23) that peak before/during prophase I, and a late class enriched for outer kinetochore components (13 of 18) that peak during meiotic divisions, with NDC80 and HSK3 showing the most differential expression (9.02 and 2.64-fold induction, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by ribosome profiling data and cluster analysis (Figure 6B-D, Figure 6\u2014figure supplements 1-10). This temporal separation of inner vs. outer kinetochore assembly is a novel finding that provides mechanistic insight into how premature microtubule-kinetochore interactions are prevented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Ndc80 and Hsk3 protein levels are low until meiosis I entry, while not all outer kinetochore components show this pattern (Ask1 is present throughout prophase I, Dam1 increases), indicating that outer kinetochore assembly is restricted prior to NDT80 expression and pachytene exit due to low levels of a subset of components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by Western blot data (Figure 6E,F, Figure 6\u2014figure supplement 11) showing differential regulation of outer kinetochore components. This selective downregulation is a key mechanism for preventing premature microtubule-kinetochore interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Expression of NDC80 and HSK3 together with CLB3 during prophase I promotes Ask1 recruitment to kinetochores, formation of robust bipolar spindles, and substantial increase in meiosis I sister chromatid segregation even under conditions where CLB3 alone fails to induce segregation, demonstrating that limiting outer kinetochore assembly is an additional mechanism to prevent premature microtubule-kinetochore interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by chromosome spread data (Figure 8A,B), spindle morphology analysis (Figure 8D,E), and GFP dot segregation (Figure 8F,G, Figure 9). The ability to restore the phenotype by expressing outer kinetochore components provides strong evidence that their downregulation is functionally important for preventing premature interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "Restriction of cyclin-CDK activity during premeiotic S phase and prophase I appears to be the major mechanism preventing premature microtubule-kinetochore interactions, but regulation of outer kinetochore assembly serves as an additional mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis claim is supported by the combined evidence showing that both cyclin misexpression (causing premature CDK activity) and outer kinetochore component expression are required to induce sister chromatid segregation in late prophase I. The hierarchical relationship (major vs. additional) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "CUP-CLB3 can only induce meiosis I sister chromatid segregation when expressed during premeiotic S phase/early prophase I but not during late prophase I, likely because the outer kinetochore is only present until early prophase I, demonstrating that Clb3-CDKs alone are not sufficient but require outer kinetochore components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by the timing experiments (Figure 6A) and the rescue of the phenotype by coexpressing NDC80 and HSK3 with CLB3 during late prophase I (Figure 8G, Figure 9). This establishes that both CDK activity and outer kinetochore presence are required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "In budding yeast, Ndc80 and Hsk3 are downregulated during prophase I, and in S. pombe, Ndc80 and Nuf2 dissociate from kinetochores in prophase I, raising the possibility that outer kinetochore deconstruction is a conserved feature of meiotic prophase I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is supported by data in Figure 6E,F. Claim C129 is supported by citation to Asakawa et al., 2005. The speculation about conservation (C130) is reasonable but requires further validation in additional organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "In S. pombe, Ndc80/Nuf2 dissociation depends on mating pheromone signaling, and ectopic meiosis induction without this signaling (in pat1 mutants) results in sister chromatid segregation in meiosis I, possibly due to premature microtubule-kinetochore interactions from defective outer kinetochore disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131 and C132 are supported by citations to published work. However, claim C133 is speculative and not directly tested. While the hypothesis is plausible given the findings in budding yeast, it remains an untested inference about S. pombe.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "In mouse oocytes, the Ndc80 complex is recruited to chromosomes only after nuclear envelope breakdown, raising the possibility that outer kinetochore assembly is also prevented in meiotic prophase I in vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C134 is supported by citation to Sun et al., 2011. However, claim C135 is speculative. The timing of Ndc80 recruitment in mouse oocytes is consistent with the hypothesis but does not directly demonstrate that prevention of outer kinetochore assembly is functionally important in vertebrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C140"
+    ],
+    "result": "The establishment of meiosis-specific chromosome segregation depends on regulation of microtubule-kinetochore interactions through both cyclin-CDK activity and outer kinetochore assembly, and evidence from multiple organisms suggests this temporal restriction is an evolutionarily conserved event required for proper meiotic chromosome segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the main conclusion of the study, supported by extensive experimental data in budding yeast and citations to similar regulatory events in other organisms (C139). The evolutionary conservation claim is reasonable but based primarily on correlative evidence from the literature rather than direct comparative experiments.",
+    "result_type": "MAJOR"
+  }
+]

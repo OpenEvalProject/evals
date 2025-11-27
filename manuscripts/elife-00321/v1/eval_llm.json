@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Rats were trained on a novel continuous figure-8 maze task combining visual discrimination (VD), non-delayed spatial alternation (SA), and delayed spatial alternation (DA) subtasks. Ensemble activity from 1119 CA1 pyramidal cells was recorded from five rats performing the task with high accuracy (99\u00b12% overall).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C30 describe the experimental design and behavioral performance. The task design is clearly documented with supporting figures (Figure 1), and behavioral accuracy is quantified with appropriate statistics (Table 1). The methodology is sufficiently detailed and the high performance indicates rats were well-trained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Place cells showed stable place-specific firing during repeated exposures to identical trial types (rs>0.67, rr>0.80), but exhibited significantly reduced spatial correlation and firing rate similarity between different journeys within the same task-demand (rs<0.45, rr<0.68, p<0.001), indicating journey-dependent coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 demonstrate journey-dependent remapping with appropriate statistical tests (Wilcoxon rank sum test) and control for confounding factors (running speed, head direction, lateral position via ANCOVA). The data are supported by Figures 2-4 and show clear quantitative differences between conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Within identical journeys, spatial correlations among VD, SA, and DA subtasks remained high (rs>0.75), but firing rates differed significantly (rr<0.80, p<0.01), indicating that task-demand modulates place cell activity primarily through rate remapping rather than spatial remapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 demonstrate task-demand-specific rate remapping with appropriate statistical comparisons. The dissociation between maintained spatial correlation and reduced rate similarity provides strong evidence for the hierarchical organization claim. Supported by Figures 3B, 4B, and 4C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Neuronal ensemble trajectories through state space exhibited unique orbits for different journeys and could classify journeys with high accuracy (p<0.001). Trajectories could predict all eight trial types above chance (p<0.001, chance=0.125) and showed prospective coding even in visually-guided conditions before behavioral choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 describe trajectory analysis results with appropriate statistical tests (binomial tests) and clear quantification. The prospective coding finding (C46) is particularly notable and well-supported by Figure 6D. The classification accuracies are substantially above chance levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Binary classifiers showed high accuracy for distinguishing journeys, task-demands, and trial types (all p<0.001), with no significant differences among these categories (p>0.05, Kruskal-Wallis test), indicating that hippocampal ensembles encode these features with similar fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 demonstrate equivalent encoding capacity across different contextual features using appropriate statistical comparisons. The lack of significant differences (C50) is important for the hierarchical organization argument. Supported by Figure 8 with proper statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C59",
+      "C60"
+    ],
+    "result": "Classifiers trained on journey trajectories from one subtask could predict journeys in other subtasks with high accuracy (p<0.001, n=128 cells), demonstrating that journey representation generalizes across task-demands and suggesting hierarchical organization with journey at a higher level than task-demand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C59-C60 provide strong evidence for hierarchical organization through cross-subtask generalization analysis. The ability to decode journeys across different task-demands (Figure 9) directly supports the hierarchical claim. The statistical evidence is robust with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C42",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C64",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Hippocampal ensemble activity simultaneously represents spatiotemporal contexts (journeys) and non-spatial contexts (task-demands) to form episodes. Journey-dependent coding occurs via global remapping while task-demand-specific coding occurs via rate remapping, with journey representation hierarchically organized above task-demand, independent of behavioral factors like running speed and head direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C42-C72 synthesize the main findings into a coherent model. The hierarchical organization claim is well-supported by the generalization analysis (C52-C53), the differential remapping patterns (global for journey, rate for task-demand), and the classification results showing equivalent encoding capacity. The independence from behavioral confounds (C58) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The hierarchical organization of spatiotemporal and non-spatial contexts in hippocampal episodic code, based on pattern separation and completion through place field remapping, enables both flexible spatial navigation and recall of episodic memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7 and C73-C75 make broad functional claims about the role of this organization in spatial navigation and episodic memory. While the data demonstrate hierarchical organization and different remapping patterns, the manuscript does not directly test whether this organization 'enables' navigation or memory recall. These are interpretive claims that extend beyond the experimental evidence, which focused on neural coding rather than behavioral necessity or causal mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C58"
+    ],
+    "result": "The observed journey-dependent and task-demand-specific coding was not primarily influenced by running speed, head direction, or lateral position, as demonstrated by ANCOVA analysis controlling for these factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C58 address potential confounds. The use of ANCOVA with behavioral covariates (C33) is appropriate, and the manuscript reports that 268 of 522 place cells showed significant differences even after controlling for these factors. This strengthens the interpretation that the remapping reflects cognitive rather than purely sensorimotor factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Five male Wistar rats were implanted with custom microdrives containing 10 dodecatrodes targeting CA1, maintained at 80% body weight on 12-hr light/dark cycles. Spikes during immobility periods were excluded from analysis as hippocampal activity is not place-specific during immobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 describe standard methodological details that are adequately documented. The exclusion of immobility periods (C84-C85) is justified by cited literature and is appropriate for place cell analysis. These are routine methodological choices that are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C25",
+      "C26",
+      "C27",
+      "C34",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The manuscript reviews established knowledge about hippocampal function in spatial and episodic memory, place cell properties, remapping phenomena, and identifies a gap in understanding how different types of contextual information are integrated in hippocampal ensemble codes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 and C25-C27, C34, C65-C69 provide background context from the literature. These are appropriately cited and accurately represent the state of the field. The identification of the knowledge gap (C3, C69) provides clear motivation for the study.",
+    "result_type": "MINOR"
+  }
+]

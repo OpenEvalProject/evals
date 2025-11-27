@@ -1,0 +1,1846 @@
+{
+  "submission": {
+    "id": "2476c559-730a-4405-91c4-43d7b5caded4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T05:31:47.698885Z",
+    "updated_at": "2025-11-27T05:31:47.698885Z"
+  },
+  "content": [
+    {
+      "id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "submission_id": "2476c559-730a-4405-91c4-43d7b5caded4",
+      "content_type": "manuscript",
+      "content_text": "# Membrane immersion allows rhomboid proteases to achieve specificity by reading transmembrane segment dynamics\n\n## Authors\n\n- Syed M Moin<sup>1</sup>\n- Sinisa Urban<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology and Genetics Howard Hughes Medical Institute, Johns Hopkins University Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRhomboid proteases reside within cellular membranes, but the advantage of this unusual environment is unclear. We discovered membrane immersion allows substrates to be identified in a fundamentally-different way, based initially upon exposing \u2018masked\u2019 conformational dynamics of transmembrane segments rather than sequence-specific binding. EPR and CD spectroscopy revealed that the membrane restrains rhomboid gate and substrate conformation to limit proteolysis. True substrates evolved intrinsically-unstable transmembrane helices that both become unstructured when not supported by the membrane, and facilitate partitioning into the hydrophilic, active-site environment. Accordingly, manipulating substrate and gate dynamics in living cells shifted cleavage sites in a manner incompatible with extended sequence binding, but correlated with a membrane-and-helix-exit propensity scale. Moreover, cleavage of diverse non-substrates was provoked by single-residue changes that destabilize transmembrane helices. Membrane immersion thus bestows rhomboid proteases with the ability to identify substrates primarily based on reading their intrinsic transmembrane dynamics.\n\n## Introduction\n\nSignaling networks rely on the specificity of individual components for their targets, avoiding unwanted crosstalk and driving emergent properties of the system. Proteases are ubiquitous in all life, and are particularly well-adapted for serving as regulatory nodes in networks (L\u00f3pez\u2013Ot\u00edn and Bond, 2008). These enzymes achieve their exquisite specificity by recognizing a short binding motif surrounding the scissile bond to align the substrate along the elongated active site cleft of the protease (Schechter, 2005). Residues flanking the scissile bond are designated P1 and P1\u2032 on the amino and carboxy sides, respectively, and numbered moving outwards, while the accommodating protease subsites are correspondingly termed S1 and onwards. This geometric pairing confers high target specificity as the number of residues in the interaction increases, and results in a single and invariant substrate cleavage site (Schechter, 2005; Ng et al., 2009).\n\nWhile soluble proteases have been attractive topics for study for over a century and are now understood at a sophisticated level (L\u00f3pez\u2013Ot\u00edn and Bond, 2008), the more-recent discovery of intramembrane proteases uncovered a fundamentally separate path of protease evolution (Brown et al., 2000). These polytopic membrane proteins assemble a protease active site within the membrane using catalytic residues contributed by different transmembrane (TM) segments (Erez et al., 2009). Even more remarkable is the broad array of cellular networks that intramembrane proteases have come to regulate. Intensively studied is \u03b3-secretase, an aspartyl intramembrane protease that releases signaling domains from the membrane, including the intracellular domains of the Notch receptor and the amyloid-\u03b2 precursor protein (APP) implicated in Alzheimer's disease (De Strooper et al., 1998, 1999; Wolfe et al., 1999). Homologous signal peptide peptidases function in immunity by liberating signaling domains of TNF\u03b1 and FasL (Fluhrer et al., 2006; Friedmann et al., 2006; Kirkin et al., 2007). Site-2 proteases are metalloenzymes that release transcription factors from the membrane to regulate membrane biogenesis and stress responses in diverse organisms from bacterial pathogens to man (Rawson et al., 1997; Makinoshima and Glickman, 2005). Lastly, rhomboid proteases act as prime regulators of signaling in insects by activating EGF signals through proteolytic shedding (Urban et al., 2001, 2002), and play prominent functions in diverse pathogen signaling and adhesion (Urban, 2009).\n\nThe presence of intramembrane proteases in all forms of life indicates that they possess a particularly useful property as regulatory enzymes (Kinch et al., 2006; Lemberg and Freeman, 2007). However, comparative approaches have been instructive only in highlighting convergent similarities in catalytic chemistry with soluble serine proteases (Vinothkumar et al., 2010); other properties of intramembrane proteases remain unexplored (Erez et al., 2009; Urban, 2010). Since these membrane-immersed proteases evolved within the hydrophobic milieu of the membrane, a fundamentally different environment compared to soluble proteases, could this novel environment confer different enzymatic properties? Particularly important is target specificity, because intramembrane cleavage is usually the signal-generating step that alone is sufficient for pathway activation (Brown et al., 2000).\n\nWith over a dozen crystal structures and well-developed reconstitution systems for their study, arguably the best understood biochemically are rhomboid proteases (Urban, 2010). Mutational analyses have identified some sequence determinants in rhomboid substrates, most notably small P1/P1\u2032 residues (Urban and Freeman, 2003; Akiyama and Maegawa, 2007) and large, hydrophobic residues at P4 and P2\u2032 (Strisovsky et al., 2009). However, despite the recent wealth of biochemical and structural information (Bondar et al., 2009; Urban, 2010), particularly on the E. coli rhomboid GlpG, most current studies have been confined to detergent systems (Lemberg et al., 2005; Strisovsky et al., 2009).\n\nAchieving a true understanding of rhomboid function can only be realized by defining its properties in the natural context of the membrane. We therefore used biochemical and spectroscopic methods to determine the contribution of the membrane to proteolysis. These approaches revealed rhomboid proteases rely upon constraints imposed by the membrane on TM segment conformational dynamics to achieve high proteolytic specificity. Further interrogation of proteolysis directly in living cells suggest that rhomboid proteases expose the propensity of TM helices to exit the membrane and unwind as a substrate-discrimination mechanism, rather than relying on recognition-sequence binding like all other known specific proteases.\n\n## Results\n\n### The membrane imparts site-specificity and substrate selectivity\n\nIn order to identify any specific contributions of the cell membrane to proteolysis, we compared catalysis in living cells to catalysis in detergent micelles that support high levels of rhomboid activity. Mass spectrometry revealed that rhomboid proteolysis is notably site-specific, in contrast to other intramembrane proteases (Fraering et al., 2004; Fluhrer et al., 2006; Friedmann et al., 2006; Sato et al., 2006). In fact, cleavage of the Drosophila EGF ligand Spitz always proceeded between the first two residues (AS) of its TM segment even with eight diverse rhomboid proteases and in bacterial, insect and human cells (and different organelles) that harbor lipid composition differences (Fast, 1966) (Figure 1A, also see Figure 1\u2014figure supplement 1A). Although Spitz is the most-studied rhomboid substrate, its cleavage site had never been mapped in cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig1-v1.jpg)\n\n**Figure 1.:** (A) Western analysis of GFP-Spitz-Flag expressed in Drosophila S2R+ cells. Denoted throughout are uncleaved (\u2207) and cleaved forms (*). In vivo cleavage sites were mapped by mass spectrometry following anti-flag immunocapture of GFP-Spitz-Flag processed in Drosophila S2R+ cells by DmRho1, as well as other rhomboid proteases in both mammalian and bacterial cells and in different organelles (also see Figure 1\u2014figure supplement 1A). The invariant cleavage site is denoted with a blue arrow in Spitz (first seven TM residues are shown). (B) The cleavage site in Spitz generated in vitro shifted also to the second AS when assayed in dodecyl-\u03b2-D-maltoside (DDM) detergent. Arrows and asterisks are color matched throughout. Cleavage products isolated from N-Flag and C-Flag tagged APP + Spi7 substrates revealed the same cleavage sites with the expected relative proportions. (C) Reconstituting substrates and rhomboid proteases from detergent into proteoliposomes in vitro restored cleavage to the natural site. (D) Cleavage of APP + Spi7-Flag vs its GA to LM mutant by GlpG in 0.25% DDM detergent or reconstituted into proteoliposomes. Note that upon reconstitution, the local concentration of substrate is higher than in detergent solution.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Cleavage site of GFP-Spitz-Flag processed in human HEK293 cells by DmRho1 (in the Golgi apparatus), DmRho1-KDEL (in the ER), human RHBDL4 (ER) and RHBDL2 (cell surface), DmRho4 in COS cells (cell surface), as well as in Escherichia coli cells by Providencia stuartii (AarA), Bacillus subtilis (YqgP), and Aquifex aeolicus (AqRho). Cleaved Spitz was immuno-captured with anti-Flag agarose and subjected to molecular mass analysis by MALDI-TOF mass spectrometry. The shoulder to the right of each cleaved Spitz peak results from doubly-charged immunoglobulin light chain carryover. All rhomboid proteases, irrespective of in which organelle or cell type they were expressed, cleaved Sptiz between the first two residues (AS) of its transmembrane segment. (B) Cleavage site of APP + Spi7 (C-terminal Flag tag) shifted to predominantly between the GA residues when processed by YqgP in mixed DDM:phospholipid (0.1%:0.1%) micelles (since pure YqgP is inactive in detergent alone) and AarA in detergent. Highlighted are uncleaved (\u2207) and cleaved forms (*). (C) Cleavage site of APP + Spi7 with AarA isolated using an N-terminal Flag tag.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Sptiz was cleaved between the first two residues (AS) of its transmembrane segment irrespective of the lipid composition of the proteoliposomes. Cleaved N-terminal Flag-tagged Spitz was immuno-captured with anti-Flag agarose and subjected to molecular mass analysis by MALDI-TOF mass spectrometry. The asterisks mark the mass peak corresponding to the cleaved Flag-Spitz fragment. The lipid environments denoted are: PC, phosphatidylcholine; PA, phosphatidic acid; PE/LyPE, 1:1 molar mix of phosphatidylethanolamine and lyso-phosphatidylethanolamine; PG, phosphatidylglycerol; PE/PG, 70:30 molar mix of phosphatidylethanolamine and phosphatidylglycerol; SM, sphingomyelin; DPPE/DPPG, 70:30 molar mix of 1,2-dipalmitoyl-sn-glycero-3-phosphatidylethanolamine and 1,2-dipalmitoyl-sn-glycero-3-phosphatidylglycerol, POPG/DAG, molar 90:10 mix of phosphatidic acid and diacylglycerol; cholesterol was at 10% molar ratio.\n\nSuch dramatic site-specificity suggested that sequence binding positions Spitz in the active site, as occurs with soluble proteases. However, when we examined proteolysis in detergent micelles, we found that the cleavage site in Spitz also shifted +3 residues deeper into the TM segment (Figure 1B). The shift was even more dramatic with APP + Spi7, an engineered substrate that harbors seven TM residues of Spitz within the C-terminal 99 residues of human APP (Urban and Wolfe, 2005). In fact, some rhomboid enzymes abandoned the natural AS entirely in favor of cleavage +3 and/or +5 residues deeper (Figure 1B, also see Figure 1\u2014figure supplement 1B). Without exception analyzing both N- and C-terminal cleavage products revealed that each substrate is cut only once in vitro without successive trimming, but the cut site is free to shift in position (Figure 1B, also see Figure 1\u2014figure supplement 1C). Notably, small residues flanking the cleavage site (P1/P1\u2032) were strongly preferred.\n\nWe found that the membrane itself is the basis for the discrepancy in site-specificity in cells vs in detergent micelles; reconstituting pure rhomboid and substrate in vitro from detergent into defined proteoliposomes restored cleavage to the natural site in Spitz, and even in APP + Spi7 (Figure 1C). Reconstitution into proteoliposomes comprised of a wide variety of lipids all restored site-specificity (Figure 1\u2014figure supplement 2), revealing that the composition of the membrane affects the efficiency of proteolysis, but not its site-specificity. Therefore, the uncompromising site-specificity of rhomboid proteases is not an inherent property of the enzyme itself, but rather results from the membrane somehow directing the position of cleavage.\n\nReconstituting rhomboid and substrate into proteoliposomes from detergent micelles also revealed a second role for the membrane in substrate discrimination. Distal GA residues are a hallmark requirement for Spitz cleavage in cells (Urban and Freeman, 2003), and these residues were also important for cleavage in vitro when both rhomboid and substrate were reconstituted into proteoliposomes (Figure 1D). In contrast, cleavage of a GA mutant substrate was rescued to nearly wildtype levels in detergent micelles, suggesting that the membrane plays a direct role in restricting substrate specificity in addition to specifying the cleavage site.\n\n### The membrane restrains rhomboid gate dynamics\n\nSince proteolysis in detergent was notably plastic, we investigated the protein dynamics of both the protease and substrates, neither of which have yet been studied for any intramembrane protease. We functionally identified TM5 of GlpG as part of the lateral gate for substrate access to the active site (Baker et al., 2007; Urban and Baker, 2008), although other models have also been proposed (Ha, 2009). Since cleavage sites shifted only deeper into the TM segment, we examined gate dynamics. We introduced a nitroxide spin label onto TM5 at W236, a position we previously identified to be key for gating, and onto the overlying extramembraneous Cap loop at M247 as a control. The particular W236 and M247 sites were also attractive because neither contribute to GlpG's structural stability (Baker and Urban, 2012). We then monitored dynamics directly at these sites using electron paramagnetic resonance (EPR) spectroscopy. As expected, we observed two spectral components: a dynamic form (\u03b1 in Figure 2A) and an immobilized form (\u03b2 in Figure 2A). These are consistent with the gate-open and gate-closed conformations, respectively, observed by X-ray crystallography (reviewed in Urban, 2010). Interestingly, the relative proportion of these two forms changed when GlpG was in different environments. Both TM5 and Cap sites were readily observed in the highly-dynamic form when GlpG was in the detergent-solubilized state. However, while the Cap site retained a high proportion in the mobile form when GlpG was reconstituted into proteoliposomes (Figure 2B), the TM5 position shifted almost completely to the strongly restrained form (Figure 2A). This is consistent with conversion to a predominantly gate-closed form, indicating that the membrane confers site-specificity (Figure 1C) by restricting gate dynamics (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig2-v1.jpg)\n\n**Figure 2.:** Side-view of GlpG (left) showing positions (in spheres) of nitroxide spin probes. EPR spectroscopy was conducted at 37\u00b0C in 0.5% DDM detergent or proteoliposomes formed from E. coli lipids. Shown are 100G wide first derivative spectra with the relative signal intensity between samples normalized by quantifying the absolute number of spins. Vertical dashed lines denote magnetic field value positions. (A) Dynamics at the W236 gate position in DDM detergent vs proteoliposomes: note the dramatically increased amount of the immobile \u03b2 component when GlpG was analyzed in proteoliposomes (red arrow) relative to in DDM detergent. (B) Proteins dynamics at the M247 Cap position showed a major proportion in the dynamic form when GlpG was analyzed both in DDM detergent and in proteoliposomes.\n\n### Rhomboid substrates rely on the membrane to form stable TM helices\n\nWe next probed the structural properties of rhomboid substrates directly by examining long peptides corresponding to the entire TM segments of Providencia TatA, the only known bacterial substrate (Stevenson et al., 2007), and APP + Spi7, as well as their corresponding mutants by circular dichroism (CD) spectroscopy. CD is a powerful tool for studying TM structure, but has never been applied to the analysis of intramembrane proteolysis. Interestingly, although distal helix-destabilizing residues were required for proteolysis in proteoliposomes, both wildtype and mutant TM peptides reconstituted into proteoliposomes formed helices of indistinguishable stability as revealed by overlapping ellipticity troughs at 208 and 222 nm (Figure 3A). Moreover, oriented CD analysis revealed comparable spectra for both wildtype and mutant TM peptides (Figure 3\u2014figure supplement 1), suggesting that the tilt of the substrate and uncleavable TM segments in the membrane is similar. The knowledge-based Ez algorithm (Schramm et al., 2012) also failed to detect any tilt or structural differences between these wildtype and mutant TM segments.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig3-v1.jpg)\n\n**Figure 3.:** (A) CD spectroscopy of substrate (red traces) and non-substrate (blue traces) TM peptides revealed both display similarly stable helices when reconstituted into proteoliposomes, which was dramatically higher than in DDM detergent micelles (green dashed traces). (B) CD spectroscopy of substrate TM peptides in detergent micelles (red traces) revealed them to be strongly reduced in helicity compared to non-substrates (blue traces); in comparison, non-substrates formed helices in detergent micelles similar in stability to those in the helix-inducing solvent TFE (black dashed traces). All values are mean residue ellipticity, with relative peptide concentrations determined by simultaneously monitoring actual peptide bond absorbance during CD scanning. The TatA GSP-VVL mutant is G11V + S12V + P13L.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** TatA (A) and APP (B) TM peptides in oriented bilayer sheets were analyzed by CD spectroscopy. Oriented CD spectra are shown in diamonds, with the red designating non-substrate TMs and blue designating rhomboid substrate TMs. The observed oriented spectra are consistent with TM peptides adopting a transbilayer orientation with no obvious differences in tilt angle between wildtype and mutant pairs. Although anisotropic, the green spectra (TM peptides in trifluoroethanol) are provided to illustrate the expected pattern for TM peptides tilted a full 90\u00b0 relative to the membrane normal. Oriented bilayers at a 80:1 lipid to peptide molar ratio were assembled as described in Qian S, Wang W, Yang L, Huang HW. 2008. Biophysical J 94:3512\u201322.\n\nHowever, the key difference was that rhomboid substrates actually rely on the membrane to form these stable helices. TatA was 31% less helical, and APP + Spi7 over threefold less helical, in DDM micelles compared to being reconstituted into proteoliposomes (Figure 3A). This observation explains the relaxed need for helix-destabilizing residues for cleavage in detergent (Figure 1D), because these TM segments are already partly unwound. Moreover, we found that this instability is a defining feature of rhomboid substrates relative to non-substrates; analysis in detergent micelles revealed that the APP + Spi7 peptide was a remarkable 36% less helical than the non-substrate APP, while TatA was 46% less helical than its uncleavable GSP-VVL mutant (Figure 3B).\n\nSpectroscopic interrogation revealed for the first time that rhomboid substrates are unable to maintain a stable helix without the membrane, raising the possibility that differences in intrinsic TM dynamics first and foremost is the property that defines substrates, rather than serving a secondary role in exposing the substrate backbone for hydrolysis as currently thought (Ha, 2009; Strisovsky et al., 2009). This dynamic nature could allow substrates, but not non-substrates, to enter the catalytic center for proteolysis to ensue. While this model explains our biophysical observations, it's based entirely on in vitro measurements. We therefore sought to test the physiological, as well as functional, relevance of our model in living cells by examining its central predictions.\n\n### TM dynamics, not sequence binding, position substrates in the active site\n\nThe distinguishing prediction of our model is that substrate position in the active site is dictated primarily by protein dynamics caused by residues of the TM segment that, when not supported by the membrane, disrupt helical stability and promote entry into the hydrophilic active site. Substrate position should therefore be predictably shifted by moving, enhancing, or limiting intrinsic substrate dynamics. In contrast, if rhomboid achieves specificity by regimented binding of a recognition motif like soluble proteases, then the site of cleavage must necessarily be fixed, while altering TM dynamics should only change the efficiency of cleavage. We tested this prediction with Drosophila rhomboid-1 (DmRho1), the natural Spitz protease, and E. coli GlpG, the best understood rhomboid protease, under physiological conditions. To reveal substrate position in the active site at the time of catalysis we mapped substrate cleavage sites generated in living cells, since a protease:substrate complex structure has never been achieved.\n\nFirst, we reasoned that we could increase substrate TM dynamics but leave unperturbed all residues thought to be important for Spitz \u2018binding\u2019 (P4\u2013P2\u2032) by mutating two residues near the middle of the Spitz TM segment (at P8\u2032 and P9\u2032) to glycine. Circular dichroism spectroscopy revealed that the two glycines dramatically decreased helical stability by >60% relative to wildtype Spitz (Figure 4A). Next, we tested Spitz + GG cleavage and found it to be cleaved more efficiently than wildtype Spitz in Drosophila cells, but the cleavage site shifted +3 residues (Figure 4B). The cleavage site also shifted in living E. coli cells by GlpG (Figure 4\u2014figure supplement 1A). This effect was not limited to glycine, since changing a distal cysteine (at P8\u2032) to a helix-destabilizing serine also resulted in very efficient cleavage, but again induced a +3 residue shift in cleavage site (Figure 4\u2014figure supplement 1B). These shifts are particularly instructive because the natural sequence containing any possible binding motif is completely unperturbed, yet is abandoned for an \u2018impermissible\u2019 sequence (Strisovsky et al., 2009) with alanine and glycine at P4 and P2\u2032, respectively (Figure 4C). Moreover, addition of helix-destabilizing residues at other positions could also induce shifts: mutating the P2\u2032 isoleucine to glycine caused a +1 shift (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig4-v1.jpg)\n\n**Figure 4.:** (A) CD spectroscopy revealed that incorporating two glycines (+GG) near the middle of the Spitz TM further reduces its helical stability. (B) Western analysis of Spitz mutant processing by DmRho1 in living Drosophila cells assessed by amount of Spitz released into the media (top left panel). In vivo cleavage sites of Spitz + GG revealed a +3 site shift in cleavage. Black triangles denote IgG light chain from the immunoisolation. (Figure 4\u2014figure supplement 1 shows cleavage of Spitz C146S, and a +5 site shift in cleavage of Spitz + GG by GlpG in E. coli cells). (C) Alignment of different Spitz mutant cleavage sites generated by DmRho1 in living cells. All mutants were cleaved efficiently (in B), yet note the dramatic redistribution of residues at P4, P3, P2, and P2\u2032 positions as cleavages sites shifted. (D) The cleavage site of the Spitz I140G mutant shifted +1 residues with Drosophila rhomboid-1. Mutating the distal, helix-destabilizing G143 residue to leucine shifted cleavage site \u22121 residues outwards.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Incorporating two glycine residues (+GG) deep within the Spitz TM segment resulted in a +5 shift in cleavage site with GlpG in E. coli cells. (B) Mutating a single cysteine at position 146 to serine deep within the Spitz TM segment and far away from the cleavage site (at P8\u2032) resulted in a +5 shift in cleavage site with Drosophila rhomboid-1 in living cells.\n\nSecond, since we found site-specificity and gate dynamics were inversely correlated, we next examined whether gate-open mutants cause cleavage site shifts under physiological conditions. Indeed, all gate-open GlpG mutants (Baker et al., 2007; Urban and Baker, 2008) analyzed in living E. coli shifted the Spitz cleavage site +3 residues deeper into the TM segment (Figure 5A). The effect of these mutations is unlikely to be explained by interfering with any putative recognition-binding site on the protease, because all gate-open mutants, irrespective of position, resulted in cleavage site shifts (Figure 5\u2014figure supplement 1A). In fact, wildtype GlpG in detergent produced the same +3 and +5 cleavage sites as gate-open mutants (Figure 5C, also see Figure 5\u2014figure supplement 1B), suggesting that, in the absence of the membrane, even the wildtype gate opens fully (which is also independently supported by EPR analysis).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig5-v1.jpg)\n\n**Figure 5.:** (A) Lateral view of GlpG showing TM5 interfacing sidechains (boxed) whose mutation opens the substrate gate (red) and increases protease activity. Gate-open mutants of GlpG analyzed in E. coli shifted cleavage site deeper into the Spitz TM segment (red). Cleavage of Spitz with helix-destabilizing S142 mutated to alanine by gate-open GlpG in E. coli cells produced a complete shift towards the top of the TM segment (blue). (B) Cleavage of Spitz with G143, and G143 + A144, mutated to leucine by gate-open GlpG in E. coli cells produced a gradual shift in cleavage site outwards. (C) Wildtype and gate-open (F153A + W236A) GlpG proteases produced identical, deeper cleavage sites when assayed in detergent micelles, indicating that the gate is fully open in the absence of the membrane. (D) Mutating the distal GA residues to LM also shifted the cleavage of APP + Spi7 in DDM detergent micelles to the natural AS site. Under these conditions the gate of wildtype GlpG is \u2018open\u2019 by virtue of the membrane being absent. (E) Diagram illustrating the \u2018turn propensity\u2019 effect of incorporating a helix-destabilizing/membrane-exiting residue (asterisk) into a long TM segment (Monn\u00e9 et al., 1999b). Lower diagram proposes an analogous effect for intramembrane proteolysis: residues of high \u2018turn propensity\u2019 could promote lateral substrate partitioning into the rhomboid active site. Right: change in turn propensity of substrate mutants plotted against the change in cleavage site occurring in natural membranes of living cells. (F) A hexapeptide encompassing the entire recognition motif (P4\u2013P2\u2032) of P. stuartii TatA, the most efficient rhomboid substrate, failed to block cleavage of two different substrates by any rhomboid tested in detergent or reconstituted liposomes (see Figure 5\u2014figure supplement 2 for APP + Spi7 cleavage in liposomes and TatA cleavage in detergent). Black and green triangles denote substrate and cleavage product bands, respectively. The highest tested peptide concentration was 1 mM, while substrates were maintained at \u22641 \u03bcM.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Cleavage site of Spitz by the gate-open TM5 mutant W236G, TM2 mutant F153A, and triple TM5 mutant L229V + F232V + W236V, in living E. coli cells shifted deeper into the transmembrane segment between the second AS pair for all gate-open mutants irrespective of their position. (B) The gate-open W236G mutant of GlpG assayed in 0.1% DDM detergent produced identical, deeper cleavage sites as the wildtype enzyme (see Figure 5C).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** A hexapeptide (Ac-IATAAF-amide) corresponding to the entire recognition motif (P4\u2013P2\u2032) of TatA, the most efficient substrate for any rhomboid protease, did not block substrate proteolysis in vitro even at extreme (1 mM) concentrations. Black and green triangles denote substrate and cleavage product bands, respectively. The highest tested peptide concentration was 1 mM, while substrates were maintained at \u22641 \u03bcM. Also see Figure 5F.\n\nThird, we \u2018limited\u2019 substrate dynamics, which our model predicts should decrease substrate \u2018reach\u2019 into the rhomboid active site, and thereby shift cleavage to the top of the substrate TM. Strikingly, the cleavage site of Spitz by gate-open GlpG in vivo shifted completely \u22123 residues when helix-destabilizing S142 alone was replaced by alanine (Figure 5A). Moreover, a partial \u22123 shift also occurred when we replaced G143 with leucine, and almost fully to the outer AS when both GA residues were replaced with leucine (Figure 5B). A shift also occurred with Drosophila rhomboid-1 (Figure 4D). Importantly, we observed the same shifts with mutant substrates and wildtype GlpG in detergent micelles, in which the gate is open by virtue of the membrane being absent (Figure 5D). Therefore, even when the gate is open, helix-destabilizing residues are required for substrates to enter rhomboid's active site.\n\n### A \u2018helix-and-membrane-exit\u2019 propensity scale correlates with cleavage site shifts\n\nAlthough we made as conservative mutations as possible with respect to size when altering TM dynamics, mutants should be interpreted with caution because they can also have unintended effects, including altering the TM surface and/or interface with rhomboid. To evaluate further what physical property is most likely responsible for the effects on proteolysis, we searched for a correlation between cleavage site shifts in living cells vs changes that our mutants made in residue properties using several independently generated physical scales. We found the strongest correlation with a \u2018TM turn propensity\u2019 scale (Monn\u00e9 et al., 1999a, 1999b). This scale had been derived by placing guest residues into the center of a long TM segment and measuring whether the residue prefers to stay in the middle of the membrane in the TM helix, or moves outside the membrane in a turn that breaks the long TM helix into two shorter TM helices (Figure 5E). The quantified propensity scale displayed a correlation coefficient of 0.86 with the direction and degree of cleavage site shifts that we observed with 12 mutant substrates cleaved by rhomboid proteases in cellular membranes (Figure 5E).\n\nTaken together, these observations, conducted in living cells, reveal that gate and TM dynamics, rather than binding of a specific sequence within Spitz, play the predominant yet completely overlooked role in positioning substrates into the active site. The new cleavage sites further revealed dramatic re-alignments of the substrate in the rhomboid active site (Figure 4C), even when the natural putative recognition was unperturbed, such that stereotypical binding of a complementary recognition sequence between rhomboid and substrates is unlikely to be the main driving force for protease specificity. But to evaluate this further, we examined the ability of the proposed P4\u2013P2\u2032 recognition binding region of TatA, the most efficient bacterial substrate, to inhibit proteolysis competitively by a panel of bacterial rhomboid enzymes in vitro both in detergent micelles and reconstituted into proteoliposomes. Even at millimolar concentration (\u223c1000\u00d7 the substrate concentration), the peptide did not block rhomboid proteolysis of TatA or APP + Spi7 substrates (Figure 5F and Figure 5\u2014figure supplement 2), independently suggesting that sequence-specific binding is not the main feature of rhomboid specificity.\n\n### Increasing TM dynamics converts non-substrates into rhomboid substrates\n\nDiscovering rhomboid specificity is driven by exposing intrinsic TM dynamics raised an independent prediction: non-substrates of various sequence should be converted into substrates simply by increasing their intrinsic TM dynamics. APP, Delta and TGF\u03b1 have been characterized genetically, cell biologically, and in vitro with pure proteins as non-substrates for rhomboid enzymes (Peschon et al., 1998; Urban and Freeman, 2003; Lemberg et al., 2005; Urban and Wolfe, 2005; Adrain et al., 2011). We reasoned that incorporating a single proline, which has the highest helix-and-membrane exit propensity of all residues (Monn\u00e9 et al., 1999a, 1999b), might increase their intrinsic TM dynamics. Indeed, CD analysis revealed that incorporating a single proline into the TM of APP was sufficient to decrease TM helix stability by over twofold (Figure 6A). Remarkably, installing single prolines alone was sufficient to convert APP, Delta and TGF\u03b1 into efficient rhomboid substrates in vivo and in vitro (Figure 6B,C). In fact, intramembrane cleavage become so efficient that in all cases it outcompeted the natural juxtamembrane cleavage by metalloproteases, and in the case of Delta, little unprocessed full-length protein could be detected. Cleavage was dependent on rhomboid activity, because it required the catalytic serine of both Drosophila and human rhomboid proteases, and \u03b3-secretase inhibition did not affect cleavage (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig6-v1.jpg)\n\n**Figure 6.:** (A) CD spectroscopy revealed that incorporating a single proline into the TM of APP (at position 7) dramatically reduces its helical stability. (B) Incorporating a single proline into the TM segment of Delta, TGF\u03b1, or APP converted each into an efficient substrate for rhomboid proteases (DmR is Drosophila rhomboid-4, HsR is human RHBDL2, SA is the catalytic serine mutant of DmR). (\u2212) shows non-specific anti-Flag bands in untransfected HEK293 cells. The natural juxtamembrane cleavage product generated by metalloprotease shedding (denoted by a white triangles) was outcompeted by intramembrane cleavage. (C) Incorporating a single proline also converted APP-Flag into an efficient substrate in vitro with pure bacterial rhomboid enzymes (cleaved products denoted with asterisks). (D) Effect of proline position on rhomboid proteolysis (shown are cleaved product bands, highlighted with asterisks). Cleavage sites of Delta + Pro-Flag and GFP-APP + Pro-Flag with different proline positions were mapped from living HEK293 cells (right panel). TM segment residues are underlined and the exogenous proline is boxed.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Cleavage of non-substrates harboring transmembrane proline depends on rhomboid protease activity not \u03b3-secretase. We examined both the human (above shown with Delta) and Drosophila (above shown with APP) rhomboid proteases. \u2018SA\u2019 denotes co-transfection of HEK293 cells with rhomboid protease constructs harboring the catalytic serine mutated to alanine. These catalytically dead constructs failed to induce cleavage (highlighted with red asterisks). DAPT was added to a final concentration of 10 \u03bcM, which is approximately 100-fold higher than its reported IC50 against \u03b3-secretase, yet it did not block proteolysis. \u2018UN\u2019 designates control untransfected cells, which serve to identify cross-reactive background bands.\n\nBy scanning the proline into each of the first 10 TM positions, we found multiple sites and surprising sequence diversity could accommodate rhomboid cleavage. Although incorporating proline in any TM position between 2 and 10 resulted in Delta and TGF\u03b1 cleavage, APP displayed a more limited profile of acceptable proline site position. This may reflect influence by neighboring sequence context on overall helical stability and/or propensity to partition into the active site (Li et al., 1996; Yang et al., 1997). Intriguingly, the relative cleavage site preference was dependent on the position of the proline, and moved deeper as the proline position descended into the TM segment (Figure 6D). These observations provide compelling evidence that simple changes in intrinsic TM dynamics under physiological conditions drive substrate specificity for membrane-immersed proteolysis.\n\n## Discussion\n\n### Exposing intrinsic TM dynamics is a novel proteolytic specificity mechanism\n\nImmersion of a hydrolytic reaction within the hydrophobic membrane has long been studied as a biochemical conundrum (Erez et al., 2009), yet the possible advantage of this arrangement has not been explored. We integrated diverse analytical approaches including spectroscopy, defined reconstitution systems, and cleavage site mapping in living cells to probe the role of the membrane. These new approaches ultimately converged to reveal that the main property conferred by membrane-immersion is the ability to identify substrates through a mechanism centered on exposing intrinsic TM dynamics instead of the protein-protein binding strategy used by other specific proteases (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00173/elife-00173-fig7-v1.jpg)\n\n**Figure 7.:** The membrane imposes two constraints on protein dynamics to ensure high proteolytic specificity; it induces helix formation of TM segments (left red arrows) and limits rhomboid gate (light blue) opening (right red arrow). Substrates form a stable helix only in the membrane; partial exposure to the aqueous environment within rhomboid triggers an entropy-driven conformational switch, facilitated by helix-destabilizing residues, allowing substrates to reach the catalytic residues (in orange). Bottom panel depicts a non-substrate:rhomboid complex, in which the TM segment maintains a stable helix and therefore cannot reach the catalytic residues. The non-substrate TM segment eventually dissociates without being cleaved (far right). Induction of efficient non-substrate cleavage suggests that the initial docking interaction between rhomboid and TMs is non-specific. The exact order of events, and what triggers each step, remain speculative. Membrane thinning surrounding GlpG as observed in molecular dynamics simulations is illustrated (Bondar et al., 2009; Zhou et al., 2012), although its functional consequence remains unclear. Structures 2IC8 (closed GlpG), 2NRF (open GlpG), 1MOX (Spitz-EGF), and 2TGF (TGF\u03b1-EGF) were used to diagram the model.\n\nApplying CD spectroscopy provided the first opportunity to measure the structural properties of rhomboid substrate TMs relative to non-substrates, and in different environments. Coupling this information with examining proteolysis in living cells suggests that the main factor keeping many type I TM segments from becoming rhomboid substrates is their ability to maintain a stable TM helix. Differences between substrate and non-substrate TM helices are minimal while they reside in the membrane. However, a defining property of rhomboid substrates is a meta-stable TM helix that actually relies on the membrane for stability, and unravels without it. Mutations that stabilize TM helices compromise proteolysis, while simply introducing helical instability into non-substrate TMs, as measured directly by CD, converted three of three unrelated type I membrane proteins into substrates for seven different rhomboid proteases despite diversity in the cleaved sequences.\n\nIt is worth emphasizing that mutational analysis has played an important role in our study of rhomboid proteolysis, and while this is a proven strategy for elucidating enzyme mechanisms, all of our mutants that change helicity also necessarily change sequence. To limit this inherent drawback, we were careful, whenever possible, to make conservative mutations, measure effects on helicity directly by CD, and ultimately base our analysis on >30 mutations. Nevertheless, we further evaluated what underlying physical property drives the cleavage site shifts and ultimately found the strongest correlation with a \u2018turn propensity\u2019 scale. The informative feature of this novel scale is that it integrates both the helical propensity of a residue, as well as its preference to be inside the membrane versus seeking a more hydrophilic environment (Monn\u00e9 et al., 1999a, 1999b). As such, the intrinsic dynamics in rhomboid substrate TMs thus likely derives from a combination of residues that destabilize the TM helix structure directly, as well as those of limited hydrophobicity that increase the likelihood of this polypeptide region escaping the helix-inducing environment of the membrane (in favor of the hydrophilic active site of rhomboid, see below). This observation independently suggests that the key differences in TM dynamics are evaluated in a different, non-membranous environment. This may explain why alanines are known to be important for rhomboid proteolysis yet themselves are not helix-destabilizing directly, and require mutation to large hydrophobic residues to compromise proteolysis.\n\nThe strong correlation with the turn propensity scale could also have predictive value for finding new rhomboid substrates by sequence analysis. However, it should be noted that our analysis had the benefit of quantifying \u2018changes\u2019 in turn propensity (\u2018\u2206 turn propensity\u2019 in Figure 5E) between two sequences that differ at only one or two residues. In practice, the turn propensity of a residue has been shown to be altered in non-linear ways by differences in TM segment length, the local sequence context, and the exact position of the residue within the TM segment (Monn\u00e9 et al., 1999b). If these confounding parameters also apply to rhomboid proteolysis, accurately predicting absolute propensities of natural TM segments from sequence alone may present challenges. Nevertheless, cautious optimism is warranted, since these challenges could be overcome by additional scale refinement with rhomboid proteases directly.\n\nWhile our analyses consistently indicate TM dynamic state is the defining feature of rhomboid substrates, they do not neglect that sequence also contributes a secondary role. The shifts that we observed reveal sequence requirements for proteolysis with positive data, because they mark substrate position in the active site at the time that catalysis was proceeding efficiently. Preference for cleavage to shift to between small residues re-affirmed prior studies (Urban and Freeman, 2003; Akiyama and Maegawa, 2007). However, little appears to be essential for cleavage beyond small P1/P1\u2032 residues, since we found a great diversity of residues at other positions allowed efficient proteolysis to proceed by multiple rhomboid proteases. This is particularly informative, because prior analyses necessarily focused on mutations that block cleavage, but could not rule out the possibility that they interfere with proteolysis indirectly, for example, by promoting TM oligomerization (which is required for TatA function).\n\nBy incorporating a single proline at various positions we were able to convert three unrelated proteins into rhomboid substrates. Nevertheless it is important to note that this too does not mean that any TM sequence can become a rhomboid substrate. Rather, it highlights that the natural sequence diversity in many TM segments provides ample opportunities for finding acceptable cleavage sites. True substrates would nevertheless be expected to have further sequence optimization that would be specific to a particular rhomboid protease, because greater proteolytic efficiency would be favored as substrate and protease co-evolve. One current example might be TatA proteolysis, because TatA cleavage is thought to proceed rapidly and automatically for quorum sensing to operate (Stevenson et al., 2007). However, this is unlikely to be representative of most rhomboid functions. Even so, a peptide comprised of all P4\u2013P2\u2032 residues requires millimolar concentrations to affect proteolysis of TatA by AarA, indicating that even in this context recognition sequence binding is not the main determinant for specificity.\n\nConsidered together, our observations suggest a new working model in which canonical rhomboid proteases patrol the membrane for meta-stable TM helices for cleavage. A gate-open rhomboid may be sufficient to provide a microenvironment in which \u2018intrinsic\u2019 TM segment differences can be unmasked, and recent molecular dynamics simulations and biophysical measurements indicate that this is a stable rhomboid conformation in the membrane (Baker and Urban, 2012; Zhou et al., 2012). Because of both helix-destabilizing residues and limited hydrophobicity, substrates are poised to exit from the membrane and partition into the hydrophilic rhomboid active site. Proteolysis then ensues because such extended TMs are susceptible to proteolysis, and/or are able to \u2018reach\u2019 the internal catalytic apparatus. Such substrate \u2018partitioning\u2019 is consistent with a strong correlation with a \u2018turn propensity scale\u2019, and may further explain the unexpected observation that scanning a single proline along the TM segment moves the cleavage site deeper, at times positioning it at unacceptable residues. Importantly, the central yet overlooked component of this specificity system is the membrane itself, which limits proteolysis both by inducing TMs to form helices and restricting gate-opening (Figure 7).\n\nUltimately our analyses have both coalesced into a general framework for how rhomboid intramembrane proteolysis functions, and emphasize that further work is required to define the specific details of how this complex system operates. Differences between substrates and non-substrates in the membrane beyond the resolution of our experimental approaches are possible, although direct evidence suggests that the most dramatic difference occurs when TMs leave the influence of the membrane. Moreover, structural analysis of the rhomboid-substrate complex is required to define the fine-detail interactions that mediate proteolysis, although this might prove particularly challenging if true substrates are indeed intrinsically dynamic. Finally, the precise order of events, and what triggers each step in the cleavage reaction, also remain unclear.\n\n### Concluding perspective\n\nIt's well recognized that proteolytic release of factors from the membrane regulates many signaling networks. Yet dozens of examples reveal that simply anchoring a protease domain to the membrane through a TM segment satisfies these needs (Blobel et al., 2009; Antalis et al., 2010). So why did complicated, membrane-immersed enzymes evolve and become so wide-spread across all forms of life? Our analyses indicate that rhomboid proteases achieve substrate specificity first through reading TM dynamics, which endows them with different properties relative to soluble proteases. Intramembrane proteases might therefore be a distinct group of enzymes in the cell, not because they are proteases that release proteins from the membrane, but because they are membrane-immersed; they live in a world with different rules, giving the cell a set of enzymes with unique properties that it can harness for evolving new functions.\n\n## Materials and methods\n\n### In vitro proteolysis assays\n\nRhomboid proteases and substrates were expressed in E. coli, purified, and cleavage reactions were conducted at 37\u00b0C for 1\u20132 hr in 50 mM Tris\u2013HCl pH 7.4, 150 mM NaCl, and either reconstituted into proteoliposomes or in 0.1% DDM as described previously (Urban and Wolfe, 2005). Reaction products were resolved and quantified by infrared fluorescence (LiCor Biosciences, Lincoln, NE) using western analysis (Baker et al., 2007).\n\n### Mass spectrometry\n\nSubstrates from in vitro proteolysis assays or transformed/transfected cells (lysed in RIPA buffer) were subjected to anti-Flag immunoaffinity purification with the M2 resin (Sigma, St Louis, MO), and analyzed by MALDI-TOF mass spectrometry using sinapinic acid as the matrix as described previously (Baker et al., 2007).\n\n### Propensity analysis\n\nChanges in turn propensity of substrate mutants was calculated by subtracting the average turn propensity value (from table 1 in Monn\u00e9 et al., 1999b) of the wildtype residue from the mutant residue. This value was plotted against the change in cleavage site of the mutant substrate whereby a value of 1 represents a complete shift in cleavage site while values <1 signify the proportion of cleavage occurring at the new site(s). Positive values denote a C-terminal shift (deeper into the TM) while negative values indicate an N-terminal shift (outward shift).\n\n### EPR spectroscopy\n\nCysteines were introduced at positions 236 (TM5) or 247 (L5 loop) of GlpG in which the endogenous C104 was mutated to alanine. Proteins were expressed and purified as described previously (Wu et al., 2006), and labeled with 250 \u03bcM MTSL (Toronto Research Chemicals, Canada). Free probe was removed by gel filtration chromatography, followed by NiNTA affinity chromatography and washing for 2\u20133 days at room temperature. X-band EPR spectra of samples in 0.9-mm quartz capillaries were recorded at 37\u00b0C (310 K) on a Bruker EMXmicro spectrometer equipped with a PremiumX ultra low noise microwave bridge, a high-sensitivity ER4119HS resonator, and an ER4141VT temperature control unit (Bruker Biospin, Billerica, MA). Spectra were background corrected and subtracted, and normalized by the absolute number of spins in each sample as quantified by double integration using Xenon software (Eaton et al., 2010).\n\n### CD spectroscopy\n\nThirty-two residue long peptides containing the entire TM sequence (with flanking lysines to increase solubility) were dissolved at 10\u2013105 \u03bcM in 95% trifluoroethanol (Sigma, St Louis, MO) 1 mM DTT, or 10 mM Hepes pH 7 10 mM NaCl 1 mM DTT containing either 0.25% DDM or 1% SDS. Peptides were electrophoresed on 16% tricine gels to verify concentration and lack of aggregation, while peptides reconstituted into proteoliposomes were further examined by ultracentrifugation. Ellipticity and UV absorbance at 205 nm (to quantify peptide concentration accurately during scanning) were measured simultaneously at 25\u00b0C through a 0.2 mm path length cuvette in a Jasco J-810 spectropolarimeter (Jasco Inc., Easton, MD). Analyses were conducted by averaging 10 scans at 50 nm/min, background was determined and subtracted, and mean residue ellipticity was calculated.\n\n### Rhomboid activity analysis in animal cells\n\nDrosophila S2R+ and human HEK293 cells were transiently transfected with plasmids for the expression of GFP-tagged and/or Flag-tagged substrates and 3\u00d7 HA-tagged rhomboid proteases (Baker et al., 2006). For non-substrates, we used GFP fused to the C-terminal most 99 residues from APP, GFP fused to full-length TGF\u03b1, and full-length Drosophila Delta (all constructs had a single Flag tag at their C-terminal ends). 24 hr after transfection, serum-free media was conditioned for an addition 18\u201324 hr. Media and cell samples were analyzed by quantitative westerns.\n\n### Rhomboid activity analysis in bacterial cells\n\nE. coli cells were transformed with two plasmids for the inducible expression of bacterial rhomboid proteases and Flag-tagged substrates, grown under double antibiotic selection, and induced with IPTG as described (Urban and Baker, 2008).\n",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "c1e8761a-aca9-4699-a1a6-9237279bd8ea",
+      "submission_id": "2476c559-730a-4405-91c4-43d7b5caded4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christopher T Walsh, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00173.017](https://doi.org/10.7554/eLife.00173.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cMembrane immersion allows rhomboid proteases to achieve specificity by reading transmembrane segment dynamics\u201d for consideration at eLife. Your article has been evaluated by a Senior Editor and 2 reviewers, one of whom is a member of eLife's Board of Reviewing Editors (Christopher T Walsh).\n\nThe Reviewing Editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing Editor has assembled the following comments based on the reviewers' reports.\n\nThere are no substantive issues other than the request for further discussion of the turn propensity algorithm noted below. The manuscript by Moin and Urban evaluates the basis of specificity of the transmembrane proteases of the rhomboid family, and comes to the conclusion that protein/peptide substrates, with helical regions that can undergo cleavage, have intrinsically destabilized helical regions that can sample unfolded conformations and partition from the membrane phase into the active site of the rhomboid protease.\n\nKey findings include: cleavage site specificity is shifted in detergent micelles vs proteoliposomes (the membrane directs the position of cleavage and restricts substrate specificity); and the membrane confers site-specificity by restricting gate dynamics; transmembrane dynamics, not sequence binding, position substrate in active site (in fact increasing TM dynamics converts non-substrate into substrate for rhomboid protease). The bottom line is that the membrane provides rhomboid proteases with the ability to identify substrates based primarily on their intrinsic TM dynamics.\n\nThe argument for selectivity then is less about how a peptide substrate fits into the protease active site but rather dynamic sampling of an unfolded conformation that can partition into the enzyme. Clear cut results on change of cleavage sites, on different amounts of helices by CD, on distinct states between micelles and proteoliposomes and form helix-breaking proline mutations support the conclusion for this class of TM proteases.\n\nThe authors argue that a \u201cturn propensity scale\u201d is predictive. It would be helpful to have expanded discussion of that algorithm.\n\nOverall the manuscript is well written; the findings are intriguing and have broad scientific interest.\n",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "19b92559-2f78-4111-819c-e87305b126fe",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C1",
+      "claim": "Rhomboid proteases reside within cellular membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Rhomboid proteases reside within cellular membranes, but the advantage of this unusual environment is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about rhomboid proteases stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "da74f813-0fc9-41b1-bec5-459ffcbda81a",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C2",
+      "claim": "The membrane restrains rhomboid gate and substrate conformation to limit proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "EPR and CD spectroscopy revealed that the membrane restrains rhomboid gate and substrate conformation to limit proteolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by EPR and CD spectroscopy experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "10b9bb58-d0e7-4375-8c51-ee34527699ad",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C3",
+      "claim": "True substrates evolved intrinsically-unstable transmembrane helices that both become unstructured when not supported by the membrane, and facilitate partitioning into the hydrophilic, active-site environment.",
+      "claim_type": "EXPLICIT",
+      "source": "True substrates evolved intrinsically-unstable transmembrane helices that both become unstructured when not supported by the membrane, and facilitate partitioning into the hydrophilic, active-site environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by CD spectroscopy data showing substrate TM helices are unstable without membrane support.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "ad913eb5-2e31-4d21-8838-7f889ff57232",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C4",
+      "claim": "Manipulating substrate and gate dynamics in living cells shifted cleavage sites in a manner incompatible with extended sequence binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, manipulating substrate and gate dynamics in living cells shifted cleavage sites in a manner incompatible with extended sequence binding, but correlated with a membrane-and-helix-exit propensity scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data from cleavage site mapping experiments in living cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "08169694-5bc0-4339-8f34-c21b4c0bb3f8",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C5",
+      "claim": "Cleavage site shifts correlated with a membrane-and-helix-exit propensity scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, manipulating substrate and gate dynamics in living cells shifted cleavage sites in a manner incompatible with extended sequence binding, but correlated with a membrane-and-helix-exit propensity scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis with the turn propensity scale (correlation coefficient of 0.86).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "33a71110-3193-4a51-b782-b860e4ddc464",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C6",
+      "claim": "Cleavage of diverse non-substrates was provoked by single-residue changes that destabilize transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cleavage of diverse non-substrates was provoked by single-residue changes that destabilize transmembrane helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments showing that introducing single prolines into APP, Delta, and TGF\u03b1 converted them into substrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "65688bfe-3795-41fc-a975-9faa28d49df3",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C7",
+      "claim": "Membrane immersion bestows rhomboid proteases with the ability to identify substrates primarily based on reading their intrinsic transmembrane dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane immersion thus bestows rhomboid proteases with the ability to identify substrates primarily based on reading their intrinsic transmembrane dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the combined spectroscopic, biochemical, and cellular data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "60e3c404-af16-4d5e-b30e-6da5f4484afd",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C8",
+      "claim": "Proteases achieve their exquisite specificity by recognizing a short binding motif surrounding the scissile bond to align the substrate along the elongated active site cleft of the protease.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzymes achieve their exquisite specificity by recognizing a short binding motif surrounding the scissile bond to align the substrate along the elongated active site cleft of the protease (Schechter, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature on protease specificity mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "c75afe71-5a36-4f37-ad27-54dd98818f41",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C9",
+      "claim": "Intramembrane proteases assemble a protease active site within the membrane using catalytic residues contributed by different transmembrane segments.",
+      "claim_type": "EXPLICIT",
+      "source": "These polytopic membrane proteins assemble a protease active site within the membrane using catalytic residues contributed by different transmembrane (TM) segments (Erez et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to literature on intramembrane protease structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "35c58d7f-3429-4471-b206-78ccea2b3c2b",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C10",
+      "claim": "\u03b3-secretase releases signaling domains from the membrane, including the intracellular domains of the Notch receptor and the amyloid-\u03b2 precursor protein (APP) implicated in Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Intensively studied is \u03b3-secretase, an aspartyl intramembrane protease that releases signaling domains from the membrane, including the intracellular domains of the Notch receptor and the amyloid-\u03b2 precursor protein (APP) implicated in Alzheimer's disease (De Strooper et al., 1998, 1999; Wolfe et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on \u03b3-secretase function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "7586c207-26dc-4587-9afd-4afb13ec03d9",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C11",
+      "claim": "Signal peptide peptidases function in immunity by liberating signaling domains of TNF\u03b1 and FasL.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologous signal peptide peptidases function in immunity by liberating signaling domains of TNF\u03b1 and FasL (Fluhrer et al., 2006; Friedmann et al., 2006; Kirkin et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature on signal peptide peptidase function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "4345c211-25cc-464d-8834-af33ce4fc9fc",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C12",
+      "claim": "Site-2 proteases are metalloenzymes that release transcription factors from the membrane to regulate membrane biogenesis and stress responses in diverse organisms from bacterial pathogens to man.",
+      "claim_type": "EXPLICIT",
+      "source": "Site-2 proteases are metalloenzymes that release transcription factors from the membrane to regulate membrane biogenesis and stress responses in diverse organisms from bacterial pathogens to man (Rawson et al., 1997; Makinoshima and Glickman, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature on Site-2 protease function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "e6fcf765-b9e1-4b1a-bd80-e58321012523",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C13",
+      "claim": "Rhomboid proteases act as prime regulators of signaling in insects by activating EGF signals through proteolytic shedding.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, rhomboid proteases act as prime regulators of signaling in insects by activating EGF signals through proteolytic shedding (Urban et al., 2001, 2002), and play prominent functions in diverse pathogen signaling and adhesion (Urban, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature on rhomboid protease function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "3f011022-16ac-4ee1-8747-d86eba4dd23e",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C14",
+      "claim": "Rhomboid proteases play prominent functions in diverse pathogen signaling and adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, rhomboid proteases act as prime regulators of signaling in insects by activating EGF signals through proteolytic shedding (Urban et al., 2001, 2002), and play prominent functions in diverse pathogen signaling and adhesion (Urban, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to literature on rhomboid protease function in pathogens.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "cbbc8040-efcc-42ec-8c74-1c49fe3eb354",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C15",
+      "claim": "The presence of intramembrane proteases in all forms of life indicates that they possess a particularly useful property as regulatory enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of intramembrane proteases in all forms of life indicates that they possess a particularly useful property as regulatory enzymes (Kinch et al., 2006; Lemberg and Freeman, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to literature on intramembrane protease evolution.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "6f33d2d3-56b9-457c-9be9-a69861983685",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C16",
+      "claim": "Cleavage of the Drosophila EGF ligand Spitz always proceeded between the first two residues (AS) of its TM segment even with eight diverse rhomboid proteases and in bacterial, insect and human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, cleavage of the Drosophila EGF ligand Spitz always proceeded between the first two residues (AS) of its TM segment even with eight diverse rhomboid proteases and in bacterial, insect and human cells (and different organelles) that harbor lipid composition differences (Fast, 1966) (Figure 1A, also see Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 1A and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "83be87c1-e358-40e2-9316-a76d741c1271",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C17",
+      "claim": "The cleavage site in Spitz generated in vitro shifted to the second AS when assayed in dodecyl-\u03b2-D-maltoside (DDM) detergent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we examined proteolysis in detergent micelles, we found that the cleavage site in Spitz also shifted +3 residues deeper into the TM segment (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "bc2d3b18-abef-4618-87b6-6df62b75944a",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C18",
+      "claim": "Each substrate is cut only once in vitro without successive trimming, but the cut site is free to shift in position.",
+      "claim_type": "EXPLICIT",
+      "source": "Without exception analyzing both N- and C-terminal cleavage products revealed that each substrate is cut only once in vitro without successive trimming, but the cut site is free to shift in position (Figure 1B, also see Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry analysis of both N- and C-terminal cleavage products.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "35c8ac22-6b9f-4164-aa66-0804402b5207",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C19",
+      "claim": "Reconstituting pure rhomboid and substrate in vitro from detergent into defined proteoliposomes restored cleavage to the natural site in Spitz, and even in APP + Spi7.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the membrane itself is the basis for the discrepancy in site-specificity in cells vs in detergent micelles; reconstituting pure rhomboid and substrate in vitro from detergent into defined proteoliposomes restored cleavage to the natural site in Spitz, and even in APP + Spi7 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data from reconstituted proteoliposomes shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "eae8e7f4-d530-4f7f-8bcc-4523b2280b9c",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C20",
+      "claim": "Reconstitution into proteoliposomes comprised of a wide variety of lipids all restored site-specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstitution into proteoliposomes comprised of a wide variety of lipids all restored site-specificity (Figure 1\u2014figure supplement 2), revealing that the composition of the membrane affects the efficiency of proteolysis, but not its site-specificity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data from proteoliposomes with different lipid compositions shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "d60e30fa-99e1-495e-991b-45b4c42a4680",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C21",
+      "claim": "The composition of the membrane affects the efficiency of proteolysis, but not its site-specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstitution into proteoliposomes comprised of a wide variety of lipids all restored site-specificity (Figure 1\u2014figure supplement 2), revealing that the composition of the membrane affects the efficiency of proteolysis, but not its site-specificity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that different lipid compositions all restored the same cleavage site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "e1941633-a6bc-4186-916d-8c1bb6c51713",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C22",
+      "claim": "Distal GA residues are a hallmark requirement for Spitz cleavage in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Distal GA residues are a hallmark requirement for Spitz cleavage in cells (Urban and Freeman, 2003), and these residues were also important for cleavage in vitro when both rhomboid and substrate were reconstituted into proteoliposomes (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to prior work and data shown in Figure 1D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "7ef1a6e5-b039-41c6-8f2c-e2779c3725c7",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C23",
+      "claim": "Cleavage of a GA mutant substrate was rescued to nearly wildtype levels in detergent micelles.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cleavage of a GA mutant substrate was rescued to nearly wildtype levels in detergent micelles, suggesting that the membrane plays a direct role in restricting substrate specificity in addition to specifying the cleavage site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1D comparing cleavage in detergent vs proteoliposomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "b06542b8-d97b-45cc-a9d1-8f71f9dbbafa",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C24",
+      "claim": "The membrane plays a direct role in restricting substrate specificity in addition to specifying the cleavage site.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cleavage of a GA mutant substrate was rescued to nearly wildtype levels in detergent micelles, suggesting that the membrane plays a direct role in restricting substrate specificity in addition to specifying the cleavage site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that GA mutants are cleaved efficiently in detergent but not in proteoliposomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "bfc17216-bc34-436a-aea9-a0cfa12070f7",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C25",
+      "claim": "TM5 of GlpG is part of the lateral gate for substrate access to the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "We functionally identified TM5 of GlpG as part of the lateral gate for substrate access to the active site (Baker et al., 2007; Urban and Baker, 2008), although other models have also been proposed (Ha, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "ea62599e-3085-40f4-b13e-31ee9c9a3954",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C26",
+      "claim": "The TM5 position shifted almost completely to the strongly restrained form when GlpG was reconstituted into proteoliposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while the Cap site retained a high proportion in the mobile form when GlpG was reconstituted into proteoliposomes (Figure 2B), the TM5 position shifted almost completely to the strongly restrained form (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EPR spectroscopy data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "d5bfba7b-f5fa-45c7-b8ec-3fe29f56a784",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C27",
+      "claim": "The membrane confers site-specificity by restricting gate dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with conversion to a predominantly gate-closed form, indicating that the membrane confers site-specificity (Figure 1C) by restricting gate dynamics (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from EPR data showing restricted gate dynamics in proteoliposomes and the observation that proteoliposomes restore site-specificity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "09f13d6b-213b-4596-8bf5-b6a85bc810c3",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C28",
+      "claim": "Both wildtype and mutant TM peptides reconstituted into proteoliposomes formed helices of indistinguishable stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although distal helix-destabilizing residues were required for proteolysis in proteoliposomes, both wildtype and mutant TM peptides reconstituted into proteoliposomes formed helices of indistinguishable stability as revealed by overlapping ellipticity troughs at 208 and 222 nm (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CD spectroscopy data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "d545c855-7d25-40f8-9572-0d5b7c9b8b44",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C29",
+      "claim": "Oriented CD analysis revealed comparable spectra for both wildtype and mutant TM peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, oriented CD analysis revealed comparable spectra for both wildtype and mutant TM peptides (Figure 3\u2014figure supplement 1), suggesting that the tilt of the substrate and uncleavable TM segments in the membrane is similar.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by oriented CD spectroscopy data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "8af2dcf6-2141-4231-b623-52df05abef71",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C30",
+      "claim": "Rhomboid substrates rely on the membrane to form stable helices.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the key difference was that rhomboid substrates actually rely on the membrane to form these stable helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by CD spectroscopy data comparing helicity in proteoliposomes vs detergent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "833d0e79-fdb4-408d-a3fc-0159dd4c1ce9",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C31",
+      "claim": "TatA was 31% less helical in DDM micelles compared to being reconstituted into proteoliposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "TatA was 31% less helical, and APP + Spi7 over threefold less helical, in DDM micelles compared to being reconstituted into proteoliposomes (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CD spectroscopy data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "642affad-bcfa-4dc7-b4f4-68ad1699b5fa",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C32",
+      "claim": "APP + Spi7 was over threefold less helical in DDM micelles compared to being reconstituted into proteoliposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "TatA was 31% less helical, and APP + Spi7 over threefold less helical, in DDM micelles compared to being reconstituted into proteoliposomes (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CD spectroscopy data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "c0f2526c-5078-4c05-b494-137cd6bfe318",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C33",
+      "claim": "The APP + Spi7 peptide was 36% less helical than the non-substrate APP in detergent micelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that this instability is a defining feature of rhomboid substrates relative to non-substrates; analysis in detergent micelles revealed that the APP + Spi7 peptide was a remarkable 36% less helical than the non-substrate APP, while TatA was 46% less helical than its uncleavable GSP-VVL mutant (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CD spectroscopy data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "78efbdca-ab2c-4246-b711-4de8dadf6658",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C34",
+      "claim": "TatA was 46% less helical than its uncleavable GSP-VVL mutant in detergent micelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that this instability is a defining feature of rhomboid substrates relative to non-substrates; analysis in detergent micelles revealed that the APP + Spi7 peptide was a remarkable 36% less helical than the non-substrate APP, while TatA was 46% less helical than its uncleavable GSP-VVL mutant (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CD spectroscopy data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "111e0f8a-05ce-4637-9044-cb94984cc222",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C35",
+      "claim": "Incorporating two glycines dramatically decreased helical stability by >60% relative to wildtype Spitz.",
+      "claim_type": "EXPLICIT",
+      "source": "Circular dichroism spectroscopy revealed that the two glycines dramatically decreased helical stability by >60% relative to wildtype Spitz (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CD spectroscopy data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "0a1a7cc0-83d6-4297-aebc-da8bdf09c9f4",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C36",
+      "claim": "Spitz + GG was cleaved more efficiently than wildtype Spitz in Drosophila cells, but the cleavage site shifted +3 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we tested Spitz + GG cleavage and found it to be cleaved more efficiently than wildtype Spitz in Drosophila cells, but the cleavage site shifted +3 residues (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot and mass spectrometry data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "237d21e4-20a5-4d68-957c-4d64ebcf7b38",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C37",
+      "claim": "The cleavage site of Spitz + GG also shifted in living E. coli cells by GlpG.",
+      "claim_type": "EXPLICIT",
+      "source": "The cleavage site also shifted in living E. coli cells by GlpG (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "e107d527-1b75-4900-81a3-26a1df7a06cd",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C38",
+      "claim": "Changing a distal cysteine (at P8\u2032) to a helix-destabilizing serine resulted in very efficient cleavage, but induced a +3 residue shift in cleavage site.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was not limited to glycine, since changing a distal cysteine (at P8\u2032) to a helix-destabilizing serine also resulted in very efficient cleavage, but again induced a +3 residue shift in cleavage site (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "bdb18943-5606-42eb-bb70-40bb10a07f2d",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C39",
+      "claim": "Mutating the P2\u2032 isoleucine to glycine caused a +1 shift in cleavage site.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, addition of helix-destabilizing residues at other positions could also induce shifts: mutating the P2\u2032 isoleucine to glycine caused a +1 shift (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "8535219d-7637-4329-b560-d73430c3ed04",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C40",
+      "claim": "All gate-open GlpG mutants analyzed in living E. coli shifted the Spitz cleavage site +3 residues deeper into the TM segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, all gate-open GlpG mutants (Baker et al., 2007; Urban and Baker, 2008) analyzed in living E. coli shifted the Spitz cleavage site +3 residues deeper into the TM segment (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5A and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "8d22c81d-fb19-49ef-9b9f-6b5b8a98f6b8",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C41",
+      "claim": "Wildtype GlpG in detergent produced the same +3 and +5 cleavage sites as gate-open mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, wildtype GlpG in detergent produced the same +3 and +5 cleavage sites as gate-open mutants (Figure 5C, also see Figure 5\u2014figure supplement 1B), suggesting that, in the absence of the membrane, even the wildtype gate opens fully (which is also independently supported by EPR analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5C and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "320ef705-1f59-488b-83cc-0f2570d6d0fa",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C42",
+      "claim": "The cleavage site of Spitz by gate-open GlpG in vivo shifted completely \u22123 residues when helix-destabilizing S142 alone was replaced by alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the cleavage site of Spitz by gate-open GlpG in vivo shifted completely \u22123 residues when helix-destabilizing S142 alone was replaced by alanine (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "89c406e7-1658-4f51-8b32-cae3e36002ae",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C43",
+      "claim": "A partial \u22123 shift occurred when G143 was replaced with leucine, and almost fully to the outer AS when both GA residues were replaced with leucine.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a partial \u22123 shift also occurred when we replaced G143 with leucine, and almost fully to the outer AS when both GA residues were replaced with leucine (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "2ac9569b-de2d-4619-84d8-ed1abdebc299",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C44",
+      "claim": "The strongest correlation was found with a 'TM turn propensity' scale with a correlation coefficient of 0.86.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the strongest correlation with a 'TM turn propensity' scale (Monn\u00e9 et al., 1999a, 1999b). This scale had been derived by placing guest residues into the center of a long TM segment and measuring whether the residue prefers to stay in the middle of the membrane in the TM helix, or moves outside the membrane in a turn that breaks the long TM helix into two shorter TM helices (Figure 5E). The quantified propensity scale displayed a correlation coefficient of 0.86 with the direction and degree of cleavage site shifts that we observed with 12 mutant substrates cleaved by rhomboid proteases in cellular membranes (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "5d20a83c-190a-44f7-a629-54f01b1275bf",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C45",
+      "claim": "Even at millimolar concentration (\u223c1000\u00d7 the substrate concentration), the peptide did not block rhomboid proteolysis of TatA or APP + Spi7 substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Even at millimolar concentration (\u223c1000\u00d7 the substrate concentration), the peptide did not block rhomboid proteolysis of TatA or APP + Spi7 substrates (Figure 5F and Figure 5\u2014figure supplement 2), independently suggesting that sequence-specific binding is not the main feature of rhomboid specificity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro proteolysis assays shown in Figure 5F and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "40da5b64-1588-46be-ab1d-e9cf730ff91e",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C46",
+      "claim": "APP, Delta and TGF\u03b1 have been characterized genetically, cell biologically, and in vitro with pure proteins as non-substrates for rhomboid enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "APP, Delta and TGF\u03b1 have been characterized genetically, cell biologically, and in vitro with pure proteins as non-substrates for rhomboid enzymes (Peschon et al., 1998; Urban and Freeman, 2003; Lemberg et al., 2005; Urban and Wolfe, 2005; Adrain et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "7f81f004-e79f-4b78-bfb9-8e2272373730",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C47",
+      "claim": "Incorporating a single proline into the TM of APP was sufficient to decrease TM helix stability by over twofold.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, CD analysis revealed that incorporating a single proline into the TM of APP was sufficient to decrease TM helix stability by over twofold (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CD spectroscopy data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "250a2692-8981-48e7-a9cf-c682cf6d4b0c",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C48",
+      "claim": "Installing single prolines alone was sufficient to convert APP, Delta and TGF\u03b1 into efficient rhomboid substrates in vivo and in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, installing single prolines alone was sufficient to convert APP, Delta and TGF\u03b1 into efficient rhomboid substrates in vivo and in vitro (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot and in vitro proteolysis data shown in Figure 6B and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "f43f9f54-8b13-4995-861b-d54639e749a5",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C49",
+      "claim": "Intramembrane cleavage became so efficient that in all cases it outcompeted the natural juxtamembrane cleavage by metalloproteases.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, intramembrane cleavage become so efficient that in all cases it outcompeted the natural juxtamembrane cleavage by metalloproteases, and in the case of Delta, little unprocessed full-length protein could be detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the Western blot data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "4952b1d1-4b19-45de-a6f5-a079a818ec6a",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C50",
+      "claim": "Cleavage was dependent on rhomboid activity, because it required the catalytic serine of both Drosophila and human rhomboid proteases, and \u03b3-secretase inhibition did not affect cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleavage was dependent on rhomboid activity, because it required the catalytic serine of both Drosophila and human rhomboid proteases, and \u03b3-secretase inhibition did not affect cleavage (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6\u2014figure supplement 1 with catalytic serine mutants and DAPT treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "f05abe8c-3415-4618-95f2-5b51f1aa13ce",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C51",
+      "claim": "Incorporating proline in any TM position between 2 and 10 resulted in Delta and TGF\u03b1 cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Although incorporating proline in any TM position between 2 and 10 resulted in Delta and TGF\u03b1 cleavage, APP displayed a more limited profile of acceptable proline site position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "f0dc0534-1597-44de-b17d-4b490a9534e0",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C52",
+      "claim": "The relative cleavage site preference was dependent on the position of the proline, and moved deeper as the proline position descended into the TM segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the relative cleavage site preference was dependent on the position of the proline, and moved deeper as the proline position descended into the TM segment (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "1fd634dd-e552-4aa8-ae8d-0ccf1542e427",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C53",
+      "claim": "Rhomboid proteolysis is notably site-specific, in contrast to other intramembrane proteases.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry revealed that rhomboid proteolysis is notably site-specific, in contrast to other intramembrane proteases (Fraering et al., 2004; Fluhrer et al., 2006; Friedmann et al., 2006; Sato et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data and citations to literature on other intramembrane proteases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "1d49b4ed-6de2-412c-9209-787242dfb7c0",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C54",
+      "claim": "Small P1/P1\u2032 residues were strongly preferred for cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, small residues flanking the cleavage site (P1/P1\u2032) were strongly preferred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the cleavage site mapping data showing preference for cleavage between small residues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "b68bd63f-dd2f-45d6-98d1-a3531ec1c75a",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C55",
+      "claim": "The membrane itself is the basis for the discrepancy in site-specificity in cells vs in detergent micelles.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the membrane itself is the basis for the discrepancy in site-specificity in cells vs in detergent micelles; reconstituting pure rhomboid and substrate in vitro from detergent into defined proteoliposomes restored cleavage to the natural site in Spitz, and even in APP + Spi7 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that reconstitution into proteoliposomes restores site-specificity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "83357b0b-65db-4897-8f96-1a1dcd20bafd",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C56",
+      "claim": "The uncompromising site-specificity of rhomboid proteases is not an inherent property of the enzyme itself, but rather results from the membrane somehow directing the position of cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the uncompromising site-specificity of rhomboid proteases is not an inherent property of the enzyme itself, but rather results from the membrane somehow directing the position of cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that site-specificity is lost in detergent but restored in proteoliposomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "54eb4d33-e901-4aef-8633-1113b37de705",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C57",
+      "claim": "The membrane plays a direct role in restricting substrate specificity in addition to specifying the cleavage site.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cleavage of a GA mutant substrate was rescued to nearly wildtype levels in detergent micelles, suggesting that the membrane plays a direct role in restricting substrate specificity in addition to specifying the cleavage site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that GA mutants are cleaved efficiently in detergent but not in proteoliposomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "43fc1fef-4397-453c-a6c5-6601f6c8aa98",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C58",
+      "claim": "The membrane confers site-specificity by restricting gate dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with conversion to a predominantly gate-closed form, indicating that the membrane confers site-specificity (Figure 1C) by restricting gate dynamics (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from EPR data showing restricted gate dynamics in proteoliposomes and the observation that proteoliposomes restore site-specificity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "ade81d27-cbf4-4cf7-95cc-90d73cef9ecb",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C59",
+      "claim": "Rhomboid substrates are unable to maintain a stable helix without the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Spectroscopic interrogation revealed for the first time that rhomboid substrates are unable to maintain a stable helix without the membrane, raising the possibility that differences in intrinsic TM dynamics first and foremost is the property that defines substrates, rather than serving a secondary role in exposing the substrate backbone for hydrolysis as currently thought (Ha, 2009; Strisovsky et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by CD spectroscopy data showing substrate TM helices are unstable in detergent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "c83184d4-1483-492d-b120-8e3015d4c02f",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C60",
+      "claim": "Differences in intrinsic TM dynamics first and foremost is the property that defines substrates, rather than serving a secondary role in exposing the substrate backbone for hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Spectroscopic interrogation revealed for the first time that rhomboid substrates are unable to maintain a stable helix without the membrane, raising the possibility that differences in intrinsic TM dynamics first and foremost is the property that defines substrates, rather than serving a secondary role in exposing the substrate backbone for hydrolysis as currently thought (Ha, 2009; Strisovsky et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis inferred from the CD spectroscopy data and cleavage site mapping experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "16e16276-b9ff-4f3a-898a-49936c7995ef",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C61",
+      "claim": "Substrate position in the active site is dictated primarily by protein dynamics caused by residues of the TM segment that, when not supported by the membrane, disrupt helical stability and promote entry into the hydrophilic active site.",
+      "claim_type": "EXPLICIT",
+      "source": "The distinguishing prediction of our model is that substrate position in the active site is dictated primarily by protein dynamics caused by residues of the TM segment that, when not supported by the membrane, disrupt helical stability and promote entry into the hydrophilic active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction based on the spectroscopic and cleavage site mapping data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "1e0c4976-8bb7-462e-8025-7071cf285c14",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C62",
+      "claim": "If rhomboid achieves specificity by regimented binding of a recognition motif like soluble proteases, then the site of cleavage must necessarily be fixed, while altering TM dynamics should only change the efficiency of cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, if rhomboid achieves specificity by regimented binding of a recognition motif like soluble proteases, then the site of cleavage must necessarily be fixed, while altering TM dynamics should only change the efficiency of cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical prediction based on how soluble proteases function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "b370cdd8-5053-49f8-98db-218058974baa",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C63",
+      "claim": "The natural sequence containing any possible binding motif is completely unperturbed, yet is abandoned for an 'impermissible' sequence with alanine and glycine at P4 and P2\u2032, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "These shifts are particularly instructive because the natural sequence containing any possible binding motif is completely unperturbed, yet is abandoned for an 'impermissible' sequence (Strisovsky et al., 2009) with alanine and glycine at P4 and P2\u2032, respectively (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the cleavage site mapping data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "ff6e9d0d-8a1b-47f9-8f1d-bc0443d641dd",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C64",
+      "claim": "Stereotypical binding of a complementary recognition sequence between rhomboid and substrates is unlikely to be the main driving force for protease specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "The new cleavage sites further revealed dramatic re-alignments of the substrate in the rhomboid active site (Figure 4C), even when the natural putative recognition was unperturbed, such that stereotypical binding of a complementary recognition sequence between rhomboid and substrates is unlikely to be the main driving force for protease specificity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that cleavage sites shift even when the putative recognition sequence is unchanged.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "b2e15760-366c-47aa-bb01-6953bfbf057f",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C65",
+      "claim": "Sequence-specific binding is not the main feature of rhomboid specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Even at millimolar concentration (\u223c1000\u00d7 the substrate concentration), the peptide did not block rhomboid proteolysis of TatA or APP + Spi7 substrates (Figure 5F and Figure 5\u2014figure supplement 2), independently suggesting that sequence-specific binding is not the main feature of rhomboid specificity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the failure of a recognition motif peptide to inhibit proteolysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "f85a8bee-cda5-4e4e-a8c4-0bb22d8d38c2",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C66",
+      "claim": "Non-substrates of various sequence should be converted into substrates simply by increasing their intrinsic TM dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Discovering rhomboid specificity is driven by exposing intrinsic TM dynamics raised an independent prediction: non-substrates of various sequence should be converted into substrates simply by increasing their intrinsic TM dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the model that TM dynamics drive substrate specificity.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "dd0d916f-bbe6-4fd2-9fd2-89d022cb3a18",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C67",
+      "claim": "Simple changes in intrinsic TM dynamics under physiological conditions drive substrate specificity for membrane-immersed proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations provide compelling evidence that simple changes in intrinsic TM dynamics under physiological conditions drive substrate specificity for membrane-immersed proteolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experiments showing that introducing prolines converts non-substrates into substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "3c18eb4c-e3c7-4b60-b561-9ea12e682f78",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C68",
+      "claim": "The main property conferred by membrane-immersion is the ability to identify substrates through a mechanism centered on exposing intrinsic TM dynamics instead of the protein-protein binding strategy used by other specific proteases.",
+      "claim_type": "EXPLICIT",
+      "source": "These new approaches ultimately converged to reveal that the main property conferred by membrane-immersion is the ability to identify substrates through a mechanism centered on exposing intrinsic TM dynamics instead of the protein-protein binding strategy used by other specific proteases (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion drawn from the combined spectroscopic, biochemical, and cellular data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "b0b15bb0-9a7f-4d52-b1c8-5a1a02e6a7c2",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C69",
+      "claim": "The membrane imposes two constraints on protein dynamics to ensure high proteolytic specificity; it induces helix formation of TM segments and limits rhomboid gate opening.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane imposes two constraints on protein dynamics to ensure high proteolytic specificity; it induces helix formation of TM segments (left red arrows) and limits rhomboid gate (light blue) opening (right red arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the model proposed based on the EPR and CD spectroscopy data, illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "2b698c2f-7077-4235-87bd-1cfa8842b408",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C70",
+      "claim": "Substrates form a stable helix only in the membrane; partial exposure to the aqueous environment within rhomboid triggers an entropy-driven conformational switch, facilitated by helix-destabilizing residues, allowing substrates to reach the catalytic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Substrates form a stable helix only in the membrane; partial exposure to the aqueous environment within rhomboid triggers an entropy-driven conformational switch, facilitated by helix-destabilizing residues, allowing substrates to reach the catalytic residues (in orange).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the proposed mechanism illustrated in Figure 7, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "7f2694e2-2248-45f5-98e1-25b9d89af229",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C71",
+      "claim": "The main factor keeping many type I TM segments from becoming rhomboid substrates is their ability to maintain a stable TM helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying CD spectroscopy provided the first opportunity to measure the structural properties of rhomboid substrate TMs relative to non-substrates, and in different environments. Coupling this information with examining proteolysis in living cells suggests that the main factor keeping many type I TM segments from becoming rhomboid substrates is their ability to maintain a stable TM helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the CD spectroscopy data showing non-substrates maintain stable helices in detergent while substrates do not.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "f1cd9be9-512a-4043-9698-5e6f5eb542fd",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C72",
+      "claim": "A defining property of rhomboid substrates is a meta-stable TM helix that actually relies on the membrane for stability, and unravels without it.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a defining property of rhomboid substrates is a meta-stable TM helix that actually relies on the membrane for stability, and unravels without it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by CD spectroscopy data showing substrate TM helices are stable in proteoliposomes but unstable in detergent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "bc1684ea-6625-427f-9146-fba94abe2fbe",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C73",
+      "claim": "Mutations that stabilize TM helices compromise proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that stabilize TM helices compromise proteolysis, while simply introducing helical instability into non-substrate TMs, as measured directly by CD, converted three of three unrelated type I membrane proteins into substrates for seven different rhomboid proteases despite diversity in the cleaved sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that stabilizing mutations reduce cleavage while destabilizing mutations promote cleavage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "b97a495c-032a-411d-afab-4cd295473e17",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C74",
+      "claim": "Simply introducing helical instability into non-substrate TMs converted three of three unrelated type I membrane proteins into substrates for seven different rhomboid proteases despite diversity in the cleaved sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that stabilize TM helices compromise proteolysis, while simply introducing helical instability into non-substrate TMs, as measured directly by CD, converted three of three unrelated type I membrane proteins into substrates for seven different rhomboid proteases despite diversity in the cleaved sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that introducing prolines into APP, Delta, and TGF\u03b1 converted them into substrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "6ab67077-417f-49ee-bc99-897dc0668afe",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C75",
+      "claim": "The intrinsic dynamics in rhomboid substrate TMs likely derives from a combination of residues that destabilize the TM helix structure directly, as well as those of limited hydrophobicity that increase the likelihood of this polypeptide region escaping the helix-inducing environment of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the intrinsic dynamics in rhomboid substrate TMs thus likely derives from a combination of residues that destabilize the TM helix structure directly, as well as those of limited hydrophobicity that increase the likelihood of this polypeptide region escaping the helix-inducing environment of the membrane (in favor of the hydrophilic active site of rhomboid, see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation with the turn propensity scale which integrates both helical propensity and membrane preference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "3e501e0a-49c5-4285-8d3b-b4e7899cd875",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C76",
+      "claim": "Alanines are known to be important for rhomboid proteolysis yet themselves are not helix-destabilizing directly, and require mutation to large hydrophobic residues to compromise proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This may explain why alanines are known to be important for rhomboid proteolysis yet themselves are not helix-destabilizing directly, and require mutation to large hydrophobic residues to compromise proteolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that alanines are important but not helix-destabilizing, consistent with the turn propensity scale.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "f8dee773-3701-425b-8631-a4eeafb86b5c",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C77",
+      "claim": "The strong correlation with the turn propensity scale could have predictive value for finding new rhomboid substrates by sequence analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong correlation with the turn propensity scale could also have predictive value for finding new rhomboid substrates by sequence analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed correlation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "4469d9ea-d1f0-4356-b5e8-a23d9974852b",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C78",
+      "claim": "Little appears to be essential for cleavage beyond small P1/P1\u2032 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, little appears to be essential for cleavage beyond small P1/P1\u2032 residues, since we found a great diversity of residues at other positions allowed efficient proteolysis to proceed by multiple rhomboid proteases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cleavage site mapping data showing diverse sequences can be cleaved efficiently.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "a24c3660-4bbf-4b5a-93b5-6fa03b0a3697",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C79",
+      "claim": "Incorporating a single proline at various positions does not mean that any TM sequence can become a rhomboid substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "By incorporating a single proline at various positions we were able to convert three unrelated proteins into rhomboid substrates. Nevertheless it is important to note that this too does not mean that any TM sequence can become a rhomboid substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement about the interpretation of the proline insertion experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "b12d5c6b-93c1-4bc6-ab9e-543066499fb1",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C80",
+      "claim": "The natural sequence diversity in many TM segments provides ample opportunities for finding acceptable cleavage sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, it highlights that the natural sequence diversity in many TM segments provides ample opportunities for finding acceptable cleavage sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that prolines at multiple positions can induce cleavage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "ca0d4238-e60a-4b03-abe5-6a2384a3f93b",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C81",
+      "claim": "True substrates would be expected to have further sequence optimization that would be specific to a particular rhomboid protease, because greater proteolytic efficiency would be favored as substrate and protease co-evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "True substrates would nevertheless be expected to have further sequence optimization that would be specific to a particular rhomboid protease, because greater proteolytic efficiency would be favored as substrate and protease co-evolve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about substrate-protease co-evolution.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "7f593289-1b83-4281-9a7a-56caf3ebea78",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C82",
+      "claim": "A peptide comprised of all P4\u2013P2\u2032 residues requires millimolar concentrations to affect proteolysis of TatA by AarA, indicating that even in this context recognition sequence binding is not the main determinant for specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this is unlikely to be representative of most rhomboid functions. Even so, a peptide comprised of all P4\u2013P2\u2032 residues requires millimolar concentrations to affect proteolysis of TatA by AarA, indicating that even in this context recognition sequence binding is not the main determinant for specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the peptide inhibition experiments shown in Figure 5F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "2c010337-1e9f-401b-b73e-59b64ef55213",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C83",
+      "claim": "Canonical rhomboid proteases patrol the membrane for meta-stable TM helices for cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Considered together, our observations suggest a new working model in which canonical rhomboid proteases patrol the membrane for meta-stable TM helices for cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the combined experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "11b886f2-687a-4161-9a43-076d0bee1892",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C84",
+      "claim": "A gate-open rhomboid may be sufficient to provide a microenvironment in which 'intrinsic' TM segment differences can be unmasked.",
+      "claim_type": "EXPLICIT",
+      "source": "A gate-open rhomboid may be sufficient to provide a microenvironment in which 'intrinsic' TM segment differences can be unmasked, and recent molecular dynamics simulations and biophysical measurements indicate that this is a stable rhomboid conformation in the membrane (Baker and Urban, 2012; Zhou et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations to molecular dynamics simulations and biophysical measurements.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "a23ec141-1de0-475c-9a13-6afb1b318e01",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C85",
+      "claim": "Substrates are poised to exit from the membrane and partition into the hydrophilic rhomboid active site because of both helix-destabilizing residues and limited hydrophobicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of both helix-destabilizing residues and limited hydrophobicity, substrates are poised to exit from the membrane and partition into the hydrophilic rhomboid active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the CD spectroscopy data and correlation with the turn propensity scale.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "789377da-840e-4b02-a089-552d09c08bdc",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C86",
+      "claim": "Proteolysis ensues because such extended TMs are susceptible to proteolysis, and/or are able to 'reach' the internal catalytic apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteolysis then ensues because such extended TMs are susceptible to proteolysis, and/or are able to 'reach' the internal catalytic apparatus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism of proteolysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "935274c8-2c3d-4fd2-a31b-e74a42f801ca",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C87",
+      "claim": "Substrate 'partitioning' is consistent with a strong correlation with a 'turn propensity scale'.",
+      "claim_type": "EXPLICIT",
+      "source": "Such substrate 'partitioning' is consistent with a strong correlation with a 'turn propensity scale', and may further explain the unexpected observation that scanning a single proline along the TM segment moves the cleavage site deeper, at times positioning it at unacceptable residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation analysis and the proline scanning data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "a03250e7-fa74-4c08-9a04-3a32f38c8ce1",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C88",
+      "claim": "The central yet overlooked component of this specificity system is the membrane itself, which limits proteolysis both by inducing TMs to form helices and restricting gate-opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the central yet overlooked component of this specificity system is the membrane itself, which limits proteolysis both by inducing TMs to form helices and restricting gate-opening (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion drawn from the EPR and CD spectroscopy data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "1b673514-2837-43ff-8c61-ff9da8bca491",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C89",
+      "claim": "Differences between substrates and non-substrates in the membrane beyond the resolution of our experimental approaches are possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences between substrates and non-substrates in the membrane beyond the resolution of our experimental approaches are possible, although direct evidence suggests that the most dramatic difference occurs when TMs leave the influence of the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement acknowledging limitations of the experimental approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "dc3c4f0a-8594-4634-be75-83550a2b4b7d",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C90",
+      "claim": "Structural analysis of the rhomboid-substrate complex is required to define the fine-detail interactions that mediate proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, structural analysis of the rhomboid-substrate complex is required to define the fine-detail interactions that mediate proteolysis, although this might prove particularly challenging if true substrates are indeed intrinsically dynamic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "f2c822b8-be37-4ea2-aabe-5a22116b868f",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C91",
+      "claim": "The precise order of events, and what triggers each step in the cleavage reaction, remain unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the precise order of events, and what triggers each step in the cleavage reaction, also remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of what remains unknown.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "09073603-9bf8-4f27-b049-ad1ae14deeba",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C92",
+      "claim": "Simply anchoring a protease domain to the membrane through a TM segment satisfies the needs for proteolytic release of factors from the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "It's well recognized that proteolytic release of factors from the membrane regulates many signaling networks. Yet dozens of examples reveal that simply anchoring a protease domain to the membrane through a TM segment satisfies these needs (Blobel et al., 2009; Antalis et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature on membrane-anchored proteases.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "da916f23-bf2b-40e2-bfc4-5388356794c5",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C93",
+      "claim": "Rhomboid proteases achieve substrate specificity first through reading TM dynamics, which endows them with different properties relative to soluble proteases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses indicate that rhomboid proteases achieve substrate specificity first through reading TM dynamics, which endows them with different properties relative to soluble proteases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the combined experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "d8174e69-ed9c-4f0d-a87c-16266a746f17",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "claim_id": "C94",
+      "claim": "Intramembrane proteases might be a distinct group of enzymes in the cell, not because they are proteases that release proteins from the membrane, but because they are membrane-immersed.",
+      "claim_type": "EXPLICIT",
+      "source": "Intramembrane proteases might therefore be a distinct group of enzymes in the cell, not because they are proteases that release proteins from the membrane, but because they are membrane-immersed; they live in a world with different rules, giving the cell a set of enzymes with unique properties that it can harness for evolving new functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding perspective based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "80060044-fc7a-4e19-b699-87783c1c9b64",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The membrane directs rhomboid protease cleavage site specificity. Spitz is cleaved at a single, invariant site (AS) in cells across diverse rhomboid proteases and cell types, but this site-specificity is lost in detergent micelles where cleavage shifts +3 residues deeper. Reconstituting rhomboid and substrate into proteoliposomes restores the natural cleavage site regardless of lipid composition, demonstrating that the membrane itself\u2014not its specific composition\u2014directs cleavage site positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 provide converging evidence from mass spectrometry in multiple cell types, detergent systems, and reconstituted proteoliposomes. The data consistently show that membrane presence, not composition, determines site-specificity. The observation that diverse lipid compositions all restore the same cleavage site (C20-C21) is particularly compelling evidence that the membrane environment itself is the critical factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "12055e12-84a4-406e-a6f1-566aee89b200",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The membrane restricts substrate specificity by enforcing requirements for helix-destabilizing residues. Distal GA residues are required for Spitz cleavage in proteoliposomes but not in detergent micelles, where GA mutants are cleaved efficiently. This demonstrates the membrane plays a direct role in restricting which substrates can be cleaved beyond simply positioning them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by comparative data in proteoliposomes versus detergent showing differential cleavage of GA mutants (Figure 1D). The rescue of GA mutant cleavage in detergent provides strong evidence that the membrane actively restricts substrate specificity rather than passively supporting it.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "b065e742-f982-4217-a4d5-7d738bef6b07",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The membrane restrains rhomboid gate dynamics to limit proteolysis. EPR spectroscopy reveals that the TM5 gate position shifts almost completely to a strongly restrained (closed) form when GlpG is reconstituted into proteoliposomes, while remaining highly mobile in detergent. This membrane-imposed restriction of gate dynamics correlates with restored site-specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 are directly supported by EPR spectroscopy data (Figure 2A) showing dramatic differences in gate dynamics between detergent and proteoliposomes. The correlation between restricted gate dynamics and site-specificity provides mechanistic insight, though the causal relationship is inferred rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "78789333-c8af-422d-bf1d-931177833755",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Rhomboid substrates have intrinsically unstable transmembrane helices that rely on the membrane for stability. CD spectroscopy reveals that substrate TM peptides (TatA, APP+Spi7) form stable helices in proteoliposomes indistinguishable from non-substrates, but are dramatically less helical (31-300% reduction) in detergent micelles. This instability is a defining feature distinguishing substrates from non-substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 are strongly supported by quantitative CD spectroscopy data (Figure 3A-B) comparing substrates and non-substrates in different environments. The consistent pattern across multiple substrate/non-substrate pairs and the large magnitude of differences provide robust evidence. Oriented CD analysis (C29) further supports that differences are not due to membrane tilt.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "bf529194-18dd-4de5-9330-fc8b2248108e",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Increasing substrate TM helix instability shifts cleavage sites in living cells in a manner incompatible with sequence-specific binding. Introducing helix-destabilizing residues (glycines, serine) at distal positions in Spitz causes cleavage site shifts (+3 residues) while leaving the putative recognition motif completely unperturbed. The natural sequence is abandoned for 'impermissible' sequences with unfavorable residues at key positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 are supported by CD spectroscopy showing reduced helicity (C35) and mass spectrometry mapping cleavage sites in living cells (C36-C39, Figure 4). The observation that cleavage shifts occur despite unchanged recognition sequences (C63) provides strong evidence against sequence-specific binding as the primary determinant. Multiple independent mutations produce consistent effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "7c5e9a51-6ad8-4420-83b8-0338d6b39823",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Gate-open rhomboid mutants shift cleavage sites deeper, while stabilizing substrate helices shifts sites outward. All gate-open GlpG mutants shift Spitz cleavage +3 residues in living E. coli cells. Conversely, replacing helix-destabilizing residues (S142A, G143L) in substrates shifts cleavage back toward the membrane surface, even with gate-open mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 are supported by mass spectrometry data from living cells (Figure 5A-B). The bidirectional nature of the shifts\u2014deeper with gate-open mutants, outward with helix-stabilizing mutations\u2014provides strong evidence for the proposed mechanism. The consistency across multiple gate-open mutants (C40) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "0063a484-d8a4-49f5-a67a-b3acfb0e8be5",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cleavage site shifts correlate strongly (r=0.86) with a transmembrane turn propensity scale. This scale integrates both helix-destabilizing properties and membrane-exit propensity of residues. The correlation with 12 mutant substrates in cellular membranes suggests substrate dynamics involve both helical instability and propensity to partition out of the membrane into the hydrophilic active site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by quantitative correlation analysis (Figure 5E) with a substantial correlation coefficient (0.86) and statistical significance (p=2.8\u00d710\u207b\u00b3). The use of 12 independent mutants provides reasonable statistical power. However, the authors acknowledge limitations in predicting absolute propensities from sequence alone due to context-dependent effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "4c368a04-00ed-44cd-a7f2-24f1d6211a0e",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sequence-specific binding is not the main determinant of rhomboid specificity. A peptide containing the complete P4-P2' recognition motif fails to inhibit proteolysis even at millimolar concentrations (~1000\u00d7 substrate concentration) in both detergent and proteoliposomes, suggesting recognition sequence binding does not drive specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is supported by competitive inhibition experiments (Figure 5F, Figure 5\u2014figure supplement 2) testing the most efficient substrate's recognition motif. The failure to inhibit at extreme concentrations provides strong negative evidence against sequence-specific binding as the primary mechanism. However, this tests only one recognition sequence, and the authors acknowledge TatA may be an exceptional case.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "0cc03b33-c42b-4836-a738-620e559a8b3d",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Introducing single helix-destabilizing prolines converts non-substrates into efficient rhomboid substrates. Single proline insertions into APP, Delta, and TGF\u03b1\u2014proteins characterized as non-substrates\u2014converted all three into efficient substrates for seven different rhomboid proteases in vivo and in vitro. CD spectroscopy confirms prolines reduce helix stability >2-fold. Cleavage position depends on proline location, moving deeper as proline descends into the TM segment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 are supported by CD spectroscopy (C47, Figure 6A), Western blots and in vitro assays (C48-C49, Figure 6B-C), and mass spectrometry mapping (C52, Figure 6D). The conversion of three independent non-substrates by seven different proteases provides strong evidence. Controls with catalytic serine mutants and \u03b3-secretase inhibitors (C50) confirm rhomboid-dependence. The systematic proline scanning (C51-C52) reveals position-dependent effects consistent with the dynamics model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "5f5ad1c4-a6c6-49f4-ad84-49fa6fb26bb7",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Membrane immersion enables rhomboid proteases to identify substrates by reading intrinsic transmembrane dynamics rather than sequence-specific binding. The membrane imposes two constraints: inducing TM helix formation and limiting gate opening. Substrates evolved intrinsically unstable TM helices that unwind when exposed to the aqueous environment within rhomboid, facilitating partitioning into the hydrophilic active site. This represents a fundamentally different specificity mechanism from soluble proteases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion (claims C2, C3, C7, C68, C93) integrates multiple lines of evidence: EPR showing membrane restrains gate dynamics, CD showing substrates have unstable helices, cleavage site mapping showing dynamics-dependent positioning, correlation with turn propensity scale, and conversion of non-substrates by destabilizing mutations. The convergence of spectroscopic, biochemical, and cellular data from multiple experimental systems provides strong support for this novel mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "6c935950-4ad4-4797-b5f2-a88a235b3c66",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on intramembrane proteases and their biological functions. Rhomboid proteases reside in membranes; intramembrane proteases assemble active sites within membranes and regulate diverse cellular processes including Notch signaling, immunity, and membrane biogenesis. Their presence across all life forms suggests unique enzymatic properties, yet membrane-anchored proteases can also release factors from membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C15, C92 represent established background knowledge supported by appropriate citations to the literature. These provide context for the study but are not novel findings. The claims accurately represent the current understanding of intramembrane protease biology and function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "16489310-6d8c-4d27-9c02-5a8d52db8e29",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Substrate discrimination is primarily based on TM dynamics rather than extended sequence recognition. The main factor preventing type I TM segments from becoming substrates is their ability to maintain stable helices. Little is essential for cleavage beyond small P1/P1' residues, as diverse sequences at other positions support efficient proteolysis. Mutations stabilizing helices compromise proteolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C71, C73, C78 are supported by the cleavage site mapping showing dramatic substrate realignments (C64), CD spectroscopy distinguishing substrates from non-substrates (C71), and the observation that diverse sequences can be cleaved efficiently (C78). These represent logical inferences well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "137c4da9-d94d-4a53-8de6-44a5b4d32955",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Interpretation and limitations of the TM dynamics model. Alanines are important for proteolysis but not directly helix-destabilizing, consistent with the turn propensity scale. The correlation could have predictive value for finding substrates, though context-dependent effects may limit accuracy. Not any TM sequence can become a substrate, but natural sequence diversity provides opportunities for cleavage. True substrates likely have additional sequence optimization specific to particular rhomboid proteases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C81 represent reasonable interpretations and caveats about the model. C76 is a logical inference from the turn propensity correlation. C77 is appropriately cautious speculation. C79-C81 are important qualifications about the scope and limitations of the findings, appropriately acknowledging that the proline insertion experiments don't mean any sequence can be cleaved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "de40c423-d793-4681-a8ab-fe02bb655bbc",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Mechanistic details and future directions. Gate-open rhomboid may provide a microenvironment unmasking TM dynamics. Substrates partition into the hydrophilic active site due to helix-destabilizing residues and limited hydrophobicity. Differences beyond current experimental resolution are possible. Structural analysis of rhomboid-substrate complexes and precise order of events remain to be determined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C91 represent speculative mechanistic proposals (C84-C86) and acknowledgments of limitations (C89-C91). C84 cites molecular dynamics simulations but the functional consequences remain unclear. C85-C86 are reasonable inferences but lack direct experimental support. C89-C91 appropriately acknowledge what remains unknown and what future work is needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    },
+    {
+      "id": "ef990959-2918-4288-b54b-a8be9d52c0a6",
+      "content_id": "2972c5c3-0ad8-447e-9def-afc27931c548",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Intramembrane proteases may be distinct not because they release proteins from membranes, but because membrane immersion gives them unique enzymatic properties the cell can harness for evolving new functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 represents a concluding perspective that is well-supported by the findings of the study. The demonstration that membrane immersion enables a fundamentally different specificity mechanism (reading TM dynamics rather than sequence binding) provides evidence that these enzymes have unique properties. However, this remains a hypothesis about evolutionary significance rather than a directly tested conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:31:47.698885Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6f33d2d3-56b9-457c-9be9-a69861983685",
+      "result_id": "80060044-fc7a-4e19-b699-87783c1c9b64"
+    },
+    {
+      "claim_id": "83be87c1-e358-40e2-9316-a76d741c1271",
+      "result_id": "80060044-fc7a-4e19-b699-87783c1c9b64"
+    },
+    {
+      "claim_id": "bc2d3b18-abef-4618-87b6-6df62b75944a",
+      "result_id": "80060044-fc7a-4e19-b699-87783c1c9b64"
+    },
+    {
+      "claim_id": "35c8ac22-6b9f-4164-aa66-0804402b5207",
+      "result_id": "80060044-fc7a-4e19-b699-87783c1c9b64"
+    },
+    {
+      "claim_id": "eae8e7f4-d530-4f7f-8bcc-4523b2280b9c",
+      "result_id": "80060044-fc7a-4e19-b699-87783c1c9b64"
+    },
+    {
+      "claim_id": "d60e30fa-99e1-495e-991b-45b4c42a4680",
+      "result_id": "80060044-fc7a-4e19-b699-87783c1c9b64"
+    },
+    {
+      "claim_id": "1fd634dd-e552-4aa8-ae8d-0ccf1542e427",
+      "result_id": "80060044-fc7a-4e19-b699-87783c1c9b64"
+    },
+    {
+      "claim_id": "1d49b4ed-6de2-412c-9209-787242dfb7c0",
+      "result_id": "80060044-fc7a-4e19-b699-87783c1c9b64"
+    },
+    {
+      "claim_id": "b68bd63f-dd2f-45d6-98d1-a3531ec1c75a",
+      "result_id": "80060044-fc7a-4e19-b699-87783c1c9b64"
+    },
+    {
+      "claim_id": "83357b0b-65db-4897-8f96-1a1dcd20bafd",
+      "result_id": "80060044-fc7a-4e19-b699-87783c1c9b64"
+    },
+    {
+      "claim_id": "e1941633-a6bc-4186-916d-8c1bb6c51713",
+      "result_id": "12055e12-84a4-406e-a6f1-566aee89b200"
+    },
+    {
+      "claim_id": "7ef1a6e5-b039-41c6-8f2c-e2779c3725c7",
+      "result_id": "12055e12-84a4-406e-a6f1-566aee89b200"
+    },
+    {
+      "claim_id": "b06542b8-d97b-45cc-a9d1-8f71f9dbbafa",
+      "result_id": "12055e12-84a4-406e-a6f1-566aee89b200"
+    },
+    {
+      "claim_id": "54eb4d33-e901-4aef-8633-1113b37de705",
+      "result_id": "12055e12-84a4-406e-a6f1-566aee89b200"
+    },
+    {
+      "claim_id": "bfc17216-bc34-436a-aea9-a0cfa12070f7",
+      "result_id": "b065e742-f982-4217-a4d5-7d738bef6b07"
+    },
+    {
+      "claim_id": "ea62599e-3085-40f4-b13e-31ee9c9a3954",
+      "result_id": "b065e742-f982-4217-a4d5-7d738bef6b07"
+    },
+    {
+      "claim_id": "d5bfba7b-f5fa-45c7-b8ec-3fe29f56a784",
+      "result_id": "b065e742-f982-4217-a4d5-7d738bef6b07"
+    },
+    {
+      "claim_id": "43fc1fef-4397-453c-a6c5-6601f6c8aa98",
+      "result_id": "b065e742-f982-4217-a4d5-7d738bef6b07"
+    },
+    {
+      "claim_id": "09f13d6b-213b-4596-8bf5-b6a85bc810c3",
+      "result_id": "78789333-c8af-422d-bf1d-931177833755"
+    },
+    {
+      "claim_id": "d545c855-7d25-40f8-9572-0d5b7c9b8b44",
+      "result_id": "78789333-c8af-422d-bf1d-931177833755"
+    },
+    {
+      "claim_id": "8af2dcf6-2141-4231-b623-52df05abef71",
+      "result_id": "78789333-c8af-422d-bf1d-931177833755"
+    },
+    {
+      "claim_id": "833d0e79-fdb4-408d-a3fc-0159dd4c1ce9",
+      "result_id": "78789333-c8af-422d-bf1d-931177833755"
+    },
+    {
+      "claim_id": "642affad-bcfa-4dc7-b4f4-68ad1699b5fa",
+      "result_id": "78789333-c8af-422d-bf1d-931177833755"
+    },
+    {
+      "claim_id": "c0f2526c-5078-4c05-b494-137cd6bfe318",
+      "result_id": "78789333-c8af-422d-bf1d-931177833755"
+    },
+    {
+      "claim_id": "78efbdca-ab2c-4246-b711-4de8dadf6658",
+      "result_id": "78789333-c8af-422d-bf1d-931177833755"
+    },
+    {
+      "claim_id": "ade81d27-cbf4-4cf7-95cc-90d73cef9ecb",
+      "result_id": "78789333-c8af-422d-bf1d-931177833755"
+    },
+    {
+      "claim_id": "f1cd9be9-512a-4043-9698-5e6f5eb542fd",
+      "result_id": "78789333-c8af-422d-bf1d-931177833755"
+    },
+    {
+      "claim_id": "111e0f8a-05ce-4637-9044-cb94984cc222",
+      "result_id": "bf529194-18dd-4de5-9330-fc8b2248108e"
+    },
+    {
+      "claim_id": "0a1a7cc0-83d6-4297-aebc-da8bdf09c9f4",
+      "result_id": "bf529194-18dd-4de5-9330-fc8b2248108e"
+    },
+    {
+      "claim_id": "237d21e4-20a5-4d68-957c-4d64ebcf7b38",
+      "result_id": "bf529194-18dd-4de5-9330-fc8b2248108e"
+    },
+    {
+      "claim_id": "e107d527-1b75-4900-81a3-26a1df7a06cd",
+      "result_id": "bf529194-18dd-4de5-9330-fc8b2248108e"
+    },
+    {
+      "claim_id": "bdb18943-5606-42eb-bb70-40bb10a07f2d",
+      "result_id": "bf529194-18dd-4de5-9330-fc8b2248108e"
+    },
+    {
+      "claim_id": "b370cdd8-5053-49f8-98db-218058974baa",
+      "result_id": "bf529194-18dd-4de5-9330-fc8b2248108e"
+    },
+    {
+      "claim_id": "8535219d-7637-4329-b560-d73430c3ed04",
+      "result_id": "7c5e9a51-6ad8-4420-83b8-0338d6b39823"
+    },
+    {
+      "claim_id": "8d22c81d-fb19-49ef-9b9f-6b5b8a98f6b8",
+      "result_id": "7c5e9a51-6ad8-4420-83b8-0338d6b39823"
+    },
+    {
+      "claim_id": "320ef705-1f59-488b-83cc-0f2570d6d0fa",
+      "result_id": "7c5e9a51-6ad8-4420-83b8-0338d6b39823"
+    },
+    {
+      "claim_id": "89c406e7-1658-4f51-8b32-cae3e36002ae",
+      "result_id": "7c5e9a51-6ad8-4420-83b8-0338d6b39823"
+    },
+    {
+      "claim_id": "2ac9569b-de2d-4619-84d8-ed1abdebc299",
+      "result_id": "0063a484-d8a4-49f5-a67a-b3acfb0e8be5"
+    },
+    {
+      "claim_id": "08169694-5bc0-4339-8f34-c21b4c0bb3f8",
+      "result_id": "0063a484-d8a4-49f5-a67a-b3acfb0e8be5"
+    },
+    {
+      "claim_id": "6ab67077-417f-49ee-bc99-897dc0668afe",
+      "result_id": "0063a484-d8a4-49f5-a67a-b3acfb0e8be5"
+    },
+    {
+      "claim_id": "935274c8-2c3d-4fd2-a31b-e74a42f801ca",
+      "result_id": "0063a484-d8a4-49f5-a67a-b3acfb0e8be5"
+    },
+    {
+      "claim_id": "5d20a83c-190a-44f7-a629-54f01b1275bf",
+      "result_id": "4c368a04-00ed-44cd-a7f2-24f1d6211a0e"
+    },
+    {
+      "claim_id": "b2e15760-366c-47aa-bb01-6953bfbf057f",
+      "result_id": "4c368a04-00ed-44cd-a7f2-24f1d6211a0e"
+    },
+    {
+      "claim_id": "7f593289-1b83-4281-9a7a-56caf3ebea78",
+      "result_id": "4c368a04-00ed-44cd-a7f2-24f1d6211a0e"
+    },
+    {
+      "claim_id": "40da5b64-1588-46be-ab1d-e9cf730ff91e",
+      "result_id": "0cc03b33-c42b-4836-a738-620e559a8b3d"
+    },
+    {
+      "claim_id": "7f81f004-e79f-4b78-bfb9-8e2272373730",
+      "result_id": "0cc03b33-c42b-4836-a738-620e559a8b3d"
+    },
+    {
+      "claim_id": "250a2692-8981-48e7-a9cf-c682cf6d4b0c",
+      "result_id": "0cc03b33-c42b-4836-a738-620e559a8b3d"
+    },
+    {
+      "claim_id": "f43f9f54-8b13-4995-861b-d54639e749a5",
+      "result_id": "0cc03b33-c42b-4836-a738-620e559a8b3d"
+    },
+    {
+      "claim_id": "4952b1d1-4b19-45de-a6f5-a079a818ec6a",
+      "result_id": "0cc03b33-c42b-4836-a738-620e559a8b3d"
+    },
+    {
+      "claim_id": "f05abe8c-3415-4618-95f2-5b51f1aa13ce",
+      "result_id": "0cc03b33-c42b-4836-a738-620e559a8b3d"
+    },
+    {
+      "claim_id": "f0dc0534-1597-44de-b17d-4b490a9534e0",
+      "result_id": "0cc03b33-c42b-4836-a738-620e559a8b3d"
+    },
+    {
+      "claim_id": "f85a8bee-cda5-4e4e-a8c4-0bb22d8d38c2",
+      "result_id": "0cc03b33-c42b-4836-a738-620e559a8b3d"
+    },
+    {
+      "claim_id": "dd0d916f-bbe6-4fd2-9fd2-89d022cb3a18",
+      "result_id": "0cc03b33-c42b-4836-a738-620e559a8b3d"
+    },
+    {
+      "claim_id": "b97a495c-032a-411d-afab-4cd295473e17",
+      "result_id": "0cc03b33-c42b-4836-a738-620e559a8b3d"
+    },
+    {
+      "claim_id": "da74f813-0fc9-41b1-bec5-459ffcbda81a",
+      "result_id": "5f5ad1c4-a6c6-49f4-ad84-49fa6fb26bb7"
+    },
+    {
+      "claim_id": "10b9bb58-d0e7-4375-8c51-ee34527699ad",
+      "result_id": "5f5ad1c4-a6c6-49f4-ad84-49fa6fb26bb7"
+    },
+    {
+      "claim_id": "65688bfe-3795-41fc-a975-9faa28d49df3",
+      "result_id": "5f5ad1c4-a6c6-49f4-ad84-49fa6fb26bb7"
+    },
+    {
+      "claim_id": "c83184d4-1483-492d-b120-8e3015d4c02f",
+      "result_id": "5f5ad1c4-a6c6-49f4-ad84-49fa6fb26bb7"
+    },
+    {
+      "claim_id": "16e16276-b9ff-4f3a-898a-49936c7995ef",
+      "result_id": "5f5ad1c4-a6c6-49f4-ad84-49fa6fb26bb7"
+    },
+    {
+      "claim_id": "3c18eb4c-e3c7-4b60-b561-9ea12e682f78",
+      "result_id": "5f5ad1c4-a6c6-49f4-ad84-49fa6fb26bb7"
+    },
+    {
+      "claim_id": "b0b15bb0-9a7f-4d52-b1c8-5a1a02e6a7c2",
+      "result_id": "5f5ad1c4-a6c6-49f4-ad84-49fa6fb26bb7"
+    },
+    {
+      "claim_id": "2b698c2f-7077-4235-87bd-1cfa8842b408",
+      "result_id": "5f5ad1c4-a6c6-49f4-ad84-49fa6fb26bb7"
+    },
+    {
+      "claim_id": "2c010337-1e9f-401b-b73e-59b64ef55213",
+      "result_id": "5f5ad1c4-a6c6-49f4-ad84-49fa6fb26bb7"
+    },
+    {
+      "claim_id": "a03250e7-fa74-4c08-9a04-3a32f38c8ce1",
+      "result_id": "5f5ad1c4-a6c6-49f4-ad84-49fa6fb26bb7"
+    },
+    {
+      "claim_id": "da916f23-bf2b-40e2-bfc4-5388356794c5",
+      "result_id": "5f5ad1c4-a6c6-49f4-ad84-49fa6fb26bb7"
+    },
+    {
+      "claim_id": "19b92559-2f78-4111-819c-e87305b126fe",
+      "result_id": "6c935950-4ad4-4797-b5f2-a88a235b3c66"
+    },
+    {
+      "claim_id": "60e3c404-af16-4d5e-b30e-6da5f4484afd",
+      "result_id": "6c935950-4ad4-4797-b5f2-a88a235b3c66"
+    },
+    {
+      "claim_id": "c75afe71-5a36-4f37-ad27-54dd98818f41",
+      "result_id": "6c935950-4ad4-4797-b5f2-a88a235b3c66"
+    },
+    {
+      "claim_id": "35c58d7f-3429-4471-b206-78ccea2b3c2b",
+      "result_id": "6c935950-4ad4-4797-b5f2-a88a235b3c66"
+    },
+    {
+      "claim_id": "7586c207-26dc-4587-9afd-4afb13ec03d9",
+      "result_id": "6c935950-4ad4-4797-b5f2-a88a235b3c66"
+    },
+    {
+      "claim_id": "4345c211-25cc-464d-8834-af33ce4fc9fc",
+      "result_id": "6c935950-4ad4-4797-b5f2-a88a235b3c66"
+    },
+    {
+      "claim_id": "e6fcf765-b9e1-4b1a-bd80-e58321012523",
+      "result_id": "6c935950-4ad4-4797-b5f2-a88a235b3c66"
+    },
+    {
+      "claim_id": "3f011022-16ac-4ee1-8747-d86eba4dd23e",
+      "result_id": "6c935950-4ad4-4797-b5f2-a88a235b3c66"
+    },
+    {
+      "claim_id": "cbbc8040-efcc-42ec-8c74-1c49fe3eb354",
+      "result_id": "6c935950-4ad4-4797-b5f2-a88a235b3c66"
+    },
+    {
+      "claim_id": "09073603-9bf8-4f27-b049-ad1ae14deeba",
+      "result_id": "6c935950-4ad4-4797-b5f2-a88a235b3c66"
+    },
+    {
+      "claim_id": "ff6e9d0d-8a1b-47f9-8f1d-bc0443d641dd",
+      "result_id": "16489310-6d8c-4d27-9c02-5a8d52db8e29"
+    },
+    {
+      "claim_id": "7f2694e2-2248-45f5-98e1-25b9d89af229",
+      "result_id": "16489310-6d8c-4d27-9c02-5a8d52db8e29"
+    },
+    {
+      "claim_id": "bc1684ea-6625-427f-9146-fba94abe2fbe",
+      "result_id": "16489310-6d8c-4d27-9c02-5a8d52db8e29"
+    },
+    {
+      "claim_id": "4469d9ea-d1f0-4356-b5e8-a23d9974852b",
+      "result_id": "16489310-6d8c-4d27-9c02-5a8d52db8e29"
+    },
+    {
+      "claim_id": "3e501e0a-49c5-4285-8d3b-b4e7899cd875",
+      "result_id": "137c4da9-d94d-4a53-8de6-44a5b4d32955"
+    },
+    {
+      "claim_id": "f8dee773-3701-425b-8631-a4eeafb86b5c",
+      "result_id": "137c4da9-d94d-4a53-8de6-44a5b4d32955"
+    },
+    {
+      "claim_id": "a24c3660-4bbf-4b5a-93b5-6fa03b0a3697",
+      "result_id": "137c4da9-d94d-4a53-8de6-44a5b4d32955"
+    },
+    {
+      "claim_id": "b12d5c6b-93c1-4bc6-ab9e-543066499fb1",
+      "result_id": "137c4da9-d94d-4a53-8de6-44a5b4d32955"
+    },
+    {
+      "claim_id": "ca0d4238-e60a-4b03-abe5-6a2384a3f93b",
+      "result_id": "137c4da9-d94d-4a53-8de6-44a5b4d32955"
+    },
+    {
+      "claim_id": "11b886f2-687a-4161-9a43-076d0bee1892",
+      "result_id": "de40c423-d793-4681-a8ab-fe02bb655bbc"
+    },
+    {
+      "claim_id": "a23ec141-1de0-475c-9a13-6afb1b318e01",
+      "result_id": "de40c423-d793-4681-a8ab-fe02bb655bbc"
+    },
+    {
+      "claim_id": "789377da-840e-4b02-a089-552d09c08bdc",
+      "result_id": "de40c423-d793-4681-a8ab-fe02bb655bbc"
+    },
+    {
+      "claim_id": "1b673514-2837-43ff-8c61-ff9da8bca491",
+      "result_id": "de40c423-d793-4681-a8ab-fe02bb655bbc"
+    },
+    {
+      "claim_id": "dc3c4f0a-8594-4634-be75-83550a2b4b7d",
+      "result_id": "de40c423-d793-4681-a8ab-fe02bb655bbc"
+    },
+    {
+      "claim_id": "f2c822b8-be37-4ea2-aabe-5a22116b868f",
+      "result_id": "de40c423-d793-4681-a8ab-fe02bb655bbc"
+    },
+    {
+      "claim_id": "d8174e69-ed9c-4f0d-a87c-16266a746f17",
+      "result_id": "ef990959-2918-4288-b54b-a8be9d52c0a6"
+    }
+  ],
+  "comparisons": []
+}

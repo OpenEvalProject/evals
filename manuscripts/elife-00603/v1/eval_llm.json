@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C50"
+    ],
+    "result": "The study measured mRNA profiles in 15 yeast species from the phylum Ascomycota spanning >300 million years of evolution, collecting approximately 300 expression profiles at six physiologically comparable time points during growth on glucose. An optimized growth medium was developed that minimized growth differences between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C30-C32, and C50 collectively describe the experimental design and are well-supported by the methods section, figures (Figure 1B, 2A), and Table 1. The physiological time points are clearly defined and the medium optimization is documented with growth data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C38",
+      "C51",
+      "C52",
+      "C53",
+      "C76",
+      "C79"
+    ],
+    "result": "Module divergence and global expression correlation scale inversely with phylogenetic distance across all time points. The degree of correlation in expression profiles is inversely related to phylogenetic distance (r<-0.39 to -0.77, p<3\u00d710\u207b\u2075), and modules conserve their gene members relative to their immediate ancestor inversely to phylogenetic distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C38, C51-C53, C76, and C79 are strongly supported by statistical analyses shown in Figures 3B-F and Figure 5C with appropriate correlation coefficients and p-values. The AMCI metric provides quantitative support for module conservation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The transcriptional response to glucose depletion involves five major expression modules in all species, capturing 65-70% of the variation. These modules represent distinct functional categories: Module 1 (strong repression, growth genes), Module 2 (mild repression, cell division), Module 3 (no change, cell morphogenesis), Module 4 (mild induction, proteasomal/mitochondrial), and Module 5 (strong induction, stress/respiration/metabolism).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C69-C75 are well-supported by the Arboretum analysis (Figure 4), variance explained calculations, and GO enrichment analyses (Supplementary file 1). The choice of k=5 modules is justified by variance explained and functional coherence, though the authors acknowledge this is somewhat conservative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Module expression patterns are conserved across species, but with differential stability. Modules 1 and 5 are highly stable (94% \u00b1 0.5% and 84% \u00b1 1.2% respectively) and least dynamic, while Modules 2, 3, and 4 show more frequent gene reassignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C80-C83 are supported by Module Stability calculations and Module Expansion/Contraction Indices shown in Figure 5D,E. The quantitative metrics provide clear evidence for differential module stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Prominent changes in gene regulation accompany changes in lifestyle and ploidy. Cell cycle genes are reassigned in Schizosaccharomyces consistent with unique nutrient control of mating, and ploidy/meiosis genes shift from Module 5 in haploid pre-WGD species to Modules 2/3 in diploid post-WGD species, likely due to shifts in nutrient control of mating and meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C84-C88 are supported by coordinated gene reassignment patterns shown in Figure 6A-B and are consistent with known biological differences between these species cited from prior literature. The Arboretum ancestral state inference provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Mitochondrial and oxidative phosphorylation genes show coordinated reassignment associated with the evolution of respiro-fermentation, occurring convergently post-WGD and in Schizosaccharomyces. These changes are accompanied by shifts in nucleosome organization and loss of Sfp1 binding sites in respiro-fermentative species, while Sfp1 sites remain conserved in growth genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C99 are well-supported by module reassignment data (Figure 6C-D), nucleosome occupancy analysis (Figure 7A-B), and motif enrichment analysis (Figure 6\u2014figure supplement 1). The convergent evolution pattern is clearly demonstrated and consistent with prior hypotheses about respiro-fermentation evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Purine metabolism and amino acid catabolism genes are reassigned from Modules 2/3 pre-WGD to Module 5 post-WGD, a novel finding reminiscent of the Warburg effect in cancer. This reassignment is unique to post-WGD species and is associated with repositioning of transcription factor binding sites from nucleosome-free to nucleosome-occluded positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 are supported by module reassignment data (Figure 6E), metabolic pathway analysis (Figure 8A), and nucleosome positioning analysis (Figure 7C). The analogy to the Warburg effect is appropriately qualified and supported by citations. The authors correctly note this is a novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C107",
+      "C108",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Paralogs significantly contribute to regulatory divergence, typically within a very short window from their duplication. Approximately 53% of sporadically duplicated paralogs that eventually diverge do so at their point of origin, and such paralogs are significantly enriched among reassigned genes at their duplication point but not later, suggesting a short 'window of opportunity' for regulatory innovation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C107-C108, C113-C118 are strongly supported by statistical analyses (KS tests, p<1\u00d710\u207b\u00b9\u2078) and enrichment analyses (Figure 10B, hypergeometric p<0.05). The quantitative data clearly demonstrate the temporal pattern of paralog reassignment and provide experimental support for theoretical models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "WGD paralogs have a uniquely substantial and prolonged contribution to regulatory divergence. While 54% of WGD paralogs diverge early like sporadic duplicates, they continue to contribute significantly to divergence at later phylogenetic points, an effect not explained by phylogenetic resolution and potentially due to preservation of complete regulatory regions during WGD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C40, C119-C122 are supported by enrichment analyses at multiple phylogenetic points (Figure 10B, Figure 11A-B) and control analyses ruling out resolution artifacts. The theoretical explanation from Lynch and Katju (2004) provides a mechanistic rationale for the observed pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The increased divergence of paralogs is most prominent at the WGD ancestor (A5) and Schizosaccharomyces ancestor (A13), which have larger numbers of retained paralog pairs and reside at points of independent evolution of respiro-fermentation. Reassigned paralogs are enriched in carbon metabolism genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are supported by AMCI analysis (Figure 10A), paralog counts, and functional enrichment analysis (Figure 10\u2014source data 1). The association with respiro-fermentation evolution provides biological context for the increased divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Most paralogs (66%) show regulatory divergence from their ancestral module, with 27% showing classical neo-functionalization, 12% asymmetric divergence, 27% symmetric divergence, and only 34% conserved. Neo-functionalized genes are enriched in previously unchanged Modules 3 and 4, suggesting gain of regulation post-duplication, and have contributed to regulatory divergence in carbon metabolism during respiro-fermentation evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C131 are supported by detailed classification of paralog fates (Figure 10C) with specific examples, enrichment analysis (hypergeometric p<10\u207b\u00b3), and metabolic pathway analysis (Figure 8B). The phylogenetic framework allows more refined classification than prior single-species studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Similar evolutionary patterns occur in the heat shock response measured in eight species, including inverse correlation of similarity with phylogenetic distance, conservation of Module 1 (growth genes), and similar paralog evolutionary trajectories, suggesting these are general evolutionary principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41, C132-C135 are supported by comparative analysis between glucose depletion and heat shock (Figure 11C-F, Figure 11A-B) showing consistent patterns across conditions. This cross-validation strengthens the generality of the findings, though limited to this phylogeny.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C135"
+    ],
+    "result": "The observed patterns suggest general evolutionary principles applicable to any complex phylogeny, based on consistency between glucose depletion and heat shock responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C42, and C135 make broad generalizations about evolutionary principles. While the consistency between two conditions in one phylogeny is suggestive, the claim of applicability to 'any complex phylogeny' is not directly tested and represents an extrapolation. The framework is applicable, but whether the specific patterns are universal requires testing in other phylogenies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "When considering both glucose depletion and heat shock responses, the conserved class of paralogs decreases from 34% to 28%, with 70% showing neo-functionalization in at least one response (38% one paralog, 32% both paralogs), and only 2% showing sub-functionalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 are supported by reclassification analysis (Figure 12E) showing how considering multiple conditions reveals more neo-functionalization. The surprisingly low rate of sub-functionalization (2%) is notable and well-documented, though the authors acknowledge this may reflect the specific conditions tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Profiles at diauxic shift, post-shift, and plateau are most correlated between species, while lag phase profiles are most divergent, likely reflecting species-specific responses to nutrient signals. S. japonicus and S. castellii show the most divergent lag profiles, with some anti-correlation suggesting distinct repletion programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by correlation analysis (Figure 3D-G) and are consistent with biological expectations about nutrient sensing. The authors appropriately rule out technical artifacts (absolute time sampling) and provide metabolite profiling data to support the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Arboretum is a probabilistic algorithm that uses a generative model to infer module evolution from the LCA down the phylogenetic tree, incorporating gene trees to handle orthology and paralogy relationships. It simultaneously infers ancestral and extant module assignments, allowing genes to change modules during evolution while requiring each gene to belong to exactly one module at any phylogenetic point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 accurately describe the Arboretum algorithm as detailed in the methods section and companion paper (Roy et al., 2013). The algorithm's capabilities and constraints are clearly stated and appropriate for the analysis performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Extant and ancestral species have relatively high AMCIs (mean 0.82 \u00b1 0.137 SD), indicating conserved module assignment and highlighting the consistency of the experimental design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by AMCI calculations (Figure 5B). The interpretation that high AMCI indicates both biological conservation and experimental consistency is reasonable, though the relative contribution of each factor cannot be fully separated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Species in different clades have distinct carbon metabolism phenotypes: Kluyveromyces, Candida, and Yarrowia clades are respiratory; respiro-fermentation evolved independently at least twice (post-WGD and in Schizosaccharomyces); K. polysporus has an intermediate phenotype; and Y. lipolytica is obligate respiratory but can use hydrocarbons and fats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by citations to prior literature and are consistent with known biology of these species. The phylogenetic inference of independent evolution of respiro-fermentation is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Respiro-fermentation is functionally analogous to the Warburg effect in cancer cells, with similarities in glycolysis and respiration enabling glucose to be directed to biosynthesis. The observation of induced nucleotide salvage and glycine biosynthesis genes post-diauxic shift in respiro-fermentative species is analogous to changes in cancer cells, suggesting rewiring of nucleotide biosynthetic pathways contributes to this phenotype and points to fundamental metabolic principles independent of evolutionary descent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C145 draw an interesting analogy between yeast respiro-fermentation and cancer metabolism. While the parallel induction of nucleotide biosynthesis pathways is documented (C100, C143), the mechanistic claim that this 'contributes to' the phenotype (C144) is speculative and not directly tested. The analogy is appropriately qualified but represents a hypothesis rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The introduction establishes the context for the study by reviewing prior work on regulatory evolution across diverse organisms, noting that mechanisms are only partially understood and adaptive importance is often unknown. It describes comparative genomics approaches, the advantages of Ascomycota as a model system, and previous findings about conservation and divergence of regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C29 accurately summarize prior work with appropriate citations. These are background claims that establish context rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Arboretum is a new algorithm used to identify expression modules across species and reconstruct their evolutionary history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 accurately describes Arboretum as a novel computational method. The algorithm is detailed in the methods and a companion paper (Roy et al., 2013), representing a methodological contribution of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The largest divergence in transcriptional profiles occurs in lag phase profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by correlation analysis (Figure 3B,G) showing lag phase has the lowest correlation between species. This is a specific finding about temporal dynamics of divergence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The inverse relation between phylogenetic distance and expression correlation is consistent with what was recently reported in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 appropriately contextualizes the findings by comparison to Brawand et al. (2011) in mammals, showing the pattern is not unique to yeast. This is a comparative observation rather than a novel finding.",
+    "result_type": "MINOR"
+  }
+]

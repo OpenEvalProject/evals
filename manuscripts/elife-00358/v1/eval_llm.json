@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript establishes background knowledge about epithelial cancer biology, stating that 90% of human cancers originate from epithelial tissues, that epithelial cells attach to ECM via integrins, that loss of ECM contact triggers anoikis, and that early cancer progression involves genetic changes enabling survival without proper matrix anchorage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 represent well-established background knowledge in cancer biology, supported by appropriate citations (Hynes 2002, Frisch and Screaton 2001) and general scientific consensus. These claims provide necessary context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript reviews prior literature demonstrating that cell-cell aggregation correlates with metastatic capacity, that circulating tumor cell clusters exist in multiple cancer types (with ~50% of breast/lung CTCs existing as aggregates), and that heterotypic interactions with endothelial cells, platelets, and macrophages are important for metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 accurately summarize prior published work with appropriate citations (Updyke and Nicolson 1986, Saiki et al. 1991, Molnar et al. 2001, Cho et al. 2012, Al-Mehdi et al. 2000, Chen et al. 2011, Labelle et al. 2011). These establish the biological rationale for investigating cell-cell adhesion in cancer but represent literature review rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "A genetic screen of 8,000 human ORFs identified PVRL4 as a potent mediator of anchorage-independent colony formation in TL-HMECs. The screen validated that TL-HMECs normally cannot survive in semi-solid medium without attachment, but ectopic expression of oncogenic H-RASV12, myristoylated PI3K, or PTEN shRNA enables anchorage-independent growth. Eight of 11 strongly validated ORFs localized to focal amplification peaks in tumors (p=0.009).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C16-C22 describe a well-designed functional genomic screen with appropriate controls and validation. The statistical enrichment of screen hits at amplification peaks (C20, p=0.009 by Fisher's exact test) provides strong evidence for biological relevance. The identification of previously validated genes (SULF2, NPM1) serves as positive controls, strengthening confidence in the screen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "PVRL4 is not endogenously expressed in TL-HMECs or normal mammary gland, belongs to the nectin family of poliovirus receptor-related transmembrane proteins, and contains three extracellular immunoglobulin-like domains, a transmembrane domain, and a short cytoplasmic tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by experimental data (Figure 2B) and appropriate citations (Fabre-Lafay et al. 2007, Muhlebach et al. 2011, Noyce et al. 2011, Reymond et al. 2001, Takai et al. 2008). The absence of endogenous expression in the model system is important for interpreting gain-of-function experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Deletion of the entire cytoplasmic region of PVRL4 did not affect its ability to promote colony formation or cell viability in suspension, but both full-length and cytoplasmic deletion mutant PVRL4 reduced upregulation of squamous differentiation markers (TGM1, KRT6A, IVL) in suspended TL-HMECs. This demonstrates that the extracellular region of PVRL4, rather than its intracellular region, mediates anchorage-independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are supported by experimental data in Figures 2C-F. The structure-function analysis using deletion mutants is well-controlled and demonstrates that the extracellular domain is both necessary and sufficient for the phenotype. The differentiation marker analysis provides mechanistic insight into how PVRL4 protects cells from anchorage loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "PVRL4 drives rapid association of TL-HMECs into multicellular clusters in suspension. Clonality experiments using mixed GFP/dsRed populations showed that colonies are clonal in origin (56/56 single-color when seeded immediately, 39/40 when co-cultured first). Filtering cells through 35 \u03bcm strainers before seeding did not affect colony numbers, confirming clonal origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by rigorous experimental controls (Figures 3A-B, Figure 3\u2014figure supplements 1-2). The clonality experiments effectively rule out the alternative hypothesis that pre-existing clusters have survival advantages. The filtering experiment provides additional confirmation that individual cells, not pre-formed aggregates, give rise to colonies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "PVRL4 mediates cell-cell attachment through trans-interaction with its receptor PVRL1. PVRL1 depletion by two independent shRNAs excluded cells from PVRL4-driven multicellular clusters and abolished PVRL4-induced anchorage-independent colony formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by prior literature (Reymond et al. 2001) and experimental data (Figures 3C-D, Figure 3\u2014figure supplement 3). The use of two independent shRNAs against PVRL1 strengthens the conclusion by reducing off-target concerns. The parallel effects on clustering and colony formation support a mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Cell clustering was completely abrogated by three independent PVRL4 antibodies and by an antibody targeting PVRL1, but not by control IgG or anti-E-cadherin antibody. A monoclonal anti-PVRL4 antibody inhibited PVRL4-driven colony formation to basal levels but had no effect on PTEN shRNA-induced colonies, demonstrating specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by experimental data (Figures 3E-F, Figure 3\u2014figure supplements 4-5). The use of multiple independent antibodies and appropriate controls (IgG, anti-E-cadherin) strengthens the conclusions. The specificity control using PTEN shRNA effectively demonstrates that antibody effects are not due to general toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Chimeric constructs containing the extracellular region of PVRL4 or PVRL1 fused to the CD8 transmembrane domain (PVRL4-CD8tm, PVRL1-CD8tm) induced both cell clustering and anchorage-independent colony formation. These phenotypes were suppressed by PVRL1 depletion but rescued by shRNA-resistant PVRL1-CD8tm, demonstrating that the PVRL4-PVRL1 cell-surface trans-interaction, not intracellular regions, drives anchorage-independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by well-designed rescue experiments (Figures 4A-D). The chimeric construct approach elegantly demonstrates sufficiency of the extracellular domains. The rescue with shRNA-resistant constructs confirms on-target effects and rules out off-target shRNA effects. This is strong evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Multiple oncogenic perturbations (RasV12 expression, myristoylated PI3K expression, PTEN depletion) triggered multicellular cluster formation in TL-HMECs, suggesting that increased cell-cell attachment is a convergent phenotype of different oncogenic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by experimental data (Figure 4\u2014figure supplements 4-6). The observation that multiple oncogenic drivers induce clustering is interesting and suggests a general principle. However, the mechanism by which these perturbations induce clustering (which does not involve PVRL4 upregulation) is not explored, limiting mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Mass spectrometry identified integrin \u03b24 as specifically interacting with HA/FLAG-PVRL4. Immunoprecipitation verified this interaction in suspension-incubated TL-HMECs. The amount of coprecipitating integrin \u03b24 was not affected by cell clustering state or PVRL1 depletion, suggesting cis-interaction. Both full-length and cytoplasmic deletion PVRL4 coprecipitated with integrin \u03b24.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are supported by mass spectrometry and immunoprecipitation data (Figures 5A-B, Figure 5\u2014figure supplements 1A-B). The identification of integrin \u03b24 as an interacting partner is well-validated. The observation that clustering and PVRL1 depletion don't affect the interaction supports a cis-interaction model. The interaction with cytoplasmic deletion mutant is consistent with the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "PVRL4-induced anchorage-independent colony formation was markedly reduced by two independent integrin \u03b24-specific shRNAs, while PI3K-driven colony formation was unaffected by integrin \u03b24 depletion. Integrin \u03b24 depletion did not affect adherent growth, proliferation, or PVRL4-driven cell clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by experimental data (Figures 5C-D). The use of two independent shRNAs strengthens the conclusion. The specificity for PVRL4-driven (but not PI3K-driven) colony formation is important for establishing pathway specificity. The lack of effect on clustering suggests integrin \u03b24 acts downstream of cell-cell contact formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "PVRL4 expression maintained high levels of activated Src family kinases (SFKs) in suspended cells, while control cells showed precipitous drops in SFK activation. This maintenance required PVRL1 and was blocked by anti-PVRL4 antibody. PVRL4-driven (but not PI3K-driven) colony formation was abrogated by the SFK inhibitor PP2. Two independent shRNAs against SHP-2 completely abolished PVRL4-induced colony formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by Western blot and functional data (Figures 5E-I). The temporal analysis of SFK activation in suspension provides mechanistic insight. The pharmacological inhibition with PP2 and genetic depletion of SHP-2 provide convergent evidence for the integrin \u03b24/SHP-2/SFK pathway. The pathway specificity (PVRL4 but not PI3K dependence) is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "SUM190 breast cancer cells contain high-level focal amplification of the PVRL4 locus. Anti-PVRL4 antibodies and RNAi against PVRL4 abrogated spontaneous self-clustering of SUM190 cells and prevented heterotypic attachment with lung endothelial cells. RNAi against PVRL4 potently reduced anchorage-independent colony formation and clonogenic growth in SUM190, Sk-BR-3, and BT-474 breast cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by genomic data (Figure 6A, Beroukhim et al. 2010) and functional experiments (Figure 6B, Figure 6\u2014figure supplements 1-7). The demonstration that PVRL4 is required for cancer cell growth extends findings from the normal cell model to cancer. Testing multiple cell lines strengthens generalizability. The correlation between PVRL4 depletion efficiency and phenotype strength (C62) supports on-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Coexpression of PVRL4-CD8tm (containing only the extracellular region) rescued the clonogenic survival defect caused by PVRL4-targeting shRNAs in SUM190 cells, demonstrating that the extracellular region alone is sufficient for clonogenic survival of breast cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by rescue experiments (Figures 6C-D). The rescue with the extracellular domain-only construct confirms on-target effects of the shRNAs and demonstrates sufficiency of the extracellular region in cancer cells, consistent with findings in TL-HMECs. This strengthens the therapeutic rationale for targeting the extracellular domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "RNAi-mediated depletion of PVRL4 from SUM190, SUM185, and BT-474 breast cancer cells inhibited orthotopic xenograft growth in nude mice, demonstrating the importance of PVRL4 for cancer cell growth in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by in vivo xenograft data (Figures 7A-C, Figure 7\u2014figure supplement 1). The demonstration of in vivo relevance across multiple cell lines is important for translational potential. However, the manuscript does not report sample sizes, randomization procedures, or statistical analysis for these experiments, which limits rigorous evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Treatment of established SUM190 xenografts with anti-PVRL4 monoclonal antibody (15 mg/kg i.v., 4 doses) caused remarkable stalling of tumor growth compared to control IgG. Antibody treatment resulted in precipitous decline of PVRL4 protein levels in tumors and histological analysis revealed widespread necrosis, loss of cell contacts, and reduced cell-cell contacts by two-photon microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by in vivo therapeutic data (Figures 7D-F, Figure 7\u2014figure supplement 2). The antibody treatment experiment demonstrates therapeutic potential. The histological and microscopy evidence for loss of cell contacts supports the proposed mechanism. However, statistical analysis is limited (p=0.041 reported for C69), and the manuscript does not specify whether investigators were blinded to treatment groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Anti-PVRL4 antibody did not increase cell lysis over isotype control in an ADCC assay with NK cells, and immunohistochemical staining showed no differences in macrophage (F4/80+) infiltration between control and anti-PVRL4 antibody-treated tumors, suggesting the therapeutic effect is not mediated by Fc receptor-dependent immune recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by ADCC assay data (Figure 7\u2014figure supplement 3) and immunohistochemistry (Figure 7\u2014figure supplement 4). These negative controls are important for ruling out Fc-mediated mechanisms and supporting a direct blocking mechanism. However, the ADCC assay uses a single antibody concentration and single effector:target ratio, which may not fully exclude ADCC potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "E-cadherin and vimentin protein levels remained unchanged in SUM190 xenografts treated with anti-PVRL4 antibody in vivo and in cultured SUM190 cells with PVRL4 depletion by RNAi, demonstrating that inhibiting PVRL4 does not cause epithelial-mesenchymal transition (EMT) or select for cells with EMT characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by Western blot data (Figure 7\u2014figure supplement 5A-B). This is an important safety consideration for therapeutic development, as EMT could promote metastasis. However, the analysis is limited to two markers; a more comprehensive EMT marker panel would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Both human and mouse PVRL4 were strongly recognized by anti-PVRL4 antibody when expressed on the cell surface. Mice treated with anti-PVRL4 antibodies showed no visible effects on skin surface and appeared healthy overall, demonstrating that targeted therapy against PVRL4 does not induce acute side effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 is supported by FACS data (Figure 7\u2014figure supplement 6). However, C78 relies on visual observation without systematic toxicity assessment (body weight, histology of normal tissues, blood counts, etc.). The treatment duration appears short (based on Figure 7D timeline), which may not reveal delayed toxicities. More rigorous toxicity studies would be needed to support therapeutic safety claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "PVRL4 is expressed in limited normal tissues (skin epidermis, hair follicles, placenta, trachea, lung) but becomes overexpressed in breast, NSCLC, and ovarian tumors. Analysis of 484 breast tumors shows 60.3% have low-level copy number gain and 7.9% have high-level amplification of PVRL4. PVRL4 is a strong predictor of poor postoperative survival in breast and lung cancer patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are supported by appropriate citations (Jelani et al. 2011, Fabre-Lafay et al. 2007, Takano et al. 2009, Derycke et al. 2010, Cerami et al. 2012, Athanassiadou et al. 2011). The copy number analysis (C83-C84) provides important context for clinical relevance. These claims establish the translational rationale but represent analysis of existing data rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The manuscript reviews literature showing that loss of afadin (in contrast to PVRL4 gain) associates with poor breast cancer outcomes, that PVRL4 depletion affects lung cancer cell growth and motility, that integrin \u03b24 expression associates with poor prognosis and basal-like profile, that integrin \u03b24 RNAi inhibits cancer cell growth, that integrin \u03b24 can activate SFKs via SHP-2 in a ligand-independent manner, that increased clustering associates with metastatic capacity, and that 100% of breast tumors with \u22652 positive lymph nodes express PVRL4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 accurately cite prior literature (Letessier et al. 2007, Fournier et al. 2011, Takano et al. 2009, Diaz et al. 2005, Lu et al. 2008, Lipscomb et al. 2003, Bon et al. 2006, Merdek et al. 2007, Updyke and Nicolson 1986, Athanassiadou et al. 2011). These provide important context linking PVRL4 to integrin \u03b24 signaling and clinical outcomes, but represent literature review rather than new experimental findings.",
+    "result_type": "MINOR"
+  }
+]

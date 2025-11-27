@@ -1,0 +1,451 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C50"
+    ],
+    "result": "Chronologically aging yeast cells undergo a sudden, widespread redox collapse affecting over 80% of identified thiol-containing proteins. Using OxICAT mass spectrometry, the authors identified 286 protein thiols under standard conditions and 263 under caloric restriction, with the majority showing a sudden oxidation within a 24-hour period after initially remaining reduced for 48-96 hours post-exponential phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C35-C40, and C50 collectively demonstrate widespread protein oxidation using quantitative OxICAT data across multiple time points and conditions. The data in Figure 2A and Figure 1\u2014Source data 1 show clear temporal patterns of oxidation affecting the majority of identified proteins, with appropriate replicates (n=4) and statistical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C69",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The redox collapse is not triggered by increased ROS/peroxide as predicted by the free radical theory of aging. Only 5 of 28 early oxidation targets were previously identified as peroxide-sensitive, and highly peroxide-sensitive proteins like GapDH were not among early oxidation targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C69, C113-C115 provide evidence against ROS-mediated oxidation by showing that peroxide-sensitive proteins are not preferentially oxidized early. The comparison with previous peroxide sensitivity data (Table 1) and the absence of GapDH among early targets (Figure 1\u2014Source data 1) support this conclusion through negative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C116",
+      "C118"
+    ],
+    "result": "The redox collapse appears to be triggered by a substantial drop in cellular NADPH levels. NADPH levels rapidly decreased in standard conditions within 24 hours after an initial increase, and this decrease temporally preceded and correlated with protein oxidation events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C97-C100, C116, and C118 are supported by NADPH measurements (Figure 6B) showing temporal correlation between NADPH decrease and protein oxidation. The 48-hour delay in both NADPH decrease and protein oxidation under caloric restriction (C98, C117) strengthens the causal inference, though direct mechanistic proof is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C22",
+      "C31",
+      "C32",
+      "C90",
+      "C98",
+      "C101",
+      "C117",
+      "C121"
+    ],
+    "result": "Caloric restriction (0.5% glucose) delays NADPH decrease by 48 hours, delays protein oxidation by 48 hours, and extends mean lifespan from ~7 days to ~11 days compared to standard conditions (2% glucose).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21-C22, C31-C32, C90, C98, C101, C117, and C121 demonstrate consistent 48-hour delays across multiple measured parameters (NADPH, protein oxidation, redox potential) under caloric restriction, with corresponding lifespan extension shown in Figure 1A. The temporal coordination across multiple independent measurements strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The redox collapse occurs days before cell death (day 3 under standard conditions with mean lifespan ~7 days), and maintenance of redox homeostasis through caloric restriction or hypometabolic conditions may contribute to lifespan extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C102-C104 are supported by the temporal separation between oxidation onset (day 3) and mean lifespan (~7 days) shown in Figures 1A and 2A. The correlation between delayed oxidation and extended lifespan under different conditions supports the inference about redox homeostasis contributing to longevity, though causality is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C70",
+      "C71",
+      "C105",
+      "C106",
+      "C108"
+    ],
+    "result": "Protein oxidation occurs in at least two waves: an early wave affecting <10% of proteins (clusters D and E) occurring 24-48 hours before the general oxidation, and a second wave affecting ~70% of remaining proteins occurring 24 hours later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61, C70-C71, C105-C106, and C108 are supported by k-means cluster analysis (Figure 3) showing distinct temporal patterns. The identification of 28 early oxidation targets with >95% of proteins clustering into seven distinct groups demonstrates robust statistical clustering with biological consistency across conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Early-oxidized proteins (clusters D and E) have a significant accumulation of additional cysteines in close proximity, particularly C-X2/3-C motifs, suggesting oxidation is triggered by a more oxidizing redox environment favoring disulfide bond formation rather than ROS sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 and C110-C112 are supported by sequence analysis (Figure 4A-B) and chi-square statistical testing (Table 2A-B, p<0.05) showing significant enrichment of nearby cysteines in early-oxidized proteins. The mechanistic interpretation linking cysteine proximity to disulfide formation is reasonable but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Thioredoxin reductase, a key component of cellular redox homeostasis, is an early oxidation target whose active site cysteines (C142/C145) become 65% oxidized by day 2 and 80% oxidized by day 3 under standard conditions, preceding general protein oxidation by 24 hours. Shifting cells to water partially reverses this oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 are supported by OxICAT data (Figure 5, Table 1) showing temporal precedence of thioredoxin reductase oxidation before general collapse. The reversibility upon water shift (C77-C79) demonstrates the oxidation is not irreversible damage, supporting a regulatory interpretation. The 48-hour delay under caloric restriction (C76) is consistent with other observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C119",
+      "C120"
+    ],
+    "result": "The glutathione redox potential (EGSH) shows a pro-oxidizing shift of at least 15 mV by day 1 under standard conditions, with a 48-hour delay under caloric restriction. This shift coincides temporally with NADPH decrease and precedes general protein oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91, C119-C120 are supported by GSH/GSSG measurements (Figure 6A) showing temporal correlation with NADPH changes. The 48-hour delay under caloric restriction (C90, C120) is consistent with other measured parameters. The Nernst equation calculation for redox potential is appropriate, though measurement precision and biological variability should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C109",
+      "C129"
+    ],
+    "result": "Chronologically aging yeast cells maintain ATP levels equivalent to or above exponential growth levels for up to 5 days (standard) or 7 days (caloric restriction), and over 80% of cells remain viable at days 3-4 despite heavily oxidized proteomes, demonstrating cells are not starving and can survive with oxidized proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C109, and C129 are supported by ATP measurements (Figure 2B) and viability data (Figure 1A). The maintenance of ATP despite widespread protein oxidation challenges simple interpretations of oxidation as purely damaging, though the functional consequences of oxidation on cellular processes remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Over 40 oxidation-sensitive proteins involved in protein translation (including 27 ribosomal proteins, translation factors, and tRNA synthetases) and numerous metabolic enzymes and protein homeostasis factors become oxidized, likely affecting translation rates and multiple cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by the OxICAT dataset identifying these proteins (Figure 1\u2014Source data 1). However, the functional consequences (C43) are inferred rather than directly demonstrated. The claim that oxidation \"most likely affects\" translation and metabolism is reasonable but lacks direct activity measurements or functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C107"
+    ],
+    "result": "NADPH levels transiently increase during the diauxic shift (first 12 hours post-exponential growth) as cells transition from fermentation to respiration and induce NADPH-producing enzymes (UTR1, POS5, ZWF1, Idp2), before subsequently decreasing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 and C107 are supported by NADPH measurements (Figure 6B) and established knowledge about yeast diauxic shift metabolism (C95, C96 supported by Gasch et al., 2000). The temporal pattern of initial increase followed by decrease is clearly shown, though the mechanistic basis for the subsequent decrease is not fully explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C41",
+      "C103",
+      "C128"
+    ],
+    "result": "Shifting cells to water (hypometabolic conditions) at day 2 prevents the sudden onset of protein oxidation, with proteins showing only minor increases in oxidation through day 10. Early protein oxidation is reversible, as demonstrated by thioredoxin reductase re-reduction upon water shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C41, C103, and C128 are supported by OxICAT data comparing water-shifted cells to continuous culture (Figures 1B, 2A, 5). The reversibility of oxidation demonstrates these are not irreversible modifications, supporting a regulatory rather than purely damaging interpretation. The dramatic difference in oxidation patterns validates the experimental approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "GapDH active site cysteines (Cys150/Cys154) remain <30% oxidized for the first 2 days, then rapidly oxidize to ~70% by day 3 and >80% by day 4 under standard conditions. The extent of oxidation at day 3 is similar to that observed with 0.5 mM H2O2 treatment for 15 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by OxICAT measurements of GapDH (Figures 1B-D) and comparison to previous H2O2 treatment data (C29, Brandes et al., 2011). GapDH serves as a well-characterized reporter of redox status, and the temporal pattern matches the general protein oxidation trend, validating the broader observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Deletion of mitochondrial thioredoxin reductase (\u0394trr2) has no effect on growth or lifespan, while deletion of cytosolic thioredoxin reductase (\u0394trr1) causes severe growth defects, shortened lifespan, and requires cysteine supplementation to prevent suppressor generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by lifespan measurements (Figure 5\u2014figure supplement 1) and growth observations. However, the high frequency of suppressor generation (C82) and cysteine requirement (C83) complicate interpretation of \u0394trr1 phenotypes and limit the utility of this genetic approach for mechanistic studies, as the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C51"
+    ],
+    "result": "Over 33% of the 290 monitored protein thiols have been confirmed as redox-sensitive in yeast or other organisms, with an additional 20% in proteins known to contain redox-sensitive cysteines, suggesting reversible cysteine oxidation is more widespread than previously anticipated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C51 are supported by comparison with the RedoxDB database (Sun et al., 2012). The high overlap (>50%) with previously identified redox-sensitive proteins validates the OxICAT approach and specificity. The inference that reversible oxidation is widespread (C51) is reasonable given the 80% oxidation observed under physiological conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Similar pro-oxidizing shifts in thioredoxin and glutathione systems have been observed in aging rodents, potentially explained by decreased NADPH levels, and caloric restriction partially reverses these changes in rodents, suggesting the NADPH-redox collapse mechanism may be conserved across organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 are supported by citations to rodent studies (Cho et al., 2003; Rohrbach et al., 2006; Rebrin and Sohal, 2008; Parihar et al., 2008; Someya et al., 2010). The comparison strengthens the biological significance of the yeast findings, though the inference of conservation (C125) remains speculative without direct comparative experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "The identical pattern of NADPH decrease, thioredoxin reductase oxidation, and redox collapse (with 48-hour delay) in both 2% and 0.5% glucose media argues against medium acidification as a contributing factor, since acidification is severe in 2% glucose but insignificant in 0.5% glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 are supported by comparison of data across conditions and citation to Burtner et al., 2009 regarding differential acidification. This negative control strengthens the interpretation that the observed effects are due to metabolic changes rather than pH artifacts, though other potential confounding factors are not systematically excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The initially reversible thiol modifications might represent a 'pro-active' protective response to prevent irreversible protein damage and extend lifespan, with the majority of yeast protein thiols serving as a redox buffer during chronological aging as a physiological stress condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C131, C134-C136 are largely speculative (marked as SPECULATION in evidence_type). While the reversibility of oxidation (C128) and cell survival with oxidized proteomes (C129) are demonstrated, the interpretation as a protective mechanism is not directly tested. The redox buffering hypothesis (C134-C135) is plausible but lacks functional validation showing that oxidation actually protects against damage or extends lifespan.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Methionyl-tRNA synthetase (MES1) Cys353, part of a zinc finger-like motif critical for enzyme activity, reaches >65% oxidation by day 2, potentially contributing to down-regulation of protein translation, which has been shown to increase oxidative stress resistance and extend lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C140 are supported by oxidation data (C138, Table 1) and citations regarding MES1 structure/function (C139, Fourmy et al., 1993) and translation effects on lifespan (C140, Steffen et al., 2008). However, the functional consequence of MES1 oxidation on translation is not directly measured, and the connection to lifespan extension remains speculative without validation of MES1 activity changes or translation rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Studies in diamide-treated HeLa and HEK cells show that over 50% of protein thiols undergo reversible modifications, demonstrating that the combined redox proteome of mammalian cells has higher redox buffering capacity than glutathione.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 are supported by citation to Hansen et al., 2009. This prior work in mammalian cells provides context for interpreting the yeast findings and supports the concept of protein thiols as redox buffers. However, these are not new findings from the current manuscript but rather supporting literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "OxICAT is a highly sensitive, fully quantitative mass spectrometry-based technique that determines the in vivo oxidation status of hundreds of protein thiols. Previous work identified and quantified ~400 yeast protein thiols including peroxide and redox-sensitive cysteines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 describe the OxICAT method and prior work, supported by citations to Leichert et al., 2008 and Brandes et al., 2011. The method is well-established and validated in prior publications. The current manuscript applies this method to chronological aging but does not present new methodological developments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on aging theories and yeast chronological lifespan model: The free radical theory of aging has correlative support but conflicting genetic evidence in mice. Chronological lifespan in yeast is affected by antioxidant enzymes and extended by caloric restriction, which increases oxidative stress resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C20 provide literature context supported by appropriate citations (Harman 1956, Muller et al. 2007, Perez et al. 2009, Salmon et al. 2010, Longo et al. 1996, Harris et al. 2003, Fontana et al. 2010, Barja 2002, Fabrizio and Longo 2007). These are accurate representations of prior work establishing the scientific context but are not novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "GapDH contains two redox-sensitive cysteines (Cys150 and Cys154) in the same tryptic peptide that form an intramolecular disulfide bond during peroxide stress, making it one of the most redox-sensitive proteins in yeast and other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by citation to Brandes et al., 2011 and established knowledge about GapDH structure. This characterization of GapDH as a redox reporter is from prior work and provides justification for using it as an initial indicator of redox changes during aging in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C52",
+      "C85",
+      "C86",
+      "C92"
+    ],
+    "result": "Background on cellular redox systems: Chronologically aging yeast remain metabolically active. Two conserved NADPH-dependent systems maintain redox homeostasis: the thioredoxin system and the glutathione/glutaredoxin system, with both dependent on cellular NADPH/NADP+ levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C85-C86, and C92 provide established background knowledge supported by citations (Fabrizio et al. 2003, Fabrizio and Longo 2003, Martensson and Meister 1989, Merad-Boudia et al. 1998). These are accurate descriptions of known cellular redox systems that provide context for interpreting the experimental findings but are not novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "About 15% of identified peptides remained either reduced (cluster F) or oxidized (cluster G) throughout cultivation. Subcellular distribution analysis showed no significant correlation between protein location and oxidation pattern (except ER/secreted proteins in cluster G).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by cluster analysis (Figure 3, Figure 1\u2014Source data 1). The identification of oxidation-resistant proteins (cluster F) is interesting but not deeply explored. The lack of subcellular localization correlation (C64) is a negative result that helps rule out compartment-specific effects but provides limited mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "The decrease in NADPH levels occurs very early during lifespan and sets into motion a cascade predicted to down-regulate most cellular processes, affecting metabolic enzymes, translation machinery, and other cellular functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C4 combines demonstrated NADPH decrease (supported by Figure 6B) with predicted downstream effects on cellular processes. While oxidation of relevant proteins is shown (C42-C45), the actual functional consequences on cellular processes (down-regulation, activity changes) are not directly measured. The cascade model is a reasonable inference but lacks direct validation of predicted effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Early oxidation targets are of particular interest because their oxidation may serve as early warning of age-induced redox changes or might control/trigger general protein oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 is marked as speculation in the evidence. While early oxidation targets are identified (C70-C71), their functional role in controlling or triggering general oxidation is not experimentally tested. The temporal precedence is demonstrated but causality is not established. This represents a hypothesis for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

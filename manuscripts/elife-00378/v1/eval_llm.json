@@ -8,31 +8,32 @@
       "C4",
       "C5",
       "C6",
-      "C7"
+      "C7",
+      "C8"
     ],
-    "result": "The C. elegans egg-laying circuit consists of vm1 and vm2 vulval muscle cells arranged in X-shaped structures, with HSN and VC4/5 neurons forming synapses exclusively on vm2 muscle arms, which represent functional postsynaptic specializations enriched with UNC-103E.",
+    "result": "The C. elegans egg-laying circuit consists of four vm1 and four vm2 vulval muscle cells forming X-shaped structures. HSN and VC4/5 neurons form chemical synapses exclusively on vm2, while vm1 is controlled by vm2 via gap junctions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C7 provide converging evidence from anatomical descriptions (C1-C2), prior literature (C3-C5), and experimental data showing UNC-103E enrichment on muscle arms (C6-C7, Figure 1). The combination of cited work and direct visualization with single-copy transgenes strongly supports the structural and functional organization of the circuit.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C1-C8 describe the basic anatomical organization of the egg-laying circuit, supported by direct observations and citations to prior work (White et al., 1986; Waggoner et al., 1998). The structural descriptions are consistent with established literature and Figure 1A provides visual confirmation.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C8",
       "C9",
       "C10",
       "C11",
       "C12",
       "C13",
-      "C14"
+      "C14",
+      "C129"
     ],
-    "result": "vm2 postsynaptic muscle arm development occurs independently of presynaptic neurons (HSN and VC) but requires vulval epithelial cells, as demonstrated by normal vm2 morphology in egl-1(n986) mutants lacking HSN neurons but severe defects in lin-3(e1417) mutants with abnormal vulval epithelial cell fate.",
+    "result": "vm2 muscle arms are dendritic spine-like postsynaptic specializations that extend medially from stereotyped locations, form bridge-like structures between anterior and posterior cells, and are enriched with postsynaptic markers UNC-103E and SER-1B.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C8-C14 present a logical progression from developmental timing (C8) through genetic ablation experiments (C9-C11) to epithelial cell requirements (C12-C14). The data from multiple mutants (egl-1, unc-104, lin-3) with references to Figure 1\u2014figure supplement 2A provide strong evidence for the independence from presynaptic components and dependence on epithelial cells.",
+    "evaluation": "Claims C9-C14 and C129 are well-supported by fluorescence imaging data (Figures 1B, 1C, Figure 1\u2014figure supplement 1) showing colocalization of presynaptic markers with muscle arms and enrichment of postsynaptic proteins. The structural and molecular characterization is consistent across multiple markers.",
     "result_type": "MAJOR"
   },
   {
@@ -43,247 +44,333 @@
       "C17",
       "C18",
       "C19",
-      "C20"
+      "C20",
+      "C21"
     ],
-    "result": "A forward genetic screen identified mutations in LIN-12/Notch signaling pathway genes (lin-12, apx-1, sel-12) that specifically disrupt vm2 muscle arm development without affecting vulval morphogenesis or presynaptic development.",
+    "result": "vm2 muscle arm development is independent of presynaptic neurons. HSN neurons form presynaptic specializations before muscle arm development, and ablation of HSN/VC neurons or disruption of synaptic vesicles does not affect muscle arm formation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C15-C20 describe the genetic screen results with clear phenotypic characterization. The identification of six mutants in three complementation groups (C15-C16, Table 1, Figure 1D-E), specific loss of muscle arms (C17), normal presynaptic markers (C18-C19), and normal vulval morphology (C20, Figure 1\u2014figure supplement 4A) provide strong evidence for a specific role in postsynaptic development.",
+    "evaluation": "Claims C15-C21 are supported by genetic ablation experiments (egl-1(n986), lin-39(n709) double mutants) and synaptic vesicle transport mutants (unc-104(e1265)) shown in Figure 1\u2014figure supplement 2. The independence of pre- and postsynaptic development is demonstrated through multiple complementary approaches.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C21",
       "C22",
       "C23",
-      "C24",
+      "C24"
+    ],
+    "result": "Vulval epithelial cells are required for normal vulval muscle differentiation and morphogenesis. lin-3(e1417) mutants with abnormal vulval epithelial cell fate show severe defects in both vulval muscle morphology and muscle arm development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by observations in lin-3(e1417) mutants (Figure 1\u2014figure supplement 2A) and citation to Hill and Sternberg, 1992. The phenotype demonstrates the requirement for vulval epithelial cells, though the specific mechanism remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
       "C25",
       "C26",
       "C27",
       "C28",
       "C29",
-      "C30"
-    ],
-    "result": "Muscle arm defective mutants exhibit egg-laying defects characterized by asynchronous Ca2+ transients in anterior and posterior vulval muscles, with delays increasing from ~100 ms in wild-type to ~800 ms in lin-12(wy750) and apx-1(wy755) mutants, demonstrating that vm2 muscle arms are required for synchronous muscle excitation.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C21-C30 present comprehensive Ca2+ imaging data (Figure 2, Videos 1-3) showing behavioral defects (C21-C22), normal vs. mutant Ca2+ dynamics (C23-C29), and functional interpretation (C30). The quantitative measurements with statistical significance (Figure 2H-J) and temporal resolution of transient delays provide strong physiological evidence for muscle arm function.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
+      "C30",
       "C31",
       "C32",
       "C33",
-      "C34",
-      "C35"
+      "C34"
     ],
-    "result": "lin-12(wy750) contains a missense mutation (G473R) in an extracellular EGF domain and represents a partial loss-of-function allele that specifically impairs vm2 muscle arm development while sparing vulval morphogenesis, suggesting differential dosage requirements for LIN-12/Notch signaling in different developmental processes.",
+    "result": "A forward genetic screen identified mutations in LIN-12/Notch pathway genes (lin-12, apx-1, sel-12) that specifically eliminate vm2 muscle arms while preserving overall muscle morphology and vulval development.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C31-C35 provide molecular characterization (C31, Table 1), genetic evidence for loss-of-function (C32, Figure 4A), and interpretation of partial function (C33-C35). The complementation tests and genomic rescue experiments support the genetic characterization, though C35 is somewhat speculative about dosage requirements.",
+    "evaluation": "Claims C25-C34 describe the genetic screen results supported by Figure 1D-F, Table 1, and multiple supplementary figures. The specificity of the phenotype is well-documented through multiple markers (SER-1B::GFP, UNC-103E::GFP, mCD8::mCherry) and the preservation of presynaptic markers and vulval morphology is demonstrated.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
+      "C35",
       "C36",
       "C37",
       "C38",
-      "C39"
+      "C39",
+      "C40"
     ],
-    "result": "Temperature-shift experiments with lin-12(n676n930ts) demonstrate that lin-12 functions at the L4 stage to regulate vm2 muscle arm development, independent of its earlier roles in AC/VU decision and VPC specification.",
+    "result": "lin-12(wy750) mutants retain many molecular signatures of the M lineage and normal vulval muscle morphology. Cell-type-specific markers (hlh-8::gfp, egl-15::gfp, rgs-2::gfp) show wild-type patterns, and quantitative morphological measurements are unchanged.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C36-C39 present temperature-shift experiments (Figure 3A-B) showing temporal requirements. The upshift and downshift data clearly delineate a critical period at mid-L4 stage, distinct from earlier developmental events. The experimental design appropriately controls for earlier LIN-12 functions.",
+    "evaluation": "Claims C35-C40 are supported by expression analyses of multiple lineage markers (Figure 1\u2014figure supplement 4C,E,F) and quantitative morphological measurements (Figure 1\u2014figure supplement 6). The data demonstrate that the muscle arm defect is specific and not due to general muscle fate changes.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C40",
       "C41",
-      "C42"
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C130"
     ],
-    "result": "lin-12 is expressed in vm2 muscle cells and vulval epithelial cells but not in vm1 cells, and functions cell-autonomously in vm2 to regulate muscle arm formation, as demonstrated by mosaic rescue analysis.",
+    "result": "Muscle arm defective mutants show egg-laying defects characterized by fewer eggs laid, more late-stage eggs, and asynchronous Ca2+ transients in anterior and posterior vulval muscles. The muscle arms are required for synchronous excitation but not for muscle excitation itself.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C40-C42 present expression data (C40-C41, Figure 4A-B) and mosaic analysis (C42, Figure 4A-C). The mosaic rescue experiments showing 45/48 animals with vm2+ expression rescued vs. 0/>50 animals with vm2- expression provide strong evidence for cell-autonomous function.",
+    "evaluation": "Claims C41-C51 and C130 are supported by comprehensive behavioral and Ca2+ imaging data (Figure 2A-J, Videos 1-3). The quantitative analysis of Ca2+ transient frequency, synchrony, and timing provides strong evidence for the functional role of muscle arms. Statistical significance is reported (p<0.0001) with appropriate sample sizes.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C43",
-      "C44",
-      "C45",
-      "C46",
-      "C47"
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
     ],
-    "result": "APX-1/Dsl functions as the ligand for LIN-12/Notch in vm2 muscle arm development, expressed in secondary vulval epithelial cells and vm1 muscle cells, where it activates LIN-12 signaling in vm2 target cells.",
+    "result": "lin-12(wy750) is a partial loss-of-function allele containing a G473R missense mutation in an extracellular EGF domain. Partial loss of LIN-12/Notch signaling specifically impairs vm2 muscle arm development while sparing vulval morphogenesis, suggesting differential dosage requirements.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C43-C47 establish APX-1 as the relevant ligand through genetic analysis (C43-C44, Figure 4D), expression pattern (C45, Figure 4E), and cell-specific rescue (C46-C47, Figure 4F). The convergence of genetic epistasis, expression data, and rescue experiments provides strong support.",
+    "evaluation": "Claims C52-C58 are supported by molecular characterization (Table 1), trans-heterozygote analysis, and rescue experiments (Figure 4A). Claim C59 is appropriately marked as speculation. The dosage hypothesis is well-reasoned based on the allelic series and phenotypic specificity, though direct dosage measurements are not provided.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C48",
-      "C49",
-      "C50",
-      "C51",
-      "C52",
-      "C53",
-      "C54"
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
     ],
-    "result": "The canonical LIN-12/Notch signaling pathway, involving SEL-12/presenilin-mediated cleavage and LAG-1/CSL-dependent transcription, is activated specifically in vm2 to promote muscle arm formation, as evidenced by cell-specific rescue of sel-12, dominant-negative lag-1 phenocopy, and downregulation of target gene hlh-29 in mutants.",
+    "result": "Temperature-shift experiments with lin-12(n676n930ts) demonstrate that LIN-12 functions at the L4 stage to regulate muscle arm development, independent of its earlier roles in AC/VU decision and VPC specification.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C48-C54 establish canonical pathway involvement through molecular knowledge (C48), rescue experiments (C49, Figure 4F), dominant-negative analysis (C50-C51), and target gene expression (C52, Figure 5A). The multiple lines of evidence converge on canonical pathway activation specifically in vm2.",
+    "evaluation": "Claims C60-C66 are supported by systematic temperature-shift experiments (Figure 3A,B) showing a critical period at mid-L4 stage. The temporal separation from earlier LIN-12 functions is well-demonstrated, though the experiments rely on a single temperature-sensitive allele.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C55",
-      "C56",
-      "C57",
-      "C58",
-      "C59",
-      "C60",
-      "C61"
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
     ],
-    "result": "APX-1 unilaterally promotes lin-12 expression in vm2 cells through a positive feedback mechanism involving LAG-1 binding sites in the lin-12 promoter, as demonstrated by reduced lin-12 expression in apx-1 mutants, unchanged apx-1 expression in lin-12 mutants, and muscle arm defects in lin-12(e2621) with promoter deletions.",
+    "result": "lin-12 functions cell-autonomously in vm2 to regulate muscle arm formation. Mosaic analysis shows that lin-12 expression in vm2 (but not vulval epithelial cells) is necessary and sufficient for rescue of muscle arm defects.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C55-C61 present expression analysis (C55-C57, Figure 5B-D), sequence analysis (C58-C59), and phenotypic analysis of promoter deletion (C60-C61, Figure 5\u2014figure supplement 1B). The unilateral regulation and positive feedback model are well-supported, though C61 is somewhat speculative about feedback requirement.",
+    "evaluation": "Claims C67-C73 are supported by mosaic rescue experiments using lin-12::SL2::mCherry (Figure 4A-C). The correlation between vm2 expression and rescue (45/48 animals) versus no rescue without vm2 expression (0/>50 animals) provides strong evidence for cell-autonomous function. The sample sizes are adequate.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C62",
-      "C63",
-      "C64",
-      "C65",
-      "C66",
-      "C67",
-      "C68",
-      "C69",
-      "C70",
-      "C71"
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
     ],
-    "result": "UNC-40/DCC and MADD-2 are expressed specifically in vm2 cells and function cell-autonomously to promote and guide muscle arm growth, with UNC-40 enriched on muscle arms, as demonstrated by mutant phenotypes and cell-specific rescue experiments.",
+    "result": "APX-1/DSL is expressed in secondary vulval epithelial cells and vm1 muscle cells, which contact vm2 during development. Cell-specific expression of apx-1 in either cell type rescues muscle arm defects, indicating that apx-1 functions non-cell-autonomously to activate LIN-12/Notch in vm2.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C62-C71 establish UNC-40 and MADD-2 roles through prior knowledge (C62-C64), mutant phenotypes (C65-C66, Figure 6A-B), rescue experiments (C67-C68), and expression patterns (C69-C71, Figure 6C-D). The convergence of genetic, expression, and localization data provides strong support for their function in muscle arm development.",
+    "evaluation": "Claims C74-C80 are supported by expression analysis (Figure 4E, Figure 4\u2014figure supplement 1A,B), cell contact observations (Figure 4\u2014figure supplement 1C), and cell-specific rescue experiments (Figure 4F). The lack of enhancement in double mutants and successful rescue from either cell type strongly support the model.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C72",
-      "C73",
-      "C74",
-      "C75",
-      "C76",
-      "C77",
-      "C78"
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
     ],
-    "result": "The canonical LIN-12/Notch signaling pathway directly promotes transcription of unc-40 and madd-2 in vm2 cells, as evidenced by downregulation of both translational and transcriptional reporters in lin-12(wy750) mutants and presence of LAG-1 consensus binding sites in regulatory regions.",
+    "result": "The canonical LIN-12/Notch pathway functions in vm2 to promote muscle arm formation. Expression of sel-12 in vulval muscles rescues defects, dominant-negative lag-1 phenocopies mutants, and the known target gene hlh-29 is downregulated in pathway mutants.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C72-C78 establish transcriptional regulation through expression analysis (C72-C75, Figure 6C-D, Figure 6\u2014figure supplement 1A-B) and sequence analysis (C77-C78). The combination of translational and transcriptional reporter data with identification of LAG-1 binding sites provides strong evidence for direct transcriptional regulation.",
+    "evaluation": "Claims C81-C86 are supported by cell-specific rescue (Figure 4F), dominant-negative experiments (Figure 4F), and transcriptional reporter analysis (Figure 5A, Figure 5\u2014figure supplement 1A). Multiple lines of evidence converge to support canonical pathway involvement.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C79",
-      "C80",
-      "C81",
-      "C82",
-      "C83"
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
     ],
-    "result": "UNC-40 expression is sufficient to induce muscle arm-like membrane extensions in both lin-12 mutant vm2 cells (~41% rescue) and ectopically in vm1 cells, with stereotyped positioning suggesting response to environmental cues, demonstrating a deterministic role for UNC-40 in postsynaptic muscle arm development.",
+    "result": "APX-1 unilaterally promotes lin-12 expression in vm2 through a positive feedback mechanism. apx-1 mutants show reduced lin-12 expression in vm2 but not vice versa. LAG-1 binding sites in the lin-12 promoter are required for muscle arm development.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C79-C83 present sufficiency experiments (C79-C81, Figure 7A-B) and interpretation (C82-C83). The rescue in lin-12 mutants and ectopic induction in vm1 provide strong evidence for UNC-40 sufficiency, though the 41% rescue rate suggests additional factors may be required for complete function.",
+    "evaluation": "Claims C87-C93 are supported by expression analyses (Figure 5B-D) and characterization of lin-12(e2621) promoter deletion mutant (Figure 5\u2014figure supplement 1B). Claim C94 is appropriately marked as speculation. The unilateral regulation distinguishes this from classical lateral inhibition mechanisms.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C84",
-      "C85",
-      "C86",
-      "C87",
-      "C88",
-      "C89"
-    ],
-    "result": "UNC-40 and MADD-2 function synergistically but at least partly in parallel to promote muscle arm formation, as evidenced by slightly enhanced defects in double mutants, partial cross-rescue by overexpression, and lack of mutual regulation of expression.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C84-C89 present genetic interaction data (C84, C86, Figure 6B, Figure 7C), rescue experiments (C85-C86), and expression analysis (C88, Figure 7\u2014figure supplement 2A-B). The data support synergistic function, though the 'slightly enhanced' double mutant phenotype and partial rescue suggest the relationship is complex.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C90",
-      "C91",
-      "C92"
-    ],
-    "result": "The LIN-12/Notch signaling pathway mediates postsynaptic development and synaptic target selection in the egg-laying circuit through a mechanism where APX-1/Dsl from secondary vulval epithelial cells and vm1 activates LIN-12/Notch in vm2, promoting expression of UNC-40/DCC and MADD-2 to generate postsynaptic muscle arms.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C90-C92 synthesize the major findings into an integrated model. The overall conclusion is well-supported by the extensive genetic, molecular, and functional data presented throughout the manuscript, establishing a clear pathway from cell-cell signaling to postsynaptic specialization.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C93"
-    ],
-    "result": "Vulval morphogenesis requires low levels of LIN-12/Notch signaling while vm2 postsynaptic specification requires relatively high levels, explaining the specific phenotypes of partial loss-of-function alleles.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C93 presents a dosage model supported by the differential phenotypes of partial vs. complete loss-of-function alleles, the promoter deletion analysis (C59-C61), and the temperature-shift experiments (C36-C39). The model provides a coherent explanation for the observed genetic data.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
-      "C94",
       "C95",
       "C96",
       "C97",
       "C98",
       "C99",
-      "C100"
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
     ],
-    "result": "Pre- and postsynaptic specializations in the egg-laying circuit develop independently at different times and are guided by different but related vulval epithelial cells (primary for presynaptic, secondary for postsynaptic), with muscle arms growing along the interface between primary and secondary cells, demonstrating organizational roles for epithelial cells in coordinating vulval organ development.",
+    "result": "UNC-40/DCC and MADD-2 are expressed specifically in vm2 and function cell-autonomously to promote and guide muscle arm growth. Both null mutants show specific muscle arm defects with variable penetrance, and UNC-40 is enriched on muscle arms.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C94-C100 synthesize developmental timing (C94), independence (C95), and guidepost cell roles (C96-C100). The evidence from prior work (C97), current expression and rescue data (C98), and anatomical observations (C99, Figure 7\u2014figure supplement 3) support the model, though C99 is somewhat speculative about the UNC-40-dependent mechanism.",
+    "evaluation": "Claims C95-C105 are supported by mutant phenotype analysis (Figure 6A,B), cell-specific rescue experiments (Figure 6B), and expression analysis (Figure 6C,D). The prior work citations are appropriate. The variable penetrance (missing vs. abnormal arms) suggests complexity in the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "LIN-12/Notch signaling directly promotes transcription of unc-40 and madd-2 in vm2. Both translational and transcriptional reporters show vm2-specific expression that is dramatically reduced in lin-12 mutants. LAG-1 consensus binding sites are present in regulatory regions of both genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 are supported by translational reporter analysis (Figure 6C,D), transcriptional reporter analysis (Figure 6\u2014figure supplement 1A,B), and identification of LAG-1 binding sites. The convergence of expression and transcriptional data strongly supports direct regulation, though chromatin immunoprecipitation would provide definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "UNC-40 has a deterministic role in muscle arm formation. Expression of unc-40 in lin-12 mutants induces muscle arms in ~41% of animals, and ectopic expression in vm1 is sufficient to induce membrane extensions from the medial surface, suggesting response to environmental cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 are supported by rescue experiments (Figure 7A) and ectopic expression experiments (Figure 7B, Figure 7\u2014figure supplement 1). The incomplete penetrance (41%) of rescue suggests additional factors are required. The stereotyped location of ectopic arms supports the environmental cue hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "UNC-40 and MADD-2 function synergistically but at least partly in parallel to promote muscle arm formation. The double mutant shows slightly enhanced defects, overexpression of unc-40 largely rescues madd-2 mutants, and their expression is not mutually regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 are supported by double mutant analysis (Figure 6B), cross-rescue experiments (Figure 7C), and expression analysis (Figure 7\u2014figure supplement 2A,B). The genetic interaction data support synergistic function, though the 'slightly enhanced' phenotype in double mutants is not quantified statistically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The LIN-12/Notch signaling pathway mediates postsynaptic development and synaptic target selection in the egg-laying circuit. APX-1 from secondary vulval epithelial cells and vm1 activates LIN-12 in vm2, which promotes expression of UNC-40 and MADD-2 to generate postsynaptic muscle arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 represent the main conclusions of the paper, synthesizing results from multiple experimental approaches. The pathway from APX-1 \u2192 LIN-12 \u2192 UNC-40/MADD-2 \u2192 muscle arms is well-supported by the collective evidence, though some mechanistic details remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C128",
+      "C131"
+    ],
+    "result": "The ability to form muscle arms during development dictates the choice of vm2 as the postsynaptic partner. vm2 muscle arms serve as postsynaptic specializations analogous to dendritic spines in vertebrate neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128 and C131 are supported by the functional data showing muscle arm necessity for proper synaptic function (Figure 2) and enrichment of postsynaptic markers. The analogy to dendritic spines is appropriate based on structural and functional similarities, though direct comparison experiments are not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Pre- and postsynaptic specializations develop independently at different times. HSN presynaptic specializations form at early L4, while muscle arms extend 5-6 hours later. Ablation of either component does not affect the other's development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C137 are supported by developmental timing observations and ablation experiments (Figure 1\u2014figure supplement 2A,B, citation to Shen and Bargmann, 2003). The temporal separation and independence challenge traditional models of synapse formation requiring bidirectional signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Vulval epithelial cells serve as guidepost cells for both pre- and postsynaptic development. Primary cells guide HSN presynaptic development via SYG-1/SYG-2, while secondary cells likely guide vm2 postsynaptic development. Muscle arms grow along the interface between primary and secondary cells, possibly through UNC-40-dependent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 integrate current findings with prior work (citations to Shen and Bargmann, 2003; Shen et al., 2004). Claims C141 and C142 are appropriately marked as inference/speculation. The organizational role of epithelial cells is well-supported, though the specific guidance mechanism for muscle arms requires further investigation.",
     "result_type": "MAJOR"
   }
 ]

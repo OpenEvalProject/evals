@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "DCNs are a homogeneous population of neurons produced from a single embryonic neuroblast that all express the same cell fate markers (Atonal and Acj6) and can be efficiently labeled with ato-Gal4 starting at L3 stage. These neurons innervate two regions of the optic lobes: the lobula and the medulla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the basic characteristics of DCNs. The expression of common fate markers is supported by both citations (C1, C2) and imaging data (C2, C3), and the dual innervation pattern is demonstrated in Figure 1 (C5). The ato-Gal4 labeling is confirmed by imaging (C4).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "DCN axon target choice occurs through a three-step developmental process: initial growth toward the medulla attracted by Wnt5, retraction of most axons back to the lobula in response to FGF signaling at 25-50 hr APF, and resistance of a small subset of regularly spaced axons that remain in the medulla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 describe the developmental timeline of DCN axon targeting. While C6 and C7 rely on prior work (Srahna et al., 2006), C8 and C9 are supported by imaging data in Figure 1. The three-step model is well-documented in the cited literature and confirmed by the current observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "DCNs show intrinsic variability in cell number (35-43 neurons, average 38) both between individuals and between hemispheres, yet produce a stereotyped pattern of approximately 12 medulla axons. There is no correlation between DCN number and medulla axon number, nor between birth order and target choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 establish the key paradox of the study. The quantitative data in Figure 2C-D support the variability in neuron number (C10, C11), and Figure 2\u2014supplement 1 shows no correlation with axon number (C12, r=0.3). The lack of birth order correlation (C13) is supported by flip-out experiments and cited work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "The dorsal-ventral position of a DCN axon is highly correlated (r=0.964) with the dorsal-ventral position of its soma within the cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is strongly supported by quantitative analysis shown in Figure 2H and Figure 2\u2014supplement 1. The very high correlation coefficient (r=0.964) indicates a robust positional relationship, though this does not determine medulla vs lobula targeting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "DCN soma density and medulla axon density show an inverse correlation along the dorsal-ventral axis: sparse soma dorsally/ventrally correspond to dense axon spacing, while dense soma medially correspond to sparse axon spacing. This inverse relationship is conserved across different cluster shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 describe a critical spatial pattern. The soma and axon density distributions are shown in Figure 3B-E (C15-C17), and the conservation across cluster shapes is demonstrated in Figure 3\u2014supplement 2 (C18). This pattern is central to the mutual inhibition hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "DCNs express Notch, Delta, and Neuralized at ~32 hr APF during axon sorting. All DCNs express the E(spl)-CD2 reporter, but with variable levels\u2014most cells show high levels while a minority show low levels. E(spl)-CD2 is very low at L3, and Numb is not detected in DCNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by immunostaining data in Figure 4A-F'. The temporal specificity (C23) and absence of Numb (C24) are stated as observations, though C23 and C24 rely on 'data not shown,' which weakens their support. The differential E(spl)-CD2 levels (C22) are crucial for the mutual inhibition model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "A computational model based on mutual inhibition predicts that control conditions produce ~12 medulla axons matching in vivo observations, while reduced Notch activity predicts ~17 clustered medulla axons arising from neighboring neurons, especially medially.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 describe computational predictions shown in Figure 5A-C. The in silico control (12.26\u00b12.3 SD) closely matches in vivo control (11.88\u00b11.2 SD), and the loss-of-function prediction (17.29\u00b13.96 SD) is quantitatively similar to experimental results. The model provides strong predictive support for the mutual inhibition hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Postmitotic, DCN-specific inhibition of Notch signaling (via NotchDN, Delta/Serrate inhibition, or Neuralized RNAi) causes clustered medulla axons and significantly increases medulla axon number (from ~12 to ~18), without altering DCN cell number or fate marker expression. Knockdown of canonical pathway components Su(H) and Mam produces similar phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 present the core genetic loss-of-function results shown in Figure 5D-M. The axon clustering and increased numbers are well-documented with statistical significance (p<0.001 for NotchDN, C28). The preservation of cell number (C29) and fate markers (C30) is shown in Figure 5\u2014supplements 4-5. The canonical pathway requirement (C32) strengthens the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Genetic interaction experiments show that Pak gain-of-function phenocopies Notch loss-of-function, while Pak knockdown reduces medulla innervation. Epistasis analysis indicates that Pak acts downstream of Notch and upstream of JNK in regulating axon target choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 establish the Notch-Pak-JNK pathway through genetic interactions shown in Figure 6A-D. The phenocopy (C33), rescue experiments (C35-C37), and epistasis relationships are internally consistent and support a linear pathway model. The quantitative data support the ordering of components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C74",
+      "C75"
+    ],
+    "result": "Notch activation reduces JNK activity via inhibition of Pak function. NICD expression in DCNs significantly reduces puc-LacZ levels (p=0.01), and NICD transfection in DmBG2-c3 cells decreases both Pak and pJNK levels. This establishes that Notch activity sets the JNK threshold distinguishing medulla from lobula targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C74-C75 present gain-of-function and cell culture data supporting the Notch-Pak-JNK model shown in Figure 6E-G. The in vivo puc-LacZ reduction (C38) and cell culture Western blots (C39) provide converging evidence. The mechanistic model (C74-C75) is well-supported by the genetic and biochemical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Temperature-shift experiments using Notch-ts reveal that Notch signaling is specifically required between 24-60 hr APF for proper axon target choice, but not before or after this window. DCN-specific temporal control using ato-Gal4 with Gal80-ts confirms this critical period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 define the temporal requirement for Notch shown in Figure 7A-E'. The temperature-shift experiments provide clear temporal resolution, and the Gal80-ts confirmation (C42) rules out indirect effects. The 24-60 hr APF window corresponds to the axon sorting phase, supporting the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Gain of Notch function via NICD or Su(H) expression strongly reduces medulla axon number in adults but does not inhibit initial axon outgrowth into the medulla, confirming that Notch specifically regulates axon retention rather than initial targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by imaging at different developmental stages in Figure 7F-J. The observation that initial outgrowth is normal but adult innervation is reduced demonstrates that Notch acts during the retraction/sorting phase, not during initial guidance. This is consistent with the temporal requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Single-cell MARCM analysis reveals that only 24% of control DCN clones target the medulla, while approximately 60% of Notch mutant clones (both null and dominant-negative) target the medulla (p<0.001), demonstrating that Notch signaling autonomously regulates individual DCN axon target choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 present single-cell clone data from Figure 8B-D. The statistical significance (p<0.001, Fisher's exact test) and consistency between null and DN alleles strongly support cell-autonomous Notch function (C47). The probabilistic nature (~60% vs 100%) is important for distinguishing this from binary fate specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "When single DCN neurons lose Notch function, the mutant axon targets the medulla but the overall pattern remains normal: 87% of mutant axons maintain normal spacing, total axon number is unchanged, and the dorsal-ventral positional relationship between soma and axon is preserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 demonstrate pattern robustness shown in Figure 8E'-G and supplements. The quantitative spacing analysis (C49, 87% within normal range) and preserved D-V relationships (C50) indicate that neighboring wild-type neurons compensate for the mutant cell's altered choice, supporting the mutual inhibition model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Multi-cell Notch mutant clones show axon clustering in 45% of cases (p=0.0094), with significantly increased medulla axon numbers (13.65\u00b11.09 vs 11.6\u00b11.19, p<0.001) and drastically reduced axon-axon distances, indicating that loss of Notch in neighboring neurons disrupts the compensation mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 present multi-cell clone data from Figure 8H-K. The statistical significance and contrast with single-cell clones strongly support the mutual inhibition model: when multiple interacting neurons lose Notch, compensation fails and clustering occurs. This validates the third prediction of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mutual inhibition among postmitotic neurons via Notch signaling regulates robust axon target choice in DCNs. Single neuron loss of Notch is compensated by neighbors preserving the pattern, while loss in neighboring neurons causes clustering. This represents a novel cell-fate-independent function for canonical Notch signaling in brain wiring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 synthesize the main conclusions. The mutual inhibition mechanism (C54-C55) is supported by computational modeling, expression patterns, loss/gain-of-function genetics, and single/multi-cell clone analysis. The cell-fate independence (C59) is demonstrated by preserved fate markers and the probabilistic nature of targeting. This is the central discovery of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Prior work has established that Notch functions in neural progenitor selection via lateral inhibition and in binary sibling cell fate specification via asymmetric Numb inheritance. In sensory systems, Notch-dependent fate specification determines axon targeting, but CNS neurons show more diverse wiring than cell types, suggesting post-fate mechanisms are important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 review established knowledge from the literature. The citations are appropriate and the characterization of prior work is accurate. This contextualizes the novelty of the current findings\u2014that Notch can regulate axon targeting independent of fate specification in postmitotic CNS neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors demonstrate that DCNs are intrinsically variable in number yet generate stereotyped wiring, and that Notch-mediated mutual inhibition acts late in development on postmitotic neurons to bias axonal target choice, ensuring reproducibility of the connectivity pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 summarize the study's approach and main findings. The variability (C69) is shown in Figure 2, the late postmitotic action (C70) in Figure 7, and the robustness mechanism (C71) in Figure 8. These claims accurately represent the integrated results of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Wnt and FGF have opposing effects on JNK activity, which is both necessary and sufficient for DCN axon growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 cite prior work (Srahna et al., 2006) establishing the Wnt-FGF-JNK pathway. While not directly tested in this manuscript, this provides essential context for understanding how Notch-Pak interactions modulate the existing guidance system. The citation is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Three lines of evidence distinguish the Notch function in DCNs from cell fate specification: the probabilistic (~60%) rather than deterministic targeting in Notch mutants, the restricted temporal requirement (24-60 hr APF), and the lack of effect on cell number or fate markers. Additionally, ato-Gal4 is only active postmitotically after axon outgrowth begins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 present key arguments for the cell-fate-independent interpretation. The probabilistic targeting (C76, Figure 8C) contrasts with binary fate decisions. The temporal restriction (C77, Figure 7) and ato-Gal4 activity pattern (C78, cited) support postmitotic action. These arguments are logically sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "While medulla vs lobula targeting can be viewed as a 'sub-fate' choice, the key discovery is that this choice is not cell-autonomously determined by birth order but is subject to regulation by neighboring cells' choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 present an important conceptual distinction. The lack of birth order correlation (Figure 2G) and the compensation by neighbors (Figure 8E-G) support that this is not a fixed lineage-based decision. This interpretation is reasonable given the data, though the boundary between 'fate' and 'targeting' could be debated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The inhibitory interactions likely occur between neuronal cell bodies given the requirement for nuclear factors Su(H) and Mam and effects on E(spl) transcriptional reporter, though interactions between axons cannot be formally ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 present a reasonable inference about the site of Notch signaling. The requirement for canonical nuclear components (Figure 5H-M) and transcriptional reporter activity (Figure 4) support soma-soma interactions (C81). The acknowledgment of uncertainty (C82) is appropriate given that axonal Notch signaling has been reported in other contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Lateral inhibition among postmitotic neurons represents a novel mechanism for brain wiring that provides an additional layer of regulation complementing, but independent of, traditional axon guidance cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 assert the novelty and significance of the findings. The postmitotic lateral inhibition function is indeed novel and well-demonstrated. The independence from guidance cues (C84) is supported by the fact that Notch acts during the retraction phase, not initial outgrowth, and modulates the response to existing Wnt/FGF signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The authors speculate that circuit-level plasticity via mutual inhibition may be more useful in higher-order brain centers than strict fate-to-targeting coupling, and that mechanisms ensuring population-level pattern reproducibility would be evolutionarily favored over mechanisms attempting to generate identical single-cell connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 present evolutionary and functional speculation. While these ideas are reasonable and thought-provoking, they are explicitly speculative and not directly tested. The speculation is clearly identified as such in the text, which is appropriate for a Discussion section.",
+    "result_type": "MINOR"
+  }
+]

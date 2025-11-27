@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Microarray analysis identified 229 genes showing significant NOVA-dependent changes in steady-state mRNA levels in Nova DKO versus WT brain. NOVA predominantly acts to increase (rather than decrease) steady-state transcript levels, with 215 transcripts decreased in DKO and only 14 increased. These findings were validated by qRT-PCR for selected transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The microarray analysis (C19) with appropriate statistical criteria (p<0.05, fold-change >0.3) is supported by independent qRT-PCR validation (C23, C25) of selected targets. The disproportionate effect on transcript upregulation (C20-C21) is clearly demonstrated by the data, though the biological mechanism underlying this asymmetry is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Nuclear and cytoplasmic fractionation followed by HITS-CLIP revealed compartment-specific NOVA binding patterns. Nuclear NOVA binds predominantly to intronic sequences (90%), while cytoplasmic NOVA binds primarily to 3' UTRs (63%). Importantly, the majority (76%) of NOVA CLIP tags on NOVA-regulated transcripts are intronic rather than in 3' UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The subcellular fractionation is validated by marker proteins showing >90% purity (C26). The HITS-CLIP data clearly demonstrate compartment-specific binding patterns (C27-C28), with appropriate controls for repetitive sequences (C29). The unexpected finding that NOVA-regulated transcripts show predominantly intronic binding (C31-C32) is well-documented and leads to the discovery of cryptic NMD exons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Dlg3 (SAP102) shows the most significant NOVA-dependent regulation, with nearly 10-fold reduction in mRNA levels and ~90% reduction in protein levels in NOVA DKO brain. This reduction is observed at the mRNA level by Northern blot, at the protein level by Western blot, and in individual neurons by immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Dlg3 regulation is demonstrated by multiple independent methods (Northern blot C34, Western blot C35, immunofluorescence C37) across biological replicates, with consistent quantitative results showing ~90% reduction at both mRNA and protein levels (C34-C36). The concordance between mRNA and protein changes (C36) supports a direct regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "NOVA regulates Dlg3 expression through control of cryptic NMD exons. RT-PCR identified a previously unknown Dlg3 isoform (Dlg3.15-16-17) containing a premature termination codon that is present in DKO but not WT brain. Emetine treatment (blocking translation/NMD) and Upf1 knockdown both rescue Dlg3 levels in DKO neurons, demonstrating that NOVA prevents NMD-mediated suppression of Dlg3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discovery of the cryptic NMD exon is supported by RT-PCR and sequencing (C40-C41). Two independent approaches to block NMD\u2014emetine treatment (C42-C44) and Upf1 knockdown (C45-C48)\u2014both rescue Dlg3 expression in DKO neurons, providing strong convergent evidence for the NMD mechanism. The single-cell immunofluorescence data (C47-C48) elegantly demonstrates the inverse relationship between UPF1 and DLG3 protein levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "NOVA regulates Scn9a through a converse NMD mechanism, where NOVA promotes inclusion of a PTC-containing exon (E17a) to suppress expression. In NOVA DKO, Scn9a mRNA increases 2.9-fold but protein decreases ~12-fold. Emetine treatment and Upf1 knockdown both increase E17a-containing transcripts, confirming NMD regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The paradoxical increase in mRNA but decrease in protein (C50-C53) is explained by the discovery of the NMD exon E17a (C54-C55). Both emetine treatment (C56) and Upf1 knockdown (C57) increase E17a-containing transcripts, providing convergent evidence for NMD-mediated regulation. This demonstrates that NOVA can both suppress (Dlg3) and promote (Scn9a) NMD exon inclusion to regulate protein levels bidirectionally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Systematic analysis of NOVA-regulated transcripts with intronic CLIP clusters identified cryptic NMD exons in 11 transcripts. In 7 transcripts, NOVA promotes NMD exon inclusion (leading to decreased levels in DKO), while in 4 transcripts NOVA suppresses NMD exons (leading to increased levels in DKO). Emetine treatment confirms NMD regulation for multiple targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic identification of cryptic NMD exons (C59-C60) using HITS-CLIP data as a guide demonstrates the predictive power of the approach. The bidirectional regulation (C61-C62) is confirmed by emetine experiments (C63-C64) for multiple targets. This establishes that NOVA-regulated NMD is a widespread mechanism for controlling neuronal transcript levels, not limited to individual examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "NOVA-regulated NMD exons are dynamically regulated by neuronal activity. Pilocarpine-induced seizures increase NMD exon inclusion in Scn9a, Cdk5rap2, and Stx2. Nova2 heterozygous mice exhibit spontaneous epilepsy with frequent bilateral epileptiform discharges and generalized seizures, demonstrating that NOVA haploinsufficiency has physiological consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The seizure-induced regulation of NMD exons (C66) is demonstrated by RT-PCR with appropriate controls (sham vs. pilocarpine). The EEG recordings from Nova2+/- mice (C68-C69) provide clear evidence of spontaneous epilepsy, establishing physiological relevance. However, the mechanistic link between NMD exon regulation and epilepsy phenotype remains correlative rather than causative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Global splicing analysis after pilocarpine-induced seizures reveals limited changes in alternative splicing. Only 23 exons show differential splicing at 24hr and 96 at 4hr (using stringent criteria), compared to 1,239 exons differentially spliced between brain and thymus. The affected transcripts are enriched for synaptic proteins, but only 8 of 35 validated targets are Nova-regulated, indicating seizures do not globally affect Nova splicing activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The exon junction array analysis (C71-C73) with appropriate validation by RT-PCR (C76) demonstrates limited global splicing changes after seizure. The comparison to tissue-specific splicing differences (C74) provides important context. The GO analysis (C77-C78) and overlap analysis with Nova targets (C79-C81) are appropriately interpreted to conclude that seizures have selective rather than global effects on splicing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Pilocarpine-induced seizures cause marked redistribution of NOVA protein from nucleus to cytoplasm within 2-4 hours. This shift is most pronounced in CA1 pyramidal neurons of the hippocampus (>6-fold change in nuclear/cytoplasmic ratio) and is not observed in cerebellar Purkinje neurons, consistent with the cortical nature of epilepsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The NOVA redistribution is clearly demonstrated by immunofluorescence microscopy (C82-C83) with quantitative analysis (C84). The regional specificity (C83, C85) is consistent with the cortical nature of pilocarpine-induced seizures. However, the functional consequences of this redistribution and its relationship to the limited splicing changes observed (C86) remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "NOVA regulates some transcript levels through direct 3' UTR binding. Syngr3, Glrb, and Gabbr1 have robust 3' UTR CLIP clusters and show reduced mRNA and protein levels in NOVA DKO. Reporter assays demonstrate that transcripts with YCAY elements are stabilized 25-65% relative to YAAY mutants, confirming direct NOVA binding to 3' UTR elements can regulate mRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 3' UTR targets are identified by HITS-CLIP (C87) and validated by multiple methods (qRT-PCR C88, Northern blot C89, Western blot C90). The reporter assays (C91) provide direct evidence that NOVA binding to 3' UTR YCAY elements stabilizes transcripts. However, the magnitude of the effect (25-65% stabilization) is modest compared to the NMD-mediated effects, consistent with the authors' conclusion that 3' UTR regulation is a secondary mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "GO analysis reveals that NOVA-regulated transcripts (steady-state level changes) encode proteins involved in synaptic biology and transport. Importantly, only 18 genes overlap between transcripts regulated at the steady-state level and those regulated strictly by alternative splicing, indicating these represent distinct functional programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GO analysis (C93) appropriately identifies functional enrichment in synaptic proteins. The comparison between steady-state and splicing-regulated targets (C94-C95) is well-supported by the data and reveals an important biological insight: NOVA regulates different functional programs through different mechanisms. This strengthens the significance of the NMD-mediated regulation as a distinct regulatory layer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "NOVA binding to Dlg3 3' UTR elements has a modest effect (~50% reduction) on steady-state levels in reporter assays, suggesting 3' UTR regulation alone cannot account for the large changes observed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reporter assay (C39) provides direct evidence for NOVA-mediated stabilization through 3' UTR binding, but the magnitude (~50%) is insufficient to explain the ~10-fold reduction in Dlg3 levels in DKO brain. This appropriately motivates the search for additional regulatory mechanisms (i.e., the cryptic NMD exons).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The cryptic NMD exons regulated by NOVA are evolutionarily conserved, suggesting regulatory rather than quality-control function. The authors propose a model where NOVA maintains transcript balance through both NMD-coupled alternative splicing (primary mechanism) and direct 3' UTR interactions (secondary mechanism).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The evolutionary conservation claim (C105) is stated but cites a manuscript in preparation, so the evidence cannot be evaluated. The proposed model (C106) is a reasonable synthesis of the experimental findings, but represents an interpretive framework rather than a directly tested result. The relative contributions of NMD versus 3' UTR mechanisms are inferred from the magnitude of effects rather than directly measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Among transcripts with NOVA 3' UTR binding, a significant number also have intronic NOVA binding, suggesting a possible hierarchy where nuclear binding precedes and potentially determines 3' UTR binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of overlapping intronic and 3' UTR binding (C119) is supported by the HITS-CLIP data. However, the proposed hierarchy (C120) is speculative and not directly tested. The correlation between nuclear and cytoplasmic binding could reflect multiple mechanisms (cis-reassortment, independent binding events, or technical artifacts from incomplete fractionation). Additional experiments would be needed to establish causality.",
+    "result_type": "MINOR"
+  }
+]

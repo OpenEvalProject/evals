@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Arabidopsis starch reserves accumulate linearly during the day and decrease approximately linearly at night, with the degradation rate adjusted to accommodate variations in darkness onset time and starch content such that reserves last almost precisely until dawn. This pattern is extremely robust and achieved even when darkness comes unexpectedly early.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C5, C6, and C7 are well-supported by experimental data shown in Figure 1 and citations to previous studies. The linear accumulation during the day and linear degradation at night with appropriate rate adjustment is demonstrated across multiple experimental conditions (early night, late night, different light levels) with consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C10"
+    ],
+    "result": "Generation of appropriate starch degradation dynamics requires an arithmetic division computation between starch content and expected time to dawn, with the circadian clock providing timing information and control likely occurring at the post-translational level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8, and C10 are supported by the combination of mathematical modeling, experimental validation with circadian clock mutants (C8, C12-C13), and the observation that enzyme levels remain constant while transcripts vary (C9). The inference that post-translational control is required is logical given the enzyme level data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Starch degradation rate adjustment in response to variations in darkness onset time and starch content occurs in wild-type Arabidopsis, the cca1/lhy circadian clock mutant, and the evolutionarily distant species Brachypodium distachyon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 are directly supported by experimental data shown in Figures 1A-D. The experiments demonstrate that plants adjust starch degradation rates appropriately under various conditions (early/late night, reduced light levels) such that starch is depleted by dawn, with this behavior conserved across species and even partially functional in clock mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "The mechanism underlying control of starch degradation is likely present in evolutionarily distant species of plants, as Arabidopsis and Brachypodium diverged at least 140 Myr ago yet show similar starch degradation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C17 are supported by the experimental data showing similar starch degradation patterns in both Arabidopsis and Brachypodium (C15, Figure 1D) combined with established evolutionary knowledge about their divergence time. The inference of conservation is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C25"
+    ],
+    "result": "Two mathematical models are proposed involving hypothetical molecules S (proportional to starch content) and T (encoding time to dawn information), where Model 1 has T proportional to time to dawn and Model 2 has T proportional to 1/(time to dawn).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19-C21 and C25 describe theoretical assumptions for mathematical models. While these assumptions are clearly stated as speculative (C19, C20 marked as SPECULATION), the molecules S and T remain hypothetical and unidentified. The models are useful theoretical constructs but lack direct experimental validation of the proposed molecular species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C26",
+      "C30"
+    ],
+    "result": "Arithmetic operations including addition, subtraction, multiplication, and division can be implemented using analog chemical kinetics, with two specific models proposed for implementing division in starch degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C23, C26, and C30 are supported by the mathematical modeling work presented. The authors demonstrate through detailed kinetic equations that these operations can be implemented, though the specific molecular implementations remain theoretical. The models successfully fit experimental data (C24, C27), providing indirect support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Both mathematical models fit experimental data well, assuming degradation occurs in fixed surface area regions as granules shrink, with this assumption holding even when granules reach very small volumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C27, C28, and C29 are supported by the model fits shown in Figures 2F-K. The models successfully reproduce experimental data across multiple conditions. The acknowledgment that the fixed surface area assumption should break down at small volumes (C29) but that fits remain good demonstrates appropriate scientific caution and empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The starch degradation rate is continuously computed during the night rather than set once at darkness onset, as demonstrated by night-time light period experiments showing significantly increased degradation rates after the light period without clock re-entrainment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are strongly supported by experimental data in Figure 3 with statistical significance (p = 1.6 \u00d7 10\u207b\u00b3 and 3.8 \u00d7 10\u207b\u2075). The control experiment monitoring LHY expression (C34, C85-C86) confirms the clock was not re-entrained, strengthening the interpretation that rate recalculation occurs continuously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Mathematical models predict that a factor specifying relative degradation rates must be fine-tuned to one for complete starch depletion; when this factor is <1, only a fixed percentage of starch is degraded. This prediction is confirmed by lsf1 and sex4 mutants that degrade constant fractions (~30% and ~45% respectively) of starch each night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 demonstrate successful prediction and validation. The mathematical requirement (C37-C38) is derived from the models, and the mutant phenotypes (C39-C41, Figure 4A-B) match the predictions. The observation that the degraded fraction remains constant across nights with varying starch content strongly supports the model prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Five starch degradation mutants (lsf1, sex4, bam3, bam4, isa3) retain the ability to adjust degradation rates in response to early night, but the pwd mutant does not (R=1.10\u00b10.10 vs expected 1.33, p=0.01), indicating PWD may be a key integration node for starch content and timing information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by experimental data in Figure 4C-F with appropriate statistical analysis. The differential behavior of pwd compared to other mutants is statistically significant and provides strong evidence for PWD's role. The inference about PWD being an integration node (C45) is reasonable given the data, though additional experiments would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "PWD participates in a phosphorylation/dephosphorylation cycle essential for starch degradation, where GWD and PWD add phosphate groups to starch polymers and SEX4 and LSF2 remove them, with phosphorylation disrupting granule structure to allow enzyme access and dephosphorylation required for complete degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe established knowledge about starch metabolism supported by multiple citations (C48, C50) and general knowledge (C46, C47, C49). The inference that this cycle is a candidate for flux integration (C51) is reasonable given the known functions and the experimental results with mutants in this pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C58"
+    ],
+    "result": "Phosphate levels per unit mass of starch show large daily changes over the light/dark cycle, implying that the hypothetical S molecule may modulate phosphorylation/dephosphorylation cycle enzyme activities to track starch content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, and C58 are supported by experimental data in Figure 5 showing phosphate level changes. The observation that phosphate per unit mass varies (rather than remaining constant) is surprising and informative. However, the inference about the S molecule (C53) remains speculative since S is hypothetical, though the data support that phosphorylation state could encode starch content information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Mutants with defects in starch accumulation or degradation have reduced productivity and exhibit starvation symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is supported by citations to previous studies (Usadel et al., 2008; Yazdanbakhsh et al., 2011). This is established prior knowledge that provides context for the importance of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "A separate measure is required to provide information about total starch content because starch exists as large polymers mostly inaccessible within granule matrices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is a reasonable inference based on established knowledge about starch granule structure. The physical inaccessibility of most starch polymers within granules logically necessitates an indirect measurement mechanism, supporting the theoretical motivation for the S molecule.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Parameter variation exists between experimental datasets for both models, arising from biological variation between experiments even for single genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by the parameter tables (Tables 3-6) and represents appropriate acknowledgment of experimental variability. This is a common phenomenon in biological experiments and does not undermine the model validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The work provides a new framework for understanding reserve utilization in plants at night, with mathematical modeling generating two division mechanisms and experimental validation through abnormal light/dark cycles and mutant analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 accurately summarize the study's contributions. The framework is supported by the combination of mathematical modeling (C56), experimental validation (C57), and the overall coherence of results. This represents a synthesis of the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The analysis may be relevant to other biological systems where food reserves must last through predictable fasting periods, such as migrating birds and fasting penguins, where reserve utilization rates could potentially be computed by arithmetic division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C62 are speculative extensions of the work. While the examples cited (C60, C61) are supported by literature, the claim that these systems use arithmetic division (C62) is purely speculative without experimental evidence. This represents interesting future directions but lacks current support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "This work provides the first concrete biological example where arithmetic computation is fundamentally important, demonstrating the utility of analog chemical kinetics for biological computations and potentially for synthetic biology applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by the work presented and appropriate citations. The claim of novelty (C65) is justified by comparison to previous theoretical work that lacked biological applications (C66). The speculation about synthetic biology applications (C67) is reasonable though not experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Arabidopsis and Brachypodium plants were grown under controlled conditions (12-hr light/dark, 200 \u00b5mol quanta m\u207b\u00b2 s\u207b\u00b9, 20\u00b0C) and starch was quantified enzymatically after perchloric acid extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C69 describe standard experimental methods that are clearly documented and referenced to previous work (Graf et al., 2010). These methods are appropriate for the measurements performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The cca1/lhy circadian clock mutant has a free-running period <24 hr and exhausts starch reserves around 21-22 hr after dawn instead of 24 hr, but retains the ability to adjust degradation rate in response to early night such that starch is again depleted at 21-22 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by established knowledge about the mutant (C70) and experimental data in Figure 1B (C71-C72). This demonstrates that while the timing is altered in the mutant, the adjustment mechanism remains functional.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "The lsf1 and sex4 mutants fail to completely degrade starch at night, degrading constant percentages (~45% and ~30% respectively) regardless of initial content. This phenotype is compatible with model predictions for altered degradation rate factors and consistent with the genes' roles in starch degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C74, C76, and C77 are supported by experimental data (Figure 4A-B) and model interpretation. The consistency between mutant phenotypes and model predictions strengthens both the experimental observations and the theoretical framework. The connection to gene function (C77) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The pwd mutant lacks the enzyme responsible for adding phosphate groups to starch, shows linear but incomplete starch degradation, and uniquely fails to adjust degradation rate in response to early night (R=1.10\u00b10.10, p=0.01), indicating PWD is a key integration node and target for future experiments to identify S and T molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are well-supported by established knowledge (C78), experimental data (C79-C81, Figure 4E-F), and statistical analysis. The inference about PWD as an integration node (C82) is strongly supported by the unique phenotype. The suggestion for future experiments (C83) is appropriate speculation based on the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Night-time light exposure could potentially re-entrain the circadian clock, but LHY expression analysis shows only minor effects with a delayed peak at ~24 hr after previous dawn, indicating the clock was not re-entrained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 address an important experimental control. The potential concern (C84) is appropriately investigated, and the LHY expression data (C85, Figure 3\u2014figure supplement 1) support the interpretation that re-entrainment did not occur (C86). This validates the night-time light period experiments.",
+    "result_type": "MINOR"
+  }
+]

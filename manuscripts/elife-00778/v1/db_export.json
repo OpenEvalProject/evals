@@ -1,0 +1,2183 @@
+{
+  "submission": {
+    "id": "5f76ad47-6ac2-4e75-badf-535d42758fb0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T06:09:07.195891Z",
+    "updated_at": "2025-11-27T06:09:07.195891Z"
+  },
+  "content": [
+    {
+      "id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "submission_id": "5f76ad47-6ac2-4e75-badf-535d42758fb0",
+      "content_type": "manuscript",
+      "content_text": "# Direct single molecule measurement of TCR triggering by agonist pMHC in living primary T cells\n\n## Authors\n\n- Geoff P O'Donoghue<sup>1</sup>\n- Rafal M Pielak<sup>1</sup>\n- Alexander A Smoligovets<sup>1</sup>\n- Jenny J Lin<sup>1</sup>\n- Jay T Groves<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Chemistry Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n2. Physical Biosciences Division Lawrence Berkeley National Laboratory, University of California, Berkeley Berkeley United States\n3. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nT cells discriminate between self and foreign antigenic peptides, displayed on antigen presenting cell surfaces, via the TCR. While the molecular interactions between TCR and its ligands are well characterized in vitro, quantitative measurements of these interactions in living cells are required to accurately resolve the physical mechanisms of TCR signaling. We report direct single molecule measurements of TCR triggering by agonist pMHC in hybrid junctions between live primary T cells and supported lipid membranes. Every pMHC:TCR complex over the entire cell is tracked while simultaneously monitoring the local membrane recruitment of ZAP70, as a readout of TCR triggering. Mean dwell times for pMHC:TCR molecular binding of 5 and 54 s were measured for two different pMHC:TCR systems. Single molecule measurements of the pMHC:TCR:ZAP70 complex indicate that TCR triggering is stoichiometric with agonist pMHC in a 1:1 ratio. Thus any signal amplification must occur downstream of TCR triggering.\n\n## Introduction\n\nAn essential aspect of adaptive immunity is the ability of T cells to discriminate between structurally similar agonist and non-stimulatory self peptides bound to major histocompatibility complex (pMHC) molecules presented on the surface of antigen-presenting cells (APCs) (Weiss and Littman, 1994). Fewer than 10 agonist pMHC molecules can trigger T cells (Irvine et al., 2002; Manz et al., 2011), and the signaling response occurs on a timescale of seconds (Huse et al., 2007). It has been recognized for decades that subtle, peptide-specific differences in binding parameters, especially kinetic rates for the pMHC and T cell receptor (TCR) reaction, seem to be the basis of antigen recognition (Matsui et al., 1994; Tian et al., 2007). Experimental correlations between molecular pMHC:TCR binding kinetics, typically determined from solution assays of soluble extracellular domains and bulk measurements of T cell activity, have provided the foundation for much of this understanding.\n\nFrom a physical point of view, the extreme sensitivity, selectivity, and apparent immunity to stochastic noise exhibited by TCR antigen recognition pose challenges to classical notions of ligand-receptor signaling (van der Merwe and Dushek, 2011; Dustin and Groves, 2012). For example, the maximum affinity a TCR can have for self pMHC ligands (non-triggering) is sharply defined and close to the affinity threshold for foreign pMHC (triggering). Consequently, every TCR is likely to bind a subset of the ever-present self pMHC molecules with affinities differing only slightly from genuine foreign agonist pMHC. If TCR triggering and signaling were simply proportional to TCR occupancy by ligand, then the abundance of self pMHC could easily overwhelm genuine agonist signals, rendering this as an ineffective discriminatory mechanism. Alternatively, each engagement of pMHC with TCR (serial triggering; Valitutti et al., 1995), perhaps with some minimum engagement time (kinetic proof reading; McKeithan, 1995; Rabinowitz et al., 1996), might define the threshold for TCR triggering. Other proposed mechanisms elaborate further, suggesting (pseudo) heterodimers (Irvine et al., 2002; Krogsgaard et al., 2005) of self and agonist pMHC molecules or pMHC-independent forms of trans activation (Cooper and Qian, 2008) of multiple TCR by a single agonist pMHC may be at work. Proving or disproving any of these various possibilities based on current data is confounded by the vast difference between ensemble biochemical measurements and cell population behavior. Substantial ambiguity with respect to the actual molecular mechanisms responsible for antigen triggering of T cells remains. A physically accurate understanding of this remarkable process will require simultaneous observations of the molecular binding kinetics, stoichiometry, and movement of individual signaling complexes in living T cells.\n\nHere, we characterize the molecular interactions between pMHC and TCR, at the single molecule level, while simultaneously monitoring the local membrane recruitment of cytosolic Zeta-chain-associated protein kinase 70 (ZAP70) in live primary T cells. Every pMHC can be individually resolved and tracked for up to minutes before photobleaching by using a multi-timescale single molecule fluorescence imaging approach. Key to this strategy is the variable control of excitation light dose and exposure time to achieve hardware discrimination of molecular species with different mobilities. The pMHC molecules fall into two unambiguously distinguished classes: one undergoing fast random motion and the second moving slowly along linear trajectories. These slow moving pMHC are the bound pMHC:TCR complexes; they are only observed with agonist peptide and they spatially correlate with both TCR and recruitment of ZAP70. The linear trajectories of the pMHC:TCR complexes match the well-characterized cytoskeleton-driven movement of TCR during the formation of the immunological synapse (Campi et al., 2005; Yokosuka et al., 2005; DeMond et al., 2008; Yu et al., 2012). Thus a lone agonist pMHC bound to TCR leads to stable engagement of the resulting complex with the cytoskeleton. Single molecule intensity calibration of the number of ZAP70 recruited to the vicinity of each agonist pMHC indicates that TCR are triggered in a 1:1 stoichiometry with pMHC.\n\nAssociations of pMHC with TCR exhibited molecular binding dwell times with mean durations of 53.8 \u00b1 12.2 s and 5.2 \u00b1 0.2 s for AND and 5c.c7 TCRs, respectively. Individual dwell times are roughly exponentially distributed and are in general agreement with bulk solution measurements of pMHC:TCR kinetic off-rates for both TCRs (Corse et al., 2010; Huppa et al., 2010; Newell et al., 2011). However, dwell times measured from tracking experiments specifically correspond to spatial entrapment of pMHC with a TCR, or cluster of TCRs (Schamel and Alarcon, 2013), on the T cell surface. They do not necessarily correspond to individual molecular binding events with a single TCR. Indeed, recent studies (e.g., by FRET) have suggested that pMHC:TCR kinetic off-rates may be accelerated in living cells relative to in vitro measurements, possibly as a result of actively applied forces from the cytoskeleton (Huang et al., 2010; Huppa et al., 2010; Zhu et al., 2013). We explore the possibility that individual dwell times observed by tracking experiments could be composed of rapid unbinding and serial rebinding of pMHC to multiple TCR within a cluster. Results from a stochastic reaction-diffusion analysis, covering a wide range of parameter space, indicate that serial rebinding alone is unlikely to sustain entrapment. If pMHC thoroughly disengages from TCR, it will most likely escape. Structural flexibility within the pMHC:TCR complex (Adams et al., 2011; Hawse et al., 2012; Reboul et al., 2012) could give rise to apparently fast kinetics (e.g., in FRET measurements) without actual unbinding of pMHC from TCR. The tracking observations reported here directly reveal that the functional interaction between agonist pMHC and TCR is long-lived in living cells and that triggered TCR remain localized with the same pMHC.\n\n## Results\n\n### Characterization of agonist pMHC:TCR complexes\n\nWe probe agonist pMHC:TCR complex dynamics in hybrid live cell\u2014supported membrane junctions(Grakoui et al., 1999) (Figure 1A). The supported membrane is functionalized with MHC (IEk) and intercellular adhesion molecule-1 fusion with a blue fluorescent protein (ICAM1-TagBFP), both linked to the membrane via C-terminal poly-His tag binding to Ni-chelating lipids (Nye and Groves, 2008). The MHC is loaded with peptide (moth cytochrome c [MCC] agonist or null), which is covalently coupled in a 1:1 stoichiometry (verified by HPLC) to the photostable fluorophores Atto647N or Atto488 using maleimide-thiol chemistry. Upon contact between the T cell and the supported membrane, Leukocyte function-associated antigen 1 (LFA1)-ICAM1 binding leads to rapid cell spreading and formation of an essentially planar interface between the T cell and supported membrane, within which pMHC:TCR interactions occur.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00778/elife-00778-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the hybrid live cell\u2013SLB system. Binding of agonist pMHC to TCR (PDB, 3QIU) leads to phosphorylation of ITAMs, on the intracellular domain of the TCR, which is followed by recruitment of the kinase ZAP70 (PDB, 2OQI, 2OZO). We directly observe both pMHC:TCR binding and ZAP70:ITAM recruitment using single molecule fluorescence microscopy (bilayer adapted from Domanski et al., 2010). (B) At short exposure times (17.5 ms, left) all agonist pMHC molecules are readily resolved. Imaging with a long exposure time (500 ms, right) allows for unambiguous discrimination between the slow, TCR-bound fraction of agonist pMHC and the fast diffusing fraction. This also allows for long (1\u201310 s interval) time-lapse sequences (Video 1). Automated detection of single molecule features (red circles) is discussed in methods. (C) Representative intensity trace showing a single agonist pMHC molecule, identified by step photobleaching, bound continuously for \u223c60 s. (D) Step size histogram of single agonist pMHC molecules in a SLB is bimodal under T cells (red) and unimodal before addition of T cells (blue). pMHC molecules in (B)\u2013(D) were labeled with Atto647N on the MCC peptide.\n\nAt fast exposure times (17.5 ms) and high excitation powers (0.2 W/cm2), all pMHC molecules are readily resolved (Figure 1B, left panel). The pMHC move as individual molecules, as identified by single-step photobleaching, and can be continuously tracked for up to hundreds of frames (Figure 1C). In regions without a cell, pMHC exclusively exhibit random diffusive motion. The step-size distribution from these trajectories corresponds to a single lateral diffusion coefficient of 0.44 (SEM = 0.002) \u00b5m2/s, which is typical for supported membranes (Lin et al., 2010). Within the T cell junction, the step-size distribution becomes bimodal (Figure 1D). In addition to a fast component from freely diffusing pMHC, a distinct slow-moving component also appears.\n\nAt long exposure times (500 ms) and low excitation powers (0.02 W/cm2), the fast moving pMHC fraction in Figure 1D is averaged over several pixels to form a relatively homogenous background. The slow moving molecules remain highly localized and can be unambiguously tracked for longer than a minute, using 1\u201310 s time-lapses (Figure 1B, right panel; Video 1). The slow moving pMHC molecules colocalize with TCR (Figure 2) and move in linear trajectories toward the geometric center of the live cell-supported membrane junction; these are the pMHC:TCR complexes. When MHC is loaded with a mixture of agonist and null peptides, with different fluorescent labels, only the agonist peptides are observed in the slow-moving complexes (Figure 3). The result is identical when the fluorophores are reversed, excluding the possibility that fluorophore effects could be responsible for binding.\n\n![Video 1.](https://cdn.elifesciences.org/articles/00778/elife-00778-media1.mov.jpg)\n\n**Video 1.:** A long (500 ms) exposure time allows for unambiguous discrimination between TCR-bound and unbound agonist pMHC in the bilayer. The hardware filtering approach utilized here facilitates particle detection in a relatively dense field of fluorophores, allowing for linking particles between frames even when long (1\u201310s) time lapses are introduced. This technique also has the advantage of using only one probe, compared to other techniques for detecting ligand binding, such as smFRET, which require two different color probes to detect one molecular binding event. These advantages allow for simultaneous two color single molecule tracking and kinetics measurements.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00778/elife-00778-fig2-v1.jpg)\n\n**Figure 2.:** (A) and (B) TCR and agonist pMHC colocalize in bulk in the central supramolecular assembly cluster (cSMAC) and (C) at the single molecule level. Although TCR clusters were not readily observed in these experiments (even using a 4 s camera integration time), previous reports indicate that TCR does cluster at the agonist density (\u223c0.2 molecules/\u00b5m2) used here (Varma et al., 2006). However, these reports used GPI-MHC, which is problematic because this GPI-linked protein is associated with clustering in supported membranes (Manz et al., 2011; Dustin and Groves, 2012). The Ni2+-chelating lipids used in supported membranes for the experiments reported here have been shown to increase the likelihood that attached proteins are monodispersed (Manz et al., 2011; Xu et al., 2011), and this is confirmed by direct single molecule observation in our experiments.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00778/elife-00778-fig3-v1.jpg)\n\n**Figure 3.:** RICM images map the footprint of T cell adhesion to the SLB (mediated through LFA1:ICAM1 binding). T cells engage SLBs conjugated with mixtures of independently labeled MCC agonist and null peptide MHC. Only the MCC agonist pMHC is observed in the slow moving fraction, irrespective of which fluorescent label (Atto488 or Atto647N) it carries.\n\nThe agonist pMHC densities used in these experiments range from 0.2 to 100 molecules/\u00b5m2. The lowest densities are near thresholds for triggering Ca2+ flux (Manz et al., 2011) and below levels where stable TCR microclusters are readily visible (Figure 2), whereas the higher densities are well above the densities at which microclusters are observed (Campi et al., 2005; Yokosuka et al., 2005; DeMond et al., 2008; Yu et al., 2012). Nonetheless, the observed single molecule pMHC motion at all densities is reminiscent of the well-characterized actomyosin-driven TCR microcluster radial transport in cells that are activated (Campi et al., 2005; Yokosuka et al., 2005; Kaizuka et al., 2007; DeMond et al., 2008; Yu et al., 2012).\n\n### TCR triggering monitored by ZAP70 recruitment\n\nTwo-color single molecule tracking is used to quantitatively monitor membrane recruitment of cytosolic ZAP70-EGFP (incorporated by retroviral transfection) to the locations of the pMHC:TCR complexes. Using a dual-view system in which chromatic aberrations have been mapped (Figure 4\u2014figure supplement 1), spatial colocalization between the two channels to less than 105 nm is achieved. Immediately after cell landing, ZAP70 localizes to and moves together with the pMHC:TCR complexes (Figure 4A; Videos 2 and 3). For each frame in a tracking sequence, fluorescence intensity in the ZAP70-EGFP channel is integrated over a 315 nm square region centered on each pMHC:TCR complex (Figure 4B). The resulting intensity traces reveal discrete changes in average intensity, which we attribute to the binding of one ZAP70-EGFP to the phosphorylated ITAM domains on the cytoplasmic side of TCR engaged with pMHC (Iwashima et al., 1994). Representative traces of colocalized ZAP70-EGFP intensity along with the corresponding intensity trace from the pMHC are illustrated in Figure 4C. Stochastic transitions are identified using a change-point algorithm (Ensign and Pande, 2009) and results from this analysis are superimposed on the raw intensity traces. Observed molecular binding dwell times of individual ZAP70-EGFP, as resolved by the stochastic transitions, range from 12 to 107 s. The majority of single molecule ZAP70-EGFP traces exhibit intensity fluctuations consistent with background (Figure 4\u2014figure supplement 2A), which would not be expected if cytosolic ZAP70-EGFP exchanged during exposure time. These dwell times are slightly longer than estimates of \u223c10 s obtained from bulk fluorescence recovery after photobleaching (FRAP) experiments (Bunnell et al., 2002). However, those experiments also identified a slower-exchanging fraction of ZAP70 that was not included in the average.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00778/elife-00778-fig4-v1.jpg)\n\n**Figure 4.:** (A) A spatial map of MCC-Atto647N single molecule (red) and ZAP70-EGFP (blue) puncta. Raw data are included as Videos 2 and 3. Data were recorded at 1 frame/s, such that each adjacent blue or red dot was recorded 1 s apart. Both single MCC agonist pMHC molecules and ZAP70-EGFP puncta follow linear trajectories towards the geometric center of the 2D cell\u2013supported bilayer interface. (B) Single ZAP70-EGFP molecules recruited to single agonist pMHC molecules (labeled with MCC-Atto647N) are recorded using sub-pixel color registration (Figure 4\u2014figure supplement 1). (C) Representative single molecule ZAP70-EGFP (blue) and MCC-Atto647N agonist pMHC (red) localized fluorescence intensity traces. Change-points are detected using a Bayesian change point algorithm (in black; see methods). Step decreases in MCC intensity (red) are most likely agonist pMHC:TCR unbinding events, since $\\tau_{off}\u226a\\tau_{bl}$. Step increases in ZAP70 intensity (blue) are attributed to ZAP70:ITAM binding. (D) ZAP70-EGFP puncta brightness histogram is symmetric and centered at 136.0 counts \u00b1 0.04 SEM and corresponds to an average of 2.9 \u00b1 0.04 SEM EGFP molecules (using six single molecule ZAP70-EGFP traces from the same cell for intensity calibration). Bright ZAP70-EGFP speckles are detected from the raw data using an automated algorithm (blue circles; see methods). Scale bar 5 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00778/elife-00778-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Tetraspec beads adhered to piranha-etched coverglass are used to spatially register the EGFP and Atto647N channels in our split camera apparatus. Ten consecutive images are recorded and the coordinate map is generated in post processing (see \u2018Materials and methods\u2019). (B) and (C) Registration to less than one pixel (105 nm) is achieved across the majority of the 26 \u00d7 52 \u00b5m imaging area. T cells are typically 10 \u00b5m in diameter, and are imaged at the center of the field of view.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00778/elife-00778-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) The majority of single molecule agonist pMHC traces result in ZAP70-EGFP traces with intensity fluctuations consistent with the background. Step increases and decreases in ZAP70-EGFP intensity are rare, but single ZAP70-EGFP events are long-lived (12\u2013107 s). Taken together, these observations indicate that rapid ZAP70-EGFP unbinding and rebinding in between observations is unlikely. If rapid unbinding/rebinding were to occur, then either single molecule ZAP70-EGFP traces would more frequent and shorter, or ZAP70-EGFP traces without single step intensity increases or decreases would be noisier. (B) A small minority of agonist pMHC traces exhibit two-step photobleaching, indicating pMHC dimerization. However, the ZAP70-EGFP output for these traces is equivalent to the ZAP70-EGFP output for single agonist pMHC single molecule traces.\n\nZAP70-EGFP features brighter than single molecules are also observed and we calibrate their stoichiometries using single molecule ZAP70-EGFP intensities from the same cell. For example, the average ZAP70-EGFP feature intensity per frame (136.0 counts \u00b1 0.04 SEM, integrated over a 315 nm square area for each feature) for the cell shown in Figure 4D corresponds to 2.9 \u00b1 0.04 SEM ZAP70-EGFP per feature, given that the single molecule intensity is 47 \u00b1 2 counts (SEM; n = 6) in that cell. Each feature therefore contains on average \u223c6 ZAP70 molecules, since ZAP70-EGFP was expressed in a roughly 1:1 ratio with endogenous ZAP70 (selected by FACS and confirmed by western blotting) in these experiments. Each TCR complex has 10 ITAM domains that, when phosphorylated, can bind one ZAP70 each (Weiss and Littman, 1994). Thus observation of \u223c6 ZAP70 per agonist pMHC suggests only a single TCR is triggered.\n\nBrighter ZAP70-EGFP features tend to be located towards the geometric center of the cell at later time points (>5\u201310 min after T cell landing). These can be tracked for tens to hundreds of seconds, indicating that recruited ZAP70-EGFP remain stably associated with the pMHC:TCR complex while traveling along the same linear trajectories (Figure 4A; Videos 2 and 3). The observation of a range of ZAP70-EGFP stoichiometries (from 1 to \u223c10 ZAP70-EGFP per pMHC:TCR complex) implies that some time-dependent accumulation of ZAP70 is likely to occur, although we have not definitively observed ZAP70-EGFP accumulation over time within individual intensity traces. Taken together, these observations demonstrate that engagement of TCR with an individual agonist pMHC molecule leads to stable association with the actin cytoskeleton, one-to-one TCR triggering (ITAM phosphorylation), and subsequent ZAP70 recruitment. Moreover, since every pMHC:TCR:ZAP70 complex is individually resolved in these experiments, we demonstrate that a single pMHC:TCR complex can lead to TCR triggering without molecular-scale association with other MHC molecules.\n\n![Video 2.](https://cdn.elifesciences.org/articles/00778/elife-00778-media2.mov.jpg)\n\n**Video 2.:** ZAP70-EGFP membrane recruitment (Video 2) and pMHC:TCR binding (Video 3) occur almost immediately after landing. Radial transport of pMHC:TCR:ZAP70 complexes commences immediately after landing. Data were recorded at 1 frame per second with a 500 ms integration time. These data were analyzed to create the spatial map of pMHC and ZAP70 positions displayed in Figure 4A.\n\n![Video 3.](https://cdn.elifesciences.org/articles/00778/elife-00778-media3.mov.jpg)\n\n**Video 3.:** This video shows binding of pMHC:TCR, and is from the same cell as the ZAP70-EGFP data in Video 2. Agonist pMHC is labeled as MCC-Atto647N. These data were analyzed to create the spatial map of pMHC and ZAP70 positions displayed in Figure 4A.\n\n### Single molecule agonist pMHC:TCR binding kinetics\n\nSince the slow-moving pMHC can be clearly resolved from the fast moving component, the lifetime of molecules in this bound state is directly observable. The minimum detectable lifetime is limited by the fastest frame rate (17.5 ms per frame) and the maximum measureable lifetime is limited by photobleaching. For these single molecule tracking experiments, the temporal dynamic range spans from \u223c50 ms to \u223c5 min. Unbinding and photobleaching are indistinguishable in fluorescence methods such as this. For molecular binding, characterized by a constant kinetic off-rate, the distribution of observed dwell times, \u03c4obs, is described byf(\u03c4obs)=(\u2329\u03c4bl\u232a\u22121+\u2329\u03c4off\u232a\u22121)e\u2212\u03c4obs(\u2329\u03c4bl\u232a\u22121+\u2329\u03c4off\u232a\u22121),where \u2329\u03c4bl\u232a\u22121 is the photobleaching rate (kb), \u2329\u03c4off\u232a\u22121 is the unbinding rate (koff), and (\u2329\u03c4bl\u232a\u22121+\u2329\u03c4off\u232a\u22121)\u22121=\u2329\u03c4obs\u232a is the observed mean dwell time in this experiment. The observed dwell time distributions are roughly exponential, as is expected for molecular binding. Thus by measuring both kbl and \u2329\u03c4obs\u232a it is possible to determine \u2329\u03c4off\u232a as long as \u2329\u03c4obs\u232a\u2264\u2329\u03c4bl\u232a. We determine \u2329\u03c4off\u232a to be 53.8 \u00b1 12.2 s for AND and 5.2 \u00b1 0.2 s for 5c.c7 TCRs for Atto488-labeled peptide agonist with \u2329\u03c4bl\u232a of 300 and 30 s respectively (Figure 5A,B). While fluorescent labels can affect binding kinetics, we measure similar values of \u2329\u03c4off\u232a with both Atto647N and Atto488 labeled peptides (see, e.g., Figures 1C, 3, and 4A,C). \u2329\u03c4off\u232a is also relatively unchanged at high agonist pMHC density (100 molecules/\u00b5m2), which is far above minimal levels required for T cell activation and observation of stable TCR microclusters (Manz et al., 2011) (Figure 5C). We observe that cytoskeleton disruption by the actin-binding molecule, Latrunculin A, moderately increases \u2329\u03c4off\u232a with the AND TCR and had no significant effect on 5c.c7 kinetics (Figure 5C). Similarly, the dwell time distribution was only modestly affected by anti-CD4 (data not shown); however, the total number of TCR:pMHC complexes per cell was smaller in the anti-CD4 experiments, suggesting that the antibody interfered with pMHC:TCR binding.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00778/elife-00778-fig5-v1.jpg)\n\n**Figure 5.:** Measured dwell time distributions for both the 5c.c7 (A) and AND (B) TCRs are roughly exponential and match reported solution measurements. Bleaching times, $k_{bl}^{\u22121}$, (grey circles) are measured using agonist pMHC SLB standards without cells and with the same fluorescent label (Atto488) and are significantly longer than observed dwell times, \u03c4obs, for both TCRs. (C) Measured values for 5c.c7 and AND CD4+ T cells under varying conditions. Values in columns five and six represent \u223c300\u2013600 MCC agonist pMHC molecules per experimental condition from a population of 7\u201320 cells. Data are representative of at least 5 independent experiments performed on T cell blasts isolated from different mice for both the 5c.c7 and AND TCRs. Uncertainty in the average across different mice, shown in columns five and six, is calculated as the standard error of the mean of the molecular averages from different mice. In some cases (e.g. for cytoskeleton disruption experiments with Latrunculin A) one experiment (representative of 7\u201310 cells and 100 s of single molecule measurements) may be performed, but these data are always compared to a control sample recorded on the same day with T cell blasts from the same mouse. In these cases uncertainty is reported as the standard error of the mean of the molecular dwell time distribution. SPR measurements for 5c.c7 1(Huppa et al., 2010) and AND-related 226 TCRs 2(Newell et al., 2011), along with single molecule FRET measurements for 5c.c7 1(Huppa et al., 2010), are shown for comparison.\n\nTracking observations reveal the time intervals over which individual agonist pMHC molecules remain physically trapped within the immediate vicinity of the same TCR. Thus, although our measured dwell times in live cells are in general agreement with bulk solution measurements of pMHC:TCR kinetic off-rates for both TCRs (Figure 5C) (Corse et al., 2010; Newell et al., 2011), this may not result from the same reasons in each case. Unbinding of pMHC from TCR followed by rapid rebinding to the same TCR or another TCR within the same signaling cluster could conceivably lead to entrapment of pMHC for timescales longer than the lifetime of the molecular interaction. This has been hypothesized as a potential mode by which a small number of agonist pMHC could trigger a larger number of TCR (Govern et al., 2010; Huppa et al., 2010). Furthermore, recently reported single molecule measurements of pMHC:TCR binding kinetics in live cells, by force probe and by FRET, have suggested accelerated kinetic-off rates (Huang et al., 2010; Huppa et al., 2010). We investigate this further below.\n\n### Stochastic reaction-diffusion simulations\n\nWe quantitatively assess the possibility of serial rebinding of agonist pMHC to multiple TCR within a TCR cluster using a stochastic reaction-diffusion simulation over a large range of $\u2329\\tau_{off}\u232a$ and TCR cluster size. The total time to escape for an individual molecule, which is the parameter directly measured in pMHC tracking experiments, is given by:\n\n$$\n\\tau_{esc}=\\sumi=0n\\tau_{off}^{i}+\\sumi=1n\\tau_{on}^{i}+\\tau_{exit}\n$$\n\nIn this representation, \u03c4offi and \u03c4oni are the individual dwell times in the bound and unbound configurations, n is the number of rebinding events, and \u03c4exit is the duration of the final unbound period prior to ultimate escape. For the stochastic simulation, \u03c4offi and \u03c4oni are treated as random variables with exponential distributions defined by the in situ measured values of koff and kon for pMHC:TCR binding, respectively. If the pMHC diffuses out of the TCR cluster prior to rebinding, it has escaped. Otherwise, the pMHC rebinds and the cycle repeats. Using the fastest kon (0.17 \u00b5m2s\u22121molecule\u22121) observed in similar hybrid live cell-SLB systems (Huppa et al., 2010) and the measured diffusion coefficient of pMHC in our supported membranes, we find that \u03c4esc\u2248\u03c4off for TCR clusters of the sizes observed experimentally (Varma et al., 2006) (\u2264100 TCR molecules) (Figure 6). Only for unrealistically large TCR clusters (\u223c1000 TCR molecules) could rebinding within the same cluster lead to appreciable entrapment (\u03c4esc>\u03c4exit) (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00778/elife-00778-fig6-v1.jpg)\n\n**Figure 6.:** For small TCR clusters (1\u2013100 TCR molecules) \u03c4off \u2248 \u03c4esc, indicating no serial rebinding. Only for unrealistically large TCR clusters (1000\u201310,000 molecules) does $\\tau_{esc}$ become appreciably longer than $\\tau_{off}$.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00778/elife-00778-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Simulations of $\\frac{\\tau_{esc}}{\\tau_{off}}$ as a function of TCR cluster size, $\\tau_{off}$ , and kon. The ratio $\\frac{\\tau_{esc}}{\\tau_{off}}$, which is an indicator of agonist pMHC entrapment, is a function of TCR cluster size and kon, but not koff. kon = 0.51 \u00b5m2s\u22121molecule\u22121 corresponds to the fastest average kon that allows for rebinding to the same TCR. Only for unrealistically large TCR cluster sizes (approaching 1000 TCRs per cluster) and fast kon is $\\frac{\\tau_{esc}}{\\tau_{off}}\u226b1$, meaning that entrapment due to millisecond-scale unbinding and rebinding is unlikely to result in the minute-scale dwell times observed in our experiments.\n\nThese simulations indicate that the observed values of $\\tau_{off}$ are unlikely to be the result of rapid serial rebinding of one pMHC with many TCR within a TCR cluster. We note that although TCR clusters are not readily visible at the low antigen densities in these experiments, low level TCR clustering has been reported in the resting state by other methods (Schamel and Alarcon, 2013). Even with a very fast kon, if pMHC completely disengages from TCR for long enough to diffuse to an adjacent TCR, then the probability of complete escape from the TCR cluster is high. Only in the extreme limit, where kon is so fast that pMHC unbinding is predominantly followed by rebinding to the same TCR, is the escape time appreciably longer than the individual molecular dwell times. The distinction between rapidly rebinding the same TCR and a single engagement is largely semantic. However, it may reveal something about the mechanical stability of pMHC:TCR interactions, and could account for the apparently accelerated koff observed in other types of experiments.\n\n## Discussion\n\nAll evidence reported here suggests that individual agonist pMHC remain bound to the same TCR for at least several seconds for the 5c.c7 TCR and for approximately one minute for the AND TCR in live cells. Subsequent recruitment of ZAP70 indicates TCR are triggered and movement of the complexes along linear trajectories confirms stable association with the actin cytoskeleton. All of this occurs as a result of a lone agonist pMHC binding TCR, without involvement of other MHC. The measured average pMHC:TCR:ZAP70 stoichiometry indicates TCR triggering is most likely 1:1 with agonist pMHC. Supernumerary triggering of multiple TCR by a single pMHC is not observed on the timescales of minutes investigated in these experiments. The original serial triggering model (Valitutti et al., 1995) drew its conclusions from the extent of TCR down regulation measured 5 hr after exposure of T cells to antigen-pulsed APCs. Additionally, the lack of molecular-scale cooperativity in TCR triggering by agonist pMHC indicates that observed cooperativity at the level of cellular calcium response, at similar ligand densities and timescales (Manz et al., 2011), is most likely due to intracellular feedback mechanisms (Altan-Bonnet and Germain, 2005; Chan et al., 2004; Das et al., 2009; Stefanov\u00e1 et al., 2003).\n\nThe timescales of the pMHC:TCR interactions we observe in live cells are consistent with SPR measurements of koff for the 5c.c7 TCR and 226 TCR, which is nearly identical to AND (Figure 5C and Figure 7) (Corse et al., 2010; Newell et al., 2011). They are also consistent with reports of a \u223c2 s kinetic threshold for thymic selection determined in vivo (Williams et al., 1999; Palmer and Naeher, 2009). Stochastic reaction-diffusion analysis of the measured kinetic and mobility parameters indicates that rapid serial rebinding of agonist pMHC to multiple TCRs in a signaling cluster is unlikely to be a universal mechanism for ligand discrimination and rapid signal amplification in T cells.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00778/elife-00778-fig7-v1.jpg)\n\n**Figure 7.:** (A) CDR3\u03b1 (yellow) and CDR3\u03b2 (orange) loops form all the specific interactions with the peptide (cyan). Hydrogen bonds between the CDR3 loops and the MCC residues are shown by dashed lines (PDB, 3QIU) (B) Comparison of CDR3 loops between the 226 and AND TCRs reveal identical sequences and suggest similar binding kinetics. 226 and AND also share V\u03b1, J\u03b1, V\u03b2, and J\u03b2 gene segments that encode the residues specific for interaction with IEk (Newell et al., 2011). The residues involved in hydrogen bonds between 226 and MCC are shown in blue.\n\nThe intercellular geometry as well as active processes within the T cell have long been suspected to influence pMHC:TCR interactions (Shaw and Dustin, 1997; Qi et al., 2001; Burroughs and Wulfing, 2002; Zhu et al., 2013). Direct in situ measurements of individual pMHC:TCR binding kinetics, such as we report here, are extremely limited (Huang et al., 2010; Huppa et al., 2010; Axmann et al., 2012) but informative comparisons can be made. Notably, a recent intramolecular FRET study of the 5c.c7 TCR binding MCC pMHC reports short ($\u2329\\tau_{off}\u232a$\u223c150 ms) in situ 2D dwell times, nearly 35 times faster than the $\u2329\\tau_{off}\u232a$ = 5.2 \u00b1 0.2 s we measured by tracking. This same study measures $\u2329\\tau_{off}\u232a$ 25 times longer under conditions of cytoskeleton disruption, essentially in agreement with tracking observations. This result has been interpreted to mean that the actin cytoskeleton actively destabilizes agonist pMHC:TCR complexes. In contrast, we observe very small effects of actin disruption on agonist pMHC dwell times for AND and essentially no effect with 5c.c7 TCR (Figure 5C).\n\nIt is conceivable that the agonist pMHC:TCR complex does not remain bound in the same structural configuration for the duration of engagement. If mechanical coupling to actin significantly reduces the apparent $\u2329\\tau_{off}\u232a$ in a single molecule FRET measurement, but not in a single molecule tracking experiment, this raises the possibility that mechanical forces can induce conformational alterations in agonist pMHC:TCR without complete disengagement of the complex. Recent structural studies of pMHC:TCR indicate the possibility of such flexibility (Adams et al., 2011; Hawse et al., 2012; Reboul et al., 2012). While putative conformational changes would not affect single-molecule tracking measurements, they could produce a FRET signature (Ha et al., 1999; Majumdar et al., 2007). Under such a scenario, apparently fast $\u2329\\tau_{off}\u232a$ observed by FRET imaging (Huppa et al., 2010) may not correspond to actual molecular unbinding and escape of agonist pMHC from TCR.\n\nIn the aggregate, the data reported here indicate that spatially discrete pMHC:TCR:ZAP70 complexes form according to molecular mass action laws with relatively predictable chemical kinetics and stoichiometry in living cells. The observed pMHC:TCR molecular binding kinetics mirror solution measurements and we observe no evidence for molecular scale cooperativity in the triggering of TCR by agonist pMHC (at low agonist density). Thus any amplification or other form of signal processing must occur downstream of TCR triggering.\n\n## Materials and methods\n\n### DNA, protein, and T cell preparation\n\nA plasmid containing enhanced green fluorescent protein fused to CD3 zeta-chain-associated protein of 70 kDa (Zap70-EGFP) was a gift of Takashi Saito, RIKEN Research Center for Allergy and Immunology, Yokohama, Japan (Yokosuka et al., 2005). The Zap70-EGFP gene was amplified by PCR and subcloned into a murine stem cell virus parent vector (pMSCV).\n\nBi-hexahistidine-tagged major histocompatibility complex (MHC) class II I-Ek protein was produced and purified as previously described (Nye and Groves, 2008). A decahistidine-tagged ICAM1-TagBFP fusion protein was generated by PCR amplifying the TagBFP sequence (Evrogen Inc., Moscow, Russia) and subcloning it into a pN1-ICAM1 vector. The entire Icam1-TagBFP gene was then further subcloned into the pFastBac1 vector (Invitrogen Inc., Carlsbad, CA), which was used to generate baculovirus for infection of High Five cells (Invitrogen Inc.). The ICAM1-TagBFP was subsequently purified on a Ni-NTA-agarose affinity column, eluted with an imidazole gradient, dialyzed, and stored in Tris buffer containing 10% glycerol. AND CD4+ T cells (Kaye et al., 1989) and 5 c.c7 CD4+ T cells were harvested and cultured essentially as previously described (Smith et al., 2011; Smoligovets et al., 2012).\n\nT cells were transduced with Zap70-EGFP and sorted using fluorescence-activated cell sorting (FACS) according to viability and EGFP expression. The population of transduced cells that was used expressed EGFP at no more than 50% of the highest EGFP level in the overall EGFP-positive population.\n\n### Peptide purification and labeling\n\nUsing the basic sequence of moth cytochrome c (amino acids 88\u2013103) and previously described variants (Huppa et al., 2010), the following peptides were synthesized by David King at the HHMI Mass Spectrometry Laboratory at UC Berkeley and/or commercially (Elim Biopharmaceuticals, Hayward, CA): MCC (ANERADLIAYLKQATK), MCC(C) (ANERADLIAYLKQATKGGSC), MCC-null(C) (ANERAELIAYLTQAAKGGSC). For fluorophore labeling, cysteine-containing peptides were dissolved in a small amount of phosphate buffer and mixed in a 1:2 molar ratio with Atto 647N resuspended in a small amount of 1-propanol or lyophilized Atto 488 (Atto-Tec GmbH, Siegen, Germany) and labeled using maleimide-thiol chemistry. The peptides were then incubated at room temperature for at least 1 hr and purified on a C18 reverse phase column (Grace\u2013Vydac, Deerfield, IL) and H2O:acetonitrile gradient using \u00c4KTA explorer 100 FPLC system (Amersham Pharmacia Biotech, Piscataway, NJ). Peptide identity was confirmed after purification using mass spectrometry.\n\n### Microscopy\n\nTIRF experiments were performed on an inverted microscope (Nikon Eclipse Ti; Technical Instruments, Burlingame, CA) using a custom-built laser launch with 488 nm (Sapphire HP; Coherent Inc., Santa Clara, CA) and 640 nm (Cube; Coherent Inc.) diode lasers, as described previously (Smith et al., 2011). Laser powers measured at the sample were 0.8 mW (640 nm) and 0.5 mW (488 nm) for 500 ms exposures and 4.4 mW (640 nm) for 17.5 ms exposures. A dichroic beamsplitter (z488/647rpc; Chroma Technology Corp., Bellows Falls, VT) reflected the laser light through the objective lens (Nikon 1.49 NA TIRF; Technical Instruments, Burlingame, CA) and fluorescence images were recorded using an EM-CCD (iXon 597DU; Andor Inc., South Windsor, CT) after passing through a laser-blocking filter (Z488/647 M; Chroma Technology Corp., Bellows Falls, VT). Bandpass filters (FF03 525/50; Semrock Inc., Rochester, NY and ET 700/75, Chroma Technology Corp., Bellows Falls, VT) were placed in a DualView 2 Simultaneous Imaging System (Photometrics, Tuscon, AZ). Colors were registered before every two-color experiment by imaging 100 nm Tetraspec beads (Invitrogen Inc.) deposited on a coverslip patterned with a Cr grid with \u223c80 nm width and 3\u20134 \u03bcm pitch Cr lines, since the Tetraspec beads preferentially bind the regular Cr pattern. Exposure times and time-lapse periods for most experiments were set using image collection software (MetaMorph 7.5; Molecular Devices Inc., Downingtown, PA), which drives an external shutter (Uniblitz LS6; Vincent Associates, Rochester, NY). Exposure time and Fast Kinetics Mode for short (17.5 ms) integration time experiments were set using Andor Solis (Andor Inc., South Windsor, CT). Exposure times were measured directly from the Fire output of the EM-CCD using an oscilloscope (TDS 210; Tektronix, Inc., Beaverton, OR).\n\n### Imaging chamber and supported lipid bilayer preparation\n\nSingle unilamellar vesicles (SUVs) were formed by tip sonication of a solution composed of 98 mol % 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC) and 2 mol % 1,2-dioleoyl-sn-glycero-3-[(N-(5-amino-1-carboxypentyl) iminodiacetic acid) succinyl] (nickel salt) (Ni2+-NTA-DOGS) (Avanti Polar Lipids, Alabaster, AL) in Mill-Q water (EMD Millipore, Billerica, MA). Tip sonication was preferred to vesicle extrusion due to the introduction of significant levels of fluorescent impurities into the SUVs during extrusion. Prior to experiments, #2 40 mm diameter round coverslips were ultrasonicated for 30 min in 50:50 isopropyl alcohol:water, rinsed thoroughly in Milli-Q water (EMD Millipore, Billerica, MA), etched for 5 min in piranha solution (3:1 sulfuric acid:hydrogen peroxide), and again rinsed thoroughly in Milli-Q water. The coverslips were used in the assembly of FCS2 Closed Chamber Systems (flow cells; Bioptechs, Butler, PA), which were pre-filled with Tris-buffered saline (TBS; 19.98 mM Tris, 136 mM NaCl, pH 7.4; Mediatech Inc., Herndon, VA). SUVs were then flowed into the chambers, and bilayers were allowed to form for at least 30 min. The bilayers were rinsed once with TBS, incubated for 5 min with 100 mM NiCl2 in TBS, rinsed with TBS, and then rinsed with a T cell imaging buffer composed of 1 mM CaCl2, 2 mM MgCl2, 20 mM HEPES, 137 mM NaCl, 5 mM KCl, 0.7 mM Na2HPO4, 6 mM d-glucose, and 1% wt/vol bovine serum albumin. 48 hr prior to experiments, MHC was loaded with peptide at 37\u00b0C in a buffer composed of 1% wt/vol bovine serum albumin in phosphate-buffered saline and brought to pH 4.5 with citric acid. Unbound peptide was separated from peptide loaded MHC (pMHC) using 10k spin concentrators (Amicon Ultra, Cork, Ireland) and then pMHC was diluted in imaging buffer. ICAM1-TagBFP and pMHC were further diluted with imaging buffer, introduced into the flow cells, and incubated for 35 min followed by a rinse with imaging buffer. T cells resuspended in imaging buffer and added to the flow cells 35 min after the final rinse and imaged immediately for 30\u201360 min. To visualize TCR, T cells were incubated in a solution of 1 \u03bcl Alexa 647 (Invitrogen Inc.)-labeled H57 anti-TCR Fab and 100 \u03bcl imaging buffer for 20 min at 4\u00b0C prior to the regular imaging buffer resuspension. All other incubations during this protocol were performed at room temperature, and imaging experiments were performed at 37\u00b0C.\n\n### Data analysis\n\nSingle molecule diffraction-limited spots were detected in raw .tif image stacks of agonist pMHC labeled with MCC-Atto488 and MCC-647N molecules by filtering for both size and intensity and linked into tracks using published particle detection and tracking algorithms (Crocker and Grier, 1996) adapted for MATLAB (The Mathworks; Natick, MA) by Daniel Blair and Eric Dufresne (http://physics.georgetown.edu/matlab/; accessed 16 August 2012). Size and intensity thresholds were first determined by eye using a test data set and then applied uniformly to all data collected with the same exposure time and incident laser intensities. Single molecules were identified by step photobleaching detected in an automated way using a Bayesian change point detection algorithm (Ensign and Pande, 2009).\n\nThe brightness of ZAP70-EGFP features varies from a single molecule to several molecules, and different brightness features are detected using slightly different methods, despite the fact that the features are physically similar. Bright ZAP70-EGFP features (as shown in Figure 4A,D) were detected using the same algorithm as is used for single molecule pMHC. The lower signal-to-noise single molecule ZAP70-EGFP intensity traces like those in Figure 4C were obtained by summing the intensity of the ZAP70-EGFP channel using the agonist pMHC (labeled with Atto647N) molecule position as a mask, as is explained in the main text.\n\nThe lifetime of the bright ZAP70-EGFP speckles is difficult to accurately assess due to the fluctuating background and varying speckle intensity (which biases measurement towards brighter, longer-lived fluorescent features), but speckle lifetimes appear to be longer than the single molecule ZAP70-EGFP lifetimes. Single molecule ZAP70-EGFP molecules are uncorrected for photobleaching of both ZAP70-EGFP and agonist pMHC and therefore the range of binding times reported (12\u2013107 s) only serves as a lower bound for the molecular ZAP70 dwell time.\n\nThe agonist pMHC step size distribution at 17.5 ms resolution in Figure 1D is populated using similar particle detection and tracking methods to the 500 ms resolution analysis., Agonist pMHC:TCR binding kinetics cannot be uniquely inferred from the step size distribution, since the step size distribution is a time-independent analysis. For instance, the step size distribution measured over a certain time period with 2kon and 2koff would appear identical to a scenario with kon and koff.\n\nLifetime distributions are roughly exponential and of the form $f(\\tau_{obs})=\u2329\\tau_{obs}\u232a^{\u22121}e^{\\frac{\u2212\\tau_{obs}}{\u2329\\tau_{obs}\u232a}}$, where \u03c4obs is the observed dwell time in our experiments. The individual kinetic transitions were derived assuming the following model:\n\n$$\npMHC_{free}\u21cck_{off}k_{on}pMHC:TCR\u2192k_{bl}pMHC_{bleached}\n$$\n\nwhere pMHCfree is the fast-mobility state, pMHC:TCR is the slow-mobility state (or the TCR stably bound state), pMHCbleached is the bleached slow-mobility state, koff and kon are the rates of transitions between the bound and the free pMHC, and kbl is the rate of transition from bound pMHC:TCR to photobleached pMHC. We assume that transititions between states follow a Markov memory-less process and derive a probability density function, $f(\\tau_{obs})$, for the single molecule dwell time distribution: $f(\\tau_{obs})=(\u2329\\tau_{bl}\u232a^{\u22121}+\u2329\\tau_{off}\u232a^{\u22121})e^{\u2212\\tau_{obs}(\u2329\\tau_{bl}\u232a^{\u22121}+\u2329\\tau_{off}\u232a^{\u22121})}$, where $(\u2329\\tau_{bl}\u232a^{\u22121}+\u2329\\tau_{off}\u232a^{\u22121})^{\u22121}=\u2329\\tau_{obs}\u232a$ is the observed mean dwell time in our experiments. Agonist pMHC labeled with Atto488 and Atto647N SLB bleaching curves were background subtracted and then fit to an exponential decay function of the form $f(t)=k_{bl}e^{\u2212k_{bl}t}$. Fitting was done using MATLAB.\n\n### Stochastic kinetic simulation\n\nSimulations were performed using MATLAB. Our simulation models a TCR cluster as a square lattice upon which agonist pMHC molecules bind discrete TCR lattice sites for duration $\\tau_{off}^{i}$, $\\tau_{off}^{i}$ where is treated as a random variable drawn from an exponential distribution with mean equal to $\u2329\\tau_{off}\u232a$. $\u2329\\tau_{off}\u232a$ is varied over several orders of magnitude and is chosen to match measured values from the literature. pMHC are initially placed at a randomly lattice position drawn from a uniform distribution. After each time period (determined by $\\tau_{off}^{i}$), the agonist pMHC molecule steps to a new lattice site or stays at the same lattice site (the lattice spacing is set to 10 nm to roughly follow the size of the TCR complex [Newell et al., 2011; Yin et al., 2012]) until the agonist pMHC is no longer on the TCR cluster, such that $\\tau_{esc}^{k}=\\sumi=0n\\tau_{off}^{i}+\\sumi=1n\\tau_{on}^{i}+\\tau_{exit}$, where n indicates the number of steps an individual agonist pMHC molecule takes before exiting the TCR cluster, $\\tau_{on}$ is the time period between unbinding and binding events, and $\\tau_{exit}$ is the time between the last unbinding event and the ultimate exit from the TCR cluster. Step size is treated as a combination of two independent random variables, ($\u0394x,\u0394y$,) drawn from Gaussian distributions with mean 0 and standard deviation $\\sqrt{2D_{SLB}\\tau_{on}}$. The step size is then a random variable $\u0394r=\\sqrt{\u0394x^{2}+\u0394y^{2}}$ and the angle of displacement is drawn from a uniform distribution. The interval between binding events, $\\tau_{on}$, is treated as a random variable drawn from an exponential distribution with mean kon $\u03c1_{TCR}$ where the density of TCR, $\u03c1_{TCR}$, is taken to be 10,000 molecules/\u00b5m2 (as in the central supramolecular activation cluster). In this way $\u2329\\tau_{off}\u232a=\\frac{1}{k}\\sumk\\tau_{esc}^{k}$, where k is the number of iterations (100 in the case of Figure 6 and Figure 6\u2014figure supplement 1), is calculated for every combination of $\u2329\\tau_{off}\u232a$, TCR cluster size, and kon. Note that since $\\tau_{off}\u226b\\tau_{on}$, $\\frac{\\tau_{esc}}{\\tau_{off}}\u2248\u2329n\u232a$, where $\u2329n\u232a$ is equivalent to the TCR cluster size. This relationship between $\\frac{\\tau_{esc}}{\\tau_{off}}$ and TCR cluster size can be seen in Figure 6\u2014figure supplement 1. It is possible that agonist pMHC binding interactions with CD4 could slow the mobility of an individual agonist pMHC within a TCR cluster relative to DSLB when the agonist pMHC are unbound from TCR. This could hypothetically lead to entrapment and long single molecule tracks (like those reported here) in the absence of direct, sustained agonist pMHC-TCR interactions. While such a mechanism is conceivable, there is no direct evidence for such a tethering mechanism in the literature.\n",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "9f26bed1-b3e8-45cb-82e3-89c8358b0cb7",
+      "submission_id": "5f76ad47-6ac2-4e75-badf-535d42758fb0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Axel T Brunger, Howard Hughes Medical Institute, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00778.016](https://doi.org/10.7554/eLife.00778.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cDirect single molecule measurement of TCR triggering by agonist pMHC in living primary T cells\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, Detlef Weigel, and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nOverall, this is an outstanding study, one that has made a number of technical breakthroughs and emerges with interesting results. The authors examine the interactions between pMHC and TCR, at a single molecule level, which provides a direct measurement on the association times of this complex. They also examine how the pMHC-TCR complex recruits ZAP70, which is a direct measure of triggering and the initiation of signal transduction. This is a very nicely executed two color, single molecule experiment. There are several interesting findings: 1) the TCR-pMHC act as discrete entities and do not appear to aggregate; 2) the association times differ 10-fold for two different peptide agonists, revealing distinct information encoded by off-rates; 3) the dissociation rates are much slower than was previously reported by a live cell FRET measurement (the new data are more direct and believable, and the information will be important for the field); 4) Virtually all pMHC-TCR complexes become immobilized and hook onto the actin cytoskeleton; and 5) each pMHC-TCR recruits several ZAP70 molecules and these complexes also are extremely long lived.\n\nMajor comments:\n\n1) This manuscript follows others (Huppa et al., 2010; Huang et al., 2010) that have tried to address this problem and come away with interesting insights. The current study takes a unique approach using low intensity light for longer time periods, which selects against short-term interactions to track TCR-PMHC interactions and comes up with some contradictions with the published work. These differences to the previously published results are puzzling and need to be discussed.\n\n2) There is not much of a difference between 24 and 37 degrees. This is surprising and should be discussed.\n\n3) The Introduction could be improved for a general audience. Currently it reads like a longer version of the Abstract (or a shorter version of the Results). This section would be a good place to set up the main issues of the paper, e.g., why off-rates are important and what attempts have been made to measure this in the past. Also a few small points \u2013 are all pMHC-TCR-Zap70 complexes attached to actin or is there evidence of them being formed, diffusion, and then joining onto the actin treadmill? Can one detect variability or successive recruitment of Zap70? It is stated that there is an average of 6 but we are wondering if one could extract additional information at the single molecule level of clear variability (particularly for two different pMHC) or accumulation of Zap70 over time.\n",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9ab044ec-b2d7-416e-9c67-746ffd3934d0",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C1",
+      "claim": "T cells discriminate between self and foreign antigenic peptides displayed on antigen presenting cell surfaces via the TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "T cells discriminate between self and foreign antigenic peptides, displayed on antigen presenting cell surfaces, via the TCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in immunology, representing established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "d8da50a7-4ce8-4780-9ce0-79b28705b108",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C2",
+      "claim": "Mean dwell times for pMHC:TCR molecular binding are 5 seconds for 5c.c7 TCR and 54 seconds for AND TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean dwell times for pMHC:TCR molecular binding of 5 and 54 s were measured for two different pMHC:TCR systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct experimental measurements reported in the manuscript using single molecule tracking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "05d2a8dc-9439-481b-b5f9-488a168172fe",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C3",
+      "claim": "TCR triggering is stoichiometric with agonist pMHC in a 1:1 ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Single molecule measurements of the pMHC:TCR:ZAP70 complex indicate that TCR triggering is stoichiometric with agonist pMHC in a 1:1 ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on single molecule measurements of ZAP70 recruitment to pMHC:TCR complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "a58aaf37-ac84-45a4-95ee-e3e2d472106f",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C4",
+      "claim": "Any signal amplification must occur downstream of TCR triggering.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus any signal amplification must occur downstream of TCR triggering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the 1:1 stoichiometry observation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "f43da47b-2a21-41c6-9a09-1b15c77c2345",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C5",
+      "claim": "Fewer than 10 agonist pMHC molecules can trigger T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Fewer than 10 agonist pMHC molecules can trigger T cells (Irvine et al., 2002; Manz et al., 2011), and the signaling response occurs on a timescale of seconds (Huse et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "1e18b4b7-275f-4fb3-8680-a3badb3df174",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C6",
+      "claim": "The signaling response occurs on a timescale of seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Fewer than 10 agonist pMHC molecules can trigger T cells (Irvine et al., 2002; Manz et al., 2011), and the signaling response occurs on a timescale of seconds (Huse et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Huse et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "8850a938-8706-4c29-95e8-ad2b2e5608ce",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C7",
+      "claim": "Peptide-specific differences in binding parameters, especially kinetic rates for the pMHC and TCR reaction, are the basis of antigen recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been recognized for decades that subtle, peptide-specific differences in binding parameters, especially kinetic rates for the pMHC and T cell receptor (TCR) reaction, seem to be the basis of antigen recognition (Matsui et al., 1994; Tian et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "8005b694-7cf3-40c8-b380-180dfdbbb136",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C8",
+      "claim": "The maximum affinity a TCR can have for self pMHC ligands is sharply defined and close to the affinity threshold for foreign pMHC.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the maximum affinity a TCR can have for self pMHC ligands (non-triggering) is sharply defined and close to the affinity threshold for foreign pMHC (triggering).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "188f77e6-2a9a-4398-8784-0d7ad3910003",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C9",
+      "claim": "Every TCR is likely to bind a subset of self pMHC molecules with affinities differing only slightly from genuine foreign agonist pMHC.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, every TCR is likely to bind a subset of the ever-present self pMHC molecules with affinities differing only slightly from genuine foreign agonist pMHC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the close affinity thresholds between self and foreign pMHC.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "1e9b7f6e-9ff3-4d31-add5-bc8e841aed95",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C10",
+      "claim": "Every pMHC can be individually resolved and tracked for up to minutes before photobleaching using a multi-timescale single molecule fluorescence imaging approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Every pMHC can be individually resolved and tracked for up to minutes before photobleaching by using a multi-timescale single molecule fluorescence imaging approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental methodology and its capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "62bdb810-9401-4df7-9058-6c8b1aa39887",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C11",
+      "claim": "pMHC molecules fall into two unambiguously distinguished classes: one undergoing fast random motion and the second moving slowly along linear trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "The pMHC molecules fall into two unambiguously distinguished classes: one undergoing fast random motion and the second moving slowly along linear trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from single molecule tracking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "c1db46c1-ccfa-4236-8622-55e664521cad",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C12",
+      "claim": "Slow moving pMHC are the bound pMHC:TCR complexes and are only observed with agonist peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "These slow moving pMHC are the bound pMHC:TCR complexes; they are only observed with agonist peptide and they spatially correlate with both TCR and recruitment of ZAP70.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct experimental observation from tracking and colocalization studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "1e4e6da7-be11-45be-a1e3-2183901f329b",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C13",
+      "claim": "The linear trajectories of the pMHC:TCR complexes match the well-characterized cytoskeleton-driven movement of TCR during the formation of the immunological synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear trajectories of the pMHC:TCR complexes match the well-characterized cytoskeleton-driven movement of TCR during the formation of the immunological synapse (Campi et al., 2005; Yokosuka et al., 2005; DeMond et al., 2008; Yu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previously characterized TCR movement patterns, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "f7b87b78-1440-4bec-b41c-c9dbfd2bbb65",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C14",
+      "claim": "A lone agonist pMHC bound to TCR leads to stable engagement of the resulting complex with the cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus a lone agonist pMHC bound to TCR leads to stable engagement of the resulting complex with the cytoskeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observation of linear trajectories matching cytoskeleton-driven movement.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "8bc443ef-b2bb-4b7c-a14d-454e7045669e",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C15",
+      "claim": "Single molecule intensity calibration of the number of ZAP70 recruited to the vicinity of each agonist pMHC indicates that TCR are triggered in a 1:1 stoichiometry with pMHC.",
+      "claim_type": "EXPLICIT",
+      "source": "Single molecule intensity calibration of the number of ZAP70 recruited to the vicinity of each agonist pMHC indicates that TCR are triggered in a 1:1 stoichiometry with pMHC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from single molecule intensity calibration experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "592b3792-291a-4404-8c02-b434cf2364d7",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C16",
+      "claim": "Individual dwell times are roughly exponentially distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual dwell times are roughly exponentially distributed and are in general agreement with bulk solution measurements of pMHC:TCR kinetic off-rates for both TCRs (Corse et al., 2010; Huppa et al., 2010; Newell et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental dwell time distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "1c282f17-f8c7-440e-84c6-e037c1e7ef3a",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C17",
+      "claim": "Individual dwell times are in general agreement with bulk solution measurements of pMHC:TCR kinetic off-rates for both TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual dwell times are roughly exponentially distributed and are in general agreement with bulk solution measurements of pMHC:TCR kinetic off-rates for both TCRs (Corse et al., 2010; Huppa et al., 2010; Newell et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with published solution measurements, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "ebe9c231-4d57-4667-9362-6e4b0463d6a1",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C18",
+      "claim": "Dwell times measured from tracking experiments correspond to spatial entrapment of pMHC with a TCR, or cluster of TCRs, on the T cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "However, dwell times measured from tracking experiments specifically correspond to spatial entrapment of pMHC with a TCR, or cluster of TCRs (Schamel and Alarcon, 2013), on the T cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of what the tracking measurements represent.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "4fbf4cb2-6a9d-493f-b701-86f407baac39",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C19",
+      "claim": "Recent studies have suggested that pMHC:TCR kinetic off-rates may be accelerated in living cells relative to in vitro measurements, possibly as a result of actively applied forces from the cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent studies (e.g., by FRET) have suggested that pMHC:TCR kinetic off-rates may be accelerated in living cells relative to in vitro measurements, possibly as a result of actively applied forces from the cytoskeleton (Huang et al., 2010; Huppa et al., 2010; Zhu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "f7201d31-48b5-44d6-9b73-ea8f7d5522dc",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C20",
+      "claim": "Serial rebinding alone is unlikely to sustain entrapment of pMHC within TCR clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from a stochastic reaction-diffusion analysis, covering a wide range of parameter space, indicate that serial rebinding alone is unlikely to sustain entrapment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from computational modeling performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "26aa43b8-62bd-42a0-92c4-28ad5ccb6512",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C21",
+      "claim": "If pMHC thoroughly disengages from TCR, it will most likely escape.",
+      "claim_type": "EXPLICIT",
+      "source": "If pMHC thoroughly disengages from TCR, it will most likely escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from stochastic reaction-diffusion analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "d89bf61e-3193-43d5-ad95-a17dd9e83cdc",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C22",
+      "claim": "Structural flexibility within the pMHC:TCR complex could give rise to apparently fast kinetics without actual unbinding of pMHC from TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural flexibility within the pMHC:TCR complex (Adams et al., 2011; Hawse et al., 2012; Reboul et al., 2012) could give rise to apparently fast kinetics (e.g., in FRET measurements) without actual unbinding of pMHC from TCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation based on structural studies cited.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "e3fe1c63-9b41-4905-adac-be71a92c443f",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C23",
+      "claim": "The functional interaction between agonist pMHC and TCR is long-lived in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The tracking observations reported here directly reveal that the functional interaction between agonist pMHC and TCR is long-lived in living cells and that triggered TCR remain localized with the same pMHC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from tracking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "39efde14-9d2d-42db-8b89-c31f1b6319b0",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C24",
+      "claim": "Triggered TCR remain localized with the same pMHC.",
+      "claim_type": "EXPLICIT",
+      "source": "The tracking observations reported here directly reveal that the functional interaction between agonist pMHC and TCR is long-lived in living cells and that triggered TCR remain localized with the same pMHC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from tracking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "322b9d4c-aa4c-4ddc-9ef3-64c2f6c9a3ca",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C25",
+      "claim": "The supported membrane is functionalized with MHC (IEk) and ICAM1-TagBFP, both linked to the membrane via C-terminal poly-His tag binding to Ni-chelating lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "The supported membrane is functionalized with MHC (IEk) and intercellular adhesion molecule-1 fusion with a blue fluorescent protein (ICAM1-TagBFP), both linked to the membrane via C-terminal poly-His tag binding to Ni-chelating lipids (Nye and Groves, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "8673f281-9795-451b-9ce6-34953737adff",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C26",
+      "claim": "The MHC is loaded with peptide (moth cytochrome c [MCC] agonist or null), which is covalently coupled in a 1:1 stoichiometry to the photostable fluorophores Atto647N or Atto488.",
+      "claim_type": "EXPLICIT",
+      "source": "The MHC is loaded with peptide (moth cytochrome c [MCC] agonist or null), which is covalently coupled in a 1:1 stoichiometry (verified by HPLC) to the photostable fluorophores Atto647N or Atto488 using maleimide-thiol chemistry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methodology with verification by HPLC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "aa6534bd-46cc-44a5-8992-5761ebb3f953",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C27",
+      "claim": "LFA1-ICAM1 binding leads to rapid cell spreading and formation of an essentially planar interface between the T cell and supported membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon contact between the T cell and the supported membrane, Leukocyte function-associated antigen 1 (LFA1)-ICAM1 binding leads to rapid cell spreading and formation of an essentially planar interface between the T cell and supported membrane, within which pMHC:TCR interactions occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of observed cellular behavior in the experimental system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "ed04c438-cf40-4ae6-880a-3c2f7f673039",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C28",
+      "claim": "At short exposure times (17.5 ms) all agonist pMHC molecules are readily resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "At fast exposure times (17.5 ms) and high excitation powers (0.2 W/cm2), all pMHC molecules are readily resolved (Figure 1B, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from imaging experiments shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "78c9725f-c9fa-4540-9cb5-3ea1466ba06e",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C29",
+      "claim": "pMHC move as individual molecules, as identified by single-step photobleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "The pMHC move as individual molecules, as identified by single-step photobleaching, and can be continuously tracked for up to hundreds of frames (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from single molecule tracking and photobleaching analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "0a4a265a-6b22-4772-ab17-3f9d43593820",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C30",
+      "claim": "In regions without a cell, pMHC exclusively exhibit random diffusive motion.",
+      "claim_type": "EXPLICIT",
+      "source": "In regions without a cell, pMHC exclusively exhibit random diffusive motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from tracking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "5594ab6d-2722-443f-8a1f-ce3eb30d5dcf",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C31",
+      "claim": "The step-size distribution from pMHC trajectories in regions without cells corresponds to a single lateral diffusion coefficient of 0.44 \u00b5m2/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The step-size distribution from these trajectories corresponds to a single lateral diffusion coefficient of 0.44 (SEM = 0.002) \u00b5m2/s, which is typical for supported membranes (Lin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement from tracking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "313f54d7-4a20-4978-87cd-aba1fdb3b5ad",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C32",
+      "claim": "Within the T cell junction, the step-size distribution becomes bimodal.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the T cell junction, the step-size distribution becomes bimodal (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from tracking analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "93b80a22-bcc9-4eb6-8fde-f7a801cb5267",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C33",
+      "claim": "At long exposure times (500 ms), the fast moving pMHC fraction is averaged over several pixels to form a relatively homogenous background.",
+      "claim_type": "EXPLICIT",
+      "source": "At long exposure times (500 ms) and low excitation powers (0.02 W/cm2), the fast moving pMHC fraction in Figure 1D is averaged over several pixels to form a relatively homogenous background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the imaging technique and its effect on visualization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "88d8da3f-03b4-4196-9aa6-32fc4480d282",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C34",
+      "claim": "The slow moving molecules remain highly localized and can be unambiguously tracked for longer than a minute.",
+      "claim_type": "EXPLICIT",
+      "source": "The slow moving molecules remain highly localized and can be unambiguously tracked for longer than a minute, using 1\u201310 s time-lapses (Figure 1B, right panel; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from tracking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "8a8b0d03-3435-432c-ac13-a2c034046529",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C35",
+      "claim": "The slow moving pMHC molecules colocalize with TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The slow moving pMHC molecules colocalize with TCR (Figure 2) and move in linear trajectories toward the geometric center of the live cell-supported membrane junction; these are the pMHC:TCR complexes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from colocalization experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "7526ef26-4b01-4d4e-9cae-ea6b5dead50d",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C36",
+      "claim": "When MHC is loaded with a mixture of agonist and null peptides with different fluorescent labels, only the agonist peptides are observed in the slow-moving complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "When MHC is loaded with a mixture of agonist and null peptides, with different fluorescent labels, only the agonist peptides are observed in the slow-moving complexes (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from experiments with mixed peptides shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "f58fc276-cfa7-4435-a22c-53573b7977d6",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C37",
+      "claim": "The result is identical when the fluorophores are reversed, excluding the possibility that fluorophore effects could be responsible for binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The result is identical when the fluorophores are reversed, excluding the possibility that fluorophore effects could be responsible for binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Control experiment demonstrating specificity of agonist binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "2017d59d-2018-482b-9d28-6bf51783e09e",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C38",
+      "claim": "The agonist pMHC densities used in these experiments range from 0.2 to 100 molecules/\u00b5m2.",
+      "claim_type": "EXPLICIT",
+      "source": "The agonist pMHC densities used in these experiments range from 0.2 to 100 molecules/\u00b5m2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "bd53b9f3-a7c5-4152-a5b8-75d8b440fa72",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C39",
+      "claim": "The lowest densities are near thresholds for triggering Ca2+ flux and below levels where stable TCR microclusters are readily visible.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest densities are near thresholds for triggering Ca2+ flux (Manz et al., 2011) and below levels where stable TCR microclusters are readily visible (Figure 2), whereas the higher densities are well above the densities at which microclusters are observed (Campi et al., 2005; Yokosuka et al., 2005; DeMond et al., 2008; Yu et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison with published thresholds and observations in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "5daae8e6-feb7-4d19-8b7e-f21c44a2618c",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C40",
+      "claim": "The observed single molecule pMHC motion at all densities is reminiscent of the well-characterized actomyosin-driven TCR microcluster radial transport in activated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the observed single molecule pMHC motion at all densities is reminiscent of the well-characterized actomyosin-driven TCR microcluster radial transport in cells that are activated (Campi et al., 2005; Yokosuka et al., 2005; Kaizuka et al., 2007; DeMond et al., 2008; Yu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previously characterized TCR movement patterns, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "7a65dd5d-475a-464a-8b42-2e2c7beaf856",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C41",
+      "claim": "Immediately after cell landing, ZAP70 localizes to and moves together with the pMHC:TCR complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Immediately after cell landing, ZAP70 localizes to and moves together with the pMHC:TCR complexes (Figure 4A; Videos 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from two-color single molecule tracking shown in Figure 4A and Videos 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "e59548bf-a67b-43b2-8da1-ea779bca27cd",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C42",
+      "claim": "Discrete changes in average ZAP70-EGFP intensity are attributed to the binding of one ZAP70-EGFP to the phosphorylated ITAM domains on the cytoplasmic side of TCR engaged with pMHC.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting intensity traces reveal discrete changes in average intensity, which we attribute to the binding of one ZAP70-EGFP to the phosphorylated ITAM domains on the cytoplasmic side of TCR engaged with pMHC (Iwashima et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of intensity changes based on known ZAP70-ITAM binding mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "3d6e0edf-ddaa-4edd-baf6-83e4cbc1ce2f",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C43",
+      "claim": "Observed molecular binding dwell times of individual ZAP70-EGFP range from 12 to 107 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Observed molecular binding dwell times of individual ZAP70-EGFP, as resolved by the stochastic transitions, range from 12 to 107 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from intensity trace analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "7514d881-6b46-4c2f-ae9b-d2d5eecfd42d",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C44",
+      "claim": "These dwell times are slightly longer than estimates of \u223c10 s obtained from bulk fluorescence recovery after photobleaching (FRAP) experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These dwell times are slightly longer than estimates of \u223c10 s obtained from bulk fluorescence recovery after photobleaching (FRAP) experiments (Bunnell et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with published FRAP measurements.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "ff9b5252-86e2-4211-b795-c2032b0bc7b2",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C45",
+      "claim": "FRAP experiments identified a slower-exchanging fraction of ZAP70 that was not included in the average.",
+      "claim_type": "EXPLICIT",
+      "source": "However, those experiments also identified a slower-exchanging fraction of ZAP70 that was not included in the average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to findings from cited FRAP studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "4838dd3c-5dab-4629-8392-4e6d838d4267",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C46",
+      "claim": "The average ZAP70-EGFP feature intensity corresponds to 2.9 \u00b1 0.04 SEM ZAP70-EGFP per feature.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the average ZAP70-EGFP feature intensity per frame (136.0 counts \u00b1 0.04 SEM, integrated over a 315 nm square area for each feature) for the cell shown in Figure 4D corresponds to 2.9 \u00b1 0.04 SEM ZAP70-EGFP per feature, given that the single molecule intensity is 47 \u00b1 2 counts (SEM; n = 6) in that cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative calibration using single molecule intensity standards.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "63b785c5-b70b-4c5d-ae55-8c34534ac0bd",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C47",
+      "claim": "Each feature contains on average \u223c6 ZAP70 molecules, since ZAP70-EGFP was expressed in a roughly 1:1 ratio with endogenous ZAP70.",
+      "claim_type": "EXPLICIT",
+      "source": "Each feature therefore contains on average \u223c6 ZAP70 molecules, since ZAP70-EGFP was expressed in a roughly 1:1 ratio with endogenous ZAP70 (selected by FACS and confirmed by western blotting) in these experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculation based on expression ratio confirmed by FACS and western blotting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "23fa123c-d189-4ed4-a0d7-73d8257d2e15",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C48",
+      "claim": "Each TCR complex has 10 ITAM domains that, when phosphorylated, can bind one ZAP70 each.",
+      "claim_type": "EXPLICIT",
+      "source": "Each TCR complex has 10 ITAM domains that, when phosphorylated, can bind one ZAP70 each (Weiss and Littman, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about TCR structure, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "f8679fa5-73ae-44c9-8d33-4f48d1ca721a",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C49",
+      "claim": "Observation of \u223c6 ZAP70 per agonist pMHC suggests only a single TCR is triggered.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus observation of \u223c6 ZAP70 per agonist pMHC suggests only a single TCR is triggered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the stoichiometry measurement relative to the number of ITAMs per TCR.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "b5f39a2e-bb18-4c57-9ce9-c1cf3e6e71ab",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C50",
+      "claim": "Brighter ZAP70-EGFP features tend to be located towards the geometric center of the cell at later time points (>5\u201310 min after T cell landing).",
+      "claim_type": "EXPLICIT",
+      "source": "Brighter ZAP70-EGFP features tend to be located towards the geometric center of the cell at later time points (>5\u201310 min after T cell landing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from time-lapse imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "0dd8ae2f-fc59-4693-8dc8-5c72724ab07f",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C51",
+      "claim": "Recruited ZAP70-EGFP remain stably associated with the pMHC:TCR complex while traveling along the same linear trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "These can be tracked for tens to hundreds of seconds, indicating that recruited ZAP70-EGFP remain stably associated with the pMHC:TCR complex while traveling along the same linear trajectories (Figure 4A; Videos 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from tracking experiments shown in Figure 4A and Videos 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "2d1efd8c-9a73-467c-b5a4-532a10c5bc86",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C52",
+      "claim": "The observation of a range of ZAP70-EGFP stoichiometries (from 1 to \u223c10 ZAP70-EGFP per pMHC:TCR complex) implies that some time-dependent accumulation of ZAP70 is likely to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation of a range of ZAP70-EGFP stoichiometries (from 1 to \u223c10 ZAP70-EGFP per pMHC:TCR complex) implies that some time-dependent accumulation of ZAP70 is likely to occur, although we have not definitively observed ZAP70-EGFP accumulation over time within individual intensity traces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observed range of stoichiometries.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "55a42779-5d3a-433f-8743-efac1aa2be0b",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C53",
+      "claim": "Engagement of TCR with an individual agonist pMHC molecule leads to stable association with the actin cytoskeleton, one-to-one TCR triggering (ITAM phosphorylation), and subsequent ZAP70 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations demonstrate that engagement of TCR with an individual agonist pMHC molecule leads to stable association with the actin cytoskeleton, one-to-one TCR triggering (ITAM phosphorylation), and subsequent ZAP70 recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from multiple experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "226f567a-d257-4abf-a1b5-5bd56fe1b5d0",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C54",
+      "claim": "A single pMHC:TCR complex can lead to TCR triggering without molecular-scale association with other MHC molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, since every pMHC:TCR:ZAP70 complex is individually resolved in these experiments, we demonstrate that a single pMHC:TCR complex can lead to TCR triggering without molecular-scale association with other MHC molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct demonstration from single molecule resolution experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "eede0832-c916-47d1-b768-1d80c3485e3a",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C55",
+      "claim": "The minimum detectable lifetime is limited by the fastest frame rate (17.5 ms per frame) and the maximum measureable lifetime is limited by photobleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "The minimum detectable lifetime is limited by the fastest frame rate (17.5 ms per frame) and the maximum measureable lifetime is limited by photobleaching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "3cc15c91-b105-45ca-a514-8e4a61c0671f",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C56",
+      "claim": "The temporal dynamic range spans from \u223c50 ms to \u223c5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "For these single molecule tracking experiments, the temporal dynamic range spans from \u223c50 ms to \u223c5 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "317660f0-fbdf-4660-8d34-390d4c9e752e",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C57",
+      "claim": "The observed dwell time distributions are roughly exponential, as is expected for molecular binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed dwell time distributions are roughly exponential, as is expected for molecular binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental data compared to theoretical expectation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "8f8946db-bc31-426f-8452-7fdfc40e2ae3",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C58",
+      "claim": "Mean off-rate (\u27e8\u03c4off\u27e9) is 53.8 \u00b1 12.2 s for AND TCR with Atto488-labeled peptide agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus by measuring both kbl and \u3008\u03c4obs\u3009 it is possible to determine \u3008\u03c4off\u3009 as long as \u3008\u03c4obs\u3009\u2264\u3008\u03c4bl\u3009. We determine \u3008\u03c4off\u3009 to be 53.8 \u00b1 12.2 s for AND and 5.2 \u00b1 0.2 s for 5c.c7 TCRs for Atto488-labeled peptide agonist with \u3008\u03c4bl\u3009 of 300 and 30 s respectively (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct measurement from dwell time analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "07f43cd0-4def-414b-bb2a-fde6537989ce",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C59",
+      "claim": "Mean off-rate (\u27e8\u03c4off\u27e9) is 5.2 \u00b1 0.2 s for 5c.c7 TCR with Atto488-labeled peptide agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus by measuring both kbl and \u3008\u03c4obs\u3009 it is possible to determine \u3008\u03c4off\u3009 as long as \u3008\u03c4obs\u3009\u2264\u3008\u03c4bl\u3009. We determine \u3008\u03c4off\u3009 to be 53.8 \u00b1 12.2 s for AND and 5.2 \u00b1 0.2 s for 5c.c7 TCRs for Atto488-labeled peptide agonist with \u3008\u03c4bl\u3009 of 300 and 30 s respectively (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct measurement from dwell time analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "a0b63255-188a-4283-9ed3-0c9c357d7fe6",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C60",
+      "claim": "Similar values of \u27e8\u03c4off\u27e9 are measured with both Atto647N and Atto488 labeled peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "While fluorescent labels can affect binding kinetics, we measure similar values of \u3008\u03c4off\u3009 with both Atto647N and Atto488 labeled peptides (see, e.g., Figures 1C, 3, and 4A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Control experiments demonstrating label independence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "179945ed-285d-494b-b2b2-1a7cf168e893",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C61",
+      "claim": "\u27e8\u03c4off\u27e9 is relatively unchanged at high agonist pMHC density (100 molecules/\u00b5m2).",
+      "claim_type": "EXPLICIT",
+      "source": "\u3008\u03c4off\u3009 is also relatively unchanged at high agonist pMHC density (100 molecules/\u00b5m2), which is far above minimal levels required for T cell activation and observation of stable TCR microclusters (Manz et al., 2011) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental measurement at different densities shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "750532ca-f837-40bf-a977-511bbb013f62",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C62",
+      "claim": "Cytoskeleton disruption by Latrunculin A moderately increases \u27e8\u03c4off\u27e9 with the AND TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that cytoskeleton disruption by the actin-binding molecule, Latrunculin A, moderately increases \u3008\u03c4off\u3009 with the AND TCR and had no significant effect on 5c.c7 kinetics (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental measurement with cytoskeleton disruption shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "c96a3f75-3a44-43fa-aca3-b6c57649063a",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C63",
+      "claim": "Cytoskeleton disruption by Latrunculin A had no significant effect on 5c.c7 kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that cytoskeleton disruption by the actin-binding molecule, Latrunculin A, moderately increases \u3008\u03c4off\u3009 with the AND TCR and had no significant effect on 5c.c7 kinetics (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental measurement with cytoskeleton disruption shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "e9acd20d-dc6e-4e2a-be04-f2018012a36d",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C64",
+      "claim": "The dwell time distribution was only modestly affected by anti-CD4.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the dwell time distribution was only modestly affected by anti-CD4 (data not shown); however, the total number of TCR:pMHC complexes per cell was smaller in the anti-CD4 experiments, suggesting that the antibody interfered with pMHC:TCR binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation with anti-CD4 treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "1506b77c-895f-4304-b61d-b9c6259ef6bb",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C65",
+      "claim": "The total number of TCR:pMHC complexes per cell was smaller in the anti-CD4 experiments, suggesting that the antibody interfered with pMHC:TCR binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the dwell time distribution was only modestly affected by anti-CD4 (data not shown); however, the total number of TCR:pMHC complexes per cell was smaller in the anti-CD4 experiments, suggesting that the antibody interfered with pMHC:TCR binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observed reduction in complex number.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "8b277fb2-7aaa-48a0-b05b-c5b778c381d8",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C66",
+      "claim": "Tracking observations reveal the time intervals over which individual agonist pMHC molecules remain physically trapped within the immediate vicinity of the same TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracking observations reveal the time intervals over which individual agonist pMHC molecules remain physically trapped within the immediate vicinity of the same TCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of what tracking measurements represent.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "57a37fea-1df8-46eb-addf-2e533f276552",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C67",
+      "claim": "Unbinding of pMHC from TCR followed by rapid rebinding to the same TCR or another TCR within the same signaling cluster could conceivably lead to entrapment of pMHC for timescales longer than the lifetime of the molecular interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Unbinding of pMHC from TCR followed by rapid rebinding to the same TCR or another TCR within the same signaling cluster could conceivably lead to entrapment of pMHC for timescales longer than the lifetime of the molecular interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothetical mechanism being considered.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "9316948a-6449-40b3-9db6-81c3d5dabc48",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C68",
+      "claim": "This has been hypothesized as a potential mode by which a small number of agonist pMHC could trigger a larger number of TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been hypothesized as a potential mode by which a small number of agonist pMHC could trigger a larger number of TCR (Govern et al., 2010; Huppa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to hypotheses in cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "0ff1b628-26b3-405e-9c82-2148fa8b5920",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C69",
+      "claim": "For small TCR clusters (\u2264100 TCR molecules), \u03c4esc \u2248 \u03c4off, indicating no serial rebinding.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the fastest kon (0.17 \u00b5m2s\u22121molecule\u22121) observed in similar hybrid live cell-SLB systems (Huppa et al., 2010) and the measured diffusion coefficient of pMHC in our supported membranes, we find that \u03c4esc\u2248\u03c4off for TCR clusters of the sizes observed experimentally (Varma et al., 2006) (\u2264100 TCR molecules) (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from stochastic reaction-diffusion simulation shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "cb9ea5a2-4d87-42ca-a751-e4069742a457",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C70",
+      "claim": "Only for unrealistically large TCR clusters (\u223c1000 TCR molecules) could rebinding within the same cluster lead to appreciable entrapment (\u03c4esc>\u03c4exit).",
+      "claim_type": "EXPLICIT",
+      "source": "Only for unrealistically large TCR clusters (\u223c1000 TCR molecules) could rebinding within the same cluster lead to appreciable entrapment (\u03c4esc>\u03c4exit) (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from stochastic reaction-diffusion simulation shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "855b2f58-e2ed-427f-a199-5d1dd3b302f1",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C72",
+      "claim": "If pMHC completely disengages from TCR for long enough to diffuse to an adjacent TCR, then the probability of complete escape from the TCR cluster is high.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that although TCR clusters are not readily visible at the low antigen densities in these experiments, low level TCR clustering has been reported in the resting state by other methods (Schamel and Alarcon, 2013). Even with a very fast kon, if pMHC completely disengages from TCR for long enough to diffuse to an adjacent TCR, then the probability of complete escape from the TCR cluster is high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from simulation analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "5d9756e0-1786-4ff6-a93a-316956e7c242",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C73",
+      "claim": "Only in the extreme limit, where kon is so fast that pMHC unbinding is predominantly followed by rebinding to the same TCR, is the escape time appreciably longer than the individual molecular dwell times.",
+      "claim_type": "EXPLICIT",
+      "source": "Only in the extreme limit, where kon is so fast that pMHC unbinding is predominantly followed by rebinding to the same TCR, is the escape time appreciably longer than the individual molecular dwell times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from simulation analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "56059a13-bd13-4763-b11e-807e79394a0f",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C74",
+      "claim": "Individual agonist pMHC remain bound to the same TCR for at least several seconds for the 5c.c7 TCR and for approximately one minute for the AND TCR in live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "All evidence reported here suggests that individual agonist pMHC remain bound to the same TCR for at least several seconds for the 5c.c7 TCR and for approximately one minute for the AND TCR in live cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "9e5b44a2-f138-45b9-8766-615b04500d04",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C75",
+      "claim": "Subsequent recruitment of ZAP70 indicates TCR are triggered and movement of the complexes along linear trajectories confirms stable association with the actin cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent recruitment of ZAP70 indicates TCR are triggered and movement of the complexes along linear trajectories confirms stable association with the actin cytoskeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "b8f28db1-d42b-4cee-abb5-add5f75a37fc",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C76",
+      "claim": "All of this occurs as a result of a lone agonist pMHC binding TCR, without involvement of other MHC.",
+      "claim_type": "EXPLICIT",
+      "source": "All of this occurs as a result of a lone agonist pMHC binding TCR, without involvement of other MHC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from single molecule resolution experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "65948755-ec8f-41da-a796-3b5606c869dd",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C77",
+      "claim": "The measured average pMHC:TCR:ZAP70 stoichiometry indicates TCR triggering is most likely 1:1 with agonist pMHC.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured average pMHC:TCR:ZAP70 stoichiometry indicates TCR triggering is most likely 1:1 with agonist pMHC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from stoichiometry measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "5caaae4b-4d5d-4863-8469-c01b8634ffa6",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C78",
+      "claim": "Supernumerary triggering of multiple TCR by a single pMHC is not observed on the timescales of minutes investigated in these experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Supernumerary triggering of multiple TCR by a single pMHC is not observed on the timescales of minutes investigated in these experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from tracking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "cd1f657d-b7bb-4a20-b484-fd41a1261b1b",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C79",
+      "claim": "The original serial triggering model drew its conclusions from the extent of TCR down regulation measured 5 hr after exposure of T cells to antigen-pulsed APCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The original serial triggering model (Valitutti et al., 1995) drew its conclusions from the extent of TCR down regulation measured 5 hr after exposure of T cells to antigen-pulsed APCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the basis for the serial triggering model from cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "693565a3-30b3-4057-90e3-6495381cc37d",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C80",
+      "claim": "The lack of molecular-scale cooperativity in TCR triggering by agonist pMHC indicates that observed cooperativity at the level of cellular calcium response is most likely due to intracellular feedback mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the lack of molecular-scale cooperativity in TCR triggering by agonist pMHC indicates that observed cooperativity at the level of cellular calcium response, at similar ligand densities and timescales (Manz et al., 2011), is most likely due to intracellular feedback mechanisms (Altan-Bonnet and Germain, 2005; Chan et al., 2004; Das et al., 2009; Stefanov\u00e1 et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the absence of molecular cooperativity, with reference to alternative mechanisms in cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "40dbe532-1acf-4d3a-9e96-647b67bf4bd9",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C81",
+      "claim": "The timescales of the pMHC:TCR interactions observed in live cells are consistent with SPR measurements of koff for the 5c.c7 TCR and 226 TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The timescales of the pMHC:TCR interactions we observe in live cells are consistent with SPR measurements of koff for the 5c.c7 TCR and 226 TCR, which is nearly identical to AND (Figure 5C and Figure 7) (Corse et al., 2010; Newell et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison with published SPR measurements shown in Figure 5C and Figure 7.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "ac0c347e-bb28-45f7-bd0b-77c15f76351f",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C82",
+      "claim": "The observed timescales are consistent with reports of a \u223c2 s kinetic threshold for thymic selection determined in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "They are also consistent with reports of a \u223c2 s kinetic threshold for thymic selection determined in vivo (Williams et al., 1999; Palmer and Naeher, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with published in vivo measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "392d3f6c-2a02-4185-a485-658f98b5d41a",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C83",
+      "claim": "Stochastic reaction-diffusion analysis indicates that rapid serial rebinding of agonist pMHC to multiple TCRs in a signaling cluster is unlikely to be a universal mechanism for ligand discrimination and rapid signal amplification in T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Stochastic reaction-diffusion analysis of the measured kinetic and mobility parameters indicates that rapid serial rebinding of agonist pMHC to multiple TCRs in a signaling cluster is unlikely to be a universal mechanism for ligand discrimination and rapid signal amplification in T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from computational modeling analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "da5b6401-a3aa-4601-8d62-406513e04af6",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C86",
+      "claim": "The FRET result has been interpreted to mean that the actin cytoskeleton actively destabilizes agonist pMHC:TCR complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This result has been interpreted to mean that the actin cytoskeleton actively destabilizes agonist pMHC:TCR complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to interpretation in cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "da5dd374-ce12-4f04-b428-8dd7abc6ec2e",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C87",
+      "claim": "Very small effects of actin disruption on agonist pMHC dwell times are observed for AND and essentially no effect with 5c.c7 TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observe very small effects of actin disruption on agonist pMHC dwell times for AND and essentially no effect with 5c.c7 TCR (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct experimental observation shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "c27614da-6bbb-4fb1-af62-6534a117ad03",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C89",
+      "claim": "Recent structural studies of pMHC:TCR indicate the possibility of structural flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent structural studies of pMHC:TCR indicate the possibility of such flexibility (Adams et al., 2011; Hawse et al., 2012; Reboul et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to structural studies in cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "7d092666-717a-4c5f-91e0-f6c84fffebf6",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C90",
+      "claim": "Putative conformational changes would not affect single-molecule tracking measurements, but could produce a FRET signature.",
+      "claim_type": "EXPLICIT",
+      "source": "While putative conformational changes would not affect single-molecule tracking measurements, they could produce a FRET signature (Ha et al., 1999; Majumdar et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation based on known FRET behavior, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "755ee229-17c4-4c2d-842d-96b54ffc6574",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C92",
+      "claim": "Spatially discrete pMHC:TCR:ZAP70 complexes form according to molecular mass action laws with relatively predictable chemical kinetics and stoichiometry in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the aggregate, the data reported here indicate that spatially discrete pMHC:TCR:ZAP70 complexes form according to molecular mass action laws with relatively predictable chemical kinetics and stoichiometry in living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from all experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "e771ac74-53b4-4a80-a815-d68913aa1381",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C93",
+      "claim": "The observed pMHC:TCR molecular binding kinetics mirror solution measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed pMHC:TCR molecular binding kinetics mirror solution measurements and we observe no evidence for molecular scale cooperativity in the triggering of TCR by agonist pMHC (at low agonist density).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with solution measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "cc8454a9-7854-490a-8f0f-e9379bbdb4f2",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C94",
+      "claim": "No evidence for molecular scale cooperativity in the triggering of TCR by agonist pMHC is observed at low agonist density.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed pMHC:TCR molecular binding kinetics mirror solution measurements and we observe no evidence for molecular scale cooperativity in the triggering of TCR by agonist pMHC (at low agonist density).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from single molecule experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "34c4dbc4-6930-4b1b-98f0-b4becd1597fb",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C95",
+      "claim": "Any amplification or other form of signal processing must occur downstream of TCR triggering.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus any amplification or other form of signal processing must occur downstream of TCR triggering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the lack of molecular cooperativity and 1:1 stoichiometry.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "cda9615f-2ada-4bab-9200-f7489f056f46",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C96",
+      "claim": "The pMHC diffusion coefficient in supported membranes is 0.44 \u00b5m2/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The step-size distribution from these trajectories corresponds to a single lateral diffusion coefficient of 0.44 (SEM = 0.002) \u00b5m2/s, which is typical for supported membranes (Lin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from tracking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "340d8c86-9aa2-4bbd-b53b-0526baa5a611",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C97",
+      "claim": "TCR and agonist pMHC colocalize in the central supramolecular assembly cluster (cSMAC).",
+      "claim_type": "EXPLICIT",
+      "source": "(A) and (B) TCR and agonist pMHC colocalize in bulk in the central supramolecular assembly cluster (cSMAC) and (C) at the single molecule level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "53a88166-6ffb-42f6-a7bb-bcabfde8572d",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C98",
+      "claim": "TCR and agonist pMHC colocalize at the single molecule level.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) and (B) TCR and agonist pMHC colocalize in bulk in the central supramolecular assembly cluster (cSMAC) and (C) at the single molecule level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "7d621147-6b8c-4553-b49b-1e8ad18ca950",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C99",
+      "claim": "ZAP70-EGFP membrane recruitment and pMHC:TCR binding occur almost immediately after T cell landing.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAP70-EGFP membrane recruitment (Video 2) and pMHC:TCR binding (Video 3) occur almost immediately after landing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from Videos 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "4a36797f-b087-44b4-9a3a-c65a6576bd33",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C100",
+      "claim": "Radial transport of pMHC:TCR:ZAP70 complexes commences immediately after T cell landing.",
+      "claim_type": "EXPLICIT",
+      "source": "Radial transport of pMHC:TCR:ZAP70 complexes commences immediately after landing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from time-lapse imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "18c80ae4-c448-4a02-b1d0-027e95d685e1",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C101",
+      "claim": "CDR3\u03b1 and CDR3\u03b2 loops form all the specific interactions with the peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) CDR3\u03b1 (yellow) and CDR3\u03b2 (orange) loops form all the specific interactions with the peptide (cyan). Hydrogen bonds between the CDR3 loops and the MCC residues are shown by dashed lines (PDB, 3QIU)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural information from PDB structure shown in Figure 7A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "b24d1be2-1d6f-42bd-bd55-53041a9bd5c0",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C102",
+      "claim": "226 and AND TCRs have identical CDR3 loop sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Comparison of CDR3 loops between the 226 and AND TCRs reveal identical sequences and suggest similar binding kinetics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequence comparison shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "2181ffd7-9398-47a1-8fdd-94f64467a0c1",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C103",
+      "claim": "226 and AND TCRs share V\u03b1, J\u03b1, V\u03b2, and J\u03b2 gene segments that encode the residues specific for interaction with IEk.",
+      "claim_type": "EXPLICIT",
+      "source": "226 and AND also share V\u03b1, J\u03b1, V\u03b2, and J\u03b2 gene segments that encode the residues specific for interaction with IEk (Newell et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Information from cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "a1706b22-efa9-4b43-90a5-b49ef5418b4b",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C104",
+      "claim": "The majority of single molecule ZAP70-EGFP traces exhibit intensity fluctuations consistent with background.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) The majority of single molecule agonist pMHC traces result in ZAP70-EGFP traces with intensity fluctuations consistent with the background.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "ec2aafba-c6a5-4025-bca5-7c63454c6589",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C105",
+      "claim": "Single ZAP70-EGFP events are long-lived (12\u2013107 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Step increases and decreases in ZAP70-EGFP intensity are rare, but single ZAP70-EGFP events are long-lived (12\u2013107 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from intensity trace analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "32172bd7-6776-46a7-8591-813e50b23dd9",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C106",
+      "claim": "Rapid ZAP70-EGFP unbinding and rebinding in between observations is unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations indicate that rapid ZAP70-EGFP unbinding and rebinding in between observations is unlikely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observation of long-lived events and background-level fluctuations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "363a5e5b-0433-448a-afe0-3b777efff75d",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C107",
+      "claim": "A small minority of agonist pMHC traces exhibit two-step photobleaching, indicating pMHC dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) A small minority of agonist pMHC traces exhibit two-step photobleaching, indicating pMHC dimerization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from photobleaching analysis shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "23189292-9d4d-4889-a567-402ae5353957",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "claim_id": "C108",
+      "claim": "The ZAP70-EGFP output for pMHC dimers is equivalent to the ZAP70-EGFP output for single agonist pMHC molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the ZAP70-EGFP output for these traces is equivalent to the ZAP70-EGFP output for single agonist pMHC single molecule traces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct comparison of ZAP70 recruitment to monomers vs dimers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6068c0a3-3f3a-456e-90a9-a58e4b9be712",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A multi-timescale single molecule fluorescence imaging approach enables individual resolution and tracking of pMHC molecules for up to minutes. pMHC molecules exhibit two distinct mobility classes: fast random diffusion (D=0.44 \u03bcm\u00b2/s) outside cells and slow linear trajectories within T cell junctions. Variable exposure times (17.5 ms vs 500 ms) allow hardware discrimination between these populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C34 describe a well-validated imaging methodology with appropriate controls. The bimodal step-size distribution (C32) and single-step photobleaching (C29) provide strong evidence for single molecule tracking. The measured diffusion coefficient (C31) is consistent with supported membrane systems and includes appropriate error estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "57d14462-3382-4d4d-85e4-3268297dc76a",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Slow-moving pMHC molecules colocalize with TCR and are only observed with agonist peptide. Control experiments with mixed agonist/null peptides labeled with different fluorophores demonstrate peptide specificity independent of fluorophore identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C35-C37 provide strong evidence through colocalization (Figure 2) and fluorophore-swap controls (C37, Figure 3). The specificity for agonist peptide is well-demonstrated, and the control excluding fluorophore artifacts strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "50f8ff90-5a52-45bb-b315-b5aa9f46a72c",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The linear trajectories of pMHC:TCR complexes match well-characterized actomyosin-driven TCR movement during immunological synapse formation, indicating stable engagement with the cytoskeleton. This occurs across a wide range of pMHC densities (0.2-100 molecules/\u03bcm\u00b2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C14, C40 are supported by comparison with multiple prior studies of TCR microcluster transport. The observation across different densities (C38-C40) strengthens the generalizability. However, the inference of 'stable engagement' (C14) relies on trajectory similarity rather than direct mechanical measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "b15e665e-0c84-4bc2-b460-d0ae4d10dfc4",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ZAP70-EGFP localizes to and moves with pMHC:TCR complexes immediately after T cell landing. Individual ZAP70-EGFP binding events exhibit dwell times of 12-107 s, slightly longer than bulk FRAP measurements (~10 s) but consistent with a slower-exchanging fraction identified in those studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 demonstrate ZAP70 recruitment with appropriate single molecule intensity analysis and change-point detection. The comparison with FRAP (C44-C45) appropriately acknowledges differences in measurement techniques. The immediate recruitment (C99-C100) is directly observed in Videos 2-3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "936c513a-7875-495d-b3ab-963f3abe4ac4",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Single molecule intensity calibration indicates ~6 ZAP70 molecules per pMHC:TCR complex. Given that each TCR has 10 ITAMs and ZAP70-EGFP was expressed 1:1 with endogenous ZAP70, this corresponds to ~6 total ZAP70 molecules, suggesting 1:1 stoichiometry between pMHC and triggered TCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C15, C46-C49, C77 provide quantitative stoichiometry analysis with appropriate calibration (n=6 single molecules). The 1:1 ratio with endogenous ZAP70 was confirmed by FACS and western blot (C47). The inference of single TCR triggering (C49) is logical given 10 ITAMs per TCR and ~6 ZAP70 observed, though some uncertainty remains about partial ITAM phosphorylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "2adf9591-fe48-4d6d-b2b0-4b177849adac",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ZAP70-EGFP stoichiometry ranges from 1 to ~10 molecules per pMHC:TCR complex, suggesting time-dependent accumulation. The majority of traces show background-level fluctuations with rare but long-lived (12-107 s) binding events, indicating that rapid unbinding/rebinding is unlikely.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C104-C106 acknowledge the range of stoichiometries observed while noting that definitive time-dependent accumulation within individual traces was not observed. The analysis of background fluctuations (C104, C106) appropriately rules out rapid exchange that would be invisible at the temporal resolution used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "ae6bdc2b-f907-4265-904d-b7f9b77d2c6b",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Engagement of TCR with an individual agonist pMHC molecule leads to stable cytoskeletal association, 1:1 TCR triggering, and ZAP70 recruitment without requiring molecular-scale association with other MHC molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54, C76 represent the integrated conclusion from multiple experimental observations. The single molecule resolution (C54) directly demonstrates that individual pMHC:TCR complexes can trigger without other MHC involvement. This is a key finding that distinguishes between competing models of TCR triggering.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "07376c3b-10b2-483c-8e3c-21c7c31e6540",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mean pMHC:TCR dwell times are 5.2\u00b10.2 s for 5c.c7 TCR and 53.8\u00b112.2 s for AND TCR, measured with Atto488-labeled peptide. Similar values are obtained with Atto647N labeling and across different pMHC densities (0.2-100 molecules/\u03bcm\u00b2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C58-C61 report quantitative kinetic measurements with appropriate error estimates and controls. The fluorophore-independence (C60) and density-independence (C61) strengthen confidence in the measurements. The correction for photobleaching is mathematically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "bf1ecb54-b8ac-4d22-9516-e46b9a5322df",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Dwell time distributions are roughly exponential with temporal dynamic range of ~50 ms to ~5 min. The measured timescales are consistent with SPR measurements for 5c.c7 and 226 TCRs and with the ~2 s kinetic threshold for thymic selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17, C55-C57, C81 demonstrate appropriate analysis of binding kinetics. The exponential distribution (C57) is expected for first-order dissociation. Comparison with solution measurements (C17, C81) and in vivo thresholds (C82) provides important validation, though differences in measurement context should be noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "ac7ce960-3715-4253-b755-352f63c6ecf0",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cytoskeleton disruption by Latrunculin A moderately increases dwell time for AND TCR but has no significant effect on 5c.c7 kinetics. Anti-CD4 treatment modestly affects dwell time distribution but reduces the total number of complexes, suggesting interference with binding rather than unbinding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65, C87 report perturbation experiments with appropriate controls. The differential effects on AND vs 5c.c7 (C62-C63) are interesting but the modest magnitude and TCR-dependence suggest complex mechanisms. The anti-CD4 result (C64-C65) appropriately distinguishes effects on binding vs unbinding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "e3d96433-e432-4460-b185-a8063140db7d",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Tracking measurements reveal spatial entrapment times of pMHC with TCR clusters. Serial rebinding within clusters has been hypothesized as a mechanism for signal amplification, where one pMHC could trigger multiple TCRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C66-C68 appropriately distinguish what tracking measurements directly report (spatial entrapment) from molecular binding events. The discussion of serial rebinding (C67-C68) correctly identifies this as a hypothesis from prior literature that requires testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "4fddb5b3-c1a4-4f53-b24f-892c7d02318e",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Stochastic reaction-diffusion simulations indicate that for physiologically-sized TCR clusters (\u2264100 molecules), \u03c4esc \u2248 \u03c4off, meaning serial rebinding alone is unlikely to sustain entrapment. Only unrealistically large clusters (~1000 TCRs) show appreciable entrapment. If pMHC completely disengages, escape probability is high.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C69-C70, C72-C73, C83 present computational modeling with appropriate parameter ranges. The use of the fastest reported kon (C69) provides a conservative test. The conclusion that serial rebinding is unlikely (C20, C83) is well-supported for physiological cluster sizes, though the model makes assumptions about cluster geometry and TCR distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "ae2119c9-ea5d-476b-bc11-dc1f91045261",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Individual agonist pMHC remain bound to the same TCR for several seconds (5c.c7) to approximately one minute (AND) in live cells. Triggered TCR remain localized with the same pMHC. Supernumerary triggering of multiple TCRs by a single pMHC is not observed on minute timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24, C74, C78 represent key conclusions directly supported by tracking data. The absence of serial triggering (C78) on the timescales investigated is clearly demonstrated, though this does not exclude serial triggering on longer timescales (as noted in C79).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "172319a7-5a60-48b7-af9a-b91396938404",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Any signal amplification must occur downstream of TCR triggering, based on the observed 1:1 stoichiometry and lack of molecular cooperativity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C95 represent a logical inference from the 1:1 stoichiometry (C3, C77) and absence of cooperativity (C94). This is an important mechanistic conclusion that constrains models of T cell signaling, though it does not identify where amplification occurs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "7581a7ad-6a33-454f-aa2c-81bfe01e944c",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "No molecular-scale cooperativity in TCR triggering by agonist pMHC is observed at low agonist density. Observed cooperativity at the cellular calcium response level is most likely due to intracellular feedback mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80, C94 appropriately distinguish molecular-level observations from cellular responses. The inference about feedback mechanisms (C80) is supported by citations to relevant literature, though direct demonstration would require additional experiments targeting specific feedback pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "c0e9ca4b-3633-40fc-9cf7-447b52b40c0a",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Recent FRET studies suggested accelerated pMHC:TCR off-rates in living cells due to cytoskeletal forces. However, tracking measurements show minimal effects of actin disruption on dwell times. Structural flexibility within pMHC:TCR complexes could produce FRET signatures without actual unbinding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C19, C86-C87, C89-C90 address an apparent discrepancy between FRET and tracking measurements. The proposed explanation involving conformational flexibility (C90) is speculative (as acknowledged) and would require additional structural or biophysical experiments to validate. The different sensitivities of FRET vs tracking to conformational changes is plausible but not definitively demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "d5759f57-e471-4b22-b341-4f31b55cfb4e",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Structural flexibility within the pMHC:TCR complex could give rise to apparently fast kinetics in FRET measurements without actual unbinding of pMHC from TCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C22 is explicitly speculative, proposing a mechanism to reconcile different experimental observations. While structural studies (cited) support the possibility of flexibility, direct evidence that this explains the FRET vs tracking discrepancy is lacking. This represents a testable hypothesis rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "df05acca-8869-45d5-90b8-a7bc5ab3a42f",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Spatially discrete pMHC:TCR:ZAP70 complexes form according to molecular mass action laws with predictable chemical kinetics and stoichiometry in living cells. The observed pMHC:TCR molecular binding kinetics mirror solution measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 represent the overarching conclusion that TCR triggering follows classical biochemical principles. This is well-supported by the agreement between in situ and solution measurements (C17, C81) and the predictable stoichiometry (C3, C77). However, the role of cellular context (membrane organization, cytoskeleton) may be more complex than 'mass action' implies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "1a9c5789-a0f6-417b-b659-6e5cae869f3c",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The experimental system uses supported lipid bilayers functionalized with MHC-IEk and ICAM1-TagBFP via Ni-chelating lipids. Peptides are covalently coupled 1:1 to fluorophores (verified by HPLC). LFA1-ICAM1 binding produces rapid cell spreading. Experiments span pMHC densities from 0.2 to 100 molecules/\u03bcm\u00b2, ranging from near-threshold to well above microcluster-forming densities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27, C38-C39 describe well-validated methodology. The 1:1 peptide:fluorophore stoichiometry is verified by HPLC (C26). The density range (C38-C39) is appropriately contextualized relative to functional thresholds from prior literature. This represents a robust experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "6105507f-2fad-4ddc-943d-34b88d2a529c",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Brighter ZAP70-EGFP features are located toward the cell center at later timepoints (>5-10 min) and can be tracked for tens to hundreds of seconds, indicating stable association with pMHC:TCR complexes along linear trajectories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 describe temporal and spatial organization of signaling complexes. The observation of brighter features centrally (C50) is consistent with microcluster transport, and the long tracking times (C51) demonstrate stable associations. This supports the conclusion of sustained pMHC:TCR engagement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "0ede63e9-be7f-452e-b0d3-715e48c67c62",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "226 and AND TCRs have identical CDR3 loop sequences and share V\u03b1, J\u03b1, V\u03b2, and J\u03b2 gene segments encoding residues for IEk interaction, suggesting similar binding kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 provide structural rationale for using 226 TCR kinetic data as a proxy for AND TCR. The sequence identity in CDR3 loops (C102) and shared gene segments (C103) support this comparison, which is important for validating the measured AND kinetics against published SPR data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "b869474e-d9a3-4932-8fa5-4a06886b7ea2",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "A small minority of agonist pMHC traces show two-step photobleaching indicating dimerization, but ZAP70-EGFP recruitment to dimers is equivalent to monomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C108 address a potential confound (pMHC dimerization) and demonstrate that it does not affect the main conclusions about stoichiometry. The observation that dimers recruit the same amount of ZAP70 as monomers (C108) supports the 1:1 pMHC:TCR triggering model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "b41b2a33-751d-4418-b859-52495889912a",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "T cell activation requires fewer than 10 agonist pMHC molecules and occurs on a seconds timescale. Peptide-specific kinetic rates are the basis of antigen recognition. The maximum TCR affinity for self pMHC is sharply defined and close to the threshold for foreign pMHC, such that every TCR likely binds some self pMHC with affinities only slightly different from agonist pMHC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 establish the biological context and challenge that motivates the study. These are well-supported by citations to prior literature (C5-C7) and represent established understanding in the field (C8-C9). This background appropriately frames the significance of the single molecule measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "89dec5e6-4147-4d70-8089-e3bc32f769d5",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The original serial triggering model was based on TCR downregulation measured 5 hours after APC exposure. The observed timescales are consistent with a ~2 s kinetic threshold for thymic selection determined in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79, C82 provide important context from prior literature. C79 appropriately notes that the original serial triggering model operated on much longer timescales than investigated here. C82 validates the measured kinetics against in vivo functional thresholds, strengthening biological relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "35c6f7e7-7953-4130-bc51-c83633ff7651",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "T cells discriminate between self and foreign antigenic peptides displayed on antigen presenting cell surfaces via the TCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 states fundamental immunological knowledge that provides essential context for the study. This is well-established scientific consensus and appropriately frames the biological question being addressed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "d1881e09-dd9b-422d-98ca-d4963c4c90d9",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "The pMHC diffusion coefficient in supported membranes is 0.44 \u03bcm\u00b2/s (SEM=0.002), which is typical for supported membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C96 reports a well-characterized control measurement with appropriate error estimate. The value is consistent with prior literature on supported membranes, validating the experimental system. This is important for the reaction-diffusion modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    },
+    {
+      "id": "623eddbf-331a-4da7-b69d-0e720769c467",
+      "content_id": "e8e11c9e-526a-432c-b2af-334057580545",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "CDR3\u03b1 and CDR3\u03b2 loops form all the specific interactions with the peptide, as shown by hydrogen bonds in the crystal structure (PDB 3QIU).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C101 describes structural information from a published crystal structure. This provides molecular context for understanding peptide specificity and is appropriately used to support the interpretation of binding kinetics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:07.195891Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1e9b7f6e-9ff3-4d31-add5-bc8e841aed95",
+      "result_id": "6068c0a3-3f3a-456e-90a9-a58e4b9be712"
+    },
+    {
+      "claim_id": "62bdb810-9401-4df7-9058-6c8b1aa39887",
+      "result_id": "6068c0a3-3f3a-456e-90a9-a58e4b9be712"
+    },
+    {
+      "claim_id": "ed04c438-cf40-4ae6-880a-3c2f7f673039",
+      "result_id": "6068c0a3-3f3a-456e-90a9-a58e4b9be712"
+    },
+    {
+      "claim_id": "78c9725f-c9fa-4540-9cb5-3ea1466ba06e",
+      "result_id": "6068c0a3-3f3a-456e-90a9-a58e4b9be712"
+    },
+    {
+      "claim_id": "0a4a265a-6b22-4772-ab17-3f9d43593820",
+      "result_id": "6068c0a3-3f3a-456e-90a9-a58e4b9be712"
+    },
+    {
+      "claim_id": "5594ab6d-2722-443f-8a1f-ce3eb30d5dcf",
+      "result_id": "6068c0a3-3f3a-456e-90a9-a58e4b9be712"
+    },
+    {
+      "claim_id": "313f54d7-4a20-4978-87cd-aba1fdb3b5ad",
+      "result_id": "6068c0a3-3f3a-456e-90a9-a58e4b9be712"
+    },
+    {
+      "claim_id": "93b80a22-bcc9-4eb6-8fde-f7a801cb5267",
+      "result_id": "6068c0a3-3f3a-456e-90a9-a58e4b9be712"
+    },
+    {
+      "claim_id": "88d8da3f-03b4-4196-9aa6-32fc4480d282",
+      "result_id": "6068c0a3-3f3a-456e-90a9-a58e4b9be712"
+    },
+    {
+      "claim_id": "c1db46c1-ccfa-4236-8622-55e664521cad",
+      "result_id": "57d14462-3382-4d4d-85e4-3268297dc76a"
+    },
+    {
+      "claim_id": "8a8b0d03-3435-432c-ac13-a2c034046529",
+      "result_id": "57d14462-3382-4d4d-85e4-3268297dc76a"
+    },
+    {
+      "claim_id": "7526ef26-4b01-4d4e-9cae-ea6b5dead50d",
+      "result_id": "57d14462-3382-4d4d-85e4-3268297dc76a"
+    },
+    {
+      "claim_id": "f58fc276-cfa7-4435-a22c-53573b7977d6",
+      "result_id": "57d14462-3382-4d4d-85e4-3268297dc76a"
+    },
+    {
+      "claim_id": "340d8c86-9aa2-4bbd-b53b-0526baa5a611",
+      "result_id": "57d14462-3382-4d4d-85e4-3268297dc76a"
+    },
+    {
+      "claim_id": "53a88166-6ffb-42f6-a7bb-bcabfde8572d",
+      "result_id": "57d14462-3382-4d4d-85e4-3268297dc76a"
+    },
+    {
+      "claim_id": "1e4e6da7-be11-45be-a1e3-2183901f329b",
+      "result_id": "50f8ff90-5a52-45bb-b315-b5aa9f46a72c"
+    },
+    {
+      "claim_id": "f7b87b78-1440-4bec-b41c-c9dbfd2bbb65",
+      "result_id": "50f8ff90-5a52-45bb-b315-b5aa9f46a72c"
+    },
+    {
+      "claim_id": "5daae8e6-feb7-4d19-8b7e-f21c44a2618c",
+      "result_id": "50f8ff90-5a52-45bb-b315-b5aa9f46a72c"
+    },
+    {
+      "claim_id": "9e5b44a2-f138-45b9-8766-615b04500d04",
+      "result_id": "50f8ff90-5a52-45bb-b315-b5aa9f46a72c"
+    },
+    {
+      "claim_id": "7a65dd5d-475a-464a-8b42-2e2c7beaf856",
+      "result_id": "b15e665e-0c84-4bc2-b460-d0ae4d10dfc4"
+    },
+    {
+      "claim_id": "e59548bf-a67b-43b2-8da1-ea779bca27cd",
+      "result_id": "b15e665e-0c84-4bc2-b460-d0ae4d10dfc4"
+    },
+    {
+      "claim_id": "3d6e0edf-ddaa-4edd-baf6-83e4cbc1ce2f",
+      "result_id": "b15e665e-0c84-4bc2-b460-d0ae4d10dfc4"
+    },
+    {
+      "claim_id": "7514d881-6b46-4c2f-ae9b-d2d5eecfd42d",
+      "result_id": "b15e665e-0c84-4bc2-b460-d0ae4d10dfc4"
+    },
+    {
+      "claim_id": "ff9b5252-86e2-4211-b795-c2032b0bc7b2",
+      "result_id": "b15e665e-0c84-4bc2-b460-d0ae4d10dfc4"
+    },
+    {
+      "claim_id": "7d621147-6b8c-4553-b49b-1e8ad18ca950",
+      "result_id": "b15e665e-0c84-4bc2-b460-d0ae4d10dfc4"
+    },
+    {
+      "claim_id": "4a36797f-b087-44b4-9a3a-c65a6576bd33",
+      "result_id": "b15e665e-0c84-4bc2-b460-d0ae4d10dfc4"
+    },
+    {
+      "claim_id": "05d2a8dc-9439-481b-b5f9-488a168172fe",
+      "result_id": "936c513a-7875-495d-b3ab-963f3abe4ac4"
+    },
+    {
+      "claim_id": "8bc443ef-b2bb-4b7c-a14d-454e7045669e",
+      "result_id": "936c513a-7875-495d-b3ab-963f3abe4ac4"
+    },
+    {
+      "claim_id": "4838dd3c-5dab-4629-8392-4e6d838d4267",
+      "result_id": "936c513a-7875-495d-b3ab-963f3abe4ac4"
+    },
+    {
+      "claim_id": "63b785c5-b70b-4c5d-ae55-8c34534ac0bd",
+      "result_id": "936c513a-7875-495d-b3ab-963f3abe4ac4"
+    },
+    {
+      "claim_id": "23fa123c-d189-4ed4-a0d7-73d8257d2e15",
+      "result_id": "936c513a-7875-495d-b3ab-963f3abe4ac4"
+    },
+    {
+      "claim_id": "f8679fa5-73ae-44c9-8d33-4f48d1ca721a",
+      "result_id": "936c513a-7875-495d-b3ab-963f3abe4ac4"
+    },
+    {
+      "claim_id": "65948755-ec8f-41da-a796-3b5606c869dd",
+      "result_id": "936c513a-7875-495d-b3ab-963f3abe4ac4"
+    },
+    {
+      "claim_id": "2d1efd8c-9a73-467c-b5a4-532a10c5bc86",
+      "result_id": "2adf9591-fe48-4d6d-b2b0-4b177849adac"
+    },
+    {
+      "claim_id": "a1706b22-efa9-4b43-90a5-b49ef5418b4b",
+      "result_id": "2adf9591-fe48-4d6d-b2b0-4b177849adac"
+    },
+    {
+      "claim_id": "ec2aafba-c6a5-4025-bca5-7c63454c6589",
+      "result_id": "2adf9591-fe48-4d6d-b2b0-4b177849adac"
+    },
+    {
+      "claim_id": "32172bd7-6776-46a7-8591-813e50b23dd9",
+      "result_id": "2adf9591-fe48-4d6d-b2b0-4b177849adac"
+    },
+    {
+      "claim_id": "55a42779-5d3a-433f-8743-efac1aa2be0b",
+      "result_id": "ae6bdc2b-f907-4265-904d-b7f9b77d2c6b"
+    },
+    {
+      "claim_id": "226f567a-d257-4abf-a1b5-5bd56fe1b5d0",
+      "result_id": "ae6bdc2b-f907-4265-904d-b7f9b77d2c6b"
+    },
+    {
+      "claim_id": "b8f28db1-d42b-4cee-abb5-add5f75a37fc",
+      "result_id": "ae6bdc2b-f907-4265-904d-b7f9b77d2c6b"
+    },
+    {
+      "claim_id": "d8da50a7-4ce8-4780-9ce0-79b28705b108",
+      "result_id": "07376c3b-10b2-483c-8e3c-21c7c31e6540"
+    },
+    {
+      "claim_id": "8f8946db-bc31-426f-8452-7fdfc40e2ae3",
+      "result_id": "07376c3b-10b2-483c-8e3c-21c7c31e6540"
+    },
+    {
+      "claim_id": "07f43cd0-4def-414b-bb2a-fde6537989ce",
+      "result_id": "07376c3b-10b2-483c-8e3c-21c7c31e6540"
+    },
+    {
+      "claim_id": "a0b63255-188a-4283-9ed3-0c9c357d7fe6",
+      "result_id": "07376c3b-10b2-483c-8e3c-21c7c31e6540"
+    },
+    {
+      "claim_id": "179945ed-285d-494b-b2b2-1a7cf168e893",
+      "result_id": "07376c3b-10b2-483c-8e3c-21c7c31e6540"
+    },
+    {
+      "claim_id": "592b3792-291a-4404-8c02-b434cf2364d7",
+      "result_id": "bf1ecb54-b8ac-4d22-9516-e46b9a5322df"
+    },
+    {
+      "claim_id": "1c282f17-f8c7-440e-84c6-e037c1e7ef3a",
+      "result_id": "bf1ecb54-b8ac-4d22-9516-e46b9a5322df"
+    },
+    {
+      "claim_id": "eede0832-c916-47d1-b768-1d80c3485e3a",
+      "result_id": "bf1ecb54-b8ac-4d22-9516-e46b9a5322df"
+    },
+    {
+      "claim_id": "3cc15c91-b105-45ca-a514-8e4a61c0671f",
+      "result_id": "bf1ecb54-b8ac-4d22-9516-e46b9a5322df"
+    },
+    {
+      "claim_id": "317660f0-fbdf-4660-8d34-390d4c9e752e",
+      "result_id": "bf1ecb54-b8ac-4d22-9516-e46b9a5322df"
+    },
+    {
+      "claim_id": "40dbe532-1acf-4d3a-9e96-647b67bf4bd9",
+      "result_id": "bf1ecb54-b8ac-4d22-9516-e46b9a5322df"
+    },
+    {
+      "claim_id": "750532ca-f837-40bf-a977-511bbb013f62",
+      "result_id": "ac7ce960-3715-4253-b755-352f63c6ecf0"
+    },
+    {
+      "claim_id": "c96a3f75-3a44-43fa-aca3-b6c57649063a",
+      "result_id": "ac7ce960-3715-4253-b755-352f63c6ecf0"
+    },
+    {
+      "claim_id": "e9acd20d-dc6e-4e2a-be04-f2018012a36d",
+      "result_id": "ac7ce960-3715-4253-b755-352f63c6ecf0"
+    },
+    {
+      "claim_id": "1506b77c-895f-4304-b61d-b9c6259ef6bb",
+      "result_id": "ac7ce960-3715-4253-b755-352f63c6ecf0"
+    },
+    {
+      "claim_id": "da5dd374-ce12-4f04-b428-8dd7abc6ec2e",
+      "result_id": "ac7ce960-3715-4253-b755-352f63c6ecf0"
+    },
+    {
+      "claim_id": "ebe9c231-4d57-4667-9362-6e4b0463d6a1",
+      "result_id": "e3d96433-e432-4460-b185-a8063140db7d"
+    },
+    {
+      "claim_id": "8b277fb2-7aaa-48a0-b05b-c5b778c381d8",
+      "result_id": "e3d96433-e432-4460-b185-a8063140db7d"
+    },
+    {
+      "claim_id": "57a37fea-1df8-46eb-addf-2e533f276552",
+      "result_id": "e3d96433-e432-4460-b185-a8063140db7d"
+    },
+    {
+      "claim_id": "9316948a-6449-40b3-9db6-81c3d5dabc48",
+      "result_id": "e3d96433-e432-4460-b185-a8063140db7d"
+    },
+    {
+      "claim_id": "f7201d31-48b5-44d6-9b73-ea8f7d5522dc",
+      "result_id": "4fddb5b3-c1a4-4f53-b24f-892c7d02318e"
+    },
+    {
+      "claim_id": "26aa43b8-62bd-42a0-92c4-28ad5ccb6512",
+      "result_id": "4fddb5b3-c1a4-4f53-b24f-892c7d02318e"
+    },
+    {
+      "claim_id": "0ff1b628-26b3-405e-9c82-2148fa8b5920",
+      "result_id": "4fddb5b3-c1a4-4f53-b24f-892c7d02318e"
+    },
+    {
+      "claim_id": "cb9ea5a2-4d87-42ca-a751-e4069742a457",
+      "result_id": "4fddb5b3-c1a4-4f53-b24f-892c7d02318e"
+    },
+    {
+      "claim_id": "855b2f58-e2ed-427f-a199-5d1dd3b302f1",
+      "result_id": "4fddb5b3-c1a4-4f53-b24f-892c7d02318e"
+    },
+    {
+      "claim_id": "5d9756e0-1786-4ff6-a93a-316956e7c242",
+      "result_id": "4fddb5b3-c1a4-4f53-b24f-892c7d02318e"
+    },
+    {
+      "claim_id": "392d3f6c-2a02-4185-a485-658f98b5d41a",
+      "result_id": "4fddb5b3-c1a4-4f53-b24f-892c7d02318e"
+    },
+    {
+      "claim_id": "e3fe1c63-9b41-4905-adac-be71a92c443f",
+      "result_id": "ae2119c9-ea5d-476b-bc11-dc1f91045261"
+    },
+    {
+      "claim_id": "39efde14-9d2d-42db-8b89-c31f1b6319b0",
+      "result_id": "ae2119c9-ea5d-476b-bc11-dc1f91045261"
+    },
+    {
+      "claim_id": "56059a13-bd13-4763-b11e-807e79394a0f",
+      "result_id": "ae2119c9-ea5d-476b-bc11-dc1f91045261"
+    },
+    {
+      "claim_id": "5caaae4b-4d5d-4863-8469-c01b8634ffa6",
+      "result_id": "ae2119c9-ea5d-476b-bc11-dc1f91045261"
+    },
+    {
+      "claim_id": "a58aaf37-ac84-45a4-95ee-e3e2d472106f",
+      "result_id": "172319a7-5a60-48b7-af9a-b91396938404"
+    },
+    {
+      "claim_id": "34c4dbc4-6930-4b1b-98f0-b4becd1597fb",
+      "result_id": "172319a7-5a60-48b7-af9a-b91396938404"
+    },
+    {
+      "claim_id": "693565a3-30b3-4057-90e3-6495381cc37d",
+      "result_id": "7581a7ad-6a33-454f-aa2c-81bfe01e944c"
+    },
+    {
+      "claim_id": "cc8454a9-7854-490a-8f0f-e9379bbdb4f2",
+      "result_id": "7581a7ad-6a33-454f-aa2c-81bfe01e944c"
+    },
+    {
+      "claim_id": "4fbf4cb2-6a9d-493f-b701-86f407baac39",
+      "result_id": "c0e9ca4b-3633-40fc-9cf7-447b52b40c0a"
+    },
+    {
+      "claim_id": "da5b6401-a3aa-4601-8d62-406513e04af6",
+      "result_id": "c0e9ca4b-3633-40fc-9cf7-447b52b40c0a"
+    },
+    {
+      "claim_id": "da5dd374-ce12-4f04-b428-8dd7abc6ec2e",
+      "result_id": "c0e9ca4b-3633-40fc-9cf7-447b52b40c0a"
+    },
+    {
+      "claim_id": "c27614da-6bbb-4fb1-af62-6534a117ad03",
+      "result_id": "c0e9ca4b-3633-40fc-9cf7-447b52b40c0a"
+    },
+    {
+      "claim_id": "7d092666-717a-4c5f-91e0-f6c84fffebf6",
+      "result_id": "c0e9ca4b-3633-40fc-9cf7-447b52b40c0a"
+    },
+    {
+      "claim_id": "d89bf61e-3193-43d5-ad95-a17dd9e83cdc",
+      "result_id": "d5759f57-e471-4b22-b341-4f31b55cfb4e"
+    },
+    {
+      "claim_id": "755ee229-17c4-4c2d-842d-96b54ffc6574",
+      "result_id": "df05acca-8869-45d5-90b8-a7bc5ab3a42f"
+    },
+    {
+      "claim_id": "e771ac74-53b4-4a80-a815-d68913aa1381",
+      "result_id": "df05acca-8869-45d5-90b8-a7bc5ab3a42f"
+    },
+    {
+      "claim_id": "322b9d4c-aa4c-4ddc-9ef3-64c2f6c9a3ca",
+      "result_id": "1a9c5789-a0f6-417b-b659-6e5cae869f3c"
+    },
+    {
+      "claim_id": "8673f281-9795-451b-9ce6-34953737adff",
+      "result_id": "1a9c5789-a0f6-417b-b659-6e5cae869f3c"
+    },
+    {
+      "claim_id": "aa6534bd-46cc-44a5-8992-5761ebb3f953",
+      "result_id": "1a9c5789-a0f6-417b-b659-6e5cae869f3c"
+    },
+    {
+      "claim_id": "2017d59d-2018-482b-9d28-6bf51783e09e",
+      "result_id": "1a9c5789-a0f6-417b-b659-6e5cae869f3c"
+    },
+    {
+      "claim_id": "bd53b9f3-a7c5-4152-a5b8-75d8b440fa72",
+      "result_id": "1a9c5789-a0f6-417b-b659-6e5cae869f3c"
+    },
+    {
+      "claim_id": "b5f39a2e-bb18-4c57-9ce9-c1cf3e6e71ab",
+      "result_id": "6105507f-2fad-4ddc-943d-34b88d2a529c"
+    },
+    {
+      "claim_id": "0dd8ae2f-fc59-4693-8dc8-5c72724ab07f",
+      "result_id": "6105507f-2fad-4ddc-943d-34b88d2a529c"
+    },
+    {
+      "claim_id": "b24d1be2-1d6f-42bd-bd55-53041a9bd5c0",
+      "result_id": "0ede63e9-be7f-452e-b0d3-715e48c67c62"
+    },
+    {
+      "claim_id": "2181ffd7-9398-47a1-8fdd-94f64467a0c1",
+      "result_id": "0ede63e9-be7f-452e-b0d3-715e48c67c62"
+    },
+    {
+      "claim_id": "363a5e5b-0433-448a-afe0-3b777efff75d",
+      "result_id": "b869474e-d9a3-4932-8fa5-4a06886b7ea2"
+    },
+    {
+      "claim_id": "23189292-9d4d-4889-a567-402ae5353957",
+      "result_id": "b869474e-d9a3-4932-8fa5-4a06886b7ea2"
+    },
+    {
+      "claim_id": "f43da47b-2a21-41c6-9a09-1b15c77c2345",
+      "result_id": "b41b2a33-751d-4418-b859-52495889912a"
+    },
+    {
+      "claim_id": "1e18b4b7-275f-4fb3-8680-a3badb3df174",
+      "result_id": "b41b2a33-751d-4418-b859-52495889912a"
+    },
+    {
+      "claim_id": "8850a938-8706-4c29-95e8-ad2b2e5608ce",
+      "result_id": "b41b2a33-751d-4418-b859-52495889912a"
+    },
+    {
+      "claim_id": "8005b694-7cf3-40c8-b380-180dfdbbb136",
+      "result_id": "b41b2a33-751d-4418-b859-52495889912a"
+    },
+    {
+      "claim_id": "188f77e6-2a9a-4398-8784-0d7ad3910003",
+      "result_id": "b41b2a33-751d-4418-b859-52495889912a"
+    },
+    {
+      "claim_id": "cd1f657d-b7bb-4a20-b484-fd41a1261b1b",
+      "result_id": "89dec5e6-4147-4d70-8089-e3bc32f769d5"
+    },
+    {
+      "claim_id": "ac0c347e-bb28-45f7-bd0b-77c15f76351f",
+      "result_id": "89dec5e6-4147-4d70-8089-e3bc32f769d5"
+    },
+    {
+      "claim_id": "9ab044ec-b2d7-416e-9c67-746ffd3934d0",
+      "result_id": "35c6f7e7-7953-4130-bc51-c83633ff7651"
+    },
+    {
+      "claim_id": "cda9615f-2ada-4bab-9200-f7489f056f46",
+      "result_id": "d1881e09-dd9b-422d-98ca-d4963c4c90d9"
+    },
+    {
+      "claim_id": "18c80ae4-c448-4a02-b1d0-027e95d685e1",
+      "result_id": "623eddbf-331a-4da7-b69d-0e720769c467"
+    }
+  ],
+  "comparisons": []
+}

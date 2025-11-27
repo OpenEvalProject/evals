@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors developed PyCelegans, a high-speed, modular image-processing tool that achieved a two orders of magnitude speed-up using 256 cores and had a typical segmentation failure rate of 5%. The tool identifies the animal body, calculates 100 midline points, divides the midline into 20 segments, and calculates local angles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C133-C135 describe the development and performance of PyCelegans with specific quantitative metrics (2 orders of magnitude speedup, 5% failure rate). The computational performance is directly measured and the methodology is clearly described, providing adequate support for this methodological result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "C. elegans larvae exhibit abrupt switching between two distinct behavioral states outside of lethargus: active wakefulness (characterized by high forward locomotion) and quiet wakefulness (characterized by high dwelling). Transitions between these states occur as rapid behavioral switches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C40-C42 are supported by experimental observations in Figures 2C-D showing individual animal traces with clear alternation between high forward locomotion and high dwelling states. The abrupt nature of transitions is visually evident in the data, supporting the characterization of two distinct behavioral states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The durations of epochs of active wakefulness exhibited non-Poisson statistics with a power-law distribution (exponent \u22121.83 \u00b1 0.31) strongly favored over exponential distribution (Akaike weight 0.9997). The time-averaged mean squared displacement exhibited power-law growth with exponent 0.32 \u00b1 0.03, suggesting stabilization of the active wakefulness state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C43-C47 present statistical analysis with appropriate model comparison using Akaike information criteria. The power-law fit parameters are reported with confidence intervals, and the TMSD analysis provides independent confirmation of non-Poissonian dynamics. The statistical approach is sound and the conclusions are well-supported by the data in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Increased G\u03b1s signaling through kin-2 loss-of-function or acy-1 gain-of-function mutations stabilized active wakefulness before, during, and after lethargus. These mutants showed persistent active wakefulness, reduced quiet wakefulness, approximately two-fold increased peak velocity during L4int, and increased forward locomotion during lethargus motion bouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C48-C57 are supported by experimental data from two independent genetic manipulations (kin-2 and acy-1(gf)) shown in Figures 4 and 7-8. The phenotypes are consistent between the two mutants and include multiple quantitative measurements. Statistical significance is demonstrated in Figure 7. The convergent evidence from two genetic backgrounds strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C102"
+    ],
+    "result": "Decreased G\u03b1s signaling through partial loss-of-function of acy-1 destabilized active wakefulness outside of lethargus (showing exaggerated quiet wakefulness and fragmented active wakefulness) but had wild-type-like behavior during lethargus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C60-C65, C102 are supported by experimental data from acy-1(lf) mutants shown in Figures 5, 7, and 8. The phenotype is opposite to the gain-of-function, as expected, and the stage-specific effect (outside but not during lethargus) is clearly demonstrated. This provides strong evidence for the regulatory role of G\u03b1s signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Decreased neuropeptide release in unc-31 mutants destabilized active wakefulness outside of lethargus (showing increased quiet wakefulness, fragmented active wakefulness, and lower velocities) but had wild-type-like quiescence dynamics during lethargus. This supports a model where PKA stabilizes active wakefulness at least in part by regulating DCV exocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C71-C77 are supported by experimental data from unc-31 mutants shown in Figures 6, 7, and 8. The phenotype is similar to acy-1(lf) outside of lethargus but differs in some details (elevated backward locomotion, decreased directed locomotion during lethargus motion bouts). The stage-specific effect and similarity to acy-1(lf) support the proposed model linking PKA to neuropeptide release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C118"
+    ],
+    "result": "Decreased CREB activity in crh-1 mutants destabilized active wakefulness outside of lethargus (showing poorly-defined locomotion states, gradual rather than abrupt transitions, lower velocities, and increased backward locomotion). During lethargus, quiescence dynamics were wild-type-like but directed locomotion during motion bouts was significantly increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C82-C89, C118 are supported by experimental data from crh-1 mutants shown in Figures 6, 7, and 8. The phenotype differs from acy-1(lf) and unc-31 in showing poorly-defined states and gradual transitions, suggesting a distinct role for CREB. The increased directed locomotion during lethargus (similar to kin-2 and acy-1(gf)) suggests a complex role for CREB that differs from the simple loss-of-function phenotype expected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C90",
+      "C121"
+    ],
+    "result": "PKA stabilizes active wakefulness at least in part through two downstream targets: neuropeptide release and CREB. Both pathways act in concert to regulate active wakefulness during L4int and early young adult stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C90, C121 synthesize the results from multiple mutants (acy-1, unc-31, crh-1) affecting different components of the PKA pathway. The convergent phenotypes outside of lethargus support the model. However, the divergent phenotypes during lethargus (particularly for crh-1) suggest the model may be incomplete or that CREB has additional roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C78",
+      "C91"
+    ],
+    "result": "During lethargus, when active wakefulness is strongly suppressed, the native role of PKA signaling in modulating locomotion and quiescence may be minor, as decreased G\u03b1s signaling, neuropeptide release, or CREB activity did not substantially affect quiescence dynamics during lethargus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C78, C91 are based on the observation that acy-1(lf) and unc-31 mutants show wild-type-like behavior during lethargus. However, this interpretation is complicated by: (1) crh-1 mutants show altered directed locomotion during lethargus motion bouts; (2) increased G\u03b1s signaling (kin-2, acy-1(gf)) clearly affects lethargus behavior; (3) the claim of a 'minor role' may reflect a floor effect rather than true lack of regulation. The evidence is mixed and the conclusion requires additional experiments to distinguish between floor effects and genuine lack of regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Body segments further from the head exhibit more quiescence than anterior segments, with the head/neck being least quiescent and mid-body most quiescent. The temporal dynamics of whole-animal quiescence mirror the head/neck region, indicating that head/neck motoneuron circuits determine whole-animal quiescence measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by data in Figure 1C showing spatial gradients of quiescence along the body. The inference that head/neck activity determines whole-animal measurements is logical given that this region is least quiescent and would therefore dominate behavioral classification. This is further supported by citations to previous whole-animal quiescence studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C36"
+    ],
+    "result": "Outside of lethargus, body length grew at 2% per hour, but during lethargus, body length shortened by 5%. This shortening may be due to continuous volume growth when surface area expansion of the old cuticle is restricted. Overall curvature was also modulated during lethargus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C36 are supported by direct measurements shown in Figure 1D. The growth and shortening rates are quantified. The explanation for shortening (C25) is speculative but reasonable given the biological context of molting. The observation is consistent with previous work (Iwanir et al., 2013) as noted in C36.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "During the 4 hours preceding L4leth, forward locomotion decreased and dwelling increased. After L4leth termination, dwelling was high but decreasing while forward locomotion was low but increasing. Backward locomotion was modulated more weakly. The propagation velocity and frequency of body-bend generation were gradually downregulated during late L4int and upregulated during early young adult stage, with frequency serving as an adequate proxy for velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 describe gradual modulation of locomotion parameters supported by averaged data in Figure 2A-B. The temporal patterns are clearly visible in the figures. The inference that bend frequency can serve as a proxy for velocity (C39) is reasonable given their similar dynamics, though this assumes the relationship holds across all conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The timing of quiet wakefulness coincided with increased seam cell synthetic activity (2-4 hours before lethargus), suggesting quiet wakefulness may assist with maintaining appropriate energy balance during cuticle synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 notes a temporal correlation between quiet wakefulness and seam cell activity, which is an observation. However, C99's functional interpretation is purely speculative without any direct evidence linking energy balance to the behavioral state. The correlation is interesting but insufficient to support a causal or functional relationship without additional experiments measuring energy metabolism or manipulating seam cell activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The molecular pathway linking PKA to neuropeptide release involves tomosyn (TOM-1) and UNC-31/CAPS. PKA phosphorylates tomosyn, reducing its inhibition of both synaptic transmitter release and UNC-31-dependent neuropeptide release. Enhanced PKA activity can bypass the requirement for UNC-31 for DCV release, and tom-1 mutations suppress unc-31 deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C112 are primarily based on citations to previous work establishing the molecular relationships between PKA, tomosyn, UNC-31, and vesicle release. The model is well-supported by the literature and provides mechanistic context for the behavioral observations. Claim C108 relies on personal communication, which is less robust than published work but is consistent with the overall model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "The effects of G\u03b1s signaling on wakefulness and sleep are conserved across species. Upregulating G\u03b1s signaling enhanced active wakefulness outside of lethargus and directed locomotion during lethargus in C. elegans, mirroring findings in Drosophila and mice where CREB activated by PKA promotes wakefulness duration. However, loss of CREB function in C. elegans resulted in enhanced directed locomotion during lethargus, which is inconsistent with simple conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C115, C119 are supported by citations showing conservation of cAMP/PKA/CREB effects on sleep/wake across species. However, C116-C117 show that crh-1 mutants have enhanced directed locomotion during lethargus, which contradicts the simple conservation model. Claim C120 adds further complexity by showing adenylyl cyclase can increase sleep intensity in Drosophila. The evidence suggests partial conservation with important species-specific or context-specific differences that are not fully resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C79",
+      "C80",
+      "C81",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C100",
+      "C122",
+      "C123",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Background knowledge and context about C. elegans development, locomotion, the G\u03b1s/PKA pathway, CREB function, quiet wakefulness in other species, and assumptions underlying the analysis approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C9-C20, C79-C81, C92-C97, C100, C122-C123, C126-C129) provide established knowledge and context supported by appropriate citations to previous work. They establish the biological and methodological framework for the study. The assumptions (C126-C128) are explicitly stated and reasonable for the analysis approach used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Experimental methods and definitions used in the study, including animal synchronization, recording parameters, and operational definitions of locomotion behaviors and quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132, C136-C139 describe the experimental methods and operational definitions used in the study. These are clearly stated and appropriate for the research questions. The definitions are objective and based on quantifiable parameters (e.g., angle thresholds, segment counts), which supports reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Null mutations of kin-1 or acy-1 are lethal, with animals dying as embryos or first-stage larvae respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 state established knowledge about the lethality of null mutations in these genes. This provides important context for why partial loss-of-function alleles were used in the study and is consistent with the essential roles of these genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Tracking individual body-bends from initiation to demise provides direct experimental measurements of the basic building blocks of nematode locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 is a methodological assertion about the value of the bend-tracking approach. This is supported by the successful application of the method throughout the study and by the biological understanding that motor neurons generate and propagate bends (C129). The approach provides intuitive, heuristic descriptions of locomotion that complement other methods like eigenworm analysis.",
+    "result_type": "MINOR"
+  }
+]

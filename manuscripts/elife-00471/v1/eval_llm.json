@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C20",
+      "C21",
+      "C22",
+      "C60"
+    ],
+    "result": "Codon-optimized Cas9 can be expressed as a fusion protein with HA-NLS-GFP tags and localizes to the nucleus of human HEK293T cells. Western blot analysis confirms largely intact protein expression, and fluorescence microscopy demonstrates abundant nuclear localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C20-C22, and C60 collectively demonstrate successful expression and nuclear localization of Cas9. The Western blot (Figure 1A) confirms protein integrity, fluorescence microscopy (Figure 1B) shows nuclear localization, and the experimental design is clearly described. These are converging lines of evidence supporting functional Cas9 expression in human cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C84"
+    ],
+    "result": "Single-guide RNAs (sgRNAs) with a 20-nt guide sequence and 42-nt Cas9-binding stem-loop can be expressed in human cells using the U6 promoter. Northern blot analysis confirms sgRNA expression, and sgRNA stability is enhanced by Cas9 co-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23, C25-C27, and C84 are supported by Northern blot data (Figure 1D) showing sgRNA expression and enhanced stability in the presence of Cas9. The experimental design is clearly described and the data directly demonstrate sgRNA expression and Cas9 assembly in human cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C18",
+      "C28",
+      "C30",
+      "C65",
+      "C71"
+    ],
+    "result": "Cas9:sgRNA complexes induce site-specific double-strand breaks at the CLTA locus in human cells, triggering NHEJ repair that results in insertions and deletions. The Surveyor assay detects cleavage products, and Sanger sequencing of 68 clonal amplicons identifies four types of indels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C18, C28, C30, C65, and C71 are well-supported by converging evidence: Surveyor assay data (Figure 1E) showing cleavage products, sequencing data (Figure 1\u2014figure supplement 1) confirming indels, and appropriate controls (ZFN positive control). Both Cas9 and sgRNA are required for activity, as demonstrated by negative controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C47"
+    ],
+    "result": "sgRNA expression and/or assembly into Cas9 is the limiting factor for genome editing activity in human cells. In vitro cleavage assays show that lysates from Cas9-transfected cells require exogenous sgRNA supplementation for robust DNA cleavage, and addition of sgRNA to lysates containing both Cas9 and sgRNA substantially increases cleavage activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C31-C37, C47 are supported by systematic in vitro cleavage experiments (Figures 2A, 2B). The data show no cleavage with Cas9 alone, robust cleavage upon sgRNA addition, and enhanced activity when exogenous sgRNA is added to lysates already containing both components. This clearly identifies sgRNA as the limiting factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Extension of the sgRNA 3' end by adding 4-10 base pairs to the crRNA:tracrRNA-mimicking helix and 5 nucleotides from the native tracrRNA sequence enhances DNA targeting activity in vivo, though the authors note that more quantitative comparisons are needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C38-C40 are supported by Surveyor assay data (Figure 3B) showing enhanced cleavage with extended sgRNAs. However, the authors explicitly state that 'more quantitative comparisons will be necessary to confirm this conclusion' (C40), indicating the evidence is preliminary. The result is promising but requires additional validation for definitive support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Codon-optimized Cas9 programmed with sgRNA achieves 6-8% NHEJ-induced mutagenesis efficiency at the CLTA locus, which is lower than a nearby ZFN target but within the general range observed for ZFNs and TALENs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by quantitative data from the Surveyor assays and comparison with ZFN controls (Figure 1E). The efficiency measurements are consistent across experiments, and the comparison to established technologies (ZFNs/TALENs) is appropriately cited and contextualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C69",
+      "C70"
+    ],
+    "result": "The study demonstrates that RNA-programmed genome editing using the bacterial Cas9 system is feasible in human cells and provides a straightforward strategy for introducing site-specific genetic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C69, C70 represent the main conclusion of the study and are supported by the collective experimental evidence: Cas9 expression and localization (Figures 1A-B), sgRNA expression (Figure 1D), site-specific cleavage (Figure 1E), and mechanistic understanding (Figures 2-3). This is a well-supported overarching conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C54"
+    ],
+    "result": "The Cas9 system offers advantages over ZFNs and TALENs because it relies on simple base pairing to a guide RNA rather than requiring protein engineering for each target site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C54 are supported by the experimental demonstration that sgRNA design is straightforward (only requiring complementary sequence design) compared to protein engineering required for ZFNs/TALENs. This is a valid inference from the demonstrated functionality and comparison with existing technologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Transfection efficiencies were 30-50% for Turbofect and 80-90% for X-tremegene, estimated by counting GFP-positive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 report quantitative measurements of transfection efficiency based on fluorescence microscopy. The method is appropriate and the measurements are clearly stated, though the relatively low efficiency with Turbofect may affect interpretation of the 6-8% editing efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors speculate that higher Cas9 efficiency could be achieved through sgRNA optimization, and note that the sgRNAs used lack 5'-cap and 3'-polyadenylation, which may reduce stability and could be modified to enhance activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C51 are explicitly speculative statements about potential improvements not tested in the study. While the reasoning is sound (RNA modifications typically enhance stability), these remain untested hypotheses. The claims appropriately identify limitations and future directions but provide no experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors propose that multiplexed targeting with multiple sgRNAs could enable simultaneous editing of multiple loci or enhanced efficiency at single loci, with potential applications in genome-wide studies and multigenic disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C59 are explicitly speculative ('not tested explicitly in this study') about potential applications. While the concept is logical given the system's design, no experimental evidence is provided for multiplexed targeting. These are reasonable future directions but remain unsupported hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C24",
+      "C41",
+      "C42",
+      "C53",
+      "C64",
+      "C68",
+      "C82",
+      "C83"
+    ],
+    "result": "Background claims establishing prior knowledge about CRISPR systems, ZFNs/TALENs, genome editing mechanisms, and the knowledge gap regarding Cas9 function in eukaryotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C16, C19, C24, C41-C42, C53, C64, C68, C82-C83 represent background knowledge supported by appropriate citations to prior literature. These establish the scientific context and rationale for the study. The citations appear appropriate and the knowledge claims are standard for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C66",
+      "C72"
+    ],
+    "result": "Methodological claims describing the Surveyor assay principle, interpretation of cleavage products, and use of ZFN controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C66, C72 describe established methodological approaches with appropriate citations. The Surveyor assay is a standard method for detecting indels, the interpretation of fragment sizes is straightforward, and the ZFN control is appropriately chosen based on prior work at the same locus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C81"
+    ],
+    "result": "Methodological details about cell culture conditions and target site characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C81 provide standard methodological details (cell culture conditions) and target site information (PAM sequence) that are clearly described and shown in figures. These are routine experimental details appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Speculative claim about potential revolutionary applications in therapies, agriculture, and microbial engineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is explicitly speculative ('could potentially') about future applications beyond the scope of this study. While the potential is reasonable given the technology demonstrated, no evidence is provided for these specific applications. This represents aspirational future work rather than supported findings.",
+    "result_type": "MINOR"
+  }
+]

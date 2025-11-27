@@ -1,0 +1,2113 @@
+{
+  "submission": {
+    "id": "c63b9eb6-10d3-447e-b1bf-fcee04987fc2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T05:37:56.295217Z",
+    "updated_at": "2025-11-27T05:37:56.295217Z"
+  },
+  "content": [
+    {
+      "id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "submission_id": "c63b9eb6-10d3-447e-b1bf-fcee04987fc2",
+      "content_type": "manuscript",
+      "content_text": "# Cdc48/p97 promotes degradation of aberrant nascent polypeptides bound to the ribosome\n\n## Authors\n\n- Rati Verma<sup>1</sup> \u2020\n- Robert S Oania<sup>1</sup>\n- Natalie J Kolawa<sup>1</sup>\n- Raymond J Deshaies<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Division of Biology California Institute of Technology Pasadena United States\n2. Howard Hughes Medical Institute, California Institute of Technology Pasadena United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nUbiquitin-dependent proteolysis can initiate at ribosomes for myriad reasons including misfolding of a nascent chain or stalling of the ribosome during translation of mRNA. Clearance of a stalled complex is required to recycle the ribosome for future use. Here we show that the ubiquitin (Ub) pathway segregase Cdc48/p97 and its adaptors Ufd1-Npl4 participate in ribosome-associated degradation (RAD) by mediating the clearance of ubiquitinated, tRNA-linked nascent peptides from ribosomes. Through characterization of both endogenously-generated and heterologous model substrates for the RAD pathway, we conclude that budding yeast Cdc48 functions downstream of the Ub ligases Ltn1 and Ubr1 to release nascent proteins from the ribosome so that they can be degraded by the proteasome. Defective RAD could contribute to the pathophysiology of human diseases caused by mutations in p97.\n\n## Introduction\n\nMaintaining protein homeostasis is key for the healthy lifespan of the organism (Koga et al., 2011) and cells have evolved sophisticated mechanisms to control the quality of newly synthesized proteins (Bukau et al., 2006; Smith et al., 2011). Dysfunction of these quality control (QC) pathways can tip the balance towards the accumulation of toxic proteins and manifestation of disease, most notably neurodegeneration (Powers et al., 2009; Hartl et al., 2011; Dennissen et al., 2012).\n\nThere are multiple pools of QC substrates in cells. A relatively well-characterized substrate pool arises from misfolding of nascent chains that have been properly translated. Depending upon the relative rate at which malfolded sequences that comprise degrons form and bind their Ub ligase receptors vs the rate at which translation is completed, ubiquitination and degradation of misfolding proteins may initiate on the ribosome. It has been shown, for instance, that the acetylated N-terminus recognized by the Ub ligase Doa10 (Hwang et al., 2010) is generated co-translationally (Gautschi et al., 2003; Polevoda et al., 2008), and that the Ub ligase Ubr1 can initiate degradation of an N-end rule substrate prior to completion of its translation (Turner and Varshavsky, 2000).\n\nA second pool of QC substrates arises from failure to complete translation successfully. This can occur because the mRNA is defective or the ribosome stalls due to either irresolvable structures in the mRNA or interactions between the nascent peptide and the ribosome (Lu and Deutsch, 2008; Kramer et al., 2009; Ingolia et al., 2011). Defective mRNAs are recognized by a cytosolic mRNA surveillance machinery that mediates their destruction. There are at least three pathways: no-go decay (NGD) targets mRNAs with strong stalls in translation elongation leading to endonucleolytic cleavage of the mRNA, nonsense-mediated decay (NMD) targets messages containing premature termination codons (PTC), and non-stop decay (NSD) targets mRNAs that lack a stop codon. Within this broad scheme, there are many variations by which aberrant mRNAs are generated (Parker, 2012). Interestingly, recent data suggest an intimate coupling between QC of defective mRNAs and the nascent peptides they produce (Shoemaker and Green, 2012). For example, Upf1 is a positive effector of NMD that is also needed for proteasome-mediated degradation of the prematurely terminated products (Takahashi et al., 2008; Kuroha et al., 2009).\n\nQuality-control of mRNAs that lack a stop codon and the proteins produced from them has been the focus of considerable recent attention. Translation of these \u2018non-stop\u2019 mRNAs yields a ribosome-tethered polypeptide that is targeted for ubiquitination and degradation (Ito-Harashima et al., 2007; Dimitrova et al., 2009; Bengtson and Joazeiro, 2010). Notably, the mRNA may be processed by multiple pathways (e.g., NSD and NGD) because absence of a stop codon can cause translation to stall either because the end of the message is encountered or polylysine encoded by the poly(A) tail interacts with the negatively charged exit tunnel of the ribosome. Non-stop mRNAs can arise naturally through premature termination or polyadenylation within ORFs, which are estimated to occur for up to 10% of all transcriptional events (Frischmeyer et al., 2002). Proteins encoded by these messages could potentially impose a considerable burden on QC pathways. Thus, disposal of proteins produced from non-stop messages is likely to be of general significance to understanding human diseases that result from defects in protein homeostasis.\n\nStalled ribosomes that trigger NGD/NSD are recognized by the Dom34\u2013Hbs1 complex which is structurally related to the termination factors eRF1 and eRF3 but lacks the residues necessary for both stop codon recognition and hydrolysis of peptidyl-tRNA and instead binds to the empty A site in the stalled ribosome (Doma and Parker, 2006; Becker et al., 2011; Tsuboi et al., 2012). Dom34\u2013Hbs1 works in concert with a member of the ABC family of ATPases, known as ABCE1 in mammalian cells (Pisareva et al., 2011) or Rli1 in budding yeast (Shoemaker et al., 2010; Shoemaker and Green, 2011), to disassemble stalled ribosomes for subsequent reuse. Additionally, the translational GTPase Ski7, which is closely related to Hbs1 (and thus to eRF3), has been proposed to recognize ribosomes stalled at the 3\u2032 end of non-stop messages (van Hoof et al., 2002). However, no Dom34/eRF1-like molecule has been identified to date that can interact with Ski7 specifically so it remains unknown if it can promote recycling of ribosome subunits. Following dissociation of subunits, the mechanism by which the associated nascent peptide is extricated remains poorly understood. What has been shown so far is that the Ub ligase Ltn1 can bind the ribosome and ubiquitinate NSD substrates that contain a polylysine tract (Bengtson and Joazeiro, 2010). Ltn1 belongs to the RING domain family of E3 Ub ligases that ubiquitinate substrates targeted for degradation by the 26S proteasome (Deshaies and Joazeiro, 2009; Finley, 2009). However, the mechanism by which the nascent non-stop peptide is released from the ribosome and degraded remains unknown. Nevertheless, the underlying biochemistry is likely to be important for human health, because point mutations in mouse Ltn1 result in neurodegeneration and a null allele is lethal (Chu et al., 2009).\n\nBudding yeast Cdc48 (the human protein is known as p97 or valosin-containing protein [VCP]) is a member of the AAA (ATPases associated with diverse cellular activities) family of proteins. Cdc48 has intrinsic Ub-binding affinity that is greatly enhanced by the binding of UBX domain proteins or the Ufd1\u2013Npl4 heterodimer to its N-terminus and Ufd2 to its C-terminus (Ye, 2006; Meyer et al., 2012). Cdc48/p97 is widely believed to function as a \u2018segregase\u2019 that uses the free energy released upon ATP hydrolysis to remodel ubiquitinated substrate complexes, usually, but not always, as a prelude to their degradation by the 26S proteasome (Jentsch and Rumpf, 2007). In the work reported here, we show that Cdc48\u2013Ufd1\u2013Npl4 promotes the release of tRNA-linked ubiquitinated nascent chains as well as aberrant non-stop and prematurely terminated polypeptides from the ribosome. Our findings establish a new function for Cdc48/p97 in RAD.\n\n## Results\n\nIn an effort to systematically elucidate cellular functions of Cdc48 and its adaptors, mutants were subjected to chemical profiling by determining growth in the presence of various drugs, including translation inhibitors. All mutants were insensitive to anisomycin, an inhibitor that blocks the peptidyl transferase reaction on ribosomes (not shown). However, low concentrations of hygromycin B and paromomycin inhibited growth of multiple cdc48 mutants and the adaptor mutants npl4-1, ufd1, ubx1\u0394, and ubx2\u0394 (Figure 1\u2014figure supplement 1A,B and data not shown). Hygromycin B and paromomycin belong to the aminoglycoside class of antibiotics that bind close to the decoding center and affect translational fidelity (Carter et al., 2000; Kim and Craig, 2005). Deletion of LTN1 leads to hygromycin-sensitivity and since Ltn1 is involved in QC of NSD pathway substrates (Bengtson and Joazeiro, 2010), we explored the possibility that Cdc48\u2013Ufd1\u2013Npl4 and one or more Ubx proteins also function in this pathway.\n\nTo determine if Cdc48 contributes to protein degradation at the ribosome in unperturbed, exponentially growing cells, we purified ribosomes using a rapid, one-step affinity method designed to isolate 60S subunits, 80S monosomes and polysomes (Oeffinger et al., 2007; Halbeisen and Gerber, 2009; Halbeisen et al., 2009). Coomassie blue staining of purified ribosomes confirmed that Cdc48 activity was not required for their assembly (Figure 1, Figure 1\u2014figure supplement 2A, lane 3), a conclusion that was further validated by sucrose gradient fractionation of ribosomes from wildtype, cdc48-3, and ufd1-2 whole cell lysates (Figure 1\u2014figure supplement 2B). However, the mutants do appear to have a slightly lower ratio of polysomes:80S monosomes. Immunoblotting for Ub revealed strong accumulation of Ub conjugates on ribosomes affinity-purified from cdc48-3 cells (Figure 1A). To ascertain if the epitope tag on the ribosome subunit was exacerbating the effect of the cdc48-3 mutation, we isolated ribosomes from untagged cells by pelleting through a sucrose cushion (Halbeisen and Gerber, 2009). Again, Ub conjugates were observed to accumulate on ribosomes in cdc48-3 and npl4-1 mutants (Figure 1B). Because the proteolytic defects of npl4-1 are manifested at the semi-permissive temperature of 30\u00b0C (Bays et al., 2001), we carried out the experiment in Figure 1B at 30\u00b0C. The data indicate that cdc48-3 does not have to be shifted to the fully non-permissive temperature to observe Ub conjugate accumulation at the ribosome. Additionally, conjugate accumulation on cdc48-3 and npl4-1 ribosomes exceeded that observed for ribosomes isolated from cells treated with the proteasome inhibitor MG132, a result that will be further discussed below.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00308/elife-00308-fig1-v1.jpg)\n\n**Figure 1.:** (A) Ribosome assembly is unimpaired in cdc48-3 mutant cells and Ub conjugates accumulate on cdc48-3 ribosomes. Ribosomes were immunoprecipitated (IP) from cdc48-3 (Untagged, UT), RPL18BTAP (WT), and cdc48-3 RPL18BTAP cells shifted to the non-permissive temperature (37\u00b0C) for 90 min. Purified ribosomes were evaluated by Coomassie blue staining (Figure 1\u2014figure supplement 2A) and immunoblotting (IB) with Ub and anti-Rpl32 antibodies. Anti-Rpl32 also detects Rps2. (B) WT and mutant cells grown at 24\u00b0C were shifted to 30\u00b0C for two generations and pdr5\u0394 cells were either mock-treated with DMSO, or 30 \u03bcM MG132 for 30 min. Ribosomes were isolated (input cell lysates, right panel) by sedimentation through sucrose cushions. Ribosome pellets were evaluated by IB with Ub and Rpl32 antibodies (left panels). (C) The ATPase activity of Cdc48 promotes clearance of Ub conjugates from ribosomes. Mutant cdc48-3 cells containing plasmid-borne WT GAL-CDC48His6 or the Q2 mutant were grown in galactose for 2 hr to induce expression of ectopic Cdc48. Induced cells were shifted to 35\u00b0C for 1 hr to inactivate cdc48-3 before being harvested. Ribosomes were isolated by sedimentation through sucrose cushions and input cell lysates and ribosome pellets were evaluated as in (A). (D) Cdc48 binds to purified ribosomes. Ribosomes were affinity-purified from untagged or RPL18BTAP-tagged cells and the levels of bound Cdc48 and Ufd1 were evaluated by IB with the respective antibodies.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00308/elife-00308-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Serial fivefold dilutions of wildtype and mutant cells were spotted on YPD plates either lacking (untreated) or containing the indicated amount of drug and incubated at the indicated temperature for 3 days.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00308/elife-00308-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) SDS-PAGE and Coomassie blue analysis of affinity-purified ribosomes from untagged (UT, lane 1), WT (lane 2) and cdc48-3 (lane 3) strains used in Figure 1A. (B) Absorbance profile (254 nm) of wildtype and mutant lysates fractionated on 10\u201350% sucrose gradients.\n\nTo determine whether the ATPase activity of Cdc48 was required to prevent accumulation of ribosome-associated Ub conjugates, ribosomes were pelleted from cdc48-3 mutant cells expressing plasmid-borne wildtype CDC48, or a mutant (Q2) deficient in ATPase activity (Ye et al., 2003). Whereas CDC48 complemented the cdc48-3 phenotype, high levels of Ub conjugates were detected on ribosomes isolated from cells expressing the cdc48-Q2 mutant (Figure 1C). Consistent with the idea that Cdc48 ATPase functions at the ribosome to mediate release of ubiquitinated nascent peptides, both Cdc48 and Ufd1 were found to cofractionate with affinity-purified ribosomes isolated under stringent conditions (Figure 1D).\n\nWe next wished to ascertain if the Ub conjugates were derived from nascent polypeptides that were linked to tRNA. Magnetic beads containing bound ribosomes from wildtype or cdc48-3 cells were treated with TEV protease, which cleaves between Rpl18B and the TAP tag. The TEV cleavage was carried out in the presence or absence of puromycin. Puromycin causes premature termination of translation by binding in the A-site of the ribosome and reacting with peptidyl-tRNA in the P-site, yielding a peptide-puromycin conjugate (Nathans, 1964). Thus, we expected that puromycin would induce the release of peptidyl-tRNA from the ribosome as a peptide-puromycin conjugate. The supernatants were then bound to UBA Sepharose resin to enrich for Ub conjugates. The rationale behind this step was that ribosome-associated Ub conjugates that remained bound to the ribosome would bind poorly to UBA beads because ribosomes do not efficiently penetrate the pores of a Sepharose resin, whereas Ub conjugates released from the ribosome by puromycin would be able to bind more efficiently to UBA beads. Puromycin treatment of ribosomes from cdc48-3 but not wildtype cells released ubiquitinated proteins that were enriched on the UBA resin (Figure 2A, top panel). A similar result was obtained with ribosomes isolated from npl4-1 and ufd1-1 mutants (Figure 2\u2014figure supplement 1A,B). The conjugates observed in Figure 2A were indeed linked to puromycin because they cross-reacted with an antibody specific for puromycin (Figure 2A, bottom panel). The same was true for Ub conjugates released from npl4-1 and ufd1-2 ribosomes (Figure 2\u2014figure supplement 1C). The fact that no Ub immunoreactivity was recovered from mutant ribosomes in the absence of puromycin treatment validated our assumption that the UBA resin largely excluded mega-complexes. This experiment also suggests that at least some of the Ub conjugates that accumulated on cdc48 and npl4 ribosomes (Figure 1A,B) must be ubiquitinated nascent proteins linked to tRNA.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00308/elife-00308-fig2-v1.jpg)\n\n**Figure 2.:** (A) Puromycin-dependent binding to UBA resin of Ub conjugates from cdc48-3 ribosomes. Ribosomes were affinity-purified from untagged or wildtype and mutant RPL18BTAP cells grown at 37\u00b0C for 90 min and eluted with TEV protease in the presence or absence of puromycin (puro), followed by incubation with UBA resin. Bound fractions were resolved by SDS-PAGE and immunoblotted with antibodies to Ub (top panel) or puromycin (lower panel). (B) Transfer of Ub conjugates to puromycin was RNAse A-sensitive. Ribosomes were affinity-purified from cdc48-3 (UT) or cdc48-3RPL18BTAP cells as described above in the absence (lanes 1, 2 and 3) or presence of 200 \u03bcg/ml RNAse A. Following elution with TEV protease, samples from the tagged cells (lane 3) were treated with 200 \u03bcg/ml RNAse A at 30\u00b0C for 10 min before incubation of all samples with puromycin and binding to UBA resin. The bound fractions were evaluated as in (A). (C) CTAB-precipitable Ub conjugates accumulate on cdc48-3 ribosomes. Ribosomes affinity-purified from the same strains used in panel (A) were treated with RNAse A (or not) and subjected to precipitation (pptn) with CTAB. Precipitates were resolved by SDS-PAGE and immunoblotted with anti-Ub. 48 Refers to cdc48-3. (D) Ubiquitinated newly-synthesized proteins accumulate on ribosomes isolated from cdc48-3 and ufd1-2 mutants. Cells were pulse-labeled for 90 s with 35S methionine and chased with cold methionine and cycloheximide for the indicated times. Ribosomes were affinity-purified, eluted with TEV protease in the presence of puromycin, and loaded onto UBA resin. The bound fraction was evaluated by SDS-PAGE followed by autoradiography. Densitometry indicated that <5% of the high MW material was released from ufd1-2 ribosomes between the 0- and 10-min time points.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00308/elife-00308-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) SDS-PAGE/Coomassie blue profiles of ribosomes affinity-purified from the indicated strains carrying the RPL18BTAP allele. UT: wildtype cells lacking the RPL18BTAP allele. (B) Ribosomes from the indicated strains grown at 30\u00b0C for two generations were pelleted through sucrose cushions and analyzed by immunoblotting (IB) for anti-Rpl32 (bottom panel). Resuspended ribosomes were treated with puromycin in high salt and then incubated with UBA resin. The bound fraction was evaluated by SDS-PAGE and IB with anti-ub (top panel). (C) Ribosomes were affinity-purified from wildtype and mutant strains carrying the RPL18BTAP allele and eluted from the magnetic beads with TEV protease in the presence of puromycin. The eluate was either evaluated directly by IB with anti-TAP (bottom panel) or was incubated with UBA beads. The bound material was fractionated by SDS-PAGE and analyzed by IB with anti-puromycin antibody (top panel). (D) Left panel: Total cell lysates for [35S]-labeled cells were fractionated by SDS-PAGE and subjected to autoradiography to show incorporation of label during the 90 sec pulse. Right panel: Ribosomes were affinity-purified from lysates depicted on left. Ribosomes eluted from the magnetic beads with TEV protease were analyzed by SDS-PAGE and autoradiography to reveal newly-synthesized proteins contained in the preparations. UT: wildtype cells lacking the RPL18BTAP allele.\n\nTo further confirm that the Ub conjugates that accumulated on ribosomes in cdc48 cells were ubiquitinated nascent peptides linked to tRNA we did three additional experiments. First, ribosomes affinity-purified from cdc48-3 were treated with RNAse A or not before incubation with puromycin followed by binding to the UBA resin. Immunoblotting for Ub revealed that both the control and RNAse-treated ribosomes contained Ub conjugates that bound the UBA beads (Figure 2B, top panel, lanes 2 and 3). However, ribosomes pre-treated with RNAse no longer yielded puromycin-reactive conjugates (Figure 2B, bottom panel). By contrast, pre-treating lysate with RNAse before affinity purification of ribosomes eliminated recovery of both Ub-, and puromycin immunoreactivity (Figure 2B, lane 4, top and bottom panels).\n\nThe second experiment that we did to confirm tRNA linkage was to treat affinity-purified ribosomes with CTAB. CTAB is an ionic detergent that disrupts protein structure and precipitates peptidyl-tRNA molecules selectively (Hobden and Cundliffe, 1978; Mariappan et al., 2010). In parallel with results obtained previously using puromycin, Ub conjugates were precipitated from cdc48-3 ribosomes in an RNAse-sensitive manner (Figure 2C).\n\nAs a final test of the idea that the Ub conjugates that accumulated on cdc48-3 ribosomes were attached to nascent chains, wildtype and mutant cells were pulsed with radioactive methionine for 90 s and then chased with cold methionine. Ribosomes were affinity-purified from cells sampled at different times of chase and treated with puromycin to release tRNA-linked nascent chains. This material was then fractionated on UBA resin to enrich for discharged Ub conjugates. Strikingly, ribosomes from both cdc48-3 and ufd1-2 cells contained far higher levels of radiolabeled high MW Ub conjugates than wildtype ribosomes, and a substantial portion of this signal persisted on ribosomes for 10\u201320 min (Figure 2D), which is considerably longer than the time required to synthesize a protein. Importantly, the low signal on wildtype ribosomes was not due to inefficient incorporation, because the WT inputs for the UBA fractionation step actually contained slightly more total pulse-labeled species (Figure 2\u2014figure supplement 1D). Taken together, the experiments described thus far indicate that Cdc48 and its cofactors Ufd1 and Npl4 prevent accumulation of ubiquitinated, tRNA-linked nascent chains on the ribosome. For simplicity, we hereafter refer to these species as tUNPs (tRNA-linked, ubiquitinated nascent polypeptides). Notably, other Cdc48 cofactors including Ubx2, Ubx4, Ubx6, and Ufd2 did not appear to contribute to clearance of tUNPs from the ribosome (Figure 2\u2014figure supplement 1C). These cofactors were tested because they had scored positively in the hygromycin-sensitivity assay whereas ubx3\u0394, ubx5\u0394, and ubx7\u0394 were hygromycin-insensitive, and therefore not pursued further. Hygromycin-sensitive ubx1\u0394/shp1\u0394 was also not pursued further, because this mutant is extremely sick.\n\nThe findings summarized above raised the question: what is the composition of the tUNPs? One possibility is a class of aberrant proteins arising from translation of mRNAs that lack stop codons (\u2018non-stop mRNA\u2019). Translation through the poly(A) tail of these mRNAs can result in a ribosome that stalls either because it reaches the end of the message, or the polylysine encoded by the poly(A) tail interacts with the negatively charged exit tunnel of the ribosome (Dimitrova et al., 2009). Prior work has demonstrated that the Ub ligase Ltn1 targets proteins translated from mRNAs that lack a stop codon or that contain polylysine stretches (Bengtson and Joazeiro, 2010). We therefore employed the puromycin release/UBA bead capture protocol to test whether deletion of LTN1 diminished the accumulation of tUNPs on ribosomes in cdc48-3 cells. We also tested the impact of ubr1\u0394, because of prior reports that Ubr1 promotes co-translational ubiquitination (Turner and Varshavsky, 2000), and because ubr1\u0394 mutants, like ltn1\u0394, are hygromycin-sensitive (not shown, but see below). The data in Figure 3A demonstrate that additional loss of LTN1 or UBR1 resulted in a marked decrease in the level of tUNPs on cdc48-3 ribosomes. This result encouraged us to evaluate the steady state levels of the Gfp-FLAG-His3Non-Stop (GFHNS) fusion protein shown earlier to be an Ltn1 substrate at the ribosome that is degraded by the proteasome (Bengtson and Joazeiro, 2010). Amongst the Cdc48 pathway mutants examined, GFHNS accumulated maximally in ufd1 mutants (similar to levels observed for ltn1\u0394), and also exhibited significant accumulation in npl4-1 and cdc48-3 (Figure 3B). Cycloheximide chase analysis in ufd1-2 cells indicated that accumulation resulted from stabilization of the non-stop reporter (Figure 3C). As observed in earlier studies (Bengtson and Joazeiro, 2010), the same reporter containing a stop codon was not degraded and accumulated at a much higher level than the NS reporter (Figure 3C; amounts loaded were adjusted to yield signals of equal intensity at 0 min).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00308/elife-00308-fig3-v1.jpg)\n\n**Figure 3.:** (A) Ltn1 and Ubr1 contribute to accumulation of Ub conjugates on cdc48-3 ribosomes. Ribosomes from the indicated strains grown at 30\u00b0C were isolated from input cell lysates (right panels) by pelleting through sucrose cushions, treated with puromycin, and incubated with UBA resin. The bound fraction (left panels) and inputs were evaluated by SDS-PAGE and immunoblotting with Ub, tubulin (Tub), and Rpl32 antibodies as indicated. The -3 allele of cdc48 was used. (B) The non-stop reporter GFHNS accumulates in Cdc48 pathway mutants. Glass bead/SDS extracts from exponential cultures (grown at 30\u00b0C) of the indicated mutants harboring a plasmid that expresses GFHNS were analyzed by SDS-PAGE and IB with anti-Gfp. Tubulin served as the loading control. (C) Cycloheximide chase analysis of cells expressing either the non-stop (GFHNS) or stop codon-containing (GFHStop) reporters. Glass bead/SDS extracts prepared from aliquots harvested at the indicated times from wildtype and mutant cultures were analyzed by SDS-PAGE and IB with anti-Gfp. Samples from WT expressing GFHNS were also evaluated by IB with anti-tubulin to confirm equal loading. Note that extracts prepared from cells expressing GFHStop were loaded at one-fifth the amount of GFHNS. (D) Non-stop protein accumulates in the ubiquitinated state in ufd1 mutants. Glass bead/SDS extracts of wildtype and mutant cells expressing plasmid-borne GFHNS and grown at 37\u00b0C for 90 min were evaluated directly (inputs) or immunoprecipitated with anti-Flag antibodies after 10-fold dilution with buffer containing Triton X-100. Bound proteins and inputs were evaluated by SDS-PAGE and IB with anti-Ub and Flag antibodies. UT corresponds to WT cells not expressing GFHNS. (E) Cdc48 and Ufd1 interact selectively with non-stop protein. Lysates prepared from cells expressing Flag-tagged GFHNS (NS) or GFHStop (Stop) reporters as well as cells lacking a plasmid (UT) were immunoprecipitated with anti-Flag antibodies. Total cell extracts (inputs; right panels) and bound proteins (left panels) were evaluated by SDS-PAGE and IB with anti-Cdc48, Ufd1, Flag and Ub antibodies.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00308/elife-00308-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Pellets were resuspended and either evaluated by SDS-PAGE and immunoblotting (IB) with anti-Rpl32 (bottom panel) or incubated with the indicated amount of RNAse for 10 min at 30\u00b0C. Aliquots of the RNAse reactions were evaluated by separation on NuPAGE gels and IB with anti-Gfp (top panel). Species B and C are RNAse-insensitive species whose physical nature is unknown.\n\nIf the Cdc48\u2013Ufd1\u2013Npl4 complex functions downstream of Ltn1 to mediate clearance of tUNPs from the ribosome, as suggested by the data in Figure 3A, we anticipated that ubiquitinated species of the non-stop reporter should accumulate upon inactivation of Cdc48 complex. To address this question, we prepared SDS lysates of wildtype and ufd1 mutant cells expressing GFHNS, diluted the lysates with Triton X-100 to sequester the SDS in micelles, and immunoprecipitated with anti-FLAG. Immunoblotting for Ub demonstrated that GFHNS accumulated in an ubiquitinated form in ufd1-1 and ufd1-2 but not in ltn1\u0394 mutants (Figure 3D).\n\nThe above data indicate that the non-stop, but not the stop codon-containing reporter was targeted for degradation by the combined actions of Ltn1 and Cdc48\u2013Ufd1\u2013Npl4. The role of the Cdc48 complex in reporter degradation appeared to be direct, because both Cdc48 and Ufd1 were co-immunoprecipitated with GFHNS, but not GFHStop, even though GFHStop was more abundant (Figure 3E).\n\nGFHNS accumulates on 80S ribosomes in ltn1\u0394 mutants (Bengtson and Joazeiro, 2010). To evaluate if any of these molecules are linked to tRNA, we sedimented ribosomes rapidly through sucrose cushions and treated the pellet with RNAse A (or not). Strikingly, immunoblotting revealed an RNAse-sensitive species on ribosomes from ltn1\u0394, as well as those from cdc48-3 and ufd1-2 mutants, but not from wildtype cells (Figure 3\u2014figure supplement 1). The fraction of GFHNS linked to tRNA was low. It is not clear whether this was due to hydrolysis of the tRNA linkage in vivo or in vitro.\n\nFor our subsequent experiments, we decided to focus on Protein A-NS (PrANS), a non-stop reporter utilized in earlier studies (Wilson et al., 2007; Bengtson and Joazeiro, 2010). Unlike GFHNS, the RNAse-sensitive, tRNA-linked form of PrANS accumulated more efficiently and could be detected even in total cell extracts. We first examined the steady-state levels of PrANS in several mutants. Interestingly, levels of tRNA-linked PrANS in cdc48-3 and ltn1\u0394 cell lysates were equivalent to those detected in dom34\u0394 and ski7\u0394, bona fide components of the NSD pathway (Figure 4A; equivalent loading confirmed by staining with Ponceau S and immunoblotting for tubulin, Figure 4\u2014figure supplement 1A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00308/elife-00308-fig4-v1.jpg)\n\n**Figure 4.:** (A) NuPAGE gel analysis reveals accumulation of tRNA-linked PrANS in cdc48-3 and ltn1\u0394 cells. Wildtype and mutant cells containing reporter plasmid were grown at 30\u00b0C for one generation and expression of reporter was induced (or not) by the addition of 2% galactose (\u00b1Gal) for 2 hr. Glass bead/SDS extracts were fractionated on a NuPAGE gel to preserve tRNA-linked species, and analyzed by IB with PAP to detect protein A. Equal loading was confirmed by Ponceau S staining and IB for tubulin (Figure 4\u2014figure supplement 1A). The right panel shows collapse of the tRNA-linked species in cdc48-3 extract following RNAse treatment. (B) tRNA-linked PrANS accumulates on 60S and 80S ribosomes in ltn1\u0394 and cdc48-3 mutants. Sucrose gradient (10\u201330%) fractions from cells expressing plasmid-borne PrANS and grown at 30\u00b0C for two generations were concentrated by TCA precipitation and evaluated by fractionation on a NuPAGE gel and IB with anti-PAP or anti-Rpl32 (Figure 4\u2014figure supplement 1B). Fractions 15 and 16 (enriched for 60S) and 17\u201319 (enriched for 80S ribosomes) are indicated.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00308/elife-00308-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Ponceau S staining (top panel) and anti-tubulin IB (bottom panel) of nitrocellulose filter used for Figure 4A. The lanes in Figure 4A with no signal contain lysate from uninduced cells. (B) Lysates from wildtype cells containing the PrANS reporter were fractionated on 10\u201330% sucrose gradients in parallel with lysates from ltn1\u0394 and cdc48-3 grown at 30\u00b0C for two generations (Figure 4B). 0.2 ml fractions were collected and aliquots were resolved by SDS-PAGE followed by IB with anti-Rpl32.\n\nTo more precisely determine which subset of ribosomes contained tRNA-linked PrANS, we performed sucrose gradient fractionation. Shallow gradients (10\u201330%) were set up, enabling good resolution of the subunits, monosomes, and polysomes (Figure 4\u2014figure supplement 1B). Immunoblotting for PrANS revealed that the RNAse-sensitive species peaked in the 80S fractions isolated from ltn1\u0394 mutants but was found in both the 60S and 80S-containing fractions from cdc48-3 cells (Figure 4B). Additionally, modified forms of slower mobility than the tRNA-linked species were detected in 60S ribosomes from cdc48-3 but not ltn1\u0394, suggesting that these high MW species are Ltn1-dependent Ub conjugates. Only a small fraction of the PrANS detected on ribosomes migrated as Ub-conjugated species. This is consistent with what is typically observed for most Ub-dependent substrates upon inhibition of their degradation, and presumably reflects robust cytosolic deubiquitination activity. In addition, overproduction of PrANS from the GAL promoter may overwhelm Ltn1, which is inabundant (Bengtson and Joazeiro, 2010). Besides the modified forms of PrANS, unmodified protein was observed throughout the gradient and peaked in the ribosomal fractions. We do not know whether this latter form arose from hydrolysis of the peptidyl-tRNA linkage in cells or in vitro.\n\nOur data thus far indicate that in cdc48, npl4, and ufd1 mutants, nascent proteins were targeted for degradation by Ltn1- and Ubr1-dependent ubiquitination but became stuck on 60S and 80S ribosomes as peptidyl-tRNAs, implying that Cdc48 activity promotes release of stalled, ubiquitinated peptides, which are then degraded by the proteasome. This hypothesis predicts that ribosomes isolated from cells in which proteasome activity is compromised should accumulate less tUNPs than cdc48 mutants. To test this prediction, we used the sucrose cushion method to isolate ribosomes from cdc48-3 and npl4-1 mutants, as well as pdr5\u0394 cells treated with or without the proteasome inhibitor MG132 (pdr5\u0394 enables cellular accumulation of this compound). The ribosome pellet was then treated with puromycin and incubated with UBA resin to enrich for tUNPs. Ribosomes isolated from cells with inhibited proteasomes contained far less tUNPs than ribosomes from cdc48-3 and npl4-1 cells (Figure 5A; the input lysates and ribosome pellets for this experiment are shown in Figure 1B). This result is in striking contrast to what we previously reported for proteasomes isolated from cdc48-3 and MG132-treated cells\u2014both contained very high levels of accumulated Ub conjugates (Verma et al., 2011). A similar result was obtained using the cim3-1 mutant instead of MG132 treatment (Figure 5\u2014figure supplement 1A; cim3-1 is a ts allele of the gene that encodes the proteasome subunit Rpt6).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00308/elife-00308-fig5-v1.jpg)\n\n**Figure 5.:** (A) Ub conjugates accumulate to a greater extent on ribosomes isolated from cdc48-3 and npl4-1 mutants than on ribosomes isolated from cells treated with proteasome inhibitor MG132. Puromycin-treated ribosomes from Figure 1B were incubated with UBA resin. The bound fraction was evaluated by SDS-PAGE and immunoblotting with anti-Ub. (B) PrANS preferentially accumulates on the ribosome in cdc48-3 cells and in the post-ribosome supernatant in a proteasome mutant. Ribosomes were isolated from cells grown at 37\u00b0C for 90 min by pelleting through sucrose cushions. Total cell lysate inputs (left panel), ribosome pellets (middle panel) and post-ribosome supernatants (right panel) were evaluated by separation on a NuPAGE gel and IB with PAP. Equivalent recovery of ribosomes in the pellet fractions was confirmed by IB with anti-Rpl32 (bottom panel). The same cell cultures were also evaluated by preparing extracts in SDS and resolving aliquots on a Tris-Glycine (Figure 5\u2014figure supplement 1B, left panel) or NuPAGE (Figure 5\u2014figure supplement 1B, right panel) gel.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00308/elife-00308-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Ribosomes from wildtype and mutant cells grown at 37\u00b0C for 90 min were sedimented through sucrose cushions. Pellets were resuspended and either evaluated by SDS-PAGE and IB with anti-Rpl32 (lower left panel) or incubated with UBA resin following treatment with puromycin. The bound fraction (upper left panel) and the input cell lysates (right panel) were evaluated by SDS-PAGE and IB with anti-ub (top panel). (B) Extracts prepared by the glass bead/SDS method from the indicated strains grown at 37\u00b0C for 90 min were analyzed on a Tris-Glycine (TG; left panel) or NuPAGE (right panel) gel.\n\nWe next sought to evaluate the effect of proteasome deficiency on accumulation of a specific peptidyl-tRNA on the ribosome. To evaluate the subcellular distribution of the PrANS species that accumulate upon inhibition of Cdc48 or proteasome function, we sedimented extracts through sucrose cushions to generate ribosome pellets and post-ribosomal supernatants from wildtype, cdc48-3 and cim3-1 cells (Figure 5B). Notably, whereas most of the PrANS fractionated in the ribosome pellet in cdc48-3 cells (a substantial portion of which remained linked to tRNA), the opposite was true in cim3-1 cells, where the bulk of the PrANS was recovered in the supernatant fraction (Figure 5B). Comparison of extracts made by lysing cells directly in SDS (Figure 5\u2014figure supplement 1B) or under native conditions (Figure 5B) revealed that the proportion of PrANS that accumulated as full length or truncated species in vivo and its susceptibility to proteolytic clipping in native cell extract differed for cdc48-3 and cim3-1 mutants. We do not know the basis for these differences.\n\nOur observation that Ubr1 contributed to ubiquitination of tUNPs (Figure 3A) led us to wonder about the diversity of the QC mechanisms that underlie their formation. To determine if the role of Cdc48 is limited to the non-stop pathway or whether it plays a more global role in degradation of proteins encoded by aberrant messages, we also assessed the stability of endogenous phosphogluconate dehydrogenase truncated by a premature termination codon (Gnd1PTC) in the middle of a folded domain at residue 368. Over-produced Gnd1PTC was shown to be a substrate of the Ubr1 cytosolic quality control pathway in a prior study (Heck et al., 2010). The data in Figure 6A confirmed stabilization of Gnd1PTC in ubr1\u0394. Notably, cdc48-3 and ufd1-2 mutations also stabilized Gnd1PTC, but ltn1\u0394 was without effect (equivalent loading confirmed in Figure 6\u2014figure supplement 1). Gnd1PTC was also stabilized in upf1\u0394. Upf1 is a RING domain Ub ligase (Takahashi et al., 2008) that plays a crucial role in NMD and stimulates the degradation of aberrant PTC translation products (Kuroha et al., 2009). The dependence of Gnd1PTC degradation on Cdc48 and Upf1 suggested that tRNA-linked Gnd1PTC might become stuck on ribosomes, as observed for the non-stop reporters. To test this possibility we used the sucrose cushion method to isolate ribosomes from various mutants, and evaluated the ribosomal pellets for their content of Gnd1PTC. Analysis of total cell lysates revealed strong accumulation of Gnd1PTC in cdc48-3, ubr1\u0394, and upf1\u0394 cells (Figure 6B). Fractionation of lysates prepared in an identical manner revealed an RNAse-sensitive species on ribosomes but not in post-ribosomal supernatants isolated from cdc48-3 mutants (Figure 6C) as well as ufd1-2, ubr1\u0394 and upf1\u0394 mutants (data not shown). In contrast, little tRNA-linked substrate was found in dom34\u0394 mutants (Figure 6C). Strikingly, the tRNA-linked species was not detected on ribosomes from ltn1\u0394 (data not shown).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00308/elife-00308-fig6-v1.jpg)\n\n**Figure 6.:** (A) A cycloheximide chase was performed with the indicated mutants grown at 30\u00b0C for two generations. Glass bead/SDS extracts were prepared at the indicated times after adding cycloheximide and analyzed by immunoblotting with anti-HA antibody to detect HA-tagged Gnd1PTC. (B) A tRNA-linked form of Gnd1PTC accumulates on ribosomes from cdc48-3 mutants. Total cell extracts prepared identically to those used for the ribosome analysis in panel C were immunoblotted with anti-HA to detect Gnd1PTC and anti-tubulin to evaluate loading. cdc48-3 mutant cells were incubated at a semi-permissive (30\u00b0C) temperature for 90 min prior to lysis whereas all other strains were grown at 30\u00b0C for two generations. (C) Ribosomes (top panels) and post-ribosomal supernatants (bottom panel) were isolated from the same strains in (B) by sedimentation through sucrose cushions and analyzed by immunoblotting with anti-HA to detect Gnd1PTC. The ribosome pellets were also immunoblotted with anti-Rpl32 (middle panel) to confirm equivalent recovery. The right panel shows collapse of the tRNA-linked species following RNAse treatment of the ribosomal pellet from cdc48-3. cdc48-3 cells were incubated at either the semi-permissive (30\u00b0C) or non-permissive (37\u00b0C) temperature prior to lysis, as described in (B).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00308/elife-00308-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Ponceau S staining of filters for Figure 6A. A tubulin loading control is shown for the top filter.\n\n## Discussion\n\nWhereas QC of defective mRNAs and recycling of ribosomes stalled on these templates has received considerable attention in prior studies, much less is known about what happens to the nascent polypeptides, some of which accumulate as peptidyl-tRNA. Some proteins encoded by non-stop mRNAs, including the reporter proteins used here (GFHNS and PrANS), are degraded by the ubiquitin-proteasome system (UPS) (Wilson et al., 2007; Bengtson and Joazeiro, 2010). The Ub ligase Ltn1 binds 60S ribosomes and promotes ubiquitination of stalled GFHNS (Bengtson and Joazeiro, 2010). Our data suggest that Cdc48\u2013Ufd1\u2013Npl4 acts downstream of Ltn1 to promote release of the non-stop peptide from the ribosome, so that it can be degraded by the proteasome. How Ltn1 and the Cdc48 complex does this remains unknown. Indeed, this remains unknown for any NSD or NGD pathway substrate; the Dom34-Hbs1 complex lacks the residues necessary for hydrolysis of the peptidyl-tRNA bond, and the two budding yeast peptidyl-tRNA hydrolases, Pth1 and Pth2, are non-essential mitochondrial proteins whose transmembrane configurations are currently unknown (Rosas-Sandoval et al., 2002). An interesting question for the future will be to determine whether Ltn1 and Cdc48\u2013Ufd1\u2013Npl4 act together with, or in a redundant pathway parallel to Ski7 or Dom34\u2013Hbs1-Rli1.\n\nWe observed direct physical association of Cdc48 and Ufd1 with both affinity-purified ribosomes and the NSD pathway substrate GFHNS. This interaction was highly specific, because Cdc48 and Ufd1 did not bind the same substrate when it was translated from a message that includes a stop codon. While this manuscript was in revision, it was reported that Cdc48, Ufd1, and Npl4 are components of the newly identified Ribosome Quality Control (RQC) complex, which also contains Ltn1, Rqc1 and Tae2 and associates with the 60S ribosomal subunit. The latter two proteins, like Ltn1 and Cdc48\u2013Ufd1\u2013Npl4, are highly conserved and have mammalian homologs (Brandman et al., 2012). Both Ltn1 and Rqc1 help link Cdc48\u2013Ufd1\u2013Npl4 to RQC. Rqc1 associates with and is required for the degradation of an Ltn1 substrate that contains an internal polyarginine sequence, but a functional role for Cdc48\u2013Ufd1\u2013Npl4 in RQC was not established by Brandman et al. (2012).\n\nA key question that emerges from this work is, what is the signal that differentiates ribosomes engaged with NSD or other aberrant substrates from normally translating ribosomes? Ltn1 (Bengtson and Joazeiro, 2010) and RQC (Brandman et al., 2012) are reported to be predominantly bound to 60S ribosomal subunits, suggesting that they may act downstream of the initial recognition and splitting of a stalled ribosome. However, in ltn1\u0394 cells, GFHNS accumulates on 80S monosomes (Bengtson and Joazeiro, 2010). Likewise, we report here that tRNA-linked PrANS appeared to be concentrated in monosomes in ltn1\u0394. By contrast, tRNA-linked PrANS was spread more broadly across 60S and 80S fractions in extracts from cdc48-3 cells. The different fractionation behavior of tRNA-linked PrANS in ltn1\u0394 and cdc48 mutants may reflect leakiness of the cdc48 mutation (the experiment was done at the semi-permissive temperature of 30\u00b0C) or Cdc48-independent ribosome splitting. Detailed resolution of the exact sequence of events will require reconstitution of the overall process with defined components.\n\nIn addition to observing accumulation of engineered NSD pathway reporter proteins in Cdc48 pathway mutants, we also observed extensive accumulation of endogenous, tRNA-linked ubiquitinated nascent polypeptides (tUNPs) on ribosomes in these cells. These tUNPs could potentially arise from multiple sources including misfolded domains (Turner and Varshavsky, 2000), mRNAs whose transcription was prematurely terminated, mRNAs or nascent peptides containing sequences that cause ribosome pausing (Ingolia et al., 2011) or mRNAs that encode premature termination codons (e.g., Figure 6C). Thus it is perhaps not surprising that at least two Ub ligases (Ltn1 and Ubr1) contributed to their accumulation. In any event, we believe it is unlikely that there is a single pathway or mechanism for disposing of tUNPs. Even in the seemingly simple case of a ribosome that translates into the poly(A) tail of an mRNA that is prematurely polyadenylated within the coding sequence, the 3\u2032-most ribosome may be stalled because it reached the end of the message, or because polylysine encoded by the poly(A) tail bound the exit channel of the ribosome (Ito-Harashima et al., 2007). Because stalls in translation elongation lead to endonucleolytic cleavage of the mRNA upstream of the 3\u2032-most ribosome (Tsuboi et al., 2012), each trailing ribosome will present a unique substrate to the UPS, and may be processed by a different mechanism.\n\nThe intimacy with which protein biosynthesis is coupled to protein degradation is highlighted by the identification of the translasome, a supercomplex defined by mass spectrometric analysis of the translation initiation factor eIF3 and found to contain both ribosome and proteasome subunits as well as chaperones involved in protein QC (Sha et al., 2009). A tight coupling of these processes may be particularly important for neurons, which are post-mitotic and need to remain robust for the life of the organism (Segref and Hoppe, 2009). Indeed, homozygous lister mice deficient in Listerin (Ltn1) function exhibit severe neurological dysfunction (Chu et al., 2009), whereas mutations in human Ubr1 result in the Johanson\u2013Blizzard syndrome characterized by, amongst other phenotypes, frequent mental retardation (Hwang et al., 2011). Mutations in p97 contribute to 1\u20132% of familial ALS (Johnson et al., 2010) and are the root cause of a syndrome, IBMPFD, that includes frontotemporal dementia (Watts et al., 2004). Defects in metabolism of protein aggregates (Manno et al., 2010), endosomal trafficking (Ritz et al., 2011) and autophagy (Ju et al., 2009; Tresse et al., 2010) have been previously suggested to contribute to the pathophysiology that results from mutation of p97. As the molecular mechanisms underlying these diseases are unraveled, it will be interesting to see if ribosome-associated degradation contributes to their etiology.\n\n## Materials and methods\n\n### Yeast strains and growth\n\nAll strains used in this study are listed in Supplementary file 1. They were derived from the W303 or S288C backgrounds. Deletion strains were acquired from Open Biosystems (Waltham, MA). All crosses were confirmed by auxotrophic marker selection and genomic PCR. Temperature-sensitive strains were confirmed by incubating the plate at the restrictive temperature for 4\u20135 days. Cultures were grown in YPD, or if cells contained plasmids, in synthetic selection medium. For expression of PrANS from the GAL1,10 promoter, induction was typically for 2 hr. Temperature-sensitive mutants and their congenic wildtypes were grown at 25\u00b0C and temperature shifts were for 90 min at 37\u00b0C, or two cell division cycles at 30\u00b0C. Any exceptions to these regimens are noted in the respective figure legends.\n\n### Preparation of glass bead/SDS extracts\n\nCells were grown as described in the respective figure legends to a final O.D.600 (optical density at a wavelength of 600 nm) between 1.0 and 2.0, harvested by centrifugation, and drop-frozen in liquid nitrogen. Frozen cell pellets were thawed and washed with ice-cold buffer containing 50 mM Tris, pH 7.5, 10 mM sodium azide, 10 mM EDTA, 10 mM EGTA, 1\u00d7 protease inhibitor tablet (Roche, Basel, Switzerland), 10 mM NEM, 50 mM NaF, 60 mM \u03b2-glycerophosphate, 10 mM sodium pyrophoshate. An equal volume of glass beads (Sigma, St Louis, MO; 425\u2013600 \u03bcm, acid washed) was added and the cell pellets were immersed in boiling water for 3 min. They were then suspended in 1\u00d7 SDS buffer (37.5 \u00b5l/O.D. unit) and cells were lysed by vortexing in Fast Prep-24 (MP) for 45 s at a setting of 6.5, and boiled again for 4 min. Boiled lysates were centrifuged at 16,000\u00d7g for 1 min. Aliquots were resolved by SDS-PAGE. In some instances, particularly when tRNA-linked substrate was being detected, washed cell pellets were brought up in 1\u00d7 SDS buffer containing 1\u00d7 Secure (Ambion, Carlsbad, CA), heated at 65\u00b0C for 5 min, lysed by glass beads as described above, and loaded on NuPAGE gels (Invitrogen, Carlsbad, CA). For immunoblot detection, gels were transferred to nitrocellulose and filters were stained with Ponceau S to determine equivalent loading of protein extracts. If loading was not equivalent, the experiment was repeated. The nitrocellulose filters were immunoblotted with desired antibody and developed by ECL or Super Signal (Pierce, Rockford, IL). Anti-Gfp was from Clontech (Mountain View, CA), Peroxidase Anti-Peroxidase Soluble Complex (for all Protein A detections, PAP), anti-Tubulin and anti-Flag were from Sigma, anti-TAP was from Thermo (Waltham, MA), anti-HA (12CA5) was from Roche, and anti-Ub antibodies were from Chemicon (Millipore, Billerica, MA), Stressgen (Enzo Life Sciences, Farmingdale, NY), and Abcam (Cambridge, MA). Puromycin antibody was a gift from Peter Walter, and anti-Rpl32 a gift from Jonathan Warner.\n\n### Affinity purification of ribosomes\n\nRibosomes were affinity-purified using TAP-tagged RPL18B by following a protocol established in prior studies with some modifications as follows (Halbeisen and Gerber, 2009; Halbeisen et al., 2009). Exponential cultures were grown at either 30\u00b0C or 37\u00b0C for 1.5 hr before being harvested by filtration using 0.2 \u00b5m Nalgene filters. In some experiments 0.1 mg/ml cycloheximide was added during filtration, and was omitted when no difference was observed in the experimental outcome. Cells were washed with a buffer containing 50 mM Tris, pH 7.5, 10 mM NEM, 10 mM sodium pyrophosphate, 0.1 mg/ml cycloheximide and frozen in liquid nitrogen. Pellets were ground in liquid nitrogen. Cell powder was weighed and resuspended in twice the volume of lysis buffer (buffer A) containing 20 mM Tris\u2013HCl (pH 8.0), 140 mM KCl, 5 mM MgCl2, 1% Triton-100, 10% glycerol, 0.2 mg/ml heparin, 0.1 mg/ml cycloheximide, 5 mM NEM, 0.5 mM AEBSF, protease inhibitor cocktail (EDTA-free; Roche), 20 U/ml DNAse I, 0.05 U/\u00b5l of RNaseOut (Invitrogen), 0.05 U/\u00b5l of SUPERase-In (Ambion), 0.5 mM DTT. Lysate was centrifuged at 5000 rpm for 5 min and the supernatant reclarified at 14,000 rpm for 10 min in a refrigerated microfuge (Eppendorf, Hamburg, Germany; 5417R). Lysate was bound to rabbit IgG conjugated to superparamagnetic Dynabeads (Invitrogen) as described by (Oeffinger et al., 2007). Using beads of this diameter enables the isolation of large complexes such as polysomes. Magnetic beads were washed twice with wash buffer (buffer B) containing 20 mM Tris\u2013HCl, pH 8.0, 140 mM KCl, 5 mM MgCl2, 10% glycerol, 0.025 U/\u00b5l RNaseOut, 0.025 U/\u00b5l of SUPERase-In, 1 mM DTT, 0.1% NP40, supplemented with 0.1 mg/ml cycloheximide and 5 mM NEM, and then twice with buffer B lacking supplements. Elution was in buffer B containing 0.3 U/\u00b5l of Tobacco Etch Virus (TEV) protease at 16\u00b0C for 2 hr with intermittent shaking in the presence (or absence) of 2 mM puromycin, following which samples were adjusted to 0.6 M KCl and 3 mM puromycin and incubated at 37\u00b0C for 7 min. Eluates were removed after immobilization of beads with a magnet and characterized by Coomassie blue staining, immunoblotting, and RNA analysis using RNeasy mini columns (Qiagen, Valencia, CA).\n\n### Sucrose density fractionation\n\nA total of 25 A260 units of cultures lysed in buffer A were loaded on top of a 10\u201350% sucrose gradient prepared in buffer A lacking Triton X-100, glycerol and NEM. The samples were centrifuged in an SW-41 rotor for 180 min at 35,000 rpm at 4\u00b0C and fractionated while continuously recording the absorbance at 254 nm with a flow cell UV detector (ISCO, Lincoln, NE). Fractions of 0.5 or 0.75 ml were collected and analyzed by Coomassie blue staining and immunoblotting with various antibodies, including Rpl32, to identify 40S, 60S, 80S and polysomal fractions. An aliquot (100 \u00b5l) of each fraction was also analyzed for RNA using RNeasy mini columns (Qiagen). Figure 1\u2014figure supplement 2B is representative of this protocol.\n\nRibosomes were also analyzed on 10\u201330% gradients prepared in 50 mM Hepes, pH 7.4, 2.5 mM MgCl2 and 100 mM KOAc using the SW55Ti rotor at 50,000 rpm for 100 min with slow acceleration /deceleration. 0.2 ml fractions were collected from the top. Aliquots were resolved by SDS-PAGE and immunoblotted with anti-Rpl32 and the Ab for the specific NS substrate. To aid in tRNA detection, samples were also precipitated with 10% TCA following the addition of 0.02% deoxycholate. Pellets were washed with ice-cold acetone, resuspended in 2\u00d7 Laemmli buffer containing RNA secure and analyzed by NuPAGE. Representative data are shown in Figure 4B.\n\nFor analysis of tRNA-linked substrates in Figures 5B and 6B and Figure 3\u2014figure supplement 1, we employed the method described by (Tsuboi et al., 2012). Ribosomes were sedimented at 49,000 rpm for 45 min (RP100AT4 rotor in Sorvall RC M120EX ultracentrifuge) through 0.5 M sucrose cushions in buffer C containing 20 mM Hepes, pH 7.4, 5 mM MgOAc, 100 mM KOAc, 0.5 mM DTT, 100 \u00b5g/ml cycloheximide, 200 \u00b5g/ml heparin, and the protease and RNAse inhibitor cocktails described above. Ribosome pellets were resuspended in the same buffer in the presence (or absence) of 0.5 M KCl, 3 mM puromycin, 2 \u00b5M Ub aldehyde and incubated for 15 min on ice and 30 min at 25\u00b0C. RNAse inhibitors were omitted when ribosomes were treated with 10 or 100 \u00b5g/ml RNAse A at 30\u00b0C for 10 min.\n\n#### Binding to UBA columns\n\nTwo types of UBA resins were used to bind multiubiquitinated substrates: purified and dialyzed recombinant Gst-Dsk2 immobilized on glutathione-sepharose beads (Figures 2, 5A and Figure 2\u2014figure supplement 1C), TUBE2-UBA (Boston Biochem, Cambridge, MA; Figure 2\u2014figure supplement 1B, and Figure 3A). Purified ribosomes in high salt and puromycin were diluted with buffer containing 20 mM Tris\u2013HCl, pH 7.5, 5 mM NEM, 0.1% NP40 and bound to UBA resin at 4\u00b0C for 1.5 hr. Beads were washed three times with 25 mM Tris, pH 7.5, 150 mM NaCl, 0.2% NP40 and a final wash was performed with the same buffer minus detergent. Beads were re-suspended in 2\u00d7 SDS-PAGE buffer and loaded on 4\u201312% Tris-Glycine gels (Invitrogen). Following transfer, they were typically immunoblotted with anti-Ub antibody.\n\n#### CTAB precipitation of peptidyl-tRNA\n\nSamples to be precipitated were adjusted to 2% CTAB (Hexadecyltrimethyl-ammonium bromide; Sigma) and mixed with an equal volume of 0.5 M sodium acetate containing 0.2 mg/ml bacterial tRNA (Hobden and Cundliffe, 1978; Mariappan et al., 2010). Samples were incubated at 30\u00b0C for 10 min and then centrifuged for 10 min at room temperature. Precipitates were washed with 1% CTAB, 0.25 M sodium acetate at room temperature and resuspended in SDS-PAGE buffer.\n\n### [35S] labeling of cells\n\nWildtype and mutant cells growing in synthetic medium were temperature shifted to 36\u00b0C for 1 hr and starved for methionine for 30 min. Cells were then harvested by centrifugation, resuspended in one-tenth the original volume, and pulse-labeled with 150 \u00b5Ci/ml 35S-methionine (>600 Ci/mmol, cell-labeling grade; Perkin Elmer, Waltham, MA) for 90 s. Aliquots were immediately withdrawn into collection tubes containing 2\u00d7 stop solution (0.2 mg/ml cycloheximide and 500 mM sodium azide), and the remainder of the cultures chased for the indicated times with 0.2 mg/ml cycloheximide and 10 mM unlabeled methionine. Ribosomes were affinity-purified from cell pellets drop-frozen in liquid nitrogen by resuspending in buffer A and lysing cells with glass beads using a Fast-Prep. Elution with TEV protease was done in the presence of 2 mM puromycin, following which eluates were bound to recombinant Gst-Dsk2 UBA resin. Washed beads were eluted in 2\u00d7 SDS-PAGE buffer, and aliquots were resolved by SDS-PAGE. Gels were dried and exposed to film (Kodak, Rochester, NY).\n\n### Sedimentation of ribosomes through sucrose cushions\n\nCell pellets were resuspended in lysis buffer A described above except that the buffering reagent was 20 mM Hepes, pH 7.4, and glycerol was omitted. Lysate was incubated on ice for ten minutes and then spun at 20,000\u00d7g for 10 min. Ribosomes were sedimented at 80,000 rpm for 65 min (RP100AT4 rotor in Sorvall RC M120EX ultracentrifuge) through 1.0 M sucrose cushions. Ribosome pellets were resuspended in SDS sample buffer and evaluated by Coomassie blue staining, or immunoboltting with anti-Ub antibodies.\n",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "133210f2-1a5d-4b1e-a55c-d0f438a0d79a",
+      "submission_id": "c63b9eb6-10d3-447e-b1bf-fcee04987fc2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ivan Dikic, Goethe University , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00308.017](https://doi.org/10.7554/eLife.00308.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cCdc48/p97 promotes degradation of aberrant nascent polypeptides bound to the ribosome\u201d for consideration at eLife. Your submission has been evaluated by three reviewers, two of whom are members of our Board of Reviewing Editors, and the decision has been discussed further with one of eLife's Senior Editors. The following reviewer wants to reveal his identity: Roy Parker.\n\nGeneral assessment and substantive concerns: This manuscript addresses the role of Cdc48 in targeting nascent aberrant polypeptides for degradation. The main conclusion is that the Cdc48 complex plays a role in disassembling tRNA-peptide-ubiquitin conjugates from the ribosome. Cdc48 has been previously characterized as a \u201cseggregase\u201d to remodel certain ubiquitinated substrate complexes prior to their proteasomal degradation, but these findings are relevant because they describe a new role for Cdc48 in ribosome-associated protein quality control pathways. All of the reviewers have credited the quality of the work but they also indicated that mechanistic understanding of this new pathway is missing. For example, no evidence is presented that the Cdc48 role in this process is direct and it remains possible that Cdc48 affects other aspects of the cell that indirectly lead to this phenotype. Further detailed analyses of the pathway and a better mechanistic understanding of the process are needed for publication in eLife.\n",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4092ce66-4926-47a1-b3c1-997851e43e65",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C1",
+      "claim": "Cdc48/p97 and its adaptors Ufd1-Npl4 participate in ribosome-associated degradation (RAD) by mediating the clearance of ubiquitinated, tRNA-linked nascent peptides from ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the ubiquitin (Ub) pathway segregase Cdc48/p97 and its adaptors Ufd1-Npl4 participate in ribosome-associated degradation (RAD) by mediating the clearance of ubiquitinated, tRNA-linked nascent peptides from ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple experimental data presented in the manuscript, including puromycin release assays, UBA bead capture, and pulse-chase experiments showing accumulation of ubiquitinated nascent peptides on ribosomes in cdc48 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "bfdff208-e2a8-4ac0-a736-fb274d8a6f25",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C2",
+      "claim": "Budding yeast Cdc48 functions downstream of the Ub ligases Ltn1 and Ubr1 to release nascent proteins from the ribosome so that they can be degraded by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Through characterization of both endogenously-generated and heterologous model substrates for the RAD pathway, we conclude that budding yeast Cdc48 functions downstream of the Ub ligases Ltn1 and Ubr1 to release nascent proteins from the ribosome so that they can be degraded by the proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing that deletion of LTN1 or UBR1 decreases accumulation of tUNPs on cdc48-3 ribosomes (Figure 3A), and that ubiquitinated forms of non-stop reporters accumulate in ufd1 mutants but not in ltn1\u0394 mutants (Figure 3D).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "7da5a21b-d1bf-49fb-bd54-568b3fa7c49d",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C3",
+      "claim": "Defective RAD could contribute to the pathophysiology of human diseases caused by mutations in p97.",
+      "claim_type": "EXPLICIT",
+      "source": "Defective RAD could contribute to the pathophysiology of human diseases caused by mutations in p97.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the established role of p97 in RAD and known associations between p97 mutations and human diseases.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "4af004ab-fada-4355-9be6-bbc1453b678e",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C4",
+      "claim": "Low concentrations of hygromycin B and paromomycin inhibited growth of multiple cdc48 mutants and the adaptor mutants npl4-1, ufd1, ubx1\u0394, and ubx2\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "However, low concentrations of hygromycin B and paromomycin inhibited growth of multiple cdc48 mutants and the adaptor mutants npl4-1, ufd1, ubx1\u0394, and ubx2\u0394 (Figure 1\u2014figure supplement 1A,B and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A,B demonstrating growth inhibition of these mutants on plates containing hygromycin B and paromomycin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "824b3cbe-4125-4c8a-80af-7ee89d25ceae",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C5",
+      "claim": "Hygromycin B and paromomycin belong to the aminoglycoside class of antibiotics that bind close to the decoding center and affect translational fidelity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hygromycin B and paromomycin belong to the aminoglycoside class of antibiotics that bind close to the decoding center and affect translational fidelity (Carter et al., 2000; Kim and Craig, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "e38455bb-74a2-4274-aa33-dfcbbb24d9e3",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C6",
+      "claim": "Deletion of LTN1 leads to hygromycin-sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of LTN1 leads to hygromycin-sensitivity and since Ltn1 is involved in QC of NSD pathway substrates (Bengtson and Joazeiro, 2010), we explored the possibility that Cdc48\u2013Ufd1\u2013Npl4 and one or more Ubx proteins also function in this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work by Bengtson and Joazeiro, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "ecdaf665-7f49-453f-8ed1-1daceaf2a36e",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C7",
+      "claim": "Ltn1 is involved in QC of NSD pathway substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of LTN1 leads to hygromycin-sensitivity and since Ltn1 is involved in QC of NSD pathway substrates (Bengtson and Joazeiro, 2010), we explored the possibility that Cdc48\u2013Ufd1\u2013Npl4 and one or more Ubx proteins also function in this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work by Bengtson and Joazeiro, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "2b8582ba-5bc1-43ef-8b56-78b2d91ac777",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C8",
+      "claim": "Cdc48 activity is not required for ribosome assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Coomassie blue staining of purified ribosomes confirmed that Cdc48 activity was not required for their assembly (Figure 1, Figure 1\u2014figure supplement 2A, lane 3), a conclusion that was further validated by sucrose gradient fractionation of ribosomes from wildtype, cdc48-3, and ufd1-2 whole cell lysates (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Coomassie blue staining data (Figure 1\u2014figure supplement 2A) and sucrose gradient fractionation data (Figure 1\u2014figure supplement 2B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "f10ea8b1-acc2-4333-9fad-ecfec4bb3b32",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C9",
+      "claim": "Ub conjugates accumulate on ribosomes affinity-purified from cdc48-3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting for Ub revealed strong accumulation of Ub conjugates on ribosomes affinity-purified from cdc48-3 cells (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblotting data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "121f8cd4-fd3d-470c-bb8d-adda4bc3392b",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C10",
+      "claim": "Ub conjugates accumulate on ribosomes isolated from cdc48-3 and npl4-1 mutants by pelleting through a sucrose cushion.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, Ub conjugates were observed to accumulate on ribosomes in cdc48-3 and npl4-1 mutants (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblotting data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "fe348ee5-309e-441b-b145-3d02e15ebf3c",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C11",
+      "claim": "Conjugate accumulation on cdc48-3 and npl4-1 ribosomes exceeded that observed for ribosomes isolated from cells treated with the proteasome inhibitor MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, conjugate accumulation on cdc48-3 and npl4-1 ribosomes exceeded that observed for ribosomes isolated from cells treated with the proteasome inhibitor MG132, a result that will be further discussed below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of immunoblotting data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "daf6d7d1-bb3a-468d-ba35-f92423b07584",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C12",
+      "claim": "The ATPase activity of Cdc48 is required to prevent accumulation of ribosome-associated Ub conjugates.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether the ATPase activity of Cdc48 was required to prevent accumulation of ribosome-associated Ub conjugates, ribosomes were pelleted from cdc48-3 mutant cells expressing plasmid-borne wildtype CDC48, or a mutant (Q2) deficient in ATPase activity (Ye et al., 2003). Whereas CDC48 complemented the cdc48-3 phenotype, high levels of Ub conjugates were detected on ribosomes isolated from cells expressing the cdc48-Q2 mutant (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C comparing wildtype CDC48 and the ATPase-deficient Q2 mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "ecbb7789-2a1c-472d-b27e-09fdd760076c",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C13",
+      "claim": "Both Cdc48 and Ufd1 cofractionate with affinity-purified ribosomes isolated under stringent conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the idea that Cdc48 ATPase functions at the ribosome to mediate release of ubiquitinated nascent peptides, both Cdc48 and Ufd1 were found to cofractionate with affinity-purified ribosomes isolated under stringent conditions (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblotting data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "bb0a9b51-c31c-4938-a30e-877723856a36",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C14",
+      "claim": "Puromycin treatment of ribosomes from cdc48-3 but not wildtype cells released ubiquitinated proteins that were enriched on the UBA resin.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycin treatment of ribosomes from cdc48-3 but not wildtype cells released ubiquitinated proteins that were enriched on the UBA resin (Figure 2A, top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblotting data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "de190c3f-bec0-4cba-9dd5-5590a0eee5c9",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C15",
+      "claim": "A similar result was obtained with ribosomes isolated from npl4-1 and ufd1-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar result was obtained with ribosomes isolated from npl4-1 and ufd1-1 mutants (Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "499e87c0-2927-41a4-8113-59ed7252d439",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C16",
+      "claim": "The conjugates observed in Figure 2A were linked to puromycin because they cross-reacted with an antibody specific for puromycin.",
+      "claim_type": "EXPLICIT",
+      "source": "The conjugates observed in Figure 2A were indeed linked to puromycin because they cross-reacted with an antibody specific for puromycin (Figure 2A, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblotting data with anti-puromycin antibody shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "aab8f66d-b90c-4e4b-8540-b4939580ca82",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C17",
+      "claim": "The same was true for Ub conjugates released from npl4-1 and ufd1-2 ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The same was true for Ub conjugates released from npl4-1 and ufd1-2 ribosomes (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "92e2ec8f-f9f7-483a-baeb-0144fc9c52b8",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C18",
+      "claim": "No Ub immunoreactivity was recovered from mutant ribosomes in the absence of puromycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that no Ub immunoreactivity was recovered from mutant ribosomes in the absence of puromycin treatment validated our assumption that the UBA resin largely excluded mega-complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental design and results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "870d7f8a-14d9-4113-af1f-de0fb0a320a0",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C19",
+      "claim": "At least some of the Ub conjugates that accumulated on cdc48 and npl4 ribosomes must be ubiquitinated nascent proteins linked to tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment also suggests that at least some of the Ub conjugates that accumulated on cdc48 and npl4 ribosomes (Figure 1A,B) must be ubiquitinated nascent proteins linked to tRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the puromycin release experiments shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "d46fc3a6-fa0c-4e55-bb20-65ef0c3c5557",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C20",
+      "claim": "Transfer of Ub conjugates to puromycin was RNAse A-sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting for Ub revealed that both the control and RNAse-treated ribosomes contained Ub conjugates that bound the UBA beads (Figure 2B, top panel, lanes 2 and 3). However, ribosomes pre-treated with RNAse no longer yielded puromycin-reactive conjugates (Figure 2B, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B comparing RNAse-treated and untreated samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "278a95c3-3bb0-4dd0-a8cb-0c42ea54b27c",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C21",
+      "claim": "Pre-treating lysate with RNAse before affinity purification of ribosomes eliminated recovery of both Ub-, and puromycin immunoreactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, pre-treating lysate with RNAse before affinity purification of ribosomes eliminated recovery of both Ub-, and puromycin immunoreactivity (Figure 2B, lane 4, top and bottom panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B, lane 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "dbaa13da-c274-4c46-9bc5-dbe38961f255",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C22",
+      "claim": "Ub conjugates were precipitated from cdc48-3 ribosomes by CTAB in an RNAse-sensitive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel with results obtained previously using puromycin, Ub conjugates were precipitated from cdc48-3 ribosomes in an RNAse-sensitive manner (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CTAB precipitation data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "86822d9d-9875-4cc3-9a2a-78e3a819ff0a",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C23",
+      "claim": "Ribosomes from both cdc48-3 and ufd1-2 cells contained far higher levels of radiolabeled high MW Ub conjugates than wildtype ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, ribosomes from both cdc48-3 and ufd1-2 cells contained far higher levels of radiolabeled high MW Ub conjugates than wildtype ribosomes, and a substantial portion of this signal persisted on ribosomes for 10\u201320 min (Figure 2D), which is considerably longer than the time required to synthesize a protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pulse-chase experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "a498fb2a-b28f-483f-ba5c-9bbc76e8155c",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C24",
+      "claim": "The low signal on wildtype ribosomes was not due to inefficient incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the low signal on wildtype ribosomes was not due to inefficient incorporation, because the WT inputs for the UBA fractionation step actually contained slightly more total pulse-labeled species (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "628ef9e0-fc4f-4061-8e62-59ecb2d4e4d5",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C25",
+      "claim": "Cdc48 and its cofactors Ufd1 and Npl4 prevent accumulation of ubiquitinated, tRNA-linked nascent chains on the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the experiments described thus far indicate that Cdc48 and its cofactors Ufd1 and Npl4 prevent accumulation of ubiquitinated, tRNA-linked nascent chains on the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion based on multiple experiments including puromycin release, CTAB precipitation, and pulse-chase experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "98c104d7-5c79-4a12-a1ca-8312d0ae1df8",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C26",
+      "claim": "Other Cdc48 cofactors including Ubx2, Ubx4, Ubx6, and Ufd2 did not appear to contribute to clearance of tUNPs from the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, other Cdc48 cofactors including Ubx2, Ubx4, Ubx6, and Ufd2 did not appear to contribute to clearance of tUNPs from the ribosome (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "a85ec051-f13a-4b24-abd9-b7f688b4f214",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C27",
+      "claim": "Additional loss of LTN1 or UBR1 resulted in a marked decrease in the level of tUNPs on cdc48-3 ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The data in Figure 3A demonstrate that additional loss of LTN1 or UBR1 resulted in a marked decrease in the level of tUNPs on cdc48-3 ribosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "2773bdab-b35b-4df7-9e98-80dd4efbc198",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C28",
+      "claim": "GFHNS accumulated maximally in ufd1 mutants (similar to levels observed for ltn1\u0394), and also exhibited significant accumulation in npl4-1 and cdc48-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst the Cdc48 pathway mutants examined, GFHNS accumulated maximally in ufd1 mutants (similar to levels observed for ltn1\u0394), and also exhibited significant accumulation in npl4-1 and cdc48-3 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblotting data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "bf1cba83-cd12-4548-97a2-94a4bd8f866f",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C29",
+      "claim": "Accumulation of GFHNS in ufd1-2 cells resulted from stabilization of the non-stop reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Cycloheximide chase analysis in ufd1-2 cells indicated that accumulation resulted from stabilization of the non-stop reporter (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cycloheximide chase data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "06ba47f1-5dc4-4a13-9b0e-d3591cb3a33d",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C30",
+      "claim": "The same reporter containing a stop codon was not degraded and accumulated at a much higher level than the NS reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in earlier studies (Bengtson and Joazeiro, 2010), the same reporter containing a stop codon was not degraded and accumulated at a much higher level than the NS reporter (Figure 3C; amounts loaded were adjusted to yield signals of equal intensity at 0 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cycloheximide chase data shown in Figure 3C and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "1ac6bdce-6652-4b1d-b62e-51bb18a56380",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C31",
+      "claim": "GFHNS accumulated in an ubiquitinated form in ufd1-1 and ufd1-2 but not in ltn1\u0394 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting for Ub demonstrated that GFHNS accumulated in an ubiquitinated form in ufd1-1 and ufd1-2 but not in ltn1\u0394 mutants (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation and immunoblotting data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "d36758bc-2ed4-4112-b78d-ac0e1bf8ec40",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C32",
+      "claim": "Both Cdc48 and Ufd1 were co-immunoprecipitated with GFHNS, but not GFHStop, even though GFHStop was more abundant.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of the Cdc48 complex in reporter degradation appeared to be direct, because both Cdc48 and Ufd1 were co-immunoprecipitated with GFHNS, but not GFHStop, even though GFHStop was more abundant (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "da58e686-20f4-4473-be8e-90493ff732e5",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C33",
+      "claim": "GFHNS accumulates on 80S ribosomes in ltn1\u0394 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "GFHNS accumulates on 80S ribosomes in ltn1\u0394 mutants (Bengtson and Joazeiro, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work by Bengtson and Joazeiro, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "435025de-37c9-4648-95db-705029ad1af2",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C34",
+      "claim": "An RNAse-sensitive species of GFHNS was detected on ribosomes from ltn1\u0394, as well as those from cdc48-3 and ufd1-2 mutants, but not from wildtype cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, immunoblotting revealed an RNAse-sensitive species on ribosomes from ltn1\u0394, as well as those from cdc48-3 and ufd1-2 mutants, but not from wildtype cells (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblotting data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "58db054a-4437-4fb4-8a21-5f1c8a4ab8f8",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C35",
+      "claim": "The fraction of GFHNS linked to tRNA was low.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of GFHNS linked to tRNA was low. It is not clear whether this was due to hydrolysis of the tRNA linkage in vivo or in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observation of data in Figure 3\u2014figure supplement 1 and represents speculation about the cause.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "f4dfa82d-1e9e-497d-8176-67a0222978e0",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C36",
+      "claim": "Levels of tRNA-linked PrANS in cdc48-3 and ltn1\u0394 cell lysates were equivalent to those detected in dom34\u0394 and ski7\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, levels of tRNA-linked PrANS in cdc48-3 and ltn1\u0394 cell lysates were equivalent to those detected in dom34\u0394 and ski7\u0394, bona fide components of the NSD pathway (Figure 4A; equivalent loading confirmed by staining with Ponceau S and immunoblotting for tubulin, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblotting data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "b2fce93b-393d-4cf5-bcd5-5df51501028d",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C37",
+      "claim": "The RNAse-sensitive species of PrANS peaked in the 80S fractions isolated from ltn1\u0394 mutants but was found in both the 60S and 80S-containing fractions from cdc48-3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting for PrANS revealed that the RNAse-sensitive species peaked in the 80S fractions isolated from ltn1\u0394 mutants but was found in both the 60S and 80S-containing fractions from cdc48-3 cells (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sucrose gradient fractionation data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "50e1da71-3bb7-4864-a309-edf72cc5c134",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C38",
+      "claim": "Modified forms of slower mobility than the tRNA-linked species were detected in 60S ribosomes from cdc48-3 but not ltn1\u0394, suggesting that these high MW species are Ltn1-dependent Ub conjugates.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, modified forms of slower mobility than the tRNA-linked species were detected in 60S ribosomes from cdc48-3 but not ltn1\u0394, suggesting that these high MW species are Ltn1-dependent Ub conjugates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observation of data in Figure 4B and represents an inference about the nature of the high MW species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "c44fece6-9228-400d-9884-7a1507c5d29e",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C39",
+      "claim": "Only a small fraction of the PrANS detected on ribosomes migrated as Ub-conjugated species.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a small fraction of the PrANS detected on ribosomes migrated as Ub-conjugated species. This is consistent with what is typically observed for most Ub-dependent substrates upon inhibition of their degradation, and presumably reflects robust cytosolic deubiquitination activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observation of data and comparison to typical behavior of Ub-dependent substrates.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "95e5160c-3247-46de-b4de-f06ab5eeaf62",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C40",
+      "claim": "Overproduction of PrANS from the GAL promoter may overwhelm Ltn1, which is inabundant.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, overproduction of PrANS from the GAL promoter may overwhelm Ltn1, which is inabundant (Bengtson and Joazeiro, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about why only a small fraction of PrANS is ubiquitinated, supported by citation to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "bfa280f3-f24e-435d-9cff-bc2d14f7cd6c",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C41",
+      "claim": "Ribosomes isolated from cells with inhibited proteasomes contained far less tUNPs than ribosomes from cdc48-3 and npl4-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosomes isolated from cells with inhibited proteasomes contained far less tUNPs than ribosomes from cdc48-3 and npl4-1 cells (Figure 5A; the input lysates and ribosome pellets for this experiment are shown in Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by UBA bead capture data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "a1c715ae-4d74-446f-96da-9daa7a6b5f13",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C42",
+      "claim": "This result is in striking contrast to what we previously reported for proteasomes isolated from cdc48-3 and MG132-treated cells\u2014both contained very high levels of accumulated Ub conjugates.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is in striking contrast to what we previously reported for proteasomes isolated from cdc48-3 and MG132-treated cells\u2014both contained very high levels of accumulated Ub conjugates (Verma et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares current results to prior published work by the authors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "4923d443-d020-486e-98d0-8a4778ec34f4",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C43",
+      "claim": "A similar result was obtained using the cim3-1 mutant instead of MG132 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar result was obtained using the cim3-1 mutant instead of MG132 treatment (Figure 5\u2014figure supplement 1A; cim3-1 is a ts allele of the gene that encodes the proteasome subunit Rpt6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "4ecf50d4-653f-4d95-9de8-26bd2bc633a5",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C44",
+      "claim": "Whereas most of the PrANS fractionated in the ribosome pellet in cdc48-3 cells (a substantial portion of which remained linked to tRNA), the opposite was true in cim3-1 cells, where the bulk of the PrANS was recovered in the supernatant fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, whereas most of the PrANS fractionated in the ribosome pellet in cdc48-3 cells (a substantial portion of which remained linked to tRNA), the opposite was true in cim3-1 cells, where the bulk of the PrANS was recovered in the supernatant fraction (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by subcellular fractionation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "67f57992-4126-4422-bcdb-88324531f47f",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C45",
+      "claim": "The proportion of PrANS that accumulated as full length or truncated species in vivo and its susceptibility to proteolytic clipping in native cell extract differed for cdc48-3 and cim3-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of extracts made by lysing cells directly in SDS (Figure 5\u2014figure supplement 1B) or under native conditions (Figure 5B) revealed that the proportion of PrANS that accumulated as full length or truncated species in vivo and its susceptibility to proteolytic clipping in native cell extract differed for cdc48-3 and cim3-1 mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of data shown in Figure 5B and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "67bcc76e-8289-43ab-ad56-23469e194c08",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C46",
+      "claim": "cdc48-3 and ufd1-2 mutations stabilized Gnd1PTC, but ltn1\u0394 was without effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The data in Figure 6A confirmed stabilization of Gnd1PTC in ubr1\u0394. Notably, cdc48-3 and ufd1-2 mutations also stabilized Gnd1PTC, but ltn1\u0394 was without effect (equivalent loading confirmed in Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cycloheximide chase data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "587181de-2533-4c19-9faa-7247b34b0d3a",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C47",
+      "claim": "Gnd1PTC was also stabilized in upf1\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Gnd1PTC was also stabilized in upf1\u0394.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cycloheximide chase data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "ad85c3bf-6f93-4095-8c71-60e3aa369cd5",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C48",
+      "claim": "Upf1 is a RING domain Ub ligase that plays a crucial role in NMD and stimulates the degradation of aberrant PTC translation products.",
+      "claim_type": "EXPLICIT",
+      "source": "Upf1 is a RING domain Ub ligase (Takahashi et al., 2008) that plays a crucial role in NMD and stimulates the degradation of aberrant PTC translation products (Kuroha et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "70e37e99-ed2f-4db7-8b88-a8f8428a3318",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C49",
+      "claim": "An RNAse-sensitive species of Gnd1PTC was found on ribosomes from cdc48-3 mutants as well as ufd1-2, ubr1\u0394 and upf1\u0394 mutants, but not from wildtype cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Fractionation of lysates prepared in an identical manner revealed an RNAse-sensitive species on ribosomes but not in post-ribosomal supernatants isolated from cdc48-3 mutants (Figure 6C) as well as ufd1-2, ubr1\u0394 and upf1\u0394 mutants (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by subcellular fractionation data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "e59e6f8a-46a4-4390-aef6-e99be1144745",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C50",
+      "claim": "Little tRNA-linked Gnd1PTC was found in dom34\u0394 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, little tRNA-linked substrate was found in dom34\u0394 mutants (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "f14b2a9c-46f1-43fc-843d-73dfd24b17e2",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C51",
+      "claim": "The tRNA-linked species of Gnd1PTC was not detected on ribosomes from ltn1\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the tRNA-linked species was not detected on ribosomes from ltn1\u0394 (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observation mentioned in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "693a27ff-941e-4376-a117-b8ba725ae5d9",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C52",
+      "claim": "Cdc48\u2013Ufd1\u2013Npl4 acts downstream of Ltn1 to promote release of the non-stop peptide from the ribosome, so that it can be degraded by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that Cdc48\u2013Ufd1\u2013Npl4 acts downstream of Ltn1 to promote release of the non-stop peptide from the ribosome, so that it can be degraded by the proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion based on multiple experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "884884b0-89a3-426c-8fc8-078f20920866",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C53",
+      "claim": "How Ltn1 and the Cdc48 complex promotes release of nascent peptides from the ribosome remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "How Ltn1 and the Cdc48 complex does this remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit statement about the limits of current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "c8f79f52-8892-4800-aa39-20cc881e901e",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C54",
+      "claim": "This remains unknown for any NSD or NGD pathway substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this remains unknown for any NSD or NGD pathway substrate; the Dom34-Hbs1 complex lacks the residues necessary for hydrolysis of the peptidyl-tRNA bond, and the two budding yeast peptidyl-tRNA hydrolases, Pth1 and Pth2, are non-essential mitochondrial proteins whose transmembrane configurations are currently unknown (Rosas-Sandoval et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work and represents established knowledge about the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "a0203407-e945-4c17-842e-799b4e2d7972",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C55",
+      "claim": "The Dom34-Hbs1 complex lacks the residues necessary for hydrolysis of the peptidyl-tRNA bond.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this remains unknown for any NSD or NGD pathway substrate; the Dom34-Hbs1 complex lacks the residues necessary for hydrolysis of the peptidyl-tRNA bond, and the two budding yeast peptidyl-tRNA hydrolases, Pth1 and Pth2, are non-essential mitochondrial proteins whose transmembrane configurations are currently unknown (Rosas-Sandoval et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about the Dom34-Hbs1 complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "08ff92ab-db8e-4ec4-b018-44a171b3f738",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C56",
+      "claim": "The two budding yeast peptidyl-tRNA hydrolases, Pth1 and Pth2, are non-essential mitochondrial proteins whose transmembrane configurations are currently unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this remains unknown for any NSD or NGD pathway substrate; the Dom34-Hbs1 complex lacks the residues necessary for hydrolysis of the peptidyl-tRNA bond, and the two budding yeast peptidyl-tRNA hydrolases, Pth1 and Pth2, are non-essential mitochondrial proteins whose transmembrane configurations are currently unknown (Rosas-Sandoval et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work by Rosas-Sandoval et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "875758bf-9c5d-47f8-b374-48232ac22af2",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C57",
+      "claim": "Direct physical association of Cdc48 and Ufd1 with both affinity-purified ribosomes and the NSD pathway substrate GFHNS was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed direct physical association of Cdc48 and Ufd1 with both affinity-purified ribosomes and the NSD pathway substrate GFHNS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figures 1D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "16d0e999-895f-498b-8677-af3f13e5d90a",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C58",
+      "claim": "This interaction was highly specific, because Cdc48 and Ufd1 did not bind the same substrate when it was translated from a message that includes a stop codon.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction was highly specific, because Cdc48 and Ufd1 did not bind the same substrate when it was translated from a message that includes a stop codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "aef598e3-6589-4614-b9b6-f7265ad78f0c",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C59",
+      "claim": "Cdc48, Ufd1, and Npl4 are components of the newly identified Ribosome Quality Control (RQC) complex, which also contains Ltn1, Rqc1 and Tae2 and associates with the 60S ribosomal subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "While this manuscript was in revision, it was reported that Cdc48, Ufd1, and Npl4 are components of the newly identified Ribosome Quality Control (RQC) complex, which also contains Ltn1, Rqc1 and Tae2 and associates with the 60S ribosomal subunit. The latter two proteins, like Ltn1 and Cdc48\u2013Ufd1\u2013Npl4, are highly conserved and have mammalian homologs (Brandman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Brandman et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "e435f7c0-e36f-48b1-8edc-c8654f769a3f",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C60",
+      "claim": "Both Ltn1 and Rqc1 help link Cdc48\u2013Ufd1\u2013Npl4 to RQC.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Ltn1 and Rqc1 help link Cdc48\u2013Ufd1\u2013Npl4 to RQC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on information from the cited work by Brandman et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "58de8f29-b132-4bad-af7a-1063d627a2a3",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C61",
+      "claim": "Rqc1 associates with and is required for the degradation of an Ltn1 substrate that contains an internal polyarginine sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Rqc1 associates with and is required for the degradation of an Ltn1 substrate that contains an internal polyarginine sequence, but a functional role for Cdc48\u2013Ufd1\u2013Npl4 in RQC was not established by Brandman et al. (2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on information from the cited work by Brandman et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "fe299789-1082-47fb-9265-6527c9d046b2",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C62",
+      "claim": "A functional role for Cdc48\u2013Ufd1\u2013Npl4 in RQC was not established by Brandman et al. (2012).",
+      "claim_type": "EXPLICIT",
+      "source": "Rqc1 associates with and is required for the degradation of an Ltn1 substrate that contains an internal polyarginine sequence, but a functional role for Cdc48\u2013Ufd1\u2013Npl4 in RQC was not established by Brandman et al. (2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on assessment of the cited work by Brandman et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "f94cd74d-10df-49f9-9a69-397b25cd9efa",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C63",
+      "claim": "Ltn1 and RQC are reported to be predominantly bound to 60S ribosomal subunits, suggesting that they may act downstream of the initial recognition and splitting of a stalled ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Ltn1 (Bengtson and Joazeiro, 2010) and RQC (Brandman et al., 2012) are reported to be predominantly bound to 60S ribosomal subunits, suggesting that they may act downstream of the initial recognition and splitting of a stalled ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to prior work and represents an inference about the timing of Ltn1/RQC action.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "26b9ebab-7eb9-4880-afdb-50a28afd7e4e",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C64",
+      "claim": "In ltn1\u0394 cells, GFHNS accumulates on 80S monosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in ltn1\u0394 cells, GFHNS accumulates on 80S monosomes (Bengtson and Joazeiro, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work by Bengtson and Joazeiro, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "cb8d8251-7b8f-4250-bf20-4c5fb2ebee32",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C65",
+      "claim": "tRNA-linked PrANS appeared to be concentrated in monosomes in ltn1\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we report here that tRNA-linked PrANS appeared to be concentrated in monosomes in ltn1\u0394.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sucrose gradient fractionation data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "e6126940-235e-4c5b-a65e-bad3fd9a8517",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C66",
+      "claim": "tRNA-linked PrANS was spread more broadly across 60S and 80S fractions in extracts from cdc48-3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, tRNA-linked PrANS was spread more broadly across 60S and 80S fractions in extracts from cdc48-3 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sucrose gradient fractionation data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "2ece9ad7-37e3-4d69-a4f7-e9024d85a193",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C67",
+      "claim": "The different fractionation behavior of tRNA-linked PrANS in ltn1\u0394 and cdc48 mutants may reflect leakiness of the cdc48 mutation or Cdc48-independent ribosome splitting.",
+      "claim_type": "EXPLICIT",
+      "source": "The different fractionation behavior of tRNA-linked PrANS in ltn1\u0394 and cdc48 mutants may reflect leakiness of the cdc48 mutation (the experiment was done at the semi-permissive temperature of 30\u00b0C) or Cdc48-independent ribosome splitting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents speculation about the cause of observed differences in fractionation behavior.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "de2d4340-9ca2-4b56-9b31-a07ad7471969",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C68",
+      "claim": "Extensive accumulation of endogenous, tRNA-linked ubiquitinated nascent polypeptides (tUNPs) on ribosomes was observed in Cdc48 pathway mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to observing accumulation of engineered NSD pathway reporter proteins in Cdc48 pathway mutants, we also observed extensive accumulation of endogenous, tRNA-linked ubiquitinated nascent polypeptides (tUNPs) on ribosomes in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple experimental data including puromycin release and UBA bead capture experiments shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "f3962f36-2e90-47d7-9302-cf130e780366",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C69",
+      "claim": "These tUNPs could potentially arise from multiple sources including misfolded domains, mRNAs whose transcription was prematurely terminated, mRNAs or nascent peptides containing sequences that cause ribosome pausing, or mRNAs that encode premature termination codons.",
+      "claim_type": "EXPLICIT",
+      "source": "These tUNPs could potentially arise from multiple sources including misfolded domains (Turner and Varshavsky, 2000), mRNAs whose transcription was prematurely terminated, mRNAs or nascent peptides containing sequences that cause ribosome pausing (Ingolia et al., 2011) or mRNAs that encode premature termination codons (e.g., Figure 6C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about potential sources of tUNPs, supported by citations and reference to data.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "09bf2eb5-0b6e-4c29-a7c9-25df678d0f41",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C70",
+      "claim": "At least two Ub ligases (Ltn1 and Ubr1) contributed to accumulation of tUNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus it is perhaps not surprising that at least two Ub ligases (Ltn1 and Ubr1) contributed to their accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 3A demonstrating that deletion of LTN1 or UBR1 decreases tUNP accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "87570781-c6a6-46f1-9f6f-4d981cfaeede",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C71",
+      "claim": "It is unlikely that there is a single pathway or mechanism for disposing of tUNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "In any event, we believe it is unlikely that there is a single pathway or mechanism for disposing of tUNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the complexity of potential tUNP sources.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "d72d1960-3e8e-4671-b36e-4910ea76f61d",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C72",
+      "claim": "Stalls in translation elongation lead to endonucleolytic cleavage of the mRNA upstream of the 3\u2032-most ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Because stalls in translation elongation lead to endonucleolytic cleavage of the mRNA upstream of the 3\u2032-most ribosome (Tsuboi et al., 2012), each trailing ribosome will present a unique substrate to the UPS, and may be processed by a different mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Tsuboi et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "5ba44e66-f887-4e22-95e0-c610434ff4e6",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C73",
+      "claim": "The translasome is a supercomplex defined by mass spectrometric analysis of the translation initiation factor eIF3 and found to contain both ribosome and proteasome subunits as well as chaperones involved in protein QC.",
+      "claim_type": "EXPLICIT",
+      "source": "The intimacy with which protein biosynthesis is coupled to protein degradation is highlighted by the identification of the translasome, a supercomplex defined by mass spectrometric analysis of the translation initiation factor eIF3 and found to contain both ribosome and proteasome subunits as well as chaperones involved in protein QC (Sha et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Sha et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "146ec4f9-a65d-4d17-af50-c1120c3b5df2",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C74",
+      "claim": "Homozygous lister mice deficient in Listerin (Ltn1) function exhibit severe neurological dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, homozygous lister mice deficient in Listerin (Ltn1) function exhibit severe neurological dysfunction (Chu et al., 2009), whereas mutations in human Ubr1 result in the Johanson\u2013Blizzard syndrome characterized by, amongst other phenotypes, frequent mental retardation (Hwang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Chu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "714632d1-0a9f-423c-89ef-cdebc251bdee",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C75",
+      "claim": "Mutations in human Ubr1 result in the Johanson\u2013Blizzard syndrome characterized by, amongst other phenotypes, frequent mental retardation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, homozygous lister mice deficient in Listerin (Ltn1) function exhibit severe neurological dysfunction (Chu et al., 2009), whereas mutations in human Ubr1 result in the Johanson\u2013Blizzard syndrome characterized by, amongst other phenotypes, frequent mental retardation (Hwang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Hwang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "1c3ff605-35fe-48dc-8391-ad408ae59540",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C76",
+      "claim": "Mutations in p97 contribute to 1\u20132% of familial ALS.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in p97 contribute to 1\u20132% of familial ALS (Johnson et al., 2010) and are the root cause of a syndrome, IBMPFD, that includes frontotemporal dementia (Watts et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Johnson et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "b287292c-18a0-4481-a50c-295b714071bc",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C77",
+      "claim": "Mutations in p97 are the root cause of a syndrome, IBMPFD, that includes frontotemporal dementia.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in p97 contribute to 1\u20132% of familial ALS (Johnson et al., 2010) and are the root cause of a syndrome, IBMPFD, that includes frontotemporal dementia (Watts et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Watts et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "8f7d6be7-e617-4e18-9150-67d89d7c8097",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C78",
+      "claim": "Defects in metabolism of protein aggregates, endosomal trafficking and autophagy have been previously suggested to contribute to the pathophysiology that results from mutation of p97.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in metabolism of protein aggregates (Manno et al., 2010), endosomal trafficking (Ritz et al., 2011) and autophagy (Ju et al., 2009; Tresse et al., 2010) have been previously suggested to contribute to the pathophysiology that results from mutation of p97.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "65fee1f4-d65d-4420-a694-fc862b291fa0",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C79",
+      "claim": "The acetylated N-terminus recognized by the Ub ligase Doa10 is generated co-translationally.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown, for instance, that the acetylated N-terminus recognized by the Ub ligase Doa10 (Hwang et al., 2010) is generated co-translationally (Gautschi et al., 2003; Polevoda et al., 2008), and that the Ub ligase Ubr1 can initiate degradation of an N-end rule substrate prior to completion of its translation (Turner and Varshavsky, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "4b00c5e8-480b-4f0c-b037-5dfe55277450",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C80",
+      "claim": "The Ub ligase Ubr1 can initiate degradation of an N-end rule substrate prior to completion of its translation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown, for instance, that the acetylated N-terminus recognized by the Ub ligase Doa10 (Hwang et al., 2010) is generated co-translationally (Gautschi et al., 2003; Polevoda et al., 2008), and that the Ub ligase Ubr1 can initiate degradation of an N-end rule substrate prior to completion of its translation (Turner and Varshavsky, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Turner and Varshavsky, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "d28db103-7d5b-42ec-a19f-a2d8af11ce45",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C81",
+      "claim": "Defective mRNAs are recognized by a cytosolic mRNA surveillance machinery that mediates their destruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Defective mRNAs are recognized by a cytosolic mRNA surveillance machinery that mediates their destruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "ea4ca381-71a2-46d6-b203-e1b657846cc6",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C82",
+      "claim": "There are at least three mRNA surveillance pathways: no-go decay (NGD), nonsense-mediated decay (NMD), and non-stop decay (NSD).",
+      "claim_type": "EXPLICIT",
+      "source": "There are at least three pathways: no-go decay (NGD) targets mRNAs with strong stalls in translation elongation leading to endonucleolytic cleavage of the mRNA, nonsense-mediated decay (NMD) targets messages containing premature termination codons (PTC), and non-stop decay (NSD) targets mRNAs that lack a stop codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "bf750240-261b-4b1c-a183-418abf80e50c",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C83",
+      "claim": "No-go decay (NGD) targets mRNAs with strong stalls in translation elongation leading to endonucleolytic cleavage of the mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "There are at least three pathways: no-go decay (NGD) targets mRNAs with strong stalls in translation elongation leading to endonucleolytic cleavage of the mRNA, nonsense-mediated decay (NMD) targets messages containing premature termination codons (PTC), and non-stop decay (NSD) targets mRNAs that lack a stop codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "17d34180-0d4a-4507-8c3a-e8fb1ceae6c4",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C84",
+      "claim": "Nonsense-mediated decay (NMD) targets messages containing premature termination codons (PTC).",
+      "claim_type": "EXPLICIT",
+      "source": "There are at least three pathways: no-go decay (NGD) targets mRNAs with strong stalls in translation elongation leading to endonucleolytic cleavage of the mRNA, nonsense-mediated decay (NMD) targets messages containing premature termination codons (PTC), and non-stop decay (NSD) targets mRNAs that lack a stop codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "57fdd1ff-da04-422a-b3bb-3e00826129d7",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C85",
+      "claim": "Non-stop decay (NSD) targets mRNAs that lack a stop codon.",
+      "claim_type": "EXPLICIT",
+      "source": "There are at least three pathways: no-go decay (NGD) targets mRNAs with strong stalls in translation elongation leading to endonucleolytic cleavage of the mRNA, nonsense-mediated decay (NMD) targets messages containing premature termination codons (PTC), and non-stop decay (NSD) targets mRNAs that lack a stop codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "fef778d6-f8a4-4c0f-ac60-fb335bdf5c9b",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C86",
+      "claim": "Recent data suggest an intimate coupling between QC of defective mRNAs and the nascent peptides they produce.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent data suggest an intimate coupling between QC of defective mRNAs and the nascent peptides they produce (Shoemaker and Green, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Shoemaker and Green, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "f144a333-fef9-43c9-9c1c-543e929c6974",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C87",
+      "claim": "Upf1 is a positive effector of NMD that is also needed for proteasome-mediated degradation of the prematurely terminated products.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Upf1 is a positive effector of NMD that is also needed for proteasome-mediated degradation of the prematurely terminated products (Takahashi et al., 2008; Kuroha et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "7850e9cc-9983-4171-9382-702ef4c4bcc5",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C88",
+      "claim": "Translation of non-stop mRNAs yields a ribosome-tethered polypeptide that is targeted for ubiquitination and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Translation of these 'non-stop' mRNAs yields a ribosome-tethered polypeptide that is targeted for ubiquitination and degradation (Ito-Harashima et al., 2007; Dimitrova et al., 2009; Bengtson and Joazeiro, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "4bfdf7f6-3aa0-43cc-af0a-57232969c09d",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C89",
+      "claim": "Absence of a stop codon can cause translation to stall either because the end of the message is encountered or polylysine encoded by the poly(A) tail interacts with the negatively charged exit tunnel of the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the mRNA may be processed by multiple pathways (e.g., NSD and NGD) because absence of a stop codon can cause translation to stall either because the end of the message is encountered or polylysine encoded by the poly(A) tail interacts with the negatively charged exit tunnel of the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established knowledge about mechanisms of ribosome stalling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "5d07d852-eb8e-4135-9d04-5a05fabef180",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C90",
+      "claim": "Non-stop mRNAs can arise naturally through premature termination or polyadenylation within ORFs, which are estimated to occur for up to 10% of all transcriptional events.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-stop mRNAs can arise naturally through premature termination or polyadenylation within ORFs, which are estimated to occur for up to 10% of all transcriptional events (Frischmeyer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Frischmeyer et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "40661c72-d2b1-4e83-b094-7a64d3b081df",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C91",
+      "claim": "Stalled ribosomes that trigger NGD/NSD are recognized by the Dom34\u2013Hbs1 complex which is structurally related to the termination factors eRF1 and eRF3 but lacks the residues necessary for both stop codon recognition and hydrolysis of peptidyl-tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Stalled ribosomes that trigger NGD/NSD are recognized by the Dom34\u2013Hbs1 complex which is structurally related to the termination factors eRF1 and eRF3 but lacks the residues necessary for both stop codon recognition and hydrolysis of peptidyl-tRNA and instead binds to the empty A site in the stalled ribosome (Doma and Parker, 2006; Becker et al., 2011; Tsuboi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "b55894c5-3c23-43aa-886c-e8be9f98f87a",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C92",
+      "claim": "Dom34\u2013Hbs1 works in concert with ABCE1/Rli1 to disassemble stalled ribosomes for subsequent reuse.",
+      "claim_type": "EXPLICIT",
+      "source": "Dom34\u2013Hbs1 works in concert with a member of the ABC family of ATPases, known as ABCE1 in mammalian cells (Pisareva et al., 2011) or Rli1 in budding yeast (Shoemaker et al., 2010; Shoemaker and Green, 2011), to disassemble stalled ribosomes for subsequent reuse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "836f43c4-710a-433a-8aec-c4cf6f34b5f1",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C93",
+      "claim": "The translational GTPase Ski7, which is closely related to Hbs1, has been proposed to recognize ribosomes stalled at the 3\u2032 end of non-stop messages.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the translational GTPase Ski7, which is closely related to Hbs1 (and thus to eRF3), has been proposed to recognize ribosomes stalled at the 3\u2032 end of non-stop messages (van Hoof et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by van Hoof et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "047832c6-eb3a-4742-8889-1f3fcc44e238",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C94",
+      "claim": "No Dom34/eRF1-like molecule has been identified to date that can interact with Ski7 specifically.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no Dom34/eRF1-like molecule has been identified to date that can interact with Ski7 specifically so it remains unknown if it can promote recycling of ribosome subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents current knowledge about the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "56ceb99f-64dd-489b-a054-b97847f61607",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C95",
+      "claim": "The Ub ligase Ltn1 can bind the ribosome and ubiquitinate NSD substrates that contain a polylysine tract.",
+      "claim_type": "EXPLICIT",
+      "source": "What has been shown so far is that the Ub ligase Ltn1 can bind the ribosome and ubiquitinate NSD substrates that contain a polylysine tract (Bengtson and Joazeiro, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Bengtson and Joazeiro, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "87163e8d-8b65-45d6-98b9-a2d482a10abd",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C96",
+      "claim": "Ltn1 belongs to the RING domain family of E3 Ub ligases that ubiquitinate substrates targeted for degradation by the 26S proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Ltn1 belongs to the RING domain family of E3 Ub ligases that ubiquitinate substrates targeted for degradation by the 26S proteasome (Deshaies and Joazeiro, 2009; Finley, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "f0391235-2472-4e70-9254-732eae0e19e3",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C97",
+      "claim": "Point mutations in mouse Ltn1 result in neurodegeneration and a null allele is lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the underlying biochemistry is likely to be important for human health, because point mutations in mouse Ltn1 result in neurodegeneration and a null allele is lethal (Chu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Chu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "6c02360e-6384-4222-acc3-f53488b94d55",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C98",
+      "claim": "Budding yeast Cdc48 is a member of the AAA (ATPases associated with diverse cellular activities) family of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Budding yeast Cdc48 (the human protein is known as p97 or valosin-containing protein [VCP]) is a member of the AAA (ATPases associated with diverse cellular activities) family of proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established knowledge about Cdc48/p97.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "e3545f6c-7441-4ad9-9280-ff9d60cd9c90",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C99",
+      "claim": "Cdc48 has intrinsic Ub-binding affinity that is greatly enhanced by the binding of UBX domain proteins or the Ufd1\u2013Npl4 heterodimer to its N-terminus and Ufd2 to its C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Cdc48 has intrinsic Ub-binding affinity that is greatly enhanced by the binding of UBX domain proteins or the Ufd1\u2013Npl4 heterodimer to its N-terminus and Ufd2 to its C-terminus (Ye, 2006; Meyer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "ecf2a2ce-4f3a-4dea-8e11-2d285ed68f93",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C100",
+      "claim": "Cdc48/p97 is widely believed to function as a 'segregase' that uses the free energy released upon ATP hydrolysis to remodel ubiquitinated substrate complexes, usually, but not always, as a prelude to their degradation by the 26S proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Cdc48/p97 is widely believed to function as a 'segregase' that uses the free energy released upon ATP hydrolysis to remodel ubiquitinated substrate complexes, usually, but not always, as a prelude to their degradation by the 26S proteasome (Jentsch and Rumpf, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "bf2d6008-aa01-4d6c-930f-6b277062e09a",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C101",
+      "claim": "Cdc48\u2013Ufd1\u2013Npl4 promotes the release of tRNA-linked ubiquitinated nascent chains as well as aberrant non-stop and prematurely terminated polypeptides from the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In the work reported here, we show that Cdc48\u2013Ufd1\u2013Npl4 promotes the release of tRNA-linked ubiquitinated nascent chains as well as aberrant non-stop and prematurely terminated polypeptides from the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the main findings supported by multiple experiments throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "45c36bf1-df09-404c-927e-abb0d9737230",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C102",
+      "claim": "Maintaining protein homeostasis is key for the healthy lifespan of the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintaining protein homeostasis is key for the healthy lifespan of the organism (Koga et al., 2011) and cells have evolved sophisticated mechanisms to control the quality of newly synthesized proteins (Bukau et al., 2006; Smith et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "2cea89e5-1b06-4e71-9a4d-f2b02c59cdd7",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C103",
+      "claim": "Cells have evolved sophisticated mechanisms to control the quality of newly synthesized proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintaining protein homeostasis is key for the healthy lifespan of the organism (Koga et al., 2011) and cells have evolved sophisticated mechanisms to control the quality of newly synthesized proteins (Bukau et al., 2006; Smith et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "c0da29d1-40bc-41bc-9c01-4c911ed78fa9",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C104",
+      "claim": "Dysfunction of quality control pathways can tip the balance towards the accumulation of toxic proteins and manifestation of disease, most notably neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysfunction of these quality control (QC) pathways can tip the balance towards the accumulation of toxic proteins and manifestation of disease, most notably neurodegeneration (Powers et al., 2009; Hartl et al., 2011; Dennissen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "d644eebe-cbb5-4c2d-a4e1-80d196679eb7",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C105",
+      "claim": "Puromycin causes premature termination of translation by binding in the A-site of the ribosome and reacting with peptidyl-tRNA in the P-site, yielding a peptide-puromycin conjugate.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycin causes premature termination of translation by binding in the A-site of the ribosome and reacting with peptidyl-tRNA in the P-site, yielding a peptide-puromycin conjugate (Nathans, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Nathans, 1964 and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "e577043e-5e20-4901-92ad-9ef622f4bddd",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C106",
+      "claim": "CTAB is an ionic detergent that disrupts protein structure and precipitates peptidyl-tRNA molecules selectively.",
+      "claim_type": "EXPLICIT",
+      "source": "CTAB is an ionic detergent that disrupts protein structure and precipitates peptidyl-tRNA molecules selectively (Hobden and Cundliffe, 1978; Mariappan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "2a5bc97c-cb38-445c-b593-31502ad4f503",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "claim_id": "C107",
+      "claim": "Over-produced Gnd1PTC was shown to be a substrate of the Ubr1 cytosolic quality control pathway in a prior study.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-produced Gnd1PTC was shown to be a substrate of the Ubr1 cytosolic quality control pathway in a prior study (Heck et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to work by Heck et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d2bbb275-9c29-470e-8e09-380560279085",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cdc48/p97 and its adaptors Ufd1-Npl4 mediate clearance of ubiquitinated, tRNA-linked nascent peptides from ribosomes, functioning downstream of Ub ligases Ltn1 and Ubr1 in ribosome-associated degradation (RAD). The ATPase activity of Cdc48 is required for this function, and both Cdc48 and Ufd1 physically associate with ribosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C9-C13, C25, C52, and C101 collectively demonstrate through multiple complementary experimental approaches (affinity purification, immunoblotting, puromycin release assays, genetic epistasis) that Cdc48-Ufd1-Npl4 prevents accumulation of ubiquitinated nascent peptides on ribosomes and functions downstream of Ltn1 and Ubr1. The data showing accumulation of Ub conjugates on ribosomes in cdc48-3 mutants (C9-C11), requirement for ATPase activity (C12), physical association with ribosomes (C13), and genetic epistasis with ltn1\u0394 and ubr1\u0394 (C27) provide converging evidence for this central conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "37f3d3b4-77e8-4a9f-a97d-623fa22f3ded",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ubiquitinated nascent peptides that accumulate on ribosomes in cdc48 pathway mutants are linked to tRNA, as demonstrated by puromycin release assays, RNAse sensitivity, CTAB precipitation, and pulse-chase experiments with radiolabeled amino acids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C24 provide multiple independent lines of evidence that the accumulated Ub conjugates are tRNA-linked nascent peptides: puromycin releases them from ribosomes (C14-C17), the release is RNAse-sensitive (C20-C21), they can be precipitated by CTAB (C22), and pulse-chase experiments show accumulation of radiolabeled high MW Ub conjugates that persist on ribosomes (C23-C24). These complementary biochemical approaches strongly support the tRNA-linkage conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "e642b115-95f9-422f-bfc6-9b46fab34b85",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The non-stop reporter GFHNS accumulates in Cdc48 pathway mutants (particularly ufd1) in a stabilized, ubiquitinated form that depends on Ltn1. Cdc48 and Ufd1 physically interact specifically with the non-stop reporter but not with a stop codon-containing control, and tRNA-linked GFHNS is detected on ribosomes from mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32, C34, C57-C58 demonstrate through steady-state analysis (C28), cycloheximide chase (C29), immunoprecipitation (C31-C32), and RNAse sensitivity assays (C34) that GFHNS is a bona fide substrate of the Cdc48-Ufd1-Npl4 complex acting downstream of Ltn1. The genetic epistasis (C27, C31) and specific physical interaction with the non-stop but not stop-containing reporter (C32, C58) provide strong evidence for the proposed pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "90005375-5f63-4b22-b519-53852c881309",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The non-stop reporter PrANS accumulates as a tRNA-linked species in cdc48-3 and ltn1\u0394 mutants at levels comparable to dom34\u0394 and ski7\u0394. In ltn1\u0394, tRNA-linked PrANS is concentrated in 80S monosomes, while in cdc48-3 it is distributed across both 60S and 80S fractions, with Ltn1-dependent high MW ubiquitinated species detected in 60S fractions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38, C65-C66 are supported by NuPAGE gel analysis (C36) and sucrose gradient fractionation (C37, C65-C66) showing differential distribution of tRNA-linked PrANS in different mutants. The observation that ubiquitinated species are found in 60S fractions from cdc48-3 but not ltn1\u0394 (C38) supports the model that Ltn1 acts on 60S-associated substrates and Cdc48 functions downstream. The data are internally consistent and support the proposed sequence of events.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "c0ca362b-e45e-48ff-a132-a02eded1ca68",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ribosomes from cells with inhibited proteasomes contain far less tRNA-linked ubiquitinated nascent peptides (tUNPs) than ribosomes from cdc48-3 mutants, contrasting with the high accumulation of Ub conjugates on proteasomes in both conditions. PrANS fractionates predominantly with ribosomes in cdc48-3 cells but with the supernatant in proteasome mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 demonstrate through UBA bead capture (C41) and subcellular fractionation (C44) that proteasome inhibition and Cdc48 inactivation have opposite effects on ribosome-associated tUNPs, despite both causing accumulation of Ub conjugates on proteasomes (C42). This supports the model that Cdc48 acts to release substrates from ribosomes for proteasomal degradation. The comparison to prior work (C42) and use of both chemical (MG132) and genetic (cim3-1) proteasome inhibition (C43) strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "1c634343-eaf2-4dfd-b5bc-f61c9f08b699",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The prematurely terminated protein Gnd1PTC is stabilized in cdc48-3, ufd1-2, ubr1\u0394, and upf1\u0394 mutants but not in ltn1\u0394. An RNAse-sensitive, tRNA-linked form of Gnd1PTC accumulates on ribosomes from cdc48-3, ufd1-2, ubr1\u0394, and upf1\u0394 mutants but not from wildtype, dom34\u0394, or ltn1\u0394 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47, C49-C51 demonstrate through cycloheximide chase (C46-C47) and subcellular fractionation with RNAse treatment (C49-C51) that Gnd1PTC is a substrate for Cdc48-Ufd1-Npl4 and Ubr1/Upf1 but not Ltn1, extending the role of Cdc48 beyond non-stop substrates to include prematurely terminated proteins. The genetic dependencies and biochemical characterization are consistent and well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "0ed2acf4-4529-455c-b4d4-f3f8ecd30118",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Extensive accumulation of endogenous tRNA-linked ubiquitinated nascent polypeptides (tUNPs) occurs on ribosomes in Cdc48 pathway mutants. These tUNPs likely arise from multiple sources including misfolded domains, prematurely terminated transcripts, ribosome-pausing sequences, and premature termination codons, with at least two Ub ligases (Ltn1 and Ubr1) contributing to their ubiquitination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 are well-supported by the experimental data showing accumulation of endogenous tUNPs (C68) and genetic evidence that both Ltn1 and Ubr1 contribute (C70, supported by C27). Claim C71 is a reasonable inference based on the diversity of potential sources (C69) and the involvement of multiple Ub ligases, though it represents speculation about mechanisms rather than direct experimental evidence. The overall conclusion about endogenous tUNP accumulation is strongly supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "a96602cc-9ac9-43b0-bf6b-8bfdda3aeff4",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Multiple cdc48 mutants and adaptor mutants (npl4-1, ufd1, ubx1\u0394, ubx2\u0394) are sensitive to low concentrations of the aminoglycoside antibiotics hygromycin B and paromomycin, which affect translational fidelity. This phenotype is shared with ltn1\u0394 mutants, suggesting a functional connection to the NSD pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 are supported by growth assay data (C4, Figure 1\u2014figure supplement 1A,B) and citations to prior work establishing the mechanism of aminoglycoside action (C5) and the role of Ltn1 in NSD (C6-C7). The hygromycin sensitivity phenotype provides initial evidence linking Cdc48 to ribosome quality control and motivated the subsequent mechanistic studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "a496c601-8654-48d1-862d-c35c5e3660d8",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cdc48 activity is not required for ribosome assembly, as demonstrated by Coomassie blue staining of purified ribosomes and sucrose gradient fractionation showing normal ribosome profiles in cdc48-3 and ufd1-2 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C8 is supported by Coomassie staining (Figure 1\u2014figure supplement 2A) and sucrose gradient analysis (Figure 1\u2014figure supplement 2B) showing that ribosome assembly is intact in the mutants. This control experiment is important for establishing that the observed effects on ribosome-associated Ub conjugates are not due to defects in ribosome biogenesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "8de3d520-7172-44fd-bfdb-c89f3eac1fa1",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Other Cdc48 cofactors including Ubx2, Ubx4, Ubx6, and Ufd2 do not appear to contribute to clearance of tUNPs from the ribosome, based on puromycin release assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is supported by data in Figure 2\u2014figure supplement 1C showing that these cofactors are not required for the ribosome-associated degradation function. This negative result helps define the specific Cdc48 adaptor requirements for RAD and distinguishes this function from other Cdc48 pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "53eb0880-8727-44c5-a3ba-e25f701e3253",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The fraction of GFHNS linked to tRNA was low, though it is unclear whether this was due to hydrolysis of the tRNA linkage in vivo or in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C35 is based on observation of data in Figure 3\u2014figure supplement 1 but explicitly acknowledges uncertainty about the mechanism (in vivo vs in vitro hydrolysis). The low fraction of tRNA-linked species could reflect technical limitations of the assay or biological reality, and the authors appropriately express this uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "c3b349d9-40cc-429f-9056-fd36ba559de4",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Only a small fraction of PrANS detected on ribosomes migrated as Ub-conjugated species, which is consistent with typical behavior of Ub-dependent substrates and may reflect robust deubiquitination activity or overwhelming of the inabundant Ltn1 ligase by overproduced substrate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 provide reasonable explanations for the low fraction of ubiquitinated PrANS observed. C39 is supported by comparison to typical Ub substrate behavior and knowledge of deubiquitination activity. C40 is speculative but reasonable given the GAL promoter-driven overexpression and citation to prior work showing Ltn1 is inabundant. These claims appropriately contextualize an observation that might otherwise seem inconsistent with the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "0df0c92d-dac8-4b76-9725-d3cadefc013b",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The mechanism by which Ltn1 and the Cdc48 complex promote release of nascent peptides from the ribosome remains unknown. This is true for any NSD or NGD pathway substrate, as the Dom34-Hbs1 complex lacks peptidyl-tRNA hydrolase activity and the yeast peptidyl-tRNA hydrolases Pth1 and Pth2 are mitochondrial proteins of unknown topology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 accurately describe the current state of knowledge in the field, supported by citations to prior work (C54, C56) and established biochemical properties of Dom34-Hbs1 (C55). These claims appropriately acknowledge the limitations of the current study and identify an important mechanistic question for future research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "80b30e30-ab09-454b-9115-5b5d2d689758",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cdc48, Ufd1, and Npl4 are components of the Ribosome Quality Control (RQC) complex identified by Brandman et al. (2012), which also contains Ltn1, Rqc1, and Tae2 and associates with 60S subunits. However, a functional role for Cdc48-Ufd1-Npl4 in RQC was not established by that prior study. The 60S association suggests RQC acts downstream of ribosome splitting, though GFHNS and tRNA-linked PrANS accumulate on 80S monosomes in ltn1\u0394.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 accurately describe findings from concurrent work by Brandman et al. (2012) and integrate them with the current study's observations. C59-C61 are supported by citations, C62 appropriately notes what was not established in the prior work, and C63-C64 discuss the implications of 60S vs 80S association patterns. These claims provide important context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "29c69d4b-b141-4087-9615-90932d0b39d4",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The different fractionation behavior of tRNA-linked PrANS in ltn1\u0394 (concentrated in monosomes) versus cdc48 mutants (spread across 60S and 80S fractions) may reflect leakiness of the cdc48 mutation at the semi-permissive temperature or Cdc48-independent ribosome splitting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 represents speculation about the cause of observed differences in fractionation patterns. While the observation is supported by data (C65-C66), the proposed explanations are not directly tested. The authors appropriately present this as speculation ('may reflect') rather than a definitive conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "3160af22-5deb-4195-bb5e-9377e8e0b10f",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Defective ribosome-associated degradation (RAD) could contribute to the pathophysiology of human diseases caused by mutations in p97.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C3 is speculative and not directly tested in this study. While the manuscript establishes a role for yeast Cdc48 in RAD and cites associations between p97 mutations and human diseases (C76-C78), it does not provide direct evidence that RAD defects contribute to disease pathophysiology. This represents a reasonable hypothesis for future investigation but is not supported by data in the current manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "c5fc2b4b-b092-47fa-ac27-e90042f04402",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Translation stalling leads to mRNA cleavage, and protein biosynthesis is coupled to degradation through the translasome complex. Mutations in Ltn1, Ubr1, and p97 are associated with neurological diseases in mice and humans, and defects in protein aggregate metabolism, endosomal trafficking, and autophagy have been proposed to contribute to p97-related pathophysiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C78 are all supported by citations to prior published work and represent established knowledge in the field. These claims provide important context for understanding the biological significance of the RAD pathway and its potential relevance to human disease, though they do not represent new findings from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    },
+    {
+      "id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555",
+      "content_id": "13f1614b-1c1f-4c6e-8c77-35d482ae55db",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background information on protein quality control, mRNA surveillance pathways (NGD, NMD, NSD), ribosome rescue mechanisms, ubiquitin ligases, Cdc48/p97 function, and experimental methods (puromycin, CTAB) is provided through citations to prior work and established knowledge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C107 represent background information, established knowledge, and methodological details that are appropriately cited to prior work or represent standard knowledge in the field. These claims provide essential context for understanding the current study but do not represent new findings. They are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:37:56.295217Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4092ce66-4926-47a1-b3c1-997851e43e65",
+      "result_id": "d2bbb275-9c29-470e-8e09-380560279085"
+    },
+    {
+      "claim_id": "bfdff208-e2a8-4ac0-a736-fb274d8a6f25",
+      "result_id": "d2bbb275-9c29-470e-8e09-380560279085"
+    },
+    {
+      "claim_id": "f10ea8b1-acc2-4333-9fad-ecfec4bb3b32",
+      "result_id": "d2bbb275-9c29-470e-8e09-380560279085"
+    },
+    {
+      "claim_id": "121f8cd4-fd3d-470c-bb8d-adda4bc3392b",
+      "result_id": "d2bbb275-9c29-470e-8e09-380560279085"
+    },
+    {
+      "claim_id": "fe348ee5-309e-441b-b145-3d02e15ebf3c",
+      "result_id": "d2bbb275-9c29-470e-8e09-380560279085"
+    },
+    {
+      "claim_id": "daf6d7d1-bb3a-468d-ba35-f92423b07584",
+      "result_id": "d2bbb275-9c29-470e-8e09-380560279085"
+    },
+    {
+      "claim_id": "ecbb7789-2a1c-472d-b27e-09fdd760076c",
+      "result_id": "d2bbb275-9c29-470e-8e09-380560279085"
+    },
+    {
+      "claim_id": "628ef9e0-fc4f-4061-8e62-59ecb2d4e4d5",
+      "result_id": "d2bbb275-9c29-470e-8e09-380560279085"
+    },
+    {
+      "claim_id": "693a27ff-941e-4376-a117-b8ba725ae5d9",
+      "result_id": "d2bbb275-9c29-470e-8e09-380560279085"
+    },
+    {
+      "claim_id": "bf2d6008-aa01-4d6c-930f-6b277062e09a",
+      "result_id": "d2bbb275-9c29-470e-8e09-380560279085"
+    },
+    {
+      "claim_id": "bb0a9b51-c31c-4938-a30e-877723856a36",
+      "result_id": "37f3d3b4-77e8-4a9f-a97d-623fa22f3ded"
+    },
+    {
+      "claim_id": "de190c3f-bec0-4cba-9dd5-5590a0eee5c9",
+      "result_id": "37f3d3b4-77e8-4a9f-a97d-623fa22f3ded"
+    },
+    {
+      "claim_id": "499e87c0-2927-41a4-8113-59ed7252d439",
+      "result_id": "37f3d3b4-77e8-4a9f-a97d-623fa22f3ded"
+    },
+    {
+      "claim_id": "aab8f66d-b90c-4e4b-8540-b4939580ca82",
+      "result_id": "37f3d3b4-77e8-4a9f-a97d-623fa22f3ded"
+    },
+    {
+      "claim_id": "92e2ec8f-f9f7-483a-baeb-0144fc9c52b8",
+      "result_id": "37f3d3b4-77e8-4a9f-a97d-623fa22f3ded"
+    },
+    {
+      "claim_id": "870d7f8a-14d9-4113-af1f-de0fb0a320a0",
+      "result_id": "37f3d3b4-77e8-4a9f-a97d-623fa22f3ded"
+    },
+    {
+      "claim_id": "d46fc3a6-fa0c-4e55-bb20-65ef0c3c5557",
+      "result_id": "37f3d3b4-77e8-4a9f-a97d-623fa22f3ded"
+    },
+    {
+      "claim_id": "278a95c3-3bb0-4dd0-a8cb-0c42ea54b27c",
+      "result_id": "37f3d3b4-77e8-4a9f-a97d-623fa22f3ded"
+    },
+    {
+      "claim_id": "dbaa13da-c274-4c46-9bc5-dbe38961f255",
+      "result_id": "37f3d3b4-77e8-4a9f-a97d-623fa22f3ded"
+    },
+    {
+      "claim_id": "86822d9d-9875-4cc3-9a2a-78e3a819ff0a",
+      "result_id": "37f3d3b4-77e8-4a9f-a97d-623fa22f3ded"
+    },
+    {
+      "claim_id": "a498fb2a-b28f-483f-ba5c-9bbc76e8155c",
+      "result_id": "37f3d3b4-77e8-4a9f-a97d-623fa22f3ded"
+    },
+    {
+      "claim_id": "a85ec051-f13a-4b24-abd9-b7f688b4f214",
+      "result_id": "e642b115-95f9-422f-bfc6-9b46fab34b85"
+    },
+    {
+      "claim_id": "2773bdab-b35b-4df7-9e98-80dd4efbc198",
+      "result_id": "e642b115-95f9-422f-bfc6-9b46fab34b85"
+    },
+    {
+      "claim_id": "bf1cba83-cd12-4548-97a2-94a4bd8f866f",
+      "result_id": "e642b115-95f9-422f-bfc6-9b46fab34b85"
+    },
+    {
+      "claim_id": "06ba47f1-5dc4-4a13-9b0e-d3591cb3a33d",
+      "result_id": "e642b115-95f9-422f-bfc6-9b46fab34b85"
+    },
+    {
+      "claim_id": "1ac6bdce-6652-4b1d-b62e-51bb18a56380",
+      "result_id": "e642b115-95f9-422f-bfc6-9b46fab34b85"
+    },
+    {
+      "claim_id": "d36758bc-2ed4-4112-b78d-ac0e1bf8ec40",
+      "result_id": "e642b115-95f9-422f-bfc6-9b46fab34b85"
+    },
+    {
+      "claim_id": "435025de-37c9-4648-95db-705029ad1af2",
+      "result_id": "e642b115-95f9-422f-bfc6-9b46fab34b85"
+    },
+    {
+      "claim_id": "875758bf-9c5d-47f8-b374-48232ac22af2",
+      "result_id": "e642b115-95f9-422f-bfc6-9b46fab34b85"
+    },
+    {
+      "claim_id": "16d0e999-895f-498b-8677-af3f13e5d90a",
+      "result_id": "e642b115-95f9-422f-bfc6-9b46fab34b85"
+    },
+    {
+      "claim_id": "f4dfa82d-1e9e-497d-8176-67a0222978e0",
+      "result_id": "90005375-5f63-4b22-b519-53852c881309"
+    },
+    {
+      "claim_id": "b2fce93b-393d-4cf5-bcd5-5df51501028d",
+      "result_id": "90005375-5f63-4b22-b519-53852c881309"
+    },
+    {
+      "claim_id": "50e1da71-3bb7-4864-a309-edf72cc5c134",
+      "result_id": "90005375-5f63-4b22-b519-53852c881309"
+    },
+    {
+      "claim_id": "cb8d8251-7b8f-4250-bf20-4c5fb2ebee32",
+      "result_id": "90005375-5f63-4b22-b519-53852c881309"
+    },
+    {
+      "claim_id": "e6126940-235e-4c5b-a65e-bad3fd9a8517",
+      "result_id": "90005375-5f63-4b22-b519-53852c881309"
+    },
+    {
+      "claim_id": "bfa280f3-f24e-435d-9cff-bc2d14f7cd6c",
+      "result_id": "c0ca362b-e45e-48ff-a132-a02eded1ca68"
+    },
+    {
+      "claim_id": "a1c715ae-4d74-446f-96da-9daa7a6b5f13",
+      "result_id": "c0ca362b-e45e-48ff-a132-a02eded1ca68"
+    },
+    {
+      "claim_id": "4923d443-d020-486e-98d0-8a4778ec34f4",
+      "result_id": "c0ca362b-e45e-48ff-a132-a02eded1ca68"
+    },
+    {
+      "claim_id": "4ecf50d4-653f-4d95-9de8-26bd2bc633a5",
+      "result_id": "c0ca362b-e45e-48ff-a132-a02eded1ca68"
+    },
+    {
+      "claim_id": "67f57992-4126-4422-bcdb-88324531f47f",
+      "result_id": "c0ca362b-e45e-48ff-a132-a02eded1ca68"
+    },
+    {
+      "claim_id": "67bcc76e-8289-43ab-ad56-23469e194c08",
+      "result_id": "1c634343-eaf2-4dfd-b5bc-f61c9f08b699"
+    },
+    {
+      "claim_id": "587181de-2533-4c19-9faa-7247b34b0d3a",
+      "result_id": "1c634343-eaf2-4dfd-b5bc-f61c9f08b699"
+    },
+    {
+      "claim_id": "70e37e99-ed2f-4db7-8b88-a8f8428a3318",
+      "result_id": "1c634343-eaf2-4dfd-b5bc-f61c9f08b699"
+    },
+    {
+      "claim_id": "e59e6f8a-46a4-4390-aef6-e99be1144745",
+      "result_id": "1c634343-eaf2-4dfd-b5bc-f61c9f08b699"
+    },
+    {
+      "claim_id": "f14b2a9c-46f1-43fc-843d-73dfd24b17e2",
+      "result_id": "1c634343-eaf2-4dfd-b5bc-f61c9f08b699"
+    },
+    {
+      "claim_id": "de2d4340-9ca2-4b56-9b31-a07ad7471969",
+      "result_id": "0ed2acf4-4529-455c-b4d4-f3f8ecd30118"
+    },
+    {
+      "claim_id": "f3962f36-2e90-47d7-9302-cf130e780366",
+      "result_id": "0ed2acf4-4529-455c-b4d4-f3f8ecd30118"
+    },
+    {
+      "claim_id": "09bf2eb5-0b6e-4c29-a7c9-25df678d0f41",
+      "result_id": "0ed2acf4-4529-455c-b4d4-f3f8ecd30118"
+    },
+    {
+      "claim_id": "87570781-c6a6-46f1-9f6f-4d981cfaeede",
+      "result_id": "0ed2acf4-4529-455c-b4d4-f3f8ecd30118"
+    },
+    {
+      "claim_id": "4af004ab-fada-4355-9be6-bbc1453b678e",
+      "result_id": "a96602cc-9ac9-43b0-bf6b-8bfdda3aeff4"
+    },
+    {
+      "claim_id": "824b3cbe-4125-4c8a-80af-7ee89d25ceae",
+      "result_id": "a96602cc-9ac9-43b0-bf6b-8bfdda3aeff4"
+    },
+    {
+      "claim_id": "e38455bb-74a2-4274-aa33-dfcbbb24d9e3",
+      "result_id": "a96602cc-9ac9-43b0-bf6b-8bfdda3aeff4"
+    },
+    {
+      "claim_id": "ecdaf665-7f49-453f-8ed1-1daceaf2a36e",
+      "result_id": "a96602cc-9ac9-43b0-bf6b-8bfdda3aeff4"
+    },
+    {
+      "claim_id": "2b8582ba-5bc1-43ef-8b56-78b2d91ac777",
+      "result_id": "a496c601-8654-48d1-862d-c35c5e3660d8"
+    },
+    {
+      "claim_id": "98c104d7-5c79-4a12-a1ca-8312d0ae1df8",
+      "result_id": "8de3d520-7172-44fd-bfdb-c89f3eac1fa1"
+    },
+    {
+      "claim_id": "58db054a-4437-4fb4-8a21-5f1c8a4ab8f8",
+      "result_id": "53eb0880-8727-44c5-a3ba-e25f701e3253"
+    },
+    {
+      "claim_id": "c44fece6-9228-400d-9884-7a1507c5d29e",
+      "result_id": "c3b349d9-40cc-429f-9056-fd36ba559de4"
+    },
+    {
+      "claim_id": "95e5160c-3247-46de-b4de-f06ab5eeaf62",
+      "result_id": "c3b349d9-40cc-429f-9056-fd36ba559de4"
+    },
+    {
+      "claim_id": "884884b0-89a3-426c-8fc8-078f20920866",
+      "result_id": "0df0c92d-dac8-4b76-9725-d3cadefc013b"
+    },
+    {
+      "claim_id": "c8f79f52-8892-4800-aa39-20cc881e901e",
+      "result_id": "0df0c92d-dac8-4b76-9725-d3cadefc013b"
+    },
+    {
+      "claim_id": "a0203407-e945-4c17-842e-799b4e2d7972",
+      "result_id": "0df0c92d-dac8-4b76-9725-d3cadefc013b"
+    },
+    {
+      "claim_id": "08ff92ab-db8e-4ec4-b018-44a171b3f738",
+      "result_id": "0df0c92d-dac8-4b76-9725-d3cadefc013b"
+    },
+    {
+      "claim_id": "aef598e3-6589-4614-b9b6-f7265ad78f0c",
+      "result_id": "80b30e30-ab09-454b-9115-5b5d2d689758"
+    },
+    {
+      "claim_id": "e435f7c0-e36f-48b1-8edc-c8654f769a3f",
+      "result_id": "80b30e30-ab09-454b-9115-5b5d2d689758"
+    },
+    {
+      "claim_id": "58de8f29-b132-4bad-af7a-1063d627a2a3",
+      "result_id": "80b30e30-ab09-454b-9115-5b5d2d689758"
+    },
+    {
+      "claim_id": "fe299789-1082-47fb-9265-6527c9d046b2",
+      "result_id": "80b30e30-ab09-454b-9115-5b5d2d689758"
+    },
+    {
+      "claim_id": "f94cd74d-10df-49f9-9a69-397b25cd9efa",
+      "result_id": "80b30e30-ab09-454b-9115-5b5d2d689758"
+    },
+    {
+      "claim_id": "26b9ebab-7eb9-4880-afdb-50a28afd7e4e",
+      "result_id": "80b30e30-ab09-454b-9115-5b5d2d689758"
+    },
+    {
+      "claim_id": "2ece9ad7-37e3-4d69-a4f7-e9024d85a193",
+      "result_id": "29c69d4b-b141-4087-9615-90932d0b39d4"
+    },
+    {
+      "claim_id": "7da5a21b-d1bf-49fb-bd54-568b3fa7c49d",
+      "result_id": "3160af22-5deb-4195-bb5e-9377e8e0b10f"
+    },
+    {
+      "claim_id": "d72d1960-3e8e-4671-b36e-4910ea76f61d",
+      "result_id": "c5fc2b4b-b092-47fa-ac27-e90042f04402"
+    },
+    {
+      "claim_id": "5ba44e66-f887-4e22-95e0-c610434ff4e6",
+      "result_id": "c5fc2b4b-b092-47fa-ac27-e90042f04402"
+    },
+    {
+      "claim_id": "146ec4f9-a65d-4d17-af50-c1120c3b5df2",
+      "result_id": "c5fc2b4b-b092-47fa-ac27-e90042f04402"
+    },
+    {
+      "claim_id": "714632d1-0a9f-423c-89ef-cdebc251bdee",
+      "result_id": "c5fc2b4b-b092-47fa-ac27-e90042f04402"
+    },
+    {
+      "claim_id": "1c3ff605-35fe-48dc-8391-ad408ae59540",
+      "result_id": "c5fc2b4b-b092-47fa-ac27-e90042f04402"
+    },
+    {
+      "claim_id": "b287292c-18a0-4481-a50c-295b714071bc",
+      "result_id": "c5fc2b4b-b092-47fa-ac27-e90042f04402"
+    },
+    {
+      "claim_id": "8f7d6be7-e617-4e18-9150-67d89d7c8097",
+      "result_id": "c5fc2b4b-b092-47fa-ac27-e90042f04402"
+    },
+    {
+      "claim_id": "65fee1f4-d65d-4420-a694-fc862b291fa0",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "4b00c5e8-480b-4f0c-b037-5dfe55277450",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "d28db103-7d5b-42ec-a19f-a2d8af11ce45",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "ea4ca381-71a2-46d6-b203-e1b657846cc6",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "bf750240-261b-4b1c-a183-418abf80e50c",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "17d34180-0d4a-4507-8c3a-e8fb1ceae6c4",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "57fdd1ff-da04-422a-b3bb-3e00826129d7",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "fef778d6-f8a4-4c0f-ac60-fb335bdf5c9b",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "f144a333-fef9-43c9-9c1c-543e929c6974",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "7850e9cc-9983-4171-9382-702ef4c4bcc5",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "4bfdf7f6-3aa0-43cc-af0a-57232969c09d",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "5d07d852-eb8e-4135-9d04-5a05fabef180",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "40661c72-d2b1-4e83-b094-7a64d3b081df",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "b55894c5-3c23-43aa-886c-e8be9f98f87a",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "836f43c4-710a-433a-8aec-c4cf6f34b5f1",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "047832c6-eb3a-4742-8889-1f3fcc44e238",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "56ceb99f-64dd-489b-a054-b97847f61607",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "87163e8d-8b65-45d6-98b9-a2d482a10abd",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "f0391235-2472-4e70-9254-732eae0e19e3",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "6c02360e-6384-4222-acc3-f53488b94d55",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "e3545f6c-7441-4ad9-9280-ff9d60cd9c90",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "ecf2a2ce-4f3a-4dea-8e11-2d285ed68f93",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "45c36bf1-df09-404c-927e-abb0d9737230",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "2cea89e5-1b06-4e71-9a4d-f2b02c59cdd7",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "c0da29d1-40bc-41bc-9c01-4c911ed78fa9",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "d644eebe-cbb5-4c2d-a4e1-80d196679eb7",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "e577043e-5e20-4901-92ad-9ef622f4bddd",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    },
+    {
+      "claim_id": "2a5bc97c-cb38-445c-b593-31502ad4f503",
+      "result_id": "34c72ed6-bca8-4c8d-baaa-f08f2e14c555"
+    }
+  ],
+  "comparisons": []
+}

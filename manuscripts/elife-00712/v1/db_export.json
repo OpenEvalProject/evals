@@ -1,0 +1,2204 @@
+{
+  "submission": {
+    "id": "68d90120-0790-4261-a7f9-e60125828a08",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T06:09:10.391543Z",
+    "updated_at": "2025-11-27T06:09:10.391543Z"
+  },
+  "content": [
+    {
+      "id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "submission_id": "68d90120-0790-4261-a7f9-e60125828a08",
+      "content_type": "manuscript",
+      "content_text": "# Hypothemycin, a fungal natural product, identifies therapeutic targets in Trypanosoma brucei\n\n## Authors\n\n- Mari Nishino<sup>1</sup>\n- Jonathan W Choy<sup>3</sup>\n- Nathan N Gushwa<sup>3</sup>\n- Juan A Oses-Prieto<sup>5</sup>\n- Kyriacos Koupparis<sup>6</sup>\n- Alma L Burlingame<sup>5</sup>\n- Adam R Renslo<sup>2</sup>\n- James H McKerrow<sup>2</sup>\n- Jack Taunton<sup>7</sup> \u2020\n\n### Affiliations\n\n1. Tetrad Graduate Program University of California, San Francisco San Francisco United States\n2. Center for Discovery and Innovation in Parasitic Diseases University of California, San Francisco San Francisco United States\n3. Chemistry and Chemical Biology Graduate Program University of California, San Francisco San Francisco United States\n4. Small Molecule Discovery Center University of California, San Francisco San Francisco United States\n5. Department of Pharmaceutical Chemistry University of California, San Francisco San Francisco United States\n6. Biomedical Sciences Graduate Program University of California, San Francisco San Francisco United States\n7. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States\n8. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nProtein kinases are potentially attractive therapeutic targets for neglected parasitic diseases, including African trypanosomiasis caused by the protozoan, Trypanosoma brucei. How to prioritize T. brucei kinases and quantify their intracellular engagement by small-molecule inhibitors remain unsolved problems. Here, we combine chemoproteomics and RNA interference to interrogate trypanosome kinases bearing a Cys-Asp-Xaa-Gly motif (CDXG kinases). We discovered that hypothemycin, a fungal polyketide previously shown to covalently inactivate a subset of human CDXG kinases, kills T. brucei in culture and in infected mice. Quantitative chemoproteomic analysis with a hypothemycin-based probe revealed the relative sensitivity of endogenous CDXG kinases, including TbGSK3short and a previously uncharacterized kinase, TbCLK1. RNAi-mediated knockdown demonstrated that both kinases are essential, but only TbCLK1 is fully engaged by cytotoxic concentrations of hypothemycin in intact cells. Our study identifies TbCLK1 as a therapeutic target for African trypanosomiasis and establishes a new chemoproteomic tool for interrogating CDXG kinases in their native context.\n\n## Introduction\n\nHuman African trypanosomiasis, or sleeping sickness, is a debilitating and fatal parasitic disease endemic to sub-Saharan Africa (Fevre et al., 2008; Simarro et al., 2008). Caused by two subspecies of Trypanosoma brucei, the disease begins in the hemolymphatic system and later crosses the blood\u2013brain barrier, resulting in sleep disturbances that deteriorate to coma and death. During the course of infection, the parasites evade the host immune system through periodic switching of the variable surface glycoprotein coat, making vaccination-based approaches unlikely to succeed (Taylor and Rudenko, 2006; Horn and McCulloch, 2010). Currently, only four chemotherapeutics are approved for sleeping sickness. These therapies suffer from poor oral bioavailability, severe toxicity, and/or emerging resistance. Eflornithine, the only drug with a known mechanism of action, is also the only therapeutic for sleeping sickness approved in the last 50 years (Fairlamb, 2003). Although a combination of eflornithine and nifurtimox, a drug for American trypanosomiasis (Chagas disease, caused by T. cruzi), was introduced in 2009 for T. brucei infection, no new drugs are near the clinic (Priotto et al., 2009).\n\nProtein kinases have been intensely pursued as therapeutic targets for cancer and autoimmune disease, and more than 15 kinase inhibitors have received FDA approval during the past decade. As in humans, protein phosphorylation in T. brucei is an essential regulatory mechanism and plays critical but poorly understood roles in its unique life cycle (Parsons et al., 2005; Nett et al., 2009). The vast majority of the 182 protein kinases in T. brucei remain poorly characterized, and few have been interrogated in their native cellular context with small-molecule inhibitors. High-throughput screening and medicinal chemistry recently led to the discovery of SCYX-5070, the first reported protein kinase inhibitor with efficacy in a murine model of T. brucei infection (Mercer et al., 2011). Affinity chromatography with an immobilized derivative suggested that SCYX-5070 binds at least six trypanosome kinases related to human mitogen activated protein kinases (MAPKs) and cyclin-dependent kinases, although the extent to which SCYX-5070 engages these kinases in vivo is not known. Genetic studies in T. brucei have established essential roles for orthologs of several human kinases, including cyclin-dependent kinases (Tu and Wang, 2004; Gourguechon and Wang, 2009), Aurora kinase (Tu et al., 2006), polo-like kinase (Li et al., 2010), glycogen synthase kinase-3 (Ojo et al., 2008), casein kinase-1 (Urbaniak, 2009), and DBF-2-related kinases (Ma et al., 2010). High-throughput RNAi studies have implicated additional kinases in T. brucei proliferation (Alsford et al., 2011; Mackey et al., 2011). Despite the knowledge gained from these studies, it is not clear which T. brucei kinases make the best therapeutic targets. Achieving sufficient potency to inhibit essential T. brucei kinases, while avoiding related human kinases, poses a significant challenge. Moreover, quantifying intracellular kinase engagement by small-molecule inhibitors in T. brucei is an unsolved problem. Pharmacological and chemoproteomic approaches are therefore needed to complement genetic studies in the search for new therapeutic targets (Moellering and Cravatt, 2012).\n\nHypothemycin (1, Figure 1A) is a polyketide natural product that covalently inhibits a diverse subset of human kinases, including MEK, ERK, PDGFR, VEGFR2, and FLT3 (Schirmer et al., 2006; Winssinger and Barluenga, 2007). Hypothemycin (Tanaka et al., 1999) and related compounds (Barluenga et al., 2010) have antitumor activity in mouse xenograft models, and one variant has entered clinical trials (Kumar et al., 2011). All hypothemycin-sensitive kinases have a common cysteine immediately preceding the catalytic DXG motif (where X is usually Phe or Leu) (Schirmer et al., 2006). A homologous CDXG motif is present in 48 of 518 human protein kinases (Leproult et al., 2011). CDXG kinases are functionally diverse, encompassing Tyr, Ser/Thr, and dual-specificity kinases distributed throughout the kinome phylogenetic tree. The nucleophilic thiol of hypothemycin-sensitive CDXG kinases undergoes conjugate addition to the cis-enone, as revealed by a crystal structure of the ERK2/hypothemycin complex (Rastelli et al., 2008). While the CDXG motif is necessary for potent inhibition by hypothemycin, it does not appear to be sufficient. One-third of human CDXG kinases were unaffected by hypothemycin variants screened at a concentration of 1 \u03bcM (Barluenga et al., 2010). The selectivity of hypothemycin toward endogenous kinases in living cells remains unknown.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00712/elife-00712-fig1-v1.jpg)\n\n**Figure 1.:** (A) Hypothemycin (1) inhibits CDXG kinases via conjugate addition to the cis-enone. (B) Bloodstream form T. brucei were treated with hypothemycin and cell density was measured after 24 hr (mean \u00b1 SD, n = 3). (C) Parasitemia in T. brucei infected mice. Mice received once daily intraperitoneal injections of hypothemycin and parasitemia was measured 5 days post infection (mean \u00b1 SD, n = 4, ** denotes p<0.05). (D) Kaplan-Meier analysis of T. brucei infected mice. Hypothemycin or vehicle was administered by intraperitoneal injection once daily for 7 days post infection (arrowheads, n = 12). Data were accumulated from three studies, p<0.01.\n\nIn this study, we exploit a semi-synthetic derivative of hypothemycin to identify potential therapeutic targets in T. brucei. We found that hypothemycin is potently trypanocidal, both in cell culture and in mice. To identify its molecular targets, we synthesized the equipotent propargyl-hypothemycin derivative 2 (Figure 2B). This affinity probe provided a means to purify and identify covalent kinase targets of hypothemycin. More importantly, probe 2 enabled us to quantify the extent of kinase engagement upon exposure to a defined concentration of hypothemycin. In principle, the workflow described in this study\u2014(1) phenotypic evaluation of mammalian kinase inhibitors, (2) target identification with chemoproteomic tools, (3) genetic knockdown of candidate targets, and (4) correlation of intracellular target engagement with phenotype\u2014can be used to identify and prioritize kinase targets in other therapeutic contexts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00712/elife-00712-fig2-v1.jpg)\n\n**Figure 2.:** (A) Crystal structure of hypothemycin (1) bound to ERK2 (PDB: 3C9W), indicating the solvent-exposed C4 methyl ether. (B) Structure of probe 2. (C) Effect of 2 on proliferation of cultured BSF T. brucei (mean \u00b1 SD, n = 3). (D) T. brucei whole-cell lysates were treated with 2 for 30 min. Labeled proteins were visualized after click conjugation to rhodamine-azide and separation by SDS-PAGE. (E) Fluorescence quantification of bands at 90, 50, and 43 kDa demonstrating saturation of the 43 kDa band, but not the 90 or 50 kDa bands. (F) Lysates were treated with the indicated concentrations 1 for 30 min, followed by 500 nM 2 for 30 min. Labeled proteins were visualized as above. The saturable 43 kDa protein is indicated by the arrow.\n\n## Results\n\n### Hypothemycin has potent trypanocidal activity\n\nSimilar to humans, approximately ten percent of T. brucei kinases (21 of 182) have a CDXG motif. Hypothemycin\u2019s selectivity toward CDXG kinases prompted us to test its effects on T. brucei grown in culture. We reasoned that hypothemycin would enable pharmacological interrogation of a focused subset of kinases that are distributed throughout the kinome. Treatment of bloodstream form (BSF) parasites with increasing concentrations of hypothemycin for 24 hr caused a sharp reduction in cell density (EC50 \u223c 170 nM, Figure 1B), principally resulting from cell death. Visual inspection revealed that cells treated for 5 hr with 500 nM hypothemycin were round and swollen, with the flagellum detached from the cell body. They died within 2 hr and did not recover even when transferred to media lacking hypothemycin (data not shown).\n\nPrevious studies with hypothemycin demonstrated activity in murine tumor xenograft models (Tanaka et al., 1999). We therefore tested hypothemycin in mice infected with T. brucei. Infected mice showed a dose-dependent reduction in parasitemia (Figure 1C), and a 10 mg/kg dose administered once daily for 7 days prolonged survival of infected mice over 30 days, with a cure rate of 33% (Figure 1D). At a dose of 10 mg/kg or higher, signs of toxicity were evident in infected animals (weight loss, lethargy), precluding more aggressive dosing regimens. Although hypothemycin\u2019s therapeutic window is narrow, likely due to inhibition of essential mammalian CDXG kinases (e.g., VEGFR2, MEK1/2), its potent trypanocidal activity in vitro and in vivo motivated us to search for trypanosomal hypothemycin-binding proteins.\n\n### Design and validation of a hypothemycin-based affinity probe\n\nWe hypothesized that hypothemycin\u2019s trypanocidal effects were mediated by covalent inhibition of one or more T. brucei CDXG kinases and sought to identify its targets in an unbiased manner. In the crystal structure of hypothemycin bound to ERK2, the C4 methyl ether is solvent exposed (Rastelli et al., 2008), suggesting that this and other kinases would accommodate a larger group at this position (Figure 2A). We therefore replaced the methyl ether with a propargyl ether to enable copper-promoted (\u2018click\u2019) conjugation to a biotin- or rhodamine-linked azide. Alkylation of 4-O-desmethyl hypothemycin (Wee et al., 2006) with propargyl bromide was promoted by cesium carbonate to afford the C4 propargyl ether 2, (Figure 2B). Consistent with our hypothesis, probe 2 was equipotent to hypothemycin against cultured BSF T. brucei (Figure 2C).\n\nWe next tested the ability of 2 to covalently modify T. brucei proteins. Treatment of whole-cell lysates with 2, followed by click conjugation to rhodamine-azide, revealed multiple fluorescent bands by SDS-PAGE. Labeling of a 43 kDa protein was detected with 25 nM 2, reaching maximum intensity at 500 nM (Figure 2D,E). Labeled bands at 50 and 90 kDa were apparent at higher concentrations, but they failed to saturate (Figure 2E) and are likely nonspecific adducts. Pretreating lysates with increasing concentrations of hypothemycin abolished subsequent labeling of the 43 kDa band, demonstrating that it is a specific and saturable hypothemycin target (Figure 2F).\n\nTo identify the 43 kDa protein, we used biotin-azide in the click reaction and affinity purified covalently modified proteins. After SDS-PAGE, analysis of the 43 kDa band by mass spectrometry identified the dominant protein (based on total peptide counts) as TbGSK3short (Tb927.10.13780), a CDXG kinase previously found to be essential in BSF T. brucei (Ojo et al., 2008). Peptides from three other CDXG kinases were also detected in the same gel band (Supplementary file 1A). Despite revealing four distinct CDXG kinases, this experiment provided no information about their relative sensitivity to hypothemycin. Moreover, we suspected that abundant and/or hyper-reactive proteins may have bound 2 nonspecifically, obscuring specific, low-abundance targets in the gel-based analysis (Figure 2D).\n\n### Hypothemycin sensitivity of CDXG kinases revealed by quantitative mass spectrometry\n\nTo identify hypothemycin-binding proteins in a more comprehensive and quantitative manner, we employed a gel-free method with hypothemycin competition and isobaric mass tags, similar to previously reported methods for identifying small-molecule targets (Bantscheff et al., 2007; Huang et al., 2009; Ong et al., 2009). Four lysate samples were treated in parallel with increasing concentrations of hypothemycin for 30 min (0, 20, 200, or 1000 nM), followed by probe 2 (500 nM, 30 min). As before, covalently modified proteins were conjugated to biotin-azide and affinity purified. After trypsinization of the eluted proteins, each sample was derivatized with a unique iTRAQ reagent (Isobaric Tag for Relative and Absolute Quantitation) (Ross et al., 2004) and then pooled for fractionation and mass spectrometry analysis. Using this method, peptides corresponding to 10 protein kinases were identified, including three of the four kinases identified by in-gel digest. Four peptides correspond to two nearly identical TbCLK (cdc2-like kinase) genes, TbCLK1 (Tb927.11.12410) and TbCLK2 (Tb927.11.12420), which could not be differentiated on the basis of the identified peptides. In total, we identified 11 potential kinase targets of 2 (Supplementary file 1A). Of note, every protein kinase identified by probe 2 contains the CDXG motif, accounting for over half of the 21 CDXG kinases encoded in the T. brucei genome. To our knowledge, this represents the first unbiased identification of hypothemycin-binding proteins.\n\nQuantification of iTRAQ reporter ions revealed the extent of CDXG kinase labeling by 2 after pretreatment with increasing concentrations of hypothemycin (Figure 3). This experiment thus provides an estimate of each kinase\u2019s sensitivity to hypothemycin. Fragmentation spectra of peptides derived from eight kinases provided iTRAQ reporter ions of sufficient intensity to quantify kinase recovery (i.e., labeling by 2) as a function of hypothemycin pretreatment (Figure 3B,C). In addition to CDXG kinases, several other proteins (e.g., tubulin, heat shock proteins, ribosomal proteins) were identified. However, hypothemycin pretreatment did not affect their recovery (Figure 3B, Supplementary file 1A), which likely resulted from nonspecific, low-level modification by 2 and/or nonspecific adsorption to the avidin-agarose beads.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00712/elife-00712-fig3-v1.jpg)\n\n**Figure 3.:** (A) MS/MS fragmentation spectra of peptides from TbCLK1/2, TbGSK3short, and \u03b2-tubulin after labeling with 2, affinity purification, and trypsinization. Red text: residues bearing an iTRAQ tag; \u2018m\u2019: oxidized Met. iTRAQ reporter ions for each peptide are shown to the right (m/Z 114, 115, 116, and 117 correspond to lysate samples pretreated with 0, 20, 200, or 1000 nM hypothemycin, respectively). (B) Normalized recovery values, based on iTRAQ quantification, for all identified protein kinases and 25 non-kinases (blue lines) with \u22653 unique peptides. (C) Recovery of protein kinases as a function of hypothemycin pretreatment. Values for each hypothemycin pretreatment condition are derived from mean iTRAQ reporter ion counts normalized to vehicle across all peptides identified (\u00b1 SD). Asterisks indicate values derived from a single spectrum.\n\nAmong the CDXG kinases quantified, recovery of TbCLK1/2 was uniquely affected by pretreatment with 20 nM hypothemycin (Figure 3). Recovery of two additional kinases, TbGSK3short (Tb927.10.13780) and TbMAPK2 (Tb927.10.16030), was reduced more than 50% by 200 nM hypothemycin, and recovery of all but one CDXG kinase was reduced by 1 \u03bcM. These data indicate a wide range of hypothemycin sensitivity, with TbCLK1/2 exhibiting somewhat greater sensitivity than TbGSK3short and TbMAPK2. TbMAPK2 is not essential in BSF T. brucei but is required for proliferation of the procyclic (insect host) form (Muller et al., 2002). TbCLK1 and TbCLK2, which have identical kinase domains and only diverge in their N-terminal regions, are presumed to be equally sensitive to hypothemycin.\n\n### RNAi analysis of CDXG kinases in bloodstream form T. brucei\n\nWe assessed the requirement for each of the 21 CDXG kinases for cell viability using RNA interference. This required the creation of 21 cell lines, each containing a stably integrated cassette under tetracycline control and designed to silence a unique CDXG kinase (Wang et al., 2000). After induction of RNAi, cell proliferation was followed for 6 days. Consistent with previous results (Ojo et al., 2008), we observed reduced viability after knockdown of TbGSK3short (Figure 4A). Also consistent with previous studies, knockdown of MAP kinases TbMAPK2 (Muller et al., 2002), Tb927.6.1780 (Guttinger et al., 2007), and Tb927.6.4220 (Domenicali Pfister et al., 2006) had no effect on cell viability (Figure 4B, Supplementary file 1B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00712/elife-00712-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013D) BSF T. brucei were stably transfected with the indicated RNAi constructs and induced with tetracycline (triangles) or left uninduced (squares) starting on day 0. Cell density was measured every 24 hr and cumulative cell growth was plotted on a log scale (mean \u00b1 SD, n = 3). mRNA levels were measured by quantitative RT-PCR (bar graphs) in the absence (\u2013) and presence (+) of tetracycline.\n\nOur initial RNAi construct did not distinguish between TbCLK1 and TbCLK2. Induction with tetracycline resulted in reduced proliferation and increased cell death (data not shown). To test for nonredundant functions of TbCLK1 and TbCLK2, we designed a set of RNAi constructs targeting the unique 5\u2032-UTR of each gene. A lethal phenotype was only observed after knockdown of TbCLK1; knockdown of TbCLK2 had no obvious effect (Figure 4C,D). Individual knockdown of the remaining CDXG kinases similarly had no effect on cell proliferation. In each case, knockdown of the corresponding mRNA was confirmed by quantitative PCR (55\u201380% reduction across 21 mRNAs, Supplementary file 1B). With the caveat that insufficient knockdown may underlie the lack of a proliferation defect in certain cases, these results suggest that TbGSK3short and TbCLK1 are the only essential CDXG kinases in BSF T. brucei. Remarkably, these kinases also appeared to be among the most sensitive to hypothemycin (Figure 3).\n\n### Hypothemycin preferentially targets TbCLK1 in intact parasites\n\nBecause both TbGSK3short and TbCLK1 reacted with nanomolar concentrations of hypothemycin in cell lysates and exhibited strong RNAi phenotypes, we focused on these CDXG kinases and assessed their sensitivity to hypothemycin in enzymatic assays and in living parasites. Full-length TbGSK3short and TbCLK1 were expressed and purified from E. coli. Hypothemycin inhibited TbCLK1 with an IC50 of 150 nM when pre-incubated for 30 min in the presence of 100 \u03bcM ATP, whereas inhibition of TbGSK3short required 30-fold higher concentrations under the same conditions (Figure 5A). This is consistent with our chemoproteomic experiment in which 20 nM hypothemycin reduced subsequent labeling of TbCLK1/2 in lysates, while having little effect on TbGSK3short (Figure 3). The greater difference in IC50 values in the enzymatic assays is likely due to the presence of competing ATP, which had been depleted from cell lysates prior to the labeling experiments.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00712/elife-00712-fig5-v1.jpg)\n\n**Figure 5.:** (A) In vitro assays with recombinant TbGSK3short and TbCLK1. Kinases were incubated with hypothemycin and 100 \u03bcM ATP for 30 min before initiating reactions with substrate and \u03b332P-ATP. Substrate phosphorylation was quantified and normalized to DMSO control (mean \u00b1 SD, n = 3). (B) T. brucei expressing HA-tagged TbGSK3short and TbCLK1 from their endogenous loci were incubated with hypothemycin for 5 hr, and then were either harvested or diluted 1:30 into drug-free media and counted after 24 hr (bar graph, mean \u00b1 SD, n = 3). Harvested cells were lysed, labeled with 2, and submitted to click conjugation with biotin-azide. HA-tagged proteins were immunoprecipitated, resolved by SDS-PAGE, and analyzed by Western blotting for biotin and HA.\n\nThe significant difference in hypothemycin sensitivity of recombinant TbGSK3short and TbCLK1, along with their differential sensitivity in lysates, prompted us to ask whether this difference is also observed in intact cells. To quantify hypothemycin binding without mass spectrometry, we generated a strain of BSF T. brucei that contains a C-terminal hemagglutinin (HA) tag inserted into the endogenous loci of both TbGSK3short and TbCLK1 (hemizygous for each HA-tagged variant). HA-tagged TbGSK3short and TbCLK1 are easily distinguished on Western blots by their molecular weight. Cells in log-phase growth were treated with increasing concentrations of hypothemycin. After 5 hr, an aliquot of cells from each treatment condition was diluted 30-fold into fresh media, and cell density was measured after 24 hr. The remaining cells were harvested after hypothemycin treatment, and lysates from these cells were treated with 500 nM 2, followed by click conjugation with biotin-azide. After immunoprecipitation, the HA-tagged kinases were analyzed for covalently attached 2 by Western blot with streptavidin detection.\n\nIn control cells, TbCLK1 migrated as two major species (likely corresponding to differentially phosphorylated forms, our unpublished results), which collapsed to a single band upon treatment with hypothemycin (Figure 5B). Probe 2 labeled both TbCLK1 bands in the DMSO-treated cells, but labeling was sharply reduced in cells pretreated with hypothemycin. Moreover, the concentration dependence of this effect (reduction of labeling) correlated with the loss of cell viability; the vast majority of cells treated for 5 hr with 500 nM hypothemycin died. In contrast to its potent effect on TbCLK1, hypothemycin had a negligible effect on HA-tagged TbGSK3short, even at the highest concentration tested. Taken together, our results suggest that inhibition of TbCLK1, rather than TbGSK3short, plays a more dominant role in mediating the cytotoxic effects of hypothemycin.\n\n## Discussion\n\nNew drugs are urgently needed to treat human African trypanosomiasis. While protein kinases are attractive targets, elucidating which of the 182 T. brucei kinases to prioritize for drug discovery efforts is nontrivial. Many essential T. brucei kinases show high sequence identity with human orthologs, frustrating attempts to obtain selective inhibitors. Moreover, once a kinase target has been validated genetically and subjected to high-throughput biochemical screens, demonstrating that a given inhibitor engages the endogenous kinase in intact cells is difficult or impossible; to our knowledge, this has not been accomplished for any T. brucei kinase inhibitor. To begin to address these challenges, we have applied a combination of pharmacology, quantitative chemoproteomics, and reverse genetics to the CDXG kinases, a focused yet phylogenetically diverse subset of all eukaryotic kinomes.\n\nWe initially discovered that hypothemycin and the propargyl ether derivative 2 are potently trypanocidal. Although hypothemycin reduced parasitemia and cured one-third of infected mice, it was toxic at higher doses, and we do not consider it to be a drug lead. Hypothemycin-mediated toxicity may be caused by inactivation of MEK and VEGFR2, as previous studies have found toxic effects associated with selective inhibitors of these kinases (Rugo et al., 2005; Adjei et al., 2008). Trypanosomes lack orthologs of most hypothemycin-sensitive mammalian kinases, including MEK and VEGFR2. Conversely, the majority of CDXG kinases in T. brucei lack clear human orthologs. It was therefore imperative to develop an unbiased and quantitative method for identifying direct targets of hypothemycin in T. brucei.\n\nOf 21 predicted CDXG kinases, 11 were identified by probe 2 after affinity purification from cell lysates. It is likely that the remaining CDXG kinases are not efficiently labeled by 2 or are not expressed in BSF T. brucei. Mass spectrometry-based quantification revealed the extent of CDXG kinase occupancy as a function of hypothemycin concentration. We observed a wide spectrum of sensitivity, with most CDXG kinases requiring micromolar concentrations of hypothemycin to block labeling by probe 2. Two of the kinases showing the greatest reduction in probe labeling after exposure to hypothemycin, TbGSK3short and TbCLK1, are also the only CDXG kinases whose knockdown by RNAi significantly reduced cell growth.\n\nTbGSK3short was previously shown to be essential for proliferation and survival of BSF T. brucei (Ojo et al., 2008). High-throughput screening with recombinant TbGSK3short has provided inhibitors with high biochemical potency, yet modest selectivity when tested against human GSK3\u03b2 (Oduor et al., 2011; Urbaniak et al., 2012), consistent with the high sequence similarity shared by these kinases. Although many of these compounds block T. brucei proliferation, it is unclear whether they actually inhibit TbGSK3short in cells. Indeed, hypothemycin was able to saturate TbGSK3short at nanomolar concentrations in cell lysates, yet it had little effect on this kinase in intact cells, even after prolonged treatment at cytotoxic concentrations. Thus, despite TbGSK3short being the most prominent protein labeled by 2 in lysates, it is unlikely that hypothemycin kills T. brucei by inhibiting TbGSK3short. Nevertheless, we cannot exclude the possibility that partial inhibition of TbGSK3short or other CDXG kinases contributes to hypothemycin\u2019s cytotoxic effects.\n\nTreatment of intact trypanosomes with cytotoxic concentrations of hypothemycin resulted in full occupancy of TbCLK1. Together with the demonstration that TbCLK1 silencing by RNAi is sufficient to kill T. brucei, these results validate TbCLK1 as a druggable target. T. brucei and other kinetoplastids, including the human pathogens T. cruzi and Leishmania species, are the only organisms in which a CLK ortholog bears a CDXG motif. The kinase domains of TbCLK1 and human CLK1-4 share only 30% sequence identity. By contrast, T. brucei and human GSK3 share 52% sequence identity, including the CDXG motif. Obtaining inhibitors that discriminate between T. brucei and human CLK may therefore be more straightforward as compared to GSK3. CLKs have been shown to regulate pre-mRNA splicing in fission yeast (Tang et al., 2011), flies (Du et al., 1998), and human cells (Muraki et al., 2004; Karlas et al., 2010; Fedorov et al., 2011), and recent studies have revealed important splicing-independent roles (Rodgers et al., 2010, 2011; Lee et al., 2012). Further work will be required to elucidate the functions and substrates of TbCLK1 in BSF T. brucei.\n\nBy employing 2 as an affinity probe, it should now be possible to quantify engagement of both TbGSK3short and TbCLK1 by compounds derived from high-throughput screening campaigns, even without knowledge of their downstream substrates or signaling pathways. We note that TbCLK1 was not among the 57 kinases identified in T. brucei cell lysates using broad-spectrum kinase inhibitors immobilized on \u2018Kinobeads\u2019 (Urbaniak et al., 2012). Although Kinobeads and other powerful chemoproteomic platforms (Patricelli et al., 2011) have the advantage of profiling a larger swath of the kinome, a potential disadvantage is that the probes only work in cell lysates and cannot be used to quantify kinase occupancy in intact parasites. More broadly, probe 2 and the chemoproteomic methodology described herein can be used to explore the related CDXG kinomes of T. cruzi and Leishmania, as well as uncharted kinomes in other disease-causing eukaryotes, all of which express diverse CDXG kinases. Finally, many human CDXG kinases are validated or potential drug targets (e.g., MEK, ERK, VEGFR2, c-KIT, FLT3, PDGFR, TAK1, MNK), and probe 2 may prove valuable in quantifying their intracellular engagement by candidate inhibitors.\n\n## Materials and methods\n\n### Cell culture\n\nBSF T. brucei (strain 221) was cultured at 37\u00b0C and 5% CO2 in HMI-9 medium with 10% Fetal Bovine Serum, 10% Serum Plus (Sigma-Aldrich, St. Louis, MO), 100 units/ml penicillin, and 100 \u03bcg/ml streptomycin. The 90-13 cell line was similarly cultured with addition of 2.5 \u03bcg/ml G418, 5.0 \u03bcg/ml hygromycin. Transgenic cell lines were maintained in medium supplemented with 5.0 \u03bcg/ml hygromycin, 2.5 \u03bcg/ml phleomycin, and/or 0.1 \u03bcg/ml puromycin.\n\n### Cell density assay\n\nThe endpoint luciferase-based assay for quantifying cell density was performed as previously described (Mackey et al., 2011) with the following modifications. BSF T. brucei cells were treated with hypothemycin at 5 \u00d7 105 cells/ml in media lacking antibiotics. Cell density was measured after 24 hr using CellTiter-Glo Luminescent Cell Viability Assay (Promega, Madison, WI). Luminescence was measured using a SpectraFluor Plus luminometer (Tecan, San Jose, CA). Results were plotted using GraphPad Prism (GraphPad Software, La Jolla, CA).\n\n### Mouse infection model\n\nAdult female Balb/c mice (Charles River Laboratories, Wilmington, VA) weighing 18\u201322 g were infected via intraperitoneal injection with 103 BSF parasites in 100 \u03bcl of PBS containing 1% glucose. One day post-infection, hypothemycin (ChemieTek, Indianapolis, IN) in 60% DMSO/water was administered once daily via intraperitoneal injection for 7 days. Mice were monitored every 48 hr for parasitemia in tail blood and visually inspected for general health. Surviving aparasitemic mice at day 30 were considered cured. Experiments were carried out in accordance with protocols approved by the Institutional Animal Care and Use Committee at the University of California, San Francisco.\n\n### Synthesis of probe 2\n\n4-O-desmethylhypothemycin (Wee et al., 2006) (10 mg, 0.0274 mmol) was added to a dried glass reaction vessel equipped with a magnetic stir bar and dissolved in dry acetonitrile (6 ml). Propargyl bromide (69 \u03bcL 80% in toluene, 0.55 mmol) and Cs2CO3 (10.7 mg, 0.033 mmol) were added. After 6 hr at rt, the mixture was concentrated, dissolved in minimal methylene chloride, and purified by preparative silica TLC using 2% then 3.5% methanol in methylene chloride. Pure 2 (4.5 mg, 41% yield) was eluted from the silica with 10% methanol in methylene chloride. NMR (1H, DMSO, 400 MHz): 0.98 (dd, J=14.9 Hz , J=9.4 Hz, 1H), 1.36 (d, J=6.2 Hz, 3H), 1.86 (dd, J=14.0, 9.8 Hz, 1H), 2.55 (m, 1H), 2.76 (m, 1H), 2.94 (dt, J=17.3, 10.9 Hz, 1H), 3.61 (t, J=2.4 Hz, 1H), 3.87 (m, 1H), 4.32 (d, J=1.7 Hz, 1H), 4.45 (dd, J=5.1, 1.5 Hz, 1H), 4.83 (d, J=2.4 Hz, 2H), 4.93 (d, J=5.1 Hz, 1H), 5.15 (d, J=6.6 Hz, 1H), 5.39 (m, 1H), 6.11 (dt, J=11.2, 2.6 Hz, 1H), 6.32 (d, J=2.8 Hz, 1H), 6.42 (dd, J=11.7, 2.7 Hz, 1H), 6.51 (d, J=2.8 Hz, 1H), 11.90 (s, 1H). NMR (13C, DMSO, 400 MHz): 21.02, 34.24, 36.77, 56.39, 57.29, 63.72, 69.54, 74.83, 79.12, 79.51, 81.84, 102.37, 104.00, 105.66, 128.59, 143.10, 143.21, 162.82, 165.09, 171.00, 201.85. HRMS: predicted [M+H+] m/z 403.1387; measured 403.1383.\n\n### Preparation of lysates\n\nBSF T. brucei at a density of 106\u20145 \u00d7 106 cells/ml were collected and washed twice with PBS. The pellet was suspended in PBS containing Complete Protease Inhibitor Cocktail (Roche, Basel, Switzerland) and PhosStop Phosphatase Inhibitor Cocktail (Roche) and sonicated on ice. Cellular debris was pelleted, and the supernatant was passed through a NAP-5 column (GE Healthcare, Buckinghamshire, United Kingdom) equilibrated with lysis buffer.\n\n### Labeling with probe 2 and click chemistry\n\nWhole-cell lysates (18.75 \u00b5l, 1\u20133 mg/ml protein) were treated with increasing concentrations of hypothemycin for 30 min, followed by the indicated concentration of 2 for 30 min. Samples were denatured with SDS (1.25 \u00b5l, 20%), followed by addition of TAMRA-azide (0.5 \u00b5l, 5 mM), TCEP (0.5 \u00b5l, 50 mM, pH \u223c7.0), TBTA ligand in 1:4 DMSO:tert-butyl alcohol (1.5 \u00b5l, 1.67 mM), and CuSO4 (0.5 \u00b5l, 50 mM). Reactions were incubated at rt for 1 hr, resolved by SDS-PAGE, scanned for fluorescence (Typhoon Imaging System, Molecular Dynamics, Sunnyvale, CA), and stained with Coomassie.\n\n### Preparation of iTRAQ mass spectrometry samples\n\nT. brucei whole-cell lysates (14 mg, 3 mg/ml) were treated with 0 (DMSO control), 20, 200, or 1000 nM hypothemycin for 30 min, followed by 2 (500 nM, 30 min). Samples were then denatured by adding 20% SDS to a final concentration of 1%. Base-cleavable biotin-azide (Choy et al., 2013) was added (100 \u03bcM), followed by the remaining click reagents at the concentrations described above. After 1 hr at rt, proteins were precipitated with cold acetone (80% vol/vol final). Protein pellets were washed three times with acetone and dried. Pellets were resuspended in a minimal volume of 1% SDS in 50 mM Tris pH 8.0. The solution was then diluted with 9 volumes of 1% NP-40 in PBS and passed through a PD-10 column (GE Healthcare), eluting with 1% NP-40 and 0.1% SDS in PBS. Avidin-agarose (30 \u00b5l, Sigma-Aldrich) was added and the samples were rotated overnight at 4\u00b0C. The beads were washed twice for 1 hr at rt with 1% NP-40, 0.1% SDS in PBS; twice for 1 hr at 4\u00b0C with 6 M urea in PBS; 1 hr with PBS at 4\u00b0C; and 1 hr with PBS at rt. To facilitate the quantitative release of captured proteins, the ester linkage (Choy et al., 2013) was hydrolyzed with NaOH (0.4 N, 20 \u00b5l). After 20 min at room temperature, the solution was neutralized with HCl (0.8 N, 10 \u00b5l), brought to 1% SDS, and heated to 90\u00b0C for 3 min before collecting the supernatant.\n\nEluted proteins were acetone-precipitated and pellets were washed twice with additional cold acetone. Dried pellets were resuspended in 8 M guanidinium HCl, reduced (5 mM TCEP, 50 mM ammonium bicarbonate, 6 M guanidinium HCl), and alkylated with 10 mM iodoacetamide. The solution was adjusted to 1 M guanidinium HCl, 100 mM ammonium bicarbonate, 10% acetonitrile and trypsinized overnight. Volatiles were removed, and the samples were resuspended in 0.1% formic acid, extracted with C18 OMIXtips (Varian, Palo Alto, CA), and eluted with 50% acetonitrile, 0.1% formic acid. Volatiles were removed and peptides were resuspended in 0.5 M triethylammonium bicarbonate pH 8.5 and labeled with iTRAQ Reagents (Applied Biosystems, Foster City, CA). Samples were mixed, dried, and resuspended in 30% acetonitrile, 5 mM potassium phosphate (pH 2.7). The samples were then fractionated on a 50.0 \u00d7 1.0 mm 5 \u00b5M 200 \u00c5 Polysulfoethyl A column (PolyLC, Colombia, MD) with a 1\u201340% gradient of 350 mM potassium chloride in 30% acetonitrile, 5 mM potassium phosphate (pH 2.7). Peptide-containing fractions were dried, resuspended in 0.1% formic acid, extracted using C18 ZipTips (Millipore, Billerica, MA), eluted with 50% acetonitrile, dried, resuspended in 0.1% formic acid, and analyzed by LC/MS/MS.\n\n### Mass spectrometry\n\nFractionated tryptic peptides were separated by nano-flow liquid chromatography using a 75 \u00b5m \u00d7 150 mm reverse phase C18 PepMap column (Dionex-LC-Packings, Sunnyvale, CA) at a flow rate of 350 nl/min in a NanoLC-1D Proteomics high-performance liquid chromatography system (Eksigent Technologies, Dublin, CA) equipped with a FAMOS autosampler (Dionex-LC-Packings). Peptides were eluted using a 2\u201330% gradient of acetonitrile/0.1% formic acid over 40 min, followed by 50% acetonitrile for 3 min. The eluate was coupled to a microionspray source attached to a QSTAR Elite mass spectrometer (Applied Biosystems/MDS Sciex, Framingham, MA). Peptides were analyzed in positive ion mode. MS spectra were acquired for 1 sec in the m/z range between 350 and 1500. MS acquisitions were followed by 4 \u00d7 2.5 sec collision-induced dissociation (CID) experiments in information-dependent acquisition mode. For each MS spectrum, the two most intense multiple charged peaks over a threshold of 25 counts were selected for generation of CID mass spectra. Two MS/MS spectra of each were acquired, first on the m/z range 119\u20131500, with Q1 resolution set at \u2018low\u2019, and then on the m/z range 112\u2013119, with resolution set at \u2018unit\u2019. The CID collision energy was automatically set according to mass to charge (m/z) ratio and charge state of the precursor ion. A dynamic exclusion window was applied which prevented the same m/z from being selected for 1 min after its acquisition.\n\n### Mass spectrometry data analysis\n\nPeak lists were generated using the mascot.dll script. The peak list was searched against the Trypanosoma subset of the NCBInr database using ProteinProspector. A minimal ProteinProspector protein score of 15, a peptide score of 15, a maximum expectation value of 0.1, and a minimal discriminant score threshold of 0.0 were used for initial identification criteria. iTRAQ modification of the amino terminus or the epsilon-amino group of lysines, carbamidomethylation of cysteine; acetylation of the N-terminus of the protein and oxidation of methionine were allowed as variable modifications. Peptide tolerance in searches was 100 ppm for precursor and 0.2 Da for product ions, respectively. Peptides containing two miscleavages were allowed. The number of modifications was limited to two per peptide.\n\nQuantification was based on the relative areas of the reporter ions (m/z =114, 115, 116 and 117) generated by the isobaric iTRAQ reagents during CID experiments. Abundance ratios of individual peptides between the different samples were calculated taking as reference the DMSO-treated sample, by dividing the areas of their respective iTRAQ reporter ions. Peptides with peak areas lower than 30 for the most intense reporter ion were discarded. For changes in relative abundance at the protein level, all MS/MS spectra for the different peptides belonging to a particular protein were used to calculate the average and SD of the abundance ratios.\n\n### Generation of transgenic T. brucei cell lines\n\nPlasmid DNA (10 \u03bcg) was linearized (MfeI, TbGSK3short-HA; Bsu36I, TbCLK1-HA; NotI, pZJM constructs) and resuspended to 1 \u03bcg/\u03bcl in water. Cells (2 \u00d7 107) were electroporated using the Human T Cell Nucleofector kit and the Amaxa program X-001 (Lonza, Basel, Switzerland), then diluted in media and allowed to recover for 24 hr before selection for 5\u20137 days with the appropriate antibiotic.\n\n### RNA interference\n\nA 250\u2013500 bp fragment of each CDXG kinase gene was amplified from genomic DNA by PCR (primers listed in Supplementary file 1C) and cloned into the XhoI/HindIII site of pZJM (Wang et al., 2000). Plasmid DNA was stably transfected into BSF T. brucei 90\u201313 cells as described above. RNAi was induced with 1 \u03bcg/ml tetracycline. Parasites were counted every 24 hr using a Coulter Counter (Beckman Coulter, Brea, CA), and cultures were diluted to maintain cell density between 105 and 2 \u00d7 106 cells/ml. RNA was extracted 48 hr after tetracycline induction using TRIzol (Invitrogen) and RNeasy kit (Qiagen, Hilden, Germany). For qRT-PCR quantification (relative to TbGAPDH, Tb927.6.4300), cDNA was generated with the High Capacity RNA-to-cDNA Kit (AppliedBiosystems) and quantified using the PowerSYBR kit (AppliedBiosystems).\n\n### In vitro kinase assays\n\nFull-length TbGSK3short and TbCLK1 were amplified from genomic DNA using primers listed in Supplementary file 1C and cloned into the pET100 expression vector (Invitrogen). Proteins were expressed in E. coli ArcticExpress (DE3) (Stratagene, La Jolla, CA) in ZY5052 medium at 20\u00b0C for 60 hr with agitation. Cells were lysed using a microfluidizer into lysis buffer (50 mM Tris pH 8, 300 mM NaCl, 10 mM imidazole, 5% glycerol, 1 mM CaCl2, 1 mM MgCl2, 500 nM PMSF, 1\u00d7 Protease inhibitor cocktail (Roche), DNase (Sigma-Aldrich), lysozyme (Sigma-Aldrich). The soluble fraction was isolated by centrifugation and incubated overnight at 4\u00b0C with Ni-NTA beads. The recombinant protein was eluted with lysis buffer containing 250 mM imidazole and dialyzed into storage buffer (30 mM Tris pH 7.5, 50 mM NaCl, 50% glycerol, 5 mM DTT, 1 mM EDTA, 0.03% Brij35). Aliquots of the proteins were flash frozen with liquid nitrogen and stored at \u201380\u00b0C.\n\nKinases (5 nM TbGSK3short, 10 nM TbCLK1) were incubated with hypothemycin in reaction buffer (50 mM Tris pH7.4, 10 mM MgCl2, 0.2 mM EGTA, 0.2 mg/ml BSA, 1 mM DTT) and 100 \u00b5M ATP for 30 min at rt. A solution of reaction buffer with \u03b332P-ATP (70\u2013150 \u03bcCi/ml, Perkin Elmer, Waltham, MA) and GSM peptide substrate (TbGSK3short, 0.05 mg/ml, Millipore) or myelin basic protein (TbCLK1, 0.5 mg/ml, Sigma-Aldrich) was added to initiate the kinase reaction. After 15 (TbGSK3short) or 30 min (TbCLK1), reactions were spotted onto phosphocellulose paper, washed once with 10% acetic acid, twice with 1% phosphoric acid, and once with methanol, and dried. Kinase activity was quantified using a Typhoon Imaging System (Molecular Dynamics) and ImageQuant 5.2 (Molecular Dynamics). IC50 values and dosing curves were generated using GraphPad Prism 5 (GraphPad Software).\n\n### Cellular labeling assays\n\nTbGSK3short or TbCLK1 lacking start and stop codons were amplified from genomic DNA using primers listed in Supplementary file 1C and inserted between the KpnI and XhoI sites of pC-PTP-PURO, which was modified to contain a C-terminal HA-tag (Schimanski et al., 2005; Gourguechon and Wang, 2009). For the TbCLK1-HA construct, the puromycin resistance cassette was replaced with a hygromycin resistance gene. T.brucei 221 cells were first transfected with the TbGSK3short-HA construct to establish a puromycin resistant cell line in which the vector stably integrated into the endogenous TbGSK3short locus via homologous recombination. This cell line was then transfected with the TbCLK1-HA construct and selected for hygromycin and puromycin resistance. Cells stably expressing HA-tagged TbGSK3short and TbCLK1 (5 \u00d7 106 cells/ml) were treated with the indicated concentrations of hypothemycin. After 5 hr, aliquots of the cultures were diluted 30-fold with fresh media and cell density was quantified after an additional 24 hr. The remaining cells were pelleted, washed with trypanosome dilution buffer (5 mM KCl, 80 mM NaCl, 1 mM MgSO4, 20 mM glucose, 22 mM sodium phosphate pH 7.7) and lysed by sonication in 50 \u03bcl PBS containing 0.25% NP-40, 1\u00d7 Complete EDTA-free protease inhibitor cocktail, and 1\u00d7 PhosStop phosphatase inhibitors (Roche). Lysates were clarified by centrifugation, normalized for protein content, and treated with 500 nM 2 for 30 min. Samples were subjected to click conjugation with biotin-azide as described above and diluted 10-fold with 1.1% NP-40 in PBS. HA-tagged proteins were immunoprecipitated using 12CA5 anti-HA antibody (Roche) and Protein A Dynabeads (Invitrogen), eluted with sample buffer, resolved by SDS-PAGE, and transferred to nitrocellulose membranes. HA and biotin were detected with anti-HA (1:1000, Sigma Aldrich, H6908), IRDye(680)-conjugated anti-rabbit (1:10,000), IRDye(800)-conjugated streptavidin (1:20,000) using the Odyssey Imaging System (Li-Cor Biosciences, Lincoln, NE).\n",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "08679dd8-1c1b-437c-87f7-e7d66bcbe61b",
+      "submission_id": "68d90120-0790-4261-a7f9-e60125828a08",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon Clardy, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00712.009](https://doi.org/10.7554/eLife.00712.009)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cTherapeutic targets in Trypanosoma brucei revealed by hypothemycin-based chemoproteomics and RNAi\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission want to reveal their identity: Jon Clardy (Reviewing editor), Nathanael Gray (peer reviewer), and Barbara Burleigh (peer reviewer).\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis paper identifies a trypanosome kinase, TbCLK1, as a therapeutic target for African trypanosomiasis, a protozoal infection with severely limited treatment options. The authors used a virtuosic combination of phenotypic assays, organic chemistry, several flavors of proteomics, and RNAi knockdowns in their identification.\n\nThe project began by exploring whether kinase inhibitors, which have become useful therapeutic agents for several human diseases, could play a similar role in treating trypanosomal infections. Trypanosomes and their human hosts have many kinases, and to focus their search the authors selected hypothemycin, a small molecule produced by some fungi, that was known to target a small subset of human kinases, and found that it killed trypanosomes in both cell culture and in vivo (mouse) assays. They then synthesized an affinity reagent and through proteomic analysis identified eleven potential targets, all of which were kinases with the signature motif characteristic of hypothemycin-sensitive kinases. More detailed analyses identified one of the kinases, TbCLK1, as the therapeutically relevant target, and this conclusion was underscored with RNAi analyses.\n\nAll of the reviewers agreed that the manuscript described the identification of a potentially significant target and were in favor of publication. They also noted that the manuscript describes an unusually thorough set of experiments in a commendably frank manner. Their study will appeal to both the community interested in addressing protozoal diseases like trypanosomiasis as well as the much larger community of researchers seeking to discover useful therapeutic agents. There were two general issues that the reviewers felt could be improved.\n\n1) The authors note in several places that the critical issue in their overall approach is likely to be specificity \u2013 the ability to find small molecules that selectively lead to parasite death. The lack of sufficient specificity is, for example, why the authors note that hypothemycin is not a drug candidate. It would be useful to consolidate and expand upon this notion in the Introduction so that the reader is aware of it from the beginning. For example, the Abstract states that \u201cProtein kinases are attractive therapeutic\u2026\u201d, and changing \u201care\u201d to \u201ccould be\u201d would set up such a discussion. The authors do address this in the beginning of the Discussion section, but it might be more effective to move this into the Introduction.\n\n2) The thoroughness of the approach makes it difficult for the majority of readers that are unfamiliar with this sort of analysis to follow the logic of the overall research plan. A road map of phenotypic screen of a mammalian kinase inhibitor -> target ID by chemical proteomics in gel -> chemical proteomics using ITRAQ -> RNAi screen of candidate targets -> target engagement studies -> reconfirmation with recombinant enzymes, possibly as a figure, would help. It would serve both as an aid for readers and a handy guide for repurposing other kinase inhibitors for infectious disease applications. The current manuscript seems to follow the historical course of the research, which creates a meandering narrative.\n",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "94472a2a-8dfc-4dd9-bbec-5d7710e04365",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C1",
+      "claim": "Human African trypanosomiasis is a debilitating and fatal parasitic disease endemic to sub-Saharan Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "Human African trypanosomiasis, or sleeping sickness, is a debilitating and fatal parasitic disease endemic to sub-Saharan Africa (Fevre et al., 2008; Simarro et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fevre et al., 2008 and Simarro et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "c0839bb7-4c0e-456f-acf3-1e84dcc74a5c",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C2",
+      "claim": "Human African trypanosomiasis is caused by two subspecies of Trypanosoma brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "Caused by two subspecies of Trypanosoma brucei, the disease begins in the hemolymphatic system and later crosses the blood\u2013brain barrier, resulting in sleep disturbances that deteriorate to coma and death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about the causative agent of African trypanosomiasis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "0b6a238a-3a0c-4d9c-8fa7-5ed5c91d09df",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C3",
+      "claim": "The disease begins in the hemolymphatic system and later crosses the blood-brain barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Caused by two subspecies of Trypanosoma brucei, the disease begins in the hemolymphatic system and later crosses the blood\u2013brain barrier, resulting in sleep disturbances that deteriorate to coma and death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about disease progression",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "0957569e-501e-4847-9a2c-dcbd9522648c",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C4",
+      "claim": "The disease results in sleep disturbances that deteriorate to coma and death.",
+      "claim_type": "EXPLICIT",
+      "source": "Caused by two subspecies of Trypanosoma brucei, the disease begins in the hemolymphatic system and later crosses the blood\u2013brain barrier, resulting in sleep disturbances that deteriorate to coma and death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about disease symptoms and outcomes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "81ff3625-1a3a-41f9-9aad-d9e9ab41bfc3",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C5",
+      "claim": "Parasites evade the host immune system through periodic switching of the variable surface glycoprotein coat.",
+      "claim_type": "EXPLICIT",
+      "source": "During the course of infection, the parasites evade the host immune system through periodic switching of the variable surface glycoprotein coat, making vaccination-based approaches unlikely to succeed (Taylor and Rudenko, 2006; Horn and McCulloch, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Taylor and Rudenko, 2006 and Horn and McCulloch, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "a12083a0-c57f-40eb-88f7-7c87ae33009f",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C6",
+      "claim": "Vaccination-based approaches are unlikely to succeed against African trypanosomiasis.",
+      "claim_type": "EXPLICIT",
+      "source": "During the course of infection, the parasites evade the host immune system through periodic switching of the variable surface glycoprotein coat, making vaccination-based approaches unlikely to succeed (Taylor and Rudenko, 2006; Horn and McCulloch, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the mechanism of immune evasion, supported by citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "7e8b6242-aada-4cb1-a539-674d37eb5f20",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C7",
+      "claim": "Only four chemotherapeutics are currently approved for sleeping sickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, only four chemotherapeutics are approved for sleeping sickness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about available treatments",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "cfac255e-eeff-4b59-8a9a-74a6fa951b56",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C8",
+      "claim": "Current therapies for sleeping sickness suffer from poor oral bioavailability, severe toxicity, and/or emerging resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "These therapies suffer from poor oral bioavailability, severe toxicity, and/or emerging resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about limitations of current treatments",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "2b85903d-3adf-4f7e-8b55-76dd1fb4f77e",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C9",
+      "claim": "Eflornithine is the only drug with a known mechanism of action for sleeping sickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Eflornithine, the only drug with a known mechanism of action, is also the only therapeutic for sleeping sickness approved in the last 50 years (Fairlamb, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fairlamb, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "4ec60fec-1bee-499e-8235-a851c25154fa",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C10",
+      "claim": "Eflornithine is the only therapeutic for sleeping sickness approved in the last 50 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Eflornithine, the only drug with a known mechanism of action, is also the only therapeutic for sleeping sickness approved in the last 50 years (Fairlamb, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fairlamb, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "75cacce4-e802-4152-9aef-a9244f9815f3",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C11",
+      "claim": "A combination of eflornithine and nifurtimox was introduced in 2009 for T. brucei infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a combination of eflornithine and nifurtimox, a drug for American trypanosomiasis (Chagas disease, caused by T. cruzi), was introduced in 2009 for T. brucei infection, no new drugs are near the clinic (Priotto et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Priotto et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "d98db635-760e-4cab-9e01-b430f304219b",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C12",
+      "claim": "No new drugs for African trypanosomiasis are near the clinic.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a combination of eflornithine and nifurtimox, a drug for American trypanosomiasis (Chagas disease, caused by T. cruzi), was introduced in 2009 for T. brucei infection, no new drugs are near the clinic (Priotto et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Priotto et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "9affe353-fa71-4419-9274-c8dc9d6d694b",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C13",
+      "claim": "More than 15 kinase inhibitors have received FDA approval during the past decade.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein kinases have been intensely pursued as therapeutic targets for cancer and autoimmune disease, and more than 15 kinase inhibitors have received FDA approval during the past decade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about FDA-approved kinase inhibitors",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "a4c23e3c-8557-4f4a-aa95-55eac30d9939",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C14",
+      "claim": "Protein phosphorylation in T. brucei is an essential regulatory mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "As in humans, protein phosphorylation in T. brucei is an essential regulatory mechanism and plays critical but poorly understood roles in its unique life cycle (Parsons et al., 2005; Nett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Parsons et al., 2005 and Nett et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "343a2a6b-1563-4361-ae1d-52e373513df9",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C15",
+      "claim": "Protein phosphorylation plays critical but poorly understood roles in the T. brucei life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "As in humans, protein phosphorylation in T. brucei is an essential regulatory mechanism and plays critical but poorly understood roles in its unique life cycle (Parsons et al., 2005; Nett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Parsons et al., 2005 and Nett et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "e840f636-6804-45f6-abc4-29467256d2d0",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C16",
+      "claim": "T. brucei has 182 protein kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of the 182 protein kinases in T. brucei remain poorly characterized, and few have been interrogated in their native cellular context with small-molecule inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about the T. brucei kinome",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "4ea22d8b-4919-48ea-b2cc-9f5c3236b119",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C17",
+      "claim": "The vast majority of T. brucei protein kinases remain poorly characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of the 182 protein kinases in T. brucei remain poorly characterized, and few have been interrogated in their native cellular context with small-molecule inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on assessment of the state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "4fd69121-88be-4692-9b5d-f525fc45e2ce",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C18",
+      "claim": "Few T. brucei kinases have been interrogated in their native cellular context with small-molecule inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of the 182 protein kinases in T. brucei remain poorly characterized, and few have been interrogated in their native cellular context with small-molecule inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on assessment of the state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "2fda78e2-ee3c-482a-963c-87794e7d6001",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C19",
+      "claim": "SCYX-5070 is the first reported protein kinase inhibitor with efficacy in a murine model of T. brucei infection.",
+      "claim_type": "EXPLICIT",
+      "source": "High-throughput screening and medicinal chemistry recently led to the discovery of SCYX-5070, the first reported protein kinase inhibitor with efficacy in a murine model of T. brucei infection (Mercer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mercer et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "2caa3c1f-c38d-4049-bfa6-3d626193b280",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C20",
+      "claim": "SCYX-5070 binds at least six trypanosome kinases related to human MAPKs and cyclin-dependent kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Affinity chromatography with an immobilized derivative suggested that SCYX-5070 binds at least six trypanosome kinases related to human mitogen activated protein kinases (MAPKs) and cyclin-dependent kinases, although the extent to which SCYX-5070 engages these kinases in vivo is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on affinity chromatography experiments, but with uncertainty about in vivo engagement",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "88bc31b6-5ec1-4bc6-95d9-019f90ebd14a",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C21",
+      "claim": "The extent to which SCYX-5070 engages its target kinases in vivo is not known.",
+      "claim_type": "EXPLICIT",
+      "source": "Affinity chromatography with an immobilized derivative suggested that SCYX-5070 binds at least six trypanosome kinases related to human mitogen activated protein kinases (MAPKs) and cyclin-dependent kinases, although the extent to which SCYX-5070 engages these kinases in vivo is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of a gap in knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "da3093e6-e4f3-4076-97ff-2f8fd424cfb5",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C22",
+      "claim": "Cyclin-dependent kinases are essential in T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic studies in T. brucei have established essential roles for orthologs of several human kinases, including cyclin-dependent kinases (Tu and Wang, 2004; Gourguechon and Wang, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tu and Wang, 2004 and Gourguechon and Wang, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "6e1b3138-640b-4b73-aaa7-8fb2c22c61b1",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C23",
+      "claim": "Aurora kinase is essential in T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic studies in T. brucei have established essential roles for orthologs of several human kinases, including cyclin-dependent kinases (Tu and Wang, 2004; Gourguechon and Wang, 2009), Aurora kinase (Tu et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tu et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "9739cbfa-d578-4f6b-8cd3-0178136af085",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C24",
+      "claim": "Polo-like kinase is essential in T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "polo-like kinase (Li et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "34ba0b7c-8ab4-48b3-ad48-e807b15fd70c",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C25",
+      "claim": "Glycogen synthase kinase-3 is essential in T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "glycogen synthase kinase-3 (Ojo et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ojo et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "f0b9fc6b-29c1-447f-81cb-855d3ed6de45",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C26",
+      "claim": "Casein kinase-1 is essential in T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "casein kinase-1 (Urbaniak, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Urbaniak, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "a21c3176-fc97-4d7a-aac2-5a7553c3c8e5",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C27",
+      "claim": "DBF-2-related kinases are essential in T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "DBF-2-related kinases (Ma et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ma et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "b5995164-43fb-43f3-85ff-a4dca97fe38b",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C28",
+      "claim": "High-throughput RNAi studies have implicated additional kinases in T. brucei proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "High-throughput RNAi studies have implicated additional kinases in T. brucei proliferation (Alsford et al., 2011; Mackey et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Alsford et al., 2011 and Mackey et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "89ecb8a4-f3ce-43de-9bc4-092c627e05f2",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C29",
+      "claim": "It is not clear which T. brucei kinases make the best therapeutic targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the knowledge gained from these studies, it is not clear which T. brucei kinases make the best therapeutic targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessment of the state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "ad2ad691-341f-4af9-afac-92d2049ddd74",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C30",
+      "claim": "Achieving sufficient potency to inhibit essential T. brucei kinases while avoiding related human kinases poses a significant challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Achieving sufficient potency to inhibit essential T. brucei kinases, while avoiding related human kinases, poses a significant challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessment of challenges in drug development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "703ba92f-96eb-4e2a-86fc-f5d0d1916058",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C31",
+      "claim": "Quantifying intracellular kinase engagement by small-molecule inhibitors in T. brucei is an unsolved problem.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, quantifying intracellular kinase engagement by small-molecule inhibitors in T. brucei is an unsolved problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessment of the state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "b7590fdc-657b-4c72-9efc-1db76fb858cb",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C32",
+      "claim": "Hypothemycin is a polyketide natural product.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothemycin (1, Figure 1A) is a polyketide natural product that covalently inhibits a diverse subset of human kinases, including MEK, ERK, PDGFR, VEGFR2, and FLT3 (Schirmer et al., 2006; Winssinger and Barluenga, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about hypothemycin",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "d784848d-baa4-41a6-a0b3-3c4e628ab73a",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C33",
+      "claim": "Hypothemycin covalently inhibits a diverse subset of human kinases including MEK, ERK, PDGFR, VEGFR2, and FLT3.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothemycin (1, Figure 1A) is a polyketide natural product that covalently inhibits a diverse subset of human kinases, including MEK, ERK, PDGFR, VEGFR2, and FLT3 (Schirmer et al., 2006; Winssinger and Barluenga, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schirmer et al., 2006 and Winssinger and Barluenga, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "37a4776c-8d73-4f2c-922e-89624f60208f",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C34",
+      "claim": "Hypothemycin has antitumor activity in mouse xenograft models.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothemycin (Tanaka et al., 1999) and related compounds (Barluenga et al., 2010) have antitumor activity in mouse xenograft models, and one variant has entered clinical trials (Kumar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tanaka et al., 1999 and Barluenga et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "a9ad8b0e-f455-4761-8cbf-73eeae555fd1",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C35",
+      "claim": "One hypothemycin variant has entered clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothemycin (Tanaka et al., 1999) and related compounds (Barluenga et al., 2010) have antitumor activity in mouse xenograft models, and one variant has entered clinical trials (Kumar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kumar et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "fa0ab2ff-8bc6-46e1-a530-e61ec166e3fa",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C36",
+      "claim": "All hypothemycin-sensitive kinases have a common cysteine immediately preceding the catalytic DXG motif.",
+      "claim_type": "EXPLICIT",
+      "source": "All hypothemycin-sensitive kinases have a common cysteine immediately preceding the catalytic DXG motif (where X is usually Phe or Leu) (Schirmer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schirmer et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "3113a3bf-924e-4cb7-b3da-722fdf490408",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C37",
+      "claim": "A homologous CDXG motif is present in 48 of 518 human protein kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "A homologous CDXG motif is present in 48 of 518 human protein kinases (Leproult et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Leproult et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "b609c4c2-ab82-45b4-97d6-78f89681ef1b",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C38",
+      "claim": "CDXG kinases are functionally diverse, encompassing Tyr, Ser/Thr, and dual-specificity kinases distributed throughout the kinome phylogenetic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "CDXG kinases are functionally diverse, encompassing Tyr, Ser/Thr, and dual-specificity kinases distributed throughout the kinome phylogenetic tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about CDXG kinases",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "8a4fdfbd-b3a3-4945-a06d-fc98ac473a53",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C39",
+      "claim": "The nucleophilic thiol of hypothemycin-sensitive CDXG kinases undergoes conjugate addition to the cis-enone.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleophilic thiol of hypothemycin-sensitive CDXG kinases undergoes conjugate addition to the cis-enone, as revealed by a crystal structure of the ERK2/hypothemycin complex (Rastelli et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rastelli et al., 2008 describing crystal structure",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "3f15e9ce-1f31-4869-aabc-4a455b071e67",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C40",
+      "claim": "The CDXG motif is necessary for potent inhibition by hypothemycin.",
+      "claim_type": "EXPLICIT",
+      "source": "While the CDXG motif is necessary for potent inhibition by hypothemycin, it does not appear to be sufficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from experimental observations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "ddeb2104-4c00-4f54-8e43-e1f38ec7fe9b",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C41",
+      "claim": "The CDXG motif is not sufficient for potent inhibition by hypothemycin.",
+      "claim_type": "EXPLICIT",
+      "source": "While the CDXG motif is necessary for potent inhibition by hypothemycin, it does not appear to be sufficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from experimental observations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "9409819b-5124-49e1-ab82-44c8968a4295",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C42",
+      "claim": "One-third of human CDXG kinases were unaffected by hypothemycin variants screened at 1 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "One-third of human CDXG kinases were unaffected by hypothemycin variants screened at a concentration of 1 \u03bcM (Barluenga et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Barluenga et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "32fe7566-4f5c-4cc7-bb99-bd1edd15e0eb",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C43",
+      "claim": "The selectivity of hypothemycin toward endogenous kinases in living cells remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The selectivity of hypothemycin toward endogenous kinases in living cells remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessment of the state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "0fc22dab-5e35-4891-bc2f-e424dbba74de",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C44",
+      "claim": "Approximately ten percent of T. brucei kinases (21 of 182) have a CDXG motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to humans, approximately ten percent of T. brucei kinases (21 of 182) have a CDXG motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of the T. brucei kinome",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "689e671c-7122-4ea0-a467-149d25a9634e",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C45",
+      "claim": "Hypothemycin kills bloodstream form T. brucei with an EC50 of approximately 170 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of bloodstream form (BSF) parasites with increasing concentrations of hypothemycin for 24 hr caused a sharp reduction in cell density (EC50 \u223c 170 nM, Figure 1B), principally resulting from cell death.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "95686b1f-030f-4728-aafa-06bddd27bc35",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C46",
+      "claim": "Hypothemycin treatment of T. brucei principally results in cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of bloodstream form (BSF) parasites with increasing concentrations of hypothemycin for 24 hr caused a sharp reduction in cell density (EC50 \u223c 170 nM, Figure 1B), principally resulting from cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "af4f4ad5-e9cb-440d-a7e2-63cc86a4701a",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C47",
+      "claim": "Cells treated for 5 hr with 500 nM hypothemycin were round and swollen, with the flagellum detached from the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection revealed that cells treated for 5 hr with 500 nM hypothemycin were round and swollen, with the flagellum detached from the cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on visual inspection of treated cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "a6d7ca0d-278a-4dec-a0a1-f368daa77fe4",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C48",
+      "claim": "T. brucei cells treated with hypothemycin died within 2 hr and did not recover when transferred to drug-free media.",
+      "claim_type": "EXPLICIT",
+      "source": "They died within 2 hr and did not recover even when transferred to media lacking hypothemycin (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "0b6ff10f-14be-4003-8a47-21ea8fb00a72",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C49",
+      "claim": "Infected mice showed a dose-dependent reduction in parasitemia when treated with hypothemycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Infected mice showed a dose-dependent reduction in parasitemia (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "b08e5e3e-ea07-4d22-9c0c-089198af4915",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C50",
+      "claim": "A 10 mg/kg dose of hypothemycin administered once daily for 7 days prolonged survival of infected mice over 30 days with a cure rate of 33%.",
+      "claim_type": "EXPLICIT",
+      "source": "a 10 mg/kg dose administered once daily for 7 days prolonged survival of infected mice over 30 days, with a cure rate of 33% (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "0e0cc7c6-77d5-4730-ad33-f526899914de",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C51",
+      "claim": "At doses of 10 mg/kg or higher, signs of toxicity were evident in infected animals.",
+      "claim_type": "EXPLICIT",
+      "source": "At a dose of 10 mg/kg or higher, signs of toxicity were evident in infected animals (weight loss, lethargy), precluding more aggressive dosing regimens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations in mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "2b35d2cf-1d9f-4bf1-b91b-1a8f5d840fbc",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C52",
+      "claim": "Hypothemycin's therapeutic window is narrow, likely due to inhibition of essential mammalian CDXG kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Although hypothemycin's therapeutic window is narrow, likely due to inhibition of essential mammalian CDXG kinases (e.g., VEGFR2, MEK1/2), its potent trypanocidal activity in vitro and in vivo motivated us to search for trypanosomal hypothemycin-binding proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from experimental observations and known targets",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "8288a623-4652-45c2-a1c7-37ecc06af684",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C53",
+      "claim": "In the crystal structure of hypothemycin bound to ERK2, the C4 methyl ether is solvent exposed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crystal structure of hypothemycin bound to ERK2, the C4 methyl ether is solvent exposed (Rastelli et al., 2008), suggesting that this and other kinases would accommodate a larger group at this position (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Rastelli et al., 2008 and shown in Figure 2A",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "e15401c4-6981-4317-ad4c-54f2ad7040f7",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C54",
+      "claim": "Probe 2 (propargyl-hypothemycin) is equipotent to hypothemycin against cultured BSF T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, probe 2 was equipotent to hypothemycin against cultured BSF T. brucei (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "f6e581da-149e-4625-8cf7-4a91423fb617",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C55",
+      "claim": "Labeling of a 43 kDa protein by probe 2 was detected with 25 nM and reached maximum intensity at 500 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Labeling of a 43 kDa protein was detected with 25 nM 2, reaching maximum intensity at 500 nM (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 2D and 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "2838b283-71ae-4298-a023-c292e0e1a131",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C56",
+      "claim": "Labeled bands at 50 and 90 kDa failed to saturate and are likely nonspecific adducts.",
+      "claim_type": "EXPLICIT",
+      "source": "Labeled bands at 50 and 90 kDa were apparent at higher concentrations, but they failed to saturate (Figure 2E) and are likely nonspecific adducts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 2E and inference about specificity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "19a9c723-b11a-4f86-9de3-ffca6e945e89",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C57",
+      "claim": "Pretreating lysates with increasing concentrations of hypothemycin abolished subsequent labeling of the 43 kDa band.",
+      "claim_type": "EXPLICIT",
+      "source": "Pretreating lysates with increasing concentrations of hypothemycin abolished subsequent labeling of the 43 kDa band, demonstrating that it is a specific and saturable hypothemycin target (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "837f5e0e-07ad-439f-aafc-5bd8ba512084",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C58",
+      "claim": "The 43 kDa band is a specific and saturable hypothemycin target.",
+      "claim_type": "EXPLICIT",
+      "source": "Pretreating lysates with increasing concentrations of hypothemycin abolished subsequent labeling of the 43 kDa band, demonstrating that it is a specific and saturable hypothemycin target (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 2F demonstrating competition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "8356d11b-813a-4ab9-9efe-ee0fae243afc",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C59",
+      "claim": "TbGSK3short is the dominant protein in the 43 kDa band labeled by probe 2.",
+      "claim_type": "EXPLICIT",
+      "source": "After SDS-PAGE, analysis of the 43 kDa band by mass spectrometry identified the dominant protein (based on total peptide counts) as TbGSK3short (Tb927.10.13780), a CDXG kinase previously found to be essential in BSF T. brucei (Ojo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mass spectrometry data and citation to Ojo et al., 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "19e5bf02-dc3d-4ea7-abe5-526c60aaee7a",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C60",
+      "claim": "TbGSK3short was previously found to be essential in BSF T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "After SDS-PAGE, analysis of the 43 kDa band by mass spectrometry identified the dominant protein (based on total peptide counts) as TbGSK3short (Tb927.10.13780), a CDXG kinase previously found to be essential in BSF T. brucei (Ojo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ojo et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "673bebc0-1468-4968-b081-27e728928ec5",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C61",
+      "claim": "Peptides from three other CDXG kinases were detected in the 43 kDa gel band.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptides from three other CDXG kinases were also detected in the same gel band (Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mass spectrometry data in Supplementary file 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "3d1987d8-8996-42a5-9f2d-9ddb44a4cda4",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C62",
+      "claim": "Of 21 predicted CDXG kinases, 11 were identified by probe 2 after affinity purification from cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 21 predicted CDXG kinases, 11 were identified by probe 2 after affinity purification from cell lysates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mass spectrometry data from the chemoproteomic experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "c74eb2d4-1bdb-4f74-a016-0d25381edf2e",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C63",
+      "claim": "Every protein kinase identified by probe 2 contains the CDXG motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, every protein kinase identified by probe 2 contains the CDXG motif, accounting for over half of the 21 CDXG kinases encoded in the T. brucei genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of identified kinases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "efc3a420-9433-47e0-bbcf-d1d1258c5bb7",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C64",
+      "claim": "This represents the first unbiased identification of hypothemycin-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this represents the first unbiased identification of hypothemycin-binding proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessment of novelty relative to prior work",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "d4dc2d4c-be3e-43be-b9ca-c23564f485c4",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C65",
+      "claim": "Fragmentation spectra of peptides derived from eight kinases provided iTRAQ reporter ions of sufficient intensity to quantify kinase recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Fragmentation spectra of peptides derived from eight kinases provided iTRAQ reporter ions of sufficient intensity to quantify kinase recovery (i.e., labeling by 2) as a function of hypothemycin pretreatment (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry data shown in Figures 3B and 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "c077806b-154f-49d6-bf27-ecae51884395",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C66",
+      "claim": "Hypothemycin pretreatment did not affect recovery of non-kinase proteins like tubulin, heat shock proteins, and ribosomal proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to CDXG kinases, several other proteins (e.g., tubulin, heat shock proteins, ribosomal proteins) were identified. However, hypothemycin pretreatment did not affect their recovery (Figure 3B, Supplementary file 1A), which likely resulted from nonspecific, low-level modification by 2 and/or nonspecific adsorption to the avidin-agarose beads.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3B and Supplementary file 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "34013598-683e-4223-9869-7e246ce0de92",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C67",
+      "claim": "Recovery of TbCLK1/2 was uniquely affected by pretreatment with 20 nM hypothemycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the CDXG kinases quantified, recovery of TbCLK1/2 was uniquely affected by pretreatment with 20 nM hypothemycin (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by iTRAQ quantification data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "728c0bc0-617a-41be-a798-5e462388bc16",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C68",
+      "claim": "Recovery of TbGSK3short and TbMAPK2 was reduced more than 50% by 200 nM hypothemycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Recovery of two additional kinases, TbGSK3short (Tb927.10.13780) and TbMAPK2 (Tb927.10.16030), was reduced more than 50% by 200 nM hypothemycin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by iTRAQ quantification data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "9037c5df-a6f7-43e4-8f2d-c7c9abe3ad50",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C69",
+      "claim": "Recovery of all but one CDXG kinase was reduced by 1 \u03bcM hypothemycin.",
+      "claim_type": "EXPLICIT",
+      "source": "and recovery of all but one CDXG kinase was reduced by 1 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by iTRAQ quantification data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "a33f839d-8984-42fe-80fe-9bc07bee5f2c",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C70",
+      "claim": "TbCLK1/2 exhibits greater sensitivity to hypothemycin than TbGSK3short and TbMAPK2.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate a wide range of hypothemycin sensitivity, with TbCLK1/2 exhibiting somewhat greater sensitivity than TbGSK3short and TbMAPK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of iTRAQ quantification data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "b516b03f-3575-462c-9a26-cb7f6b6c6ef9",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C71",
+      "claim": "TbMAPK2 is not essential in BSF T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "TbMAPK2 is not essential in BSF T. brucei but is required for proliferation of the procyclic (insect host) form (Muller et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Muller et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "c645a066-3d7b-4b31-8847-897f77e579c6",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C72",
+      "claim": "TbMAPK2 is required for proliferation of the procyclic form of T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "TbMAPK2 is not essential in BSF T. brucei but is required for proliferation of the procyclic (insect host) form (Muller et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Muller et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "1947f347-0231-487e-90c4-7611e635cc1c",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C73",
+      "claim": "TbCLK1 and TbCLK2 have identical kinase domains and only diverge in their N-terminal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "TbCLK1 and TbCLK2, which have identical kinase domains and only diverge in their N-terminal regions, are presumed to be equally sensitive to hypothemycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "60956256-484c-4945-984b-7d60d86628c9",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C74",
+      "claim": "TbCLK1 and TbCLK2 are presumed to be equally sensitive to hypothemycin.",
+      "claim_type": "EXPLICIT",
+      "source": "TbCLK1 and TbCLK2, which have identical kinase domains and only diverge in their N-terminal regions, are presumed to be equally sensitive to hypothemycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from their identical kinase domains",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "62d749df-81b4-433d-a7e7-04bff679291c",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C75",
+      "claim": "Knockdown of TbGSK3short reduced cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous results (Ojo et al., 2008), we observed reduced viability after knockdown of TbGSK3short (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAi data shown in Figure 4A and citation to Ojo et al., 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "c034ff73-83d9-44aa-881f-27dbc07240ad",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C76",
+      "claim": "Knockdown of TbMAPK2, Tb927.6.1780, and Tb927.6.4220 had no effect on cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Also consistent with previous studies, knockdown of MAP kinases TbMAPK2 (Muller et al., 2002), Tb927.6.1780 (Guttinger et al., 2007), and Tb927.6.4220 (Domenicali Pfister et al., 2006) had no effect on cell viability (Figure 4B, Supplementary file 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAi data shown in Figure 4B and Supplementary file 1B, and citations to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "d2a31773-5447-4e61-a148-7a12ef926f57",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C77",
+      "claim": "Knockdown of TbCLK1 resulted in reduced proliferation and increased cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction with tetracycline resulted in reduced proliferation and increased cell death (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "d70d0840-7fb4-428b-ae08-352884d6ada6",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C78",
+      "claim": "A lethal phenotype was only observed after knockdown of TbCLK1, not TbCLK2.",
+      "claim_type": "EXPLICIT",
+      "source": "To test for nonredundant functions of TbCLK1 and TbCLK2, we designed a set of RNAi constructs targeting the unique 5\u2032-UTR of each gene. A lethal phenotype was only observed after knockdown of TbCLK1; knockdown of TbCLK2 had no obvious effect (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAi data shown in Figures 4C and 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "ee698b4f-8fe7-476f-8376-1b17ca5d8ef3",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C79",
+      "claim": "Knockdown of TbCLK2 had no obvious effect on cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "A lethal phenotype was only observed after knockdown of TbCLK1; knockdown of TbCLK2 had no obvious effect (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAi data shown in Figures 4C and 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "f7169c92-f3c7-4838-b3d2-ee41aed23703",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C80",
+      "claim": "Individual knockdown of the remaining CDXG kinases had no effect on cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual knockdown of the remaining CDXG kinases similarly had no effect on cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RNAi experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "5db36012-fe47-40b4-b19e-b8d272073dbf",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C81",
+      "claim": "Knockdown of CDXG kinase mRNAs was confirmed by quantitative PCR with 55-80% reduction across 21 mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, knockdown of the corresponding mRNA was confirmed by quantitative PCR (55\u201380% reduction across 21 mRNAs, Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data in Supplementary file 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "2555103d-d682-47e8-8221-46e50bf17bfa",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C82",
+      "claim": "TbGSK3short and TbCLK1 are the only essential CDXG kinases in BSF T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "With the caveat that insufficient knockdown may underlie the lack of a proliferation defect in certain cases, these results suggest that TbGSK3short and TbCLK1 are the only essential CDXG kinases in BSF T. brucei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from RNAi data with acknowledgment of limitations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "08a68190-350d-447a-98af-09e51a94ee9d",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C83",
+      "claim": "Hypothemycin inhibited TbCLK1 with an IC50 of 150 nM when pre-incubated for 30 min in the presence of 100 \u03bcM ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothemycin inhibited TbCLK1 with an IC50 of 150 nM when pre-incubated for 30 min in the presence of 100 \u03bcM ATP, whereas inhibition of TbGSK3short required 30-fold higher concentrations under the same conditions (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro kinase assay data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "1de2a3ad-7b62-4ef5-abf4-d0740600c183",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C84",
+      "claim": "Inhibition of TbGSK3short by hypothemycin required 30-fold higher concentrations than TbCLK1 under the same conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothemycin inhibited TbCLK1 with an IC50 of 150 nM when pre-incubated for 30 min in the presence of 100 \u03bcM ATP, whereas inhibition of TbGSK3short required 30-fold higher concentrations under the same conditions (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro kinase assay data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "9f0f06ea-61ef-4d19-9ffe-c5904b14b718",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C85",
+      "claim": "Treatment of intact cells with 500 nM hypothemycin for 5 hr resulted in death of the vast majority of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the concentration dependence of this effect (reduction of labeling) correlated with the loss of cell viability; the vast majority of cells treated for 5 hr with 500 nM hypothemycin died.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "dc177f3d-e92e-4c78-b1e8-ec42de283b57",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C86",
+      "claim": "Hypothemycin had a negligible effect on HA-tagged TbGSK3short in intact cells, even at the highest concentration tested.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to its potent effect on TbCLK1, hypothemycin had a negligible effect on HA-tagged TbGSK3short, even at the highest concentration tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cellular labeling data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "edb5ccad-0b16-4086-94f3-9a56e90d8c03",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C87",
+      "claim": "Inhibition of TbCLK1, rather than TbGSK3short, plays a more dominant role in mediating the cytotoxic effects of hypothemycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that inhibition of TbCLK1, rather than TbGSK3short, plays a more dominant role in mediating the cytotoxic effects of hypothemycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from multiple lines of experimental evidence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "d3a43bd1-d0e2-4f77-9384-2fa892707546",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C88",
+      "claim": "Hypothemycin-mediated toxicity may be caused by inactivation of MEK and VEGFR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothemycin-mediated toxicity may be caused by inactivation of MEK and VEGFR2, as previous studies have found toxic effects associated with selective inhibitors of these kinases (Rugo et al., 2005; Adjei et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from previous studies, supported by citations to Rugo et al., 2005 and Adjei et al., 2008",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "9a146ef4-3196-41cf-97e5-1ea614628a4e",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C89",
+      "claim": "Trypanosomes lack orthologs of most hypothemycin-sensitive mammalian kinases, including MEK and VEGFR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Trypanosomes lack orthologs of most hypothemycin-sensitive mammalian kinases, including MEK and VEGFR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparative genomic analysis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "dc141c59-5bac-4ac5-9266-3838b5410d33",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C90",
+      "claim": "The majority of CDXG kinases in T. brucei lack clear human orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the majority of CDXG kinases in T. brucei lack clear human orthologs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparative genomic analysis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "5dd05888-a4ed-4d81-8a6c-cceba2fe12ff",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C91",
+      "claim": "It is likely that the remaining CDXG kinases not identified by probe 2 are not efficiently labeled or are not expressed in BSF T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that the remaining CDXG kinases are not efficiently labeled by 2 or are not expressed in BSF T. brucei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "e7a0c006-7af1-4192-b8b5-a0f218268a17",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C92",
+      "claim": "TbGSK3short was previously shown to be essential for proliferation and survival of BSF T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "TbGSK3short was previously shown to be essential for proliferation and survival of BSF T. brucei (Ojo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ojo et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "3d955fcd-c4ed-4a5c-8d31-4581034abe51",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C93",
+      "claim": "High-throughput screening with recombinant TbGSK3short has provided inhibitors with high biochemical potency yet modest selectivity against human GSK3\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "High-throughput screening with recombinant TbGSK3short has provided inhibitors with high biochemical potency, yet modest selectivity when tested against human GSK3\u03b2 (Oduor et al., 2011; Urbaniak et al., 2012), consistent with the high sequence similarity shared by these kinases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Oduor et al., 2011 and Urbaniak et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "87a99f02-d7c3-4e1b-a052-d443f81c4016",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C94",
+      "claim": "It is unclear whether TbGSK3short inhibitors actually inhibit TbGSK3short in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although many of these compounds block T. brucei proliferation, it is unclear whether they actually inhibit TbGSK3short in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessment of uncertainty in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "b794d290-c762-4815-8869-3f19ca2df37e",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C95",
+      "claim": "Hypothemycin was able to saturate TbGSK3short at nanomolar concentrations in cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, hypothemycin was able to saturate TbGSK3short at nanomolar concentrations in cell lysates, yet it had little effect on this kinase in intact cells, even after prolonged treatment at cytotoxic concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data from lysate labeling experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "83a6c0fe-4093-41f6-87ff-0e632a17b1e8",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C96",
+      "claim": "Hypothemycin had little effect on TbGSK3short in intact cells, even after prolonged treatment at cytotoxic concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, hypothemycin was able to saturate TbGSK3short at nanomolar concentrations in cell lysates, yet it had little effect on this kinase in intact cells, even after prolonged treatment at cytotoxic concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data from cellular labeling experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "e7e0cc8e-5d23-4c0d-b32e-1e1247d5c972",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C97",
+      "claim": "It is unlikely that hypothemycin kills T. brucei by inhibiting TbGSK3short.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, despite TbGSK3short being the most prominent protein labeled by 2 in lysates, it is unlikely that hypothemycin kills T. brucei by inhibiting TbGSK3short.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from experimental data showing lack of engagement in intact cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "49e35d09-b214-4646-93a7-60ec5ee3deee",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C98",
+      "claim": "TbCLK1 silencing by RNAi is sufficient to kill T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the demonstration that TbCLK1 silencing by RNAi is sufficient to kill T. brucei, these results validate TbCLK1 as a druggable target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RNAi experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "ab4add88-125f-4e57-b44c-592321d45533",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C99",
+      "claim": "TbCLK1 is validated as a druggable target.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the demonstration that TbCLK1 silencing by RNAi is sufficient to kill T. brucei, these results validate TbCLK1 as a druggable target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from RNAi data and target engagement data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "d3e748dc-521c-442a-866c-f9a00118aa3e",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C100",
+      "claim": "T. brucei and other kinetoplastids are the only organisms in which a CLK ortholog bears a CDXG motif.",
+      "claim_type": "EXPLICIT",
+      "source": "T. brucei and other kinetoplastids, including the human pathogens T. cruzi and Leishmania species, are the only organisms in which a CLK ortholog bears a CDXG motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparative genomic analysis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "3a875bc0-cbc2-4e51-a7e2-2cfc8f6396ee",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C101",
+      "claim": "The kinase domains of TbCLK1 and human CLK1-4 share only 30% sequence identity.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinase domains of TbCLK1 and human CLK1-4 share only 30% sequence identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "329a4e2e-7ddc-4099-b80a-199444d6974d",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C102",
+      "claim": "T. brucei and human GSK3 share 52% sequence identity, including the CDXG motif.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, T. brucei and human GSK3 share 52% sequence identity, including the CDXG motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "057d8543-45c1-4e55-b1eb-2a650da3af49",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C103",
+      "claim": "Obtaining inhibitors that discriminate between T. brucei and human CLK may be more straightforward compared to GSK3.",
+      "claim_type": "EXPLICIT",
+      "source": "Obtaining inhibitors that discriminate between T. brucei and human CLK may therefore be more straightforward as compared to GSK3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from sequence identity differences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "381eb05e-e403-415f-8a96-a879bcc230d9",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C104",
+      "claim": "CLKs regulate pre-mRNA splicing in fission yeast, flies, and human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CLKs have been shown to regulate pre-mRNA splicing in fission yeast (Tang et al., 2011), flies (Du et al., 1998), and human cells (Muraki et al., 2004; Karlas et al., 2010; Fedorov et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "ec3173ab-d07b-4e31-802b-fba225913e40",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C105",
+      "claim": "Recent studies have revealed important splicing-independent roles for CLKs.",
+      "claim_type": "EXPLICIT",
+      "source": "and recent studies have revealed important splicing-independent roles (Rodgers et al., 2010, 2011; Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rodgers et al., 2010, 2011 and Lee et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "ef425382-57fb-45db-9c0f-398940d369b1",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C106",
+      "claim": "TbCLK1 was not among the 57 kinases identified in T. brucei cell lysates using Kinobeads.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that TbCLK1 was not among the 57 kinases identified in T. brucei cell lysates using broad-spectrum kinase inhibitors immobilized on 'Kinobeads' (Urbaniak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Urbaniak et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "cd70abf0-daf8-4a0d-aec6-848bf9e55f75",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C107",
+      "claim": "Kinobeads have the advantage of profiling a larger swath of the kinome.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Kinobeads and other powerful chemoproteomic platforms (Patricelli et al., 2011) have the advantage of profiling a larger swath of the kinome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessment of the capabilities of different chemoproteomic platforms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "367f512d-6e88-4399-8229-f66f3a3783f7",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C108",
+      "claim": "A potential disadvantage of Kinobeads is that the probes only work in cell lysates and cannot be used to quantify kinase occupancy in intact parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "a potential disadvantage is that the probes only work in cell lysates and cannot be used to quantify kinase occupancy in intact parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessment of limitations of different chemoproteomic platforms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "ba4c5ade-2e14-438f-a708-bd1ec39d959d",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C109",
+      "claim": "Probe 2 can be used to explore the related CDXG kinomes of T. cruzi and Leishmania.",
+      "claim_type": "EXPLICIT",
+      "source": "More broadly, probe 2 and the chemoproteomic methodology described herein can be used to explore the related CDXG kinomes of T. cruzi and Leishmania, as well as uncharted kinomes in other disease-causing eukaryotes, all of which express diverse CDXG kinases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential future applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "4c015e82-3a7b-42a8-8aa0-1c56fb2bf15d",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C110",
+      "claim": "Many human CDXG kinases are validated or potential drug targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, many human CDXG kinases are validated or potential drug targets (e.g., MEK, ERK, VEGFR2, c-KIT, FLT3, PDGFR, TAK1, MNK)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about human kinase drug targets",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "1986a6fe-b5bf-444a-b85a-03fedaaf3d9a",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C111",
+      "claim": "Probe 2 may prove valuable in quantifying intracellular engagement of human CDXG kinases by candidate inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "and probe 2 may prove valuable in quantifying their intracellular engagement by candidate inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential future applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "0d783391-58a9-4309-b384-44f48d0bbd47",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C112",
+      "claim": "TbCLK1 migrated as two major species which collapsed to a single band upon treatment with hypothemycin.",
+      "claim_type": "EXPLICIT",
+      "source": "In control cells, TbCLK1 migrated as two major species (likely corresponding to differentially phosphorylated forms, our unpublished results), which collapsed to a single band upon treatment with hypothemycin (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "2a9e4a73-fd65-4c79-a0ed-4120d6873b9b",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C113",
+      "claim": "The two major TbCLK1 species likely correspond to differentially phosphorylated forms.",
+      "claim_type": "EXPLICIT",
+      "source": "In control cells, TbCLK1 migrated as two major species (likely corresponding to differentially phosphorylated forms, our unpublished results)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from unpublished results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "d45b3887-a9f6-42af-9341-6f7345e7abdd",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C114",
+      "claim": "Probe 2 labeled both TbCLK1 bands in DMSO-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Probe 2 labeled both TbCLK1 bands in the DMSO-treated cells, but labeling was sharply reduced in cells pretreated with hypothemycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Western blot data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "49f9c5e1-8c4c-42ec-ad1d-c4f637b8af2f",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C115",
+      "claim": "Labeling of TbCLK1 by probe 2 was sharply reduced in cells pretreated with hypothemycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Probe 2 labeled both TbCLK1 bands in the DMSO-treated cells, but labeling was sharply reduced in cells pretreated with hypothemycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Western blot data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "8a6a1e5e-6766-4fc0-9806-44859026ba3c",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "claim_id": "C116",
+      "claim": "The concentration dependence of reduced TbCLK1 labeling correlated with the loss of cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the concentration dependence of this effect (reduction of labeling) correlated with the loss of cell viability",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of labeling data and cell viability data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "36d27af6-28b1-49d4-a449-9e3fa52d75af",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on African trypanosomiasis, its causative agent, disease progression, immune evasion mechanisms, and the limited therapeutic options available, establishing the need for new drug targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 are well-supported by appropriate citations to prior literature and represent established knowledge in the field. These background claims provide context for the study but do not constitute novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript establishes that protein kinases are potential therapeutic targets in T. brucei, noting that the parasite has 182 kinases that remain poorly characterized, and that quantifying intracellular kinase engagement by inhibitors is an unsolved problem.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C31 are supported by appropriate citations and represent accurate assessments of the state of knowledge in the field. These claims establish the rationale for the study but are primarily literature-based rather than novel experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript describes hypothemycin as a polyketide natural product that covalently inhibits human CDXG kinases, noting that approximately 10% of T. brucei kinases (21 of 182) contain the CDXG motif, but the selectivity of hypothemycin in living cells remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C44 are well-supported by citations and genomic analysis. The identification of CDXG kinases in T. brucei (C44) is based on appropriate bioinformatic analysis. These claims establish the rationale for using hypothemycin as a tool compound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "01bdd76e-87ae-4775-a334-0385d0eea027",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Hypothemycin kills bloodstream form T. brucei in culture with an EC50 of ~170 nM and shows efficacy in infected mice, with a 10 mg/kg dose achieving 33% cure rate, though the therapeutic window is narrow due to toxicity at higher doses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C52 are supported by experimental data shown in Figures 1B-D. The in vitro potency (C45), cell death phenotype (C46-C48), and in vivo efficacy (C49-C50) are clearly demonstrated. The toxicity observations (C51) and narrow therapeutic window (C52) are appropriately noted with mechanistic speculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "0329512a-82cd-4afa-aec6-f4f8e1c2179c",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors designed probe 2 (propargyl-hypothemycin) based on the crystal structure showing the C4 methyl ether is solvent exposed. Probe 2 is equipotent to hypothemycin and specifically labels a 43 kDa protein in T. brucei lysates with saturation at 500 nM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 are well-supported by structural rationale (C53, Figure 2A), equipotency data (C54, Figure 2C), and labeling experiments (C55-C58, Figures 2D-F). The competition experiment (C57-C58) demonstrates specificity. The probe design and validation are rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "c8002c85-09f1-40e8-af3f-527cf47225d4",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mass spectrometry identified TbGSK3short as the dominant protein in the 43 kDa band labeled by probe 2, along with three other CDXG kinases. In total, 11 of 21 predicted CDXG kinases were identified by probe 2 after affinity purification, representing the first unbiased identification of hypothemycin-binding proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 are supported by mass spectrometry data (Supplementary file 1A). The identification of TbGSK3short (C59-C60) and other CDXG kinases (C61-C63) is based on appropriate proteomic methods. The novelty claim (C64) appears reasonable given the literature context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "1af5266d-0964-48ec-b9e3-432184de0f36",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Quantitative iTRAQ mass spectrometry revealed differential sensitivity of CDXG kinases to hypothemycin, with TbCLK1/2 showing the greatest sensitivity (affected by 20 nM), followed by TbGSK3short and TbMAPK2 (>50% reduction at 200 nM), while most kinases required micromolar concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 are supported by iTRAQ quantification data shown in Figure 3. The methodology is appropriate for quantifying relative binding affinities. The differential sensitivity across kinases (C67-C70) is clearly demonstrated, though the authors appropriately note this is in lysates, not intact cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "855c052e-fcab-440e-bfea-e78e3a218e72",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RNAi screening of all 21 CDXG kinases revealed that only TbGSK3short and TbCLK1 are essential for BSF T. brucei viability. TbCLK1 and TbCLK2 have identical kinase domains but only TbCLK1 knockdown is lethal. mRNA knockdown was confirmed by qPCR (55-80% reduction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C82 are supported by RNAi data (Figure 4, Supplementary file 1B) and qPCR validation (C81). The differential essentiality of TbCLK1 vs TbCLK2 (C78-C79) is clearly demonstrated. The authors appropriately caveat that incomplete knockdown may explain lack of phenotypes for other kinases (C82).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "ae61d84c-1e8d-41ca-91f5-b6e570ecd3d7",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In vitro kinase assays showed hypothemycin inhibits TbCLK1 with IC50 of 150 nM, 30-fold more potently than TbGSK3short. In intact cells, hypothemycin fully engages TbCLK1 at cytotoxic concentrations but has negligible effect on TbGSK3short, suggesting TbCLK1 inhibition mediates cytotoxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 are supported by in vitro kinase assays (C83-C84, Figure 5A) and cellular labeling experiments (C85-C86, Figure 5B). The correlation between TbCLK1 engagement and cell death (C85, C116) supports the conclusion that TbCLK1 is the primary target (C87). This is a key finding distinguishing lysate vs. cellular target engagement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "4a87c2b8-cef3-46ae-8ad3-cb927edb39d7",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript discusses that hypothemycin's mammalian toxicity likely results from inhibiting MEK/VEGFR2, which trypanosomes lack. Despite TbGSK3short being essential and saturated by hypothemycin in lysates, it is not engaged in intact cells at cytotoxic concentrations, making it unlikely to be the lethal target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C97 integrate experimental observations with mechanistic interpretation. The lack of TbGSK3short engagement in cells (C95-C96, Figure 5B) despite lysate saturation is clearly demonstrated. The conclusion that TbGSK3short is not the lethal target (C97) is well-supported, though this highlights a limitation of lysate-based target identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "fd91caba-a2ea-41ca-9db9-0454cdf3b3cd",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TbCLK1 is validated as a druggable target based on RNAi lethality and cellular engagement by hypothemycin. T. brucei and other kinetoplastids are the only organisms with a CDXG-containing CLK ortholog. TbCLK1 shares only 30% sequence identity with human CLK1-4, compared to 52% identity between T. brucei and human GSK3, suggesting selective inhibition may be more achievable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C103 are supported by the combination of RNAi data (C98, Figure 4C) and target engagement data (Figure 5B). The comparative genomic analysis (C100-C102) is appropriate. The inference about selectivity (C103) is reasonable based on sequence divergence, though this remains to be experimentally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "41fbd21c-bfce-4c29-859d-1d1fef8fa3a5",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript discusses the broader context of CLK function in other organisms, notes that TbCLK1 was not identified by Kinobeads, and speculates about future applications of probe 2 for studying CDXG kinomes in other parasites and quantifying engagement of human CDXG kinases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C108 are appropriately cited and provide context. Claims C109 and C111 are speculative about future applications, which is appropriate for a Discussion section. The comparison to Kinobeads (C106-C108) highlights the complementary advantages of the probe 2 approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    },
+    {
+      "id": "cfca93ab-d7d6-4e78-92b5-dcb3b745e717",
+      "content_id": "f6feffbe-8db0-4824-af32-a6ab122378d7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TbCLK1 migrates as two species (likely differentially phosphorylated forms) that collapse to one band upon hypothemycin treatment. Probe 2 labels both TbCLK1 bands in control cells, but labeling is sharply reduced by hypothemycin pretreatment in a concentration-dependent manner that correlates with loss of cell viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C116 are supported by Western blot data in Figure 5B. The observation of two TbCLK1 species (C112) and their collapse upon treatment is clearly shown. The correlation between reduced labeling and cell death (C116) strengthens the conclusion that TbCLK1 is the critical target. The phosphorylation interpretation (C113) is speculative but reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:09:10.391543Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "94472a2a-8dfc-4dd9-bbec-5d7710e04365",
+      "result_id": "36d27af6-28b1-49d4-a449-9e3fa52d75af"
+    },
+    {
+      "claim_id": "c0839bb7-4c0e-456f-acf3-1e84dcc74a5c",
+      "result_id": "36d27af6-28b1-49d4-a449-9e3fa52d75af"
+    },
+    {
+      "claim_id": "0b6a238a-3a0c-4d9c-8fa7-5ed5c91d09df",
+      "result_id": "36d27af6-28b1-49d4-a449-9e3fa52d75af"
+    },
+    {
+      "claim_id": "0957569e-501e-4847-9a2c-dcbd9522648c",
+      "result_id": "36d27af6-28b1-49d4-a449-9e3fa52d75af"
+    },
+    {
+      "claim_id": "81ff3625-1a3a-41f9-9aad-d9e9ab41bfc3",
+      "result_id": "36d27af6-28b1-49d4-a449-9e3fa52d75af"
+    },
+    {
+      "claim_id": "a12083a0-c57f-40eb-88f7-7c87ae33009f",
+      "result_id": "36d27af6-28b1-49d4-a449-9e3fa52d75af"
+    },
+    {
+      "claim_id": "7e8b6242-aada-4cb1-a539-674d37eb5f20",
+      "result_id": "36d27af6-28b1-49d4-a449-9e3fa52d75af"
+    },
+    {
+      "claim_id": "cfac255e-eeff-4b59-8a9a-74a6fa951b56",
+      "result_id": "36d27af6-28b1-49d4-a449-9e3fa52d75af"
+    },
+    {
+      "claim_id": "2b85903d-3adf-4f7e-8b55-76dd1fb4f77e",
+      "result_id": "36d27af6-28b1-49d4-a449-9e3fa52d75af"
+    },
+    {
+      "claim_id": "4ec60fec-1bee-499e-8235-a851c25154fa",
+      "result_id": "36d27af6-28b1-49d4-a449-9e3fa52d75af"
+    },
+    {
+      "claim_id": "75cacce4-e802-4152-9aef-a9244f9815f3",
+      "result_id": "36d27af6-28b1-49d4-a449-9e3fa52d75af"
+    },
+    {
+      "claim_id": "d98db635-760e-4cab-9e01-b430f304219b",
+      "result_id": "36d27af6-28b1-49d4-a449-9e3fa52d75af"
+    },
+    {
+      "claim_id": "9affe353-fa71-4419-9274-c8dc9d6d694b",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "a4c23e3c-8557-4f4a-aa95-55eac30d9939",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "343a2a6b-1563-4361-ae1d-52e373513df9",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "e840f636-6804-45f6-abc4-29467256d2d0",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "4ea22d8b-4919-48ea-b2cc-9f5c3236b119",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "4fd69121-88be-4692-9b5d-f525fc45e2ce",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "2fda78e2-ee3c-482a-963c-87794e7d6001",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "2caa3c1f-c38d-4049-bfa6-3d626193b280",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "88bc31b6-5ec1-4bc6-95d9-019f90ebd14a",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "da3093e6-e4f3-4076-97ff-2f8fd424cfb5",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "6e1b3138-640b-4b73-aaa7-8fb2c22c61b1",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "9739cbfa-d578-4f6b-8cd3-0178136af085",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "34ba0b7c-8ab4-48b3-ad48-e807b15fd70c",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "f0b9fc6b-29c1-447f-81cb-855d3ed6de45",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "a21c3176-fc97-4d7a-aac2-5a7553c3c8e5",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "b5995164-43fb-43f3-85ff-a4dca97fe38b",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "89ecb8a4-f3ce-43de-9bc4-092c627e05f2",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "ad2ad691-341f-4af9-afac-92d2049ddd74",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "703ba92f-96eb-4e2a-86fc-f5d0d1916058",
+      "result_id": "44a3b80e-230d-4b4c-a6c4-8c3d3e817fae"
+    },
+    {
+      "claim_id": "b7590fdc-657b-4c72-9efc-1db76fb858cb",
+      "result_id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03"
+    },
+    {
+      "claim_id": "d784848d-baa4-41a6-a0b3-3c4e628ab73a",
+      "result_id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03"
+    },
+    {
+      "claim_id": "37a4776c-8d73-4f2c-922e-89624f60208f",
+      "result_id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03"
+    },
+    {
+      "claim_id": "a9ad8b0e-f455-4761-8cbf-73eeae555fd1",
+      "result_id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03"
+    },
+    {
+      "claim_id": "fa0ab2ff-8bc6-46e1-a530-e61ec166e3fa",
+      "result_id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03"
+    },
+    {
+      "claim_id": "3113a3bf-924e-4cb7-b3da-722fdf490408",
+      "result_id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03"
+    },
+    {
+      "claim_id": "b609c4c2-ab82-45b4-97d6-78f89681ef1b",
+      "result_id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03"
+    },
+    {
+      "claim_id": "8a4fdfbd-b3a3-4945-a06d-fc98ac473a53",
+      "result_id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03"
+    },
+    {
+      "claim_id": "3f15e9ce-1f31-4869-aabc-4a455b071e67",
+      "result_id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03"
+    },
+    {
+      "claim_id": "ddeb2104-4c00-4f54-8e43-e1f38ec7fe9b",
+      "result_id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03"
+    },
+    {
+      "claim_id": "9409819b-5124-49e1-ab82-44c8968a4295",
+      "result_id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03"
+    },
+    {
+      "claim_id": "32fe7566-4f5c-4cc7-bb99-bd1edd15e0eb",
+      "result_id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03"
+    },
+    {
+      "claim_id": "0fc22dab-5e35-4891-bc2f-e424dbba74de",
+      "result_id": "0d5bf801-f8b6-41c3-ae72-a4a02d674e03"
+    },
+    {
+      "claim_id": "689e671c-7122-4ea0-a467-149d25a9634e",
+      "result_id": "01bdd76e-87ae-4775-a334-0385d0eea027"
+    },
+    {
+      "claim_id": "95686b1f-030f-4728-aafa-06bddd27bc35",
+      "result_id": "01bdd76e-87ae-4775-a334-0385d0eea027"
+    },
+    {
+      "claim_id": "af4f4ad5-e9cb-440d-a7e2-63cc86a4701a",
+      "result_id": "01bdd76e-87ae-4775-a334-0385d0eea027"
+    },
+    {
+      "claim_id": "a6d7ca0d-278a-4dec-a0a1-f368daa77fe4",
+      "result_id": "01bdd76e-87ae-4775-a334-0385d0eea027"
+    },
+    {
+      "claim_id": "0b6ff10f-14be-4003-8a47-21ea8fb00a72",
+      "result_id": "01bdd76e-87ae-4775-a334-0385d0eea027"
+    },
+    {
+      "claim_id": "b08e5e3e-ea07-4d22-9c0c-089198af4915",
+      "result_id": "01bdd76e-87ae-4775-a334-0385d0eea027"
+    },
+    {
+      "claim_id": "0e0cc7c6-77d5-4730-ad33-f526899914de",
+      "result_id": "01bdd76e-87ae-4775-a334-0385d0eea027"
+    },
+    {
+      "claim_id": "2b35d2cf-1d9f-4bf1-b91b-1a8f5d840fbc",
+      "result_id": "01bdd76e-87ae-4775-a334-0385d0eea027"
+    },
+    {
+      "claim_id": "8288a623-4652-45c2-a1c7-37ecc06af684",
+      "result_id": "0329512a-82cd-4afa-aec6-f4f8e1c2179c"
+    },
+    {
+      "claim_id": "e15401c4-6981-4317-ad4c-54f2ad7040f7",
+      "result_id": "0329512a-82cd-4afa-aec6-f4f8e1c2179c"
+    },
+    {
+      "claim_id": "f6e581da-149e-4625-8cf7-4a91423fb617",
+      "result_id": "0329512a-82cd-4afa-aec6-f4f8e1c2179c"
+    },
+    {
+      "claim_id": "2838b283-71ae-4298-a023-c292e0e1a131",
+      "result_id": "0329512a-82cd-4afa-aec6-f4f8e1c2179c"
+    },
+    {
+      "claim_id": "19a9c723-b11a-4f86-9de3-ffca6e945e89",
+      "result_id": "0329512a-82cd-4afa-aec6-f4f8e1c2179c"
+    },
+    {
+      "claim_id": "837f5e0e-07ad-439f-aafc-5bd8ba512084",
+      "result_id": "0329512a-82cd-4afa-aec6-f4f8e1c2179c"
+    },
+    {
+      "claim_id": "8356d11b-813a-4ab9-9efe-ee0fae243afc",
+      "result_id": "c8002c85-09f1-40e8-af3f-527cf47225d4"
+    },
+    {
+      "claim_id": "19e5bf02-dc3d-4ea7-abe5-526c60aaee7a",
+      "result_id": "c8002c85-09f1-40e8-af3f-527cf47225d4"
+    },
+    {
+      "claim_id": "673bebc0-1468-4968-b081-27e728928ec5",
+      "result_id": "c8002c85-09f1-40e8-af3f-527cf47225d4"
+    },
+    {
+      "claim_id": "3d1987d8-8996-42a5-9f2d-9ddb44a4cda4",
+      "result_id": "c8002c85-09f1-40e8-af3f-527cf47225d4"
+    },
+    {
+      "claim_id": "c74eb2d4-1bdb-4f74-a016-0d25381edf2e",
+      "result_id": "c8002c85-09f1-40e8-af3f-527cf47225d4"
+    },
+    {
+      "claim_id": "efc3a420-9433-47e0-bbcf-d1d1258c5bb7",
+      "result_id": "c8002c85-09f1-40e8-af3f-527cf47225d4"
+    },
+    {
+      "claim_id": "d4dc2d4c-be3e-43be-b9ca-c23564f485c4",
+      "result_id": "1af5266d-0964-48ec-b9e3-432184de0f36"
+    },
+    {
+      "claim_id": "c077806b-154f-49d6-bf27-ecae51884395",
+      "result_id": "1af5266d-0964-48ec-b9e3-432184de0f36"
+    },
+    {
+      "claim_id": "34013598-683e-4223-9869-7e246ce0de92",
+      "result_id": "1af5266d-0964-48ec-b9e3-432184de0f36"
+    },
+    {
+      "claim_id": "728c0bc0-617a-41be-a798-5e462388bc16",
+      "result_id": "1af5266d-0964-48ec-b9e3-432184de0f36"
+    },
+    {
+      "claim_id": "9037c5df-a6f7-43e4-8f2d-c7c9abe3ad50",
+      "result_id": "1af5266d-0964-48ec-b9e3-432184de0f36"
+    },
+    {
+      "claim_id": "a33f839d-8984-42fe-80fe-9bc07bee5f2c",
+      "result_id": "1af5266d-0964-48ec-b9e3-432184de0f36"
+    },
+    {
+      "claim_id": "b516b03f-3575-462c-9a26-cb7f6b6c6ef9",
+      "result_id": "855c052e-fcab-440e-bfea-e78e3a218e72"
+    },
+    {
+      "claim_id": "c645a066-3d7b-4b31-8847-897f77e579c6",
+      "result_id": "855c052e-fcab-440e-bfea-e78e3a218e72"
+    },
+    {
+      "claim_id": "1947f347-0231-487e-90c4-7611e635cc1c",
+      "result_id": "855c052e-fcab-440e-bfea-e78e3a218e72"
+    },
+    {
+      "claim_id": "60956256-484c-4945-984b-7d60d86628c9",
+      "result_id": "855c052e-fcab-440e-bfea-e78e3a218e72"
+    },
+    {
+      "claim_id": "62d749df-81b4-433d-a7e7-04bff679291c",
+      "result_id": "855c052e-fcab-440e-bfea-e78e3a218e72"
+    },
+    {
+      "claim_id": "c034ff73-83d9-44aa-881f-27dbc07240ad",
+      "result_id": "855c052e-fcab-440e-bfea-e78e3a218e72"
+    },
+    {
+      "claim_id": "d2a31773-5447-4e61-a148-7a12ef926f57",
+      "result_id": "855c052e-fcab-440e-bfea-e78e3a218e72"
+    },
+    {
+      "claim_id": "d70d0840-7fb4-428b-ae08-352884d6ada6",
+      "result_id": "855c052e-fcab-440e-bfea-e78e3a218e72"
+    },
+    {
+      "claim_id": "ee698b4f-8fe7-476f-8376-1b17ca5d8ef3",
+      "result_id": "855c052e-fcab-440e-bfea-e78e3a218e72"
+    },
+    {
+      "claim_id": "f7169c92-f3c7-4838-b3d2-ee41aed23703",
+      "result_id": "855c052e-fcab-440e-bfea-e78e3a218e72"
+    },
+    {
+      "claim_id": "5db36012-fe47-40b4-b19e-b8d272073dbf",
+      "result_id": "855c052e-fcab-440e-bfea-e78e3a218e72"
+    },
+    {
+      "claim_id": "2555103d-d682-47e8-8221-46e50bf17bfa",
+      "result_id": "855c052e-fcab-440e-bfea-e78e3a218e72"
+    },
+    {
+      "claim_id": "08a68190-350d-447a-98af-09e51a94ee9d",
+      "result_id": "ae61d84c-1e8d-41ca-91f5-b6e570ecd3d7"
+    },
+    {
+      "claim_id": "1de2a3ad-7b62-4ef5-abf4-d0740600c183",
+      "result_id": "ae61d84c-1e8d-41ca-91f5-b6e570ecd3d7"
+    },
+    {
+      "claim_id": "9f0f06ea-61ef-4d19-9ffe-c5904b14b718",
+      "result_id": "ae61d84c-1e8d-41ca-91f5-b6e570ecd3d7"
+    },
+    {
+      "claim_id": "dc177f3d-e92e-4c78-b1e8-ec42de283b57",
+      "result_id": "ae61d84c-1e8d-41ca-91f5-b6e570ecd3d7"
+    },
+    {
+      "claim_id": "edb5ccad-0b16-4086-94f3-9a56e90d8c03",
+      "result_id": "ae61d84c-1e8d-41ca-91f5-b6e570ecd3d7"
+    },
+    {
+      "claim_id": "d3a43bd1-d0e2-4f77-9384-2fa892707546",
+      "result_id": "4a87c2b8-cef3-46ae-8ad3-cb927edb39d7"
+    },
+    {
+      "claim_id": "9a146ef4-3196-41cf-97e5-1ea614628a4e",
+      "result_id": "4a87c2b8-cef3-46ae-8ad3-cb927edb39d7"
+    },
+    {
+      "claim_id": "dc141c59-5bac-4ac5-9266-3838b5410d33",
+      "result_id": "4a87c2b8-cef3-46ae-8ad3-cb927edb39d7"
+    },
+    {
+      "claim_id": "5dd05888-a4ed-4d81-8a6c-cceba2fe12ff",
+      "result_id": "4a87c2b8-cef3-46ae-8ad3-cb927edb39d7"
+    },
+    {
+      "claim_id": "e7a0c006-7af1-4192-b8b5-a0f218268a17",
+      "result_id": "4a87c2b8-cef3-46ae-8ad3-cb927edb39d7"
+    },
+    {
+      "claim_id": "3d955fcd-c4ed-4a5c-8d31-4581034abe51",
+      "result_id": "4a87c2b8-cef3-46ae-8ad3-cb927edb39d7"
+    },
+    {
+      "claim_id": "87a99f02-d7c3-4e1b-a052-d443f81c4016",
+      "result_id": "4a87c2b8-cef3-46ae-8ad3-cb927edb39d7"
+    },
+    {
+      "claim_id": "b794d290-c762-4815-8869-3f19ca2df37e",
+      "result_id": "4a87c2b8-cef3-46ae-8ad3-cb927edb39d7"
+    },
+    {
+      "claim_id": "83a6c0fe-4093-41f6-87ff-0e632a17b1e8",
+      "result_id": "4a87c2b8-cef3-46ae-8ad3-cb927edb39d7"
+    },
+    {
+      "claim_id": "e7e0cc8e-5d23-4c0d-b32e-1e1247d5c972",
+      "result_id": "4a87c2b8-cef3-46ae-8ad3-cb927edb39d7"
+    },
+    {
+      "claim_id": "49e35d09-b214-4646-93a7-60ec5ee3deee",
+      "result_id": "fd91caba-a2ea-41ca-9db9-0454cdf3b3cd"
+    },
+    {
+      "claim_id": "ab4add88-125f-4e57-b44c-592321d45533",
+      "result_id": "fd91caba-a2ea-41ca-9db9-0454cdf3b3cd"
+    },
+    {
+      "claim_id": "d3e748dc-521c-442a-866c-f9a00118aa3e",
+      "result_id": "fd91caba-a2ea-41ca-9db9-0454cdf3b3cd"
+    },
+    {
+      "claim_id": "3a875bc0-cbc2-4e51-a7e2-2cfc8f6396ee",
+      "result_id": "fd91caba-a2ea-41ca-9db9-0454cdf3b3cd"
+    },
+    {
+      "claim_id": "329a4e2e-7ddc-4099-b80a-199444d6974d",
+      "result_id": "fd91caba-a2ea-41ca-9db9-0454cdf3b3cd"
+    },
+    {
+      "claim_id": "057d8543-45c1-4e55-b1eb-2a650da3af49",
+      "result_id": "fd91caba-a2ea-41ca-9db9-0454cdf3b3cd"
+    },
+    {
+      "claim_id": "381eb05e-e403-415f-8a96-a879bcc230d9",
+      "result_id": "41fbd21c-bfce-4c29-859d-1d1fef8fa3a5"
+    },
+    {
+      "claim_id": "ec3173ab-d07b-4e31-802b-fba225913e40",
+      "result_id": "41fbd21c-bfce-4c29-859d-1d1fef8fa3a5"
+    },
+    {
+      "claim_id": "ef425382-57fb-45db-9c0f-398940d369b1",
+      "result_id": "41fbd21c-bfce-4c29-859d-1d1fef8fa3a5"
+    },
+    {
+      "claim_id": "cd70abf0-daf8-4a0d-aec6-848bf9e55f75",
+      "result_id": "41fbd21c-bfce-4c29-859d-1d1fef8fa3a5"
+    },
+    {
+      "claim_id": "367f512d-6e88-4399-8229-f66f3a3783f7",
+      "result_id": "41fbd21c-bfce-4c29-859d-1d1fef8fa3a5"
+    },
+    {
+      "claim_id": "ba4c5ade-2e14-438f-a708-bd1ec39d959d",
+      "result_id": "41fbd21c-bfce-4c29-859d-1d1fef8fa3a5"
+    },
+    {
+      "claim_id": "4c015e82-3a7b-42a8-8aa0-1c56fb2bf15d",
+      "result_id": "41fbd21c-bfce-4c29-859d-1d1fef8fa3a5"
+    },
+    {
+      "claim_id": "1986a6fe-b5bf-444a-b85a-03fedaaf3d9a",
+      "result_id": "41fbd21c-bfce-4c29-859d-1d1fef8fa3a5"
+    },
+    {
+      "claim_id": "0d783391-58a9-4309-b384-44f48d0bbd47",
+      "result_id": "cfca93ab-d7d6-4e78-92b5-dcb3b745e717"
+    },
+    {
+      "claim_id": "2a9e4a73-fd65-4c79-a0ed-4120d6873b9b",
+      "result_id": "cfca93ab-d7d6-4e78-92b5-dcb3b745e717"
+    },
+    {
+      "claim_id": "d45b3887-a9f6-42af-9341-6f7345e7abdd",
+      "result_id": "cfca93ab-d7d6-4e78-92b5-dcb3b745e717"
+    },
+    {
+      "claim_id": "49f9c5e1-8c4c-42ec-ad1d-c4f637b8af2f",
+      "result_id": "cfca93ab-d7d6-4e78-92b5-dcb3b745e717"
+    },
+    {
+      "claim_id": "8a6a1e5e-6766-4fc0-9806-44859026ba3c",
+      "result_id": "cfca93ab-d7d6-4e78-92b5-dcb3b745e717"
+    }
+  ],
+  "comparisons": []
+}

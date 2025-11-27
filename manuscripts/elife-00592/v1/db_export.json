@@ -1,0 +1,2028 @@
+{
+  "submission": {
+    "id": "721cd439-cb02-416e-903c-8b41fc8e136a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T05:58:30.590649Z",
+    "updated_at": "2025-11-27T05:58:30.590649Z"
+  },
+  "content": [
+    {
+      "id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "submission_id": "721cd439-cb02-416e-903c-8b41fc8e136a",
+      "content_type": "manuscript",
+      "content_text": "# Native \u03b1-synuclein induces clustering of synaptic-vesicle mimics via binding to phospholipids and synaptobrevin-2/VAMP2\n\n## Authors\n\n- Jiajie Diao<sup>1</sup>\n- Jacqueline Burr\u00e9<sup>1</sup>\n- Sandro Vivona<sup>1</sup>\n- Daniel J Cipriano<sup>1</sup>\n- Manu Sharma<sup>1</sup>\n- Minjoung Kyoung<sup>1</sup>\n- Thomas C S\u00fcdhof<sup>1</sup> \u2020\n- Axel T Brunger<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Physiology Stanford University Stanford United States\n2. Department of Structural Biology Stanford University Stanford United States\n3. Departments of Photon Sciences, and Neurology and Neurological Sciences Stanford University Stanford United States\n4. Howard Hughes Medical Institute, Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\n\u03b1-Synuclein is a presynaptic protein that is implicated in Parkinson's and other neurodegenerative diseases. Physiologically, native \u03b1-synuclein promotes presynaptic SNARE-complex assembly, but its molecular mechanism of action remains unknown. Here, we found that native \u03b1-synuclein promotes clustering of synaptic-vesicle mimics, using a single-vesicle optical microscopy system. This vesicle-clustering activity was observed for both recombinant and native \u03b1-synuclein purified from mouse brain. Clustering was dependent on specific interactions of native \u03b1-synuclein with both synaptobrevin-2/VAMP2 and anionic lipids. Out of the three familial Parkinson's disease-related point mutants of \u03b1-synuclein, only the lipid-binding deficient mutation A30P disrupted clustering, hinting at a possible loss of function phenotype for this mutant. \u03b1-Synuclein had little effect on Ca2+-triggered fusion in our reconstituted single-vesicle system, consistent with in vivo data. \u03b1-Synuclein may therefore lead to accumulation of synaptic vesicles at the active zone, providing a \u2018buffer\u2019 of synaptic vesicles, without affecting neurotransmitter release itself.\n\n## Introduction\n\n\u03b1-Synuclein (\u03b1-Syn) is an abundant presynaptic protein that is expressed throughout the central nervous system (CNS) and associated with synaptic vesicles (Maroteaux et al., 1988; Jensen et al., 1998). Pathologically, missense mutations (A30P, E46K, A53T) of \u03b1-Syn (Polymeropoulos et al., 1997; Kruger et al., 1998; Zarranz et al., 2004) and duplications and triplications of the gene that encodes \u03b1-Syn (Singleton et al., 2003; Chartier-Harlin et al., 2004) are linked to early onset Parkinson's disease (PD). Moreover, Lewy bodies observed in Parkinson's disease, dementia with Lewy bodies, and other neurodegenerative diseases contain high concentrations of \u03b1-Syn aggregates (Spillantini et al., 1997; Hardy and Gwinn-Hardy, 1998; Spillantini et al., 1998). In aqueous solution, \u03b1-Syn is a largely unfolded protein and has a propensity to aggregate in a nucleation-dependent manner, forming \u03b2-sheet rich amyloid-like fibrils (Serpell et al., 2000; Zhao et al., 2011; Burr\u00e9 et al., In press). Fibrils, protofibrils and/or large oligomers are believed to be cytotoxic (Conway et al., 2000; Goldberg and Lansbury, 2000; Bucciantini et al., 2002), and may be responsible, at least in part, for the neurodegeneration observed in diseases featuring Lewy bodies. Physiologically, \u03b1-Syn increases the rate of SNARE-complex formation at the synapse via binding to the SNARE protein synaptobrevin-2 (also called VAMP2, vesicle associated membrane protein 2) and to phospholipids (Burr\u00e9 et al., 2010).\n\nIn adult canaries and zebra finches, \u03b1-Syn expression correlates with plasticity in the developing song control system (Clayton and George, 1998). However, deletion of \u03b1-Syn in mice has been reported to show either no or very small and opposing effects on neurotransmitter release (Abeliovich et al., 2000; Cabin et al., 2002; Chandra et al., 2004; Liu et al., 2004; Yavich et al., 2004; Unger et al., 2006; Senior et al., 2008; Burr\u00e9 et al., 2010; Garcia-Reitbock et al., 2010; Scott et al., 2010; Anwar et al., 2011). Similarly, overexpression of \u03b1-Syn either in transgenic mice or using stereotactic injections of adeno-associated virus have resulted in conflicting effects on neurotransmitter release, although chronic overexpression nearly always leads to neurodegeneration (Liu et al., 2004; Larsen et al., 2006; Burr\u00e9 et al., 2010; Nemani et al., 2010; Gaugler et al., 2012).\n\nStructurally, \u03b1-Syn is a 14-kDa protein composed of an amphipathic, positively charged 100 residue N-terminal domain with a lysine-rich N-terminus that binds reversibly to anionic membranes (Rhoades et al., 2006), and a 40-residue highly acidic C-terminal domain that interacts with the N-terminal sequence of synaptobrevin-2 (Burr\u00e9 et al., 2010). Recombinant, erythrocyte, and brain \u03b1-Syn is predominantly monomeric in solution with a smaller fraction of multimeric species, and is largely unstructured with a small (approximately 21\u201324%) helical contribution (Fauvet et al., 2012; Burr\u00e9 et al., 2013). At high concentrations (\u223c500 \u03bcM) and in the presence of \u03b2-octylglucoside, nuclear magnetic resonance spectra showed weak intramolecular NOEs in regions of \u03b1-helical propensity but no tertiary interactions, reminiscent of a molten globule (Wang et al., 2011). The interaction with anionic lipids induces \u03b1-helicity in \u03b1-Syn, as revealed by CD spectroscopy (Davidson et al., 1998; Jo et al., 2000). Moreover, solution NMR studies, EPR analyses, calorimetry, and single molecule fluorescence resonance transfer experiments in the presence of SDS micelles and small unilamellar vesicles revealed that the N-terminal 100 residues form a broken amphiphatic \u03b1-helix upon binding to anionic lipids (Bussell and Eliezer, 2003; Chandra et al., 2003; Ulmer et al., 2005; Jao et al., 2008; Ferreon et al., 2009; Lokappa and Ulmer, 2011; Maltsev et al., 2013). Binding of \u03b1-Syn to the membrane is transient, and the C-terminal 40 residues of \u03b1-Syn are unstructured and not bound to the membrane (Bodner et al., 2009). N-terminal acetylation of \u03b1-Syn does not induce significant structure in recombinant \u03b1-Syn in solution (i.e., absence of detergents or lipids), but further enhances its binding to anionic membranes and induced \u03b1-helicity (Maltsev et al., 2012). Although initially largely monomeric, purified brain \u03b1-Syn associates into partially folded multimers and aggregates in a time-dependent manner (Burr\u00e9 et al., 2013). It is likely that these different monomeric and oligomeric states exist in an equilibrium in vivo, which is modulated by a variety of factors and interactions, such as membrane binding. This labile mixture of conformations provides a potential explanation for why \u03b1-Syn is so susceptible to pathological aggregation and fibril formation as observed in multiple neurodegenerative disorders (Devine et al., 2011; Martin et al., 2011).\n\nTo investigate the effect of native \u03b1-Syn on synaptic vesicle fusion, we employed a recently developed in vitro system (Kyoung et al., 2011; Diao et al., 2012a) that allowed us to measure the effect of \u03b1-Syn on Ca2+-triggered vesicle fusion with reconstituted neuronal SNAREs, synaptotagmin-1, and complexin-1 on a sub-sec timescale. We found that native \u03b1-Syn does not significantly affect the efficiency and kinetics of Ca2+-triggered synaptic protein-mediated fusion itself. Rather, \u03b1-Syn induces clustering of vesicles with reconstituted synaptobrevin-2 or with both reconstituted synaptobrevin-2 and synaptotagmin-1. The clustering effect is dependent on specific binding to both anionic lipid membranes and synaptobrevin-2 as revealed by deletion and mutagenesis studies, including the Parkinson's disease mutant A30P that disrupts lipid binding. Furthermore, clustering is induced by both recombinant and brain-purified native \u03b1-Syn, both of which are initially in a largely monomeric state in the absence of membranes. This clustering or lack thereof may account for the increase in SNARE-complex levels observed upon overexpression of native \u03b1-Syn (Burr\u00e9 et al., 2010), and, conversely, the decrease in SNARE-complex assembly in \u03b1\u03b2\u03b3-Syn triple knockout mice (Burr\u00e9 et al., 2010).10.7554/eLife.00592.003Box 1.Definitionsv-vesicle: proteoliposome with reconstituted synaptobrevin-2 in all experiments except Figures 1, 2, and 4D where both synaptobrevin-2 and synaptotagmin-1 were reconstituted. We also refer to these vesicles as \u201csynaptic-vesicle mimics\u201d.t-vesicle: proteoliposome with reconstituted syntaxin-1A and SNAP-25A. We also refer to these vesicles as \u201cplasma-membrane mimics\u201d.v-/t-vesicle association: fluorescent spot arising from labeled v-vesicles (or small clusters of v-vesicles) that bind to a surface with immobilized t-vesicles, using the protocol described in the \u2018Single vesicle-vesicle Ca2+-triggered fusion experiments\u2019 section in \u2018Materials and Methods\u2019.v-/v-vesicle cluster: fluorescent spot arising from labeled v-vesicles that bind to a surface with immobilized v-vesicles, using the protocol described in the \u2018Single-vesicle clustering experiments\u2019 section in \u2018Materials and Methods\u2019.DOI: http://dx.doi.org/10.7554/eLife.00592.003\n\n## Results\n\n### Native \u03b1-Syn has little effect on Ca2+-triggered synaptic-protein mediated v-/t-vesicle fusion\n\nTo address the question of whether native \u03b1-Syn influences Ca2+-triggered synaptic-protein mediated membrane fusion, we employed our recently developed in vitro single vesicle\u2013vesicle fusion system using vesicles with reconstituted synaptic proteins (Kyoung et al., 2011; Diao et al., 2012a; Kyoung et al., 2012). Free-floating \u2018v-vesicles\u2019 (with reconstituted synaptobrevin-2 and synaptotagmin-1) mimicked synaptic vesicles, while surface-immobilized \u2018t-vesicles\u2019 (with reconstituted syntaxin-1 and SNAP-25) mimicked the presynaptic plasma membrane (Figure 1A). A defined volume of v-vesicle solution was incubated with t-vesicles together with complexin-1, establishing a metastable state at zero Ca2+. We tested the effect of recombinant \u03b1-Syn with our system by adding it to the v-vesicle incubation stage. For the v-vesicles that bound, native \u03b1-Syn had little effect on the efficiency (defined as the number of fusion events per docked v-vesicles) and the kinetics of Ca2+-triggered fusion upon injection of 500 \u03bcM Ca2+ (Figure 1B), and it did not alter the corresponding cumulative fusion distribution plot (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00592/elife-00592-fig1-v1.jpg)\n\n**Figure 1.:** (A) Experimental scheme of our single v-/t-vesicle content mixing system (Kyoung et al., 2011; Kyoung et al., 2012), with improvements described in (Diao et al., 2012a), and further modifications described in \u2018Materials and methods\u2019. (B) and (C) \u03b1-Syn has little effect on the probability of triggered vesicle fusion upon injection of 500 \u03bcM Ca2+. Panels show histograms of the occurrence (B) and the corresponding cumulative distribution (C) of Ca2+-triggered complete fusion (content mixing) in presence or absence of 2 \u03bcM \u03b1-Syn. In the absence of \u03b1-Syn, we observed 166 fusion events out of \u223c2000 docked v-vesicles (identified as fluorescent spots that were present prior to Ca2+ injection), whereas in the presence of \u03b1-Syn, we observed 84 fusion events out of \u223c1300 docked v-vesicles within the observation period of 50 s. The time-binning was 1 s. Black lines are fits to bi-exponential decay functions over the entire observation period of 50 s. In the absence of \u03b1-Syn, the fitted function is f(t) = \u22120.0046 + 0.048 e-t/27.1 + 0.26 e-t/0.58, whereas in the presence of \u03b1-Syn, the fitted function is f(t) = \u22120.001 + 0.064 e-t/15.4 + 0.22 e-t/0.51 with t in sec.\n\n### \u03b1-Syn induces v-vesicle clustering\n\nAlthough native \u03b1-Syn showed no effect on Ca2+-triggered fusion activity, we noticed that \u03b1-Syn reduced the number of fluorescent spots that appeared when v-vesicles bound to immobilized t-vesicles during the incubation stage at zero Ca2+ (Figure 2A). However, the addition of native \u03b1-Syn produced the emergence of brighter spots between 1.5 and 6 a.u. in the fluorescence emission histogram (insert, Figure 2B), along with occasional very large fluorescent spots (black arrow, lower right image in Figure 2A). The major peak (<1.5 a.u.) at low fluorescence intensity corresponds to single donor v-vesicles docked to the imaging surface, while the high intensity tail (>2 a.u.) corresponds to small clusters of v-vesicles docked to the surface. In the presence of \u03b1-Syn, we thus observed a reduction of the single vesicle population and a concomitant increase of a population of vesicle clusters. We note that the same finite volume and concentration of individual v-vesicles was used during the incubation stage with and without native \u03b1-Syn. Thus, the observed decrease in the total number of fluorescent spots (referred to as \u2018v-/t-vesicle associations\u2019) in the presence of native \u03b1-Syn (Figure 2A) can be explained by a reduction of the number of free-floating particles by clustering of individual v-vesicles in the finite volume of the sample chamber (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00592/elife-00592-fig2-v1.jpg)\n\n**Figure 2.:** (A) Plotted is the number of content dye fluorescent spots in presence of 2 \u03bcM complexin-1 and with or without 2 \u03bcM \u03b1-Syn (tag-free construct); example images are shown in the lower two panels. Scoring (\u2018counts\u2019) excluded the few very large fluorescent spots that appeared in the presence of \u03b1-Syn; an example is shown in the lower right panel, marked by a black arrow. Error bars are standard deviations from 10 random imaging locations within the same sample channel. *** indicates p<0.001 by the Student's t-test. (B) Distribution of the fluorescence intensity of all fluorescent spots as shown in panel (A). In the presence of \u03b1-Syn, the number of low intensity fluorescent spots (up to 1.5 a.u.) decreased, which was accompanied by an increase in higher intensity fluorescent spots (see inset) due to the formation of v-vesicle clusters. The very large fluorescent spot (black arrow in the lower right image in panel (A)) was excluded in this distribution. (C) Illustration that clustering of v-vesicles induced by \u03b1-Syn reduces the effective number of fluorescent spots (corresponding to docked single or multiples of v-vesicles) in a finite volume since the starting concentration of individual v-vesicles was identical with and without \u03b1-Syn.\n\nWe next confirmed the clustering activity of native \u03b1-Syn on v-vesicles with a different assay that was designed to directly probe the interaction between v-vesicles (Figure 3A). One population of v-vesicles was anchored to an imaging surface, while the other population was free-floating. Both vesicle populations were labeled with spectrally distinct fluorescent lipid analogues allowing tracking of the location of the free-floating vesicles and assessment of the surface coverage of the immobilized vesicles, respectively. Interactions between both populations of v-vesicles were measured by counting the number of initially free-floating v-vesicles that bound to the immobilized v-vesicles. We refer to this quantity as \u2018clustering\u2019 between vesicles of the same type (v-/v-vesicle clustering). The protocol of this clustering experiment included an incubation step with native \u03b1-Syn followed by buffer exchange, in order to measure the interaction between immobilized v-vesicles with bound \u03b1-Syn and free-floating v-vesicles without \u03b1-Syn (Figure 3B). This procedure prevented formation of the large fluorescent spots that we observed in the v-/t-vesicle fusion experiments, and it also reduced the likelihood of non-specific vesicle clustering by \u03b1-Syn oligomerization.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00592/elife-00592-fig3-v1.jpg)\n\n**Figure 3.:** (A) Experimental scheme of our single-vesicle assay for monitoring clustering of synaptobrevin-2 v-vesicles. A saturated layer of DiD-labeled v-vesicles with reconstituted synaptobrevin-2 was immobilized on an imaging surface via biotin/neutravidin interactions. Free-floating DiI-labeled vesicles with reconstituted synaptobrevin-2 were injected into the sample chamber (\u2018Materials and methods\u2019). The number of v-/v-vesicle interactions (clustering) in presence or absence of \u03b1-Syn was determined by counting the number of spots arising from fluorescence emission of DiI upon excitation at 532 nm. (B) Experimental flow: 1. Immobilization of DiD-labeled v-vesicles on the imaging surface through biotin/neutravidin interactions. 2. Buffer exchange. 3. \u03b1-Syn incubation of the surface with immobilized DiD v-vesicles. 4. Buffer exchange, removing unbound or weakly bound \u03b1-Syn molecules. 5. Injection of DiI-labeled v-vesicles without \u03b1-Syn. Following another buffer exchange, the channels were imaged on the microscope.\n\nUsing this clustering assay, we confirmed that native \u03b1-Syn increases the clustering of v-vesicles in a concentration-dependent manner (Figure 4A). We note that the specified \u03b1-Syn concentration refers to the incubation stage with immobilized v-vesicles (Figure 3B, middle panel). Subsequent to the incubation stage, a buffer exchange with \u03b1-Syn-free buffer was performed for 6 s which removed unbound \u03b1-Syn. Moreover, it is likely that the buffer exchange also removed some of the v-vesicle-bound \u03b1-Syn molecules since kinetic studies by NMR spectroscopy revealed that \u03b1-Syn binding to membranes is transient with exchanges occurring in the range of 1\u201310 s-1 (Bodner et al., 2009). Thus, the effective \u03b1-Syn concentration during the final clustering step (Figure 3B, right panel) is lower than 2\u201320 \u03bcM, as only bound \u03b1-Syn is present at this stage. Indeed, as Figure 4A shows, v-vesicle clustering has not reached saturation at 2 \u03bcM \u03b1-Syn incubation concentration, so v-vesicles were not fully covered with \u03b1-Syn molecules at that particular \u03b1-Syn incubation concentration.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00592/elife-00592-fig4-v1.jpg)\n\n**Figure 4.:** (A) \u03b1-Syn increases the number of interacting DiI-labeled v-vesicles on the imaging surface in a concentration-dependent manner. Bar graph: quantitation of interacting vesicles. Bottom panel: representative fluorescence images of interacting vesicles on the imaging surface. Error bars are standard deviations from 15 random imaging locations in the sample channel obtained. (B) Number of interactions between free-floating and immobilized v-vesicles in presence of wildtype \u03b1-Syn and its mutant that does not bind to synaptobrevin-2 (\u03b1-Syn[1-95] with myc-tag) at indicated concentrations. (C) Purified \u03b1-Syn wildtype and \u03b1-Syn[1-95] (with myc-tag) expressed in bacteria were analyzed by SDS-PAGE and Coomassie staining. (D) Number of interactions in the presence of 20 \u03bcM \u03b1-Syn (myc-tag construct). At variance to panels (A, B, and C), both free-floating and immobilized v-vesicles were reconstituted with synaptobrevin-2 (Syb2), synaptotagmin-1 (Syt1), or both (Syb2/Syt1). Note, that the slight variation in the \u2018absolute\u2019 number of observed fluorescent spots between comparable experiments in panels (A, B, and D) arises mainly from tagged vs untagged versions of \u03b1-Syn, as well as from different liposome and imaging surface preparations. Yet, the \u2018relative\u2019 differences were statistically similar for different protein preparations. In all panels, error bars are standard deviations from 10 random imaging locations in the same sample channel, and *** indicates p<0.001 by the Student's t-test.\n\nAs another independent confirmation of v-vesicle clustering, a cryo-electron microscopy experiment revealed large v-vesicle clusters in the presence of native \u03b1-Syn (Figure 5). Note, that the vesicle concentration used for the cryo-EM experiment was 100-fold higher and the effective \u03b1-Syn concentration was also higher than that used for the single-vesicle clustering experiments, explaining the formation of the fairly large clusters in the cryo-EM experiment at that concentration. V-vesicles clustering does not occur in the absence of \u03b1-Syn (Kyoung et al., 2011) and is therefore specific to native \u03b1-Syn. It is also entirely dependent on the presence of synaptobrevin-2, as lack of synaptobrevin-2 (Figure 4A), or truncation of C-terminal residues of \u03b1-Syn that bind to synaptobrevin-2 (Burr\u00e9 et al., 2010) but do not participate in lipid binding of \u03b1-Syn (Burr\u00e9 et al., 2010, 2012) significantly reduced clustering of v-vesicles (Figure 4B,C). Furthermore, clustering of v-vesicles depended on the presence of negatively charged (anionic) lipids (Figure 4A, right most condition), which is known to induce \u03b1-helix formation in native \u03b1-Syn and lipid binding of \u03b1-Syn. As a control, and in agreement with previous studies (Davidson et al., 1998; Jo et al., 2000; Eliezer et al., 2001), we observed \u03b1-helicity in the CD spectrum of native \u03b1-Syn in the presence of protein-free vesicles with the same lipid composition used for our fusion and v-vesicle clustering experiments (Figure 6). Taken together, our clustering experiments suggest that native \u03b1-Syn has to bind to both, synaptobrevin-2 and anionic lipids, in order to cluster v-vesicles, confirming the protein- and anionic-lipid specificity of this phenomenon.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00592/elife-00592-fig5-v1.jpg)\n\n**Figure 5.:** The dark feature is the holey carbon grid. In contrast, reconstituted v-vesicles in the absence of \u03b1-Syn do not form clusters (Kyoung et al., 2011).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00592/elife-00592-fig6-v1.jpg)\n\n**Figure 6.:** The protein-free vesicles had the same lipid composition as the v-vesicles used throughout this work. The molar protein-to-lipid ratio was 1:530, and tag-free wildtype \u03b1-Syn was used.\n\nIn the next experiment, we asked if the inclusion of synaptotagmin-1 in the synaptobrevin-2 vesicles would alter v-vesicle clustering induced by native \u03b1-Syn (Figure 4D). We found that v-vesicle clustering induced by native \u03b1-Syn was similar with and without synaptotagmin-1 within experimental error. Furthermore, v-vesicles with only reconstituted synaptotagmin-1 did not cluster, consistent with the requirement of synaptobrevin-2 for native \u03b1-Syn-induced v-vesicle clustering (Figure 4A). For the remaining experiments we therefore used v-vesicles that only contained synaptobrevin-2.\n\n### V-vesicle clustering ability of native \u03b1-Syn is reduced by the Parkinson's disease mutant A30P\n\nTo further investigate the membrane-binding role of native \u03b1-Syn on v-vesicle clustering, and to extend our findings to PD, we performed experiments with the three PD-related mutants A30P, E46K, and A53T (Figure 7A). While all these mutants retain the ability to bind synaptobrevin-2, only A30P shows reduced membrane binding (Burr\u00e9 et al., 2012). We measured the effect of these mutations on membrane-binding using a lipid flotation assay (Figure 7B), and on v-vesicle clustering using single vesicle microscopy (Figure 7C). Out of the mutants tested, only A30P showed \u223c 50% decrease in membrane binding and v-vesicle clustering compared to native wildtype \u03b1-Syn. Thus, the effect of the three mutations in v-vesicle clustering correlated well with their effect on native \u03b1-Syn binding to PS-containing vesicles. This suggests that membrane-binding by native \u03b1-Syn is essential for its clustering activity.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00592/elife-00592-fig7-v1.jpg)\n\n**Figure 7.:** (A) Purification of \u03b1-Syn expressed in bacteria. Purified \u03b1-Syn wildtype and the three Parkinson's disease (PD)-related mutants A30P, E46K, and A53T (all tag-free constructs) were analyzed by SDS-PAGE and Coomassie staining. (B) Lipid binding of recombinant \u03b1-Syn wildtype, and of the PD mutants A30P, E46K, and A53T. \u03b1-Syn was incubated with negatively charged liposomes (30% phosphatidylserine, 70% phosphatidylcholine, or 100% phosphatidylcholine as control), and subjected to a flotation assay. Eight fractions were collected from top to bottom of the flotation gradient, and equal volumes of each fraction were separated by SDS-PAGE and immunoblotted for \u03b1-Syn. Top two fractions were defined as lipid-bound, and quantitated as percent of total \u03b1-Syn. Data shown are means \u00b1 SEM; n = 3. (C) Impaired lipid-binding of \u03b1-Syn decreases v-vesicle clustering. In order to measure vesicle clustering, the number of DiI-labeled v-vesicles that were docked to immobilized v-vesicles was counted, as illustrated in Figure 3. (D) Impaired lipid-binding of \u03b1-Syn increases the number of v-/t-vesicle associations. The number of fluorescent spots arising from labeled v-vesicles were counted that were docked to t-vesicles (immobilized to the imaging-surface), as illustrated in Figure 2, but in the presence of the specified \u03b1-Syn mutants without complexin-1. In all panels, error bars are standard deviations from 10 random imaging locations in the same sample channel, and *** indicates p<0.001 by the Student's t-test.\n\nTo confirm that v-vesicle clustering induced by native \u03b1-Syn depends on lipid binding, we also measured the effect of the PD mutants on the number of v-/t-vesicle associations (Figure 7D). Only the A30P mutant increased the number of v-/t-vesicle associations. As mentioned above, the reduction of the number of v-/t-vesicle associations by native wildtype \u03b1-Syn is a consequence of the finite volume used during the incubation stage and the reduction of the number of free particles in the sample chamber by v-vesicle clustering. Thus, the numbers of v-vesicle clusters (Figure 7C) and v-/t-vesicle associations (Figure 7D) are anti-correlated.\n\n### Native brain-purified \u03b1-Syn clusters v-vesicles\n\nIn order to test whether native brain-purified \u03b1-Syn has the same activity as native recombinant \u03b1-Syn in clustering v-vesicles, we purified native \u03b1-Syn from mouse brain without detergents or denaturants using multiple chromatography steps to a purity of >90% (Burr\u00e9 et al., In press). We found that the induction of v-vesicle clustering by native brain purified \u03b1-Syn was similar to that of native recombinant \u03b1-Syn (compare Figures 4A and 8), confirming that the observed clustering activity is not sensitive to the origin of \u03b1-Syn.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00592/elife-00592-fig8-v1.jpg)\n\n**Figure 8.:** Error bars are standard deviations from 20 random imaging locations in the same sample channel. *** indicates p<0.001 by the Student's t-test.\n\n## Discussion\n\nThe mechanism by which native \u03b1-Syn promotes SNARE-complex assembly in vitro and in vivo remains unknown (Chandra et al., 2005; Burr\u00e9 et al., 2010). Moreover, young \u03b1\u03b2\u03b3-synuclein triple knockout mice showed no obvious phenotype, but developed neurological impairments during aging and revealed age-dependent impairments in SNARE-complex assembly (Burr\u00e9 et al., 2010). Effects on neurotransmission were observed only upon prolonged trains of high-frequency stimulation (Abeliovich et al., 2000; Cabin et al., 2002) (however, see Chandra et al., 2004 for different results). Transgenic mice with overexpressed human \u03b1-Syn invariably exhibit signs of neurodegeneration, but impairment in synaptic vesicle exocytosis and a reduction in neurotransmitter release were observed only in some studies (Nemani et al., 2010; Scott et al., 2010) but not in another study (Burr\u00e9 et al., 2010). Overexpression of \u03b1-Syn in the substantia nigra pars compacta of rodents using viral vectors also invariably leads to neurodegeneration (Burr\u00e9 et al., 2012), and may cause an associated decrease in dopamine release (Gaugler et al., 2012; Lundblad et al., 2012).\n\nWe tested a possible function of native \u03b1-Syn using a reconstituted system consisting of v-vesicles that mimic synaptic vesicles, and t-vesicles that mimic the presynaptic plasma membrane. We found that native \u03b1-Syn did not affect the Ca2+-triggered fusion efficiency or fusion kinetics on a sub-second timescale (Figure 1). The lack of a noticeable effect of native \u03b1-Syn on Ca2+-triggered fusion in our synthetic system agrees well with extensive in vivo studies with synuclein double and triple knockout mice that showed little effect on synaptic strength (Chandra et al., 2004; Burr\u00e9 et al., 2010).\n\nAlthough there was no effect on Ca2+-triggered fusion, we observed clustering of v-vesicles in the presence of native \u03b1-Syn (Figures 2, 4, and 5). Native \u03b1-Syn clustered both synaptobrevin-2 and synaptobrevin-2/synaptotagmin-1 v-vesicles (Figure 4D), and the clustering ability was dependent on the synaptobrevin-2 binding domain of \u03b1-Syn and the ability of \u03b1-Syn to bind to anionic lipids (Figures 4A,B and 7C). Furthermore, both recombinant and brain purified native \u03b1-Syn induced v-vesicle clustering (Figures 4 and 8).\n\nThe observed reduction in the number of associations between v-vesicles (single or multiple) and t-vesicles (Figure 2A) was correlated with an increase in the clustering of v-vesicles in the presence of \u03b1-Syn (Figures 4 and 5). This seemingly paradoxical result can be readily explained since the observed reduction in the number of v-/t-vesicle associations by native \u03b1-Syn is due to clustering of v-vesicles into larger particles, which effectively reduces the concentration of individual particles in the sample chamber (Figure 2C), and thus reduces the number of fluorescent spots.\n\nThe clustering activity of native \u03b1-Syn that we uncovered is very different from the effect of dopamine-induced large oligomers/aggregates of \u03b1-Syn (Choi et al., 2013). We note that although both our v-/t-vesicle assay and the single-vesicle lipid mixing assay by (Choi et al., 2013) revealed a reduction of the number of fluorescent (\u2018docked\u2019) spots in v-/t-vesicle experiments, the underlying mechanism is different: while native \u03b1-Syn clusters v-vesicles and reduces the number of free particles in our v-/t-vesicle assay without interfering with SNARE interactions, large \u03b1-Syn oligomers interfere with SNARE complex formation and reduce docking in the lipid mixing assay of (Choi et al., 2013).\n\nIt has been suggested that clusters of synaptic vesicles could act as a protein buffer (Denker et al., 2011) to prevent the loss of accessory proteins involved in vesicle recycling. How could this be accomplished, and also result in an increase of SNARE complex assembly rate as observed by (Chandra et al., 2005; Burr\u00e9 et al., 2010)? We propose the following model (Figure 9): Under normal conditions, native \u03b1-Syn would contribute to clustering of synaptic vesicles at the active zone, and thereby assist with the formation of neuronal SNARE complexes by constraining additional synaptic vesicles to be close to the active zone. We found that the Parkinson's disease related A30P point mutant reduced the clustering activity of native \u03b1-Syn (Figure 7C), suggesting a possible loss-of-function phenotype for this mutant. Under certain other diseased conditions, excess amount of \u03b1-Syn could induce severe synaptic vesicle aggregation and thereby result in a reduced readily releasable synaptic vesicle pool, thus affecting neurotransmission.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/00592/elife-00592-fig9-v1.jpg)\n\n**Figure 9.:** Native \u03b1-Syn binds at the same time to the synaptic vesicle membrane and synaptobrevin-2. Synaptic vesicle fusion with the presynaptic plasma membrane is mediated by the three neuronal SNARE proteins synaptobrevin-2 (on the synaptic vesicle membrane), SNAP-25 and syntaxin-1 (on the presynaptic plasma membrane), which form the synaptic SNARE-complex. Native \u03b1-Syn clusters synaptic vesicles depending on binding to synaptobrevin-2 and the vesicles themselves, which may result in a local increase of synaptic vesicles at the presynaptic plasma membrane, and a subsequent increase in SNARE-complex formation.\n\n## Materials and methods\n\n### Native recombinant \u03b1-Syn expression and purification\n\nFull-length human \u03b1-Syn cDNA was cloned into modified pGEX-KG vectors (GE Healthcare, Uppsala, Sweden), containing an N-terminal TEV protease recognition site. Tag-free and myc-tagged constructs were prepared: The TEV protease cleavage site introduced one extra glycine residue at the N-terminus of the tag-free \u03b1-Syn sequence whereas the myc epitope-tagged \u03b1-Syn construct encoded the following extra N-terminal residues: GLEEQKLISEEDLGSGS (the myc epitope is underlined). All experiments except those shown in Figure 4B,D employed the tag-free \u03b1-Syn construct; we used the myc-tag construct for the experiments in Figure 4B since the C-terminal truncation mutant of \u03b1-Syn[1-95] could not be immuno-detected with our antibody. Mutant \u03b1-Syn constructs were generated by site-specific mutagenesis, according to the manufacturer's protocol (Stratagene; Agilent Technologies, Santa Clara, CA). All proteins were expressed as GST fusion proteins in bacteria (BL21 strain), essentially as described (Burr\u00e9 et al., 2010). Bacteria were grown to OD 0.6 (measured at 600 nm), and protein expression was then induced with 0.05 mM isopropyl \u03b2-D-thiogalactoside (IPTG) for 6 hr at ambient temperature. Bacteria were harvested by centrifugation for 20 min at 4500 g, and pellets were resuspended in solubilization buffer (PBS, 0.5 mg/ml lysozyme, 1 mM PMSF, DNase, and an EDTA-free protease inhibitor cocktail; Roche Diagnostics Corporation, Indianapolis, IN). Cells were broken by sonication, and insoluble material was removed by centrifugation for 30 min at 20,000\u00d7gav and 4\u00b0C. Proteins were affinity-purified using glutathione sepharose bead (GE Healthcare) incubation overnight at 4\u00b0C, followed by TEV protease (Invitrogen, Grand Island, NY) cleavage overnight at ambient temperature. His-tagged TEV protease was removed by incubation with Ni-NTA overnight at 4\u00b0C. The protein concentration was assessed using BCA method according to the manufacturer's protocol (Thermo Scientific, Rockford, IL). The protein sample was flash-frozen and stored at \u221280\u00b0C.\n\n### Recombinant SNAREs, synaptotagmin-1 and complexin-1 expression and purification\n\nAll DNAs encode rat proteins, and were expressed and purified as described by (Kyoung et al., 2011) with modifications (Diao et al., 2012a). Briefly, his-tagged syntaxin-1A, synaptobrevin-2, SNAP-25A, and synaptotagmin-1 were expressed in E. coli and purified using a combination of Ni-NTA affinity (Qiagen, Hilden, Germany) and size exclusion chromatography on a Superdex 200 column (GE Healthcare). Synaptotagmin-1 was further purified using cation exchange chromatography on a Mono-S column (GE Healthcare). His-tags were removed from syntaxin-1A, synaptobrevin-2, and SNAP-25A with TEV protease, or from synaptotagmin-1 with PreScission protease (GE Healthcare). Wildtype complexin-1 was purified essentially as described (Diao et al., 2012a) with modifications. Briefly, it was expressed as an N-terminal hexa-his tagged protein from pET28a (Novagen, EMD Chemicals, Gibbstown, NJ) in BL21 (DE3) at 30\u00b0C using an auto-induction system (Studier, 2005). After binding to Ni-NTA beads, the protein was eluted by overnight cleavage with thrombin. Thrombin was then inactivated with 1 mM PMSF. The cleaved protein was subjected to size exclusion chromatography using a Superdex 200 10/300 column (GE Healthcare) and concentrated to 200 \u00b5M. 10% glycerol was added to all purified protein solutions. Complexin-1 and SNAP-25A were flash-frozen and stored as aliquots at \u221280\u00b0C, whereas synaptobrevin-2, synaptotagmin-1, and syntaxin-1A were used from freshly-made preparations.\n\n### Native brain \u03b1-Syn purification\n\nMouse brains homogenized in phosphate-buffered saline (PBS) and protease inhibitors (Roche Diagnostics Corporation, Indianapolis, IN) were fractionated by ultracentrifugation (3 \u00d7 280,000\u00d7gav). \u03b1-Syn was purified at 4\u00b0C by Q-Sepharose (GE Healthcare) anion exchange chromatography where \u03b1-Syn eluted at 0.3\u20130.5 M NaCl, 20 mM Tris\u2013HCl pH 7.4, by phenyl-Sepharose (Sigma-Aldrich, St. Louis, MO) hydrophobic interaction chromatography where \u03b1-Syn was recovered in the flow-through in 1 M (NH4)2SO4, and by gel filtration on a Superdex 200 10/300 GL column (AKTA; GE Healthcare) in PBS. Details can be found in Burr\u00e9 et al. (2013).\n\n### Lipid binding assay\n\nPreparation of vesicles and liposome flotation assay were performed as previously described (Burr\u00e9 et al., 2010). Briefly, 1 mg brain phosphatidylcholine (PC; Avanti Polar Lipids, Alabaster, AL) or 0.7 mg PC and 0.3 mg brain phosphatidylserine (PCPS; Avanti Polar Lipids) in chloroform were dried in a glass vial under a nitrogen stream. Residual chloroform was removed by lyophilization for 2 hr. To obtain a solution of 1 mg/ml lipids, 1 ml PBS was added to each vial and vortexed well. Small unilamellar vesicles were formed by sonicating lipid solutions on ice (Barenholz et al., 1977). For \u03b1-Syn binding to vesicles, 5 \u03bcg proteins were incubated with 100 \u00b5g vesicles for 2 hr at ambient temperature. Samples were then subjected to a liposome flotation assay as previously described (Burr\u00e9 et al., 2010).\n\n### Gel electrophoresis and protein quantitation\n\nQuantitative immunoblotting experiments were performed with iodinated secondary antibodies as described previously (Rosahl et al., 1995). Protein samples were separated by SDS-PAGE, and transferred onto nitrocellulose membranes. Blots were blocked in Tris-buffered saline (TBS) containing 0.1% Tween-20 (Sigma-Aldrich) and 3% fat-free milk for 30 min at ambient temperature. The blocked membrane was incubated overnight in blocking buffer containing primary antibody, followed by five washes. The washed membrane was incubated in blocking buffer containing either horseradish peroxidase (HRP)-conjugated secondary antibody (1:5000; MP Biomedicals, Santa Ana, CA) for 1 hr at ambient temperature, or 125I-labeled secondary antibodies (1:1000; PerkinElmer, Santa Clara, CA). HRP immunoblots were developed using enhanced chemiluminescence (GE Healthcare). 125I blots were exposed to a PhosphorImager screen (GE Healthcare) overnight and scanned using a Typhoon scanner (GE Healthcare), followed by quantitation with ImageQuant software (GE Healthcare).\n\n### Primary antibodies\n\n\u03b1-Syn (cl. 610786; BD Transduction, San Jose, CA), c-myc (cl. 9E10; Developmental Studies Hybridoma Bank, Iowa City, IA).\n\n### Circular dichroism (CD) spectroscopy\n\nCD spectra were collected with an Aviv model 202-01 spectrometer (Aviv Biomedical, Lakewood, NJ). Spectra are averages of eight replicates collected at 1-nm steps from 195 to 240 nm with a spectral bandwidth of 1 nm and a 1-s averaging time. The spectra of 1.4 \u03bcM \u03b1-Syn were acquired in pH 7.4, 18 mM NaCl, 4 mM HEPES, 4 \u03bcM EGTA, 0.2% \u03b2-mercaptoethanol with and without 960 \u00b5M lipids in protein-free vesicles that were formed with the same protocol (Kyoung et al., 2012) used for the fusion and clustering experiments.\n\n### Single vesicle-vesicle Ca2+-triggered fusion experiments\n\nOur experimental setup was similar to that previously described (Diao et al., 2012a; Kyoung et al., 2012) (Figure 1A), except that lipid dye was not used, and the time stamp of Ca2+ arrival in the evanescent field was determined by the instance of the first content-mixing event (i.e., stepwise increase of content dye fluorescence intensity) among all docked vesicles.\n\nT-vesicles (with reconstituted syntaxin-1A and SNAP-25A) and v-vesicles (with reconstituted synaptobrevin-2 and synaptotagmin-1) were prepared as previously described (Diao et al., 2012a; Kyoung et al., 2012). We showed previously that our particular vesicle preparation and protein reconstitution protocols (Kyoung et al., 2012) produce homogeneous populations of vesicles with an average diameter of approximately 80 nm, and physiological protein concentrations (Kyoung et al., 2011). The resulting t-vesicle solution was diluted 10\u00d7 and immobilized on an imaging surface via biotin/neutravidin interactions under saturating conditions. Specifically, 100 \u00b5l of the diluted t-vesicle solution was injected into the sample chamber and incubated for 30 min, followed by a 200 \u03bcl vesicle buffer exchange (vesicle buffer is defined as 90 mM NaCl, 20 mM HEPES pH 7.4, 20 \u03bcM EGTA, 1% \u03b2-mercaptoethanol). V-vesicles (with reconstituted synaptobrevin-2 and synaptotagmin-1) containing self-quenched content dye (sulforhodamine B; Invitrogen) were prepared as previously described (Diao et al., 2012a; Kyoung et al., 2012). The v-vesicle solution was diluted 150\u00d7 and added to the immobilized t-vesicle surface with 2 \u03bcM complexin-1 in presence or absence of 2 \u03bcM \u03b1-Syn. The presence of 2 \u03bcM \u03b1-Syn corresponds to a v-vesicle-lipid to \u03b1-Syn-protein ratio of 11:1, with the actual lipid to protein ratio being larger due to the presence of the saturated t-vesicle surface; at this condition, we did not observe destabilization of the v-SNARE vesicles by \u03b1-Syn since no leaking of content dyes from docked v-vesicles was observed. The system was incubated for 30 min, followed by buffer exchange (1 \u00d7 200 \u03bcl vesicle buffer for 6 s), removing unbound or weakly bound complexin and \u03b1-Syn. Then, 500 \u03bcM Ca2+ buffer was injected into the sample chamber, and the fluorescence intensity of the content dye for each docked v-vesicle (but excluding few large fluorescent spots, see arrow in the lower right image of Figure 2A) was monitored with total internal reflection (TIR) wide-field microscopy (Nikon Instruments, Melville, NY) using an electron multiplying charge-coupled device (CCD) camera (iXon+ DV 897E; Andor Technology USA, South Windsor, CT). The smCamera program (written in C++) from Taekjip Ha's laboratory was used for data acquisition and analysis as described previously (Diao et al., 2012a; Kyoung et al., 2012). The number of v-/t-vesicle associations was calculated by counting the number of fluorescent spots prior to Ca2+ injection, averaged over the specified number of images in the same sample channel. This simple averaging procedure was possible since the surface coverage was homogenous within the sample channel.\n\nAn instance of complete fusion was characterized by a stepwise increase in the content dye fluorescence intensity; this increase resulted from the approximately twofold dilution of the content dye upon fusion between a v- and a t-vesicle, and subsequent dequenching of the dye. For the histograms shown Figure 1B, the time stamp of Ca2+ injection was defined as the instance of the first content-mixing event among all docked vesicles within a particular field of view. Histograms were combined from several fields of views by using these time stamps for post-synchronization. Histograms were self-normalized with respect to total number of fusion events, and cumulative distributions calculated. Histograms were fitted to bi-exponential decay functions using OriginPro 8.6 (OriginLab, Inc. Northampton, MA).\n\n### Single-vesicle clustering experiments\n\nFor the clustering experiments the same v-vesicle preparation and protein reconstitution, and vesicle immobilization protocols were used as for the single vesicle-vesicle fusion experiments described in the previous section, except that lipid dyes were added. Specifically, a saturated layer of 1,1\u2032-dioctadecyl-3,3,3\u2032,3\u2032-tetramethylindodicarbocyanine perchlorate, DiIC18(5) (DiD) labeled synaptobrevin-2 containing v-vesicles was immobilized on an imaging surface via biotin/neutravidin interactions. The DiD-labeled synaptobrevin-2 v-vesicle solution (obtained by our reconstitution protocol; Diao et al., 2012a; Kyoung et al., 2012) was diluted 20\u00d7. 100 \u00b5l of the diluted vesicle solution was injected into the sample chamber and incubated for 30 min (Figure 3B, left panel), followed by buffer exchange (1 \u00d7 200 \u03bcl vesicle buffer for 6 s). We confirmed that the vesicle-covered surfaces were saturated and produced a homogeneous distribution for each surface preparation with red laser excitation (633 nm) of the DiD-labeled immobilized vesicles (Figure 3B, right image). As previously reported, more than 1000 vesicles could be immobilized with this method (Yoon et al., 2008).\n\nThe immobilized v-vesicle surface was incubated for 30 min at the specified \u03b1-Syn concentration (Figure 3B, middle panel); note that this is an additional step compared to the v-/t-vesicle fusion experiments described above. This step was followed by buffer exchange (1 \u00d7 200 \u03bcl vesicle buffer for 6 s), removing unbound or weakly bound \u03b1-Syn. Next, 1,1\u2032-dioctadecyl-3,3,3\u2032,3\u2032-tetramethylindodicarbocyanine perchlorate, DiIC18(5) (DiI)-labeled synaptobrevin-2 vesicles were also prepared with our reconstitution protocol (Diao et al., 2012a; Kyoung et al., 2012) and diluted 500\u00d7. 100 \u00b5l of diluted free-floating DiD-labeled v-vesicle solution was injected into the sample chamber (Figure 3B, right panel); note that this v-vesicle solution did not contain \u03b1-Syn in order to prevent pre-clustering of this vesicle solution. After an incubation period of 120 min, unbound v-vesicles were removed by buffer exchange (2 \u00d7 200 \u03bcl vesicle buffer for \u223c20 s).\n\nSample slides with multiple channels were monitored in a wide-field TIR fluorescence microscope, data were acquired with a CCD camera, and analyzed with the smCamera program, similar to the single vesicle-vesicle fusion experiments described above. A specified number of images were taken at random locations within each channel on the quartz slide. Details regarding software, slide assembly, and imaging protocols are described in reference (Diao et al., 2012b). The number of v-/v-vesicle interactions (clustering) was determined by counting the number of fluorescent spots from emission of DiI upon excitation at 532 nm (Figure 3A). The counts were averaged over the specified number of images at random locations in each sample channel. This simple averaging procedure was possible since the surface coverage was homogeneous. For each set of comparisons between different conditions and/or mutants (Figures 4A,B,D, 7C,D, and 8), the same protein preparations and surface preparations (quartz slide with immobilized vesicles) were used, and the conditions were run in separate channels on the same slide; although there was some variation in absolute numbers of counts (e.g., due to the use of tag-free vs tagged a-Syn constructs, Figure 4A vs Figure 4B,D), the relative differences were statistically similar for different protein preparations.\n\n### Cryo-EM\n\nFrozen-hydrated samples of synaptobrevin-2 v-vesicles in the presence of 20 \u03bcM \u03b1-Syn were prepared using the procedures for observation in cryo-EM as described previously (Kyoung et al., 2011). Briefly, the synaptobrevin-2 v-vesicle solution obtained by our reconstitution protocol (Diao et al., 2012a; Kyoung et al., 2012) was diluted 5\u00d7 in the presence of 20 \u03bcM \u03b1-Syn (resulting in v-vesicle-lipid to \u03b1-Syn-protein ratio of 33:1) and then incubated on a glow-discharged lacey Form var/carbon 300 mesh copper grid (Ted Palla, Redding, CA, USA), followed by blotting and plunging into liquid ethane. Thus, the concentration of the vesicles used in the cryo-EM experiments was 100-fold higher than in the single vesicle-vesicle clustering experiments. The frozen-hydrated specimen was subsequently observed at liquid nitrogen temperature using a CM200F electron microscope (FEI, Hillsboro, OR, USA) operating at 200 kV, under low dose conditions. Images were collected at a 50,000\u00d7 magnification and 1.5 \u00b5m under-focus on a 2k \u00d7 2k UltraScan 1000 camera (Gatan, Inc., Pleasanton, CA).\n",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "a38401e7-f395-4674-b811-9209513ff554",
+      "submission_id": "721cd439-cb02-416e-903c-8b41fc8e136a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Reinhard Jahn, Max Planck Institute for Biophysical Chemistry , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00592.013](https://doi.org/10.7554/eLife.00592.013)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201c\u03b1-Synuclein Induces Synaptic Vesicle Clustering Via Binding To Phospholipids and Synaptobrevin-2/VAMP2\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission want to reveal their identity: Reinhard Jahn (Reviewing editor), and Jose Rizo and Yeon-Kyun Shin (peer reviewers).\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\n1) The concentration of synuclein used in the experiments is very high (2\u201320 \u03bcM), resulting in high protein:lipid ratios, raising the possibility that the liposomes are completely covered with protein. We suggest to carry out experiments testing whether such high concentrations are required. A straightforward option would be to run dynamic light scattering experiments on mixed liposome solutions using increasing concentrations of synuclein, but other approaches addressing the same problem are also acceptable.\n\n2) A second related question is whether vesicle aggregation is caused by homooligomerization of synuclein between membranes. While we realize that this question may not be trivial to address, one possible option is to pre-incubate the docked vesicles with synuclein, wash away any unbound material, and then test whether synaptobrevin-liposomes still bind. Although such experiments would not be completely conclusive (particularly if the outcome is negative), this question should be approached by such or other suitable experiments.\n\n3) All referees had difficulties with your model that seems highly speculative and almost counter-intuitive: the data presented in the paper actually show a reduction of docking between v-vesicles and t-vesicles by addition of \u03b1-synuclein. If this model is correct, wouldn't one expect a substantial effect of synucleing KO on neurotransmitter release? See the recent paper by Choi et al. (PNAS, Feb 19 2013), where the authors argue that vesicle clustering by large \u03b1-synuclein oligomers inhibit vesicle fusion and reduce neurotransmitter release.\n",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "34077b4e-6376-48a1-aac9-dbb7f5594f4f",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C1",
+      "claim": "\u03b1-Synuclein is a presynaptic protein that is implicated in Parkinson's and other neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-Synuclein is a presynaptic protein that is implicated in Parkinson's and other neurodegenerative diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by extensive literature on \u03b1-synuclein's role in neurodegenerative diseases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "d0bdcee6-e88a-49ad-823a-2ffa0bd6feed",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C2",
+      "claim": "Native \u03b1-synuclein promotes presynaptic SNARE-complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiologically, native \u03b1-synuclein promotes presynaptic SNARE-complex assembly, but its molecular mechanism of action remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established physiological function of \u03b1-synuclein, though the mechanism is unknown.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "dc064e8a-696f-40f8-b78f-603055ef5e2e",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C3",
+      "claim": "Native \u03b1-synuclein promotes clustering of synaptic-vesicle mimics.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that native \u03b1-synuclein promotes clustering of synaptic-vesicle mimics, using a single-vesicle optical microscopy system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data from single-vesicle optical microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "7006b379-126e-4b1c-afdb-5d3ae0c5bbac",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C4",
+      "claim": "Vesicle-clustering activity was observed for both recombinant and native \u03b1-synuclein purified from mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "This vesicle-clustering activity was observed for both recombinant and native \u03b1-synuclein purified from mouse brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing recombinant and brain-purified \u03b1-synuclein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "923c62c2-2f34-4736-8e1d-f0f0cce5d048",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C5",
+      "claim": "Clustering was dependent on specific interactions of native \u03b1-synuclein with both synaptobrevin-2/VAMP2 and anionic lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering was dependent on specific interactions of native \u03b1-synuclein with both synaptobrevin-2/VAMP2 and anionic lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from deletion and mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "d66d9bff-516c-4df2-9096-61387c70a385",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C6",
+      "claim": "Out of the three familial Parkinson's disease-related point mutants of \u03b1-synuclein, only the lipid-binding deficient mutation A30P disrupted clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the three familial Parkinson's disease-related point mutants of \u03b1-synuclein, only the lipid-binding deficient mutation A30P disrupted clustering, hinting at a possible loss of function phenotype for this mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing the three PD mutants (A30P, E46K, A53T).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "db4b203e-1841-439d-94ab-0d4ac3c1105a",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C7",
+      "claim": "The A30P mutation hints at a possible loss of function phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the three familial Parkinson's disease-related point mutants of \u03b1-synuclein, only the lipid-binding deficient mutation A30P disrupted clustering, hinting at a possible loss of function phenotype for this mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental data on the A30P mutant.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "5caf50de-9758-4d43-a793-bdbc2fe788d5",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C8",
+      "claim": "\u03b1-Synuclein had little effect on Ca2+-triggered fusion in the reconstituted single-vesicle system.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-Synuclein had little effect on Ca2+-triggered fusion in our reconstituted single-vesicle system, consistent with in vivo data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the single-vesicle fusion assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "828226cd-787e-44e1-a192-c547d1a810a7",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C9",
+      "claim": "The lack of effect of \u03b1-synuclein on Ca2+-triggered fusion is consistent with in vivo data.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-Synuclein had little effect on Ca2+-triggered fusion in our reconstituted single-vesicle system, consistent with in vivo data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references agreement with previously published in vivo studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "46ba3555-c79d-44e5-8940-4a08f341f518",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C10",
+      "claim": "\u03b1-Synuclein may lead to accumulation of synaptic vesicles at the active zone, providing a 'buffer' of synaptic vesicles, without affecting neurotransmitter release itself.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-Synuclein may therefore lead to accumulation of synaptic vesicles at the active zone, providing a 'buffer' of synaptic vesicles, without affecting neurotransmitter release itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "916ff740-ae70-4f35-91e2-ddd9f2b413b7",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C11",
+      "claim": "\u03b1-Synuclein is an abundant presynaptic protein that is expressed throughout the central nervous system (CNS) and associated with synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-Synuclein (\u03b1-Syn) is an abundant presynaptic protein that is expressed throughout the central nervous system (CNS) and associated with synaptic vesicles (Maroteaux et al., 1988; Jensen et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "b8bc3e35-86f0-462f-a37f-287a09e0a9a9",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C12",
+      "claim": "Missense mutations (A30P, E46K, A53T) of \u03b1-Syn are linked to early onset Parkinson's disease (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "Pathologically, missense mutations (A30P, E46K, A53T) of \u03b1-Syn (Polymeropoulos et al., 1997; Kruger et al., 1998; Zarranz et al., 2004) and duplications and triplications of the gene that encodes \u03b1-Syn (Singleton et al., 2003; Chartier-Harlin et al., 2004) are linked to early onset Parkinson's disease (PD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "7fbc82d1-c282-491b-8d4a-418fc31f4856",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C13",
+      "claim": "Duplications and triplications of the gene that encodes \u03b1-Syn are linked to early onset Parkinson's disease (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "Pathologically, missense mutations (A30P, E46K, A53T) of \u03b1-Syn (Polymeropoulos et al., 1997; Kruger et al., 1998; Zarranz et al., 2004) and duplications and triplications of the gene that encodes \u03b1-Syn (Singleton et al., 2003; Chartier-Harlin et al., 2004) are linked to early onset Parkinson's disease (PD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "491060ff-b3d1-4214-9f81-5947371f8a69",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C14",
+      "claim": "Lewy bodies observed in Parkinson's disease, dementia with Lewy bodies, and other neurodegenerative diseases contain high concentrations of \u03b1-Syn aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Lewy bodies observed in Parkinson's disease, dementia with Lewy bodies, and other neurodegenerative diseases contain high concentrations of \u03b1-Syn aggregates (Spillantini et al., 1997; Hardy and Gwinn-Hardy, 1998; Spillantini et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "49afc4df-7a13-44d2-98de-daec9c9a826a",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C15",
+      "claim": "In aqueous solution, \u03b1-Syn is a largely unfolded protein and has a propensity to aggregate in a nucleation-dependent manner, forming \u03b2-sheet rich amyloid-like fibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "In aqueous solution, \u03b1-Syn is a largely unfolded protein and has a propensity to aggregate in a nucleation-dependent manner, forming \u03b2-sheet rich amyloid-like fibrils (Serpell et al., 2000; Zhao et al., 2011; Burr\u00e9 et al., In press).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "67cb2326-6ccb-4440-bea0-830effb6ac24",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C16",
+      "claim": "Fibrils, protofibrils and/or large oligomers are believed to be cytotoxic.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibrils, protofibrils and/or large oligomers are believed to be cytotoxic (Conway et al., 2000; Goldberg and Lansbury, 2000; Bucciantini et al., 2002), and may be responsible, at least in part, for the neurodegeneration observed in diseases featuring Lewy bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "de417abf-adab-47fd-b9af-8226ed6c3710",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C17",
+      "claim": "Cytotoxic \u03b1-synuclein species may be responsible, at least in part, for the neurodegeneration observed in diseases featuring Lewy bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibrils, protofibrils and/or large oligomers are believed to be cytotoxic (Conway et al., 2000; Goldberg and Lansbury, 2000; Bucciantini et al., 2002), and may be responsible, at least in part, for the neurodegeneration observed in diseases featuring Lewy bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on cited literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "e75736c7-1b02-4361-9169-ac848d91887f",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C18",
+      "claim": "\u03b1-Syn increases the rate of SNARE-complex formation at the synapse via binding to the SNARE protein synaptobrevin-2 and to phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiologically, \u03b1-Syn increases the rate of SNARE-complex formation at the synapse via binding to the SNARE protein synaptobrevin-2 (also called VAMP2, vesicle associated membrane protein 2) and to phospholipids (Burr\u00e9 et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "4781f455-e062-4d6f-9f3c-7f6744247a06",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C19",
+      "claim": "In adult canaries and zebra finches, \u03b1-Syn expression correlates with plasticity in the developing song control system.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult canaries and zebra finches, \u03b1-Syn expression correlates with plasticity in the developing song control system (Clayton and George, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "ed2f03cf-7f73-45e7-a183-0c0d0507cf46",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C20",
+      "claim": "Deletion of \u03b1-Syn in mice has been reported to show either no or very small and opposing effects on neurotransmitter release.",
+      "claim_type": "EXPLICIT",
+      "source": "However, deletion of \u03b1-Syn in mice has been reported to show either no or very small and opposing effects on neurotransmitter release (Abeliovich et al., 2000; Cabin et al., 2002; Chandra et al., 2004; Liu et al., 2004; Yavich et al., 2004; Unger et al., 2006; Senior et al., 2008; Burr\u00e9 et al., 2010; Garcia-Reitbock et al., 2010; Scott et al., 2010; Anwar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "558025b9-055b-4136-9e17-79edea95d254",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C21",
+      "claim": "Overexpression of \u03b1-Syn either in transgenic mice or using stereotactic injections of adeno-associated virus have resulted in conflicting effects on neurotransmitter release.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, overexpression of \u03b1-Syn either in transgenic mice or using stereotactic injections of adeno-associated virus have resulted in conflicting effects on neurotransmitter release, although chronic overexpression nearly always leads to neurodegeneration (Liu et al., 2004; Larsen et al., 2006; Burr\u00e9 et al., 2010; Nemani et al., 2010; Gaugler et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "4ccd4706-6a58-4319-836f-974dbced9949",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C22",
+      "claim": "Chronic overexpression of \u03b1-Syn nearly always leads to neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, overexpression of \u03b1-Syn either in transgenic mice or using stereotactic injections of adeno-associated virus have resulted in conflicting effects on neurotransmitter release, although chronic overexpression nearly always leads to neurodegeneration (Liu et al., 2004; Larsen et al., 2006; Burr\u00e9 et al., 2010; Nemani et al., 2010; Gaugler et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "d21f9a27-0543-48cd-9a6f-c41c7364ba56",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C23",
+      "claim": "\u03b1-Syn is a 14-kDa protein composed of an amphipathic, positively charged 100 residue N-terminal domain with a lysine-rich N-terminus that binds reversibly to anionic membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, \u03b1-Syn is a 14-kDa protein composed of an amphipathic, positively charged 100 residue N-terminal domain with a lysine-rich N-terminus that binds reversibly to anionic membranes (Rhoades et al., 2006), and a 40-residue highly acidic C-terminal domain that interacts with the N-terminal sequence of synaptobrevin-2 (Burr\u00e9 et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "705f06b6-7029-431c-baa3-a56efd4aeb99",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C24",
+      "claim": "\u03b1-Syn has a 40-residue highly acidic C-terminal domain that interacts with the N-terminal sequence of synaptobrevin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, \u03b1-Syn is a 14-kDa protein composed of an amphipathic, positively charged 100 residue N-terminal domain with a lysine-rich N-terminus that binds reversibly to anionic membranes (Rhoades et al., 2006), and a 40-residue highly acidic C-terminal domain that interacts with the N-terminal sequence of synaptobrevin-2 (Burr\u00e9 et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "1efb34cc-f731-45f2-90c2-958264df3c5f",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C25",
+      "claim": "Recombinant, erythrocyte, and brain \u03b1-Syn is predominantly monomeric in solution with a smaller fraction of multimeric species, and is largely unstructured with a small (approximately 21\u201324%) helical contribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombinant, erythrocyte, and brain \u03b1-Syn is predominantly monomeric in solution with a smaller fraction of multimeric species, and is largely unstructured with a small (approximately 21\u201324%) helical contribution (Fauvet et al., 2012; Burr\u00e9 et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "7f7a3e2f-7b46-4c56-a304-24856bc481f9",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C26",
+      "claim": "At high concentrations (\u223c500 \u03bcM) and in the presence of \u03b2-octylglucoside, nuclear magnetic resonance spectra showed weak intramolecular NOEs in regions of \u03b1-helical propensity but no tertiary interactions, reminiscent of a molten globule.",
+      "claim_type": "EXPLICIT",
+      "source": "At high concentrations (\u223c500 \u03bcM) and in the presence of \u03b2-octylglucoside, nuclear magnetic resonance spectra showed weak intramolecular NOEs in regions of \u03b1-helical propensity but no tertiary interactions, reminiscent of a molten globule (Wang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "dc7c7ab7-7eb6-43d5-8c14-63c81f895de2",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C27",
+      "claim": "The interaction with anionic lipids induces \u03b1-helicity in \u03b1-Syn, as revealed by CD spectroscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction with anionic lipids induces \u03b1-helicity in \u03b1-Syn, as revealed by CD spectroscopy (Davidson et al., 1998; Jo et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "fa5a22d2-b98e-45e1-a1ff-3416d6fd393e",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C28",
+      "claim": "Solution NMR studies, EPR analyses, calorimetry, and single molecule fluorescence resonance transfer experiments in the presence of SDS micelles and small unilamellar vesicles revealed that the N-terminal 100 residues form a broken amphiphatic \u03b1-helix upon binding to anionic lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, solution NMR studies, EPR analyses, calorimetry, and single molecule fluorescence resonance transfer experiments in the presence of SDS micelles and small unilamellar vesicles revealed that the N-terminal 100 residues form a broken amphiphatic \u03b1-helix upon binding to anionic lipids (Bussell and Eliezer, 2003; Chandra et al., 2003; Ulmer et al., 2005; Jao et al., 2008; Ferreon et al., 2009; Lokappa and Ulmer, 2011; Maltsev et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "7d0f1e51-4cd4-4b8f-885d-23e6328217b6",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C29",
+      "claim": "Binding of \u03b1-Syn to the membrane is transient.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of \u03b1-Syn to the membrane is transient, and the C-terminal 40 residues of \u03b1-Syn are unstructured and not bound to the membrane (Bodner et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "db1227fd-579a-4d62-9fd0-3dae4c807aec",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C30",
+      "claim": "The C-terminal 40 residues of \u03b1-Syn are unstructured and not bound to the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of \u03b1-Syn to the membrane is transient, and the C-terminal 40 residues of \u03b1-Syn are unstructured and not bound to the membrane (Bodner et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "825994b1-940d-419c-a65b-36b195c43cba",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C31",
+      "claim": "N-terminal acetylation of \u03b1-Syn does not induce significant structure in recombinant \u03b1-Syn in solution (i.e., absence of detergents or lipids), but further enhances its binding to anionic membranes and induced \u03b1-helicity.",
+      "claim_type": "EXPLICIT",
+      "source": "N-terminal acetylation of \u03b1-Syn does not induce significant structure in recombinant \u03b1-Syn in solution (i.e., absence of detergents or lipids), but further enhances its binding to anionic membranes and induced \u03b1-helicity (Maltsev et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "98dfd751-b11d-4238-abee-5ac01f089097",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C32",
+      "claim": "Although initially largely monomeric, purified brain \u03b1-Syn associates into partially folded multimers and aggregates in a time-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Although initially largely monomeric, purified brain \u03b1-Syn associates into partially folded multimers and aggregates in a time-dependent manner (Burr\u00e9 et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "8b3f24a5-43f2-4827-b1e2-eb86100859d0",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C33",
+      "claim": "Different monomeric and oligomeric states of \u03b1-Syn likely exist in an equilibrium in vivo, which is modulated by a variety of factors and interactions, such as membrane binding.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that these different monomeric and oligomeric states exist in an equilibrium in vivo, which is modulated by a variety of factors and interactions, such as membrane binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on inference from the cited data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "721a8aa3-7706-4a5f-9954-4b1a35a2d6f2",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C34",
+      "claim": "The labile mixture of conformations provides a potential explanation for why \u03b1-Syn is so susceptible to pathological aggregation and fibril formation as observed in multiple neurodegenerative disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "This labile mixture of conformations provides a potential explanation for why \u03b1-Syn is so susceptible to pathological aggregation and fibril formation as observed in multiple neurodegenerative disorders (Devine et al., 2011; Martin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "08713ebf-7be8-4354-a1c6-6e4b8d9f2887",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C35",
+      "claim": "Native \u03b1-Syn does not significantly affect the efficiency and kinetics of Ca2+-triggered synaptic protein-mediated fusion itself.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that native \u03b1-Syn does not significantly affect the efficiency and kinetics of Ca2+-triggered synaptic protein-mediated fusion itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the single-vesicle fusion assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "0fcc38af-2116-4c1f-881e-be7f9a24769f",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C36",
+      "claim": "\u03b1-Syn induces clustering of vesicles with reconstituted synaptobrevin-2 or with both reconstituted synaptobrevin-2 and synaptotagmin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, \u03b1-Syn induces clustering of vesicles with reconstituted synaptobrevin-2 or with both reconstituted synaptobrevin-2 and synaptotagmin-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the clustering assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "54e54a44-2520-4720-9cd3-e1a1a03a0091",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C37",
+      "claim": "The clustering effect is dependent on specific binding to both anionic lipid membranes and synaptobrevin-2 as revealed by deletion and mutagenesis studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The clustering effect is dependent on specific binding to both anionic lipid membranes and synaptobrevin-2 as revealed by deletion and mutagenesis studies, including the Parkinson's disease mutant A30P that disrupts lipid binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from deletion and mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "544bd531-a911-49df-9feb-94b5cbc78428",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C38",
+      "claim": "The Parkinson's disease mutant A30P disrupts lipid binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The clustering effect is dependent on specific binding to both anionic lipid membranes and synaptobrevin-2 as revealed by deletion and mutagenesis studies, including the Parkinson's disease mutant A30P that disrupts lipid binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data on the A30P mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "06836dc9-a2c8-4fd4-853f-5514d3ec78df",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C39",
+      "claim": "Clustering is induced by both recombinant and brain-purified native \u03b1-Syn, both of which are initially in a largely monomeric state in the absence of membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, clustering is induced by both recombinant and brain-purified native \u03b1-Syn, both of which are initially in a largely monomeric state in the absence of membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing recombinant and brain-purified \u03b1-Syn.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "be755410-6d56-4135-b255-3744d8d9007e",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C40",
+      "claim": "The clustering or lack thereof may account for the increase in SNARE-complex levels observed upon overexpression of native \u03b1-Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "This clustering or lack thereof may account for the increase in SNARE-complex levels observed upon overexpression of native \u03b1-Syn (Burr\u00e9 et al., 2010), and, conversely, the decrease in SNARE-complex assembly in \u03b1\u03b2\u03b3-Syn triple knockout mice (Burr\u00e9 et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental findings, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "c6e2d2a5-5962-416c-a444-5024b6ff7a92",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C41",
+      "claim": "The clustering or lack thereof may account for the decrease in SNARE-complex assembly in \u03b1\u03b2\u03b3-Syn triple knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This clustering or lack thereof may account for the increase in SNARE-complex levels observed upon overexpression of native \u03b1-Syn (Burr\u00e9 et al., 2010), and, conversely, the decrease in SNARE-complex assembly in \u03b1\u03b2\u03b3-Syn triple knockout mice (Burr\u00e9 et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental findings, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "efd0daa6-d0ea-4f92-8251-fbf73992be04",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C42",
+      "claim": "In the absence of \u03b1-Syn, 166 fusion events were observed out of \u223c2000 docked v-vesicles within the observation period of 50 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of \u03b1-Syn, we observed 166 fusion events out of \u223c2000 docked v-vesicles (identified as fluorescent spots that were present prior to Ca2+ injection), whereas in the presence of \u03b1-Syn, we observed 84 fusion events out of \u223c1300 docked v-vesicles within the observation period of 50 s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the Ca2+-triggered fusion assay, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "a1f136ec-5e75-468a-89ba-f421613aadf9",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C43",
+      "claim": "In the presence of \u03b1-Syn, 84 fusion events were observed out of \u223c1300 docked v-vesicles within the observation period of 50 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of \u03b1-Syn, we observed 166 fusion events out of \u223c2000 docked v-vesicles (identified as fluorescent spots that were present prior to Ca2+ injection), whereas in the presence of \u03b1-Syn, we observed 84 fusion events out of \u223c1300 docked v-vesicles within the observation period of 50 s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the Ca2+-triggered fusion assay, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "fc482aae-8ffd-4300-abe7-13d4e2a34cf4",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C44",
+      "claim": "Native \u03b1-Syn reduced the number of fluorescent spots that appeared when v-vesicles bound to immobilized t-vesicles during the incubation stage at zero Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Although native \u03b1-Syn showed no effect on Ca2+-triggered fusion activity, we noticed that \u03b1-Syn reduced the number of fluorescent spots that appeared when v-vesicles bound to immobilized t-vesicles during the incubation stage at zero Ca2+ (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the v-/t-vesicle association assay, shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "dfc373b4-46a3-4fb8-a503-1c0de1bfb782",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C45",
+      "claim": "The addition of native \u03b1-Syn produced the emergence of brighter spots between 1.5 and 6 a.u. in the fluorescence emission histogram.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the addition of native \u03b1-Syn produced the emergence of brighter spots between 1.5 and 6 a.u. in the fluorescence emission histogram (insert, Figure 2B), along with occasional very large fluorescent spots (black arrow, lower right image in Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the fluorescence intensity distribution, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "80ea13ae-51e9-43fb-8be7-2f364a728311",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C46",
+      "claim": "The major peak (<1.5 a.u.) at low fluorescence intensity corresponds to single donor v-vesicles docked to the imaging surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The major peak (<1.5 a.u.) at low fluorescence intensity corresponds to single donor v-vesicles docked to the imaging surface, while the high intensity tail (>2 a.u.) corresponds to small clusters of v-vesicles docked to the surface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the fluorescence intensity distribution data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "b08bbedf-eab7-498f-9394-6403bee1688d",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C47",
+      "claim": "The high intensity tail (>2 a.u.) corresponds to small clusters of v-vesicles docked to the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The major peak (<1.5 a.u.) at low fluorescence intensity corresponds to single donor v-vesicles docked to the imaging surface, while the high intensity tail (>2 a.u.) corresponds to small clusters of v-vesicles docked to the surface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the fluorescence intensity distribution data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "2d9d86bb-2ca4-49b4-b904-192c4249008d",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C48",
+      "claim": "In the presence of \u03b1-Syn, a reduction of the single vesicle population and a concomitant increase of a population of vesicle clusters was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of \u03b1-Syn, we thus observed a reduction of the single vesicle population and a concomitant increase of a population of vesicle clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the fluorescence intensity distribution data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "a31b4084-0b83-47a2-96b8-12bc87e78a33",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C49",
+      "claim": "The observed decrease in the total number of fluorescent spots in the presence of native \u03b1-Syn can be explained by a reduction of the number of free-floating particles by clustering of individual v-vesicles in the finite volume of the sample chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the observed decrease in the total number of fluorescent spots (referred to as 'v-/t-vesicle associations') in the presence of native \u03b1-Syn (Figure 2A) can be explained by a reduction of the number of free-floating particles by clustering of individual v-vesicles in the finite volume of the sample chamber (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Figure 2A and illustrated in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "9ccd2594-5f81-43f1-a63d-5ad5ad48d7cb",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C50",
+      "claim": "Native \u03b1-Syn increases the clustering of v-vesicles in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this clustering assay, we confirmed that native \u03b1-Syn increases the clustering of v-vesicles in a concentration-dependent manner (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the v-/v-vesicle clustering assay, shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "9f1b5e1e-beb3-4aeb-9bf6-4c6a7eba763d",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C51",
+      "claim": "The buffer exchange removed unbound \u03b1-Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent to the incubation stage, a buffer exchange with \u03b1-Syn-free buffer was performed for 6 s which removed unbound \u03b1-Syn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "4c9e54ef-1ee5-410b-8437-43910e0c86f9",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C52",
+      "claim": "The buffer exchange likely removed some of the v-vesicle-bound \u03b1-Syn molecules since kinetic studies by NMR spectroscopy revealed that \u03b1-Syn binding to membranes is transient with exchanges occurring in the range of 1\u201310 s-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it is likely that the buffer exchange also removed some of the v-vesicle-bound \u03b1-Syn molecules since kinetic studies by NMR spectroscopy revealed that \u03b1-Syn binding to membranes is transient with exchanges occurring in the range of 1\u201310 s-1 (Bodner et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited NMR kinetic data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "581a9999-bc84-44d1-9a19-ac4e3c197f8d",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C53",
+      "claim": "The effective \u03b1-Syn concentration during the final clustering step is lower than 2\u201320 \u03bcM, as only bound \u03b1-Syn is present at this stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the effective \u03b1-Syn concentration during the final clustering step (Figure 3B, right panel) is lower than 2\u201320 \u03bcM, as only bound \u03b1-Syn is present at this stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental protocol and the transient binding of \u03b1-Syn.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "14129d4c-927e-4c4d-b237-871ba2dd2be4",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C54",
+      "claim": "V-vesicle clustering has not reached saturation at 2 \u03bcM \u03b1-Syn incubation concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as Figure 4A shows, v-vesicle clustering has not reached saturation at 2 \u03bcM \u03b1-Syn incubation concentration, so v-vesicles were not fully covered with \u03b1-Syn molecules at that particular \u03b1-Syn incubation concentration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the concentration-dependent data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "ba791776-c547-42d3-9b92-f5f904b174b1",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C55",
+      "claim": "V-vesicles were not fully covered with \u03b1-Syn molecules at 2 \u03bcM \u03b1-Syn incubation concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as Figure 4A shows, v-vesicle clustering has not reached saturation at 2 \u03bcM \u03b1-Syn incubation concentration, so v-vesicles were not fully covered with \u03b1-Syn molecules at that particular \u03b1-Syn incubation concentration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the concentration-dependent data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "915c32f6-bd4e-4419-8552-0f61350ea197",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C56",
+      "claim": "A cryo-electron microscopy experiment revealed large v-vesicle clusters in the presence of native \u03b1-Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "As another independent confirmation of v-vesicle clustering, a cryo-electron microscopy experiment revealed large v-vesicle clusters in the presence of native \u03b1-Syn (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from cryo-EM, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "69c4276f-a49d-4904-a475-913cac3b5104",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C57",
+      "claim": "The vesicle concentration used for the cryo-EM experiment was 100-fold higher than that used for the single-vesicle clustering experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, that the vesicle concentration used for the cryo-EM experiment was 100-fold higher and the effective \u03b1-Syn concentration was also higher than that used for the single-vesicle clustering experiments, explaining the formation of the fairly large clusters in the cryo-EM experiment at that concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental conditions for the cryo-EM experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "272ed076-6c6a-4ecd-bab1-fac8558e3430",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C58",
+      "claim": "V-vesicles clustering does not occur in the absence of \u03b1-Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "V-vesicles clustering does not occur in the absence of \u03b1-Syn (Kyoung et al., 2011) and is therefore specific to native \u03b1-Syn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "1fe36cf6-ea4d-4702-8f39-e72fe4d317df",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C59",
+      "claim": "V-vesicle clustering is specific to native \u03b1-Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "V-vesicles clustering does not occur in the absence of \u03b1-Syn (Kyoung et al., 2011) and is therefore specific to native \u03b1-Syn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "7e0bac0c-093e-40a2-911f-92e885e4c5c7",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C60",
+      "claim": "V-vesicle clustering is entirely dependent on the presence of synaptobrevin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also entirely dependent on the presence of synaptobrevin-2, as lack of synaptobrevin-2 (Figure 4A), or truncation of C-terminal residues of \u03b1-Syn that bind to synaptobrevin-2 (Burr\u00e9 et al., 2010) but do not participate in lipid binding of \u03b1-Syn (Burr\u00e9 et al., 2010, 2012) significantly reduced clustering of v-vesicles (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 4A, 4B, and 4C, and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "9e368ecb-1205-4495-88ea-6336fd6e75f7",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C61",
+      "claim": "Truncation of C-terminal residues of \u03b1-Syn that bind to synaptobrevin-2 significantly reduced clustering of v-vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also entirely dependent on the presence of synaptobrevin-2, as lack of synaptobrevin-2 (Figure 4A), or truncation of C-terminal residues of \u03b1-Syn that bind to synaptobrevin-2 (Burr\u00e9 et al., 2010) but do not participate in lipid binding of \u03b1-Syn (Burr\u00e9 et al., 2010, 2012) significantly reduced clustering of v-vesicles (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 4B and 4C, and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "28e23a2f-a4fa-42cd-83c4-08f74b67c716",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C62",
+      "claim": "Clustering of v-vesicles depended on the presence of negatively charged (anionic) lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, clustering of v-vesicles depended on the presence of negatively charged (anionic) lipids (Figure 4A, right most condition), which is known to induce \u03b1-helix formation in native \u03b1-Syn and lipid binding of \u03b1-Syn.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "5a86706a-26ef-4173-b7e2-a4ac7a6ccd36",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C63",
+      "claim": "Negatively charged lipids are known to induce \u03b1-helix formation in native \u03b1-Syn and lipid binding of \u03b1-Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, clustering of v-vesicles depended on the presence of negatively charged (anionic) lipids (Figure 4A, right most condition), which is known to induce \u03b1-helix formation in native \u03b1-Syn and lipid binding of \u03b1-Syn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "85052f0d-588a-4f5f-bbfe-920e70e90022",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C64",
+      "claim": "\u03b1-helicity was observed in the CD spectrum of native \u03b1-Syn in the presence of protein-free vesicles with the same lipid composition used for the fusion and v-vesicle clustering experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, and in agreement with previous studies (Davidson et al., 1998; Jo et al., 2000; Eliezer et al., 2001), we observed \u03b1-helicity in the CD spectrum of native \u03b1-Syn in the presence of protein-free vesicles with the same lipid composition used for our fusion and v-vesicle clustering experiments (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from CD spectroscopy, shown in Figure 6, and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "b3372905-438a-4474-8bbc-a28088d9dd41",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C65",
+      "claim": "Native \u03b1-Syn has to bind to both synaptobrevin-2 and anionic lipids in order to cluster v-vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our clustering experiments suggest that native \u03b1-Syn has to bind to both, synaptobrevin-2 and anionic lipids, in order to cluster v-vesicles, confirming the protein- and anionic-lipid specificity of this phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data from the clustering experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "ae9f8e73-2b83-46fc-b1f9-209d6a16e9f8",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C66",
+      "claim": "V-vesicle clustering induced by native \u03b1-Syn was similar with and without synaptotagmin-1 within experimental error.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that v-vesicle clustering induced by native \u03b1-Syn was similar with and without synaptotagmin-1 within experimental error.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the clustering assay with different vesicle compositions, shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "e15c7873-2038-4a4d-8f49-cab35dd1ed15",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C67",
+      "claim": "V-vesicles with only reconstituted synaptotagmin-1 did not cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, v-vesicles with only reconstituted synaptotagmin-1 did not cluster, consistent with the requirement of synaptobrevin-2 for native \u03b1-Syn-induced v-vesicle clustering (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the clustering assay, shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "b8ef1718-8ae0-447e-950b-090058018d34",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C68",
+      "claim": "All three PD-related mutants (A30P, E46K, A53T) retain the ability to bind synaptobrevin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "While all these mutants retain the ability to bind synaptobrevin-2, only A30P shows reduced membrane binding (Burr\u00e9 et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "40bdfcbd-1b15-4974-940f-ab4e4141e9fa",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C69",
+      "claim": "Only A30P shows reduced membrane binding among the three PD-related mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "While all these mutants retain the ability to bind synaptobrevin-2, only A30P shows reduced membrane binding (Burr\u00e9 et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "c12b55a1-9c8e-4810-bd03-85a406f47458",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C70",
+      "claim": "Out of the mutants tested, only A30P showed \u223c 50% decrease in membrane binding compared to native wildtype \u03b1-Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the mutants tested, only A30P showed \u223c 50% decrease in membrane binding and v-vesicle clustering compared to native wildtype \u03b1-Syn.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the lipid flotation assay, shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "7dc9f883-97ed-4f3f-80c4-c3f4835c19b9",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C71",
+      "claim": "Out of the mutants tested, only A30P showed \u223c 50% decrease in v-vesicle clustering compared to native wildtype \u03b1-Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the mutants tested, only A30P showed \u223c 50% decrease in membrane binding and v-vesicle clustering compared to native wildtype \u03b1-Syn.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the clustering assay, shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "746cb59b-7de5-428f-b14d-2b5262209f91",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C72",
+      "claim": "The effect of the three mutations in v-vesicle clustering correlated well with their effect on native \u03b1-Syn binding to PS-containing vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the effect of the three mutations in v-vesicle clustering correlated well with their effect on native \u03b1-Syn binding to PS-containing vesicles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Figures 7B and 7C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "f1b3636c-ae84-4a84-bebc-dae5b87d33b9",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C73",
+      "claim": "Membrane-binding by native \u03b1-Syn is essential for its clustering activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that membrane-binding by native \u03b1-Syn is essential for its clustering activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the correlation between membrane binding and clustering activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "9dd44d82-662b-4626-948f-c1319c5abd12",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C74",
+      "claim": "Only the A30P mutant increased the number of v-/t-vesicle associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the A30P mutant increased the number of v-/t-vesicle associations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the v-/t-vesicle association assay, shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "2b48988e-5602-4eb3-bbfb-ce3415faaf2c",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C75",
+      "claim": "The reduction of the number of v-/t-vesicle associations by native wildtype \u03b1-Syn is a consequence of the finite volume used during the incubation stage and the reduction of the number of free particles in the sample chamber by v-vesicle clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, the reduction of the number of v-/t-vesicle associations by native wildtype \u03b1-Syn is a consequence of the finite volume used during the incubation stage and the reduction of the number of free particles in the sample chamber by v-vesicle clustering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "bb86a9b8-d875-425e-8a20-76efd30e919f",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C76",
+      "claim": "The numbers of v-vesicle clusters and v-/t-vesicle associations are anti-correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the numbers of v-vesicle clusters (Figure 7C) and v-/t-vesicle associations (Figure 7D) are anti-correlated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Figures 7C and 7D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "f0151d72-4c32-4873-9148-79cdb776bd17",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C77",
+      "claim": "Native \u03b1-Syn was purified from mouse brain without detergents or denaturants using multiple chromatography steps to a purity of >90%.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to test whether native brain-purified \u03b1-Syn has the same activity as native recombinant \u03b1-Syn in clustering v-vesicles, we purified native \u03b1-Syn from mouse brain without detergents or denaturants using multiple chromatography steps to a purity of >90% (Burr\u00e9 et al., In press).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the purification method, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "fc899b60-e38e-4d2f-b680-6bc4e46423d9",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C78",
+      "claim": "The induction of v-vesicle clustering by native brain purified \u03b1-Syn was similar to that of native recombinant \u03b1-Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the induction of v-vesicle clustering by native brain purified \u03b1-Syn was similar to that of native recombinant \u03b1-Syn (compare Figures 4A and 8), confirming that the observed clustering activity is not sensitive to the origin of \u03b1-Syn.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data comparing recombinant and brain-purified \u03b1-Syn, shown in Figures 4A and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "2691948b-2641-471c-af9b-bd1c913bbbcd",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C79",
+      "claim": "The observed clustering activity is not sensitive to the origin of \u03b1-Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the induction of v-vesicle clustering by native brain purified \u03b1-Syn was similar to that of native recombinant \u03b1-Syn (compare Figures 4A and 8), confirming that the observed clustering activity is not sensitive to the origin of \u03b1-Syn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the comparison of recombinant and brain-purified \u03b1-Syn.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "21378c98-6da6-463f-bd7b-088040b33c11",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C80",
+      "claim": "Young \u03b1\u03b2\u03b3-synuclein triple knockout mice showed no obvious phenotype, but developed neurological impairments during aging and revealed age-dependent impairments in SNARE-complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, young \u03b1\u03b2\u03b3-synuclein triple knockout mice showed no obvious phenotype, but developed neurological impairments during aging and revealed age-dependent impairments in SNARE-complex assembly (Burr\u00e9 et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "a52b9132-3389-4ed8-b519-8b0549fc7e62",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C81",
+      "claim": "Effects on neurotransmission were observed only upon prolonged trains of high-frequency stimulation in synuclein knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Effects on neurotransmission were observed only upon prolonged trains of high-frequency stimulation (Abeliovich et al., 2000; Cabin et al., 2002) (however, see Chandra et al., 2004 for different results).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "7d1b9cad-b5d2-4fac-b212-fc7665085346",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C82",
+      "claim": "Transgenic mice with overexpressed human \u03b1-Syn invariably exhibit signs of neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic mice with overexpressed human \u03b1-Syn invariably exhibit signs of neurodegeneration, but impairment in synaptic vesicle exocytosis and a reduction in neurotransmitter release were observed only in some studies (Nemani et al., 2010; Scott et al., 2010) but not in another study (Burr\u00e9 et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "acfc4ceb-ea72-46ed-9b7a-009257338234",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C83",
+      "claim": "Impairment in synaptic vesicle exocytosis and a reduction in neurotransmitter release were observed only in some studies of transgenic mice with overexpressed human \u03b1-Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic mice with overexpressed human \u03b1-Syn invariably exhibit signs of neurodegeneration, but impairment in synaptic vesicle exocytosis and a reduction in neurotransmitter release were observed only in some studies (Nemani et al., 2010; Scott et al., 2010) but not in another study (Burr\u00e9 et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "df0706cd-8dd7-4743-b651-3f10fb86ff91",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C84",
+      "claim": "Overexpression of \u03b1-Syn in the substantia nigra pars compacta of rodents using viral vectors invariably leads to neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of \u03b1-Syn in the substantia nigra pars compacta of rodents using viral vectors also invariably leads to neurodegeneration (Burr\u00e9 et al., 2012), and may cause an associated decrease in dopamine release (Gaugler et al., 2012; Lundblad et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "b033b249-8660-4940-9d91-22cda32a9ae6",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C85",
+      "claim": "Overexpression of \u03b1-Syn in the substantia nigra pars compacta of rodents using viral vectors may cause an associated decrease in dopamine release.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of \u03b1-Syn in the substantia nigra pars compacta of rodents using viral vectors also invariably leads to neurodegeneration (Burr\u00e9 et al., 2012), and may cause an associated decrease in dopamine release (Gaugler et al., 2012; Lundblad et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "6ea6afc2-ec4c-4b57-999d-3e47d3ef9bd0",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C86",
+      "claim": "The lack of a noticeable effect of native \u03b1-Syn on Ca2+-triggered fusion in the synthetic system agrees well with extensive in vivo studies with synuclein double and triple knockout mice that showed little effect on synaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of a noticeable effect of native \u03b1-Syn on Ca2+-triggered fusion in our synthetic system agrees well with extensive in vivo studies with synuclein double and triple knockout mice that showed little effect on synaptic strength (Chandra et al., 2004; Burr\u00e9 et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings in the context of cited in vivo studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "e77a984e-5654-40d4-a3bc-0dcad35bd8f4",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C87",
+      "claim": "The clustering activity of native \u03b1-Syn is very different from the effect of dopamine-induced large oligomers/aggregates of \u03b1-Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "The clustering activity of native \u03b1-Syn that we uncovered is very different from the effect of dopamine-induced large oligomers/aggregates of \u03b1-Syn (Choi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with a cited study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "ece4e01e-c125-40f9-b623-1b18acd30023",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C88",
+      "claim": "While native \u03b1-Syn clusters v-vesicles and reduces the number of free particles in the v-/t-vesicle assay without interfering with SNARE interactions, large \u03b1-Syn oligomers interfere with SNARE complex formation and reduce docking.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that although both our v-/t-vesicle assay and the single-vesicle lipid mixing assay by (Choi et al., 2013) revealed a reduction of the number of fluorescent ('docked') spots in v-/t-vesicle experiments, the underlying mechanism is different: while native \u03b1-Syn clusters v-vesicles and reduces the number of free particles in our v-/t-vesicle assay without interfering with SNARE interactions, large \u03b1-Syn oligomers interfere with SNARE complex formation and reduce docking in the lipid mixing assay of (Choi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the mechanisms between the current study and a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "dc4c724b-5ed1-4d66-bbe3-51a44988b418",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C89",
+      "claim": "It has been suggested that clusters of synaptic vesicles could act as a protein buffer to prevent the loss of accessory proteins involved in vesicle recycling.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that clusters of synaptic vesicles could act as a protein buffer (Denker et al., 2011) to prevent the loss of accessory proteins involved in vesicle recycling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "a8f0ecc6-c465-4362-96e1-0793908e3a2e",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C90",
+      "claim": "Under normal conditions, native \u03b1-Syn would contribute to clustering of synaptic vesicles at the active zone, and thereby assist with the formation of neuronal SNARE complexes by constraining additional synaptic vesicles to be close to the active zone.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose the following model (Figure 9): Under normal conditions, native \u03b1-Syn would contribute to clustering of synaptic vesicles at the active zone, and thereby assist with the formation of neuronal SNARE complexes by constraining additional synaptic vesicles to be close to the active zone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the experimental findings, illustrated in Figure 9.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "0b38d165-4345-49ab-8b6a-0919a81242a7",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C91",
+      "claim": "Under certain diseased conditions, excess amount of \u03b1-Syn could induce severe synaptic vesicle aggregation and thereby result in a reduced readily releasable synaptic vesicle pool, thus affecting neurotransmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Under certain other diseased conditions, excess amount of \u03b1-Syn could induce severe synaptic vesicle aggregation and thereby result in a reduced readily releasable synaptic vesicle pool, thus affecting neurotransmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about disease conditions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "137ff25d-4220-4bdd-b3e5-725c76fe8127",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C92",
+      "claim": "The vesicle preparation and protein reconstitution protocols produce homogeneous populations of vesicles with an average diameter of approximately 80 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed previously that our particular vesicle preparation and protein reconstitution protocols (Kyoung et al., 2012) produce homogeneous populations of vesicles with an average diameter of approximately 80 nm, and physiological protein concentrations (Kyoung et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "6bc0a7b1-79c5-4bae-b9c7-f5373399918f",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C93",
+      "claim": "The vesicle preparation and protein reconstitution protocols produce vesicles with physiological protein concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed previously that our particular vesicle preparation and protein reconstitution protocols (Kyoung et al., 2012) produce homogeneous populations of vesicles with an average diameter of approximately 80 nm, and physiological protein concentrations (Kyoung et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "b1562df9-e559-4f34-b388-d4de0a42e837",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C94",
+      "claim": "At 2 \u03bcM \u03b1-Syn concentration (v-vesicle-lipid to \u03b1-Syn-protein ratio of 11:1), no destabilization of the v-SNARE vesicles by \u03b1-Syn was observed since no leaking of content dyes from docked v-vesicles was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of 2 \u03bcM \u03b1-Syn corresponds to a v-vesicle-lipid to \u03b1-Syn-protein ratio of 11:1, with the actual lipid to protein ratio being larger due to the presence of the saturated t-vesicle surface; at this condition, we did not observe destabilization of the v-SNARE vesicles by \u03b1-Syn since no leaking of content dyes from docked v-vesicles was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental observation from the fusion assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "58e7a15e-0cd8-49af-9de7-fc70eb708e58",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C95",
+      "claim": "An instance of complete fusion was characterized by a stepwise increase in the content dye fluorescence intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "An instance of complete fusion was characterized by a stepwise increase in the content dye fluorescence intensity; this increase resulted from the approximately twofold dilution of the content dye upon fusion between a v- and a t-vesicle, and subsequent dequenching of the dye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental readout for fusion events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "8854e619-9c61-4bb6-b92d-112f4edc8b1e",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C96",
+      "claim": "The stepwise increase in content dye fluorescence intensity resulted from the approximately twofold dilution of the content dye upon fusion between a v- and a t-vesicle, and subsequent dequenching of the dye.",
+      "claim_type": "EXPLICIT",
+      "source": "An instance of complete fusion was characterized by a stepwise increase in the content dye fluorescence intensity; this increase resulted from the approximately twofold dilution of the content dye upon fusion between a v- and a t-vesicle, and subsequent dequenching of the dye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism behind the fluorescence signal.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "d1ddcdb4-a9cc-47c3-9771-5dd2b0c771fd",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C97",
+      "claim": "More than 1000 vesicles could be immobilized with the biotin/neutravidin immobilization method.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, more than 1000 vesicles could be immobilized with this method (Yoon et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "b5f9cd13-3d44-4b18-b052-c5b85f375867",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C98",
+      "claim": "In the absence of \u03b1-Syn, the fitted function for Ca2+-triggered fusion is f(t) = \u22120.0046 + 0.048 e-t/27.1 + 0.26 e-t/0.58.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of \u03b1-Syn, the fitted function is f(t) = \u22120.0046 + 0.048 e-t/27.1 + 0.26 e-t/0.58, whereas in the presence of \u03b1-Syn, the fitted function is f(t) = \u22120.001 + 0.064 e-t/15.4 + 0.22 e-t/0.51 with t in sec.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data analysis from the fusion kinetics shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "5ddc842c-1c90-4efe-9054-65c9e7ed7613",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C99",
+      "claim": "In the presence of \u03b1-Syn, the fitted function for Ca2+-triggered fusion is f(t) = \u22120.001 + 0.064 e-t/15.4 + 0.22 e-t/0.51.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of \u03b1-Syn, the fitted function is f(t) = \u22120.0046 + 0.048 e-t/27.1 + 0.26 e-t/0.58, whereas in the presence of \u03b1-Syn, the fitted function is f(t) = \u22120.001 + 0.064 e-t/15.4 + 0.22 e-t/0.51 with t in sec.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data analysis from the fusion kinetics shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "4bfdd447-5a48-4f3a-aa63-9a6c127e295a",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C100",
+      "claim": "Cryo-EM shows large v-vesicle clusters in the presence of native \u03b1-Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 5 shows cryo-EM image of v-vesicle clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "b0e31d67-c1ea-46ff-9b5d-66f44b2ac6c6",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C101",
+      "claim": "In contrast to the presence of \u03b1-Syn, reconstituted v-vesicles in the absence of \u03b1-Syn do not form clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, reconstituted v-vesicles in the absence of \u03b1-Syn do not form clusters (Kyoung et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study and is shown in the Figure 5 caption.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "3c3ba680-286a-4355-9f26-85051160e121",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C102",
+      "claim": "CD spectroscopy shows \u03b1-Syn adopts \u03b1-helical structure in the presence of vesicles.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 6.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 6 shows CD spectra indicating \u03b1-helical structure of \u03b1-Syn in the presence of vesicles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "6f422ffa-eb06-403d-95c9-08b357c07516",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C103",
+      "claim": "The protein-free vesicles used for CD spectroscopy had the same lipid composition as the v-vesicles used throughout this work.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein-free vesicles had the same lipid composition as the v-vesicles used throughout this work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental conditions for CD spectroscopy, shown in Figure 6 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "ceeb69b3-841c-4766-aa83-86d7e755d51e",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "claim_id": "C104",
+      "claim": "The molar protein-to-lipid ratio for CD spectroscopy was 1:530.",
+      "claim_type": "EXPLICIT",
+      "source": "The molar protein-to-lipid ratio was 1:530, and tag-free wildtype \u03b1-Syn was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental conditions for CD spectroscopy, shown in Figure 6 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "18dcc83b-4fb3-41e5-806b-18213caed243",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Native \u03b1-synuclein has little effect on Ca2+-triggered fusion in the reconstituted single-vesicle system. The fusion efficiency and kinetics were similar with and without \u03b1-synuclein, and this finding is consistent with in vivo studies showing little effect on synaptic strength in synuclein knockout mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C35, C42, C43, C86, C98, and C99 collectively demonstrate that \u03b1-synuclein does not significantly affect Ca2+-triggered fusion. The experimental data (C42, C43) show similar fusion events with and without \u03b1-synuclein, the kinetic fits (C98, C99) are comparable, and the findings agree with cited in vivo studies (C86). The result is well-supported by direct experimental measurements and consistent with prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "4a77c032-3022-4a52-810c-240b1af28ca8",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Native \u03b1-synuclein induces clustering of synaptic-vesicle mimics. This clustering was observed through multiple experimental approaches including single-vesicle optical microscopy, fluorescence intensity distribution analysis, and cryo-electron microscopy, showing concentration-dependent vesicle clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C36, C44-C50, C56, and C100 provide converging evidence from multiple experimental techniques (single-vesicle microscopy, fluorescence analysis, cryo-EM) demonstrating \u03b1-synuclein-induced vesicle clustering. The concentration-dependence (C50), fluorescence intensity shifts (C45-C48), and direct visualization (C56, C100) provide strong, multi-modal support for this major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "6bac1433-65e5-4348-82f0-f43c4b247cc3",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Vesicle clustering by \u03b1-synuclein is dependent on specific interactions with both synaptobrevin-2 and anionic lipids. Deletion or truncation experiments removing either the synaptobrevin-2 binding domain or anionic lipids significantly reduced clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C37, C60, C61, C62, and C65 demonstrate through deletion and mutagenesis studies that both synaptobrevin-2 and anionic lipids are required for clustering. The experimental data from Figures 4A-C show that removal of either component significantly reduces clustering, providing strong mechanistic support for the dual-binding requirement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "1b3cd6d8-ed1a-4175-85ef-4c9857cd12a9",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Among the three Parkinson's disease-related \u03b1-synuclein mutants (A30P, E46K, A53T), only the A30P mutant, which shows reduced membrane binding, disrupted vesicle clustering. This suggests membrane binding is essential for clustering activity and hints at a possible loss-of-function phenotype for A30P.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C38, C68-C74, and C76 provide experimental evidence from lipid flotation assays (C70) and clustering assays (C71) showing that only A30P, which has reduced membrane binding (C69, C70), disrupts clustering. The correlation between membrane binding and clustering (C72) and the anti-correlation between clustering and v-/t-vesicle associations (C76) support the conclusion that membrane binding is essential for clustering activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "d61db302-8731-485f-aa65-636659348f02",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both recombinant and brain-purified native \u03b1-synuclein induce similar vesicle clustering activity. Brain-purified \u03b1-synuclein was purified to >90% purity without detergents or denaturants and showed clustering activity comparable to recombinant \u03b1-synuclein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C39, C77, C78, and C79 demonstrate that clustering activity is not sensitive to the origin of \u03b1-synuclein. The experimental comparison (C78) between recombinant and brain-purified \u03b1-synuclein (C77) shows similar clustering activity, confirming that the observed phenomenon is physiologically relevant and not an artifact of recombinant protein expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "d17f1515-b3b7-4e96-bc9f-e60be5b84652",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Vesicle clustering induced by \u03b1-synuclein is similar with and without synaptotagmin-1. Vesicles containing only synaptotagmin-1 (without synaptobrevin-2) did not cluster, confirming the requirement for synaptobrevin-2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66 and C67 provide experimental data from Figure 4D showing that synaptotagmin-1 does not affect \u03b1-synuclein-induced clustering and that synaptobrevin-2 is required. This is a straightforward experimental result that is well-supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "e0dc429f-37df-4a6d-a637-20bea511353d",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CD spectroscopy confirms that \u03b1-synuclein adopts \u03b1-helical structure in the presence of vesicles with the same lipid composition used in the fusion and clustering experiments. This was observed at a protein-to-lipid ratio of 1:530.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C102, C103, and C104 provide CD spectroscopy data (Figure 6) confirming \u03b1-helical structure formation upon lipid binding. This is a control experiment that validates the lipid-binding behavior of \u03b1-synuclein under the experimental conditions used, and is supported by citations to previous studies (C64).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "6fce86f1-aacf-4ac8-8245-676fe253e65d",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that \u03b1-synuclein-induced vesicle clustering may lead to accumulation of synaptic vesicles at the active zone, providing a 'buffer' without affecting neurotransmitter release. The A30P mutation may represent a loss-of-function phenotype. Under disease conditions, excess \u03b1-synuclein could cause severe aggregation affecting neurotransmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C10, C40, C41, C90, and C91 are largely speculative interpretations (marked as SPECULATION in evidence_type) of the experimental findings. While the clustering data support the possibility of vesicle accumulation, the proposed model (C90, C91) and the interpretation of A30P as a loss-of-function mutant (C7) require additional experimental validation. The connection to SNARE-complex levels (C40, C41) is inferred from cited work but not directly tested in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "3b092222-5b70-4ad0-a37e-2079e7bea967",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The experimental protocol involved buffer exchange that removed unbound \u03b1-synuclein and likely some membrane-bound \u03b1-synuclein due to transient binding. The effective \u03b1-synuclein concentration during clustering was lower than the incubation concentration, and saturation was not reached at 2 \u03bcM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 describe the experimental protocol and interpret the effective \u03b1-synuclein concentration based on the transient binding kinetics from cited NMR studies (C52). The interpretation that saturation was not reached (C54, C55) is supported by the concentration-dependent data in Figure 4A. This is a reasonable interpretation of the experimental conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "b1c7ea8f-df42-4552-b4f6-e96affbaf86b",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The cryo-EM experiment used 100-fold higher vesicle concentration than single-vesicle experiments, explaining the large cluster formation. Vesicle clustering does not occur in the absence of \u03b1-synuclein and is specific to native \u03b1-synuclein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C58, C59, and C101 explain the experimental conditions for cryo-EM (C57) and confirm the specificity of clustering to \u03b1-synuclein through citation to previous work (C58, C101). The specificity is well-established by the control experiments and cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "08e534ea-98a8-4ed2-955d-d918084d52e7",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The clustering activity of native \u03b1-synuclein differs mechanistically from the effect of dopamine-induced large oligomers/aggregates. Native \u03b1-synuclein clusters vesicles without interfering with SNARE interactions, while large oligomers interfere with SNARE complex formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87 and C88 distinguish the current findings from a cited study (Choi et al., 2013) by comparing mechanisms. The distinction is supported by the experimental data showing no effect on fusion (supporting non-interference with SNARE interactions) and the cited work on oligomers. This is a valid comparison that clarifies the novelty of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "43dee2cc-09bf-4ab5-8a80-0efa0d687a07",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The vesicle preparation and reconstitution protocols produce homogeneous vesicles (~80 nm diameter) with physiological protein concentrations. At the experimental conditions used, no vesicle destabilization was observed, and fusion events were detected by stepwise increases in content dye fluorescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C97 describe the experimental system and validation. The vesicle characteristics (C92, C93) are supported by citations to previous work, the lack of destabilization (C94) is an experimental observation, and the fusion detection method (C95, C96) is a standard approach. These methodological details are well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction and discussion provide extensive background on \u03b1-synuclein's role in neurodegenerative diseases, its structural properties, membrane binding, and effects in various model systems. This includes information on Parkinson's disease mutations, Lewy bodies, aggregation propensity, and conflicting results from knockout and overexpression studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C11-C34, C80-C85, and C89 are primarily background information supported by extensive citations to previous literature. These claims establish the context for the study and are well-supported by the cited references. However, some claims (C17, C33, C34, C85) include speculative elements that are appropriately qualified in the text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "b5dbe864-da13-49e2-bdc8-6e8f36ccc2c6",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript includes general knowledge claims about \u03b1-synuclein's lack of effect on fusion being consistent with in vivo data, and about anionic lipids inducing \u03b1-helix formation and lipid binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C63 reference established knowledge in the field. C9 compares the current findings to in vivo studies (supported by citations), and C63 states well-established knowledge about lipid-induced \u03b1-helix formation. These are appropriately supported by citations and general knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    },
+    {
+      "id": "4a8976a2-e5c4-4ba4-b504-908895d91093",
+      "content_id": "3b3f1678-2903-4e5b-b23c-c8cf9813e418",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The reduction in v-/t-vesicle associations by wildtype \u03b1-synuclein is explained as a consequence of vesicle clustering in a finite volume, reducing the number of free particles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 provides a mechanistic interpretation of the experimental observations that is consistent with the clustering data and the anti-correlation shown in C76. This interpretation is logical and well-supported by the experimental design and results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:58:30.590649Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5caf50de-9758-4d43-a793-bdbc2fe788d5",
+      "result_id": "18dcc83b-4fb3-41e5-806b-18213caed243"
+    },
+    {
+      "claim_id": "08713ebf-7be8-4354-a1c6-6e4b8d9f2887",
+      "result_id": "18dcc83b-4fb3-41e5-806b-18213caed243"
+    },
+    {
+      "claim_id": "efd0daa6-d0ea-4f92-8251-fbf73992be04",
+      "result_id": "18dcc83b-4fb3-41e5-806b-18213caed243"
+    },
+    {
+      "claim_id": "a1f136ec-5e75-468a-89ba-f421613aadf9",
+      "result_id": "18dcc83b-4fb3-41e5-806b-18213caed243"
+    },
+    {
+      "claim_id": "6ea6afc2-ec4c-4b57-999d-3e47d3ef9bd0",
+      "result_id": "18dcc83b-4fb3-41e5-806b-18213caed243"
+    },
+    {
+      "claim_id": "b5f9cd13-3d44-4b18-b052-c5b85f375867",
+      "result_id": "18dcc83b-4fb3-41e5-806b-18213caed243"
+    },
+    {
+      "claim_id": "5ddc842c-1c90-4efe-9054-65c9e7ed7613",
+      "result_id": "18dcc83b-4fb3-41e5-806b-18213caed243"
+    },
+    {
+      "claim_id": "dc064e8a-696f-40f8-b78f-603055ef5e2e",
+      "result_id": "4a77c032-3022-4a52-810c-240b1af28ca8"
+    },
+    {
+      "claim_id": "0fcc38af-2116-4c1f-881e-be7f9a24769f",
+      "result_id": "4a77c032-3022-4a52-810c-240b1af28ca8"
+    },
+    {
+      "claim_id": "fc482aae-8ffd-4300-abe7-13d4e2a34cf4",
+      "result_id": "4a77c032-3022-4a52-810c-240b1af28ca8"
+    },
+    {
+      "claim_id": "dfc373b4-46a3-4fb8-a503-1c0de1bfb782",
+      "result_id": "4a77c032-3022-4a52-810c-240b1af28ca8"
+    },
+    {
+      "claim_id": "80ea13ae-51e9-43fb-8be7-2f364a728311",
+      "result_id": "4a77c032-3022-4a52-810c-240b1af28ca8"
+    },
+    {
+      "claim_id": "b08bbedf-eab7-498f-9394-6403bee1688d",
+      "result_id": "4a77c032-3022-4a52-810c-240b1af28ca8"
+    },
+    {
+      "claim_id": "2d9d86bb-2ca4-49b4-b904-192c4249008d",
+      "result_id": "4a77c032-3022-4a52-810c-240b1af28ca8"
+    },
+    {
+      "claim_id": "a31b4084-0b83-47a2-96b8-12bc87e78a33",
+      "result_id": "4a77c032-3022-4a52-810c-240b1af28ca8"
+    },
+    {
+      "claim_id": "9ccd2594-5f81-43f1-a63d-5ad5ad48d7cb",
+      "result_id": "4a77c032-3022-4a52-810c-240b1af28ca8"
+    },
+    {
+      "claim_id": "915c32f6-bd4e-4419-8552-0f61350ea197",
+      "result_id": "4a77c032-3022-4a52-810c-240b1af28ca8"
+    },
+    {
+      "claim_id": "4bfdd447-5a48-4f3a-aa63-9a6c127e295a",
+      "result_id": "4a77c032-3022-4a52-810c-240b1af28ca8"
+    },
+    {
+      "claim_id": "923c62c2-2f34-4736-8e1d-f0f0cce5d048",
+      "result_id": "6bac1433-65e5-4348-82f0-f43c4b247cc3"
+    },
+    {
+      "claim_id": "54e54a44-2520-4720-9cd3-e1a1a03a0091",
+      "result_id": "6bac1433-65e5-4348-82f0-f43c4b247cc3"
+    },
+    {
+      "claim_id": "7e0bac0c-093e-40a2-911f-92e885e4c5c7",
+      "result_id": "6bac1433-65e5-4348-82f0-f43c4b247cc3"
+    },
+    {
+      "claim_id": "9e368ecb-1205-4495-88ea-6336fd6e75f7",
+      "result_id": "6bac1433-65e5-4348-82f0-f43c4b247cc3"
+    },
+    {
+      "claim_id": "28e23a2f-a4fa-42cd-83c4-08f74b67c716",
+      "result_id": "6bac1433-65e5-4348-82f0-f43c4b247cc3"
+    },
+    {
+      "claim_id": "b3372905-438a-4474-8bbc-a28088d9dd41",
+      "result_id": "6bac1433-65e5-4348-82f0-f43c4b247cc3"
+    },
+    {
+      "claim_id": "d66d9bff-516c-4df2-9096-61387c70a385",
+      "result_id": "1b3cd6d8-ed1a-4175-85ef-4c9857cd12a9"
+    },
+    {
+      "claim_id": "544bd531-a911-49df-9feb-94b5cbc78428",
+      "result_id": "1b3cd6d8-ed1a-4175-85ef-4c9857cd12a9"
+    },
+    {
+      "claim_id": "b8ef1718-8ae0-447e-950b-090058018d34",
+      "result_id": "1b3cd6d8-ed1a-4175-85ef-4c9857cd12a9"
+    },
+    {
+      "claim_id": "40bdfcbd-1b15-4974-940f-ab4e4141e9fa",
+      "result_id": "1b3cd6d8-ed1a-4175-85ef-4c9857cd12a9"
+    },
+    {
+      "claim_id": "c12b55a1-9c8e-4810-bd03-85a406f47458",
+      "result_id": "1b3cd6d8-ed1a-4175-85ef-4c9857cd12a9"
+    },
+    {
+      "claim_id": "7dc9f883-97ed-4f3f-80c4-c3f4835c19b9",
+      "result_id": "1b3cd6d8-ed1a-4175-85ef-4c9857cd12a9"
+    },
+    {
+      "claim_id": "746cb59b-7de5-428f-b14d-2b5262209f91",
+      "result_id": "1b3cd6d8-ed1a-4175-85ef-4c9857cd12a9"
+    },
+    {
+      "claim_id": "f1b3636c-ae84-4a84-bebc-dae5b87d33b9",
+      "result_id": "1b3cd6d8-ed1a-4175-85ef-4c9857cd12a9"
+    },
+    {
+      "claim_id": "9dd44d82-662b-4626-948f-c1319c5abd12",
+      "result_id": "1b3cd6d8-ed1a-4175-85ef-4c9857cd12a9"
+    },
+    {
+      "claim_id": "bb86a9b8-d875-425e-8a20-76efd30e919f",
+      "result_id": "1b3cd6d8-ed1a-4175-85ef-4c9857cd12a9"
+    },
+    {
+      "claim_id": "7006b379-126e-4b1c-afdb-5d3ae0c5bbac",
+      "result_id": "d61db302-8731-485f-aa65-636659348f02"
+    },
+    {
+      "claim_id": "06836dc9-a2c8-4fd4-853f-5514d3ec78df",
+      "result_id": "d61db302-8731-485f-aa65-636659348f02"
+    },
+    {
+      "claim_id": "f0151d72-4c32-4873-9148-79cdb776bd17",
+      "result_id": "d61db302-8731-485f-aa65-636659348f02"
+    },
+    {
+      "claim_id": "fc899b60-e38e-4d2f-b680-6bc4e46423d9",
+      "result_id": "d61db302-8731-485f-aa65-636659348f02"
+    },
+    {
+      "claim_id": "2691948b-2641-471c-af9b-bd1c913bbbcd",
+      "result_id": "d61db302-8731-485f-aa65-636659348f02"
+    },
+    {
+      "claim_id": "ae9f8e73-2b83-46fc-b1f9-209d6a16e9f8",
+      "result_id": "d17f1515-b3b7-4e96-bc9f-e60be5b84652"
+    },
+    {
+      "claim_id": "e15c7873-2038-4a4d-8f49-cab35dd1ed15",
+      "result_id": "d17f1515-b3b7-4e96-bc9f-e60be5b84652"
+    },
+    {
+      "claim_id": "85052f0d-588a-4f5f-bbfe-920e70e90022",
+      "result_id": "e0dc429f-37df-4a6d-a637-20bea511353d"
+    },
+    {
+      "claim_id": "3c3ba680-286a-4355-9f26-85051160e121",
+      "result_id": "e0dc429f-37df-4a6d-a637-20bea511353d"
+    },
+    {
+      "claim_id": "6f422ffa-eb06-403d-95c9-08b357c07516",
+      "result_id": "e0dc429f-37df-4a6d-a637-20bea511353d"
+    },
+    {
+      "claim_id": "ceeb69b3-841c-4766-aa83-86d7e755d51e",
+      "result_id": "e0dc429f-37df-4a6d-a637-20bea511353d"
+    },
+    {
+      "claim_id": "db4b203e-1841-439d-94ab-0d4ac3c1105a",
+      "result_id": "6fce86f1-aacf-4ac8-8245-676fe253e65d"
+    },
+    {
+      "claim_id": "46ba3555-c79d-44e5-8940-4a08f341f518",
+      "result_id": "6fce86f1-aacf-4ac8-8245-676fe253e65d"
+    },
+    {
+      "claim_id": "be755410-6d56-4135-b255-3744d8d9007e",
+      "result_id": "6fce86f1-aacf-4ac8-8245-676fe253e65d"
+    },
+    {
+      "claim_id": "c6e2d2a5-5962-416c-a444-5024b6ff7a92",
+      "result_id": "6fce86f1-aacf-4ac8-8245-676fe253e65d"
+    },
+    {
+      "claim_id": "a8f0ecc6-c465-4362-96e1-0793908e3a2e",
+      "result_id": "6fce86f1-aacf-4ac8-8245-676fe253e65d"
+    },
+    {
+      "claim_id": "0b38d165-4345-49ab-8b6a-0919a81242a7",
+      "result_id": "6fce86f1-aacf-4ac8-8245-676fe253e65d"
+    },
+    {
+      "claim_id": "9f1b5e1e-beb3-4aeb-9bf6-4c6a7eba763d",
+      "result_id": "3b092222-5b70-4ad0-a37e-2079e7bea967"
+    },
+    {
+      "claim_id": "4c9e54ef-1ee5-410b-8437-43910e0c86f9",
+      "result_id": "3b092222-5b70-4ad0-a37e-2079e7bea967"
+    },
+    {
+      "claim_id": "581a9999-bc84-44d1-9a19-ac4e3c197f8d",
+      "result_id": "3b092222-5b70-4ad0-a37e-2079e7bea967"
+    },
+    {
+      "claim_id": "14129d4c-927e-4c4d-b237-871ba2dd2be4",
+      "result_id": "3b092222-5b70-4ad0-a37e-2079e7bea967"
+    },
+    {
+      "claim_id": "ba791776-c547-42d3-9b92-f5f904b174b1",
+      "result_id": "3b092222-5b70-4ad0-a37e-2079e7bea967"
+    },
+    {
+      "claim_id": "69c4276f-a49d-4904-a475-913cac3b5104",
+      "result_id": "b1c7ea8f-df42-4552-b4f6-e96affbaf86b"
+    },
+    {
+      "claim_id": "272ed076-6c6a-4ecd-bab1-fac8558e3430",
+      "result_id": "b1c7ea8f-df42-4552-b4f6-e96affbaf86b"
+    },
+    {
+      "claim_id": "1fe36cf6-ea4d-4702-8f39-e72fe4d317df",
+      "result_id": "b1c7ea8f-df42-4552-b4f6-e96affbaf86b"
+    },
+    {
+      "claim_id": "b0e31d67-c1ea-46ff-9b5d-66f44b2ac6c6",
+      "result_id": "b1c7ea8f-df42-4552-b4f6-e96affbaf86b"
+    },
+    {
+      "claim_id": "e77a984e-5654-40d4-a3bc-0dcad35bd8f4",
+      "result_id": "08e534ea-98a8-4ed2-955d-d918084d52e7"
+    },
+    {
+      "claim_id": "ece4e01e-c125-40f9-b623-1b18acd30023",
+      "result_id": "08e534ea-98a8-4ed2-955d-d918084d52e7"
+    },
+    {
+      "claim_id": "137ff25d-4220-4bdd-b3e5-725c76fe8127",
+      "result_id": "43dee2cc-09bf-4ab5-8a80-0efa0d687a07"
+    },
+    {
+      "claim_id": "6bc0a7b1-79c5-4bae-b9c7-f5373399918f",
+      "result_id": "43dee2cc-09bf-4ab5-8a80-0efa0d687a07"
+    },
+    {
+      "claim_id": "b1562df9-e559-4f34-b388-d4de0a42e837",
+      "result_id": "43dee2cc-09bf-4ab5-8a80-0efa0d687a07"
+    },
+    {
+      "claim_id": "58e7a15e-0cd8-49af-9de7-fc70eb708e58",
+      "result_id": "43dee2cc-09bf-4ab5-8a80-0efa0d687a07"
+    },
+    {
+      "claim_id": "8854e619-9c61-4bb6-b92d-112f4edc8b1e",
+      "result_id": "43dee2cc-09bf-4ab5-8a80-0efa0d687a07"
+    },
+    {
+      "claim_id": "d1ddcdb4-a9cc-47c3-9771-5dd2b0c771fd",
+      "result_id": "43dee2cc-09bf-4ab5-8a80-0efa0d687a07"
+    },
+    {
+      "claim_id": "34077b4e-6376-48a1-aac9-dbb7f5594f4f",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "d0bdcee6-e88a-49ad-823a-2ffa0bd6feed",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "916ff740-ae70-4f35-91e2-ddd9f2b413b7",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "b8bc3e35-86f0-462f-a37f-287a09e0a9a9",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "7fbc82d1-c282-491b-8d4a-418fc31f4856",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "491060ff-b3d1-4214-9f81-5947371f8a69",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "49afc4df-7a13-44d2-98de-daec9c9a826a",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "67cb2326-6ccb-4440-bea0-830effb6ac24",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "de417abf-adab-47fd-b9af-8226ed6c3710",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "e75736c7-1b02-4361-9169-ac848d91887f",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "4781f455-e062-4d6f-9f3c-7f6744247a06",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "ed2f03cf-7f73-45e7-a183-0c0d0507cf46",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "558025b9-055b-4136-9e17-79edea95d254",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "4ccd4706-6a58-4319-836f-974dbced9949",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "d21f9a27-0543-48cd-9a6f-c41c7364ba56",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "705f06b6-7029-431c-baa3-a56efd4aeb99",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "1efb34cc-f731-45f2-90c2-958264df3c5f",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "7f7a3e2f-7b46-4c56-a304-24856bc481f9",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "dc7c7ab7-7eb6-43d5-8c14-63c81f895de2",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "fa5a22d2-b98e-45e1-a1ff-3416d6fd393e",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "7d0f1e51-4cd4-4b8f-885d-23e6328217b6",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "db1227fd-579a-4d62-9fd0-3dae4c807aec",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "825994b1-940d-419c-a65b-36b195c43cba",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "98dfd751-b11d-4238-abee-5ac01f089097",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "8b3f24a5-43f2-4827-b1e2-eb86100859d0",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "721a8aa3-7706-4a5f-9954-4b1a35a2d6f2",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "21378c98-6da6-463f-bd7b-088040b33c11",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "a52b9132-3389-4ed8-b519-8b0549fc7e62",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "7d1b9cad-b5d2-4fac-b212-fc7665085346",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "acfc4ceb-ea72-46ed-9b7a-009257338234",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "df0706cd-8dd7-4743-b651-3f10fb86ff91",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "b033b249-8660-4940-9d91-22cda32a9ae6",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "dc4c724b-5ed1-4d66-bbe3-51a44988b418",
+      "result_id": "a1ba7603-9519-4499-bf5d-0c4f0b762a94"
+    },
+    {
+      "claim_id": "828226cd-787e-44e1-a192-c547d1a810a7",
+      "result_id": "b5dbe864-da13-49e2-bdc8-6e8f36ccc2c6"
+    },
+    {
+      "claim_id": "5a86706a-26ef-4173-b7e2-a4ac7a6ccd36",
+      "result_id": "b5dbe864-da13-49e2-bdc8-6e8f36ccc2c6"
+    },
+    {
+      "claim_id": "2b48988e-5602-4eb3-bbfb-ce3415faaf2c",
+      "result_id": "4a8976a2-e5c4-4ba4-b504-908895d91093"
+    }
+  ],
+  "comparisons": []
+}

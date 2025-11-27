@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The Michaelis-Menten model fits life expectancy and income data as well as traditional Preston curve models (logistic and log-linear), with comparable R\u00b2 values (0.622-0.666, p=0.458). However, the MM model provides more interpretable parameters (maximum life expectancy and critical income) compared to the logistic model's negative inflection points and the log-linear model's non-significant parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 demonstrate statistical equivalence of model fits with appropriate statistical testing (ANOVA, sensitivity analyses). The criticism of alternative models (C39-C42) is valid - negative inflection points are indeed uninterpretable. The validation showing maximum life expectancy approximates high-income country means (C43) and robustness to data removal (C44) strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "From 1970 to 2007, maximum life expectancy increased from 67.8 to 75.5 years (75 days/year, R\u00b2=0.875), while critical income declined from $1.48 to $1.21 per day (18% decrease, -$0.09/decade, R\u00b2=0.839). This represents an upward and leftward shift in the Preston curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 present clear quantitative results with confidence intervals and strong R\u00b2 values. The comparison to 20th century trends (C47) provides appropriate context. The calculation linking critical income to the poverty line (C49) is a reasonable contextualization, though the causal interpretation should be more cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C4",
+      "C5"
+    ],
+    "result": "Maximum survival rates increased similarly for all age groups (~1% per decade), but critical incomes diverged dramatically: child critical income fell by over half ($0.58 to $0.24), while adult male critical income more than doubled ($0.54 to $1.20) and adult female critical income rose over 50% ($0.57 to $0.89) from 1970 to 2007.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 present the core finding with clear quantitative evidence from Table 3 and Figure 3. The divergence is statistically well-documented with confidence intervals. However, the R\u00b2 values for some age groups are moderate (0.665-0.762), suggesting other factors also influence these trends. The result is supported but mechanistic interpretation requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Adult survival in 2007 was worse than in 1970 for countries below specific income thresholds: $10.95/day for men (58 countries, 780 million people, 35% of global male population) and $5.93/day for women (32 countries, 150 million people, 7% of global female population). In these low-income countries, child mortality improved 11.8% while adult male survival fell 2.7% despite 8.9% income growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 identify a critical crossover point with important public health implications. The population calculations (C61, C64) provide scale. The contrast between child and adult outcomes (C65-C67) is striking. However, the analysis doesn't account for country-specific factors or potential confounders beyond income. Figure 4 visually supports these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C6"
+    ],
+    "result": "HIV prevalence and cigarette consumption partially explain rising adult critical incomes. For 86 countries in 2000, adjusting for HIV and smoking reduced male critical income from $2.02 to $1.22 (explaining ~40% of the increase since 1970). First differences analysis (1990-2000) showed each cigarette/day increased male critical income by $1.70 and each 1% HIV prevalence by $0.70. Effects were smaller for females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C79 present a mechanistic analysis with appropriate statistical methods (adjustment, first differences). However, several issues arise: (1) The subset analysis (n=86) may not be representative; (2) The adjusted 2000 value ($1.22) still exceeds 1970 ($0.54), leaving substantial unexplained variance (C73); (3) The standardized coefficients (C92) suggest smoking explains more variance than HIV, but this interpretation depends on model specification; (4) No discussion of multicollinearity or other confounders. The result is suggestive but incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C80",
+      "C81",
+      "C82",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The majority of life expectancy gains in low- and middle-income countries came from reduced child mortality (declining critical income), while adult mortality improvements were restricted to high-income countries (rising critical income). This reduced inequality for child survival but increased inequality for adult survival, with rising marginal costs for adult longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C80-C82, C86-C89 synthesize the main findings into a coherent narrative about diverging trends. The interpretation is well-supported by the quantitative results. The connection to UN MDG 4 achievement (C86) is speculative but reasonable. The inference about rising marginal costs (C89) follows logically from rising critical income. This represents the paper's central contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C108",
+      "C114",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The Michaelis-Menten enzyme kinetics model can be adapted to analyze income-mortality relationships by treating GDP as a substrate and health interventions as catalysts. The model introduces 'critical income' (analogous to Km) as the income level achieving 50% of maximum survival, providing an interpretable parameter for tracking lateral shifts in the Preston curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2, C23-C35, C108, C114, C117-C119 present the conceptual framework. While the mathematical analogy works empirically (good model fit), the biological justification is weak. The authors acknowledge (C114) that the model cannot elucidate mechanisms. The analogy between GDP as 'substrate' and interventions as 'catalysts' (C28-C29, C117-C118) is metaphorical rather than mechanistic. Infrastructure and vaccines are not true catalysts in the biochemical sense. The novelty claim (C108) appears accurate but the theoretical foundation is questionable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "HIV/AIDS and smoking explain much but not all of the rising adult male critical income. Smoking accounts for over 40% of variance compared to 30% for HIV. Under current trends, $2.20/day would be required in 2007 to achieve the same male survival as $1.25/day in 1970, and future adult survival in low-income countries may deteriorate if critical income continues rising.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C100 extend the HIV/smoking analysis with projections. The variance decomposition (C92) is based on standardized coefficients which can be misleading. The projection (C97) is a calculation but the speculation about future deterioration (C98) is not tested. The contrast with high-income countries (C99-C100) is supported but the causal attribution to treatments and smoking reduction (C100) is speculative without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C90",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The declining child critical income may reflect cost-effective interventions (immunization, insecticide-treated nets, education) disproportionately devoted to child health. Low-cost interventions exist for adult chronic diseases (tobacco control, alcohol reduction, secondary prevention drugs) but are underutilized in low-income countries, potentially explaining rising adult critical income.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C85, C90, C101-C107 provide contextual interpretation citing relevant literature. However, these are largely speculative (note 'could be contributing' C84, 'might be' C85, 'may explain' C90, 'might well depend' C107). The study does not directly test causal relationships between specific interventions and critical income changes. The citations support that these factors are plausible but the manuscript provides no direct evidence linking them to the observed trends.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The MM equation has been successfully adapted to diverse biological systems beyond enzyme kinetics. The authors acknowledge limitations: full mechanistic explanation requires more research, cause-specific mortality data are unavailable for most countries, and the Monod equation (similar adaptation) took 50 years to receive theoretical interpretation despite practical utility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113, C122-C130 appropriately contextualize the approach and acknowledge limitations. The historical examples (C109-C113, C123-C125) support the precedent for applying MM kinetics beyond its original domain. The limitations (C122, C126-C128) are honestly stated. The comparison to Monod equation (C123-C125) is apt - empirical utility can precede theoretical understanding. This demonstrates appropriate scientific humility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The analysis used data from 180 countries at 5-year intervals (1970-2007) from multiple databases (IHME, UN, UNAIDS, Penn World Table), with GDP defined at constant 2005 international dollars. Nonlinear regression with iterative parameter estimation was performed using SPSS version 19, with countries having missing data excluded year-by-year.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 describe the data and methods. The data sources are appropriate and well-established. The statistical approach (nonlinear regression, C133) is suitable for the MM model. However, there are concerns: (1) No discussion of potential biases from year-by-year exclusion of missing data (C134); (2) No sensitivity analysis for different data sources (though Figure 6 shows consistency); (3) No discussion of temporal autocorrelation in the time series; (4) Software version is specified (C135) but no code availability mentioned.",
+    "result_type": "MINOR"
+  }
+]

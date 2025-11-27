@@ -1,0 +1,199 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "An agent-based model was developed to simulate P. falciparum var gene dynamics, tracking all unique var repertoires in a host population. The model explicitly considers multi-copy genes undergoing sequential, mutually exclusive expression, with hosts gaining gradual immunity and harboring multiple co-infections with density-dependent transmission costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C58-C69 collectively describe a well-defined computational model with explicit assumptions about var gene structure, sequential expression, immunity acquisition, and co-infection dynamics. The model structure is clearly articulated with mathematical formulations (C60) and biological justifications cited from literature (C61-C65, C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C48",
+      "C49"
+    ],
+    "result": "Model simulations demonstrate that despite high recombination rates and enormous potential diversity, immune selection structures the parasite population into a limited number of dominant var repertoires (orders of magnitude lower than potential). This structure persists over long time scales with punctuated turnover events, while overall diversity and gene frequencies remain remarkably constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C31, C48-C49 present consistent findings from model simulations shown in Figure 1. The results demonstrate robust population structuring across different recombination rates and parameter values, with clear visual evidence of limited dominant repertoires despite high potential diversity. The temporal dynamics and stability are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C50"
+    ],
+    "result": "The model predicts that antigenic overlap between dominant var repertoires increases with transmission intensity, with completely discordant genomes only appearing at low transmission. All four diversity metrics (N*, V*, R*, F*) increase with transmission intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C34, C50 describe a clear relationship between transmission intensity and repertoire overlap, supported by Figures 2-3. The metrics are well-defined in the Methods section, and the relationship is demonstrated across multiple parameter ranges (C35), providing robust evidence for this transmission-dependent pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C35"
+    ],
+    "result": "The emergence of population structure is robust to alternative model formulations (without sequential expression or with random ordering) and across wide parameter ranges including host population sizes (1,000-100,000), gene pool sizes (10-500), and repertoire lengths (2-30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C35 describe extensive sensitivity analyses shown in Figure 3. The robustness testing covers both structural model assumptions and parameter ranges, demonstrating that the core finding of population structuring is not dependent on specific model details or parameter choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The model predicts characteristic epidemiological signatures for different transmission intensities, with immunity acquisition depending on repertoire overlap (shared var alleles) rather than just total prevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 present model predictions shown in Figures 4-5. The distinction between repertoire overlap and prevalence as determinants of immunity is a novel prediction that differentiates this model from compartmental models. The age-structured immunity profiles provide testable predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Empirical analysis of var DBL\u03b1 types from Papua New Guinea isolates shows significant deviation from equal frequency distribution (p<0.0001, K-S test) and significant nonrandom associations among var types (p<0.01), with co-occurrence higher than expected under linkage equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 present statistical analyses of empirical data shown in Figure 6, with appropriate statistical tests (K-S test, co-occurrence analysis). The p-values are clearly reported and the null hypotheses are well-defined. However, the sample size is acknowledged as limited (n=30 isolates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C74"
+    ],
+    "result": "Linkage disequilibrium (D values) is significantly higher for var DBL\u03b1 loci compared to neutral microsatellite loci (p<<0.0001, Mann-Whitney test). For var DBL\u03b1, 1288 allele pairs exceed significance thresholds versus 310 expected; for microsatellites, 146 versus 49 expected. This difference cannot be explained by allele frequency differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47, C74 present a comparative analysis between antigenic and neutral markers with appropriate statistical testing. The enrichment of significant correlations is substantial for both datasets but more pronounced for var DBL\u03b1. The argument that allele frequency differences don't explain the pattern (C74) is supported by the observation that var DBL\u03b1 alleles have lower frequencies, which would bias D values downward.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C70",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Comparison of genetic variation patterns at antigenic (var DBL\u03b1) versus neutral (microsatellite) sites supports immune selection in structuring parasite diversity. DBL\u03b1 is used as the molecular marker because it's present in nearly all var genes, while microsatellites serve as neutral controls. Physical linkage is unlikely to explain the patterns given that var loci are distant, coincide with recombination hotspots, and P. falciparum has high recombination rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C70-C72, C75-C77 establish the empirical test framework and justify the choice of markers. The logic is sound: comparing immune-selected sites to neutral sites controls for demographic effects. The arguments against physical linkage as an alternative explanation (C75-C77) are well-supported by cited literature on var loci distribution and recombination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model predicts that host immune profiles structure the parasite population through immune selection, creating partially overlapping repertoires that blur strain-specific versus strain-transcending immunity. Vector control reducing transmission will shift infection to older ages and maintain diverse non-overlapping var repertoires, creating inherent difficulties for malaria elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C56 present mechanistic interpretations and predictions about intervention impacts. While these follow logically from the model structure and results, they represent extrapolations beyond what is directly demonstrated. The predictions about vector control effects (C53-C56) are plausible but not empirically validated, and the model doesn't explicitly include clinical disease outcomes, as acknowledged in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background context establishes that pathogen strain structure has epidemiological consequences, prior mathematical models showed immune selection can maintain discrete repertoires despite recombination, and P. falciparum var genes are multi-copy, highly diverse, extensively recombining antigens associated with immune evasion and disease severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C23 provide background knowledge and literature context, appropriately cited throughout. These establish the scientific foundation and motivation for the study. The claims accurately represent established knowledge about pathogen population structure, prior strain theory models, and var gene biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The results have broad implications for other pathogens with multigene families encoding major surface antigens, including bacterial, protozoan, and fungal pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 extrapolates the findings to other pathogen systems. While this is a reasonable hypothesis given the generality of the modeling framework, it remains speculative without empirical testing in other systems. The claim is appropriately framed as having 'implications' rather than proven applicability.",
+    "result_type": "MINOR"
+  }
+]

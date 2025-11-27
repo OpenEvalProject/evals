@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Heat stress and other proteotoxic stresses trigger extensive endocytic downregulation of various plasma membrane cargo proteins in yeast, with different cargoes showing differential responses to different stresses. Most cargoes undergo endocytosis and vacuolar trafficking during heat stress at 38\u00b0C, though some cargoes like Pdr5 remain stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by microscopy and Western blot data in Figure 1 and supplementary figures showing cargo trafficking to the vacuole and degradation during heat stress and other proteotoxic conditions. The differential responses to ethanol and oxidative stress demonstrate cargo-specific regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Different plasma membrane cargoes exhibit distinct thermostability profiles, and glycerol as a chemical chaperone enhances the thermostability of thermolabile cargoes like Lyp1 but does not affect substrate-induced endocytosis of Mup1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by kinetic analysis in Table 1 and Figure 1\u2014figure supplement 8 showing different cargo half-lives at various temperatures, and Western blot data in Figure 1C demonstrating glycerol's protective effect on Lyp1 but not on methionine-induced Mup1 degradation. This provides evidence for cargo-intrinsic thermostability and suggests misfolding as the trigger for degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The thermolabile cargo Lyp1 exhibits reduced detergent solubility and aggregation during heat stress, while the thermostable cargo Pdr5 does not show significant changes in detergent solubility at high temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by detergent solubility assays and sucrose gradient fractionation data in Figure 1D-E showing differential biochemical behavior of Lyp1 and Pdr5 during heat stress. The migration of detergent-insoluble Lyp1 to the bottom of the sucrose gradient provides evidence for aggregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The WW2 and WW3 domains of the Rsp5 ubiquitin ligase are required for heat-induced cargo degradation and thermotolerance, while the WW1 domain is dispensable. Mutations in WW2 or WW3 result in extreme temperature sensitivity and failure to grow at 38\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are supported by microscopy and Western blot data in Figure 2A-C showing cargo accumulation in rsp5-ww2 and rsp5-ww3 mutants, and growth assays in Figure 2D demonstrating temperature sensitivity. The differential requirement for WW domains provides insight into the mechanism of cargo recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Mutations in Rsp5 WW2/WW3 domains or endocytosis machinery result in loss of plasma membrane integrity during heat stress as measured by propidium iodide staining, while mutations affecting downstream trafficking events do not. This indicates that plasma membrane clearance is the critical protective event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by flow cytometry data in Figure 3B-C showing differential PI staining patterns. The observation that endocytosis mutants (\u0394end3, \u0394rvs167) show PI staining while downstream trafficking mutants (\u0394vps23, \u0394vam3, \u0394pep4) do not provides strong evidence that PM clearance is the critical protective step.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The ART1 adaptor protein is required for thermotolerance and specifically mediates heat-induced endocytosis and degradation of Lyp1 but not most other cargoes. Art1-GFP translocates to the plasma membrane in response to heat stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by growth assays in Figure 4A, microscopy data in Figure 4B showing cargo-specific effects, Western blots in Figure 4C demonstrating Lyp1 accumulation in \u0394art1 cells, and localization data in Figure 4\u2014figure supplement 2. This establishes Art1 as a cargo-specific adaptor for the heat stress response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Multiple ART family proteins protect cells during heat stress with overlapping cargo specificities creating redundancy in the system. Deletion of ART2 enhances the temperature sensitivity of \u0394art1 mutants, and striking synthetic defects in PM integrity are observed when \u0394art1 is combined with deletion of other ART genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31, C65-C67 are supported by growth assays in Figure 4D, Western blots in Figure 4C, flow cytometry data in Figure 4E-F, microscopy in Figure 4G, and suppressor screen data in Figure 4\u2014figure supplement 3. The genetic interactions and suppression data provide strong evidence for functional redundancy among ART proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Lyp1 accumulation at the plasma membrane during heat stress is toxic to cells. Loss of Lyp1 partially suppresses the temperature sensitivity of \u0394art1 mutants, and Lyp1 expression levels correlate with temperature sensitivity and PI staining. Overexpression of Art1 protects against this toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 are supported by growth assays in Figure 5A-C, Western blots in Figure 5B, microscopy and Western blots in Figure 5\u2014figure supplements 2-3, and flow cytometry data in Figure 5D-E. The dose-dependent relationship between Lyp1 expression and toxicity, along with the protective effect of Art1 overexpression, provides strong evidence for the toxicity model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C70",
+      "C71"
+    ],
+    "result": "The ART-Rsp5 plasma membrane quality control system functions in parallel with ER and Golgi quality control systems. Abrogation of ER or Golgi quality control enhances PM integrity defects in \u0394art1 cells, with triple mutants showing dramatic loss of PM integrity (~55% PI-positive). PM quality control can compensate for defects in earlier quality control pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C70-C71 are supported by flow cytometry data in Figure 6C-D and genetic interaction data in Figure 6B showing synthetic defects. The observation that ER/Golgi QC mutants alone show minimal defects but enhance \u0394art1 phenotypes provides strong evidence for parallel, compensatory quality control pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The ART-Rsp5 ubiquitin ligase network comprises a plasma membrane quality control system that protects yeast cells from proteotoxic stress by targeting degradation of damaged/misfolded proteins and limiting toxic accumulation at the cell surface. Failure of this system leads to toxic accumulation, loss of PM integrity, and cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 represent the main conclusions of the paper and are supported by the collective evidence from all experiments showing cargo degradation, PI staining, temperature sensitivity, and genetic interactions. The comprehensive data across multiple experimental approaches provides strong support for this quality control model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The ART adaptor network contains 173 predicted disordered regions compared to 12 in San1, demonstrating potential capacity for direct detection of misfolded proteins similar to the mechanism used by the nuclear E3 ubiquitin ligase San1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C74 are based on computational predictions of disordered regions and analogy to San1 (C74 supported by citation to Rosenbaum et al., 2011). While the prediction data may be accurate, no experimental validation is provided to demonstrate that these disordered regions actually function in misfolded protein recognition. This remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "While the yeast genome does not encode a CHIP homolog, the analogous proteins Ubr1 and Ubr2 are required for degradation of misfolded proteins but are dispensable for the heat-induced endocytic response of integral PM proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by established knowledge about yeast genome content, citation to Khosrow-Khavar et al., 2012, and genetic data in Figure 6B showing no defects in Ubr1/Ubr2 mutants. This distinguishes the ART-Rsp5 pathway from cytosolic quality control mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C75",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Background claims establishing prior knowledge about protein quality control mechanisms, degradation pathways, and the importance of PM protein quality control in human disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C64, C75, C79-C81 are background/context claims supported by citations to published literature and established knowledge. These provide the scientific context for the current work but do not represent new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The ART modular adaptor network mediates recognition and ubiquitination of cell surface proteins and serves as a key regulatory point during nutrient availability changes and environmental stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are based on the authors' previous work establishing the function of the ART network. These are background claims that provide context for the current study's focus on the quality control function of this system.",
+    "result_type": "MINOR"
+  }
+]

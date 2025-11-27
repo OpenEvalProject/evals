@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The crystal structure of the AFF4-P-TEFb complex was determined at 2.9-\u00c5 resolution, revealing that AFF4 residues 34-66 bind to the CycT1 subunit in an extended conformation with no intramolecular tertiary contacts. The interface buries extensive surface area (1457 \u00c5\u00b2 of AFF4 and 1251 \u00c5\u00b2 of CycT1) with 26 of 33 ordered AFF4 residues contacting CycT1 through hydrophobic, aromatic, and hydrogen bond interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystallographic data (C3) with appropriate resolution and R-factors, combined with detailed structural analysis (C18-C21, C53-C58) showing specific molecular interactions, provide strong evidence for the binding mode. The structure is validated by multiple independent copies in the asymmetric unit and anomalous difference maps confirming residue positions (Figure 1 supplements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "AFF4 binding induces a major conformational rearrangement in the C-terminal region of CycT1, with the last 20 residues undergoing significant structural changes including straightening of helix H5' and movement of Trp256 by over 13 \u00c5. These adjustments create the AFF4 binding surface and mediate formation of an ion pair between AFF4 Arg51 and CycT1 Glu246.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison with the unbound P-TEFb structure (PDB 3BLQ) provides clear evidence for conformational changes (C23, C24). The specific measurements of residue movements and identification of new interactions (C60, C61) are directly observable in the crystal structure and represent a well-documented induced-fit binding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C5"
+    ],
+    "result": "Mutagenesis studies demonstrate that residues throughout the AFF4-CycT1 interface are functionally important, with Trp207Ala and Trp210Ala substitutions in CycT1 reducing AFF4 affinity by 58-fold and 21-fold respectively. Interface mutations also reduced AFF4-dependent transcription in cellular assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The binding affinity measurements (C25-C28) using fluorescence anisotropy provide quantitative support with appropriate controls and replicates (Table 2, Table 3). The functional transcription assays (C5, C29) complement the binding data, though the correlation between binding defects and transcriptional effects is not always proportional, suggesting additional complexity in the functional mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C43"
+    ],
+    "result": "Tandem alanine scanning mutagenesis across AFF4 residues 1-72 reveals that mutations in the P-TEFb binding site (residues 33-66) reduce Tat-independent transcriptional stimulation, while mutations in flanking regions (residues 3-32) show smaller effects. Notably, the Glu13Ala/Arg14Ala mutant shows minimal functional impact despite being in the CDK9 interface observed in crystals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic mutagenesis data (C29, Figure 3B) with appropriate normalization for expression levels (Figure 3 supplement 1) provides comprehensive functional mapping. The minimal effect of the Glu13/Arg14 mutation (C43) supports the conclusion that the CDK9 contacts observed in one crystal form are not functionally critical, consistent with other evidence pointing away from CDK9 as the primary binding partner.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Twenty-one of the 26 AFF4 residues that interact with CycT1 are conserved in AFF1-3, suggesting a conserved binding mechanism across the AF4 family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence alignment analysis (C22, Figure 2 supplement 2) clearly shows conservation of interface residues. This is a straightforward bioinformatic observation that supports the broader significance of the structural findings for understanding the entire AF4 family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C62"
+    ],
+    "result": "Structural superposition reveals that HIV-1 Tat is positioned adjacent to AFF4 helix 2 in the AFF4-P-TEFb complex, with specific Tat residues (Met1, Lys28, Phe32) predicted to interact with AFF4 residues (Glu61, Met62, Phe65, Ile66). Quantitative binding assays demonstrate that Tat enhances AFF4 affinity for P-TEFb by approximately 11-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural superposition (C32) provides a clear spatial rationale for Tat-AFF4 interactions, and the quantitative binding measurements (C36, C37) with appropriate controls demonstrate the enhancement effect. The prediction of specific interacting residues (C33) is reasonable based on proximity, though direct structural evidence of the ternary complex would strengthen this claim. The consistency across different AFF4 fragments (C62) supports the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C48"
+    ],
+    "result": "Co-immunoprecipitation experiments in HeLa cells show that AFF4 mutations in the P-TEFb binding site reduce CycT1 binding but not other SEC subunits, and these defects are rescued by Tat overexpression. However, the Glu61/Met62 mutation in the predicted Tat interface shows reduced P-TEFb binding that is not rescued by Tat, supporting direct Tat-AFF4 contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cellular co-IP experiments (C38-C40, Figure 4C) provide strong in vivo validation of the structural model. The differential rescue by Tat of different mutations is particularly compelling evidence for direct Tat-AFF4 interactions. The specificity for P-TEFb binding defects without affecting other SEC subunits demonstrates that the mutations specifically disrupt the intended interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Multiple lines of evidence indicate that AFF4 functions as a scaffold rather than an allosteric activator of CDK9: (1) AFF4 residues 2-73 bind only 3.6-fold more tightly than residues 32-67, (2) CDK9 structure is minimally changed upon AFF4 binding (RMSD 0.54 \u00c5), (3) mutations in the CDK9 interface have minimal functional effects, and (4) AFF4 inhibits rather than activates P-TEFb kinase activity in vitro by approximately 2-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The convergence of structural (C42), binding (C41), mutagenesis (C43), and kinase activity data (C44-C46) provides strong support for the scaffolding function. The in vitro kinase assays (Figure 5) are appropriately controlled and show that AFF4 does not enhance CDK9 activity, contrary to what would be expected for an allosteric activator. The conclusion (C47) is well-supported by the integrated evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The AFF4-P-TEFb structure reveals an intersubunit pocket where Tat binds, which computational analysis (DoGSiteScorer) assigns a high druggability score (0.83) and identifies as containing the most nonpolar surface of any pocket in the complex, suggesting potential as a therapeutic target for HIV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural observation of the pocket (C51) is supported by the crystal structure, the therapeutic potential (C52, C63) is speculative. The computational druggability analysis (C64, C65) provides some quantitative support, but druggability scores are predictive tools with limited validation. No experimental evidence for small molecule binding or inhibition is presented. This represents a reasonable hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C30",
+      "C31",
+      "C34",
+      "C35"
+    ],
+    "result": "The manuscript provides extensive background on P-TEFb function, SEC composition, and HIV Tat biology, establishing the context for the structural and functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C8-C15, C30, C31, C34, C35) represent well-established prior knowledge supported by appropriate citations to the literature. They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior work established that HIV-1 Tat recruits P-TEFb as part of SECs organized on AFF1/AFF4 scaffolds, and that AFF4 residues 2-73 are sufficient to bind P-TEFb through CycT1 with folding upon binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent prior work (C2 cites He et al., 2010; Sobhian et al., 2010) and preliminary characterization (C16, C17) that motivated the structural studies. They are appropriately cited and provide the foundation for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The authors propose that the functional AFF4-Tat interface, including acetylated Lys28 as a potential affinity regulator, supports the evolutionary hypothesis that Tat evolved to function within the SEC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This evolutionary interpretation (C50) is highly speculative and not directly testable with the presented data. While the structural and functional data support Tat-AFF4 interactions (C49), inferring evolutionary history requires comparative analysis across viral strains and host species that is not provided. This represents an interesting hypothesis but goes beyond what the data can support.",
+    "result_type": "MINOR"
+  }
+]

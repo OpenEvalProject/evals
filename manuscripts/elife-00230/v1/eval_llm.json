@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors establish the importance and challenges of studying spatial patterning in microbial communities. They note that spatial positioning is critical to community function, but understanding patterning in natural communities is hampered by multiple interactions and environmental variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C14, and C15 collectively establish the motivation for the study by citing general knowledge and prior work (C9-C13, C16-C18) about the importance of patterning and the challenges in studying it. These are well-established concepts in the field supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Interactions benefiting at least one partner (cooperation, commensalism, exploitation) can lead to convergence of population ratios over time, requiring 'balanced' fitness between partners. This was demonstrated through both simulations and experiments in engineered yeast communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C24-C27, C77-C79 describe ratio convergence supported by both simulation data (Figure 1B, Figure 1\u2014figure supplement 2) and experimental validation in yeast communities (Figure 2\u2014figure supplement 1). The analytical framework (C25, C78) and experimental confirmation (C26, C79) provide converging evidence for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C83"
+    ],
+    "result": "In simulations using the fitness model, only strong cooperation (conferring large fitness benefits to both partners) resulted in partner intermixing, where populations successively pile on top of each other. Other ecological interactions (competition, commensalism, amensalism, mutual antagonism, exploitation) led to segregated or layered patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C28-C32, C83 describe the core prediction from the fitness model, supported by simulation data in Figure 1C-I. The statistical analysis (C31) demonstrates significant differences in intermixing indexes between cooperation and other interactions, providing quantitative support for the qualitative observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C50",
+      "C87"
+    ],
+    "result": "Experimental validation in engineered yeast communities confirmed that obligatory cooperative communities showed substantial intermixing with intermixing index increasing linearly with community height, while competitive and commensal communities showed segregated or layered patterns with low intermixing indexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38, C50, C87 describe experimental results from yeast communities (Figure 2) that validate the simulation predictions. Both top-view time-lapse imaging and vertical cross-sections provide converging evidence. The linear relationship between intermixing index and height (C38, C50) is a key quantitative finding supported by Figure 2G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C46",
+      "C47",
+      "C48",
+      "C84"
+    ],
+    "result": "Cooperative intermixing requires spatially localized benefits that are sufficiently large to both partners. When benefits were instantly distributed or excessively supplied, intermixing was diminished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C46-C48, C84 describe findings from the diffusion model (Figure 2\u2014figure supplement 3B) showing that spatial localization of benefits is necessary for intermixing. The comparison between different diffusion scenarios provides mechanistic insight into the requirements for intermixing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C49",
+      "C51"
+    ],
+    "result": "The authors propose a mechanistic model for intermixing: local deviations from steady-state ratio coupled with localized large cooperative benefits cause partners to 'take turns' growing, leading to a fixed patch size and proportional increase in intermixing with height.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44, C49, C51 describe the conceptual mechanism (Figure 2H) explaining how intermixing arises. This is supported by the observed linear relationship between intermixing and height (C38, C50) and the calculated characteristic patch size. The mechanism is internally consistent with the simulation and experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C85"
+    ],
+    "result": "Cooperative intermixing is insensitive to initial population ratios and densities. At very high densities, non-cooperative communities showed intermixing directly above the inoculation area, but only cooperative communities showed intermixing at the edges where growth occurred under fitness influences of interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56, C85 describe experimental tests of robustness (Figure 3A, Figure 3\u2014figure supplement 1D-E). The distinction between center and edge sections (C56) provides a clever control to distinguish true cooperative intermixing from density-induced artifacts, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Intermixing is robust to variations in interaction dynamics: it occurs across a range of diffusion constants (20-360 \u03bcm\u00b2/s), with or without delays in nutrient release, and with symmetric or asymmetric partner properties. However, smaller fitness benefits in facultative cooperation require greater community heights to show intermixing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 describe systematic tests of robustness using the diffusion and fitness models (Figure 3B, Figure 3\u2014figure supplement 1A-C). Multiple independent tests converge on the conclusion that intermixing depends primarily on spatial localization and magnitude of benefits, not on specific kinetic details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C88"
+    ],
+    "result": "Naturally mutualistic microbes (D. vulgaris and M. maripaludis) cooperating through redox-coupling exhibited increasing intermixing as a function of community height, demonstrating that cooperative intermixing extends beyond metabolite exchange to other coupling mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67, C88 describe experimental validation in a natural syntrophic system (Figure 4B). This extends the findings beyond engineered yeast to naturally occurring cooperative systems with different biochemical mechanisms, strengthening the generality of the conclusions. However, the authors note they did not verify the linear relationship with height.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Other known cooperative communities, including those degrading herbicide pollutants and colonizing teeth, seemed to display intermixed patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 is based on observations from cited literature but includes explicit uncertainty ('seemed to display') and acknowledges that the specific linear relationship with height was not verified. This represents suggestive but not definitive evidence for the generality of the pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C91",
+      "C92"
+    ],
+    "result": "In simulated five-species communities, most strongly cooperative pairs (26 out of 31) intermixed, while occasional deviations (commensal pairs intermixing or cooperative pairs not intermixing) were attributed to strong indirect interactions through other community members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76, C91-C92 describe multi-species simulations (Figure 5) showing that the intermixing pattern generalizes to complex communities. The quantitative data (26/31 cooperative pairs intermixed) and the mechanistic explanation for exceptions (indirect interactions) provide strong support. The interpretation that intermixing reflects 'overall' interactions is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Time-lapse imaging of yeast microcolonies revealed that cells initially divide horizontally, but when a group reaches approximately 5-cell radius, confined cells in the center bud upward while edge cells continue to push sideways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe observational data from time-lapse imaging (Figure 1\u2014figure supplement 1A, Video 1) that informed the modeling assumptions. This is well-documented empirical observation that provides the basis for the cell rearrangement rules in both models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "In competition and antagonistic interactions, population ratios are unstable: equal-fitness competition maintains initial ratios until perturbation, unequal-fitness competition leads to dominance by the fitter population, and amensalism/mutual antagonism have at best unstable fixed points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 describe analytical predictions about non-cooperative interactions (Figure 1\u2014figure supplement 2B, Figure 1\u2014figure supplement 3). These are logical inferences from the fitness model that complement the main findings about cooperation and are supported by the mathematical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The linear increase in intermixing index with height in cooperative communities is due to fixed-size patches associated with spatial localization of benefits, contrasting with other interactions that show segregated or layered patterns with low or transiently increasing intermixing indexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 synthesize the key distinguishing feature of cooperative patterning, supported by data from Figures 1, 2, and the calculation of characteristic patch size. This represents a major conceptual advance in understanding how to distinguish cooperation from other interactions based on spatial patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The work defines expected patterns for different ecological interactions and is consistent with prior observations: competing species form columnar/layered patterns, while cooperative species intermix. The framework is conceptually analogous to the competitive exclusion principle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100 place the work in context of prior literature through multiple citations. The consistency with previous observations (C95-C100) and the conceptual analogy to competitive exclusion (C113-C114) strengthen the framework. However, these are primarily literature-based contextual claims rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors discuss potential deviations from expected patterns due to molecular mechanisms (active motility, hyphal growth) or environmental factors (oxygen gradients), providing examples from P. aeruginosa biofilms where cell differentiation causes modest intermixing despite competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 discuss limitations and boundary conditions of the framework, supported by citations (C102-C104) and logical reasoning (C105). These appropriately acknowledge that the fitness-based framework may not apply when other forces dominate patterning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Stochastic events (environmental variability, mutations, initial conditions) can cause pattern variability. In mutually antagonistic interactions, initial conditions determine which population dominates, potentially leading to 'survival of the first' dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 discuss sources of pattern variability, supported by citations (C106, C108, C112) and simulation results for antagonistic interactions (Figure 1\u2014figure supplement 3). This provides important context for interpreting natural community patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Strong cooperation with spatially localized large fitness benefits to both partners generates a unique pattern where partners intermix by appearing successively on top of each other, insensitive to initial conditions and interaction dynamics. This was observed in engineered yeast communities, methane-producing biofilms, and simulated multi-species communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 represent the main conclusion of the study, synthesizing findings from simulations (C3, C4, C7) and experiments in two different biological systems (C5, C6). The convergence of evidence from multiple approaches (fitness model, diffusion model, yeast experiments, syntrophic biofilms, multi-species simulations) provides strong support for this central finding.",
+    "result_type": "MAJOR"
+  }
+]

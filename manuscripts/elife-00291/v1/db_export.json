@@ -1,0 +1,2011 @@
+{
+  "submission": {
+    "id": "20bb0cbe-e3dc-4947-8b01-bc9daa8a05e5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T05:38:17.496658Z",
+    "updated_at": "2025-11-27T05:38:17.496658Z"
+  },
+  "content": [
+    {
+      "id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "submission_id": "20bb0cbe-e3dc-4947-8b01-bc9daa8a05e5",
+      "content_type": "manuscript",
+      "content_text": "# UNC93B1 mediates differential trafficking of endosomal TLRs\n\n## Authors\n\n- Bettina L Lee<sup>1</sup>\n- Joanne E Moon<sup>1</sup>\n- Jeffrey H Shu<sup>1</sup>\n- Lin Yuan<sup>2</sup>\n- Zachary R Newman<sup>1</sup>\n- Randy Schekman<sup>2</sup>\n- Gregory M Barton<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Division of Immunology and Pathogenesis, Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n2. Division of Cell and Developmental Biology, Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n3. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nUNC93B1, a multipass transmembrane protein required for TLR3, TLR7, TLR9, TLR11, TLR12, and TLR13 function, controls trafficking of TLRs from the endoplasmic reticulum (ER) to endolysosomes. The mechanisms by which UNC93B1 mediates these regulatory effects remain unclear. Here, we demonstrate that UNC93B1 enters the secretory pathway and directly controls the packaging of TLRs into COPII vesicles that bud from the ER. Unlike other COPII loading factors, UNC93B1 remains associated with the TLRs through post-Golgi sorting steps. Unexpectedly, these steps are different among endosomal TLRs. TLR9 requires UNC93B1-mediated recruitment of adaptor protein complex 2 (AP-2) for delivery to endolysosomes while TLR7, TLR11, TLR12, and TLR13 utilize alternative trafficking pathways. Thus, our study describes a mechanism for differential sorting of endosomal TLRs by UNC93B1, which may explain the distinct roles played by these receptors in certain autoimmune diseases.\n\n## Introduction\n\nToll-like receptors (TLRs) recognize conserved microbial features and initiate signals critical for induction of immune responses to infection. A subset of TLRs (TLR3, TLR7, TLR8, and TLR9) recognizes forms of nucleic acids, including double-stranded RNA, single-stranded RNA, and DNA (Barbalat et al., 2011). This specificity facilitates recognition of a broad array of microbes but introduces the potential for recognition of self-nucleic acids. TLR7 and TLR9 recognition of self-RNA and self-DNA, respectively, contributes to autoimmune diseases such as systemic lupus erythematosus (SLE) (Marshak-Rothstein, 2006; Christensen and Shlomchik, 2007).\n\nDiscrimination between self and microbial nucleic acids cannot be achieved solely through recognition of distinct features but instead relies on differential delivery of these potential ligands to TLRs (Barton and Kagan, 2009). All of the TLRs capable of nucleic acid recognition localize within endosomal compartments which sequesters these receptors away from self nucleic acids in the extracellular space (Barton and Kagan, 2009). Our previous studies as well as work from other groups indicate that a requirement for ectodomain cleavage of intracellular TLRs further restricts receptor activation to protease-rich acidic compartments (Ewald et al., 2008, 2011; Park et al., 2008; Garcia-Cattaneo et al., 2012). Bypassing this requirement enables responses to extracellular self nucleic acid and leads to fatal inflammatory disease in mice (Mouchess et al., 2011). Moreover, the system appears carefully balanced as simply overexpressing TLR7 in mice causes responses to self-RNA and development of an SLE-like disease (Pisitkun et al., 2006; Subramanian et al., 2006; Deane et al., 2007). Thus, defining the regulatory steps that control TLR localization and influence the threshold of receptor activation has important implications for self/non-self discrimination.\n\nTLR9 and other intracellular TLRs must traffic from the endoplasmic reticulum (ER) to endolysosomes before responding to ligands. UNC93B1, a multi-pass transmembrane protein localized to the ER, appears to facilitate this trafficking (Brinkmann et al., 2007; Kim et al., 2008). Mice homozygous for a nonfunctional Unc93b1 (H412R) allele (Unc93b13d/3d) fail to respond to TLR3, TLR7, or TLR9 ligands, and mice and humans deficient in UNC93B1 are highly susceptible to viral infection (Casrouge et al., 2006; Tabeta et al., 2006; Lafaille et al., 2012). More recently, UNC93B1 has been implicated in the function of TLR11, TLR12, and TLR13 (Pifer et al., 2011; Shi et al., 2011; Koblansky et al., 2012; Oldenburg et al., 2012). UNC93B1 is not required for responses by surface localized TLRs such as TLR2 and TLR4 (Tabeta et al., 2006). UNC93B1 associates with endosomal TLRs, and in cells with defective UNC93B1, TLR9 and TLR7 fail to leave the ER (Brinkmann et al., 2007; Kim et al., 2008). However, the mechanism by which UNC93B1 facilitates TLR trafficking to endosomal compartments remains enigmatic, especially considering its reported direct translocation from the ER to endolysosomes (Kim et al., 2008). This pathway is inconsistent with our findings that TLR9 and TLR7 traffic through the general secretory pathway en route to endosomes (Ewald et al., 2008, 2011). In addition, mice expressing an aspartic acid to alanine mutation at amino acid position 34 in UNC93B1 (Unc93b1D34A/D34A) were recently shown to develop spontaneous autoimmunity due to enhanced TLR7 responses and diminished TLR9 responses (Fukui et al., 2009, 2011). These findings suggest that regulation of TLRs by UNC93B1 can influence the relative thresholds of receptor activation. For these reasons, we have sought to define the molecular basis by which UNC93B1 controls endosomal TLR trafficking and function.\n\nBeyond the implied role for UNC93B1 discussed above, little is known about the molecular mechanisms that mediate proper localization of endosomal TLRs and no other factor required specifically for endosomal TLR trafficking has been identified. Nevertheless, several reports suggest that endosomal TLR trafficking may be influenced at both ER and post-Golgi trafficking steps. Gp96 functions as an ER folding chaperone for many TLRs, including TLR9, and PRAT4A has been implicated in TLR trafficking from the ER (Takahashi et al., 2007; Yang et al., 2007; Lee et al., 2012). Additionally, the HRS/ESCRT pathway is involved in post-Golgi trafficking by sorting ubiquitinated TLR7 and TLR9 to endosomal compartments (Chiang et al., 2012), and the adaptor protein-3 (AP-3) has been reported to target TLR9 and TLR7 to lysosome related organelles specialized for type I IFN induction (Honda et al., 2005; Blasius et al., 2010; Sasai et al., 2010). Interestingly, UNC93B1 trafficking to these compartments is also impaired in AP-3 deficient cells (Sasai et al., 2010). Whether UNC93B1 interacts with other components implicated in trafficking of endosomal TLRs remains to be determined.\n\nIn this study, we report that UNC93B1 is required for multiple steps of TLR trafficking. UNC93B1 plays a direct role in facilitating exit of TLRs from the ER as well as a later role in recruitment of adaptor protein-2 (AP-2) to facilitate endocytosis of TLR9 from the plasma membrane. Surprisingly, TLR7 does not have the same requirements for UNC93B1 and utilizes distinct trafficking machinery to reach endolysosomes. Thus, our results describe how UNC93B1 controls endosomal TLR trafficking and provide the first mechanistic basis for differential regulation of these receptors.\n\n## Results\n\n### UNC93B1 traffics to phagosomes via the Golgi compartment\n\nUNC93B1 has been described as an ER-resident trafficking chaperone that translocates TLRs directly from the ER to endolysosomes upon TLR activation (Kim et al., 2008). This model is based in part on the observation that UNC93B1 never acquires Endoglycosidase H (EndoH)-resistant glycans (Brinkmann et al., 2007), which are acquired only when proteins traffic through the medial Golgi. Because this proposed function for UNC93B1 conflicts with our model of TLR9 trafficking (Ewald et al., 2008, 2011), we first examined whether UNC93B1 is present in endolysosomal compartments in unstimulated cells. Wildtype (WT) UNC93B1 but not the nonfunctional (H412R) mutant was detectable in phagosomes purified from unstimulated RAW264 cells (Figure 1A). Moreover, a portion of UNC93B1-WT gained EndoH-resistance in multiple cell types, while UNC93B1-H412R was entirely EndoH-sensitive (Figure 1B\u2013F). These results agree with a previous report that the H412R mutant fails to leave the ER (Kim et al., 2008). To formally demonstrate that the increased molecular weight of UNC93B1-WT is due to N-linked glycans, we mutated Asn-251, which is within a consensus N-glycosylation site, and this mutant failed to acquire EndoH-resistant glycans (Figure 1G). Based on the acquisition of EndoH-resistant glycans by UNC93B1, we examined whether UNC93B1 is detectable within COPII vesicles, which mediate transport of cargo between the ER and Golgi (Zanetti et al., 2012). Using an in vitro COPII budding assay (Kim et al., 2005; Merte et al., 2010), we compared levels of UNC93B1-WT and UNC93B1-H412R in purified vesicles. UNC93B1-WT, but not H412R, was clearly present within the vesicles, further supporting a model in which UNC93B1 exits the ER through the general secretory pathway (Figure 1H). Altogether, these data indicate that a pool of UNC93B1 protein exits the ER and traffics through the Golgi in unstimulated cells. Moreover, transit from the ER to the Golgi may be important for UNC93B1 function, as the nonfunctional UNC93B1-H412R mutant fails to enter COPII vesicles and does not reach the medial Golgi.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00291/elife-00291-fig1-v1.jpg)\n\n**Figure 1.:** (A) UNC93B1 is present in phagolysosomes of unstimulated cells. Phagosomes (PHG) isolated by flotation from RAW264 cells only (\u00d8) or expressing GFP tagged UNC93B1-WT or UNC93B1-H412R and cells prior to isolation (Pre) were separated by SDS-PAGE, and immunoblotted with anti-GFP, anti-LAMP1 (lysosome marker), and anti-calnexin (ER marker). (B) A portion of UNC93B1 protein traffics to the Golgi apparatus. Wildtype UNC93B1 (WT) or H412R, each with a C-terminal 3\u00d7 FLAG tag, were expressed in HEK293Ts by transient transfection. The immunoprecipitated proteins were treated with EndoH (E), PNGaseF (P) or left untreated (\u2212), separated by SDS-PAGE, and visualized by immunoblot with anti-FLAG antibody. Bands representing EndoH-sensitive (white arrow) and resistant (black arrow) forms of UNC93B1 are indicated. (C)\u2013(F) UNC93B1 acquires EndoH-resistant modifications. UNC93B1 tagged with GFP (C) or myc-His (D) from transiently transfected HEK293Ts, and FLAG tagged UNC93B1 expressed in MEFs (E) or 3d iMac cells (F) were analyzed for the presence of EndoH-resistant glycans. Lysates were separated by SDS-PAGE and immunoblotted with the indicated antibodies. EndoH-sensitive (white arrow) and EndoH-resistant (black arrow) forms are indicated. (G) Mutation of UNC93B1 glycosylation sites abolishes EndoH resistant forms. Lysates from HEK293Ts transiently transfected with FLAG tagged UNC93B1-WT, -N251A or -N251A/N272A were separated by SDS-PAGE and immunoblotted with anti-FLAG antibody. (H) UNC93B1 is loaded into COPII vesicles. Digitonin-permeabilized COS7 cells expressing 3\u00d7 FLAG-tagged UNC93B1-WT or UNC93B1-H412R, or no cells (\u00d8) were incubated with ATP regenerating system, GTP, and rat liver cytosol, as indicated, in an in vitro COPII budding assay. Vesicles purified by ultracentrifugation were analyzed by SDS-PAGE and immunoblot using the indicated antibodies. 20% of the COS7 cells prior to the budding reaction serves as a loading control (20% donor). ERGIC/p58 serves as a positive control for the formation of COPII vesicles. Results are representative of at least three experiments (A\u2013G) or two experiments (H).\n\n### UNC93B1 facilitates TLR9 loading into COPII vesicles\n\nOur previous work reported that three species of TLR9 can be detected within macrophages, representing distinct maturation stages: an initial 150-kDa species with EndoH-sensitive glycans corresponding to the ER-resident protein (TLR9-ER), a larger species with EndoH-resistant glycans corresponding to full-length receptor that has passed through the Golgi (TLR9-Precursor), and a 80-kDa band with EndoH-resistant glycans corresponding to the mature, cleaved receptor within endolysosomes (TLR9-Cleaved) (Figure 2A, lane 1) (Ewald et al., 2008, 2011). To examine how UNC93B1 function impacts TLR9 localization, we compared these three forms of TLR9 in immortalized macrophages derived from Unc93b13d/3d mice and complemented with UNC93B1-WT or UNC93B1-H412R. While all three bands were present in macrophages with functional UNC93B1, only the ER-resident form was detectable in cells expressing the UNC93B1-H412R mutant (Figure 2A), consistent with our previous analysis of TLR9 in UNC93B1 shRNA knockdown cells (Ewald et al., 2008). These data indicate that TLR9 does not reach the medial Golgi in the absence of functional UNC93B1. Because a pool of UNC93B1 can traffic from ER to Golgi by entering COPII vesicles (Figure 1B), we considered whether UNC93B1 regulates this aspect of TLR9 trafficking. Indeed, analysis of TLR9 loading into COPII vesicles revealed that TLR9 was only detectable in the presence of functional UNC93B1 whereas a control traffic protein, ERGIC/p58, was packaged independently of UNC93B1 (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00291/elife-00291-fig2-v1.jpg)\n\n**Figure 2.:** (A) TLR9 fails to exit the ER in cells lacking functional UNC93B1. Lysates from 3d iMac cells complemented with either UNC93B1-WT or UNC93B1-H412R and expressing TLR9-HA were analyzed by SDS-PAGE and immunoblotted with the indicated antibodies. The precursor (black arrow), ER (white arrow) and cleaved (grey arrow) forms of TLR9-HA are indicated. (B) UNC93B1 is required for TLR9 loading into COPII vesicles. RAW264 macrophages stably transduced with retroviruses encoding control or Unc93b1-directed shRNA and expressing TLR9-HA were used in an in vitro COPII budding assay as described in (Figure 1H). Lysates of purified vesicles or donor membranes were probed with the indicated antibodies. (C) The transmembrane and cytosolic domain of TLR9 is sufficient to confer UNC93B1-dependence. (Left) schematic of TLR9 and the CD4-TLR9 chimera. Transmembrane (TM), ectodomain (Ecto) and cytosolic domain (Cyto) are indicated. (Right) CD4-TLR9 was expressed in HEK293Ts together with FLAG-tagged UNC93B1-WT or UNC93B1-H412R. Total lysates were analyzed by SDS-PAGE and immunoblotted with anti-CD4 and anti-FLAG antibodies. EndoH-sensitive (white arrow) and resistant (black arrow) forms are indicated. (D) CD4 trafficking to the cell surface is normal in Unc93b13d/3d cells. Splenocytes from C57BL/6 (blue line) or Unc93b13d/3d (red line) mice were stained with anti-CD4 and analyzed by flow cytometry. (E) CD4-TLR chimeric proteins for each of the indicated TLRs were expressed in HEK293Ts together with FLAG-tagged UNC93B1-WT or UNC93B1-H412R. Lysates were separated by SDS-PAGE and visualized by immunoblot with anti-HA and anti-FLAG antibodies. EndoH-sensitive (white arrows) and resistant (black arrows) forms are indicated. The chimeras were constructed as shown in Figure 1E, except with the addition of a C-terminal HA tag. Results are representative of at least three experiments (A, C, and E) or two experiments (B and D).\n\nQuality control mechanisms ensure that only properly folded proteins can exit the ER, and one mechanism by which UNC93B1 could regulate ER exit of TLR9 is through regulation of TLR9 folding, as has been reported for gp96 (Yang et al., 2007). To address whether UNC93B1 serves as a folding chaperone, we tested whether a chimeric CD4-TLR9 protein, consisting of the ectodomain of CD4 fused to the transmembrane and cytosolic regions of TLR9 (Figure 2C, left), required UNC93B1 function. Because trafficking of CD4 is not UNC93B1-dependent (Figure 2D), this chimera can be used to test whether TLR9 requires UNC93B1 to ensure correct folding of the TLR9 ectodomain. CD4-TLR9 acquired EndoH-resistant glycans when expressed with UNC93B1-WT but not when expressed with mutant UNC93B1-H412R (Figure 2C, right). Thus, the requirement for UNC93B1 is not based on TLR9 ectodomain folding. Furthermore, the transmembrane domain and cytosolic regions of TLR9 are sufficient to mediate UNC93B1-dependent trafficking.\n\nTaken together, these data indicate that UNC93B1 regulates ER to Golgi transport of TLR9. While we cannot rule out that a pool of UNC93B1 bypasses the Golgi en route to endosomes as suggested by others (Brinkmann et al., 2007; Kim et al., 2008), this route does not seem relevant for UNC93B1-dependent TLR9 trafficking. Instead, UNC93B1 appears to control TLR9 entry into COPII vesicles.\n\n### UNC93B1 is required for proper trafficking of TLR3, TLR7, TLR9, TLR11, and TLR13 from the ER\n\nWe next sought to determine whether the dependence on UNC93B1 for ER exit is a general property of endosomal TLRs. We generated a panel of CD4-TLR fusion proteins and tested whether they required UNC93B1 to exit the ER, based on acquisition of EndoH-resistant glycans. As expected, ER exit of both CD4-TLR3 and CD4-TLR7 required UNC93B1, which is consistent with defective TLR3 and TLR7 signaling in Unc93b13d/3d mice (Tabeta et al., 2006), whereas CD4-TLR4 trafficked independently of UNC93B1 (Figure 2E). CD4-TLR11 and CD4-TLR13 also required UNC93B1 for ER exit (Figure 2E). Less is known about the localization or trafficking of these TLRs, although biochemical studies have suggested that these TLRs can associate with UNC93B1 (Brinkmann et al., 2007; Melo et al., 2010; Pifer et al., 2011). Our results are the first to show that UNC93B1 regulates the trafficking of TLR11 and TLR13 by controlling ER exit. Altogether, our data indicate that the role for UNC93B1 in controlling ER exit extends to all known endosomal TLRs (TLR3, TLR7, TLR9) as well as TLR11 and TLR13.\n\n### Mutational analysis reveals distinct regions of UNC93B1 required for ER exit and post-Golgi trafficking of TLR9\n\nTo define regions within UNC93B1 necessary for ER export of TLRs, we generated a series of N-and C-terminal truncation mutants. Based on the predicted topology of UNC93B1 (Brinkmann et al., 2007), the N- and C-termini face the cytosol, so we reasoned that these regions would be most likely to interact with putative trafficking factors (Figure 3A). Interestingly, N-terminal truncations resulted in a strong defect in TLR9 trafficking from the ER as evidenced by significantly reduced or absent precursor and cleaved forms of TLR9 in cells expressing the \u039450 and \u039457 UNC93B1 truncations (Figure 3B). This defective trafficking resulted in impaired responses to TLR9 ligands in macrophages, while TLR2 responses remained intact (Figure 3C). Taken together, our data indicate that the N-terminal region of UNC93B1 contains residues important for trafficking of TLR9 and UNC93B1 from the ER to endolysosomes. These findings are in agreement with a previous study showing that TLR9 responsiveness is strongly dependent on the N-terminus of UNC93B1, although this study did not directly examine TLR9 trafficking (Fukui et al., 2009). Furthermore, an UNC93B1 point mutant (D34A), which reduced TLR9 signaling but enhanced TLR7 signaling (Fukui et al., 2009, 2011), reduced TLR9 transport and cleavage (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00291/elife-00291-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of predicted UNC93B1 topology. UNC93B1 is a 12 pass transmembrane protein with terminal regions facing cytosol. Two putative N-linked glycosylation (N-Glyc) sites are indicated (top). Schematic of UNC93B1 (1\u2013598 a.a.). The black numbered boxes represent predicted transmembrane domains, white boxes represent regions predicted to face the cytosol, and grey boxes represent regions predicted to face the lumen. Truncation and point mutations are indicated with arrows (bottom). (B) N- and C-terminal mutants of UNC93B1 have distinct TLR9 trafficking outcomes. Lysates from 3d iMac cells expressing TLR9-HA and complemented with mutant forms of GFP-tagged UNC93B1 were subjected to SDS-PAGE and immunoblotted with anti-HA and anti-GFP antibodies. The precursor (black arrow), ER (white arrow) and cleaved (grey arrow) forms of TLR9-HA are indicated. n.s. indicates a non-specific band. (C) N- and C-terminal mutants of UNC93B1 have diminished TLR9 signaling. 3d iMac cells complemented with WT or indicated mutant alleles of UNC93B1 were harvested for intracellular TNF\u03b1 staining 5 hr after stimulation with 3 \u03bcM CpG, 1 \u03bcg/ml Pam3CSK4 or left unstimulated. Percentages of TNF-producing cells after gating on UNC93B1-GFP positive cells are plotted. (D) TLR9 trafficking to endolysosomes is impaired in UNC93B1-D34A cells. 3d iMac cells were complemented with GFP-tagged UNC93B1-WT, -H412R or -D34A. Lysates were separated by SDS-PAGE and visualized by immunoblot with anti-HA and anti-GFP antibodies. The precursor (black arrow), ER (white arrow) and cleaved (grey arrow) forms of TLR9-HA are indicated. (E) UNC93B1 interacts with the cleaved form of TLR9. Immunoprecipitation of FLAG tagged UNC93B1 (WT or H412R) in 3d iMac cells expressing TLR9-HA was performed in 1% digitonin with anti-FLAG matrix. UNC93B1 associated proteins were analyzed by SDS-PAGE and immunoblot with anti-FLAG and anti-HA antibodies. ER (white arrows) and cleaved (grey arrows) forms of TLR9-HA are indicated. All results are representative of at least three experiments.\n\nOur results thus far suggest that UNC93B1 controls the function of multiple TLRs by regulating their exit from the ER. However, UNC93B1 itself also exits the ER and is present in endolysosomes (Figure 1A,H). Moreover, we could detect both the precursor and cleaved forms of TLR9 associated with immunoprecipitated UNC93B1, suggesting that UNC93B1 and TLR9 remain associated after leaving the ER (Figure 3E). To test whether this post-ER interaction may have functional consequences, we screened UNC93B1 mutants for any role in TLR9 function beyond ER export. Strikingly, truncation of the UNC93B1 C-terminus (\u0394523 and \u0394538) resulted in an accumulation of the Golgi-modified precursor form of TLR9 and a marked reduction of the cleaved receptor (Figure 3B). This pattern suggests that TLR9 trafficking is blocked at some point after the medial Golgi, in contrast to the trafficking defect observed with N-terminal deletion mutants. Consistent with this interpretation, we observed reduced TLR9 signaling in cells expressing the \u0394523 and \u0394538 UNC93B1 mutants (Figure 3C). Thus, in addition to its role in ER export, UNC93B1 appears to regulate post-ER trafficking of TLR9.\n\n### UNC93B1 controls post-Golgi trafficking of TLR9 through recruitment of AP-2\n\nWe next sought to define the mechanism underlying the requirement for UNC93B1 in post-ER TLR9 trafficking. We focused on residues 539\u2013542, YRYL, because they are evolutionarily conserved and fit the consensus for a Yxx\u03a6 motif (where \u03a6 represents a hydrophobic residue), which may mediate protein interactions or serve as a site for phosphorylation (Songyang et al., 1993; Ohno et al., 1995, 1996; Crump et al., 1998; Bonifacino and Traub, 2003) (Figure 4A). Mutation of Tyr539 to an Ala (Y539A) resulted in accumulation of the Golgi-modified precursor form of TLR9 and reduced TLR9 cleavage, similar to the block in TLR9 trafficking observed with the \u0394538 truncation mutant (Figure 4B). Mutation of Leu-542 to Ala (L542A) and Tyr-539 to Phe (Y539F) gave similar results, although the block was not as complete as Y539A (Figure 4C). Responsiveness to TLR9 ligands was also reduced in UNC93B1-Y539A expressing cells, consistent with the block of TLR9 processing (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00291/elife-00291-fig4-v1.jpg)\n\n**Figure 4.:** (A) Multi-species protein sequence alignment of residues in the UNC93B1 C-terminal tail. The Yxx\u03a6 motif, YRYL, is boxed. (B) Precursor TLR9 accumulates in UNC93B1-Y539A expressing cells. Lysates from 3d iMac cells expressing TLR9-HA were complemented with the indicated GFP tagged UNC93B1, analyzed by SDS-PAGE, and immunoblotted with anti-HA and anti-GFP antibodies. The precursor (black arrow), ER (white arrow) and cleaved (grey arrow) forms of TLR9-HA are indicated. n.s. indicates a non-specific band. (C) Mutations of Yxx\u03a6 in UNC93B1 confer partial phenotypes in TLR9 trafficking when compared with Y539A. Lysates from 3d iMac cells expressing TLR9-HA and GFP tagged UNC93B1-WT, H412R, \u0394538, L542A, Y539F, Y539A were analyzed by SDS-PAGE and immunoblotted with anti-HA and anti-GFP antibodies. Presence of precursor (black arrow), ER (white arrow) and cleaved (grey arrow) forms of TLR9 are indicated. (D) TLR9 signaling is impaired in UNC93B1-Y539A cells. 3d iMac cells, complemented with GFP tagged UNC93B1-WT, -H412R, or -Y539A, were harvested for intracellular TNF\u03b1 staining 5 hr after stimulation with 3 \u03bcM CpG, 1 \u03bcg/ml Pam3CSK4 (Pam) or left unstimulated. Percentages of TNF-producing cells after gating on UNC93B1-GFP positive cells are plotted. (E) The C-terminal tail of UNC93B1 interacts with AP-2\u03bc. Results from a yeast two-hybrid assay testing for interaction between the AP (-1A, -2, -3A, -4) \u00b5 subunits and the N- or C-terminal cytosolic regions of UNC93B1 (N- or C-tail UNC), are shown. Growth on \u2013His\u2013Trp\u2013Leu plates (\u2013His) or \u2013Ade\u2013Trp\u2013Leu (\u2013Ade) indicates interaction. Growth on \u2013Trp\u2013Leu plates (+His+Ade) serves as a control. (F)\u2013(G) Tyr-539 on UNC93B1 mediates interaction with AP-2 complex. (F) Results from a yeast two-hybrid assay testing for interaction between the AP-2\u00b5 subunit and the C-terminal cytosolic region of UNC93B1 (UNC93B1 C-tail) from WT, the Y539A mutant, or the \u0394538 mutant are shown. Growth on \u2013His\u2013Trp\u2013Leu plates (\u2013His) indicates interaction. Growth on \u2013Trp\u2013Leu plates (+His) serves as a control. (G) HEK293T were transiently transfected with AP-2\u00b5-HA and FLAG tagged UNC93B1-WT, -Y539A. Cell lysates were incubated with anti-FLAG matrix, and UNC93B1-associated proteins were eluted with FLAG peptide, separated by SDS-PAGE and visualized by immunoblot with anti-HA or anti-FLAG antibodies. UNC93B1 associated AP-2\u00b5 is indicated with black arrow. Results are representative of at least three experiments (B, D\u2013F) or two experiments (C and G).\n\nYxx\u03a6 motifs can serve as binding sites for clathrin adaptor protein (AP) complexes, so we tested whether the C-terminal tail of UNC93B1 could interact with any of the four mammalian AP complexes. AP complexes consist of four subunits, of which the \u00b5 subunit typically determines cargo specificity (Bonifacino and Traub, 2003; Ohno, 2006). Because these interactions are often weak, we used a yeast two-hybrid (Y2H) assay in which the \u03bc subunits of AP-1, AP-2, AP-3, and AP-4 were fused to the Gal4 activation domain and the UNC93B1 N- and C-terminal tails were fused to the Gal4 DNA binding domain. The C-terminal cytosolic region of UNC93B1 interacted strongly with AP-2\u03bc, but not with the \u00b5 subunits of any of the other AP complexes (Figure 4E). Importantly, interaction with AP-2\u03bc was abolished by the \u0394538 truncation and the Y539A mutation (Figure 4F). Additionally, we were able to co-immunoprecipitate AP-2\u03bc with UNC93B1-WT, but not with UNC93B1-Y539A (Figure 4G). Taken together, these data suggest that UNC93B1 directly recruits AP-2 via a Yxx\u03a6 motif present in its C-terminal cytosolic tail.\n\nAP-2 complexes direct clathrin-mediated endocytosis of cargo from the plasma membrane. Therefore, our results suggest that UNC93B1 and TLR9 traffic together to the surface and require AP-2-mediated internalization to reach endocytic compartments. To test this possibility, we examined whether TLR9 required UNC93B1-mediated recruitment of AP-2 to gain access to endolysosomal compartments. Using immunofluorescence microscopy, we detected reduced colocalization of TLR9 and the lysosomal marker Lamp-1 in UNC93B1-Y539A-expressing cells (Figure 5A). We also compared surface expression of N-terminally tagged TLR9 in cells expressing different UNC93B1 alleles. While surface TLR9 was only weakly detectable in cells expressing UNC93B1-WT, expression of UNC93B1-Y539A increased the levels of FLAG-TLR9 at the cell surface (Figure 5B). Furthermore, as we found for TLR9-HA, the FLAG-TLR9 Golgi-modified precursor form accumulated in UNC93B1-Y539A expressing cells (Figure 5C). This result suggests that disruption of the interaction between UNC93B1 and AP-2 leads to defective endocytosis of TLR9 from the cell surface. In support of this model, siRNA knockdown of AP-2\u00b51 resulted in a similar increase in surface expression of TLR9 (Figure 5D) and accumulation of the TLR9 precursor form (Figure 5E). As a positive control for AP-2\u00b51 knockdown, we observed accumulation of CD71 (transferrin receptor) at the cell surface (Figure 5D). Taken together, these data support a model in which UNC93B1 interacts with AP-2 to traffic TLR9 from the cell surface to endolysosomes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00291/elife-00291-fig5-v1.jpg)\n\n**Figure 5.:** (A) TLR9 fails to traffic to endolysosomes in UNC93B1-Y539A expressing cells. Localization of TLR9-HA and Lamp-1 in 3d iMac cells complemented with UNC93B1-WT, -H412R, or -Y539A was determined by immunofluorescence microscopy. Representative images of Lamp-1 (left), TLR9 (middle), and a pseudo-colored merged image for each UNC93B1 allele are shown. Arrowheads indicate areas of Lamp-1/TLR9 colocalization. (B) TLR9 accumulates at the cell surface in UNC93B1-Y539A expressing cells. HEK293Ts transfected with N-terminally tagged 3\u00d7 FLAG-TLR9 and the indicated UNC93B1 alleles were stained with anti-FLAG and goat anti-mouse IgG secondary antibodies. FLAG staining was measured by flow cytometry. (C) The TLR9 precursor form accumulates in HEK293Ts expressing N-terminally tagged FLAG-TLR9 and UNC93B1-Y539A. Lysates from HEK293Ts stably expressing N-terminally tagged 3\u00d7 FLAG TLR9 and GFP tagged UNC93B1-WT, -H412R, or -Y539A were harvested, treated with EndoH, separated by SDS-PAGE, and visualized by immunoblot with anti-FLAG and anti-GFP antibodies. (D) TLR9 accumulates at the cell surface in cells lacking AP-2. HEK293Ts stably expressing 3\u00d7 FLAG-TLR9 with or without WT UNC93B1 were treated with AP-2\u03bc (AP2M1) or control siRNA for 96 hr. FLAG staining was measured on intact (surface) or permeabilized (Perm) cells as described in (G). Anti-CD71 (transferrin receptor) staining serves as a control for AP-2 knockdown. (E) Absence of AP-2 causes accumulation of TLR9 precursor form. HEK293Ts were treated with control or AP-2\u00b5 siRNA. After 48 hr, siRNA treated cells were transiently transfected with TLR9-HA and GFP tagged UNC93B1-WT. Lysates were harvested 24 hr later for EndoH assay as described in (A). The TLR9 precursor form (black arrow) is indicated in each panel. Results are representative of at least three experiments (B and D) Or two (A, C, and E).\n\n### UNC93B1 differentially controls TLR7 and TLR9\n\nHaving established the mechanisms by which UNC93B1 facilitates TLR9 delivery to endolysosomes, we next examined whether TLR7 is under similar regulation. However, for reasons that remain unclear, detection of endogenous or epitope-tagged exogenous TLR7 protein is quite challenging. Consequently, the evidence that TLR7 undergoes ectodomain processing is limited (Ewald et al., 2011), and one group has reported that TLR7 is not cleaved (Park et al., 2008). We synthesized a TLR7 coding sequence optimized for efficient translation (see \u2018Materials and methods\u2019) and found that our ability to detect TLR7 protein was significantly improved. Cleaved TLR7 was detected in macrophages expressing UNC93B1-WT but not in macrophages expressing UNC93B1-H412R (Figure 6A). Both the full-length and cleaved forms of TLR7 possessed EndoH-resistant glycans, although fewer of the TLR7 N-linked glycans acquired these modifications than for TLR9 (Figure 6B, top). These results confirm our previous findings that TLR7 undergoes ectodomain proteolysis and traffics through the Golgi en route to endolysosomes. Importantly, our results confirm that TLR7 trafficking is dependent on UNC93B1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00291/elife-00291-fig6-v1.jpg)\n\n**Figure 6.:** (A) TLR7 trafficking can be monitored biochemically and is UNC93B1-dependent. Lysates from 3d iMac cells expressing TLR7-HA and complemented with GFP-tagged UNC93B1-WT, -H412R or -Y539A were separated by SDS-PAGE and immunoblotted with anti-HA and anti-GFP antibodies. ER (white arrows) and cleaved (grey arrows) forms of TLR7-HA are indicated. (B) TLR7 acquires EndoH resistance. TLR7-HA was immunoprecipitated from 3d iMac cells expressing UNC93B1-WT, -H412R, or -Y539A, treated with EndoH (E), PNGaseF (P) or left untreated (\u2212), and visualized by anti-HA immunoblot. Asterisk indicates precursor form of the receptor. The bracket indicates the migration difference between EndoH-treated and PNGaseF-treated TLR7. (C) UNC93B1 interacts with ER and cleaved forms of TLR7. GFP-tagged UNC93B1-WT or -H412R were immunoprecipitated from 3d iMac cells expressing TLR7-HA. UNC93B1 associated proteins were analyzed by SDS-PAGE and immunoblotted with anti-HA and anti-GFP antibodies. ER (white arrows) and cleaved (grey arrows) forms of TLR7-HA are indicated. (D) TLR7 signaling is normal in UNC93B1-Y539A cells. 3d iMac cells complemented with GFP tagged UNC93B1-WT, -H412R, or -Y539A were stimulated with 100 to 25 ng/ml R848 for 5 hr and intracellular TNF\u03b1 stain was performed. Percentages of TNF-producing cells after gating on UNC93B1-GFP positive cells are plotted. (E) TLR7 interacts with AP-4\u03bc. Results from a yeast two-hybrid assay testing for interaction between the AP-1, AP-2, AP-3, and AP-4 \u00b5 subunits and the C-terminal cytosolic region of TLR7. Growth on \u2013His\u2013Trp\u2013Leu plates (\u2013His) indicates interaction. Growth on \u2013Trp\u2013Leu plates (+His) serves as a control. (F) TLR7-Y892A is unable to interact with AP-4\u03bc. Results from a yeast two-hybrid assay testing for interaction between the AP-4\u03bc and TLR7 Yxx\u03a6 mutants (Y882A, Y892A, or double). Conditions are as described in (E). (G) TLR7-Y892A does not respond to TLR7 ligands. HEK293T cells were transiently transfected with an NF-\u03baB luciferase reporter as well as expression plasmids encoding TLR7, TLR7-Y892A, or empty vector. Luciferase production was assayed 16 hr after stimulation with 10 \u00b5g/ml R848. (H) TLR7-Y892A trafficking is impaired. TLR7\u2212/\u2212 bone marrow derived macrophages (BMMs) were transduced with HA-tagged TLR7-WT or TLR7-Y892A. Cell lysates were analyzed by SDS-PAGE and immunoblotted with anti-HA antibodies. ER (white arrows) and cleaved (grey arrows) forms of TLR7-HA are indicated. Results are representative of at least three experiments (A, D, and E) or two experiments (B, C, and F\u2013H).\n\nWe next examined whether UNC93B1 controls post-Golgi sorting of TLR7 as it does for TLR9. Similar to TLR9, both the full-length and cleaved forms of TLR7 associated with UNC93B1 suggesting that UNC93B1 traffics with TLR7 to endolysosomes (Figure 6C). However, unlike TLR9, the response to TLR7 ligands was normal in UNC93B1-Y539A expressing cells (Figure 6D). Moreover, the amount of cleaved TLR7 was unaffected, and the TLR7 Golgi-modified precursor form did not accumulate in these cells (Figure 6A,B). Thus, delivery of TLR7 to endolysosomes appears to be independent of the UNC93B1/AP-2 pathway.\n\nIf TLR7 does not require the UNC93B1-mediated recruitment of AP-2 for proper trafficking, then how does the receptor reach endolysosomes? We considered the possibility that TLR7 may recruit AP-2 directly, thereby obviating the need for UNC93B1. However, when we screened by Y2H for interactions between the cytosolic region of TLR7 and AP-1, AP-2, AP-3, and AP-4, we found that TLR7 interacted specifically with AP-4\u03bc but not AP-2\u03bc (Figure 6E). We identified three potential Yxx\u03a6 motifs within TLR7, and mutating one of these (Tyr-892) disrupted the interaction with AP-4 (Figure 6F). In addition, a TLR7-Y892A mutant no longer responded to TLR7 ligands (Figure 6G) and displayed reduced ectodomain processing when expressed in bone marrow derived macrophages, suggesting that AP-4 is required for TLR7 delivery to endosomes (Figure 6H). AP-4 has been implicated in vesicular trafficking between the trans Golgi network (TGN) and endosomes (Dell'Angelica et al., 1999; Aguilar et al., 2001; Simmen et al., 2002; Barois and Bakke, 2005; Burgos et al., 2010). Therefore, the association between AP-4 and TLR7 suggests that TLR7 is diverted from the secretory pathway at the TGN and delivered directly to endosomes while continually associating with UNC93B1. Thus, the mechanisms controlling trafficking of TLR7 and TLR9 to the compartments from which they signal are distinct.\n\n### Several UNC93B1 dependent TLRs traffic independently of the UNC93B1/AP-2 pathway\n\nWe next sought to determine whether the post-Golgi trafficking of other UNC93B1-dependent TLRs is similar to either of the pathways we have described for TLR7 and TLR9. First, we tested whether TLR3, TLR11, and TLR13 responses were affected in UNC93B1-Y539A expressing cells. Unfortunately, both wildtype and UNC93B1-Y539A cells were unresponsive to Poly I:C, profilin, and flagellin (data not shown), so we could not evaluate TLR3 or TLR11 signaling (Alexopoulou et al., 2001; Yarovinsky et al., 2005; Mathur et al., 2012). However, cells expressing wildtype UNC93B1 responded robustly to the oligoribonucleotide sequence derived from Staphylococcus aureus (hereafter referred to as Sa ORN) that was recently shown to stimulate TLR13 (Li and Chen, 2012; Oldenburg et al., 2012). The response of UNC93B1-Y539A cells stimulated with Sa ORN was comparable to that of wildtype cells, suggesting that TLR13 does not require the UNC93B1/AP-2 pathway to access endosomal signaling compartments (Figure 7A).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00291/elife-00291-fig7-v1.jpg)\n\n**Figure 7.:** (A) TLR13 signaling is unaffected by UNC93B1-Y539A. 3d iMac cells expressing UNC93B1-WT, -H412R, or -Y539A were stimulated with 1 \u03bcg/ml Pam3CSK4 (black) or 1 nM Sa ORN complexed with DOTAP (grey) and harvested for intracellular TNF\u03b1 staining 5 hr after stimulation. Percentages of TNF-producing cells are plotted. (B) TLR13 trafficking is unaffected by UNC93B1-Y539A. TLR13-HA was immunoprecipitated from 3d iMac cells expressing UNC93B1-WT, -H412R, or -Y539A, treated with EndoH (E), PNGaseF (P) or left untreated (N), and visualized by anti-HA immunoblot. Asterisk indicates full length EndoH resistant form of the receptor. (C) and (D) TLR11 (C) and TLR12 (D) trafficking is unaffected by UNC93B1-Y539A. TLR11 and TLR12 was treated as in (B). Asterisk indicates full length EndoH resistant form of the receptor. The bracket indicates the migration difference between EndoH-treated and PNGaseF-treated cleaved form of the receptors. Results are representative of at least three experiments (A) or two experiments (B\u2013D).\n\nWe also examined trafficking of other UNC93B1-dependent TLRs biochemically in cells expressing UNC93B1-WT, UNC93B1-H412R, or UNC93B1-Y539A. TLR13 acquired EndoH-resistant glycans, and the glycosylation was absent in UNC93B1-H412R cells but unaffected in UNC93B1-Y539A expressing cells. Moreover, the full-length EndoH-resistant form did not accumulate in these cells, as we observed for TLR9. Together with the responses to TLR13 ligands, these results indicate that TLR13 traffics independently of the UNC93B1/AP-2 pathway. We performed similar experiments with TLR11 and TLR12, which both recognize profilin (Yarovinsky et al., 2005; Koblansky et al., 2012). Both of these receptors appear to undergo ectodomain cleavage, although the sizes of the cleaved receptors are quite distinct: \u223c45 kDa for TLR11 and \u223c75 kDa for TLR12 (Figure 7C,D). Importantly, both receptors acquired EndoH-resistant glycans, and the glycosylation was unaffected in UNC93B1-Y539A expressing cells. Thus, TLR11 and TLR12 also do not require the UNC93B1/AP-2 pathway for proper trafficking.\n\nAltogether, these results suggest that TLR9 trafficking may be unusual among the endosomal TLRs by trafficking via the plasma membrane en route to endosomes. It is important to note, though, that we have not examined TLR3 trafficking. Thus, it remains possible that TLR3 may also utilize this route, especially considering the several reports that describe TLR3 surface expression (Qi et al., 2010, 2012; Pohar et al., 2012; Weber et al., 2012).\n\n### TLR7 and TLR9 association with UNC93B1 is mutually exclusive\n\nWe have shown that UNC93B1 associates with both the full-length and cleaved forms of TLR9 and TLR7 (Figures 3E, 6C); however, the differential post-Golgi trafficking routes taken by TLR7 and TLR9 suggest that UNC93B1 must associate with TLR7 and TLR9 in separate complexes. To test this possibility directly, we examined interactions between TLR7, TLR9, and UNC93B1 by immunoprecipitation. While both TLR7 and TLR9 could precipitate UNC93B1, we could never detect interactions between the two receptors (Figure 8). Thus, UNC93B1 binding to TLR7 appears to preclude binding to TLR9 and vice versa. These data support the idea that endosomal TLRs compete for binding to UNC93B1 in order to exit from the ER (Wang et al., 2006; Fukui et al., 2009, 2011).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00291/elife-00291-fig8-v1.jpg)\n\n**Figure 8.:** TLR9 and TLR7 associate with UNC93B1 in distinct complexes. 3d iMac cells expressing TLR9-HA, TLR7-V5-His, and WT UNC93B1-GFP (WT) or no UNC93B1 (\u2212) were lysed in TNT buffer conditions then incubated with anti-HA matrix or anti-V5 protein A/G beads. Immunoprecipitated proteins were analyzed by SDS-PAGE and immunoblotted with HA, GFP and V5 antibodies. Asterisk indicates remaining UNC93B1-GFP signal. Results are representative of two experiments.\n\n## Discussion\n\nThe studies presented here address several poorly understood aspects of TLR cell biology. First, we describe mechanisms by which UNC93B1 can regulate multiple aspects of TLR trafficking. UNC93B1 controls exit of at least six TLRs (TLR3, TLR7, TLR9, TLR11, TLR12 and TLR13) from the ER by regulating their loading into COPII vesicles. In addition, we show that UNC93B1 acts at the cell surface by recruiting clathrin AP-2 to internalize TLR9 from the plasma membrane into endosomes. Perhaps most surprisingly, our results indicate that TLR7 and TLR9 have different requirements for UNC93B1 and demonstrate that the localization of these receptors is controlled through distinct post-Golgi trafficking mechanisms. This last point may provide an explanation for the contrasting roles played by TLR7 and TLR9 in SLE.\n\nPrevious work has demonstrated that TLR9 and TLR7 fail to reach endosomes in the absence of functional UNC93B1 (Kim et al., 2008). Interactions between UNC93B1 and TLRs appear necessary for proper trafficking (Brinkmann et al., 2007), but until our work it was unclear how UNC93B1 mediated delivery of TLRs to endosomal compartments. The most direct examination of UNC93B1 function concluded that the protein translocates with TLRs from the ER to endolysosomes without passing through the Golgi apparatus (Brinkmann et al., 2007; Kim et al., 2008). In contrast, we propose that UNC93B1 is required for loading of TLR9 into COPII vesicles, which direct transport from the ER to the cis-Golgi (Zanetti et al., 2012). Multiple lines of evidence support the conclusion that UNC93B1 regulates this essential aspect of ER exit. First, UNC93B1 is detected within COPII vesicles, but the nonfunctional UNC93B1-H412R mutant is not. Second, a fraction of UNC93B1 protein acquires EndoH-resistant glycans, indicative of trafficking through the medial-Golgi. Again, the UNC93B1-H412R mutant does not acquire EndoH resistance. Third, in cells lacking UNC93B1, TLR9 is not detected within COPII vesicles. Fourth, the EndoH-resistant precursor and cleaved forms of TLR9 are absent in cells not expressing functional UNC93B1. Importantly, we ruled out the possibility that UNC93B1 functions as a folding chaperone by showing that CD4-TLR fusion proteins require UNC93B1 for ER exit. Altogether, these results argue that UNC93B1 regulates TLR passage through the general secretory pathway, instead of controlling direct translocation between the ER and endosomes. We cannot formally rule out that a pool of UNC93B1 uses this non-canonical route, but it would seem to have little if any relevance for TLR trafficking. The recent identification of Sec22b as a factor required for ER to endosome translocation may allow for further investigation of this possibility (Cebrian et al., 2011).\n\nOur work suggests that at least six, and possibly seven, TLRs are regulated by UNC93B1 in mice. TLR3, TLR7, TLR9, TLR11, TLR12 and TLR13 require UNC93B1 for exit from the ER. It is likely that TLR8 also requires UNC93B1 (Itoh et al., 2011), based on its similarity to TLR7, but we have not yet tested this possibility. Regulation of ER exit of TLR11, TLR12 and TLR13 by UNC93B1 is not completely unexpected, as these TLRs were previously linked to UNC93B1 (Brinkmann et al., 2007; Melo et al., 2010; Pifer et al., 2011; Koblansky et al., 2012; Oldenburg et al., 2012). The determinants of UNC93B1 binding to each of these TLRs remain poorly defined. Residues within the first 50 amino acids of UNC93B1 appear necessary for export of TLR9 but not for export of TLR7. This result suggests that distinct regions of UNC93B1 are required for association with TLR9 and TLR7, although measuring how these mutations impact TLR/UNC93B1 interactions has been challenging for us and for other groups (Fukui et al., 2009). The fact that UNC93B1-D34A-expressing mice exhibit enhanced TLR7 responses and develop SLE suggests that UNC93B1 is limiting in the ER, at least for TLR7 (Fukui et al., 2011). Presumably, the inability of UNC93B1-D34A to interact with TLR9 results in greater TLR7 export and enhanced signaling. These results and our finding that TLR7 and TLR9 association with UNC93B1 is mutually exclusive suggest that each UNC93B1 molecule may interact with a single TLR. This specificity is particularly important in light of our findings that trafficking routes of TLR7 and TLR9 are distinct. Whether UNC93B1 is similarly selective for other TLRs and identification of the domains that mediate any selectivity are important topics for future studies. Selective export of individual TLRs may provide a mechanism for differential regulation of endosomal TLR responses between cell types or in response to external signals.\n\nThrough analysis of UNC93B1 mutants we identified an additional role for UNC93B1 in directing post-Golgi trafficking of TLR9. Unlike typical COPII loading factors, UNC93B1 remains associated with its cargo, traffics with TLR9 to the cell surface, and associates with AP-2 via a YXX\u03a6 motif (Figure 9). Recruitment of AP-2 is necessary for internalization of TLR9 and subsequent trafficking to endolysosomes. This AP-2-dependent trafficking route has been described for several proteins localized to endolysosomes, including LAMP-1, LAMP-2, and MHC Class II (Gough et al., 1999; Janvier and Bonifacino, 2005; McCormick et al., 2005). In some cases, the same protein can access endocytic compartments through multiple routes. For example, LAMP-1/2 can also traffic directly from the TGN to endosomes (Karlsson and Carlsson, 1998). While we cannot rule out that TLR9 may reach endolysosomes through multiple routes, AP-2-mediated internalization appears to be the main pathway of delivery, at least in the cells types we have examined. It is interesting that TLR9 and UNC93B1 would have evolved such dependency on this route, especially considering the potential for self-DNA recognition associated with surface localization of TLR9 (Barton et al., 2006; Mouchess et al., 2011). Indeed, our results appear to underscore why the requirement for ectodomain processing is a critical mechanism ensuring that receptors at the plasma membrane remain nonfunctional (Ewald et al., 2008; Mouchess et al., 2011).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/00291/elife-00291-fig9-v1.jpg)\n\n**Figure 9.:** UNC93B1 interacts with several TLRs in the ER and facilitates loading into COPII vesicles. Unlike typical COPII loading factors, UNC93B1 remains associated with TLR9 and TLR7 after exit from the ER. Through its recruitment of AP-2, UNC93B1 is necessary for endocytosis of TLR9 from the plasma membrane into endosomes. TLR7 does not rely on this trafficking route. Instead, TLR7 utilizes AP-4 to bypass the cell surface and traffic directly to endosomes. This difference in trafficking may result in TLR9 and TLR7 accessing distinct compartments with unique functional properties related to the function of each receptor.\n\nOne of the most exciting aspects of our study is the observation that trafficking of TLR7 and TLR9 are distinct. We find no evidence that TLR7 requires UNC93B1 for recruitment of AP-2. Instead, TLR7 appears to employ AP-4 in a direct route of traffic from the TGN to the endosome. These results provide the first evidence that different pathways control TLR7 and TLR9 trafficking and localization. One potential implication of this result is that these pathways may deliver TLR9 and TLR7 to distinct compartments with different access to ligands or distinct signaling properties. We find that TLR11, TLR12 and TLR13, like TLR7, do not require the UNC93B1/AP-2 pathway. However, it remains to be determined whether these TLRs utilize the AP-4 pathway or another pathway to traffic from TGN to endosomes. Further compartmental specialization is generated by AP-3, which interacts with TLR9 and directs the receptor to endosomal compartments dedicated to type I interferon signaling (Honda et al., 2005; Blasius et al., 2010; Sasai et al., 2010). TLR7 may also utilize AP-3 to reach this specialized compartment, although we could not detect interaction between AP-3 and TLR7 (Figure 6E). Whether there is transport of TLRs between each of the compartments serviced by AP-2, AP-3, and AP-4 remains an open question.\n\nThe use of distinct molecular pathways to regulate endosomal TLRs may allow for differential regulation of trafficking, either in response to external cues or between different cell types. In addition, TLR7- and TLR9-containing compartments may have differing abilities to access internalized ligands, influencing responses to microbial or self ligands. These possibilities are particularly intriguing when considering the contrasting roles played by TLR7 and TLR9 in SLE, where loss of TLR7 protects against disease while loss of TLR9 exacerbates disease (Christensen et al., 2006). Our findings raise the possibility that distinct cell biological regulation may underlie the different roles played by these receptors in autoimmune disease. Defining the mechanisms underlying this regulation may help explain the etiology of certain autoimmune diseases as well as provide opportunities to selectively manipulate distinct aspects of TLR activation.\n\n## Materials and methods\n\n### Antibodies and reagents\n\nThe following antibodies were used for immunoblots, immunoprecipitations, or flow cytometry: anti-HA as purified antibody or matrix (3F10; Roche, Indianapolis, IN), anti-FLAG as purified antibody or matrix (M2 and M5; Sigma-Aldrich, St. Louis, MO), anti-GFP (JL-8; Clontech Laboratories, Inc, Mountain View, CA), anti-GFP as purified or matrix (RQ2; MBL International Corporation, Woburn, MA), anti-myc (purified mouse; Invitrogen, Grand Island, NY), anti-V5 (mouse monoclonal; Invitrogen) anti-CD4 (RM4-5; BD Biosciences, San Jose, CA), anti-Lamp-1 (1D4B; BD Biosciences), anti-calnexin (rabbit polyclonal; Enzo Life Sciences, Farmingdale, NY), anti-ERGIC/p58 (rabbit) has been previously described (Merte et al., 2010), anti-TNF\u03b1-PE or -APC (MP6-XT22; eBiosciences, San Diego, CA), anti-CD71-APC (OKT9; eBiosciences), goat anti-mouse IgG-AlexaFluor647 (Invitrogen), goat anti-rat-HRP, sheep anti-mouse-HRP, and donkey anti-rabbit-HRP (GE Healthcare, Waukesha, WI). For immunofluorescence: rabbit anti-HA (Y11; Santa Cruz Biotechnology, Dallas, TX), goat anti-mouse Cy3 (Jackson Immunoresearch, West Grove, PA), goat anti-rabbit-AlexaFluor647 (Invitrogen). The following TLR ligands were used to stimulate cells: CpG ODN (TCCATGACGTTCCTGACGTT, all phosphorothioate linkages) and Sa ORN (\u2018Sa17\u2019; Oldenburg et al., 2012) (GACGGAAAGACCCCGUG RNA sequence purchased from Integrated DNA Technologies, San Diego, CA), R848 (InvivoGen, San Diego, CA), and Pam3CSK4 (InvivoGen). 3\u00d7 FLAG peptide was purchased from Sigma-Aldrich. Digitonin was purchased from Wako Pure Chemical Industries, Ltd. (Richmond, VA) or Calbiochem (Billerica, MA). Lipofectamine-LTX reagent (Invitrogen) was used for transient transfection of plasmid DNA. Lipofectamine RNAiMAX reagent (Invitrogen) was used for siRNA delivery. DOTAP liposomal transfection reagent (Roche) was used for transfection of Sa ORN in PBS. OptiMEM-I (Invitrogen) was used as media to form nucleic acid complexes for transient transfections.\n\n### Mice\n\nUnc93b13d/3d mice (Tabeta et al., 2006) were obtained from the MMRRC at University of California, Davis. C57Bl/6 were purchased from The Jackson Laboratory (Bar Harbor, ME). All mice were housed in the animal facilities at the University of California, Berkeley according to guidelines of the Institutional Animal Care and Use Committee.\n\n### Plasmid constructs\n\nPfu Turbo polymerase (Agilent Technologies, Santa Clara, CA) was used according to manufacturer's instructions for site directed mutagenesis. The following mouse stem cell virus (MSCV)-based retroviral vectors were used to express UNC93B1, TLR9, and TLR7 in cell lines: MSCV2.2 (IRES-GFP), MSCV-Thy1.1 (IRES Thy1.1), MIGR2 (IRES-hCD2). The following epitope tags were fused to the C-terminus of UNC93B1: 3\u00d7 FLAG (DYKDHDGDYKDHDIDYKDDDDK), Myc (EQKLISEEDL), HA (YPYDVPDYA) and entire eGFP cDNA derived from pIRES-eGFP plasmid (Clontech). TLR9 was fused to HA at the C-terminal end or with 3\u00d7 FLAG at the N-terminal end as previously described (Ewald et al., 2008; Mouchess et al., 2011). TLR7 sequence was synthesized after codon optimization by Invitrogen's GeneArt Gene Synthesis service and cloned into same vectors as TLR9 and tagged with C-terminal HA or C-terminal V5-His (GKPIPNPLLGLDST-HHHHHH). TLR11, TLR12, TLR13 was C-terminally tagged with HA and cloned into MSCV2.2. UNC93B1 shRNA and control were generated in MSCV-Lmp, as previously described (Ewald et al., 2008). CD4-TLR chimeras were generated in pCDNA3.1 (Invitrogen). CD4 extracellular domain (mouse 1\u2013390 a.a.) was fused to transmembrane domain and cytosolic regions of the following TLRs and C-terminally tagged with HA: TLR4 (620\u2013835 a.a.), TLR9 (mouse 803\u20131032 a.a.), TLR3 (human 691\u2013904 a.a.), TLR7 (human 825\u20131049), TLR11 (mouse 703\u2013926 a.a.), TLR13 (mouse 770\u2013991 a.a.). Rat AP-2\u03bc-HA containing an internal HA tag in pCDNA3 was provided by A. Sorkin (while at the University of California, San Diego, CA, now at the University of Pittsburgh, PA) (Nesterov et al., 1999).\n\nFor yeast-two-hybrid assays, N-terminal (1\u201359 a.a.) and C-terminal (515\u2013598 a.a.) cytosolic regions of UNC93B1 were fused to Gal4 DNA binding domain (DBD) by cloning into pGBT9 (Clontech). TLR7 cytosolic region (mouse 862\u20131061 a.a.), TLR9 cytosolic region (mouse 838\u20131032 a.a.), fused to Gal4-DBD by cloning into pGBT9. AP-1A\u03bc, AP-2\u03bc, AP-3A\u03bc, AP-3B\u03bc, AP-4\u03bc were cloned into pACT2 (Clontech) were provided by J. Bonifacino (National Institutes of Health, Bethesda, MD).\n\n### Cell lines and tissue culture conditions\n\nHEK293T cells were obtained from American Type Culture Collection (ATCC, Manassas, VA). GP2-293 packaging cell lines were obtained from Clontech. Phoenix-Eco (\u00d8NX-E) cells were provided by G. Nolan (Stanford University, Palo Alto, CA). Mouse embryonic fibroblasts (MEFs) are TLR2/TLR4 double knockout genotype immortalized with SV40 large T-antigen. COS7 were obtained from the Berkeley cell culture facility. The above cell lines were cultured in DMEM supplemented with 10% (vol/vol) FCS, L-glutamine, penicillin-streptomycin, sodium pyruvate, and HEPES (pH 7.2) (Invitrogen). RAW264 macrophage cell lines (ATCC) and immortalized macrophages (generated as described below) were cultured in RPMI 1640 (same supplements as above).\n\nTo generate immortalized macrophage cell lines, bone marrow from Unc93b13d/3d mice was cultured in RPMI 1640 media supplemented with supernatant containing M-CSF, as previously described (Arpaia et al., 2011), as well as virus encoding both v-raf and v-myc (Blasi et al., 1985). After 8 days, macrophages were removed from M-CSF-containing media and cultured in RPMI 1640 media with added supplements as described above.\n\n### Retroviral transduction\n\nFor retroviral transduction of immortalized macrophages, VSV-G-psuedotyped retrovirus was made in GP2-293 packaging cells (Clontech). GP2-293 cells were transfected with retroviral vectors and pVSV-G using Lipofectamine LTX reagent. 24 hr post-transfection, cells were incubated at 32\u00b0C. 48 hr post-transfection viral supernatant (with polybrene at final 5 \u03bcg/ml) and was used to infect target cells overnight at 32\u00b0C and protein expression was checked 48 hr later. Target cells were sorted on MoFlo Beckman Coulter Sorter to match expression.\n\nFor retroviral transduction of bone marrow derived macrophages, retrovirus was produced with the \u00d8NX-E packaging line. Bone marrow cells were transduced with viral supernatant on two successive days while cultured in M-CSF containing RPMI media until harvested on day 8.\n\n### Luciferase assays\n\nActivation of NF-\u03baB in HEK293T cells was performed as previously described (Ewald et al., 2008). Briefly, transfections were performed in OptiMEM-I (Invitrogen) with LTX transfection reagent (Invitrogen) according to manufacturer's guidelines. Cells were stimulated with 1\u201310 \u00b5g/ml R848 after 24 hr and lysed by passive lysis after an additional 12\u201316 hr. Luciferase activity was measured on a LMaxII-384 luminometer (Molecular Devices, Sunnyvale, CA).\n\n### Lysate preparation, SDS-PAGE, immunoblotting\n\nCell lysates were prepared with TNT buffer (20 mM Tris [pH 8.0], 200 mM NaCl, 1% Triton X-100, 4 mM EDTA and supplemented with EDTA-free complete protease inhibitor cocktail; Roche) unless otherwise noted. Digitonin lysis buffer (50 mM Tris [pH 7.4], 150 mM NaCl, 5 mM EDTA [pH 8.0], 1% Digitonin added fresh and supplemented with EDTA-free complete protease inhibitor cocktail) was used for co-immunoprecipitations. Lysates were cleared of insoluble material by centrifugation. For immunoprecipitations, lysates were incubated with anti-HA matrix, anti-FLAG matrix, anti-GFP matrix or with purified antibody conjugated to Protein A/G beads (ThermoFisher Pierce, Rockford, IL) and precipitated proteins were denatured in SDS-PAGE buffer separated by SDS-PAGE (Tris\u2013HCl self cast gels or Bio-Rad TGX precast gels [Bio-Rad, Hercules, CA]), and probed by the indicated antibodies. For anti-FLAG matrix immunoprecipitations, 3\u00d7 FLAG peptide (Sigma-Aldrich) was used to elute.\n\n### Endoglycosidase H assay\n\nImmunoprecpitated proteins or total lysate were denatured and treated with Endoglycosidase H or PNGase F according to manufacturer's instructions. All enzymes and buffers were purchased from New England Biolabs (Ipswich, MA).\n\n### Flow cytometry\n\nTo measure TNF\u03b1 production, we added brefeldinA to cells 30 min after stimulation, and cells were collected after an additional 4 hr, and cells were stained for intracellular cytokines with a Fixation & Permeabilization kit according to manufacturer's instructions (eBioscience).\n\nFor FLAG-TLR surface expression, HEK293T cells stably expressing N-terminally tagged 3\u00d7 FLAG-TLR9 were stained with anti-FLAG (M5; Sigma-Aldrich) antibody followed by Alexa 647 goat anti-mouse IgG secondary antibody (Invitrogen). All data were collected on LSR II (Becton Dickinson, Franklin Lakes, NJ) or FC-500 (Beckman Coulter, Indianapolis, IN) flow cytometers and were analyzed with FloJo software (TreeStar, Inc. Ashland, OR).\n\n### Microscopy\n\nCo-localization studies were performed on Leica TCS confocal microscope. The images were taken with a 40\u00d7 oil immersion objective and treated with 2\u00d7 digital zoom. All images were processed by Adobe Photoshop. Cells were allowed to settle overnight on coverslips. Coverslips were washed with PBS, fixed with 4% paraformaldehyde/PBS, and permeabilized with 0.5% saponin/PBS. Slides were incubated in freshly made 0.1% sodium borohydride 0.1% saponin before being stained in 1% Bovine Serum Albumin (Fisher Scientific, Pittsburgh, PA)/0.1% saponin in PBS with rabbit anti-HA (Santa Cruz), rat anti-Lamp-1 (BD Biosciences) then with secondary antibodies, goat anti-Rabbit 647 (Invitrogen) and goat anti-Rat Cy3 (Jackson Immunoresearch).\n\n### Phagosome isolation\n\nRAW264 cells were used to isolate phagosomes as previously described (Ewald et al., 2008). Briefly, cells were incubated with 2 \u03bcM latex beads (Polysciences, Inc., Warrington, PA) for 1 hr. Cells were disrupted by dounce homogenization to release intact phagosomes. Following centrifugation in sucrose step gradient, phagosomes were harvested from the 20\u201310% sucrose interface. Lysates were analyzed by immunoblot.\n\n### siRNA knockdown\n\n3.5 \u00d7 105 HEK293Ts were plated in 2 ml antibiotic free media per well in six-well plates and reverse transfected with 5 \u03bcl 20 \u03bcM siRNA in 500 \u03bcl OptiMEM-I and 5 \u03bcl of Lipofectamine RNAiMAX for 48\u201396 hr until harvest for flow cytometry or SDS-PAGE and immunoblot analysis. siRNA duplexes against human AP-2\u03bc were purchased from ThermoFisher Dharmacon RNAi Technologies (Waltham, MA) with the following sequence: 5\u2032-GGAGAACAGUUCUUGCGGC-3\u2032 and with the following conditions: ON-TARGET - Enhanced Antisense Loading, Standard (A4), UU added to 3\u2032 end. Control siRNA (ON-TARGETplus Non-targeting siRNA #1) was purchased from Dharmacon.\n\n### Yeast two-hybrid interaction\n\nCells of an overnight culture (2.5 ml) of yeast strain PJ69-4a in YPD media grown at 30\u00b0C were washed in H2O and mixed sequentially with the following: 50% PEG-3500 (Sigma-Aldrich), 10 mM lithium acetate in Tris-EDTA (TE) (pH 7.5), denatured salmon sperm DNA (Invitrogen) and 100 ng of plasmid constructs, then mixed. Yeast were incubated for 30 min at 30\u00b0C and heat-shocked for 15 min at 42\u00b0C. Cells were centrifuged, resuspended in H2O, and spread on YNB plates with \u2013Trp \u2013Leu dropout mix. Liquid cultures in Trp-Leu broth were grown at 30\u00b0C overnight. Cells were normalized to 1.0 OD and 1:10 dilutions made. 4 \u03bcl of each dilution was plated on \u2013Trp\u2013Leu\u2013His, and \u2013Trp\u2013Leu\u2013Ade at 30\u00b0C. YPD, YNB and dropout mixtures purchased from Sunrise Science. Growth on \u2013Trp\u2013Leu\u2013His or \u2013Trp\u2013Leu\u2013Ade plates was recorded at day 3.\n\n### In vitro COPII budding assay\n\nCOPII vesicle formation was performed as described previously (Kim et al., 2005; Merte et al., 2010). In brief, RAW264 cells grown in 10 \u00d7 10-mm plates or COS7 cells grown in 6 \u00d7 100-mm plates were washed in PBS, removed from plates with trypsin, and washed again in PBS containing 10 \u03bcg/ml soybean trypsin inhibitor. Cells were permeablized with 40 \u03bcg/ml digitonin for 5 min in ice-cold KHM buffer (110 mM KOAc, 20 mM Hepes pH 7.2 and 2 mM Mg(OAC)2) and washed and resuspended in 100 \u03bcl KHM. Each reaction contained KHM and where indicated an ATP regenerating system (40 mm creatine phosphate, 0.2 mg/ml creatine phosphokinase, and 1 mm ATP), 0.2 mm GTP, and rat liver cytosol (prepared as described previously; Kim et al., 2005). Reactions were incubated at 30\u00b0C for 60 min. A 75-\u03bcl aliquot of the vesicle fraction was separated from the donor microsomal fraction by centrifugation at 14,000\u00d7g for 20 min at 4\u00b0C. Donor fraction was lysed in 75 \u03bcl of Buffer C (10 mm Tris\u2013HCl [pH 7.6], 100 mm NaCl, 10% [w/v] SDS plus protease inhibitor mixture). The vesicles were collected by centrifugation at 50,000 rpm at 4\u00b0C in a Beckman TLA100 rotor for 30 min. Isolated vesicles were lysed in 20 \u03bcl of Buffer C. Donor membrane (20% total) and isolated vesicles (75% of total) were separated by SDS-PAGE and analyzed by immunoblotting.\n",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "a82f31d5-1b70-47be-8513-ba358b7e242e",
+      "submission_id": "20bb0cbe-e3dc-4947-8b01-bc9daa8a05e5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ruslan Medzhitov, Yale University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00291.012](https://doi.org/10.7554/eLife.00291.012)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cUnc93b1 mediates differential trafficking of TLR7 and TLR9\u201d for consideration at eLife. Your article has been evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments based on the reviewers' reports.\n\nThis is an excellent study providing novel insights into the mechanisms of differential trafficking of TLR7 and TLR9 by the multipass transmembrane protein Unc93b1. The study will have general impact in immunology and cell biology. On the basis of enthusiastic comments by the Reviewing editor and two other reviewers, we will be happy to accept this paper for publication in eLife, provided that the authors address the minor issues raised by the reviewers:\n\n1) A striking finding of this study is the differential use of the Unc93B/AP-2 trafficking pathway by TLR9 and TLR7. The authors suggest that TLR7 can direct itself to endosomes from the golgi through interactions with AP-4 subunits. Is this a common feature of the several TLRs that bind to Unc93B? If yeast 2-hybrid analyses are performed with other endosomal TLRs, are there other examples of TLR-AP4 interactions, or is TLR7 unique?\n\n2) The authors make the intriguing suggestion that Unc93B binds to a single TLR at a time. This model predicts that at least five different complexes of Unc93B exist in cells (Unc-TLR9 complexes, Unc-TLR7 complexes, etc). If this is true, then immunoprecipitation assays with TLR7 should not be able to co-purify TLR9, while Unc93B pulldowns should isolate both TLR7 and TLR9. The authors are encouraged to perform these assays.\n\n3) In Figure 7, the schematic figure indicates the role of AP-1 in transfer of TLR9 from Golgi to the plasma membrane. However, we could not find data for this in the study. Can the authors clarify this?\n",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0205bfcc-8a0a-4caf-b7a4-8e4b422fa92f",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C1",
+      "claim": "UNC93B1 is a multipass transmembrane protein required for TLR3, TLR7, TLR9, TLR11, TLR12, and TLR13 function.",
+      "claim_type": "EXPLICIT",
+      "source": "UNC93B1, a multipass transmembrane protein required for TLR3, TLR7, TLR9, TLR11, TLR12, and TLR13 function, controls trafficking of TLRs from the endoplasmic reticulum (ER) to endolysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known property of UNC93B1, supported by prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "c131bc6d-28c4-42ba-b32e-2262dfa7c43b",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C2",
+      "claim": "UNC93B1 controls trafficking of TLRs from the endoplasmic reticulum (ER) to endolysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "UNC93B1, a multipass transmembrane protein required for TLR3, TLR7, TLR9, TLR11, TLR12, and TLR13 function, controls trafficking of TLRs from the endoplasmic reticulum (ER) to endolysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is a central finding of the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "e216ca40-9a9a-4cbd-8aa8-87bc89c080c5",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C3",
+      "claim": "UNC93B1 enters the secretory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that UNC93B1 enters the secretory pathway and directly controls the packaging of TLRs into COPII vesicles that bud from the ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated through multiple experiments including EndoH resistance and COPII vesicle budding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "397cbc2f-f9ab-4d73-8e87-685c21caeba8",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C4",
+      "claim": "UNC93B1 directly controls the packaging of TLRs into COPII vesicles that bud from the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that UNC93B1 enters the secretory pathway and directly controls the packaging of TLRs into COPII vesicles that bud from the ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through in vitro COPII budding assays showing TLR9 requires UNC93B1 for loading into COPII vesicles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "7259e883-30f5-486d-8096-23bc6a2b5f49",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C5",
+      "claim": "UNC93B1 remains associated with TLRs through post-Golgi sorting steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other COPII loading factors, UNC93B1 remains associated with the TLRs through post-Golgi sorting steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through co-immunoprecipitation experiments showing UNC93B1 associates with both precursor and cleaved forms of TLRs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "601f2de4-7784-437d-a2ba-e0208c6bea50",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C6",
+      "claim": "Post-Golgi sorting steps are different among endosomal TLRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, these steps are different among endosomal TLRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by showing TLR9 requires AP-2 while TLR7 uses AP-4 for post-Golgi trafficking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "2503c24b-cf05-458b-81f9-3ceb4f969005",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C7",
+      "claim": "TLR9 requires UNC93B1-mediated recruitment of adaptor protein complex 2 (AP-2) for delivery to endolysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "TLR9 requires UNC93B1-mediated recruitment of adaptor protein complex 2 (AP-2) for delivery to endolysosomes while TLR7, TLR11, TLR12, and TLR13 utilize alternative trafficking pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through yeast two-hybrid assays, co-immunoprecipitation, and functional studies with UNC93B1-Y539A mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "86c366c5-5357-4e3f-a916-9eb2e723d862",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C8",
+      "claim": "TLR7, TLR11, TLR12, and TLR13 utilize alternative trafficking pathways that do not require UNC93B1-mediated AP-2 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "TLR9 requires UNC93B1-mediated recruitment of adaptor protein complex 2 (AP-2) for delivery to endolysosomes while TLR7, TLR11, TLR12, and TLR13 utilize alternative trafficking pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by showing normal signaling and trafficking of these TLRs in UNC93B1-Y539A expressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "77a9b5e0-7611-47f2-842e-d33149a8cb72",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C9",
+      "claim": "TLR3, TLR7, TLR8, and TLR9 recognize forms of nucleic acids, including double-stranded RNA, single-stranded RNA, and DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of TLRs (TLR3, TLR7, TLR8, and TLR9) recognizes forms of nucleic acids, including double-stranded RNA, single-stranded RNA, and DNA (Barbalat et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature (Barbalat et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "68a39ee5-ea2b-4aa8-b38f-2304099ca8fa",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C10",
+      "claim": "TLR7 and TLR9 recognition of self-RNA and self-DNA, respectively, contributes to autoimmune diseases such as systemic lupus erythematosus (SLE).",
+      "claim_type": "EXPLICIT",
+      "source": "TLR7 and TLR9 recognition of self-RNA and self-DNA, respectively, contributes to autoimmune diseases such as systemic lupus erythematosus (SLE) (Marshak-Rothstein, 2006; Christensen and Shlomchik, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature (Marshak-Rothstein, 2006; Christensen and Shlomchik, 2007).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "a72aaa5b-a1a1-40ba-9a97-490e0b46b0e2",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C11",
+      "claim": "All TLRs capable of nucleic acid recognition localize within endosomal compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the TLRs capable of nucleic acid recognition localize within endosomal compartments which sequesters these receptors away from self nucleic acids in the extracellular space (Barton and Kagan, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature (Barton and Kagan, 2009).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "91618e36-330f-4d0a-973f-dd63f782392d",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C12",
+      "claim": "A requirement for ectodomain cleavage of intracellular TLRs restricts receptor activation to protease-rich acidic compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous studies as well as work from other groups indicate that a requirement for ectodomain cleavage of intracellular TLRs further restricts receptor activation to protease-rich acidic compartments (Ewald et al., 2008, 2011; Park et al., 2008; Garcia-Cattaneo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple prior studies including the authors' own work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "e9b5b842-ab54-4392-ad18-835597fddaa6",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C13",
+      "claim": "Bypassing the requirement for ectodomain cleavage enables responses to extracellular self nucleic acid and leads to fatal inflammatory disease in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Bypassing this requirement enables responses to extracellular self nucleic acid and leads to fatal inflammatory disease in mice (Mouchess et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior work (Mouchess et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "4697da7d-4294-437c-8766-15ec3522fad5",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C14",
+      "claim": "Overexpressing TLR7 in mice causes responses to self-RNA and development of an SLE-like disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the system appears carefully balanced as simply overexpressing TLR7 in mice causes responses to self-RNA and development of an SLE-like disease (Pisitkun et al., 2006; Subramanian et al., 2006; Deane et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "9316cfaf-e7da-44e6-854f-548800ed2c42",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C15",
+      "claim": "Mice homozygous for a nonfunctional Unc93b1 (H412R) allele fail to respond to TLR3, TLR7, or TLR9 ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice homozygous for a nonfunctional Unc93b1 (H412R) allele (Unc93b13d/3d) fail to respond to TLR3, TLR7, or TLR9 ligands, and mice and humans deficient in UNC93B1 are highly susceptible to viral infection (Casrouge et al., 2006; Tabeta et al., 2006; Lafaille et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "0183e86b-38da-4513-b8e7-c4176c7ee6ae",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C16",
+      "claim": "Mice and humans deficient in UNC93B1 are highly susceptible to viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice homozygous for a nonfunctional Unc93b1 (H412R) allele (Unc93b13d/3d) fail to respond to TLR3, TLR7, or TLR9 ligands, and mice and humans deficient in UNC93B1 are highly susceptible to viral infection (Casrouge et al., 2006; Tabeta et al., 2006; Lafaille et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "fbe16a78-b596-4978-a67b-0fd7aceb4af1",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C17",
+      "claim": "UNC93B1 has been implicated in the function of TLR11, TLR12, and TLR13.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, UNC93B1 has been implicated in the function of TLR11, TLR12, and TLR13 (Pifer et al., 2011; Shi et al., 2011; Koblansky et al., 2012; Oldenburg et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "6d32588c-f88f-4ccb-9a30-dd99b82fa18d",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C18",
+      "claim": "UNC93B1 is not required for responses by surface localized TLRs such as TLR2 and TLR4.",
+      "claim_type": "EXPLICIT",
+      "source": "UNC93B1 is not required for responses by surface localized TLRs such as TLR2 and TLR4 (Tabeta et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "cd7f70f4-24e6-4bcb-9ec4-83e15a3ac329",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C19",
+      "claim": "UNC93B1 associates with endosomal TLRs.",
+      "claim_type": "EXPLICIT",
+      "source": "UNC93B1 associates with endosomal TLRs, and in cells with defective UNC93B1, TLR9 and TLR7 fail to leave the ER (Brinkmann et al., 2007; Kim et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature and confirmed by the authors' data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "00a091be-57e5-4c4a-9a73-0892635be170",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C20",
+      "claim": "In cells with defective UNC93B1, TLR9 and TLR7 fail to leave the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "UNC93B1 associates with endosomal TLRs, and in cells with defective UNC93B1, TLR9 and TLR7 fail to leave the ER (Brinkmann et al., 2007; Kim et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature and confirmed by the authors' data showing only ER-resident forms of TLR9 in H412R cells.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "87f50394-7719-444b-bf83-78a53b447b1d",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C21",
+      "claim": "TLR9 and TLR7 traffic through the general secretory pathway en route to endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This pathway is inconsistent with our findings that TLR9 and TLR7 traffic through the general secretory pathway en route to endosomes (Ewald et al., 2008, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "8dbceac9-7cba-4ba3-832b-99b18d17e052",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C22",
+      "claim": "Mice expressing an aspartic acid to alanine mutation at amino acid position 34 in UNC93B1 (Unc93b1D34A/D34A) develop spontaneous autoimmunity due to enhanced TLR7 responses and diminished TLR9 responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, mice expressing an aspartic acid to alanine mutation at amino acid position 34 in UNC93B1 (Unc93b1D34A/D34A) were recently shown to develop spontaneous autoimmunity due to enhanced TLR7 responses and diminished TLR9 responses (Fukui et al., 2009, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "f117be15-0fd9-425b-8bcd-63f079a7a771",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C23",
+      "claim": "Gp96 functions as an ER folding chaperone for many TLRs, including TLR9.",
+      "claim_type": "EXPLICIT",
+      "source": "Gp96 functions as an ER folding chaperone for many TLRs, including TLR9, and PRAT4A has been implicated in TLR trafficking from the ER (Takahashi et al., 2007; Yang et al., 2007; Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "9eec52cb-5fb1-49ea-9d66-c9d8cdee73ab",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C24",
+      "claim": "PRAT4A has been implicated in TLR trafficking from the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Gp96 functions as an ER folding chaperone for many TLRs, including TLR9, and PRAT4A has been implicated in TLR trafficking from the ER (Takahashi et al., 2007; Yang et al., 2007; Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "84d410bc-dcb9-4ade-b545-673119809c64",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C25",
+      "claim": "The HRS/ESCRT pathway is involved in post-Golgi trafficking by sorting ubiquitinated TLR7 and TLR9 to endosomal compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the HRS/ESCRT pathway is involved in post-Golgi trafficking by sorting ubiquitinated TLR7 and TLR9 to endosomal compartments (Chiang et al., 2012), and the adaptor protein-3 (AP-3) has been reported to target TLR9 and TLR7 to lysosome related organelles specialized for type I IFN induction (Honda et al., 2005; Blasius et al., 2010; Sasai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "ee016937-7e6e-41e6-8a7f-2b181ceb9f63",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C26",
+      "claim": "Adaptor protein-3 (AP-3) has been reported to target TLR9 and TLR7 to lysosome related organelles specialized for type I IFN induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the HRS/ESCRT pathway is involved in post-Golgi trafficking by sorting ubiquitinated TLR7 and TLR9 to endosomal compartments (Chiang et al., 2012), and the adaptor protein-3 (AP-3) has been reported to target TLR9 and TLR7 to lysosome related organelles specialized for type I IFN induction (Honda et al., 2005; Blasius et al., 2010; Sasai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "781d9bd3-3216-4c32-80f8-a0927dd4427b",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C27",
+      "claim": "UNC93B1 trafficking to lysosome related organelles is impaired in AP-3 deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, UNC93B1 trafficking to these compartments is also impaired in AP-3 deficient cells (Sasai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "7f5c7938-565a-4c79-b4cb-a4a876eb12f4",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C28",
+      "claim": "UNC93B1 is present in phagosomes purified from unstimulated RAW264 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Wildtype (WT) UNC93B1 but not the nonfunctional (H412R) mutant was detectable in phagosomes purified from unstimulated RAW264 cells (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot analysis of purified phagosomes shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "c167fac1-d145-40ab-bff4-32482351b816",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C29",
+      "claim": "The nonfunctional UNC93B1-H412R mutant is not detectable in phagosomes purified from unstimulated RAW264 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Wildtype (WT) UNC93B1 but not the nonfunctional (H412R) mutant was detectable in phagosomes purified from unstimulated RAW264 cells (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "ef088322-471c-4605-8c39-e3f654a82fc8",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C30",
+      "claim": "A portion of UNC93B1-WT gains EndoH-resistance in multiple cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a portion of UNC93B1-WT gained EndoH-resistance in multiple cell types, while UNC93B1-H412R was entirely EndoH-sensitive (Figure 1B\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EndoH assays in multiple cell types shown in Figures 1B-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "65037606-d9e6-460d-83fe-481dd125eaed",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C31",
+      "claim": "UNC93B1-H412R is entirely EndoH-sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a portion of UNC93B1-WT gained EndoH-resistance in multiple cell types, while UNC93B1-H412R was entirely EndoH-sensitive (Figure 1B\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EndoH assays shown in Figures 1B-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "97f20f75-5764-4594-b4aa-244e7404e420",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C32",
+      "claim": "The H412R mutant of UNC93B1 fails to leave the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "These results agree with a previous report that the H412R mutant fails to leave the ER (Kim et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature and confirmed by the authors' EndoH data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "195a9f6b-fff7-400f-89d2-1d3030f59ae6",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C33",
+      "claim": "Mutation of Asn-251 in UNC93B1 abolishes acquisition of EndoH-resistant glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "To formally demonstrate that the increased molecular weight of UNC93B1-WT is due to N-linked glycans, we mutated Asn-251, which is within a consensus N-glycosylation site, and this mutant failed to acquire EndoH-resistant glycans (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EndoH assay shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "4c6ecc20-bd7d-4f74-a4e7-8f6083772e65",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C34",
+      "claim": "UNC93B1-WT is present within COPII vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an in vitro COPII budding assay (Kim et al., 2005; Merte et al., 2010), we compared levels of UNC93B1-WT and UNC93B1-H412R in purified vesicles. UNC93B1-WT, but not H412R, was clearly present within the vesicles, further supporting a model in which UNC93B1 exits the ER through the general secretory pathway (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vitro COPII budding assay shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "978bdc95-04f4-4411-9341-cf8163d8a757",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C35",
+      "claim": "UNC93B1-H412R is not present within COPII vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an in vitro COPII budding assay (Kim et al., 2005; Merte et al., 2010), we compared levels of UNC93B1-WT and UNC93B1-H412R in purified vesicles. UNC93B1-WT, but not H412R, was clearly present within the vesicles, further supporting a model in which UNC93B1 exits the ER through the general secretory pathway (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vitro COPII budding assay shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "0fbed661-24b6-4bbb-a471-c58ab103f04f",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C36",
+      "claim": "Three species of TLR9 can be detected within macrophages, representing distinct maturation stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work reported that three species of TLR9 can be detected within macrophages, representing distinct maturation stages: an initial 150-kDa species with EndoH-sensitive glycans corresponding to the ER-resident protein (TLR9-ER), a larger species with EndoH-resistant glycans corresponding to full-length receptor that has passed through the Golgi (TLR9-Precursor), and a 80-kDa band with EndoH-resistant glycans corresponding to the mature, cleaved receptor within endolysosomes (TLR9-Cleaved) (Figure 2A, lane 1) (Ewald et al., 2008, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is cited from the authors' previous work and shown in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "e98eb960-b396-4bde-aa11-4bb3801024d2",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C37",
+      "claim": "Only the ER-resident form of TLR9 is detectable in cells expressing the UNC93B1-H412R mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "While all three bands were present in macrophages with functional UNC93B1, only the ER-resident form was detectable in cells expressing the UNC93B1-H412R mutant (Figure 2A), consistent with our previous analysis of TLR9 in UNC93B1 shRNA knockdown cells (Ewald et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "1b7d4e4b-0ea9-46d0-a4df-8a3dc8f31a16",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C38",
+      "claim": "TLR9 does not reach the medial Golgi in the absence of functional UNC93B1.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that TLR9 does not reach the medial Golgi in the absence of functional UNC93B1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of EndoH-resistant forms of TLR9 in UNC93B1-H412R cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "9d41378c-92f2-4461-ab20-e10adebc2b5a",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C39",
+      "claim": "TLR9 is only detectable in COPII vesicles in the presence of functional UNC93B1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, analysis of TLR9 loading into COPII vesicles revealed that TLR9 was only detectable in the presence of functional UNC93B1 whereas a control traffic protein, ERGIC/p58, was packaged independently of UNC93B1 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vitro COPII budding assay shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "4504d9f5-f1db-473d-bc75-42bd015e577a",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C40",
+      "claim": "ERGIC/p58 is packaged into COPII vesicles independently of UNC93B1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, analysis of TLR9 loading into COPII vesicles revealed that TLR9 was only detectable in the presence of functional UNC93B1 whereas a control traffic protein, ERGIC/p58, was packaged independently of UNC93B1 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vitro COPII budding assay shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "fd1f80d4-8097-41c5-9ebf-492c1038600d",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C41",
+      "claim": "CD4-TLR9 chimera requires UNC93B1 for acquisition of EndoH-resistant glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "CD4-TLR9 acquired EndoH-resistant glycans when expressed with UNC93B1-WT but not when expressed with mutant UNC93B1-H412R (Figure 2C, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EndoH assay shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "99ee1825-d5e6-459e-92d7-4991ef6958a8",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C42",
+      "claim": "The requirement for UNC93B1 is not based on TLR9 ectodomain folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the requirement for UNC93B1 is not based on TLR9 ectodomain folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the CD4-TLR9 chimera experiment where the TLR9 ectodomain is replaced with CD4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "67e51250-3c4f-4907-939c-20789b9c8f6d",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C43",
+      "claim": "The transmembrane domain and cytosolic regions of TLR9 are sufficient to mediate UNC93B1-dependent trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the transmembrane domain and cytosolic regions of TLR9 are sufficient to mediate UNC93B1-dependent trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the CD4-TLR9 chimera experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "044472fc-0a7e-469c-91f8-f3a5db1ebe9f",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C44",
+      "claim": "ER exit of CD4-TLR3 and CD4-TLR7 requires UNC93B1.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, ER exit of both CD4-TLR3 and CD4-TLR7 required UNC93B1, which is consistent with defective TLR3 and TLR7 signaling in Unc93b13d/3d mice (Tabeta et al., 2006), whereas CD4-TLR4 trafficked independently of UNC93B1 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EndoH assays shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "832b75a9-117e-4505-8d91-e766476d9b10",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C45",
+      "claim": "CD4-TLR4 traffics independently of UNC93B1.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, ER exit of both CD4-TLR3 and CD4-TLR7 required UNC93B1, which is consistent with defective TLR3 and TLR7 signaling in Unc93b13d/3d mice (Tabeta et al., 2006), whereas CD4-TLR4 trafficked independently of UNC93B1 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EndoH assays shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "63ae62ad-4dbc-4dcb-926e-85aaee70f8dc",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C46",
+      "claim": "CD4-TLR11 and CD4-TLR13 require UNC93B1 for ER exit.",
+      "claim_type": "EXPLICIT",
+      "source": "CD4-TLR11 and CD4-TLR13 also required UNC93B1 for ER exit (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EndoH assays shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "4d59d420-eab7-44f0-b43e-c70e8afdcd35",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C47",
+      "claim": "UNC93B1 regulates the trafficking of TLR11 and TLR13 by controlling ER exit.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are the first to show that UNC93B1 regulates the trafficking of TLR11 and TLR13 by controlling ER exit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the CD4-TLR chimera experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "857913ab-4228-4dca-9203-c5f0561aeff1",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C48",
+      "claim": "N-terminal truncations of UNC93B1 (\u039450 and \u039457) result in a strong defect in TLR9 trafficking from the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, N-terminal truncations resulted in a strong defect in TLR9 trafficking from the ER as evidenced by significantly reduced or absent precursor and cleaved forms of TLR9 in cells expressing the \u039450 and \u039457 UNC93B1 truncations (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "675030d2-1923-4016-9458-1092407c0448",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C49",
+      "claim": "Defective trafficking of TLR9 in cells expressing UNC93B1 N-terminal truncations results in impaired responses to TLR9 ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "This defective trafficking resulted in impaired responses to TLR9 ligands in macrophages, while TLR2 responses remained intact (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by intracellular TNF\u03b1 staining shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "32bcb3b7-30f4-4fd1-a2b5-5dc2f89ab067",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C50",
+      "claim": "The N-terminal region of UNC93B1 contains residues important for trafficking of TLR9 and UNC93B1 from the ER to endolysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data indicate that the N-terminal region of UNC93B1 contains residues important for trafficking of TLR9 and UNC93B1 from the ER to endolysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the N-terminal truncation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "f671a985-269a-4fd6-a50d-3b7af0433820",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C51",
+      "claim": "TLR9 responsiveness is strongly dependent on the N-terminus of UNC93B1.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are in agreement with a previous study showing that TLR9 responsiveness is strongly dependent on the N-terminus of UNC93B1, although this study did not directly examine TLR9 trafficking (Fukui et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "25ed7420-3963-4b5e-ab86-6ed92184d588",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C52",
+      "claim": "UNC93B1 point mutant D34A reduces TLR9 transport and cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an UNC93B1 point mutant (D34A), which reduced TLR9 signaling but enhanced TLR7 signaling (Fukui et al., 2009, 2011), reduced TLR9 transport and cleavage (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "04188254-cedc-4b0c-8c8a-9a1709c9b94b",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C53",
+      "claim": "Both the precursor and cleaved forms of TLR9 associate with immunoprecipitated UNC93B1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we could detect both the precursor and cleaved forms of TLR9 associated with immunoprecipitated UNC93B1, suggesting that UNC93B1 and TLR9 remain associated after leaving the ER (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by co-immunoprecipitation shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "87d8e2a5-46d8-4db6-8a70-13e7d28d13f0",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C54",
+      "claim": "Truncation of the UNC93B1 C-terminus (\u0394523 and \u0394538) results in accumulation of the Golgi-modified precursor form of TLR9 and a marked reduction of the cleaved receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, truncation of the UNC93B1 C-terminus (\u0394523 and \u0394538) resulted in an accumulation of the Golgi-modified precursor form of TLR9 and a marked reduction of the cleaved receptor (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "8a0b36a6-5477-4ad5-95fd-cfb3ad14e43a",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C55",
+      "claim": "TLR9 signaling is reduced in cells expressing the \u0394523 and \u0394538 UNC93B1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this interpretation, we observed reduced TLR9 signaling in cells expressing the \u0394523 and \u0394538 UNC93B1 mutants (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by intracellular TNF\u03b1 staining shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "8d2b0612-abc4-4619-8704-14120dfa9b3c",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C56",
+      "claim": "UNC93B1 regulates post-ER trafficking of TLR9.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in addition to its role in ER export, UNC93B1 appears to regulate post-ER trafficking of TLR9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the C-terminal truncation experiments showing accumulation of precursor TLR9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "97f59dff-37bd-4640-acbf-aac7be294021",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C57",
+      "claim": "Residues 539-542 (YRYL) in UNC93B1 are evolutionarily conserved and fit the consensus for a Yxx\u03a6 motif.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on residues 539\u2013542, YRYL, because they are evolutionarily conserved and fit the consensus for a Yxx\u03a6 motif (where \u03a6 represents a hydrophobic residue), which may mediate protein interactions or serve as a site for phosphorylation (Songyang et al., 1993; Ohno et al., 1995, 1996; Crump et al., 1998; Bonifacino and Traub, 2003) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by sequence alignment in Figure 4A and cited from prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "ba86fbeb-d1d9-4829-b340-6cc4f68de366",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C58",
+      "claim": "Mutation of Tyr539 to Ala (Y539A) in UNC93B1 results in accumulation of the Golgi-modified precursor form of TLR9 and reduced TLR9 cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of Tyr539 to an Ala (Y539A) resulted in accumulation of the Golgi-modified precursor form of TLR9 and reduced TLR9 cleavage, similar to the block in TLR9 trafficking observed with the \u0394538 truncation mutant (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "cf0357ae-1104-4481-bcdf-e65a381007fa",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C59",
+      "claim": "Responsiveness to TLR9 ligands is reduced in UNC93B1-Y539A expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Responsiveness to TLR9 ligands was also reduced in UNC93B1-Y539A expressing cells, consistent with the block of TLR9 processing (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by intracellular TNF\u03b1 staining shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "6873af92-71d8-42f0-8c14-c63235b892df",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C60",
+      "claim": "The C-terminal tail of UNC93B1 interacts with AP-2\u03bc.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal cytosolic region of UNC93B1 interacted strongly with AP-2\u03bc, but not with the \u00b5 subunits of any of the other AP complexes (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by yeast two-hybrid assay shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "a2d0b068-4540-4137-9671-be84bf62ff17",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C61",
+      "claim": "Interaction between UNC93B1 C-terminal tail and AP-2\u03bc is abolished by the \u0394538 truncation and the Y539A mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, interaction with AP-2\u03bc was abolished by the \u0394538 truncation and the Y539A mutation (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by yeast two-hybrid assay shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "b73c0ecb-38f0-42e4-b4e8-fc8391cc9f0b",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C62",
+      "claim": "AP-2\u03bc can be co-immunoprecipitated with UNC93B1-WT but not with UNC93B1-Y539A.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we were able to co-immunoprecipitate AP-2\u03bc with UNC93B1-WT, but not with UNC93B1-Y539A (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by co-immunoprecipitation shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "21b86ed3-6ded-45fe-a2b2-a38929688119",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C63",
+      "claim": "UNC93B1 directly recruits AP-2 via a Yxx\u03a6 motif present in its C-terminal cytosolic tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that UNC93B1 directly recruits AP-2 via a Yxx\u03a6 motif present in its C-terminal cytosolic tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the yeast two-hybrid and co-immunoprecipitation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "f50fb639-dbd4-4760-ad97-449bbde9dd89",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C64",
+      "claim": "There is reduced colocalization of TLR9 and the lysosomal marker Lamp-1 in UNC93B1-Y539A-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using immunofluorescence microscopy, we detected reduced colocalization of TLR9 and the lysosomal marker Lamp-1 in UNC93B1-Y539A-expressing cells (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence microscopy shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "62d29a54-ab0e-4fc4-a8f8-21becc41afa4",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C65",
+      "claim": "Expression of UNC93B1-Y539A increases the levels of FLAG-TLR9 at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "While surface TLR9 was only weakly detectable in cells expressing UNC93B1-WT, expression of UNC93B1-Y539A increased the levels of FLAG-TLR9 at the cell surface (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "e15836b4-89bc-4d9e-a103-fe98b7dc55d7",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C66",
+      "claim": "The FLAG-TLR9 Golgi-modified precursor form accumulates in UNC93B1-Y539A expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as we found for TLR9-HA, the FLAG-TLR9 Golgi-modified precursor form accumulated in UNC93B1-Y539A expressing cells (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EndoH assay shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "0280737f-1e03-4856-8ff3-c0490f8f0201",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C67",
+      "claim": "siRNA knockdown of AP-2\u00b51 results in an increase in surface expression of TLR9.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this model, siRNA knockdown of AP-2\u00b51 resulted in a similar increase in surface expression of TLR9 (Figure 5D) and accumulation of the TLR9 precursor form (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry and immunoblot shown in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "f3041e4f-9ce7-4bb9-ba22-81b8e6b231e6",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C68",
+      "claim": "siRNA knockdown of AP-2\u00b51 results in accumulation of the TLR9 precursor form.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this model, siRNA knockdown of AP-2\u00b51 resulted in a similar increase in surface expression of TLR9 (Figure 5D) and accumulation of the TLR9 precursor form (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "5eee654b-e544-43db-bd28-076c030a98db",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C69",
+      "claim": "UNC93B1 interacts with AP-2 to traffic TLR9 from the cell surface to endolysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data support a model in which UNC93B1 interacts with AP-2 to traffic TLR9 from the cell surface to endolysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data on UNC93B1-Y539A and AP-2 knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "4a897f89-be82-4542-b870-7cfba9bd6872",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C70",
+      "claim": "Cleaved TLR7 is detected in macrophages expressing UNC93B1-WT but not in macrophages expressing UNC93B1-H412R.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleaved TLR7 was detected in macrophages expressing UNC93B1-WT but not in macrophages expressing UNC93B1-H412R (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "2838828e-57ac-4835-b953-32060363cbc2",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C71",
+      "claim": "Both the full-length and cleaved forms of TLR7 possess EndoH-resistant glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the full-length and cleaved forms of TLR7 possessed EndoH-resistant glycans, although fewer of the TLR7 N-linked glycans acquired these modifications than for TLR9 (Figure 6B, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EndoH assay shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "c527a593-7a17-4d29-bb91-c773aa1f8f81",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C72",
+      "claim": "TLR7 undergoes ectodomain proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm our previous findings that TLR7 undergoes ectodomain proteolysis and traffics through the Golgi en route to endolysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed by the detection of cleaved TLR7 with EndoH-resistant glycans.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "378bd17f-b652-4295-91a1-34c361054afc",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C73",
+      "claim": "TLR7 trafficking is dependent on UNC93B1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our results confirm that TLR7 trafficking is dependent on UNC93B1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the absence of cleaved TLR7 in UNC93B1-H412R cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "bfc5e90f-bc5f-4517-ab80-cf1fa26d2942",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C74",
+      "claim": "Both the full-length and cleaved forms of TLR7 associate with UNC93B1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to TLR9, both the full-length and cleaved forms of TLR7 associated with UNC93B1 suggesting that UNC93B1 traffics with TLR7 to endolysosomes (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by co-immunoprecipitation shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "3649f552-65ee-4f3b-bae2-7d39cb7dadc9",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C75",
+      "claim": "The response to TLR7 ligands is normal in UNC93B1-Y539A expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike TLR9, the response to TLR7 ligands was normal in UNC93B1-Y539A expressing cells (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by intracellular TNF\u03b1 staining shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "f310072c-3a75-4811-9944-5b6b48dcd62a",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C76",
+      "claim": "The amount of cleaved TLR7 is unaffected in UNC93B1-Y539A expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the amount of cleaved TLR7 was unaffected, and the TLR7 Golgi-modified precursor form did not accumulate in these cells (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot and EndoH assays shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "ad110088-63a2-4a28-8263-79709532be2b",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C77",
+      "claim": "Delivery of TLR7 to endolysosomes is independent of the UNC93B1/AP-2 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, delivery of TLR7 to endolysosomes appears to be independent of the UNC93B1/AP-2 pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the normal TLR7 signaling and trafficking in UNC93B1-Y539A cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "6a24e95e-5307-4df9-8193-efafde4d7a16",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C78",
+      "claim": "TLR7 interacts specifically with AP-4\u03bc but not AP-2\u03bc.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we screened by Y2H for interactions between the cytosolic region of TLR7 and AP-1, AP-2, AP-3, and AP-4, we found that TLR7 interacted specifically with AP-4\u03bc but not AP-2\u03bc (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by yeast two-hybrid assay shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "6f1c2b54-aec5-4a43-94e4-6067f7cb9327",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C79",
+      "claim": "Mutating Tyr-892 in TLR7 disrupts the interaction with AP-4.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified three potential Yxx\u03a6 motifs within TLR7, and mutating one of these (Tyr-892) disrupted the interaction with AP-4 (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by yeast two-hybrid assay shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "c7eeadce-9bae-4ab2-a571-ceef453829c7",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C80",
+      "claim": "TLR7-Y892A mutant no longer responds to TLR7 ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a TLR7-Y892A mutant no longer responded to TLR7 ligands (Figure 6G) and displayed reduced ectodomain processing when expressed in bone marrow derived macrophages, suggesting that AP-4 is required for TLR7 delivery to endosomes (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by luciferase assay shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "645d256a-ce61-4ecc-9407-6a5d7ec77fc7",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C81",
+      "claim": "TLR7-Y892A displays reduced ectodomain processing when expressed in bone marrow derived macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a TLR7-Y892A mutant no longer responded to TLR7 ligands (Figure 6G) and displayed reduced ectodomain processing when expressed in bone marrow derived macrophages, suggesting that AP-4 is required for TLR7 delivery to endosomes (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "c8bc7a59-aaf4-4d7b-838e-2e2d6c826738",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C82",
+      "claim": "AP-4 is required for TLR7 delivery to endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a TLR7-Y892A mutant no longer responded to TLR7 ligands (Figure 6G) and displayed reduced ectodomain processing when expressed in bone marrow derived macrophages, suggesting that AP-4 is required for TLR7 delivery to endosomes (Figure 6H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reduced processing and signaling of TLR7-Y892A mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "d361f93b-a419-4c33-ae87-458c10b63a73",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C83",
+      "claim": "AP-4 has been implicated in vesicular trafficking between the trans Golgi network (TGN) and endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "AP-4 has been implicated in vesicular trafficking between the trans Golgi network (TGN) and endosomes (Dell'Angelica et al., 1999; Aguilar et al., 2001; Simmen et al., 2002; Barois and Bakke, 2005; Burgos et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "d2f9faf6-d143-4260-a866-e5cbdcd71881",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C84",
+      "claim": "TLR7 is diverted from the secretory pathway at the TGN and delivered directly to endosomes while continually associating with UNC93B1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the association between AP-4 and TLR7 suggests that TLR7 is diverted from the secretory pathway at the TGN and delivered directly to endosomes while continually associating with UNC93B1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the AP-4 interaction and known function of AP-4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "777633c8-955d-4e8f-90f4-b158e4893105",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C85",
+      "claim": "The mechanisms controlling trafficking of TLR7 and TLR9 to the compartments from which they signal are distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mechanisms controlling trafficking of TLR7 and TLR9 to the compartments from which they signal are distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential requirements for AP-2 (TLR9) versus AP-4 (TLR7).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "82833e96-070b-4062-b0f3-01f6a83b75c0",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C86",
+      "claim": "The response of UNC93B1-Y539A cells stimulated with Sa ORN (TLR13 ligand) is comparable to that of wildtype cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The response of UNC93B1-Y539A cells stimulated with Sa ORN was comparable to that of wildtype cells, suggesting that TLR13 does not require the UNC93B1/AP-2 pathway to access endosomal signaling compartments (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by intracellular TNF\u03b1 staining shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "11b0e35a-3031-4caf-88af-65b8fdec263b",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C87",
+      "claim": "TLR13 does not require the UNC93B1/AP-2 pathway to access endosomal signaling compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The response of UNC93B1-Y539A cells stimulated with Sa ORN was comparable to that of wildtype cells, suggesting that TLR13 does not require the UNC93B1/AP-2 pathway to access endosomal signaling compartments (Figure 7A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the normal TLR13 signaling in UNC93B1-Y539A cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "657b8315-6a7f-477d-b266-f61c46b9067d",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C88",
+      "claim": "TLR13 acquires EndoH-resistant glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "TLR13 acquired EndoH-resistant glycans, and the glycosylation was absent in UNC93B1-H412R cells but unaffected in UNC93B1-Y539A expressing cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EndoH assay shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "d3304d4a-2436-4647-8c2b-aeeb195bb424",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C89",
+      "claim": "TLR13 glycosylation is absent in UNC93B1-H412R cells but unaffected in UNC93B1-Y539A expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TLR13 acquired EndoH-resistant glycans, and the glycosylation was absent in UNC93B1-H412R cells but unaffected in UNC93B1-Y539A expressing cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EndoH assay shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "081b6ef9-0784-4558-8bcd-c7d83b1f31e8",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C90",
+      "claim": "TLR13 traffics independently of the UNC93B1/AP-2 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the responses to TLR13 ligands, these results indicate that TLR13 traffics independently of the UNC93B1/AP-2 pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the normal signaling and trafficking in UNC93B1-Y539A cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "632532b2-1615-4a0d-859a-0f950e22cea6",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C91",
+      "claim": "TLR11 and TLR12 both undergo ectodomain cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed similar experiments with TLR11 and TLR12, which both recognize profilin (Yarovinsky et al., 2005; Koblansky et al., 2012). Both of these receptors appear to undergo ectodomain cleavage, although the sizes of the cleaved receptors are quite distinct: \u223c45 kDa for TLR11 and \u223c75 kDa for TLR12 (Figure 7C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot analysis shown in Figures 7C and 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "c758a127-921f-492f-b7b4-3be0987d5274",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C92",
+      "claim": "TLR11 and TLR12 acquire EndoH-resistant glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, both receptors acquired EndoH-resistant glycans, and the glycosylation was unaffected in UNC93B1-Y539A expressing cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EndoH assays shown in Figures 7C and 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "2fcb5579-49fa-458e-8f86-9cd31fc32b8a",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C93",
+      "claim": "TLR11 and TLR12 do not require the UNC93B1/AP-2 pathway for proper trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, TLR11 and TLR12 also do not require the UNC93B1/AP-2 pathway for proper trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the normal glycosylation in UNC93B1-Y539A cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "11312553-96e4-4df3-a8c7-ea4d2e376c68",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C94",
+      "claim": "TLR9 trafficking may be unusual among the endosomal TLRs by trafficking via the plasma membrane en route to endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results suggest that TLR9 trafficking may be unusual among the endosomal TLRs by trafficking via the plasma membrane en route to endosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential requirement for AP-2 by TLR9 but not other TLRs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "5198c362-e8c4-4847-8411-138e19dc5a93",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C95",
+      "claim": "Both TLR7 and TLR9 can precipitate UNC93B1.",
+      "claim_type": "EXPLICIT",
+      "source": "While both TLR7 and TLR9 could precipitate UNC93B1, we could never detect interactions between the two receptors (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by co-immunoprecipitation shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "f71701a7-6d17-45b9-b4ee-0752b197a36c",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C96",
+      "claim": "TLR7 and TLR9 do not interact with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "While both TLR7 and TLR9 could precipitate UNC93B1, we could never detect interactions between the two receptors (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by co-immunoprecipitation shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "cce6e763-a210-4ac0-9389-a936f5c656a5",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C97",
+      "claim": "UNC93B1 binding to TLR7 precludes binding to TLR9 and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, UNC93B1 binding to TLR7 appears to preclude binding to TLR9 and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the inability to detect TLR7-TLR9 interactions despite both binding UNC93B1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "8a329624-db9d-4315-87e1-c378259ad7fd",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C98",
+      "claim": "Endosomal TLRs compete for binding to UNC93B1 in order to exit from the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support the idea that endosomal TLRs compete for binding to UNC93B1 in order to exit from the ER (Wang et al., 2006; Fukui et al., 2009, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutually exclusive binding and cited from prior literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "3c6e214b-6526-4c8c-9637-8c655e9bee95",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C99",
+      "claim": "UNC93B1 controls exit of at least six TLRs (TLR3, TLR7, TLR9, TLR11, TLR12 and TLR13) from the ER by regulating their loading into COPII vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we describe mechanisms by which UNC93B1 can regulate multiple aspects of TLR trafficking. UNC93B1 controls exit of at least six TLRs (TLR3, TLR7, TLR9, TLR11, TLR12 and TLR13) from the ER by regulating their loading into COPII vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's findings demonstrated through multiple experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "46794e30-9430-4290-ba5a-506e7b35343a",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C100",
+      "claim": "UNC93B1 acts at the cell surface by recruiting clathrin AP-2 to internalize TLR9 from the plasma membrane into endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that UNC93B1 acts at the cell surface by recruiting clathrin AP-2 to internalize TLR9 from the plasma membrane into endosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's findings demonstrated through multiple experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "552e0ded-e7fa-4e6f-adaf-0edf19d4ed83",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C101",
+      "claim": "TLR7 and TLR9 have different requirements for UNC93B1.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps most surprisingly, our results indicate that TLR7 and TLR9 have different requirements for UNC93B1 and demonstrate that the localization of these receptors is controlled through distinct post-Golgi trafficking mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "33cd7858-db27-4a33-8054-70b59a4a2227",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C102",
+      "claim": "The localization of TLR7 and TLR9 is controlled through distinct post-Golgi trafficking mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps most surprisingly, our results indicate that TLR7 and TLR9 have different requirements for UNC93B1 and demonstrate that the localization of these receptors is controlled through distinct post-Golgi trafficking mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "0716444d-c18e-4537-8100-e05bb3f256b0",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C103",
+      "claim": "Differential post-Golgi trafficking mechanisms for TLR7 and TLR9 may provide an explanation for the contrasting roles played by these receptors in SLE.",
+      "claim_type": "EXPLICIT",
+      "source": "This last point may provide an explanation for the contrasting roles played by TLR7 and TLR9 in SLE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "2b663319-0edb-44bb-b4a1-9abddf62b44f",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C104",
+      "claim": "Loss of TLR7 protects against SLE while loss of TLR9 exacerbates disease.",
+      "claim_type": "EXPLICIT",
+      "source": "These possibilities are particularly intriguing when considering the contrasting roles played by TLR7 and TLR9 in SLE, where loss of TLR7 protects against disease while loss of TLR9 exacerbates disease (Christensen et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "c79e1e25-a7ce-4c0b-87fe-c1f387ea8f1e",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "claim_id": "C105",
+      "claim": "Distinct cell biological regulation may underlie the different roles played by TLR7 and TLR9 in autoimmune disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings raise the possibility that distinct cell biological regulation may underlie the different roles played by these receptors in autoimmune disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6bdf9612-6eb0-40bc-9c8f-279ce14d0707",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "UNC93B1 enters the secretory pathway and traffics through the Golgi. Wildtype UNC93B1 acquires EndoH-resistant glycans and is present in COPII vesicles and phagosomes, while the nonfunctional H412R mutant does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent lines of evidence support this result: EndoH resistance assays in multiple cell types (C30-C31), presence in COPII vesicles (C34-C35), presence in phagosomes (C28-C29), and glycosylation site mutation experiments (C33). The convergence of biochemical and cell biological data provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "fb8b7e1d-e863-4fd0-8a12-aa52563094e2",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "UNC93B1 directly controls TLR9 loading into COPII vesicles. TLR9 requires functional UNC93B1 to exit the ER and reach the Golgi, and this requirement is independent of TLR9 ectodomain folding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vitro COPII budding assay (C39) directly demonstrates UNC93B1-dependent loading of TLR9. The CD4-TLR9 chimera experiments (C41-C43) elegantly demonstrate that the requirement is not based on ectodomain folding. The absence of EndoH-resistant TLR9 forms in H412R cells (C37-C38) provides additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "14612f6e-bc6e-4fce-8627-7c708dabe421",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "UNC93B1 controls ER exit of multiple endosomal TLRs including TLR3, TLR7, TLR11, and TLR13. TLR4 traffics independently of UNC93B1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The CD4-TLR chimera experiments provide consistent evidence across multiple TLRs (C44-C46). The demonstration that TLR4 is UNC93B1-independent (C45) serves as an important negative control. This is the first demonstration of UNC93B1 regulation of TLR11 and TLR13 ER exit (C47).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "ce34e9ac-6ac4-4702-88f5-3e0dd299fc83",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The N-terminal region of UNC93B1 is required for TLR9 trafficking from the ER to endolysosomes. N-terminal truncations and the D34A point mutant impair TLR9 trafficking and signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The N-terminal truncation experiments show clear defects in TLR9 trafficking (C48) and signaling (C49). The D34A mutant phenotype (C52) is consistent with prior literature (C51). Co-immunoprecipitation data (C53) demonstrates maintained association between UNC93B1 and TLR9 after ER exit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "15d08aea-8a87-4a16-8b23-30acb3ed4197",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "UNC93B1 regulates post-Golgi trafficking of TLR9 through recruitment of AP-2 via a Yxx\u03a6 motif (Y539) in its C-terminal tail. Mutation of Y539A blocks TLR9 delivery to endolysosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple lines of evidence converge: C-terminal truncations cause precursor accumulation (C54-C55), Y539A mutation phenocopies this defect (C58-C59), yeast two-hybrid demonstrates AP-2\u03bc interaction (C60-C61), and co-immunoprecipitation confirms the interaction (C62). The Yxx\u03a6 motif is evolutionarily conserved (C57).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "b43c3fc4-0e25-47e8-9c46-4cf5a5d8c9c4",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "UNC93B1 mediates AP-2-dependent internalization of TLR9 from the plasma membrane to endolysosomes. The Y539A mutation and AP-2 knockdown both cause TLR9 surface accumulation and precursor accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The Y539A mutation causes reduced TLR9-Lamp1 colocalization (C64), increased surface TLR9 (C65), and precursor accumulation (C66). AP-2 knockdown phenocopies these effects (C67-C68), providing strong genetic support for the model (C69). The convergence of mutational and knockdown approaches is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "0315f19b-4595-487b-b771-6f993788b384",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TLR7 trafficking is UNC93B1-dependent but does not require the UNC93B1/AP-2 pathway. TLR7 undergoes ectodomain cleavage, acquires EndoH-resistant glycans, and associates with UNC93B1, but traffics normally in Y539A cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The codon-optimized TLR7 allows detection of cleaved forms (C70-C72). TLR7 requires UNC93B1 for trafficking (C73) and associates with both full-length and cleaved UNC93B1 (C74). Critically, Y539A cells show normal TLR7 signaling (C75) and trafficking (C76), demonstrating independence from the AP-2 pathway (C77).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "1e14b931-378f-4420-b7be-d3a68da210ca",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TLR7 utilizes AP-4 for post-Golgi trafficking to endosomes. TLR7 interacts with AP-4\u03bc via Y892, and the Y892A mutant shows impaired signaling and processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Yeast two-hybrid demonstrates specific TLR7-AP-4\u03bc interaction (C78). Mutation of Y892 disrupts this interaction (C79) and abolishes TLR7 signaling (C80) and processing (C81). The inference that AP-4 is required for TLR7 delivery (C82) is well-supported by the functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "a791f17e-0498-4a61-b0d5-fbe8b2439e5a",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TLR11, TLR12, and TLR13 traffic independently of the UNC93B1/AP-2 pathway. These receptors undergo ectodomain cleavage and acquire EndoH-resistant glycans normally in Y539A cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "TLR13 signaling is normal in Y539A cells (C86-C87), and glycosylation is unaffected (C88-C89). TLR11 and TLR12 show similar patterns (C91-C93). The demonstration of ectodomain cleavage for TLR11 and TLR12 is novel (C91). The consistent pattern across multiple TLRs strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "afaf1b5e-3e80-47fb-af85-080fce8414c2",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TLR7 and TLR9 associate with UNC93B1 in mutually exclusive complexes. Both TLRs can bind UNC93B1, but they do not interact with each other, suggesting competition for UNC93B1 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Co-immunoprecipitation experiments clearly demonstrate that TLR7 and TLR9 both bind UNC93B1 (C95) but not each other (C96). The inference of mutually exclusive binding (C97) and competition (C98) is well-supported by the data and consistent with prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "3ac39763-dfaf-48cc-b2d8-330d78df9ed3",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "UNC93B1 regulates multiple aspects of TLR trafficking: it controls ER exit by regulating COPII loading for at least six TLRs, and it recruits AP-2 for TLR9 internalization. TLR7 and TLR9 have distinct post-Golgi trafficking requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent the major conclusions of the study, synthesizing the findings from multiple experiments. The evidence for ER exit control (C99) and AP-2 recruitment (C100) is strong. The differential requirements for TLR7 and TLR9 (C101-C102) are well-demonstrated through the Y539A mutant and AP-4 interaction studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "a085ec24-0a1a-4a7e-b43d-36cfde5c7bb6",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Differential post-Golgi trafficking mechanisms for TLR7 and TLR9 may explain their contrasting roles in systemic lupus erythematosus (SLE).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is explicitly speculative reasoning (C103, C105) based on the study's findings. While the differential trafficking is well-demonstrated, the connection to SLE pathogenesis is hypothetical and would require additional experiments to validate. The speculation is reasonable but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "7077ddd9-4d34-4269-85fb-9d529b881326",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background knowledge about TLR biology, UNC93B1 function, and autoimmune disease from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from prior literature, properly cited throughout the manuscript. They provide essential context for the current work but are not novel findings of this study. The citations appear appropriate and accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    },
+    {
+      "id": "82e1145a-7384-4766-9080-622f4d969392",
+      "content_id": "9bfa4890-ef5a-4dca-9ed5-61ffda5ce51d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Integration of current findings with prior literature and inferences about trafficking routes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims integrate the current findings with prior knowledge. The inference that TLR7 is diverted at the TGN (C84) is reasonable based on AP-4 function (C83). The suggestion that TLR9 trafficking via plasma membrane is unusual (C94) is well-supported by the differential AP-2 requirement (C85).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:38:17.496658Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e216ca40-9a9a-4cbd-8aa8-87bc89c080c5",
+      "result_id": "6bdf9612-6eb0-40bc-9c8f-279ce14d0707"
+    },
+    {
+      "claim_id": "397cbc2f-f9ab-4d73-8e87-685c21caeba8",
+      "result_id": "6bdf9612-6eb0-40bc-9c8f-279ce14d0707"
+    },
+    {
+      "claim_id": "7f5c7938-565a-4c79-b4cb-a4a876eb12f4",
+      "result_id": "6bdf9612-6eb0-40bc-9c8f-279ce14d0707"
+    },
+    {
+      "claim_id": "c167fac1-d145-40ab-bff4-32482351b816",
+      "result_id": "6bdf9612-6eb0-40bc-9c8f-279ce14d0707"
+    },
+    {
+      "claim_id": "ef088322-471c-4605-8c39-e3f654a82fc8",
+      "result_id": "6bdf9612-6eb0-40bc-9c8f-279ce14d0707"
+    },
+    {
+      "claim_id": "65037606-d9e6-460d-83fe-481dd125eaed",
+      "result_id": "6bdf9612-6eb0-40bc-9c8f-279ce14d0707"
+    },
+    {
+      "claim_id": "97f20f75-5764-4594-b4aa-244e7404e420",
+      "result_id": "6bdf9612-6eb0-40bc-9c8f-279ce14d0707"
+    },
+    {
+      "claim_id": "195a9f6b-fff7-400f-89d2-1d3030f59ae6",
+      "result_id": "6bdf9612-6eb0-40bc-9c8f-279ce14d0707"
+    },
+    {
+      "claim_id": "4c6ecc20-bd7d-4f74-a4e7-8f6083772e65",
+      "result_id": "6bdf9612-6eb0-40bc-9c8f-279ce14d0707"
+    },
+    {
+      "claim_id": "978bdc95-04f4-4411-9341-cf8163d8a757",
+      "result_id": "6bdf9612-6eb0-40bc-9c8f-279ce14d0707"
+    },
+    {
+      "claim_id": "0fbed661-24b6-4bbb-a471-c58ab103f04f",
+      "result_id": "fb8b7e1d-e863-4fd0-8a12-aa52563094e2"
+    },
+    {
+      "claim_id": "e98eb960-b396-4bde-aa11-4bb3801024d2",
+      "result_id": "fb8b7e1d-e863-4fd0-8a12-aa52563094e2"
+    },
+    {
+      "claim_id": "1b7d4e4b-0ea9-46d0-a4df-8a3dc8f31a16",
+      "result_id": "fb8b7e1d-e863-4fd0-8a12-aa52563094e2"
+    },
+    {
+      "claim_id": "9d41378c-92f2-4461-ab20-e10adebc2b5a",
+      "result_id": "fb8b7e1d-e863-4fd0-8a12-aa52563094e2"
+    },
+    {
+      "claim_id": "4504d9f5-f1db-473d-bc75-42bd015e577a",
+      "result_id": "fb8b7e1d-e863-4fd0-8a12-aa52563094e2"
+    },
+    {
+      "claim_id": "fd1f80d4-8097-41c5-9ebf-492c1038600d",
+      "result_id": "fb8b7e1d-e863-4fd0-8a12-aa52563094e2"
+    },
+    {
+      "claim_id": "99ee1825-d5e6-459e-92d7-4991ef6958a8",
+      "result_id": "fb8b7e1d-e863-4fd0-8a12-aa52563094e2"
+    },
+    {
+      "claim_id": "67e51250-3c4f-4907-939c-20789b9c8f6d",
+      "result_id": "fb8b7e1d-e863-4fd0-8a12-aa52563094e2"
+    },
+    {
+      "claim_id": "044472fc-0a7e-469c-91f8-f3a5db1ebe9f",
+      "result_id": "14612f6e-bc6e-4fce-8627-7c708dabe421"
+    },
+    {
+      "claim_id": "832b75a9-117e-4505-8d91-e766476d9b10",
+      "result_id": "14612f6e-bc6e-4fce-8627-7c708dabe421"
+    },
+    {
+      "claim_id": "63ae62ad-4dbc-4dcb-926e-85aaee70f8dc",
+      "result_id": "14612f6e-bc6e-4fce-8627-7c708dabe421"
+    },
+    {
+      "claim_id": "4d59d420-eab7-44f0-b43e-c70e8afdcd35",
+      "result_id": "14612f6e-bc6e-4fce-8627-7c708dabe421"
+    },
+    {
+      "claim_id": "857913ab-4228-4dca-9203-c5f0561aeff1",
+      "result_id": "ce34e9ac-6ac4-4702-88f5-3e0dd299fc83"
+    },
+    {
+      "claim_id": "675030d2-1923-4016-9458-1092407c0448",
+      "result_id": "ce34e9ac-6ac4-4702-88f5-3e0dd299fc83"
+    },
+    {
+      "claim_id": "32bcb3b7-30f4-4fd1-a2b5-5dc2f89ab067",
+      "result_id": "ce34e9ac-6ac4-4702-88f5-3e0dd299fc83"
+    },
+    {
+      "claim_id": "25ed7420-3963-4b5e-ab86-6ed92184d588",
+      "result_id": "ce34e9ac-6ac4-4702-88f5-3e0dd299fc83"
+    },
+    {
+      "claim_id": "04188254-cedc-4b0c-8c8a-9a1709c9b94b",
+      "result_id": "ce34e9ac-6ac4-4702-88f5-3e0dd299fc83"
+    },
+    {
+      "claim_id": "87d8e2a5-46d8-4db6-8a70-13e7d28d13f0",
+      "result_id": "15d08aea-8a87-4a16-8b23-30acb3ed4197"
+    },
+    {
+      "claim_id": "8a0b36a6-5477-4ad5-95fd-cfb3ad14e43a",
+      "result_id": "15d08aea-8a87-4a16-8b23-30acb3ed4197"
+    },
+    {
+      "claim_id": "8d2b0612-abc4-4619-8704-14120dfa9b3c",
+      "result_id": "15d08aea-8a87-4a16-8b23-30acb3ed4197"
+    },
+    {
+      "claim_id": "ba86fbeb-d1d9-4829-b340-6cc4f68de366",
+      "result_id": "15d08aea-8a87-4a16-8b23-30acb3ed4197"
+    },
+    {
+      "claim_id": "cf0357ae-1104-4481-bcdf-e65a381007fa",
+      "result_id": "15d08aea-8a87-4a16-8b23-30acb3ed4197"
+    },
+    {
+      "claim_id": "6873af92-71d8-42f0-8c14-c63235b892df",
+      "result_id": "15d08aea-8a87-4a16-8b23-30acb3ed4197"
+    },
+    {
+      "claim_id": "a2d0b068-4540-4137-9671-be84bf62ff17",
+      "result_id": "15d08aea-8a87-4a16-8b23-30acb3ed4197"
+    },
+    {
+      "claim_id": "b73c0ecb-38f0-42e4-b4e8-fc8391cc9f0b",
+      "result_id": "15d08aea-8a87-4a16-8b23-30acb3ed4197"
+    },
+    {
+      "claim_id": "21b86ed3-6ded-45fe-a2b2-a38929688119",
+      "result_id": "15d08aea-8a87-4a16-8b23-30acb3ed4197"
+    },
+    {
+      "claim_id": "f50fb639-dbd4-4760-ad97-449bbde9dd89",
+      "result_id": "b43c3fc4-0e25-47e8-9c46-4cf5a5d8c9c4"
+    },
+    {
+      "claim_id": "62d29a54-ab0e-4fc4-a8f8-21becc41afa4",
+      "result_id": "b43c3fc4-0e25-47e8-9c46-4cf5a5d8c9c4"
+    },
+    {
+      "claim_id": "e15836b4-89bc-4d9e-a103-fe98b7dc55d7",
+      "result_id": "b43c3fc4-0e25-47e8-9c46-4cf5a5d8c9c4"
+    },
+    {
+      "claim_id": "0280737f-1e03-4856-8ff3-c0490f8f0201",
+      "result_id": "b43c3fc4-0e25-47e8-9c46-4cf5a5d8c9c4"
+    },
+    {
+      "claim_id": "f3041e4f-9ce7-4bb9-ba22-81b8e6b231e6",
+      "result_id": "b43c3fc4-0e25-47e8-9c46-4cf5a5d8c9c4"
+    },
+    {
+      "claim_id": "5eee654b-e544-43db-bd28-076c030a98db",
+      "result_id": "b43c3fc4-0e25-47e8-9c46-4cf5a5d8c9c4"
+    },
+    {
+      "claim_id": "4a897f89-be82-4542-b870-7cfba9bd6872",
+      "result_id": "0315f19b-4595-487b-b771-6f993788b384"
+    },
+    {
+      "claim_id": "2838828e-57ac-4835-b953-32060363cbc2",
+      "result_id": "0315f19b-4595-487b-b771-6f993788b384"
+    },
+    {
+      "claim_id": "c527a593-7a17-4d29-bb91-c773aa1f8f81",
+      "result_id": "0315f19b-4595-487b-b771-6f993788b384"
+    },
+    {
+      "claim_id": "378bd17f-b652-4295-91a1-34c361054afc",
+      "result_id": "0315f19b-4595-487b-b771-6f993788b384"
+    },
+    {
+      "claim_id": "bfc5e90f-bc5f-4517-ab80-cf1fa26d2942",
+      "result_id": "0315f19b-4595-487b-b771-6f993788b384"
+    },
+    {
+      "claim_id": "3649f552-65ee-4f3b-bae2-7d39cb7dadc9",
+      "result_id": "0315f19b-4595-487b-b771-6f993788b384"
+    },
+    {
+      "claim_id": "f310072c-3a75-4811-9944-5b6b48dcd62a",
+      "result_id": "0315f19b-4595-487b-b771-6f993788b384"
+    },
+    {
+      "claim_id": "ad110088-63a2-4a28-8263-79709532be2b",
+      "result_id": "0315f19b-4595-487b-b771-6f993788b384"
+    },
+    {
+      "claim_id": "6a24e95e-5307-4df9-8193-efafde4d7a16",
+      "result_id": "1e14b931-378f-4420-b7be-d3a68da210ca"
+    },
+    {
+      "claim_id": "6f1c2b54-aec5-4a43-94e4-6067f7cb9327",
+      "result_id": "1e14b931-378f-4420-b7be-d3a68da210ca"
+    },
+    {
+      "claim_id": "c7eeadce-9bae-4ab2-a571-ceef453829c7",
+      "result_id": "1e14b931-378f-4420-b7be-d3a68da210ca"
+    },
+    {
+      "claim_id": "645d256a-ce61-4ecc-9407-6a5d7ec77fc7",
+      "result_id": "1e14b931-378f-4420-b7be-d3a68da210ca"
+    },
+    {
+      "claim_id": "c8bc7a59-aaf4-4d7b-838e-2e2d6c826738",
+      "result_id": "1e14b931-378f-4420-b7be-d3a68da210ca"
+    },
+    {
+      "claim_id": "82833e96-070b-4062-b0f3-01f6a83b75c0",
+      "result_id": "a791f17e-0498-4a61-b0d5-fbe8b2439e5a"
+    },
+    {
+      "claim_id": "11b0e35a-3031-4caf-88af-65b8fdec263b",
+      "result_id": "a791f17e-0498-4a61-b0d5-fbe8b2439e5a"
+    },
+    {
+      "claim_id": "657b8315-6a7f-477d-b266-f61c46b9067d",
+      "result_id": "a791f17e-0498-4a61-b0d5-fbe8b2439e5a"
+    },
+    {
+      "claim_id": "d3304d4a-2436-4647-8c2b-aeeb195bb424",
+      "result_id": "a791f17e-0498-4a61-b0d5-fbe8b2439e5a"
+    },
+    {
+      "claim_id": "081b6ef9-0784-4558-8bcd-c7d83b1f31e8",
+      "result_id": "a791f17e-0498-4a61-b0d5-fbe8b2439e5a"
+    },
+    {
+      "claim_id": "632532b2-1615-4a0d-859a-0f950e22cea6",
+      "result_id": "a791f17e-0498-4a61-b0d5-fbe8b2439e5a"
+    },
+    {
+      "claim_id": "c758a127-921f-492f-b7b4-3be0987d5274",
+      "result_id": "a791f17e-0498-4a61-b0d5-fbe8b2439e5a"
+    },
+    {
+      "claim_id": "2fcb5579-49fa-458e-8f86-9cd31fc32b8a",
+      "result_id": "a791f17e-0498-4a61-b0d5-fbe8b2439e5a"
+    },
+    {
+      "claim_id": "5198c362-e8c4-4847-8411-138e19dc5a93",
+      "result_id": "afaf1b5e-3e80-47fb-af85-080fce8414c2"
+    },
+    {
+      "claim_id": "f71701a7-6d17-45b9-b4ee-0752b197a36c",
+      "result_id": "afaf1b5e-3e80-47fb-af85-080fce8414c2"
+    },
+    {
+      "claim_id": "cce6e763-a210-4ac0-9389-a936f5c656a5",
+      "result_id": "afaf1b5e-3e80-47fb-af85-080fce8414c2"
+    },
+    {
+      "claim_id": "8a329624-db9d-4315-87e1-c378259ad7fd",
+      "result_id": "afaf1b5e-3e80-47fb-af85-080fce8414c2"
+    },
+    {
+      "claim_id": "3c6e214b-6526-4c8c-9637-8c655e9bee95",
+      "result_id": "3ac39763-dfaf-48cc-b2d8-330d78df9ed3"
+    },
+    {
+      "claim_id": "46794e30-9430-4290-ba5a-506e7b35343a",
+      "result_id": "3ac39763-dfaf-48cc-b2d8-330d78df9ed3"
+    },
+    {
+      "claim_id": "552e0ded-e7fa-4e6f-adaf-0edf19d4ed83",
+      "result_id": "3ac39763-dfaf-48cc-b2d8-330d78df9ed3"
+    },
+    {
+      "claim_id": "33cd7858-db27-4a33-8054-70b59a4a2227",
+      "result_id": "3ac39763-dfaf-48cc-b2d8-330d78df9ed3"
+    },
+    {
+      "claim_id": "0716444d-c18e-4537-8100-e05bb3f256b0",
+      "result_id": "a085ec24-0a1a-4a7e-b43d-36cfde5c7bb6"
+    },
+    {
+      "claim_id": "c79e1e25-a7ce-4c0b-87fe-c1f387ea8f1e",
+      "result_id": "a085ec24-0a1a-4a7e-b43d-36cfde5c7bb6"
+    },
+    {
+      "claim_id": "0205bfcc-8a0a-4caf-b7a4-8e4b422fa92f",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "c131bc6d-28c4-42ba-b32e-2262dfa7c43b",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "77a9b5e0-7611-47f2-842e-d33149a8cb72",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "68a39ee5-ea2b-4aa8-b38f-2304099ca8fa",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "a72aaa5b-a1a1-40ba-9a97-490e0b46b0e2",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "91618e36-330f-4d0a-973f-dd63f782392d",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "e9b5b842-ab54-4392-ad18-835597fddaa6",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "4697da7d-4294-437c-8766-15ec3522fad5",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "9316cfaf-e7da-44e6-854f-548800ed2c42",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "0183e86b-38da-4513-b8e7-c4176c7ee6ae",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "fbe16a78-b596-4978-a67b-0fd7aceb4af1",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "6d32588c-f88f-4ccb-9a30-dd99b82fa18d",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "cd7f70f4-24e6-4bcb-9ec4-83e15a3ac329",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "00a091be-57e5-4c4a-9a73-0892635be170",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "87f50394-7719-444b-bf83-78a53b447b1d",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "8dbceac9-7cba-4ba3-832b-99b18d17e052",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "f117be15-0fd9-425b-8bcd-63f079a7a771",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "9eec52cb-5fb1-49ea-9d66-c9d8cdee73ab",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "84d410bc-dcb9-4ade-b545-673119809c64",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "ee016937-7e6e-41e6-8a7f-2b181ceb9f63",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "781d9bd3-3216-4c32-80f8-a0927dd4427b",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "2b663319-0edb-44bb-b4a1-9abddf62b44f",
+      "result_id": "7077ddd9-4d34-4269-85fb-9d529b881326"
+    },
+    {
+      "claim_id": "f671a985-269a-4fd6-a50d-3b7af0433820",
+      "result_id": "82e1145a-7384-4766-9080-622f4d969392"
+    },
+    {
+      "claim_id": "d361f93b-a419-4c33-ae87-458c10b63a73",
+      "result_id": "82e1145a-7384-4766-9080-622f4d969392"
+    },
+    {
+      "claim_id": "d2f9faf6-d143-4260-a866-e5cbdcd71881",
+      "result_id": "82e1145a-7384-4766-9080-622f4d969392"
+    },
+    {
+      "claim_id": "777633c8-955d-4e8f-90f4-b158e4893105",
+      "result_id": "82e1145a-7384-4766-9080-622f4d969392"
+    },
+    {
+      "claim_id": "11312553-96e4-4df3-a8c7-ea4d2e376c68",
+      "result_id": "82e1145a-7384-4766-9080-622f4d969392"
+    }
+  ],
+  "comparisons": []
+}

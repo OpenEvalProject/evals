@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The GenCord cohort consists of 204 newborn umbilical cord samples from which three cell types (fibroblasts, T-cells, LCLs) were derived and characterized using genotyping (2.5M SNPs imputed to 6.9M), RNA-seq (median 16M exonic reads), and DNA methylation arrays (416,118 CpG sites). After quality control, 183-186 individuals per cell type were retained for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C27 collectively describe the study design, sample collection, and data generation. The methods are clearly documented with specific numbers, quality control steps are described (C22-C23), and the data are visualized in Figure 1 and supplements. The experimental design is sound and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "At 10% FDR, the study identified 2,115-3,372 eQTLs (1 Mb window), 14,189-32,318 mQTLs (5 kb window), and 1,541-17,267 eQTMs (50 kb window) across the three cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 report the primary association results with appropriate statistical thresholds (10% FDR) and window sizes. The numbers are presented in Table 1 with corresponding p-value thresholds. The permutation-based FDR approach is described in methods and appears statistically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Promoter methylation sites from both positive and negative eQTMs correlate negatively with gene expression across genes (rho = -0.11 and -0.10, respectively), suggesting that mechanisms underlying inter-individual DNA methylation variation are at least partly independent from those establishing repressive promoter methylation during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 present a key finding with statistical support (Figure 2A, p-values provided). The observation that both pos-eQTMs and neg-eQTMs show negative correlation across genes is counterintuitive but well-documented. The inference in C34 is reasonable given the data, though it remains somewhat speculative about developmental mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Methylation sites with higher cell-type differentiation levels are significantly enriched for both eQTMs and mQTLs (p < 2.2\u00d710\u207b\u00b9\u2076), suggesting that differentially methylated regions established during development may provide a platform for inter-individual variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are well-supported by statistical tests (Wilcoxon, Figure 2B and supplements). The differentiation metric (coefficient of variation) is appropriate. Claim C39 is more speculative but represents a reasonable interpretation of the enrichment pattern. The connection between developmental and inter-individual variation is novel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "DNA methylation shows context-dependent patterns: negative eQTMs are enriched in CTCF sites, enhancers, and promoters (especially non-CGI promoters); mQTLs are depleted in CGI promoters but enriched in non-CGI promoters; while eQTLs are enriched in CGI promoters, indicating that the role of DNA methylation is highly dependent on genomic and functional context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 describe genomic context enrichments shown in Figure 2C-D with statistical significance. The contrasting patterns between CGI and non-CGI promoters are well-documented. Claim C43 makes a reasonable inference about genetic control. The overall conclusion (C45) is well-supported by the convergent evidence from multiple genomic contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Allelic imbalance is significantly associated with heterozygote eQTLs but not with semimethylated eQTM sites (in the absence of genetic variation), suggesting that DNA methylation is rarely allele-specific without genetic effects and that widespread ASE is primarily driven by genetic regulatory variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 present allele-specific expression analysis with appropriate controls (imprinted genes as positive control, C49). Statistical tests are significant for eQTL effects but not for methylation alone (C47, p>0.42). The filtering to exclude SNP effects on methylation is appropriate. Claims C51-C52 involve reasonable inferences, though C52 is somewhat speculative about the primary driver of ASE.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Synergistic interactions between genetic variants and DNA methylation on gene expression are significantly enriched in all three cell types (\u03c01 = 4.3-12.4%), with 3-91 individually significant interactions at 10% FDR, reflecting the interdependency of genetic and epigenetic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 report interaction analysis with permutation-based validation (Figure 3B). The \u03c01 statistics indicate enrichment of true positives. While fibroblasts show weaker evidence (C54, p-value distribution not above 95% CI), the \u03c01 is still 7.2\u00d7 higher than permuted. The filtering to avoid spurious interactions (removing correlated SNP-methylation pairs, requiring \u22654 minor allele homozygotes) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Bayesian network analysis reveals that all three causative models (INDEP, SME, SEM) occur in a cell-type and context-dependent manner: the INDEP model (passive methylation) predominates in fibroblasts and LCLs, while the SME model (active methylation) is most common in T-cells, suggesting DNA methylation can be both active and passive in gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 describe causal inference using Bayesian networks with appropriate methodology. The three models are clearly defined (Figure 4A), and results are shown in Figure 4B with high-confidence calls validated by an independent method (CIT). The cell-type differences are interesting and well-documented. The conclusion (C61) appropriately reflects the complexity observed in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Transcription factor expression levels show strong enrichment of associations with DNA methylation at their binding sites (\u03c01 = 9-25%, 27-99 significant TFs at 10% FDR), and interactions between genetic variants and TF abundance on methylation are enriched (\u03c01 = 15%), suggesting TF levels influence both methylation and expression, potentially via interaction with genetic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 report significant enrichments with appropriate statistics (Figure 4 supplements). The use of ENCODE TF binding data is appropriate. However, C66 notes limited sample size (N=114) for interaction testing, which reduces confidence. Claims C67-C68 are reasonable inferences but remain somewhat speculative. The overall pattern supports a role for TFs in mediating methylation-expression relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Non-genetically determined DNA methylation is rarely allelic but rather defined at the whole cell level, meaning that semimethylation in a cell population likely reflects a fraction of fully methylated cells rather than allele-specific methylation in each cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 make inferences about cell-level vs. allele-level methylation based on the lack of association between semimethylated sites and allelic imbalance. While this is a reasonable interpretation, the authors themselves note limitations (\"given the limitations of our data, further studies addressing this question are needed\"). The bulk tissue measurements cannot definitively distinguish between these scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C72",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Inter-individual DNA methylation changes are mechanistically associated with genetic variation and gene expression in complex, context-dependent ways that can be passive or active. DNA methylation emerges as both a marker and determinant of cellular identity and may provide a platform through which genetic variation and other factors (e.g., TFs) influence cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 represent the study's main conclusions, synthesizing findings from multiple analyses. These are well-supported by the convergent evidence from eQTM/mQTL patterns, causal modeling, TF associations, and context-specific effects. Claims C76-C77 are somewhat speculative about the \"platform\" role but represent reasonable interpretations of the data. The complexity and context-dependence are well-documented throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The introduction establishes background knowledge about DNA methylation, including its essential role, occurrence at CpG sites, general patterns (high in mammals except at CGI), mechanisms, disease associations, complex roles in gene regulation (both silencing and activation), environmental influences, genetic control, and the ongoing debate about passive vs. active roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 are background claims supported by appropriate citations to established literature. These provide context for the study but do not represent novel findings. All claims are properly attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "DNA methylation levels can depend on TF binding, which in turn can be determined by both inter-individual differences in TF abundance and genetic variants at binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by citation (Stadler et al., 2011). Claim C71 is inferred from the study's findings on TF-methylation associations and SNP-TF interactions. This represents a synthesis of the study's mechanistic insights and is reasonably supported by the data presented.",
+    "result_type": "MINOR"
+  }
+]

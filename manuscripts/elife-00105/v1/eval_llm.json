@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C4",
+      "C14"
+    ],
+    "result": "FK506-treated dendritic cells (FKDC) have reduced capacity to stimulate T cell responses in vitro, but this is not due to impaired DC maturation, survival, or costimulatory molecule expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15, C16 demonstrate reduced T cell stimulation by FKDC through multiple assays (proliferation, IFN\u03b3 Elispot, mRNA induction). Claims C17, C4, C14 show that DC phenotype and maturation markers remain unaffected by FK506 treatment, ruling out this mechanism. The data are internally consistent and supported by prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Brief FK506 treatment (20 minutes) of DCs is sufficient to achieve maximal T cell inhibition, similar to prolonged treatment (40 hours).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 demonstrates experimentally that 20-minute FK506 exposure produces equivalent T cell inhibition as 40-hour exposure (Figure 1D). Claim C19 provides supporting evidence from prior work showing rapid FK506 uptake kinetics in T cells. The finding is unexpected but well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "FKDC produce and secrete a soluble T cell inhibitor that acts in a dose-dependent manner and inhibits multiple cytokines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 provide converging evidence: FKDC reduce IFN\u03b3 mRNA (C20), mixing FKDC with untreated DC shows dose-dependent inhibition (C21), and FKDC supernatants inhibit multiple cytokines (C22). Claim C23 appropriately synthesizes these findings. The experimental design with mixing experiments and supernatant transfers is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C83"
+    ],
+    "result": "The inhibitory factor released by FKDC does not require new transcription, translation, or secretory pathway function, suggesting passive diffusion of FK506.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 demonstrates that inhibitors of transcription (actinomycin), translation (emetine), and secretory pathway (brefeldin A) do not affect FKDC inhibitory activity (Figure 2A). Claims C25 and C83 appropriately infer passive diffusion as the mechanism. The experimental controls are appropriate and the logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C37",
+      "C79"
+    ],
+    "result": "DCs sequester FK506 and continuously release the drug at biologically active concentrations for at least 72 hours after initial treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 provides direct ELISA measurements showing sustained FK506 release over 72 hours (Figure 2B) at concentrations above the IC50 for T cell inhibition. Claims C5, C37, and C79 appropriately synthesize this finding. The ELISA data directly demonstrate the drug reservoir function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "FK506 is the only inhibitor in FKDC supernatants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by immunodepletion experiments (Figure 2C) showing that removal of FK506 with FK-1 antibody completely abolishes inhibitory activity. This is a strong negative control demonstrating specificity. The complete abolishment of activity after FK506 removal is compelling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C65"
+    ],
+    "result": "DCs express multiple FK506-binding proteins (FKBPs), with FKBP12 being most abundant, which likely enables FK506 accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 provides gene expression data (Table 1) showing FKBP12 is the most robustly expressed FKBP in DCs. Claims C30 and C65 appropriately speculate about the drug sink mechanism based on known FK506-FKBP binding properties. The expression data are quantitative and the inference is reasonable, though C30 and C65 are speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Rapamycin pretreatment blocks FKDC inhibitory activity by competing for FKBP12 binding, demonstrating FKBP12's role in FK506 sequestration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 establishes that rapamycin binds FKBP12 with higher affinity than FK506. Claim C34 cites prior work showing rapamycin competition in Jurkat cells. Claim C35 demonstrates experimentally that rapamycin pretreatment prevents FKDC from inhibiting IL2 (Figure 2D). Claim C36 appropriately concludes FKBP12's physiological role. The competition experiment is well-designed and the logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C48",
+      "C72"
+    ],
+    "result": "T cells encountering FKDC undergo activation-induced apoptosis: undivided cells survive normally, but proliferating T cells show increased death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 shows no difference in death of undivided T cells (Figure 3A-B). Claim C40 demonstrates that proliferating T cells with FKDC are twice as likely to die (Figure 3B). Claims C48 and C72 appropriately synthesize these findings. The use of CFSE dilution to distinguish divided from undivided cells is appropriate, and the annexin V data are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "T cells proliferating in response to FKDC fail to upregulate the survival factor bcl-xl, suggesting mitochondrial-mediated apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 demonstrates reduced bcl-xl upregulation in divided T cells cultured with FKDC (Figure 3C). Claim C44 appropriately infers mitochondrial-mediated cell death based on bcl-xl's known role. Claim C45 cites prior work showing FK506 blocks bcl-xl induction. The mechanistic inference is well-supported by the data and literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C46",
+      "C47"
+    ],
+    "result": "IL2 supplementation rescues T cells from FKDC-induced death by restoring bcl-xl expression and cytokine production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C46 show IL2 reduces apoptosis and increases bcl-xl in T cells cultured with FKDC (Figure 3B-C). Claim C47 shows IL2 rescues IFN\u03b3 production (Figure 3D). The rescue experiments provide strong evidence that IL2 deficiency is the proximal cause of T cell death with FKDC. The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "IL2 supplementation increases death in T cells stimulated with untreated DC, consistent with activation-induced cell death (AICD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is demonstrated in Figure 3B and appropriately cites the AICD mechanism (Lenardo, 1991). This serves as an important control showing that IL2 has opposite effects depending on whether calcineurin signaling is intact, supporting the overall model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C49",
+      "C50",
+      "C63",
+      "C70",
+      "C80",
+      "C81"
+    ],
+    "result": "FKDC loaded with type II collagen (CII) prevent collagen-induced arthritis in mice in an antigen-specific manner, while FKDC loaded with irrelevant antigen (type I collagen) do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 demonstrate that FKDC-CII, but not FKDC-CI or DC-CII, significantly reduce arthritis severity and incidence (Figure 4A-B). The antigen specificity is clearly demonstrated by the lack of effect with irrelevant antigen. Statistical analysis is appropriate (linear mixed model, GEE). Claims C63, C70, C80, C81 appropriately synthesize these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Clinical arthritis severity scores correlate highly with radiographic and histopathology scores, and FKDC-CII treatment significantly reduces pathological damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 report high correlations (r=0.97 and 0.96) between clinical scores and objective measures. Claims C53-C54 show significant reductions in radiographic and histopathology scores with FKDC-CII treatment (Wilcoxon p<0.05). The correlations validate the clinical scoring system, and the pathological improvements confirm therapeutic efficacy beyond clinical observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C64"
+    ],
+    "result": "FKDC treatment does not cause systemic immunosuppression, unlike conventional FK506 treatment, as measured by serum inhibitory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 demonstrates that serum from FK506-treated but not FKDC-treated mice inhibits T cell activation (Figure 4E). Claims C60 and C64 appropriately infer reduced systemic immunosuppression with FKDC. The functional assay for serum FK506 activity is appropriate and the difference is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "FKDC treatment avoids pancreatic toxicity seen with systemic FK506 treatment, as measured by serum amylase levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 shows elevated amylase in FK506-treated but not FKDC-treated mice (Figure 4F). Claim C62 cites prior work showing FK506 pancreatic toxicity. Claim C64 appropriately concludes reduced off-target toxicity. The amylase measurement is an appropriate biomarker for pancreatic injury, though the manuscript notes no differences in other toxicity markers (glucose, BUN, lipase, AST, ALT).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The lack of efficacy of FKDC loaded with irrelevant antigen indicates that the amount of drug delivered is insufficient for systemic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by the negative control in Figure 4A showing FKDC-CI does not protect from arthritis. This is an important control demonstrating that antigen-specific targeting is required for efficacy, not just drug delivery. The inference is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "DC-based delivery requires approximately 8000-fold less FK506 than systemic treatment to achieve therapeutic efficacy in the CIA model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 cites that systemic treatment requires 40 \u03bcg FK506. Claim C74 calculates 5 ng maximum from FKDC based on Figure 2B ELISA data. Claim C75 calculates the 8000-fold difference. However, this comparison is problematic: the ELISA measures in vitro release, not in vivo delivery; the calculation assumes all drug is delivered; and the two treatments have different routes, schedules, and pharmacokinetics. The comparison is overly simplistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C76",
+      "C82"
+    ],
+    "result": "DCs can function as a cellular drug delivery system with potential to reduce drug doses and increase specificity in treating autoimmune disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C82 synthesize the overall findings. Claim C76 speculates about clinical potential. The in vitro and in vivo data collectively support the proof-of-concept that DCs can deliver FK506 in an antigen-specific manner with reduced toxicity. However, the clinical potential (C76) remains speculative and would require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C32",
+      "C78"
+    ],
+    "result": "FK506 is a calcineurin inhibitor that blocks IL2 production and is used clinically for transplant rejection and autoimmunity, but has significant side effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish background knowledge about FK506's mechanism and clinical use. They are well-established facts supported by appropriate citations and general medical knowledge. These provide essential context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C33",
+      "C38",
+      "C45",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62",
+      "C66",
+      "C67",
+      "C77",
+      "C84"
+    ],
+    "result": "Various background claims about FK506, rapamycin, DC biology, and prior CIA studies establish the scientific context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims cite prior literature appropriately and establish necessary background. They are not novel findings of this study but provide context for interpreting the results. The citations appear appropriate and the claims are consistent with established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C30",
+      "C65",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors speculate that the cellular drug sink approach could be extended to other cell types or drugs with similar intracellular binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 are explicitly speculative about future applications. While the speculation is reasonable based on the demonstrated mechanism, no experimental evidence is provided for other cell types or drugs. Claims C30 and C65 speculate about the drug sink mechanism based on FKBP expression. These are reasonable hypotheses but lack direct experimental validation.",
+    "result_type": "MINOR"
+  }
+]

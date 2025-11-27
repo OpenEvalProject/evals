@@ -1,0 +1,1552 @@
+{
+  "submission": {
+    "id": "7d1dd67b-7f58-4592-bea1-15bc7b000556",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T05:36:07.985542Z",
+    "updated_at": "2025-11-27T05:36:07.985542Z"
+  },
+  "content": [
+    {
+      "id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "submission_id": "7d1dd67b-7f58-4592-bea1-15bc7b000556",
+      "content_type": "manuscript",
+      "content_text": "# RNA-programmed genome editing in human cells\n\n## Authors\n\n- Martin Jinek<sup>1</sup>\n- Alexandra East<sup>2</sup>\n- Aaron Cheng<sup>2</sup>\n- Steven Lin<sup>1</sup>\n- Enbo Ma<sup>2</sup>\n- Jennifer Doudna<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n2. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n3. Department of Chemistry University of California, Berkeley Berkeley United States\n4. Physical Biosciences Division Lawrence Berkeley National Laboratory Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nType II CRISPR immune systems in bacteria use a dual RNA-guided DNA endonuclease, Cas9, to cleave foreign DNA at specific sites. We show here that Cas9 assembles with hybrid guide RNAs in human cells and can induce the formation of double-strand DNA breaks (DSBs) at a site complementary to the guide RNA sequence in genomic DNA. This cleavage activity requires both Cas9 and the complementary binding of the guide RNA. Experiments using extracts from transfected cells show that RNA expression and/or assembly into Cas9 is the limiting factor for Cas9-mediated DNA cleavage. In addition, we find that extension of the RNA sequence at the 3\u2032 end enhances DNA targeting activity in vivo. These results show that RNA-programmed genome editing is a facile strategy for introducing site-specific genetic changes in human cells.\n\n## Introduction\n\nMethods for introducing site-specific double-strand DNA (dsDNA) breaks (DSBs) in genomic DNA have transformed our ability to engineer eukaryotic organisms by initiating DNA repair pathways that lead to targeted genetic re-programming. Zinc-finger nucleases (ZFNs) and transcription activator-like effector nucleases (TALENs) have proved effective for such genomic manipulation but their use has been limited by the need to engineer a specific protein for each dsDNA target site and by off-target activity (Urnov et al., 2010; Bogdanove and Voytas, 2011). Thus, alternative strategies for triggering site-specific DNA cleavage in eukaryotic cells are of great interest.\n\nResearch into genome defense mechanisms in bacteria showed that CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats)/Cas (CRISPR-associated) loci encode RNA-guided adaptive immune systems that can destroy foreign DNA (Bhaya et al., 2011; Terns and Terns, 2011; Wiedenheft et al., 2012). The Type II CRISPR/Cas systems require a single protein, Cas9, to catalyze DNA cleavage (Sapranauskas et al., 2011). Cas9 generates blunt DSBs at sites defined by a 20-nucleotide guide sequence contained within an associated CRISPR RNA (crRNA) transcript (Gasiunas et al., 2012; Jinek et al., 2012). Cas9 requires both the guide crRNA and a trans-activating crRNA (tracrRNA) that is partially complementary to the crRNA for site-specific DNA recognition and cleavage (Deltcheva et al., 2011; Jinek et al., 2012). Recent experiments showed that the crRNA:tracrRNA complex can be redesigned as a single transcript (single-guide RNA or sgRNA) encompassing the features required for both Cas9 binding and DNA target siterecognition (Jinek et al., 2012). Using sgRNA, Cas9 can be programmed to cleave double-stranded DNA at any site defined by the guide RNA sequence and including a GG protospacer-adjacent (PAM) motif (Sapranauskas et al., 2011; Jinek et al., 2012). These findings suggested the exciting possibility that Cas9:sgRNA complexes might constitute a simple and versatile RNA-directed system for generating DSBs that could facilitate site-specific genome editing. However, it was not known whether such a bacterial system would function in eukaryotic cells.\n\nWe show here that Cas9 can be expressed and localized to the nucleus of human cells, and that it assembles with sgRNA in vivo.These complexes can generate double stranded breaks and stimulate non-homologous end joining (NHEJ) repair in genomic DNA at a site complementary to the sgRNA sequence, an activity that requires both Cas9 and the sgRNA. Extension of the RNA sequence at its 3\u2032 end enhances DNA targeting activity in vivo. Further, experiments using extracts from transfected cells show that sgRNA assembly into Cas9 is the limiting factor for Cas9-mediated DNA cleavage. These results demonstrate the feasibility of RNA-programmed genome editing in human cells.\n\n## Results\n\nTo test whether Cas9 could be programmed to cleave genomic DNA in vivo, we co-expressed Cas9 together with an sgRNA designed to target the human clathrin light chain (CLTA) gene. The CLTA genomic locus has previously been targeted and edited using ZFNs (Doyon et al., 2011). We first tested the expression of a human-codon-optimized version of the Streptococcus pyogenes Cas9 protein and sgRNA in human HEK293T cells. The 160 kDa Cas9 protein was expressed as a fusion protein bearing an HA epitope, a nuclear localization signal (NLS), and green fluorescent protein (GFP) attached to the C-terminus of Cas9 (Figure 1A). Analysis of cells transfected with a vector encoding the GFP-fused Cas9 revealed abundant Cas9 expression and nuclear localization (Figure 1B). Western blotting confirmed that the Cas9 protein is expressed largely intact in extracts from these cells (Figure 1A). To program Cas9, we expressed sgRNA bearing a 5\u2032-terminal 20-nucleotide sequence complementary to the target DNA sequence, and a 42-nucleotide 3\u2032-terminal stem loop structure required for Cas9 binding (Figure 1C). This 3\u2032-terminal sequence corresponds to the minimal stem-loop structure that has previously been used to program Cas9 in vitro (Jinek et al., 2012). The expression of this sgRNA was driven by the human U6 (RNA polymerase III) promoter (Medina and Joshi, 1999). Northern blotting analysis of RNA extracted from cells transfected with the U6 promoter-driven sgRNA plasmid expression vector showed that the sgRNA is indeed expressed, and that their stability is enhanced by the presence of Cas9 (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00471/elife-00471-fig1-v1.jpg)\n\n**Figure 1.:** (A) Top: schematic diagram of the Cas9-HA-NLS-GFP expression construct. Bottom: lysate from HEK293T cells transfected with the Cas9 expression plasmid was analyzed by Western blotting using an anti-HA antibody. (B) Fluorescence microscopy of HEK293T cells expressing Cas9-HA-NLS-GFP. (C) Blue line indicates the sequence used for the guide segment of CLTA1 sgRNA. Top: schematic diagram of the sgRNA target site in exon 7 of the human CLTA gene. The target sequence that hybridizes to the guide segment of CLTA1 sgRNA is indicated by the blue line. The GG nucleotide protospacer adjacent motif (PAM) is highlighted in yellow. Black lines denote the DNA binding regions of the control ZFN protein. The translation stop codon of the CLTA open reading frame is highlighted in red for reference. Middle: schematic diagram of the sgRNA expression construct. The RNA is expressed under the control of the U6 Pol III promoter and a poly(T) tract that serves as a Pol III transcriptional terminator signal. Bottom: sgRNA-guided cleavage of target DNA by Cas9. The sgRNA consists of a 20-nt 5\u2032-terminal guide segment (blue) followed by a 42-nt stem-loop structure required for Cas9 binding (red). Cas9-mediated cleavage of the two target DNA strands occurs upon unwinding of the target DNA and formation of a duplex between the guide segment of the sgRNA and the target DNA. This is dependent on the presence of a GG dinucleotide PAM downstream of the target sequence in the target DNA. Note that the target sequence is inverted relative to the upper diagram. (D) Northern blot analysis of sgRNA expression in HEK239T cells. (E) Surveyor nuclease assay of genomic DNA isolated from HEK293T cells expressing Cas9 and/or CLTA sgRNA. A ZFN construct previously used to target the CLTA locus (Doyon et al., 2011) was used as a positive control for detecting DSB-induced DNA repair by non-homologous end joining.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00471/elife-00471-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Four types of indels were identified by Sanger sequencing in 68 clonal amplicons. The protospacer sequence is highlighted in grey with the putative cleavage site indicated by the arrow. Dashes represent deleted bases.\n\nNext, we investigated whether site-specific DSBs are generated in HEK293T cells transfected with Cas9-HA-NLS-mCherry and the CLTA1 sgRNA. To do this, we probed for minor insertions and deletions in the locus resulting from imperfect repair by DSB-induced NHEJ using the Surveyor nuclease assay (Qiu et al., 2004). The region of genomic DNA targeted by Cas9:sgRNA is amplified by PCR and the resulting products are denatured and reannealed. The rehybridized PCR products are incubated with the mismatch recognition endonuclease Cel-1 and resolved on an acrylamide gel to identify Cel-1 cleavage bands. As DNA repair by NHEJ is typically induced by a DSB, a positive signal in the Surveyor assay indicates that genomic DNA cleavage has occurred. Using this assay, we detected cleavage of the CLTA locus at a position targeted by the CLTA1 sgRNA (Figure 1E). A pair of ZFNs that target a neighboring site in the CLTA locus provided a positive control in these experiments (Doyon et al., 2011).\n\nTo determine if either Cas9 or sgRNA expression is a limiting factor in the observed genome editing reactions, lysates prepared from the transfected cells were incubated with plasmid DNA harboring a fragment of the CLTA gene targeted by the CLTA1 sgRNA. Plasmid DNA cleavage was not observed upon incubation with lysate prepared from cells transfected with the Cas9-HA-NLS-GFP expression vector alone, consistent with the Surveyor assay results. However, robust plasmid cleavage was detected when the lysate was supplemented with in vitro transcribed CLTA1 sgRNA (Figure 2A). Furthermore, lysate prepared from cells transfected with both Cas9 and sgRNA expression vectors supported plasmid cleavage, while lysates from cells transfected with the sgRNA-encoding vector alone did not (Figure 2A). These results suggest that a limiting factor for Cas9 function in human cells could be assembly with the sgRNA. We tested this possibility directly by analyzing plasmid cleavage in lysates from cells transfected as before in the presence and absence of added exogenous sgRNA. Notably, when exogenous sgRNA was added to lysate from cells transfected with both the Cas9 and sgRNA expression vectors, a substantial increase in DNA cleavage activity was observed (Figure 2B). This result indicates that the limiting factor for Cas9 function in HEK293T cells is the expression of the sgRNA or its loading into Cas9.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00471/elife-00471-fig2-v1.jpg)\n\n**Figure 2.:** (A) Lysates from cells transfected with the plasmid(s) indicated at left were incubated with plasmid DNA containing a PAM and the target sequence complementary to the CLTA1 sgRNA; where indicated, the reaction was supplemented with 10 pmol of in vitro transcribed CLTA1 sgRNA; secondary cleavage with XhoI generated fragments of \u223c2230 and \u223c3100 bp fragments indicative of Cas9-mediated cleavage. A control reaction using lysate from cells transfected with a ZFN expression construct shows fragments of slightly different size reflecting the offset of the ZFN target site relative to the CLTA1 target site. (B) Lysates from cells transfected with Cas9-HA-NLS-GFP expression plasmid and, where indicated, the CLTA1 sgRNA expression plasmid, were incubated with target plasmid DNA as in (A) in the absence or presence of in vitro-transcribed CLTA1 sgRNA.\n\nAs a means of enhancing the Cas9:sgRNA assembly in vivo, we next tested the effect of extending the presumed Cas9-binding region of the guide RNA. Two new versions of the CLTA1 sgRNA were designed to include an additional 4 or 10 base pairs in the helix that mimics the base-pairing interactions between the crRNA and tracrRNA (Figure 3A). Additionally, the 3\u2032-end of the guide RNA was extended by five nucleotides based on the native sequence of the S. pyogenes tracrRNA (Deltcheva et al., 2011). Vectors encoding these 3\u2032 extended sgRNAs under the control of either the U6 or H1 Pol III promoters were transfected into cells along with the Cas9-HA-NLS-GFP expression vector and site-specific genome cleavage was tested using the Surveyor assay (Figure 3B). These results suggest that the 3\u2032-extended sgRNAs support more efficient Cas9 function in vivo, although more quantitative comparisons will be necessary to confirm this conclusion.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00471/elife-00471-fig3-v1.jpg)\n\n**Figure 3.:** (A) The construct for CLTA1 sgRNA expression (top) was designed to generate transcripts containing the original Cas9-binding sequence v1.0 (Jinek et al., 2012), or sequences extended by 4 base pairs (v2.1) or 10 base pairs (v2.2). (B) Surveyor nuclease assay of genomic DNA isolated from HEK293T cells expressing Cas9 and/or CLTA sgRNA v1.0, v2.1 or v2.2. A ZFN construct previously used to target the CLTA locus (Doyon et al., 2011) was used as a positive control for detecting DSB-induced DNA repair by non-homologous end joining.\n\n## Discussion\n\nBesides serving as an invaluable research tool, targeted genome engineering in cells and organisms could potentially provide the path to revolutionary applications in human therapies, agricultural biotechnology and microbial engineering. Methods of modifying the genome exploit endogenous DNA repair pathways that are initiated by the introduction of site-specific dsDNA cleavages. The results presented here provide a straightforward system of RNA-guided site-specific dsDNA cleavage using the Cas9 protein from a Type II bacterial CRISPR system to promote genome editing in human cells. Our data show that a codon-optimized version of Cas9, when programmed by an appropriate sgRNA, successfully assembles into Cas9 targeting complexes to trigger site-specific DNA cleavage and repair by NHEJ. The efficiency of NHEJ-induced mutagenesis at the CLTA locus investigated here is consistently in the range of 6\u20138%. This frequency is lower than that found for a ZFN pair that recognizes a nearby target sequence, but is within the range of frequencies observed more generally with ZFNs and TALENs (Bogdanove and Voytas, 2011). Our data suggest that sgRNA expression and/or its assembly into Cas9, rather than Cas9 expression, localization or folding, presently limits Cas9 function in human cells. Higher efficiencies of Cas9-mediated genome targeting could be achieved by optimization of the sgRNA construct design, its expression levels or its subcellular localization. We note that the sgRNAs used in this study are not thought to be 5\u2032-capped or 3\u2032-polyadenylated, which may have reduced their stability in vivo. This and other 5\u2032 and 3\u2032 end modifications might provide alternative approaches to enhancing Cas9:sgRNA assembly and activity in cells. Nonetheless, the levels of targeting observed in this study have been obtained with a minimal system that relies on simple base pairing to a guide RNA, in contrast to the ZFN and TALEN proteins, which require a new protein to be engineered for each new cleavage site. RNA-guided genome editing would thus offer distinct advantages due to the simplicity of the sgRNA design.\n\nOur results thus provide the framework for implementing Cas9 as a facile molecular tool for diverse genome editing applications. Although not tested explicitly in this study, a powerful feature of this system is the potential to program Cas9 with multiple sgRNAs in the same cell, either to increase the efficiency of targeting at a single locus, or as a means of targeting several loci simultaneously. Such strategies would find broad application in genome-wide experiments and large-scale research efforts such as the development of multigenic disease models. As an inexpensive and rapid mechanism for triggering site-specific genome modification, the programmable Cas9:sgRNA system could potentially transform next-generation genome-scale studies.\n\n## Materials and methods\n\n### Plasmid design and construction\n\nThe sequence encoding Streptococcus pyogenes Cas9 (residues 1\u20131368) fused to an HA epitope (amino acid sequence DAYPYDVPDYASL), a nuclear localization signal (amino acid sequence PKKKRKVEDPKKKRKVD) was codon optimized for human expression and synthesized by GeneArt (Regensburg, Germany; DNA and protein sequences shown in supplementary file 1). Ligation-independent cloning (LIC) was used to insert this sequence into a pcDNA3.1-derived GFP and mCherry LIC vectors (vectors 6D and 6B, respectively, obtained from the UC Berkeley MacroLab), resulting in a Cas9-HA-NLS-GFP and Cas9-HA-NLS-mCherry fusions expressed under the control of the CMV promoter. Guide sgRNAs were expressed using expression vector pSilencer 2.1-U6 puro (Life Technologies, Carlsbad, CA) and pSuper (Oligoengine, Seattle, WA). RNA expression constructs were generated by annealing complementary oligonucleotides to form the RNA-coding DNA sequence and ligating the annealed DNA fragment between the BamHI and HindIII sites in pSilencer 2.1-U6 puro and BglII and HindIII sites in pSuper.\n\n### Cell culture conditions and DNA transfections\n\nHEK293T cells were maintained in Dulbecco's modified eagle medium (DMEM) supplemented with 10% fetal bovine serum (FBS) in a 37\u00b0C humidified incubator with 5% CO2. Cells were transiently transfected with plasmid DNA using either X-tremeGENE DNA Transfection Reagent (Roche Applied Science, Indianapolis, IN) or Turbofect Transfection Reagent (Thermo Scientific, Waltham, MA) with recommended protocols. Briefly, HEK293T cells were transfected at 60\u201380% confluency in 6-well plates using 0.5 \u03bcg of the Cas9 expression plasmid and 2.0 \u03bcg of the RNA expression plasmid. The transfection efficiencies were estimated to be 30\u201350% for Turbofect (Figures 1E and 2A,B) and 80\u201390% for X-tremegene (Figure 3B), based on the fraction of GFP-positive cells observed by fluorescence microscopy. 48 hr post transfection, cells were washed with phosphate buffered saline (PBS) and lysed by applying 250 \u03bcl lysis buffer (20 mM Hepes pH 7.5, 100 mM potassium chloride [KCl], 5 mM magnesium chloride [MgCl2], 1 mM dithiothreitol [DTT], 5% glycerol, 0.1% Triton X-100, supplemented with Roche Protease Inhibitor cocktail) and then rocked for 10 min at 4\u00b0C. The resulting cell lysate was divided into aliquots for further analysis. Genomic DNA was isolated from 200 \u03bcl cell lysate using the DNeasy Blood and Tissue Kit (Qiagen, Hilden, Germany) according to the manufacturer's protocol.\n\n### Western blot analysis of Cas9 expression\n\nHEK293T, transfected with the Cas9-HA-NLS-GFP expression plasmid, were harvested and lysed 48 hr post transfection as above. 5 \u03bcl of lysate were electrophoresed on a 10% SDS polyacrylamide gel, blotter onto a PVDF membrane and probed with HRP-conjugated anti-HA antibody (1:1000 dilution in 1\u00d7 PBS; Sigma, St. Louis, MO).\n\n### Surveyor assay\n\nThe Surveyor assay was performed as previously described (Qiu et al., 2004; Miller et al., 2007; Doyon et al., 2011). Briefly, the human clathrin light chain A (CLTA) locus was PCR amplified from 200 ng of genomic DNA using a high fidelity polymerase, Herculase II Fusion DNA Polymerase (Agilent Technologies, Santa Clara, CA) and forward primer 5\u2032-GCAGCAGAAGAAGCCTTTGT-3\u2032 and reverse primer 5\u2032-TTCCTCCTCTCCCTCCTCTC-3\u2032. 300 ng of the 360 bp amplicon was then denatured by heating to 95\u00b0C and slowly reannealed using a heat block to randomly rehybridize wild type and mutant DNA strands. Samples were then incubated with Cel-1 nuclease (Surveyor Kit; Transgenomic, Omaha, NE) for 1 hr at 42\u00b0C. Cel-1 recognizes and cleaves DNA helices containing mismatches (wild type:mutant hybridization). Cel-1 nuclease digestion products were separated on a 10% acrylamide gel and visualized by staining with SYBR Safe (Life Technologies). Quantification of cleavage bands was performed using ImageLab software (Bio-Rad, Hercules, CA). The percent cleavage was determined by dividing the average intensity of cleavage products (160\u2013200 bps) by the sum of the intensities of the uncleaved PCR product (360 bp) and the cleavage product. Mutations (indels) resulting from Cas9-induced DNA repair reactions were identified by Sanger sequencing of cloned amplicons. Briefly, the 360-bp PCR amplicon was treated with Taq DNA polymerase (NEB) and dATP to attach an \u2018A\u2019 base to the 3\u2032 end of the DNA fragment. The DNA was then ligated into pGEM-T Easy vector (Promega, Madison, WI) according to the manufacturer's protocol. Transformants were grown on Luria Broth agar plates containing 100 \u03bcg/ml of ampicillin, 70 \u03bcg/ml 5-bromo-4-chloro-indolyl-\u03b2-D-galactopyranoside and 100 \u03bcM isopropyl \u03b2-D-1-thiogalactopyranoside. Random white colonies were selected for Sanger sequencing (Quintara Biosciences, Albany, CA). Representative DNA sequences are shown in Figure 1\u2014figure supplement 1.\n\n### In vitro transcription\n\nGuide RNA was in vitro transcribed using recombinant T7 RNA polymerase and a DNA template generated by annealing complementary synthetic oligonucleotides as previously described (Sternberg et al., 2012). RNAs were purified by electrophoresis on 7 M urea denaturing acrylamide gel, ethanol precipitated, and dissolved in DEPC-treated water.\n\n### Northern blot analysis\n\nRNA was purified from HEK293T cells using the mirVana small-RNA isolation kit (Ambion). For each sample, 800 ng of RNA were separated on a 10% urea-PAGE gel after denaturation for 10 min at 70\u00b0C in RNA loading buffer (0.5\u00d7 TBE [pH 7.5], 0.5 mg/ml bromophenol blue, 0.5 mg xylene cyanol and 47% formamide). After electrophoresis at 10 W in 0.5\u00d7 TBE buffer until the bromophenol blue dye reached the bottom of the gel, samples were electroblotted onto a Nytran membrane at 20 V for 1.5 hr in 0.5\u00d7 TBE. The transferred RNAs were cross-linked onto the Nytran membrane in UV-Crosslinker (Strategene) and were pre-hybridized at 45\u00b0C for 3 hr in a buffer containing 40% formamide, 5\u00d7 SSC, 3\u00d7 Dernhardt's solution (0.1% each of ficoll, polyvinylpyrollidone, and BSA) and 200 \u00b5g/ml Salmon sperm DNA. The pre-hybridized membranes were incubated overnight in the prehybridization buffer supplemented with 5\u2032-32P-labeled antisense DNA oligo probe at 1 million cpm/ml. After several washes in SSC buffer (final wash in 0.2\u00d7 SCC), the membranes were imaged phosphorimaging.\n\n### In vitro cleavage assay\n\nCell lysates were prepared as described above and incubated with CLTA-RFP donor plasmid (Doyon et al., 2011). Cleavage reactions were carried out in a total volume of 20 \u03bcl and contained 10 \u03bcl lysate, 2 \u03bcl of 5\u00d7 cleavage buffer (100 mM HEPES pH 7.5, 500 mM KCl, 25 mM MgCl2, 5 mM DTT, 25% glycerol) and 300 ng plasmid. Where indicated, reactions were supplemented with 10 pmol of in vitro transcribed CLTA1 sgRNA. Reactions were incubated at 37\u00b0C for 1 hr and subsequently digested with 10 U of XhoI (NEB) for an additional 30 min at 37\u00b0C. The reactions were stopped by the addition of Proteinase K (Thermo Scientific) and incubated at 37\u00b0C for 15 min. Cleavage products were analyzed by electrophoresis on a 1% agarose gel and stained with SYBR Safe. The presence of \u223c2230 and \u223c3100 bp fragments is indicative of Cas9-mediated cleavage.\n",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "56cbcdfe-fa01-4402-9cf0-1de71289d187",
+      "submission_id": "7d1dd67b-7f58-4592-bea1-15bc7b000556",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Detlef Weigel, Max Planck Institute for Developmental Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00471.008](https://doi.org/10.7554/eLife.00471.008)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cRNA-programmed genome editing in human cells\u201d for consideration at eLife. Your article has been evaluated by a Senior editor, Detlef Weigel, who also acted as Reviewing editor and reviewer, and two outside reviewers, Dana Carroll and David Segal.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis excellent paper demonstrates the capability of a method based on the bacterial CRISPR-Cas system to introduce targeted, mutagenic double-strand breaks into human chromosomal DNA. This system could become a powerful alternative to protein-based targeting reagents, because it is based on simple Watson-Crick recognition and no protein design is required. To put this into perspective, the first proof-of concept study with zinc finger nucleases (ZFNs) in human cells targeted plasmid, not chromosomal DNA.\n\nJinek and colleagues reported earlier this year that a CRISPR/Cas-based two-component system could be engineered for inducing double-strand breaks (DSBs) in vitro, by linking the Cas protein to a nuclease, and by encoding tracrRNA and crRNA functions on a single RNA molecule. In the present study, Jinek and colleagues advance this work by showing that Cas and guide RNAs expressed in mammalian cells can target an endogenous locus to induce DSBs. In addition, they improve on the guide RNA. Given the ease with which this system is programmed, it is not unlikely that even if its efficiency is lower than that of competing systems, it will come to supplant ZFNs and TALE Nucleases (TALENs). As such, the methods and results described in this manuscript will likely have a transformative impact in the field of genome engineering for human and many other species with complex genomes. We would be happy to publish this work once a few points have been clarified.\n\n1. A few of the mutated targets must be sequenced (from cloned PCR products), just to demonstrate that the expected types of NHEJ mutations are present.\n\n2. The authors mention that off-target effects are an important concern for genome engineering methods. We would like to encourage the authors to look at least at the top loci with sequence similarity to the targeting site and perform the Surveyor assay on these, similar to what was done by Meng et al. (Nature Biotechnology 2008), unless this unduly delays publication.\n",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "96ac4ac4-b226-42c7-84eb-89e22f09606b",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C1",
+      "claim": "Type II CRISPR immune systems in bacteria use a dual RNA-guided DNA endonuclease, Cas9, to cleave foreign DNA at specific sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Type II CRISPR immune systems in bacteria use a dual RNA-guided DNA endonuclease, Cas9, to cleave foreign DNA at specific sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established knowledge of bacterial CRISPR systems, presented as background information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "da037759-3272-48d0-9bd1-4d3ab6cb6569",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C2",
+      "claim": "Cas9 assembles with hybrid guide RNAs in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that Cas9 assembles with hybrid guide RNAs in human cells and can induce the formation of double-strand DNA breaks (DSBs) at a site complementary to the guide RNA sequence in genomic DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "63c6aa83-d14e-4229-bc3f-9bf3f8a2aef8",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C3",
+      "claim": "Cas9 can induce the formation of double-strand DNA breaks (DSBs) at a site complementary to the guide RNA sequence in genomic DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that Cas9 assembles with hybrid guide RNAs in human cells and can induce the formation of double-strand DNA breaks (DSBs) at a site complementary to the guide RNA sequence in genomic DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the Surveyor assay data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "f64dce95-ece2-4f2e-9f3e-489071bc8a33",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C4",
+      "claim": "Cas9-mediated DNA cleavage activity requires both Cas9 and the complementary binding of the guide RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This cleavage activity requires both Cas9 and the complementary binding of the guide RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing no cleavage with either component alone (Figure 1E, Figure 2A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "555635d2-59ce-4030-965f-db8b5e0fd8a2",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C5",
+      "claim": "RNA expression and/or assembly into Cas9 is the limiting factor for Cas9-mediated DNA cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments using extracts from transfected cells show that RNA expression and/or assembly into Cas9 is the limiting factor for Cas9-mediated DNA cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the in vitro cleavage assays shown in Figure 2A and 2B, where addition of exogenous sgRNA enhances cleavage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "c1ed90a6-73a2-477e-91a1-7ef39a333540",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C6",
+      "claim": "Extension of the RNA sequence at the 3\u2032 end enhances DNA targeting activity in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we find that extension of the RNA sequence at the 3\u2032 end enhances DNA targeting activity in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Surveyor assay data comparing different sgRNA versions shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "d04aac09-8aef-4fe0-91f7-d0afc48b0b78",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C7",
+      "claim": "RNA-programmed genome editing is a facile strategy for introducing site-specific genetic changes in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that RNA-programmed genome editing is a facile strategy for introducing site-specific genetic changes in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results presented in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "abcf74b2-7851-4be3-9132-61d8c3e12213",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C8",
+      "claim": "Zinc-finger nucleases (ZFNs) and transcription activator-like effector nucleases (TALENs) have proved effective for genomic manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Zinc-finger nucleases (ZFNs) and transcription activator-like effector nucleases (TALENs) have proved effective for such genomic manipulation but their use has been limited by the need to engineer a specific protein for each dsDNA target site and by off-target activity (Urnov et al., 2010; Bogdanove and Voytas, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "8d7c91e8-7101-481e-9e07-71113c4052cc",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C9",
+      "claim": "The use of ZFNs and TALENs has been limited by the need to engineer a specific protein for each dsDNA target site and by off-target activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Zinc-finger nucleases (ZFNs) and transcription activator-like effector nucleases (TALENs) have proved effective for such genomic manipulation but their use has been limited by the need to engineer a specific protein for each dsDNA target site and by off-target activity (Urnov et al., 2010; Bogdanove and Voytas, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "6caf7493-e5c6-4b02-976e-a060ac6e61b5",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C10",
+      "claim": "CRISPR/Cas loci encode RNA-guided adaptive immune systems that can destroy foreign DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Research into genome defense mechanisms in bacteria showed that CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats)/Cas (CRISPR-associated) loci encode RNA-guided adaptive immune systems that can destroy foreign DNA (Bhaya et al., 2011; Terns and Terns, 2011; Wiedenheft et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "a29f997c-c4d0-4df3-9f95-e803b168c869",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C11",
+      "claim": "Type II CRISPR/Cas systems require a single protein, Cas9, to catalyze DNA cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "The Type II CRISPR/Cas systems require a single protein, Cas9, to catalyze DNA cleavage (Sapranauskas et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "0fffec30-46f6-4b22-beee-39a89e580dad",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C12",
+      "claim": "Cas9 generates blunt DSBs at sites defined by a 20-nucleotide guide sequence contained within an associated CRISPR RNA (crRNA) transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 generates blunt DSBs at sites defined by a 20-nucleotide guide sequence contained within an associated CRISPR RNA (crRNA) transcript (Gasiunas et al., 2012; Jinek et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "09f0d76a-25a3-42cc-8dc3-e27e92a020c4",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C13",
+      "claim": "Cas9 requires both the guide crRNA and a trans-activating crRNA (tracrRNA) that is partially complementary to the crRNA for site-specific DNA recognition and cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 requires both the guide crRNA and a trans-activating crRNA (tracrRNA) that is partially complementary to the crRNA for site-specific DNA recognition and cleavage (Deltcheva et al., 2011; Jinek et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "76072684-06d1-4b2d-8a11-18b017d344a1",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C14",
+      "claim": "The crRNA:tracrRNA complex can be redesigned as a single transcript (single-guide RNA or sgRNA) encompassing the features required for both Cas9 binding and DNA target site recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments showed that the crRNA:tracrRNA complex can be redesigned as a single transcript (single-guide RNA or sgRNA) encompassing the features required for both Cas9 binding and DNA target siterecognition (Jinek et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "c8bc7d0d-9812-4044-8f63-cdc75026036b",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C15",
+      "claim": "Using sgRNA, Cas9 can be programmed to cleave double-stranded DNA at any site defined by the guide RNA sequence and including a GG protospacer-adjacent (PAM) motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Using sgRNA, Cas9 can be programmed to cleave double-stranded DNA at any site defined by the guide RNA sequence and including a GG protospacer-adjacent (PAM) motif (Sapranauskas et al., 2011; Jinek et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "ad24fd4b-0dfc-4bb3-a9ec-3085440369f8",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C16",
+      "claim": "It was not known whether the bacterial Cas9 system would function in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was not known whether such a bacterial system would function in eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "3931fdc1-e214-4050-9483-802cbe65c457",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C17",
+      "claim": "Cas9 can be expressed and localized to the nucleus of human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that Cas9 can be expressed and localized to the nucleus of human cells, and that it assembles with sgRNA in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the fluorescence microscopy data shown in Figure 1B and Western blot in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "7a953022-15b5-4bf8-93f5-ceeb7071bbcf",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C18",
+      "claim": "Cas9:sgRNA complexes can generate double stranded breaks and stimulate non-homologous end joining (NHEJ) repair in genomic DNA at a site complementary to the sgRNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "These complexes can generate double stranded breaks and stimulate non-homologous end joining (NHEJ) repair in genomic DNA at a site complementary to the sgRNA sequence, an activity that requires both Cas9 and the sgRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Surveyor assay data in Figure 1E and sequencing data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "cea5c6f3-22e6-4689-bd25-9eebac526f34",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C19",
+      "claim": "The CLTA genomic locus has previously been targeted and edited using ZFNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The CLTA genomic locus has previously been targeted and edited using ZFNs (Doyon et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "2321e730-0564-4d3b-ab09-dcc6f9a81b70",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C20",
+      "claim": "The 160 kDa Cas9 protein was expressed as a fusion protein bearing an HA epitope, a nuclear localization signal (NLS), and green fluorescent protein (GFP) attached to the C-terminus of Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "The 160 kDa Cas9 protein was expressed as a fusion protein bearing an HA epitope, a nuclear localization signal (NLS), and green fluorescent protein (GFP) attached to the C-terminus of Cas9 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design and is shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "40a903a7-4f18-4063-9f1d-1b9cb43a0ad0",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C21",
+      "claim": "Analysis of cells transfected with a vector encoding the GFP-fused Cas9 revealed abundant Cas9 expression and nuclear localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of cells transfected with a vector encoding the GFP-fused Cas9 revealed abundant Cas9 expression and nuclear localization (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the fluorescence microscopy data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "a661dc7a-86c7-49e8-8111-d3156f477e02",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C22",
+      "claim": "Western blotting confirmed that the Cas9 protein is expressed largely intact in extracts from these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting confirmed that the Cas9 protein is expressed largely intact in extracts from these cells (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Western blot data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "e12261f8-9bef-49ed-9a91-009b56fcabc6",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C23",
+      "claim": "The sgRNA was expressed bearing a 5\u2032-terminal 20-nucleotide sequence complementary to the target DNA sequence, and a 42-nucleotide 3\u2032-terminal stem loop structure required for Cas9 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "To program Cas9, we expressed sgRNA bearing a 5\u2032-terminal 20-nucleotide sequence complementary to the target DNA sequence, and a 42-nucleotide 3\u2032-terminal stem loop structure required for Cas9 binding (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "e085c4a9-26a2-49ef-9b1f-6f23423bf64a",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C24",
+      "claim": "The 3\u2032-terminal sequence of the sgRNA corresponds to the minimal stem-loop structure that has previously been used to program Cas9 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "This 3\u2032-terminal sequence corresponds to the minimal stem-loop structure that has previously been used to program Cas9 in vitro (Jinek et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "9d788bf2-7076-40e2-a698-68c7c38d1d07",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C25",
+      "claim": "The expression of sgRNA was driven by the human U6 (RNA polymerase III) promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of this sgRNA was driven by the human U6 (RNA polymerase III) promoter (Medina and Joshi, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "09ef063b-fd7b-4b33-83e1-af11075129ea",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C26",
+      "claim": "Northern blotting analysis showed that the sgRNA is expressed in cells transfected with the U6 promoter-driven sgRNA plasmid expression vector.",
+      "claim_type": "EXPLICIT",
+      "source": "Northern blotting analysis of RNA extracted from cells transfected with the U6 promoter-driven sgRNA plasmid expression vector showed that the sgRNA is indeed expressed, and that their stability is enhanced by the presence of Cas9 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Northern blot data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "9a225e8f-f79c-421c-a6dc-342d0a9fb964",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C27",
+      "claim": "The stability of sgRNA is enhanced by the presence of Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Northern blotting analysis of RNA extracted from cells transfected with the U6 promoter-driven sgRNA plasmid expression vector showed that the sgRNA is indeed expressed, and that their stability is enhanced by the presence of Cas9 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Northern blot data shown in Figure 1D comparing sgRNA levels with and without Cas9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "097b95f2-7f62-419d-8a82-9ca825c1b70a",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C28",
+      "claim": "Site-specific DSBs are generated in HEK293T cells transfected with Cas9-HA-NLS-mCherry and the CLTA1 sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we investigated whether site-specific DSBs are generated in HEK293T cells transfected with Cas9-HA-NLS-mCherry and the CLTA1 sgRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Surveyor assay data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "47b426fb-7ad0-49f0-bffe-a1166e724788",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C29",
+      "claim": "The Surveyor nuclease assay can detect minor insertions and deletions in the locus resulting from imperfect repair by DSB-induced NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "To do this, we probed for minor insertions and deletions in the locus resulting from imperfect repair by DSB-induced NHEJ using the Surveyor nuclease assay (Qiu et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology and is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "5792fea2-e273-4121-9ca3-9fd83e17a29c",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C30",
+      "claim": "Cleavage of the CLTA locus was detected at a position targeted by the CLTA1 sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, we detected cleavage of the CLTA locus at a position targeted by the CLTA1 sgRNA (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Surveyor assay data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "d704b713-7ed0-4295-8993-ce3bc28a302f",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C31",
+      "claim": "Plasmid DNA cleavage was not observed upon incubation with lysate prepared from cells transfected with the Cas9-HA-NLS-GFP expression vector alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmid DNA cleavage was not observed upon incubation with lysate prepared from cells transfected with the Cas9-HA-NLS-GFP expression vector alone, consistent with the Surveyor assay results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the in vitro cleavage assay data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "71222a3c-f090-4daf-9bd0-e5a900ffb60f",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C32",
+      "claim": "Robust plasmid cleavage was detected when the lysate from Cas9-transfected cells was supplemented with in vitro transcribed CLTA1 sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, robust plasmid cleavage was detected when the lysate was supplemented with in vitro transcribed CLTA1 sgRNA (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the in vitro cleavage assay data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "12122fbf-8e84-4eac-a9f0-a1c6de56dee7",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C33",
+      "claim": "Lysate prepared from cells transfected with both Cas9 and sgRNA expression vectors supported plasmid cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, lysate prepared from cells transfected with both Cas9 and sgRNA expression vectors supported plasmid cleavage, while lysates from cells transfected with the sgRNA-encoding vector alone did not (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the in vitro cleavage assay data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "04c33c7b-cefc-4387-abd9-0d6473707aba",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C34",
+      "claim": "Lysates from cells transfected with the sgRNA-encoding vector alone did not support plasmid cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, lysate prepared from cells transfected with both Cas9 and sgRNA expression vectors supported plasmid cleavage, while lysates from cells transfected with the sgRNA-encoding vector alone did not (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the in vitro cleavage assay data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "36c003b3-3375-47f8-a11f-1ef07d4a595d",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C35",
+      "claim": "A limiting factor for Cas9 function in human cells could be assembly with the sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that a limiting factor for Cas9 function in human cells could be assembly with the sgRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results shown in Figure 2A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "11258513-aac0-4c6e-8b86-e244f50f9185",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C36",
+      "claim": "When exogenous sgRNA was added to lysate from cells transfected with both the Cas9 and sgRNA expression vectors, a substantial increase in DNA cleavage activity was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, when exogenous sgRNA was added to lysate from cells transfected with both the Cas9 and sgRNA expression vectors, a substantial increase in DNA cleavage activity was observed (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the in vitro cleavage assay data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "eb0aeb0d-b07b-4664-ac31-3be298fadb4a",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C37",
+      "claim": "The limiting factor for Cas9 function in HEK293T cells is the expression of the sgRNA or its loading into Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that the limiting factor for Cas9 function in HEK293T cells is the expression of the sgRNA or its loading into Cas9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results shown in Figure 2B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "5c4d0cce-f0df-4152-970f-e33ee56e59fa",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C38",
+      "claim": "Two new versions of the CLTA1 sgRNA were designed to include an additional 4 or 10 base pairs in the helix that mimics the base-pairing interactions between the crRNA and tracrRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Two new versions of the CLTA1 sgRNA were designed to include an additional 4 or 10 base pairs in the helix that mimics the base-pairing interactions between the crRNA and tracrRNA (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "e2b47dd7-d0fa-4a6f-baeb-d20677f572b4",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C39",
+      "claim": "The 3\u2032-end of the guide RNA was extended by five nucleotides based on the native sequence of the S. pyogenes tracrRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the 3\u2032-end of the guide RNA was extended by five nucleotides based on the native sequence of the S. pyogenes tracrRNA (Deltcheva et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "c613e676-35da-4b4d-a9c1-674c178f24ec",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C40",
+      "claim": "The 3\u2032-extended sgRNAs support more efficient Cas9 function in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the 3\u2032-extended sgRNAs support more efficient Cas9 function in vivo, although more quantitative comparisons will be necessary to confirm this conclusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the Surveyor assay data shown in Figure 3B, though the authors note the need for more quantitative analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "fae0fae1-1f18-4512-9a2c-d2543e4b7301",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C41",
+      "claim": "Methods for introducing site-specific double-strand DNA breaks in genomic DNA have transformed our ability to engineer eukaryotic organisms by initiating DNA repair pathways that lead to targeted genetic re-programming.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods for introducing site-specific double-strand DNA (dsDNA) breaks (DSBs) in genomic DNA have transformed our ability to engineer eukaryotic organisms by initiating DNA repair pathways that lead to targeted genetic re-programming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "dcc3300c-7dfc-4907-875e-576b3b26ee56",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C42",
+      "claim": "Alternative strategies for triggering site-specific DNA cleavage in eukaryotic cells are of great interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, alternative strategies for triggering site-specific DNA cleavage in eukaryotic cells are of great interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the motivation for the research, based on the limitations of existing methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "cb2d646e-0327-4049-b8d2-709ab88bb829",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C43",
+      "claim": "A codon-optimized version of Cas9, when programmed by an appropriate sgRNA, successfully assembles into Cas9 targeting complexes to trigger site-specific DNA cleavage and repair by NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that a codon-optimized version of Cas9, when programmed by an appropriate sgRNA, successfully assembles into Cas9 targeting complexes to trigger site-specific DNA cleavage and repair by NHEJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings supported by data in Figures 1-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "690fed7c-283d-4651-ab54-9930becbc36c",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C44",
+      "claim": "The efficiency of NHEJ-induced mutagenesis at the CLTA locus is consistently in the range of 6\u20138%.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of NHEJ-induced mutagenesis at the CLTA locus investigated here is consistently in the range of 6\u20138%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "feac9aef-d564-43c2-b421-4b84ceb3334e",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C45",
+      "claim": "The efficiency of Cas9-mediated genome editing at the CLTA locus is lower than that found for a ZFN pair that recognizes a nearby target sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "This frequency is lower than that found for a ZFN pair that recognizes a nearby target sequence, but is within the range of frequencies observed more generally with ZFNs and TALENs (Bogdanove and Voytas, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on the experimental data shown in Figure 1E and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "f8328f09-f03b-4f16-9709-b0e1a7f00357",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C46",
+      "claim": "The efficiency of Cas9-mediated genome editing is within the range of frequencies observed more generally with ZFNs and TALENs.",
+      "claim_type": "EXPLICIT",
+      "source": "This frequency is lower than that found for a ZFN pair that recognizes a nearby target sequence, but is within the range of frequencies observed more generally with ZFNs and TALENs (Bogdanove and Voytas, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "4cdbf75f-d2dd-4d4e-85ef-5202f73bda29",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C47",
+      "claim": "sgRNA expression and/or its assembly into Cas9, rather than Cas9 expression, localization or folding, presently limits Cas9 function in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that sgRNA expression and/or its assembly into Cas9, rather than Cas9 expression, localization or folding, presently limits Cas9 function in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results shown in Figures 1 and 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "5fc0cabe-7b6f-42cd-a24a-5924b9abd2ef",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C48",
+      "claim": "Higher efficiencies of Cas9-mediated genome targeting could be achieved by optimization of the sgRNA construct design, its expression levels or its subcellular localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher efficiencies of Cas9-mediated genome targeting could be achieved by optimization of the sgRNA construct design, its expression levels or its subcellular localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "dc10eca8-2fee-47a8-ae18-d334d98170a8",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C49",
+      "claim": "The sgRNAs used in this study are not thought to be 5\u2032-capped or 3\u2032-polyadenylated.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the sgRNAs used in this study are not thought to be 5\u2032-capped or 3\u2032-polyadenylated, which may have reduced their stability in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the RNA modifications based on the expression system used.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "4f0f5f86-32b8-46a8-af7b-0d73d3b8a15f",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C50",
+      "claim": "The lack of 5\u2032-cap or 3\u2032-polyadenylation may have reduced sgRNA stability in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the sgRNAs used in this study are not thought to be 5\u2032-capped or 3\u2032-polyadenylated, which may have reduced their stability in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential causes of reduced sgRNA stability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "9c3432b8-4a16-44f2-afe6-4ec9aa7f9f1b",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C51",
+      "claim": "5\u2032 and 3\u2032 end modifications might provide alternative approaches to enhancing Cas9:sgRNA assembly and activity in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This and other 5\u2032 and 3\u2032 end modifications might provide alternative approaches to enhancing Cas9:sgRNA assembly and activity in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "7a4c80d9-64c0-4c59-9182-30c27538f646",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C52",
+      "claim": "The levels of targeting observed in this study have been obtained with a minimal system that relies on simple base pairing to a guide RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the levels of targeting observed in this study have been obtained with a minimal system that relies on simple base pairing to a guide RNA, in contrast to the ZFN and TALEN proteins, which require a new protein to be engineered for each new cleavage site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement comparing the Cas9 system to existing technologies based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "1dbbfecd-564c-4df4-a75e-fc2e869c8906",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C53",
+      "claim": "ZFN and TALEN proteins require a new protein to be engineered for each new cleavage site.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the levels of targeting observed in this study have been obtained with a minimal system that relies on simple base pairing to a guide RNA, in contrast to the ZFN and TALEN proteins, which require a new protein to be engineered for each new cleavage site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about ZFN and TALEN technologies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "70a9d347-4fc3-4ed1-ad3f-4e40a79cc04c",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C54",
+      "claim": "RNA-guided genome editing would offer distinct advantages due to the simplicity of the sgRNA design.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-guided genome editing would thus offer distinct advantages due to the simplicity of the sgRNA design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison with existing technologies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "e2b24289-4f87-441b-92f6-a617bfdd6f45",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C55",
+      "claim": "A powerful feature of the Cas9 system is the potential to program Cas9 with multiple sgRNAs in the same cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not tested explicitly in this study, a powerful feature of this system is the potential to program Cas9 with multiple sgRNAs in the same cell, either to increase the efficiency of targeting at a single locus, or as a means of targeting several loci simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications not tested in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "36e99ef9-d05b-4f2e-849b-9ab381ec08db",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C56",
+      "claim": "Multiple sgRNAs could be used to increase the efficiency of targeting at a single locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not tested explicitly in this study, a powerful feature of this system is the potential to program Cas9 with multiple sgRNAs in the same cell, either to increase the efficiency of targeting at a single locus, or as a means of targeting several loci simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications not tested in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "d1a6fb00-6069-43bd-936d-70077ae9d397",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C57",
+      "claim": "Multiple sgRNAs could be used as a means of targeting several loci simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not tested explicitly in this study, a powerful feature of this system is the potential to program Cas9 with multiple sgRNAs in the same cell, either to increase the efficiency of targeting at a single locus, or as a means of targeting several loci simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications not tested in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "86bb6101-e59d-4081-a64d-7d64ef82e1f9",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C58",
+      "claim": "Multiplexed targeting strategies would find broad application in genome-wide experiments and large-scale research efforts such as the development of multigenic disease models.",
+      "claim_type": "EXPLICIT",
+      "source": "Such strategies would find broad application in genome-wide experiments and large-scale research efforts such as the development of multigenic disease models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "cb2dba03-6e01-4939-8e1b-9dfae6157e19",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C59",
+      "claim": "The programmable Cas9:sgRNA system could potentially transform next-generation genome-scale studies.",
+      "claim_type": "EXPLICIT",
+      "source": "As an inexpensive and rapid mechanism for triggering site-specific genome modification, the programmable Cas9:sgRNA system could potentially transform next-generation genome-scale studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential impact of the technology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "4d874a35-b425-49fa-9dd8-649dfcdde273",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C60",
+      "claim": "The sequence encoding Streptococcus pyogenes Cas9 was codon optimized for human expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence encoding Streptococcus pyogenes Cas9 (residues 1\u20131368) fused to an HA epitope (amino acid sequence DAYPYDVPDYASL), a nuclear localization signal (amino acid sequence PKKKRKVEDPKKKRKVD) was codon optimized for human expression and synthesized by GeneArt (Regensburg, Germany; DNA and protein sequences shown in supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "3caef2f9-a61f-42f3-be8b-f3c7aa9982e7",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C61",
+      "claim": "HEK293T cells were maintained in Dulbecco's modified eagle medium (DMEM) supplemented with 10% fetal bovine serum (FBS) in a 37\u00b0C humidified incubator with 5% CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "HEK293T cells were maintained in Dulbecco's modified eagle medium (DMEM) supplemented with 10% fetal bovine serum (FBS) in a 37\u00b0C humidified incubator with 5% CO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "cfb478bb-b54e-462b-a8bd-8df23beb6fa9",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C62",
+      "claim": "The transfection efficiencies were estimated to be 30\u201350% for Turbofect.",
+      "claim_type": "EXPLICIT",
+      "source": "The transfection efficiencies were estimated to be 30\u201350% for Turbofect (Figures 1E and 2A,B) and 80\u201390% for X-tremegene (Figure 3B), based on the fraction of GFP-positive cells observed by fluorescence microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "0f3cd9c0-1d9a-4aa2-a635-e6e3f6b0dd40",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C63",
+      "claim": "The transfection efficiencies were estimated to be 80\u201390% for X-tremegene.",
+      "claim_type": "EXPLICIT",
+      "source": "The transfection efficiencies were estimated to be 30\u201350% for Turbofect (Figures 1E and 2A,B) and 80\u201390% for X-tremegene (Figure 3B), based on the fraction of GFP-positive cells observed by fluorescence microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "31d5b575-58cd-4fdd-acf4-80473e03f4a1",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C64",
+      "claim": "Cel-1 nuclease recognizes and cleaves DNA helices containing mismatches.",
+      "claim_type": "EXPLICIT",
+      "source": "Cel-1 recognizes and cleaves DNA helices containing mismatches (wild type:mutant hybridization).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about the Cel-1 nuclease assay.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "22f16880-55fc-4408-92ec-8f3b4b3f0705",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C65",
+      "claim": "Four types of indels were identified by Sanger sequencing in 68 clonal amplicons.",
+      "claim_type": "EXPLICIT",
+      "source": "Four types of indels were identified by Sanger sequencing in 68 clonal amplicons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the sequencing data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "c8154764-230c-4906-a3b3-69ddf9b753da",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C66",
+      "claim": "The presence of \u223c2230 and \u223c3100 bp fragments is indicative of Cas9-mediated cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of \u223c2230 and \u223c3100 bp fragments is indicative of Cas9-mediated cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of the in vitro cleavage assay results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "d4dd2c4e-0d53-49d8-8884-fa9967a70eee",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C67",
+      "claim": "Targeted genome engineering in cells and organisms could potentially provide the path to revolutionary applications in human therapies, agricultural biotechnology and microbial engineering.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides serving as an invaluable research tool, targeted genome engineering in cells and organisms could potentially provide the path to revolutionary applications in human therapies, agricultural biotechnology and microbial engineering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "664617aa-f5a4-4129-bc2e-be763ea017c0",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C68",
+      "claim": "Methods of modifying the genome exploit endogenous DNA repair pathways that are initiated by the introduction of site-specific dsDNA cleavages.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods of modifying the genome exploit endogenous DNA repair pathways that are initiated by the introduction of site-specific dsDNA cleavages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about genome editing mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "8686db7c-3206-4f1c-af6b-243b75cea9a6",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C69",
+      "claim": "The results provide a straightforward system of RNA-guided site-specific dsDNA cleavage using the Cas9 protein from a Type II bacterial CRISPR system to promote genome editing in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The results presented here provide a straightforward system of RNA-guided site-specific dsDNA cleavage using the Cas9 protein from a Type II bacterial CRISPR system to promote genome editing in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "3ba30d3f-5399-4ac2-b254-702d55c56186",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C70",
+      "claim": "The results demonstrate the feasibility of RNA-programmed genome editing in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate the feasibility of RNA-programmed genome editing in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results presented in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "bf5636c2-bb03-42ba-86d2-6da7a590e384",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C71",
+      "claim": "A positive signal in the Surveyor assay indicates that genomic DNA cleavage has occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "As DNA repair by NHEJ is typically induced by a DSB, a positive signal in the Surveyor assay indicates that genomic DNA cleavage has occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge about NHEJ repair mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "4b51719c-ee24-479a-a485-5d1a92e969f1",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C72",
+      "claim": "A pair of ZFNs that target a neighboring site in the CLTA locus provided a positive control in the Surveyor assay experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "A pair of ZFNs that target a neighboring site in the CLTA locus provided a positive control in these experiments (Doyon et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "4ba133fc-eacf-43c4-97f6-4f4593b690e7",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C81",
+      "claim": "The CLTA1 target site contains a GG protospacer adjacent motif (PAM).",
+      "claim_type": "EXPLICIT",
+      "source": "The GG nucleotide protospacer adjacent motif (PAM) is highlighted in yellow.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "039d3a04-4cbb-4797-a197-d1022b3865a0",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C82",
+      "claim": "Cas9-mediated cleavage of the two target DNA strands occurs upon unwinding of the target DNA and formation of a duplex between the guide segment of the sgRNA and the target DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9-mediated cleavage of the two target DNA strands occurs upon unwinding of the target DNA and formation of a duplex between the guide segment of the sgRNA and the target DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of Cas9 action based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "918b2bfa-5008-48e0-8df7-f58b00773568",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C83",
+      "claim": "Cas9-mediated cleavage is dependent on the presence of a GG dinucleotide PAM downstream of the target sequence in the target DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This is dependent on the presence of a GG dinucleotide PAM downstream of the target sequence in the target DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a requirement for Cas9 function based on established knowledge from prior studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "9b26b500-389b-4b4d-87e1-85978062006f",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "claim_id": "C84",
+      "claim": "The sgRNA consists of a 20-nt 5\u2032-terminal guide segment followed by a 42-nt stem-loop structure required for Cas9 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The sgRNA consists of a 20-nt 5\u2032-terminal guide segment (blue) followed by a 42-nt stem-loop structure required for Cas9 binding (red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the structure of the sgRNA used in the study, shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1fa8fb00-1887-410d-b8ac-0c7ccb9c77e5",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Codon-optimized Cas9 can be expressed as a fusion protein with HA-NLS-GFP tags and localizes to the nucleus of human HEK293T cells. Western blot analysis confirms largely intact protein expression, and fluorescence microscopy demonstrates abundant nuclear localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C20-C22, and C60 collectively demonstrate successful expression and nuclear localization of Cas9. The Western blot (Figure 1A) confirms protein integrity, fluorescence microscopy (Figure 1B) shows nuclear localization, and the experimental design is clearly described. These are converging lines of evidence supporting functional Cas9 expression in human cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "5746bb63-6983-421d-8500-b9068c8a2c20",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single-guide RNAs (sgRNAs) with a 20-nt guide sequence and 42-nt Cas9-binding stem-loop can be expressed in human cells using the U6 promoter. Northern blot analysis confirms sgRNA expression, and sgRNA stability is enhanced by Cas9 co-expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C23, C25-C27, and C84 are supported by Northern blot data (Figure 1D) showing sgRNA expression and enhanced stability in the presence of Cas9. The experimental design is clearly described and the data directly demonstrate sgRNA expression and Cas9 assembly in human cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "be7928b9-f37a-4204-b4e4-ac06c5265ab3",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cas9:sgRNA complexes induce site-specific double-strand breaks at the CLTA locus in human cells, triggering NHEJ repair that results in insertions and deletions. The Surveyor assay detects cleavage products, and Sanger sequencing of 68 clonal amplicons identifies four types of indels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C18, C28, C30, C65, and C71 are well-supported by converging evidence: Surveyor assay data (Figure 1E) showing cleavage products, sequencing data (Figure 1\u2014figure supplement 1) confirming indels, and appropriate controls (ZFN positive control). Both Cas9 and sgRNA are required for activity, as demonstrated by negative controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "bd2e916e-d82a-4bc7-a4b6-04edd0ea7ef6",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "sgRNA expression and/or assembly into Cas9 is the limiting factor for genome editing activity in human cells. In vitro cleavage assays show that lysates from Cas9-transfected cells require exogenous sgRNA supplementation for robust DNA cleavage, and addition of sgRNA to lysates containing both Cas9 and sgRNA substantially increases cleavage activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C31-C37, C47 are supported by systematic in vitro cleavage experiments (Figures 2A, 2B). The data show no cleavage with Cas9 alone, robust cleavage upon sgRNA addition, and enhanced activity when exogenous sgRNA is added to lysates already containing both components. This clearly identifies sgRNA as the limiting factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "2acb56f4-aca9-45c6-999b-907ae4c6412c",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Extension of the sgRNA 3' end by adding 4-10 base pairs to the crRNA:tracrRNA-mimicking helix and 5 nucleotides from the native tracrRNA sequence enhances DNA targeting activity in vivo, though the authors note that more quantitative comparisons are needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C38-C40 are supported by Surveyor assay data (Figure 3B) showing enhanced cleavage with extended sgRNAs. However, the authors explicitly state that 'more quantitative comparisons will be necessary to confirm this conclusion' (C40), indicating the evidence is preliminary. The result is promising but requires additional validation for definitive support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "a628aa68-2c25-445b-a7f8-79a163393f52",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Codon-optimized Cas9 programmed with sgRNA achieves 6-8% NHEJ-induced mutagenesis efficiency at the CLTA locus, which is lower than a nearby ZFN target but within the general range observed for ZFNs and TALENs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are supported by quantitative data from the Surveyor assays and comparison with ZFN controls (Figure 1E). The efficiency measurements are consistent across experiments, and the comparison to established technologies (ZFNs/TALENs) is appropriately cited and contextualized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "2a1d22cc-497e-468e-a81e-917f0e2bbd6c",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study demonstrates that RNA-programmed genome editing using the bacterial Cas9 system is feasible in human cells and provides a straightforward strategy for introducing site-specific genetic changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C69, C70 represent the main conclusion of the study and are supported by the collective experimental evidence: Cas9 expression and localization (Figures 1A-B), sgRNA expression (Figure 1D), site-specific cleavage (Figure 1E), and mechanistic understanding (Figures 2-3). This is a well-supported overarching conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "a8a4454e-719e-4f1d-88e8-0dc3c3cf2f9d",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Cas9 system offers advantages over ZFNs and TALENs because it relies on simple base pairing to a guide RNA rather than requiring protein engineering for each target site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52 and C54 are supported by the experimental demonstration that sgRNA design is straightforward (only requiring complementary sequence design) compared to protein engineering required for ZFNs/TALENs. This is a valid inference from the demonstrated functionality and comparison with existing technologies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "f098cf0e-9c12-4fce-b406-76803bee66ff",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Transfection efficiencies were 30-50% for Turbofect and 80-90% for X-tremegene, estimated by counting GFP-positive cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 report quantitative measurements of transfection efficiency based on fluorescence microscopy. The method is appropriate and the measurements are clearly stated, though the relatively low efficiency with Turbofect may affect interpretation of the 6-8% editing efficiency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "17200056-b825-496c-83b4-45807246393b",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate that higher Cas9 efficiency could be achieved through sgRNA optimization, and note that the sgRNAs used lack 5'-cap and 3'-polyadenylation, which may reduce stability and could be modified to enhance activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C51 are explicitly speculative statements about potential improvements not tested in the study. While the reasoning is sound (RNA modifications typically enhance stability), these remain untested hypotheses. The claims appropriately identify limitations and future directions but provide no experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "41b7f9c4-9528-4355-8a79-293b36e1ac55",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that multiplexed targeting with multiple sgRNAs could enable simultaneous editing of multiple loci or enhanced efficiency at single loci, with potential applications in genome-wide studies and multigenic disease models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C59 are explicitly speculative ('not tested explicitly in this study') about potential applications. While the concept is logical given the system's design, no experimental evidence is provided for multiplexed targeting. These are reasonable future directions but remain unsupported hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "48063a43-1695-4bed-8434-0b1dc4e8311c",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about CRISPR systems, ZFNs/TALENs, genome editing mechanisms, and the knowledge gap regarding Cas9 function in eukaryotic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C16, C19, C24, C41-C42, C53, C64, C68, C82-C83 represent background knowledge supported by appropriate citations to prior literature. These establish the scientific context and rationale for the study. The citations appear appropriate and the knowledge claims are standard for the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "04cc257a-b38b-40fe-91ab-5abe65ba925e",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological claims describing the Surveyor assay principle, interpretation of cleavage products, and use of ZFN controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C66, C72 describe established methodological approaches with appropriate citations. The Surveyor assay is a standard method for detecting indels, the interpretation of fragment sizes is straightforward, and the ZFN control is appropriately chosen based on prior work at the same locus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "22a1d5d3-88da-461d-9729-a7639660525d",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological details about cell culture conditions and target site characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C81 provide standard methodological details (cell culture conditions) and target site information (PAM sequence) that are clearly described and shown in figures. These are routine experimental details appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    },
+    {
+      "id": "b309d2c3-9e7c-49d7-b386-a621f5950706",
+      "content_id": "39d6d1c4-b365-4266-b743-e01ebfb2ded9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Speculative claim about potential revolutionary applications in therapies, agriculture, and microbial engineering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is explicitly speculative ('could potentially') about future applications beyond the scope of this study. While the potential is reasonable given the technology demonstrated, no evidence is provided for these specific applications. This represents aspirational future work rather than supported findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:36:07.985542Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3931fdc1-e214-4050-9483-802cbe65c457",
+      "result_id": "1fa8fb00-1887-410d-b8ac-0c7ccb9c77e5"
+    },
+    {
+      "claim_id": "2321e730-0564-4d3b-ab09-dcc6f9a81b70",
+      "result_id": "1fa8fb00-1887-410d-b8ac-0c7ccb9c77e5"
+    },
+    {
+      "claim_id": "40a903a7-4f18-4063-9f1d-1b9cb43a0ad0",
+      "result_id": "1fa8fb00-1887-410d-b8ac-0c7ccb9c77e5"
+    },
+    {
+      "claim_id": "a661dc7a-86c7-49e8-8111-d3156f477e02",
+      "result_id": "1fa8fb00-1887-410d-b8ac-0c7ccb9c77e5"
+    },
+    {
+      "claim_id": "4d874a35-b425-49fa-9dd8-649dfcdde273",
+      "result_id": "1fa8fb00-1887-410d-b8ac-0c7ccb9c77e5"
+    },
+    {
+      "claim_id": "da037759-3272-48d0-9bd1-4d3ab6cb6569",
+      "result_id": "5746bb63-6983-421d-8500-b9068c8a2c20"
+    },
+    {
+      "claim_id": "e12261f8-9bef-49ed-9a91-009b56fcabc6",
+      "result_id": "5746bb63-6983-421d-8500-b9068c8a2c20"
+    },
+    {
+      "claim_id": "9d788bf2-7076-40e2-a698-68c7c38d1d07",
+      "result_id": "5746bb63-6983-421d-8500-b9068c8a2c20"
+    },
+    {
+      "claim_id": "09ef063b-fd7b-4b33-83e1-af11075129ea",
+      "result_id": "5746bb63-6983-421d-8500-b9068c8a2c20"
+    },
+    {
+      "claim_id": "9a225e8f-f79c-421c-a6dc-342d0a9fb964",
+      "result_id": "5746bb63-6983-421d-8500-b9068c8a2c20"
+    },
+    {
+      "claim_id": "9b26b500-389b-4b4d-87e1-85978062006f",
+      "result_id": "5746bb63-6983-421d-8500-b9068c8a2c20"
+    },
+    {
+      "claim_id": "63c6aa83-d14e-4229-bc3f-9bf3f8a2aef8",
+      "result_id": "be7928b9-f37a-4204-b4e4-ac06c5265ab3"
+    },
+    {
+      "claim_id": "f64dce95-ece2-4f2e-9f3e-489071bc8a33",
+      "result_id": "be7928b9-f37a-4204-b4e4-ac06c5265ab3"
+    },
+    {
+      "claim_id": "7a953022-15b5-4bf8-93f5-ceeb7071bbcf",
+      "result_id": "be7928b9-f37a-4204-b4e4-ac06c5265ab3"
+    },
+    {
+      "claim_id": "097b95f2-7f62-419d-8a82-9ca825c1b70a",
+      "result_id": "be7928b9-f37a-4204-b4e4-ac06c5265ab3"
+    },
+    {
+      "claim_id": "5792fea2-e273-4121-9ca3-9fd83e17a29c",
+      "result_id": "be7928b9-f37a-4204-b4e4-ac06c5265ab3"
+    },
+    {
+      "claim_id": "22f16880-55fc-4408-92ec-8f3b4b3f0705",
+      "result_id": "be7928b9-f37a-4204-b4e4-ac06c5265ab3"
+    },
+    {
+      "claim_id": "bf5636c2-bb03-42ba-86d2-6da7a590e384",
+      "result_id": "be7928b9-f37a-4204-b4e4-ac06c5265ab3"
+    },
+    {
+      "claim_id": "555635d2-59ce-4030-965f-db8b5e0fd8a2",
+      "result_id": "bd2e916e-d82a-4bc7-a4b6-04edd0ea7ef6"
+    },
+    {
+      "claim_id": "d704b713-7ed0-4295-8993-ce3bc28a302f",
+      "result_id": "bd2e916e-d82a-4bc7-a4b6-04edd0ea7ef6"
+    },
+    {
+      "claim_id": "71222a3c-f090-4daf-9bd0-e5a900ffb60f",
+      "result_id": "bd2e916e-d82a-4bc7-a4b6-04edd0ea7ef6"
+    },
+    {
+      "claim_id": "12122fbf-8e84-4eac-a9f0-a1c6de56dee7",
+      "result_id": "bd2e916e-d82a-4bc7-a4b6-04edd0ea7ef6"
+    },
+    {
+      "claim_id": "04c33c7b-cefc-4387-abd9-0d6473707aba",
+      "result_id": "bd2e916e-d82a-4bc7-a4b6-04edd0ea7ef6"
+    },
+    {
+      "claim_id": "36c003b3-3375-47f8-a11f-1ef07d4a595d",
+      "result_id": "bd2e916e-d82a-4bc7-a4b6-04edd0ea7ef6"
+    },
+    {
+      "claim_id": "11258513-aac0-4c6e-8b86-e244f50f9185",
+      "result_id": "bd2e916e-d82a-4bc7-a4b6-04edd0ea7ef6"
+    },
+    {
+      "claim_id": "eb0aeb0d-b07b-4664-ac31-3be298fadb4a",
+      "result_id": "bd2e916e-d82a-4bc7-a4b6-04edd0ea7ef6"
+    },
+    {
+      "claim_id": "4cdbf75f-d2dd-4d4e-85ef-5202f73bda29",
+      "result_id": "bd2e916e-d82a-4bc7-a4b6-04edd0ea7ef6"
+    },
+    {
+      "claim_id": "c1ed90a6-73a2-477e-91a1-7ef39a333540",
+      "result_id": "2acb56f4-aca9-45c6-999b-907ae4c6412c"
+    },
+    {
+      "claim_id": "5c4d0cce-f0df-4152-970f-e33ee56e59fa",
+      "result_id": "2acb56f4-aca9-45c6-999b-907ae4c6412c"
+    },
+    {
+      "claim_id": "e2b47dd7-d0fa-4a6f-baeb-d20677f572b4",
+      "result_id": "2acb56f4-aca9-45c6-999b-907ae4c6412c"
+    },
+    {
+      "claim_id": "c613e676-35da-4b4d-a9c1-674c178f24ec",
+      "result_id": "2acb56f4-aca9-45c6-999b-907ae4c6412c"
+    },
+    {
+      "claim_id": "cb2d646e-0327-4049-b8d2-709ab88bb829",
+      "result_id": "a628aa68-2c25-445b-a7f8-79a163393f52"
+    },
+    {
+      "claim_id": "690fed7c-283d-4651-ab54-9930becbc36c",
+      "result_id": "a628aa68-2c25-445b-a7f8-79a163393f52"
+    },
+    {
+      "claim_id": "feac9aef-d564-43c2-b421-4b84ceb3334e",
+      "result_id": "a628aa68-2c25-445b-a7f8-79a163393f52"
+    },
+    {
+      "claim_id": "f8328f09-f03b-4f16-9709-b0e1a7f00357",
+      "result_id": "a628aa68-2c25-445b-a7f8-79a163393f52"
+    },
+    {
+      "claim_id": "d04aac09-8aef-4fe0-91f7-d0afc48b0b78",
+      "result_id": "2a1d22cc-497e-468e-a81e-917f0e2bbd6c"
+    },
+    {
+      "claim_id": "8686db7c-3206-4f1c-af6b-243b75cea9a6",
+      "result_id": "2a1d22cc-497e-468e-a81e-917f0e2bbd6c"
+    },
+    {
+      "claim_id": "3ba30d3f-5399-4ac2-b254-702d55c56186",
+      "result_id": "2a1d22cc-497e-468e-a81e-917f0e2bbd6c"
+    },
+    {
+      "claim_id": "7a4c80d9-64c0-4c59-9182-30c27538f646",
+      "result_id": "a8a4454e-719e-4f1d-88e8-0dc3c3cf2f9d"
+    },
+    {
+      "claim_id": "70a9d347-4fc3-4ed1-ad3f-4e40a79cc04c",
+      "result_id": "a8a4454e-719e-4f1d-88e8-0dc3c3cf2f9d"
+    },
+    {
+      "claim_id": "cfb478bb-b54e-462b-a8bd-8df23beb6fa9",
+      "result_id": "f098cf0e-9c12-4fce-b406-76803bee66ff"
+    },
+    {
+      "claim_id": "0f3cd9c0-1d9a-4aa2-a635-e6e3f6b0dd40",
+      "result_id": "f098cf0e-9c12-4fce-b406-76803bee66ff"
+    },
+    {
+      "claim_id": "5fc0cabe-7b6f-42cd-a24a-5924b9abd2ef",
+      "result_id": "17200056-b825-496c-83b4-45807246393b"
+    },
+    {
+      "claim_id": "dc10eca8-2fee-47a8-ae18-d334d98170a8",
+      "result_id": "17200056-b825-496c-83b4-45807246393b"
+    },
+    {
+      "claim_id": "4f0f5f86-32b8-46a8-af7b-0d73d3b8a15f",
+      "result_id": "17200056-b825-496c-83b4-45807246393b"
+    },
+    {
+      "claim_id": "9c3432b8-4a16-44f2-afe6-4ec9aa7f9f1b",
+      "result_id": "17200056-b825-496c-83b4-45807246393b"
+    },
+    {
+      "claim_id": "e2b24289-4f87-441b-92f6-a617bfdd6f45",
+      "result_id": "41b7f9c4-9528-4355-8a79-293b36e1ac55"
+    },
+    {
+      "claim_id": "36e99ef9-d05b-4f2e-849b-9ab381ec08db",
+      "result_id": "41b7f9c4-9528-4355-8a79-293b36e1ac55"
+    },
+    {
+      "claim_id": "d1a6fb00-6069-43bd-936d-70077ae9d397",
+      "result_id": "41b7f9c4-9528-4355-8a79-293b36e1ac55"
+    },
+    {
+      "claim_id": "86bb6101-e59d-4081-a64d-7d64ef82e1f9",
+      "result_id": "41b7f9c4-9528-4355-8a79-293b36e1ac55"
+    },
+    {
+      "claim_id": "cb2dba03-6e01-4939-8e1b-9dfae6157e19",
+      "result_id": "41b7f9c4-9528-4355-8a79-293b36e1ac55"
+    },
+    {
+      "claim_id": "96ac4ac4-b226-42c7-84eb-89e22f09606b",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "abcf74b2-7851-4be3-9132-61d8c3e12213",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "8d7c91e8-7101-481e-9e07-71113c4052cc",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "6caf7493-e5c6-4b02-976e-a060ac6e61b5",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "a29f997c-c4d0-4df3-9f95-e803b168c869",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "0fffec30-46f6-4b22-beee-39a89e580dad",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "09f0d76a-25a3-42cc-8dc3-e27e92a020c4",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "76072684-06d1-4b2d-8a11-18b017d344a1",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "c8bc7d0d-9812-4044-8f63-cdc75026036b",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "ad24fd4b-0dfc-4bb3-a9ec-3085440369f8",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "cea5c6f3-22e6-4689-bd25-9eebac526f34",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "e085c4a9-26a2-49ef-9b1f-6f23423bf64a",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "fae0fae1-1f18-4512-9a2c-d2543e4b7301",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "dcc3300c-7dfc-4907-875e-576b3b26ee56",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "1dbbfecd-564c-4df4-a75e-fc2e869c8906",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "31d5b575-58cd-4fdd-acf4-80473e03f4a1",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "664617aa-f5a4-4129-bc2e-be763ea017c0",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "039d3a04-4cbb-4797-a197-d1022b3865a0",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "918b2bfa-5008-48e0-8df7-f58b00773568",
+      "result_id": "48063a43-1695-4bed-8434-0b1dc4e8311c"
+    },
+    {
+      "claim_id": "47b426fb-7ad0-49f0-bffe-a1166e724788",
+      "result_id": "04cc257a-b38b-40fe-91ab-5abe65ba925e"
+    },
+    {
+      "claim_id": "c8154764-230c-4906-a3b3-69ddf9b753da",
+      "result_id": "04cc257a-b38b-40fe-91ab-5abe65ba925e"
+    },
+    {
+      "claim_id": "4b51719c-ee24-479a-a485-5d1a92e969f1",
+      "result_id": "04cc257a-b38b-40fe-91ab-5abe65ba925e"
+    },
+    {
+      "claim_id": "3caef2f9-a61f-42f3-be8b-f3c7aa9982e7",
+      "result_id": "22a1d5d3-88da-461d-9729-a7639660525d"
+    },
+    {
+      "claim_id": "4ba133fc-eacf-43c4-97f6-4f4593b690e7",
+      "result_id": "22a1d5d3-88da-461d-9729-a7639660525d"
+    },
+    {
+      "claim_id": "d4dd2c4e-0d53-49d8-8884-fa9967a70eee",
+      "result_id": "b309d2c3-9e7c-49d7-b386-a621f5950706"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2222 @@
+{
+  "submission": {
+    "id": "97122449-1d0f-4124-b367-80e97c66df63",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T06:08:38.460910Z",
+    "updated_at": "2025-11-27T06:08:38.460910Z"
+  },
+  "content": [
+    {
+      "id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "submission_id": "97122449-1d0f-4124-b367-80e97c66df63",
+      "content_type": "manuscript",
+      "content_text": "# Fungal effector Ecp6 outcompetes host immune receptor for chitin binding through intrachain LysM dimerization\n\n## Authors\n\n- Andrea S\u00e1nchez-Vallet<sup>1</sup>\n- Raspudin Saleem-Batcha<sup>3</sup>\n- Anja Kombrink<sup>2</sup>\n- Guido Hansen<sup>3</sup>\n- Dirk-Jan Valkenburg<sup>2</sup>\n- Bart PHJ Thomma<sup>2</sup> \u2020\n- Jeroen R Mesters<sup>3</sup> \u2020\n\n### Affiliations\n\n1. Centro de Biotecnolog\u00eda y Gen\u00f3mica de Plantas Universidad Polit\u00e9cnica de Madrid Madrid Spain\n2. Laboratory of Phytopathology Wageningen University Wageningen Netherlands\n3. Institute of Biochemistry, Center for Structural and Cell Biology in Medicine University of L\u00fcbeck L\u00fcbeck Germany\n4. Centre for BioSystems Genomics Wageningen Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhile host immune receptors detect pathogen-associated molecular patterns to activate immunity, pathogens attempt to deregulate host immunity through secreted effectors. Fungi employ LysM effectors to prevent recognition of cell wall-derived chitin by host immune receptors, although the mechanism to compete for chitin binding remained unclear. Structural analysis of the LysM effector Ecp6 of the fungal tomato pathogen Cladosporium fulvum reveals a novel mechanism for chitin binding, mediated by intrachain LysM dimerization, leading to a chitin-binding groove that is deeply buried in the effector protein. This composite binding site involves two of the three LysMs of Ecp6 and mediates chitin binding with ultra-high (pM) affinity. Intriguingly, the remaining singular LysM domain of Ecp6 binds chitin with low micromolar affinity but can nevertheless still perturb chitin-triggered immunity. Conceivably, the perturbation by this LysM domain is not established through chitin sequestration but possibly through interference with the host immune receptor complex.\n\n## Introduction\n\nFungi constitute an evolutionarily and ecologically diverse group of microorganisms. Although most species are saprophytic, many are causative agents of disease and include plant pathogens that cause considerable yield losses in agricultural crops worldwide (Skamnioti and Gurr, 2009; Oliver, 2012). To sense the presence of potential pathogens, hosts employ cell surface receptors that detect conserved pathogen-associated molecular patterns (PAMPs) to activate immunity (Medzhitov and Janeway, 1997; Boller and Felix, 2009). Chitin, an N-acetyl-D-glucosamine (GlcNAc) homopolymer, is the primary structural component of fungal cell walls and is recognized as a PAMP by plant cell surface receptors that contain extracellular lysin motifs (LysMs) (Felix et al., 1993; Shibuya et al., 1993; Shibuya et al., 1996; Kombrink et al., 2011). The first chitin receptor has been cloned from rice (Oryza sativa) as the chitin oligosaccharide elicitor-binding protein (CEBiP; Kaku et al., 2006) that forms a receptor complex in a ligand-dependent manner that furthermore includes the chitin elicitor receptor kinase-1 (OsCERK1; Shimizu et al., 2010). Similarly, Arabidopsis thaliana CERK1 binds chitin and is required for chitin-triggered immunity (Miya et al., 2007; Wan et al., 2008; Iizasa et al., 2010; Petutschnig et al., 2010). However, no homologs of rice CEBiP could be implicated in chitin-triggered immunity against fungal infection in Arabidopsis (Shinya et al., 2012; Wan et al., 2012). Recently, a crystal structure of the AtCERK1 ectodomain was determined, revealing chitin binding to one of the three AtCERK1 LysMs only (Protein Data Bank code 4EBZ; Liu et al., 2012). LysM2 of AtCERK1 binds three GlcNAc residues of a longer chitin oligomer in a shallow groove on the surface of the protein, with both ends of the oligomer as well as one half side of each of the three bound GlcNAc residues protruding into the solvent (Liu et al., 2012). Biochemical experiments suggest that sufficiently long chitin oligomers act as bivalent ligands, leading to ligand-induced AtCERK1 dimerization that is required for immune signaling (Liu et al., 2012).\n\nThe evolution of interactions between microbial pathogens and their hosts involves a continuous arms race, in which pathogens secrete effectors to deregulate host immunity (de Jonge et al., 2011). The leaf mold fungus Cladosporium fulvum abundantly secretes the LysM-containing effector protein Ecp6 (for extracellular protein 6; Bolton et al., 2008) during colonization of its host tomato. Ecp6 acts as a scavenger of chitin fragments and thus prevents recognition of the fungus by host immune receptors (de Jonge et al., 2010). Intriguingly, Ecp6 homologs occur throughout the fungal kingdom, suggesting a fundamental role of chitin scavenging in fungal pathogenicity (Bolton et al., 2008; de Jonge and Thomma, 2009). Indeed, LysM effectors from the fungal wheat pathogen Mycosphaerella graminicola and the rice pathogen Magnaporthe oryzae suppress chitin-triggered immunity (Marshall et al., 2011; Mentlak et al., 2012). However, the mechanism by which LysM effectors outcompete plant receptors for chitin binding remain unknown thus far.\n\nLysM-containing proteins are broadly distributed in bacteria, plants, fungi, and animals (Buist et al., 2008; Kombrink et al., 2011). Nevertheless, only few tertiary LysM structures have been reported in addition to that of AtCERK1 (Bateman and Bycroft, 2000; Bielnicki et al., 2006; Koharudin et al., 2011; Liu et al., 2012). The canonical three-dimensional LysM domain structure consists of a \u03b2\u03b1\u03b1\u03b2-fold, in which two \u03b1-helices are packed against one side of a two-stranded antiparallel \u03b2-sheet. Based on NMR spectroscopy, the loop between the first \u03b2-sheet and the first \u03b1-helix and the loop between the second \u03b1-helix and the second \u03b2-sheet were shown to physically interact with chitin oligomers in a 1:1 stoichiometry with an affinity binding constant of up to 21 \u00b5M (Ohnuma et al., 2008; Koharudin et al., 2011). The AtCERK1 ectodomain binds chitin oligomers with a similar affinity, up to 45 \u00b5M for (GlcNAc)8, as determined by isothermal titration calorimetry (Liu et al., 2012).\n\nHere, we report the crystal structure of Ecp6 to a resolution of 1.6 \u00c5, revealing a novel mechanism for chitin binding by LysMs that developed in fungi, involving substrate-induced intrachain dimerization of two LysM domains to form a buried intramolecular chitin-binding groove. The composite LysM1\u2013LysM3 binding site shows ultra-high chitin-binding affinity, thus explaining how LysM effectors outcompete plant host receptors for chitin binding.\n\n## Results\n\n### Ecp6 crystal structure reveals ligand-induced intrachain LysM dimerization\n\nTo understand the molecular mechanism of LysM effector chitin scavenging, we pursued a crystal structure of the C. fulvum LysM effector Ecp6. To this end, Ecp6 was heterologously produced in the yeast Pichia pastoris and purified. Initial Ecp6 vapor-diffusion crystallization screening consistently yielded intertwined plate-like crystals that grew overnight. These crystals were harvested, smashed in stabilizing mother liquid and used for micro-seeding (Bergfors, 2003). In this manner, large Ecp6 protein crystals that belonged to space group P3221 were obtained. The structure was determined by single-wavelength anomalous dispersion (SAD) and refined to a resolution of 1.6 \u00c5 with an Rwork and Rfree of 20.3% and 22.5%, respectively (Figure 1 and Table 1). The structure model comprises nearly the complete mature protein sequence, from amino acid residues 7 to 195. Residues 1\u20136 and 196\u2013199 of the structure were not defined in the electron density map, suggesting that they occur as flexible tails on both ends of the protein.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00790/elife-00790-fig1-v1.jpg)\n\n**Figure 1.:** (A) Crystal structure model of an Ecp6 dimer in which the left monomer is colored orange and the three LysMs of the right monomer are indicated in three shades of blue with the flexible loop between LysM1 and LysM2 in gray. The chitin tetramer (green sticks) and four disulfide bridges (yellow sticks) are indicated. Furthermore, in the right monomer, the two (putative) chitin-binding loops are shown in red and green for each of the LysMs. (B) Omit map (2Fo\u2212Fc; contoured at 1\u03c3 above the mean) with phases calculated omitting (GlcNAc)4. LysMs are colored in three shades of blue as in panel A. (C) Interactions between Ecp6 and (GlcNAc)4. Hydrogen bonds are indicated in red, and atoms involved in hydrophobic contacts are represented with transparent surface. Only residues forming H-bonds with the chitin are labeled. (D) Clustal-W alignment of the three LysM domains of Ecp6. The distribution of the \u03b1-helices (helices) and \u03b2-sheets (arrows) are shown. The two chitin-binding sites in LysM1 and LysM3 are indicated with a red line for the first loop between the first \u03b2-sheet and the first \u03b1-helix and a green line for the second loop between the second \u03b1-helix and the second \u03b2-sheet, as indicated in the right monomer in panel A. Blue arrows point towards residues targeted for mutagenesis in the three LysM domains.\n\n**Table 1.**\n Data collection and refinement statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Native</th>\n      <th>SAD</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">Data collection statistics</td>\n    </tr>\n    <tr>\n      <td>Beamline</td>\n      <td>BL14.1 - BESSY</td>\n      <td>ID29 - ESRF</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.91814</td>\n      <td>1.70</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td colspan=\"2\">P 32 2 1</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions a, b, c (\u00c5)</td>\n      <td>57.5, 57.5, 118.7</td>\n      <td>57.9, 57.9, 119.7</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>49.80\u20131.59 (1.68\u20131.59)</td>\n      <td>46.24\u20132.10 (2.21\u20132.1)</td>\n    </tr>\n    <tr>\n      <td>Rsym* (%)</td>\n      <td>5.1 (44.9)</td>\n      <td>6.7 (40.9)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3I\u2020</td>\n      <td>20.6 (4.4)</td>\n      <td>24.2 (2.9)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>98.4 (94.1)</td>\n      <td>97.7 (85.9)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>9.2 (8.2)</td>\n      <td>15.4 (5.6)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Phasing statistics (2.5 \u00c5 resolution cut-off)</td>\n    </tr>\n    <tr>\n      <td>Anomalous completeness (%)</td>\n      <td>\u2013</td>\n      <td>96.9 (81.2)</td>\n    </tr>\n    <tr>\n      <td>Anomalous multiplicity</td>\n      <td>\u2013</td>\n      <td>8.3 (3.0)</td>\n    </tr>\n    <tr>\n      <td>Figure of Merit (FOM)</td>\n      <td>\u2013</td>\n      <td>0.372</td>\n    </tr>\n    <tr>\n      <td>Map Skew</td>\n      <td>\u2013</td>\n      <td>0.14</td>\n    </tr>\n    <tr>\n      <td>Correlation of local R.m.s. density</td>\n      <td>\u2013</td>\n      <td>0.82</td>\n    </tr>\n    <tr>\n      <td>Correlation Coefficient (CC)</td>\n      <td>\u2013</td>\n      <td>0.76</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Refinement statistics</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>49.8\u20131.6</td>\n      <td>31.0\u20132.10</td>\n    </tr>\n    <tr>\n      <td>No. of reflections (work/free)</td>\n      <td>29,078/1546</td>\n      <td>13,072/689</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree\u2021 (%)</td>\n      <td>20.3 (24.0)/22.5 (27.1)</td>\n      <td>21.0 (23.3)/26.6 (34.2)</td>\n    </tr>\n    <tr>\n      <td>No. of atoms/average B-factor</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>1392/17.6</td>\n      <td>1387/34.33</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>119/37.5</td>\n      <td>53/44.61</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>99/24.3</td>\n      <td>115/39.90</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations bond lengths (\u00c5)</td>\n      <td>0.016</td>\n      <td>0.018</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations bond angles (\u00b0)</td>\n      <td>1.81</td>\n      <td>1.94</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot (% preferred region/% allowed region)</td>\n      <td>96.74/3.26</td>\n      <td>95.72/4.28</td>\n    </tr>\n  </tbody>\n</table>\n\n_The values in the parentheses refer to the highest resolution shell.*Rsym = (\u2211\u2502Ihkl\u2212<Ihkl>\u2502)/(\u2211 Ihkl), where the average intensity <Ihkl> is taken over all symmetry equivalent measurements and Ihkl is the measured intensity for any given reflection.\u2020I/\u03c3I is the mean reflection intensity divided by the estimated error.\u2021Rwork = \u2502\u2502Fo\u2502\u2212\u2502Fc\u2502\u2502/\u2502Fo\u2502, where Fo and Fc are the observed and calculated structure factor amplitudes, respectively. Rfree is equivalent to Rwork but calculated for 5% of the reflections chosen at random and omitted from the refinement process._\n\nEcp6 has a tightly packed structure that is stabilized by four disulfide bridges, and two spatially close glycosylation sites (Asn104 and Asn193) were identified. The three LysMs of Ecp6 (LysM1\u2013LysM3) share the typical \u03b2\u03b1\u03b1\u03b2-fold, with LysM1 being separated by a long and flexible linker from a compact and rigid body formed by LysM2 and LysM3 (Figure 1A). Furthermore, the crystal packing revealed the existence of an Ecp6 homodimer that was also observed in gel filtration chromatography during protein purification, with a flat buried surface of 943 \u00c52 at LysM2 and LysM3 as calculated using PISA (Protein Interfaces, Surfaces and Assemblies; http://www.ebi.ac.uk/pdbe/prot_int/pistart.html; Figure 1A; Krissinel and Henrick, 2007).\n\nUnexpectedly, the calculated 2Fo\u2212Fc map showed a well-defined electron density for a bound chitin tetramer (GlcNAc)4 in a large interdomain groove between LysM1 and LysM3 (\u223c16 \u00c5 long and \u223c11 \u00c5 across its widest points; Figure 1B), although the protein crystallized in the absence of exogenously added chitin. The chitin oligomer was likely co-purified with Ecp6 and derived from the cell wall of the P. pastoris expression system. The observation that the chitin oligomer remained adhered to Ecp6 during the protein purification procedure suggests that it is bound to the groove with high affinity. Thus, our finding illustrates the remarkable potential of Ecp6 to instantly and strongly bind chitin after secretion by fungal cells, a scavenging activity that is expected to similarly occur after secretion by C. fulvum to prevent chitin oligosaccharides from activating host immune receptors (de Jonge et al., 2010). The loop between the first \u03b2-sheet and the first \u03b1-helix and the loop between the second \u03b1-helix and the second \u03b2-sheet in both LysM1 and LysM3 interact with chitin (Figure 1), similar to the previously reported chitin binding by single LysM domains including LysM2 of AtCERK1 (Ohnuma et al., 2008; Koharudin et al., 2011; Liu et al., 2012).\n\nEvidently, LysM1 and LysM3 of Ecp6 cooperate to bring two chitin-binding regions together, composing a novel type of binding groove in which one chitin tetramer is nearly completely buried and engaged in many noncovalent interactions, including 12 hydrogen bonds (Figure 1C). Specifically, the groove is shaped by the amino acids 20GDTLT24 and 46PNLIEL51 of LysM1 and 150GDLFV154 and 176PSKL179 of LysM3. The chitin binding is further strengthened by noncovalent interactions among proximate residues on the complementary surfaces of LysM1 (N45 and 47NLIE50) and LysM3 (150GDLFVD155) (Figure 1). The concerted action of two LysM domains that compose a single binding groove and the many noncovalent bonds that are involved in the interaction with chitin may collectively provide a mechanistic explanation for high affinity substrate binding, resulting in sequestration by Ecp6 of cell wall chitin from the heterologous host P. pastoris. Furthermore, the solute-exposed ends of the chitin tetramer in the structure suggest that longer oligomers can also be bound to the groove, in which case four GlcNAc units of a chitin oligomer make direct contact with the protein while the remaining parts of the molecule protrude into the solvent (Figure 1).\n\n### LysM2 of Ecp6 also contains a functional chitin-binding site\n\nTo investigate the contribution of the LysM1\u2013LysM3 binding groove to chitin scavenging by Ecp6, mutants in the chitin-binding site of LysM1 and LysM3 were generated (Figures 1D and 2A), produced in P. pastoris, and tested for the ability to suppress chitin-triggered immunity in tomato cells (de Jonge et al., 2010). Two residues that are in close contact with the chitin oligomer and present in the loop between the first \u03b2-sheet and the first \u03b1-helix (T22 and L152) and in the loop between the second \u03b1-helix and the second \u03b2-sheet (N47 and S177) of LysM1 and LysM3 were chosen to disrupt chitin binding to the LysM1\u2013LysM3 groove (Figures 1D and 2A). The selected residues were substituted by relatively large arginine or lysine amino acids to maximize interference with chitin binding. Circular dichroism (CD) spectra of the mutant proteins were obtained to confirm the correct folding.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00790/elife-00790-fig2-v1.jpg)\n\n**Figure 2.:** (A) Ecp6 monomer in which the residues targeted for mutagenesis are labeled and represented using sticks. The chitin oligomer is in green sticks. (B) Structural alignment of the three Ecp6 LysM domains. Each of the LysMs are colored in three shades of blue and the chitin tetramer is in green sticks. The two chitin-binding loops are shown in red and green for each of the LysMs, as indicated in Figure 1A.\n\nIsothermal titration calorimetry (ITC) analysis demonstrated that all mutants were able to bind chitin (Figure 3). It was previously reported that Ecp6 protein, carrying three LysM domains, binds chitin with 3:1 stoichiometry (de Jonge et al. 2010) by building on the general observation that LysM domains bind their substrate with 1:1 stoichiometry. However, the crystal structure revealed that only LysM2 is available for chitin binding when Ecp6 is produced in P. pastoris, as the LysM1\u2013LysM3 groove is occupied by chitin (Figure 1). Therefore, we integrated the heat measurements using a single binding site model, confirming that P. pastoris-produced Ecp6 binds chitin with 1:1 stoichiometry and a dissociation constant (kd) of 4.5 \u00b5M (Figure 3A). The T22R mutant in LysM1 binds chitin with similar thermodynamic values as Ecp6 produced in P. pastoris (kd = 4.69 \u00b5M; n = 0.75; Figure 3D). However, chitin binding by the mutants N47K, L152R and S177K did not follow a sigmoidal curve, suggesting that more than one binding event occurs in these mutants (Figure 3). Binding by the N47K mutant could be fitted to a \u2018two binding site\u2019 model, revealing that the second binding displayed similar biochemical characteristics (kd = 5.2 \u00b5M; n = 0.984) as Ecp6 produced in P. pastoris (Figure 3E). These results likely reflect chitin binding to LysM2 and to the partially disrupted LysM1\u2013LysM3 groove, as only one of these two LysMs was mutagenized in a single mutant.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00790/elife-00790-fig3-v1.jpg)\n\n**Figure 3.:** Raw data (upper panels) and integrated heat measurements (lower panels) from isothermal titration calorimetry of (GlcNAc)6 binding to Ecp6 produced in P. pastoris (A) and mutants in LysM3 (B and C) and in LysM1 (D and E). Lines in the lower panel represent best-fit curves for one binding site model. ITC control experiments involving chitin ligand into the buffer (PBS), of buffer injection into the buffer, and buffer injection into Ecp6 protein solution are included in panel A.\n\nNext, we assessed the ability of the various mutants to suppress chitin-triggered immunity in tomato cells. Unfortunately, the two mutants that were generated in LysM1 (T22R and N47K) resulted in an autoactive protein that triggered a response of the tomato cells, leading to medium alkalinization already in the absence of chitin (Figure 4A). Most probably the induction of medium pH shift by the mutants in LysM1 was due to improper protein folding, as is suggested by CD spectra when compared with wild-type Ecp6 protein (Figure 4B). Possibly, these mutant proteins carry P. pastoris chitin with low affinity that is released in the cell suspension, thus activating a pH shift in the absence of exogenously added chitin. Consequently, these mutants could not be assessed for their ability to suppress chitin-triggered immunity. In contrast, the CD spectra of the two mutants in LysM3 (L152R and S177K) were very similar to that of wild-type Ecp6 protein, indicating that they adopt the same secondary structure (Figure 4D). As these mutants (L152R and S177K) did not trigger a response of the tomato cells in the absence of chitin oligosaccharides, they could be tested for their scavenging ability. Interestingly, both mutants still prevented chitohexaose [(GlcNAc)6]-induced medium alkalinization. These results suggest that also LysM2 contributes to the suppression of chitin-triggered immunity by P. pastoris-produced Ecp6 in the cell suspension assay (Figure 4C). Indeed, the high sequence and tertiary structure conservation of the three LysM domains of Ecp6 suggests that LysM2 contains a functional chitin-binding site (Figure 1D; Figure 2B). To investigate this, conserved residues in the putative chitin-binding site of LysM2 were selected for mutagenesis (Figures 1D and 2A). Based on the structural alignment, T95 and D121 were mutagenized because of their localization in the two loops that may be involved in chitin binding by LysM2. P. pastoris-produced mutant proteins (that contain chitin in the LysM1\u2013LysM3 groove) were tested for their capacity to suppress chitin-triggered immunity (de Jonge et al., 2010). Interestingly, mutants T95R and D121K no longer suppressed the chitin oligosaccharide-induced pH shift, revealing that LysM2 contains a functional chitin-binding site that contributes to the suppression of chitin-triggered immunity in the cell suspension assay (Figure 5A). Indeed, ITC experiments confirmed that the P. pastoris-produced mutants T95R and D121K were impaired in the binding of exogenously added chitohexaose (Figure 5C and 5D). Correct folding of the LysM2 mutants was confirmed by CD spectra that were similar to that of wild-type Ecp6 protein (Figure 5B). Collectively, these data confirm that suppression of chitin-triggered immunity in the tomato cell suspension by P. pastoris-produced Ecp6 is established through the \u00b5M chitin-binding activity of LysM2 and explains why chitin scavenging by LysM3 mutants was not impaired. However, calculation of the equilibrium between Ecp6 protein and chitin oligosaccharide levels at the concentrations that were used, and that were well below the measured dissociation constant of LysM2, reveals that only a small amount of the available chitin oligosaccharide is bound by this LysM. Consequently, the suppression of chitin-triggered immunity by LysM2 is unlikely to work via chitin oligosaccharide sequestration.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00790/elife-00790-fig4-v1.jpg)\n\n**Figure 4.:** (A and C) The maximum pH shift determined on treatment with 10 nM (GlcNAc)6 and 100 nM wild-type or mutants in LysM1 (A) and LysM3 (B) after normalization to treatment with (GlcNAc)6 in the absence of Ecp6 protein is represented. Bars present averages of at least two replications with standard deviations. Significant differences with (GlcNAc)6 treatment are indicated with asterisks and significant differences with Ecp6 treatment are indicated with plusses (t-test p\u22640.05). (B and D) Circular dichroism spectra of the mutants in LysM1 (B) and LysM3 (D) at 10 \u00b5M.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00790/elife-00790-fig5-v1.jpg)\n\n**Figure 5.:** (A) Prevention of chitin-triggered medium alkalinization in the tomato cell suspension assay by Ecp6 mutants. The maximum pH shift determined on treatment with 10 nM (GlcNAc)6 and 100 nM Ecp6 or the mutants on LysM2 (T95R and D121K) after normalization to treatment with (GlcNAc)6 in the absence of Ecp6 is represented. Bars present averages of three replicates with standard deviations. Significant differences with (GlcNAc)6 treatment are indicated with asterisks, and significant differences with Ecp6 treatment are indicated with plusses (t-test p\u22640.05). (B) Circular dichroism spectra of the mutants on LysM2 at 10 \u00b5M. (C) T95R and (D) D121K mutants on LysM2 are impaired in chitin binding. Raw data (upper panels) and integrated heat measurements (lower panels) from isothermal titration calorimetry of (GlcNAc)6 binding to T95R and D121K mutants produced in P. pastoris.\n\n### The LysM1\u2013LysM3 interdomain groove binds chitin with ultrahigh affinity\n\nBased on the assumption that we have not assessed the full chitin-binding capacity of the Ecp6 effector protein thus far, but only assessed the \u00b5M affinity of the solitary LysM2, we attempted to obtain chitin-free Ecp6 protein. Unfortunately, we did not succeed in recovering functional chitin-free Ecp6 after denaturing with 8 M urea. As an alternative strategy, the production of Ecp6 in mammalian (HEK293) cells was pursued. A relatively small amount (4 mg) of chitin-free Ecp6 was obtained from these cells. We confirmed that the Ecp6 protein produced in mammalian cells was able to suppress chitin-triggered immunity in the tomato cell suspension assay (Figure 6) and subsequently performed substrate affinity measurements (Figure 7). Interestingly, ITC revealed biphasic binding of the chitin hexamer (GlcNAc)6 to chitin-free Ecp6. A first binding phase in which one chitin molecule was bound with ultra-high affinity (kd = 280 pM; n = 0.99) occurred, followed by binding of an additional molecule with lower affinity (kd = 1.70 \u00b5M; n = 1.03) (Figure 7B). Both binding events displayed 1:1 stoichiometry, demonstrating that the three LysM domains of a single Ecp6 monomer are collectively involved in two binding events (Figure 7B). As P. pastoris-produced Ecp6, in which the LysM1\u2013LysM3 groove is blocked by a P. pastoris chitin fragment, displayed similar characteristics as the second binding event of mammalian cell-produced Ecp6 (Figure 7A,B), we conclude that the \u00b5M affinity should be attributed to LysM2. To confirm this hypothesis, we also produced the LysM2 mutant T95R, which only has the LysM1\u2013LysM3 site available for chitin binding, in mammalian cells. As this mutant binds a single chitin molecule with high affinity (kd = 4.95 nM) (Figure 7C), we concluded that the ultra-high chitin-binding affinity displayed by wild-type Ecp6 corresponds to the LysM1\u2013LysM3 binding groove. The slightly lower dissociation constant that is measured for the LysM1\u2013LysM3 groove in the HEK293-produced LysM2 mutant when compared with the HEK293-produced wild-type Ecp6 may be attributed to disabled cooperativity that may occur between both binding sites in the wild-type protein. We subsequently analyzed the role of the LysM1\u2013LysM3 groove in suppression of chitin-triggered immunity in the tomato cell suspension assay with the HEK293-produced LysM2 mutant T95R. As expected, this mutant protein was able to prevent chitin-triggered medium alkalinization (Figure 6). Consequently, the composite LysM1\u2013LysM3 binding site provides a single binding event with ultra-high (pM) affinity for chitin binding, the highest chitin-binding affinity described in nature, which is extremely competent to sequester chitin oligosaccharides. Through this effector activity, C. fulvum prevents chitin oligosaccharides from activating host immune receptors during infection of tomato.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00790/elife-00790-fig6-v1.jpg)\n\n**Figure 6.:** The maximum pH shift determined on treatment with 10 nM (GlcNAc)6 and 100 nM Ecp6 or T95R mutant after normalization to treatment with (GlcNAc)6 in the absence of Ecp6 is represented. Bars present averages of three replicates with standard deviations. Significant differences with (GlcNAc)6 treatment are indicated with asterisks, and significant differences with Ecp6 treatment are indicated with plusses (t-test p\u22640.05).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00790/elife-00790-fig7-v1.jpg)\n\n**Figure 7.:** Raw data (upper panels) and integrated heat measurements (lower panels) from isothermal titration calorimetry of (GlcNAc)6 binding to Ecp6 produced in P. pastoris (A) and in HEK293 (B) and T95R mutant produced in HEK293 (C). Lines in the lower panel represent best-fit curves for one (P. pastoris-produced T95R) or two (HEK293-produced) binding site model.\n\n## Discussion\n\nVarious fungal pathogens secrete LysM effectors to scavenge chitin fragments and thus avoid recognition by host immune receptors that activate immune responses (Bolton et al., 2008; de Jonge et al., 2010; Marshall et al., 2011; Mentlak et al., 2012; Kombrink et al., 2011). However, the mechanism used by these LysM effectors to efficiently compete for chitin binding with immune receptors remained unclear. Our structural and biochemical analysis of the LysM effector Ecp6 has unveiled a novel mechanism for chitin binding that evolved in fungi, in which the concerted action of two LysM domains results in sequestration of a chitin oligomer with ultra-high affinity. The flexible loop between LysM1 and the rigid LysM2\u2013LysM3 body enables the sandwiching of four GlcNAc units of a chitin oligomer in the interface of the LysM1\u2013LysM3 dimer by 12 hydrogen bonds and many other noncovalent interactions, resulting in ultra-high (pM) affinity. Based on the structure of the binding groove, it is anticipated that the intrachain LysM dimerization is substrate induced rather than pre-formed, as the chitin oligomer is completely buried in between the two LysM domains that are in very close proximity to make contact with the chitin oligomer. A pre-formed binding site would require a chitin oligomer to slide along the two LysM domain binding sites, which is practically impossible. At minimum, the binding groove has to breathe to let the oligomer enter before the chitin oligomer is bound. Furthermore, the noncovalent interactions among proximate residues on the complementary surfaces of LysM1 and LysM3 are likely not sufficient to keep a pre-formed binding groove in a closed conformation. More realistically, and considering the long and flexible linker that separates LysM1 from the LysM2\u2013LysM3 body, the binding groove significantly opens in absence of the ligand and closes upon ligand binding, leading to substrate-induced intrachain LysM domain dimerization. Longer chitin oligomers may protrude from the Ecp6 protein into the solvent on both ends, which is particularly relevant since these are considered to be the most biologically active in eliciting chitin-triggered immune responses (Felix et al., 1993; Liu et al., 2012). Indeed, previously determined affinity constants were similar for chitin tetra-, penta-, hexa- and octamers (de Jonge et al., 2010). Likely, as soon as Ecp6 is secreted from the plasma membrane of C. fulvum, it will sequester a chitin oligosaccharide that remains firmly attached to the protein. The global arrangement of the three LysMs of the Arabidopsis AtCERK1 chitin receptor, all three facing in outward direction on the surface of the protein, clearly prevents the establishment of intrachain LysM dimerization in a similar fashion as observed in Ecp6 (Figure 8). Moreover, only a single of the three AtCERK1 LysM domains is apparently involved in substrate binding, and only a single chitin oligomer is bound by a receptor molecule (Liu et al., 2012). Consequently, AtCERK1 binds (GlcNAc)6 with a considerably lower affinity (kd = 44.8 \u00b5M; Liu et al., 2012) than the LysM1\u2013LysM3 binding groove of Ecp6 (kd = 280 pM; Figure 7B). A tomato receptor for chitin has not been identified until now. However, it has been described based on radiolabeling assays that tomato cells and microsomal membranes can bind chitin oligomers with binding constants of 1.4 nM and 23 nM, respectively (Baureithel et al., 1994). Also, these affinities are lower than that of the LysM1\u2013LysM3 binding groove of Ecp6. Considering also the high amount of Ecp6 effector protein that is secreted, especially during the initial stages of the infection (Bolton et al., 2008), these data collectively explain how C. fulvum, and possibly also other fungal pathogens (de Jonge and Thomma, 2009; Marshall et al., 2011; Mentlak et al., 2012), manage to suppress chitin-triggered immunity during infection of their hosts.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00790/elife-00790-fig8-v1.jpg)\n\n**Figure 8.:** In contrast to Ecp6 (A), the global arrangement of the LysMs (colored in three shades of blue and with chitin-binding loops in red and green) in the AtCERK1 ectodomain does not allow the formation of an intrachain LysM dimer (B). Only one of the three LysMs is reported to bind a chitin oligomer (Liu et al., 2012).\n\nIn Arabidopsis, AtCERK1 receptors have been suggested to bind in tandem to long chitin oligomers, prompting dimerization and activation of immune signaling (Liu et al., 2012). Thus, considering LysM dimerization as a mechanism for substrate binding, also interchain LysM dimerization may be exploited by nature. In this study as well as in previous studies (de Jonge et al., 2010), it was found that P. pastoris-produced Ecp6 is able to suppress chitin-triggered immunity of tomato cells although only LysM2 is available for chitin binding. Moreover, P. pastoris-produced LysM2 mutants in Ecp6 were impaired in prevention of chitin-triggered alkalinization of tomato cell suspensions (Figure 5). In this respect it is surprising that the affinity that was determined for chitin binding by LysM2 is lower than previously determined affinities for chitin binding by tomato cells (Baureithel et al., 1994). However, it needs to be noted that different methods have been used to determine these affinities, and that the binding assays were performed under different conditions that furthermore differ from those in planta during the interaction with the pathogen. Because the concentrations of P. pastoris-produced Ecp6 (100 nM) and chitin (10 nM) that were used in the alkalinization experiment are much lower than the LysM2 dissociation constant (4.5 \u00b5M), P. pastoris-produced Ecp6 will only sequester a small portion of the available chitin oligosaccharides, and the amount of remaining, unbound, chitin oligosaccharides should be sufficient to activate chitin-triggered immunity. Thus, the observation that LysM2 is able to suppress chitin-triggered immunity strongly suggests that this LysM suppresses chitin-triggered immunity through another mechanism than through chitin oligosaccharide sequestration. Potentially, LysM2 may be involved in perturbation of the activation of chitin-triggered immunity by preventing the immune receptor dimerization that is required for the activation of immune signaling (Liu et al., 2012). Ecp6 may bind to chitin oligomers that have been bound by host immune receptor monomers, thus physically blocking host immune receptor dimerization. These mechanisms may explain how LysM2 of Ecp6 may perturb chitin-triggered immune signaling. In conclusion, it appears that the C. fulvum LysM effector Ecp6 is able to suppress chitin-triggered immunity through two mechanisms; efficient chitin oligosaccharide sequestration through a ligand-induced composite LysM1\u2013LysM3 binding groove, and secondly a mechanism exerted by LysM2 that does not involve chitin oligosaccharide sequestration but may involve perturbation of host immune receptor complexes. Future studies should reveal whether, and how, perturbation of chitin-triggered immunity by LysM2 occurs in the interaction of C. fulvum with tomato.\n\nConvergent evolution towards recognition of the same ligand by molecules of taxonomically diverse organisms frequently occurs, as exemplified by the perception of bacterial flagellin by the mammalian and plant immune receptors TLR5 and FLS2, although these receptors recognize different PAMP motifs within the same ligand (Felix et al., 1999; Smith et al., 2003; Chinchilla et al., 2006). In contrast, our study on chitin perception by LysM proteins shows that convergent evolution has brought about different modes to interact with the same PAMP motif in taxonomically diverse organisms by structurally diverse proteins (Figure 8).\n\n## Materials and methods\n\n### Protein production\n\nThe pGEM-T (Invitrogen, Carlsbad, CA) vector containing His6-FLAG tagged Ecp6 (de Jonge et al., 2010) was used to obtain the mutant constructs by PCR using overlapping primers (T22R: forward TGACCGCCTCACCTCCATTG and reverse TGAGGCGGTCACCCTTGAC; N47K: forward CCCCAAACTCATCGAGCTCGGCGC and reverse CGATGAGTTTGGGGTTGGCGAG; T95R: forward GAACCCAAAGGCCATCGATGTTGG and reverse GTGAGACGGTCGCCGCTG; D121K: forward GAACCCAAAGGCCATCGATGTTGG and reverse CGATGGCCTTTGGGTTCTCGATCTG; L152R: forward GTGACCGTTTCGTCGATTTGG and reverse ACGAAACGGTCACCGGCC; S177K: AACCCAAAGAAGCTCAAGGTTGGTCAGC and reverse GAGCTTCTTTGGGTTAACGTTGTTG) that contained the corresponding nucleotide mismatch, followed by digestion of the template DNA by DpnI. A pPIC9 vector (Invitrogen) containing His6-FLAG tagged Ecp6 was used to express Ecp6 in Pichia pastoris (de Jonge et al., 2010). Purification was performed using a Ni2+-NTA Superflow column (Qiagen, Valencia, CA). Chitin-free Ecp6 was produced deploying HEK293 cells (Genscript, Piscataway, NJ). After codon optimization, a signal peptide sequence in Ecp6 gene construct, which already contained a His6 and Flag tag on the N-terminus, was added. The recombinant plasmids encoding Ecp6 and the T95R mutant were transiently transfected into 100 ml suspension of HEK293 cell cultures. The target protein was captured from the cell culture supernatant by HiTrap chelating HP 5 ml (GE Healthcare, Milwaukee, WI) followed by buffer exchange. The purified proteins were analyzed using SDS-PAGE and Western blot using the primary antibody Mouse-anti-His mAb. Quantification was performed based on the absorbance of the protein solution at 280 nm.\n\n### Chitin-triggered alkalinization of tomato cell suspension\n\nMedium alkalinization experiments were performed as previously described (Felix et al., 1993; de Jonge et al., 2010). Briefly, 2.5 ml aliquots of a suspension of tomato cell line Msk8 in 12-well culture plates on a rotary shaker at 200 rpm were allowed to equilibrate for at least 2 hr. On addition of chitin oligosaccharides (Isosep AB, Tullinge, Sweden), the pH of the medium was measured, and the maximum increase of the pH (\u0394pHmax) that occurred within 3\u20135 min after application of chitin oligosaccharides was calculated. As previously noted by others as well, the maximum pH shift obtained after chitin stimulation varied little within an experiment when using the same batch of cells, but varied significantly between different experiments when using different batches of cells (Felix et al., 1998). Consequently, the maximum pH shift varied between 0.06 and 0.14 for the different experiments. In each experiment, the \u0394pHmax was normalized to a (GlcNAc)6 control (10 nM). Prior to addition, mixtures of Ecp6 protein (100 nM) and chitin oligosaccharides (10 nM) were kept at room temperature for at least 10 min while shaking gently. All experiments were performed at least three times.\n\n### Crystallization conditions and structure determination\n\nP. pastoris-produced Ecp6 was further purified by gel filtration chromatography (Superdex 75; GE Healthcare) in 20 mM HEPES, pH 7.0, and 50 mM NaCl. Large single crystals were only obtained by micro-seeding. To this end, intertwined plate-like crystals that grew overnight in the initial Ecp6 vapor-diffusion crystallization screening were harvested, smashed in stabilizing mother liquid, and used for micro-seeding (Bergfors, 2003), using a reservoir with 200 mM ammonium sulfate, 100 mM sodium acetate, pH 4.6, and 20\u201330% PEG MME 2000 (wt/vol). A SAD experimental dataset was obtained from an I3C (5-amino-2,4,6-triiodoisophthalic acid; Jena Biosciences, Jena, Germany) soaked Ecp6 crystal at ESRF beamline ID29 (Grenoble, France) (Gabadinho et al., 2010). A native high-resolution dataset was collected at BL14.1 of the BESSY II storage ring (Berlin, Germany) (Mueller et al., 2012). Datasets were processed with MOSFLM (Leslie and Powell, 2007) and XDS (Kabsch, 2010) and scaled and merged using SCALA (Evans, 1997). Initial phases were calculated using PHENIX AUTOSOL (Adams et al., 2002). Automatic model building failed because of the sequence homology between the individual LysM domains and because of the additional density for the ligand. Therefore, manual model building in COOT (Emsley and Cowtan, 2004) was used instead. The structure model was finally refined to 1.6 \u00c5 resolution using REFMAC5 (Vagin et al., 2004). The structure was validated using the wide range of tools offered by the program COOT. In addition, structures were validated by the RCSB Protein Data Bank (PDB) services as part of the Auto Deposition Input Tool (ADIT) process (Berman et al., 2000). All structural figures were created with PyMOL (DeLano Scientific/Schroedinger).\n\n### Isothermal titration calorimetry\n\nIsothermal titration calorimetry (ITC) experiments were performed at 25\u00b0C following standard procedures using a Microcal VP-ITC calorimeter (GE-Healthcare). P. pastoris-produced wild-type Ecp6 (30 \u00b5M) and the mutants L152R (38 \u00b5M), S177K (30 \u00b5M), T22R (30 \u00b5M), N47K (20 \u00b5M), T95R (30 \u00b5M), and D121K (20 \u00b5M), containing a chitin tetramer in the LysM1-LysM3 groove, or 8 \u00b5M of chitin-free Ecp6 or T95R mutant, produced in HEK293 cells, were titrated with 1 injection of 1 \u00b5l, followed by 33 injections of 8 \u00b5l of (GlcNAc)6 (Isosep AB, Tullinge, Sweden) at 400 \u00b5M for P. pastoris-produced Ecp6, S177K, T22R, and N47K, 200 \u00b5M for P. pastoris-produced L152R, 800 \u00b5M for P. pastoris-produced T95R, or 200 \u00b5M for HEK293 produced-Ecp6. Both ligand and protein were suspended in PBS, pH 7.2. Data were analyzed using Origin (OriginLab) and fitted to the models describing one (for P. pastoris-produced protein) and two types (for HEK293-produced Ecp6) of binding sites. Experiments were repeated three times with similar results.\n\n### Circular dichroism\n\nCD spectra were recorded on Jasco J-715 from 190 to 250 nm at 24\u00b0C using a 0.1 cm path length cell. Proteins were at a final concentration of 10.6 \u00b5M in water. Measurements were recorded at 1 nm wavelength increments at 100 nm/min by using a 1 nm bandwidth, 0.25 s response time. Final spectra are the average of four replicates.\n\n### Accession codes\n\nFor structural data, see Protein Data Bank ID codes 4B8V and 4B9H.\n",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "dc41dc7e-7d9a-46aa-841d-ea0e888e586a",
+      "submission_id": "97122449-1d0f-4124-b367-80e97c66df63",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jean Greenberg, University of Chicago , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00790.012](https://doi.org/10.7554/eLife.00790.012)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cFungal effector Ecp6 outcompetes host immune receptor for chitin binding through intrachain LysM dimerization\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, Detlef Weigel, and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe authors wish to understand the molecular basis by which ECP6, a secreted fungal protein, suppresses chitin-induced responses in tomato. ECP6 has LysM domains that bind chitin. The authors propose that it is the ability of these LysM domains within ECP6 to bind chitin that is responsible for immune suppression, through a model in which chitin is directly sequestered from the receptor.\n\nThe current work employs structural analysis to guide functional and biochemical experiments. The excellent structural analysis was based on protein expressed in Pichia pastoris. ECP6 purified from Pichia already contains GlcNAc4. It is argued that a longer GlcNAc chain could possibly bind in the same way. This is relevant since longer chains are more active as elicitors of defense.\n\nBased on the structure and binding measurements, the authors argue that the high affinity binding site composed of LysM1-3 is essential for the ability of ECP6 to suppress chitin-induced innate immunity. However, the data supporting this in the tomato alkalinization assay are not presented (this could be done using the T95R mutant produced by HEK293 cells: this data is alluded to in the legend of Figure 6, but the figure itself does not show this). Given that the LysM1\u20133 site is blocked either by NAG4 or mutation in all other alkalinization assays, it is only mutations in the low affinity LysM2 that are shown to affect the ability to suppress innate immunity.\n\nA major concern for the authors to address is how a low affinity interaction can effectively suppress chitin-induced alkalinization. Chitin is a highly potent elicitor; some biological effects can be measured with nmol or even pmol amounts of chitin. Judging from the amount of chitin used by the authors and the amount of ECP6, it appears that a lot of unbound chitin would still be available to elicit alkalinization. In the absence of Pichia-produced Ecp6, 10 nM of chitin (NAG6) elicits the alkalization response. With Pichia-produced Ecp6, the concentration of free chitin should still be 9.8 nM. It seems most unlikely that tomato cells are only sensitive to 10 nM chitin, but not to 9.8 nM. A dose response experiment with chitin should be done to establish the sensitivity of the assay, preferably also with Ecp6 produced by yeast and by mammalian cells. If you are near the threshold of responsiveness for this assay, it might explain how a slight reduction in the total chitin could result in reduced alkalinization. Otherwise, assuming the ITC binding data are correct, the LysM2 domain does not directly out-compete for chitin-induced responses in the assay, and something else must be going on. The authors need to discuss this point and consider that their model for how ECP6 affects defense activation by chitin via the LysM2 domain may not be correct.\n\nThe authors discussed the possibility that since AtCERK1 has been reported to be a low affinity chitin receptor, the low affinity of LysM2 is sufficient to compete and this explains how ECP6 can suppress innate immunity. The authors should re-consider this argument in light of the wealth of data in the field showing that chitin oligomers induce a variety of plant innate immunity responses at low nM and even pM levels. Additionally, they are using the tomato bioassay. In the classic experiments, chitin binds to tomato cells with very high affinity. Hence, as mentioned above, the uM levels of chitin binding by Ecp6 LysM2 do not seem to be sufficient to explain suppression of alkalinization.\n\nAdditional points that the authors should address are outlined below:\n\n1) The results of the tomato protoplast assay are an important part of the manuscript. They should be mentioned in the Abstract (and maybe at the end of the Introduction as well), especially in the context of the structure-based mutants that no longer support suppression of chitin-triggered immunity. This would directly link the in vitro and in vivo assays.\n\n2) The authors state that the L152R and S177K mutants are not autoactive, but they do show some pH shift relative to Ecp6. The authors need to provide statistical analysis of all the alkalinization data. The legend should include what the maximum pH shift was for each assay (and as mentioned above, a dose response establishing the sensitivity of the assay should be provided).\n\n3) The authors favor a model in which intrachain dimerization is substrate induced. What is the evidence for this: why shouldn't the binding site be pre-formed in the protein?\n\n4) Do you actually know that the chitin oligomer bound to Ecp6 purified from Pichia is (GlcNAc)4? Could it be longer? It could be possible to positively identify this by mass spectrometry.\n\n5) Please further discuss or modify the presentation of the ITC in Figure 3. Were the T22R and N47K data fitted to a model (indicated by the lines joining the points)? If so, what was the result?\n\n6) The authors need to comment on the differences obtained from their previous paper (de Jonge et al, Science 2010): in that paper, three binding events were documented; here it is two. What is the explanation for the difference?\n\n[Editors' note: further clarifications were requested prior to acceptance, as described below.]\n\nThe reviewers agree that the publication of the ECP6 structure will be a significant contribution to the field. It is clear that the LysM1\u20133 binding site has sufficient affinity to work as the authors suggest. However, since the LysM2 site can also work, apparently, in the absence of LysM1\u20133, it does beg the question as to what mechanism, either direct competition or, perhaps, other events, are the major factor in the action of ECP6.\n\nThe reviewers previously brought up the problem of interpretation of the chitin binding assays. Specifically, calculation of the equilibrium between protein and chitin levels indicates that significant free chitin would exist in their assays. At the concentrations being used, well below the measured Kd for the LysM1\u20133 mutant (with LysM2 intact), a 10-fold excess of protein over ligand will not result in all the ligand being bound to the protein. In fact, virtually none of it will be sequestered. Therefore, prior to adding the pre-incubation mix to the tomato cells, 0.22 nM complex is formed leaving 99.8 nM free protein and 9.8 nM free ligand. If the authors can provide an alternative mathematical explanation for how the protein can sequester the ligand under the conditions used, they should show this explicitly.\n\nOne hypothesis that could lead to the sequestration of chitin in solution is the presence of an \u201cextra factor\u201d in the assay mix that significantly increases the affinity of Ecp6-LysM2 for chitin (lowering the Kd). It would be pure speculation what this could be. The authors do indicate in the manuscript that the LysM2 binding domain is unlikely to work via sequestering chitin, but they should make this conclusion stronger given the calculation above.\n\nThe authors claim to satisfy very different binding models to their ITC data for Ecp6 (comparison of past published work and present analysis). Therefore, the authors should provide some control ITC traces looking at buffer injections into the protein, ligand injection into buffer (no protein) and buffer to buffer. This will demonstrate that the heats measured are coming from the interactions. It is satisfactory that this is only provided for wild-type Ecp6.\n",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cbf9c21e-4ad1-42d7-88de-68b4c64861ac",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C1",
+      "claim": "Fungi employ LysM effectors to prevent recognition of cell wall-derived chitin by host immune receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Fungi employ LysM effectors to prevent recognition of cell wall-derived chitin by host immune receptors, although the mechanism to compete for chitin binding remained unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about fungal LysM effectors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "7ea87e5f-7599-4811-ac2f-776bbff143a9",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C2",
+      "claim": "The mechanism for LysM effectors to compete for chitin binding was previously unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Fungi employ LysM effectors to prevent recognition of cell wall-derived chitin by host immune receptors, although the mechanism to compete for chitin binding remained unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "7c6c47cb-396b-4ab5-870f-ef25772497d1",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C3",
+      "claim": "Ecp6 has three LysM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The three LysMs of Ecp6 (LysM1\u2013LysM3) share the typical \u03b2\u03b1\u03b1\u03b2-fold, with LysM1 being separated by a long and flexible linker from a compact and rigid body formed by LysM2 and LysM3 (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the three LysM domains and their structural arrangement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "3bd0d09a-515e-4c6f-97a0-38638aba769f",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C4",
+      "claim": "Ecp6 binds chitin through intrachain LysM dimerization involving LysM1 and LysM3.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural analysis of the LysM effector Ecp6 of the fungal tomato pathogen Cladosporium fulvum reveals a novel mechanism for chitin binding, mediated by intrachain LysM dimerization, leading to a chitin-binding groove that is deeply buried in the effector protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this as a finding from structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "3cab457e-b8c4-4777-8cf9-4360efead59b",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C5",
+      "claim": "The composite LysM1-LysM3 binding site of Ecp6 involves two of the three LysMs.",
+      "claim_type": "EXPLICIT",
+      "source": "This composite binding site involves two of the three LysMs of Ecp6 and mediates chitin binding with ultra-high (pM) affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this structural finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "719f5925-71c8-41a8-b363-abd54563b218",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C6",
+      "claim": "The LysM1-LysM3 composite binding site of Ecp6 binds chitin with picomolar (pM) affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "This composite binding site involves two of the three LysMs of Ecp6 and mediates chitin binding with ultra-high (pM) affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a finding from binding studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "78b18e7a-6b6b-48f9-879c-13856a767fc5",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C7",
+      "claim": "The singular LysM2 domain of Ecp6 binds chitin with low micromolar affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the remaining singular LysM domain of Ecp6 binds chitin with low micromolar affinity but can nevertheless still perturb chitin-triggered immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this binding affinity measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "79d5ccc3-e8c5-4579-8512-953ca73093d5",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C8",
+      "claim": "LysM2 of Ecp6 can perturb chitin-triggered immunity despite its lower binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the remaining singular LysM domain of Ecp6 binds chitin with low micromolar affinity but can nevertheless still perturb chitin-triggered immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as an experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "d137ad71-4601-452f-b430-b48bb49aeff5",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C9",
+      "claim": "LysM2 may perturb chitin-triggered immunity through interference with the host immune receptor complex rather than chitin sequestration.",
+      "claim_type": "EXPLICIT",
+      "source": "Conceivably, the perturbation by this LysM domain is not established through chitin sequestration but possibly through interference with the host immune receptor complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as a speculative interpretation of the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "12fe4f72-caf9-4c22-8db0-716e945256fa",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C10",
+      "claim": "Many fungal species are causative agents of disease in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Although most species are saprophytic, many are causative agents of disease and include plant pathogens that cause considerable yield losses in agricultural crops worldwide (Skamnioti and Gurr, 2009; Oliver, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "a64d6134-c8db-48f0-a898-765a3e28ba10",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C11",
+      "claim": "Fungal plant pathogens cause considerable yield losses in agricultural crops worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Although most species are saprophytic, many are causative agents of disease and include plant pathogens that cause considerable yield losses in agricultural crops worldwide (Skamnioti and Gurr, 2009; Oliver, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "150cbe92-e206-47c7-9164-dada4b652e5c",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C12",
+      "claim": "Hosts employ cell surface receptors to detect conserved pathogen-associated molecular patterns (PAMPs) to activate immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "To sense the presence of potential pathogens, hosts employ cell surface receptors that detect conserved pathogen-associated molecular patterns (PAMPs) to activate immunity (Medzhitov and Janeway, 1997; Boller and Felix, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "ca514c70-0fe6-4b29-b98f-8a8772621a2e",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C13",
+      "claim": "Chitin is an N-acetyl-D-glucosamine (GlcNAc) homopolymer.",
+      "claim_type": "EXPLICIT",
+      "source": "Chitin, an N-acetyl-D-glucosamine (GlcNAc) homopolymer, is the primary structural component of fungal cell walls and is recognized as a PAMP by plant cell surface receptors that contain extracellular lysin motifs (LysMs) (Felix et al., 1993; Shibuya et al., 1993; Shibuya et al., 1996; Kombrink et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "321b1aae-3893-48e1-9a6c-ca6f19b6bb44",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C14",
+      "claim": "Chitin is the primary structural component of fungal cell walls.",
+      "claim_type": "EXPLICIT",
+      "source": "Chitin, an N-acetyl-D-glucosamine (GlcNAc) homopolymer, is the primary structural component of fungal cell walls and is recognized as a PAMP by plant cell surface receptors that contain extracellular lysin motifs (LysMs) (Felix et al., 1993; Shibuya et al., 1993; Shibuya et al., 1996; Kombrink et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "a0a49897-b004-4107-b073-9b8641775301",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C15",
+      "claim": "Chitin is recognized as a PAMP by plant cell surface receptors containing extracellular LysM motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Chitin, an N-acetyl-D-glucosamine (GlcNAc) homopolymer, is the primary structural component of fungal cell walls and is recognized as a PAMP by plant cell surface receptors that contain extracellular lysin motifs (LysMs) (Felix et al., 1993; Shibuya et al., 1993; Shibuya et al., 1996; Kombrink et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "6e959ca9-6483-48d7-9ce5-951064d5599d",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C16",
+      "claim": "CEBiP is the first chitin receptor cloned from rice.",
+      "claim_type": "EXPLICIT",
+      "source": "The first chitin receptor has been cloned from rice (Oryza sativa) as the chitin oligosaccharide elicitor-binding protein (CEBiP; Kaku et al., 2006) that forms a receptor complex in a ligand-dependent manner that furthermore includes the chitin elicitor receptor kinase-1 (OsCERK1; Shimizu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kaku et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "42d8e3aa-9cfa-4020-ab4d-8784b5a76696",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C17",
+      "claim": "CEBiP forms a receptor complex with OsCERK1 in a ligand-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The first chitin receptor has been cloned from rice (Oryza sativa) as the chitin oligosaccharide elicitor-binding protein (CEBiP; Kaku et al., 2006) that forms a receptor complex in a ligand-dependent manner that furthermore includes the chitin elicitor receptor kinase-1 (OsCERK1; Shimizu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "829c8f5f-bf5b-4a15-93e4-b9302f0f8485",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C18",
+      "claim": "Arabidopsis thaliana CERK1 binds chitin and is required for chitin-triggered immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Arabidopsis thaliana CERK1 binds chitin and is required for chitin-triggered immunity (Miya et al., 2007; Wan et al., 2008; Iizasa et al., 2010; Petutschnig et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "feb55c25-cae5-4942-8ea7-966f47ec0850",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C19",
+      "claim": "No homologs of rice CEBiP could be implicated in chitin-triggered immunity against fungal infection in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no homologs of rice CEBiP could be implicated in chitin-triggered immunity against fungal infection in Arabidopsis (Shinya et al., 2012; Wan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "e024953b-9192-4d98-87f9-333c97f33dc6",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C20",
+      "claim": "The crystal structure of the AtCERK1 ectodomain reveals chitin binding to one of the three AtCERK1 LysMs only.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a crystal structure of the AtCERK1 ectodomain was determined, revealing chitin binding to one of the three AtCERK1 LysMs only (Protein Data Bank code 4EBZ; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Liu et al., 2012 and reference to a PDB structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "bd9e0c22-018d-4fbe-a29a-acf0eafa1e11",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C21",
+      "claim": "LysM2 of AtCERK1 binds three GlcNAc residues of a longer chitin oligomer in a shallow groove on the surface of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "LysM2 of AtCERK1 binds three GlcNAc residues of a longer chitin oligomer in a shallow groove on the surface of the protein, with both ends of the oligomer as well as one half side of each of the three bound GlcNAc residues protruding into the solvent (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Liu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "4b9242d9-02f9-4870-aa33-7fb5ab23a4b9",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C22",
+      "claim": "Sufficiently long chitin oligomers act as bivalent ligands, leading to ligand-induced AtCERK1 dimerization required for immune signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical experiments suggest that sufficiently long chitin oligomers act as bivalent ligands, leading to ligand-induced AtCERK1 dimerization that is required for immune signaling (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Liu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "492ce0a4-92b6-4682-aaad-3bdaf7b05be2",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C23",
+      "claim": "Pathogens secrete effectors to deregulate host immunity in an evolutionary arms race.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolution of interactions between microbial pathogens and their hosts involves a continuous arms race, in which pathogens secrete effectors to deregulate host immunity (de Jonge et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "22560f02-9181-4e8f-af66-7183d4cfed52",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C24",
+      "claim": "Cladosporium fulvum abundantly secretes the LysM-containing effector protein Ecp6 during colonization of tomato.",
+      "claim_type": "EXPLICIT",
+      "source": "The leaf mold fungus Cladosporium fulvum abundantly secretes the LysM-containing effector protein Ecp6 (for extracellular protein 6; Bolton et al., 2008) during colonization of its host tomato.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bolton et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "2f11a534-4e43-4812-a96a-26c1e33e1ea8",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C25",
+      "claim": "Ecp6 acts as a scavenger of chitin fragments and prevents recognition of the fungus by host immune receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Ecp6 acts as a scavenger of chitin fragments and thus prevents recognition of the fungus by host immune receptors (de Jonge et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to de Jonge et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "c2c66a04-ca11-439f-8b31-1f8c2ed9ffa9",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C26",
+      "claim": "Ecp6 homologs occur throughout the fungal kingdom.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, Ecp6 homologs occur throughout the fungal kingdom, suggesting a fundamental role of chitin scavenging in fungal pathogenicity (Bolton et al., 2008; de Jonge and Thomma, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "28d9ed82-c9ac-40b1-88b4-9570f78a980d",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C27",
+      "claim": "The occurrence of Ecp6 homologs throughout the fungal kingdom suggests a fundamental role of chitin scavenging in fungal pathogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, Ecp6 homologs occur throughout the fungal kingdom, suggesting a fundamental role of chitin scavenging in fungal pathogenicity (Bolton et al., 2008; de Jonge and Thomma, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the widespread occurrence of Ecp6 homologs, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "7fe73a7d-a404-417a-8a20-0b6624b654a8",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C28",
+      "claim": "LysM effectors from Mycosphaerella graminicola and Magnaporthe oryzae suppress chitin-triggered immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, LysM effectors from the fungal wheat pathogen Mycosphaerella graminicola and the rice pathogen Magnaporthe oryzae suppress chitin-triggered immunity (Marshall et al., 2011; Mentlak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Marshall et al., 2011 and Mentlak et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "55a0eba2-c1fb-477b-8bfd-2c13e4cde7f6",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C29",
+      "claim": "LysM-containing proteins are broadly distributed in bacteria, plants, fungi, and animals.",
+      "claim_type": "EXPLICIT",
+      "source": "LysM-containing proteins are broadly distributed in bacteria, plants, fungi, and animals (Buist et al., 2008; Kombrink et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "173ae3ee-a5a0-49f4-b8c6-4a3ceef3fcd7",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C30",
+      "claim": "Only few tertiary LysM structures have been reported in addition to that of AtCERK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, only few tertiary LysM structures have been reported in addition to that of AtCERK1 (Bateman and Bycroft, 2000; Bielnicki et al., 2006; Koharudin et al., 2011; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "71cf91ff-fe50-456b-b6e7-ccae8dff6d59",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C31",
+      "claim": "The canonical three-dimensional LysM domain structure consists of a \u03b2\u03b1\u03b1\u03b2-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The canonical three-dimensional LysM domain structure consists of a \u03b2\u03b1\u03b1\u03b2-fold, in which two \u03b1-helices are packed against one side of a two-stranded antiparallel \u03b2-sheet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "c6a197a1-7266-47e2-a2b9-0716a4fbc34c",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C32",
+      "claim": "LysM domains physically interact with chitin oligomers in a 1:1 stoichiometry with an affinity binding constant of up to 21 \u00b5M based on NMR spectroscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on NMR spectroscopy, the loop between the first \u03b2-sheet and the first \u03b1-helix and the loop between the second \u03b1-helix and the second \u03b2-sheet were shown to physically interact with chitin oligomers in a 1:1 stoichiometry with an affinity binding constant of up to 21 \u00b5M (Ohnuma et al., 2008; Koharudin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous NMR studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "89e32a59-296c-4ccc-9873-109ad7d510c2",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C33",
+      "claim": "The AtCERK1 ectodomain binds chitin oligomers with an affinity up to 45 \u00b5M for (GlcNAc)8 as determined by isothermal titration calorimetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The AtCERK1 ectodomain binds chitin oligomers with a similar affinity, up to 45 \u00b5M for (GlcNAc)8, as determined by isothermal titration calorimetry (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Liu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "7ee05e57-6124-4d65-a6c9-b25dbaa7dded",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C34",
+      "claim": "Ecp6 was heterologously produced in the yeast Pichia pastoris and purified.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, Ecp6 was heterologously produced in the yeast Pichia pastoris and purified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "1d0d324c-529a-4fea-892d-3e87f7fce4cb",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C35",
+      "claim": "The Ecp6 crystal structure was determined to a resolution of 1.6 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure was determined by single-wavelength anomalous dispersion (SAD) and refined to a resolution of 1.6 \u00c5 with an Rwork and Rfree of 20.3% and 22.5%, respectively (Figure 1 and Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "7fbabd32-d490-489e-bc50-54b47cae3562",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C36",
+      "claim": "The Ecp6 structure model comprises amino acid residues 7 to 195 of the mature protein sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure model comprises nearly the complete mature protein sequence, from amino acid residues 7 to 195.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structural model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "2f9dbfe1-0576-4662-a196-e9283dd7093a",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C37",
+      "claim": "Residues 1\u20136 and 196\u2013199 of Ecp6 were not defined in the electron density map, suggesting they occur as flexible tails.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues 1\u20136 and 196\u2013199 of the structure were not defined in the electron density map, suggesting that they occur as flexible tails on both ends of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the crystallographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "c68a6698-23fc-43c0-86a7-abae358f2ee3",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C38",
+      "claim": "Ecp6 has a tightly packed structure stabilized by four disulfide bridges.",
+      "claim_type": "EXPLICIT",
+      "source": "Ecp6 has a tightly packed structure that is stabilized by four disulfide bridges, and two spatially close glycosylation sites (Asn104 and Asn193) were identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of structural features observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "dea63162-ecbf-4862-bd82-c72fb8ec99b9",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C39",
+      "claim": "Two spatially close glycosylation sites (Asn104 and Asn193) were identified in Ecp6.",
+      "claim_type": "EXPLICIT",
+      "source": "Ecp6 has a tightly packed structure that is stabilized by four disulfide bridges, and two spatially close glycosylation sites (Asn104 and Asn193) were identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of structural features observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "dc25319e-925d-4bba-a84a-c5bf22860973",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C40",
+      "claim": "LysM1 is separated by a long and flexible linker from a compact and rigid body formed by LysM2 and LysM3.",
+      "claim_type": "EXPLICIT",
+      "source": "The three LysMs of Ecp6 (LysM1\u2013LysM3) share the typical \u03b2\u03b1\u03b1\u03b2-fold, with LysM1 being separated by a long and flexible linker from a compact and rigid body formed by LysM2 and LysM3 (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of structural features observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "222918ce-69a1-47d3-9476-91c111082c53",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C41",
+      "claim": "The crystal packing revealed the existence of an Ecp6 homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the crystal packing revealed the existence of an Ecp6 homodimer that was also observed in gel filtration chromatography during protein purification, with a flat buried surface of 943 \u00c52 at LysM2 and LysM3 as calculated using PISA (Protein Interfaces, Surfaces and Assemblies; http://www.ebi.ac.uk/pdbe/prot_int/pistart.html; Figure 1A; Krissinel and Henrick, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of structural features observed in the crystal structure and confirmed by gel filtration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "93594e40-83f8-4aa9-8ca9-86d9e1155f46",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C42",
+      "claim": "The Ecp6 homodimer was also observed in gel filtration chromatography during protein purification.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the crystal packing revealed the existence of an Ecp6 homodimer that was also observed in gel filtration chromatography during protein purification, with a flat buried surface of 943 \u00c52 at LysM2 and LysM3 as calculated using PISA (Protein Interfaces, Surfaces and Assemblies; http://www.ebi.ac.uk/pdbe/prot_int/pistart.html; Figure 1A; Krissinel and Henrick, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "7c5370e9-61ab-443c-b03f-39e810815664",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C43",
+      "claim": "The Ecp6 homodimer has a flat buried surface of 943 \u00c52 at LysM2 and LysM3.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the crystal packing revealed the existence of an Ecp6 homodimer that was also observed in gel filtration chromatography during protein purification, with a flat buried surface of 943 \u00c52 at LysM2 and LysM3 as calculated using PISA (Protein Interfaces, Surfaces and Assemblies; http://www.ebi.ac.uk/pdbe/prot_int/pistart.html; Figure 1A; Krissinel and Henrick, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value from the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "145d08e6-b3ad-419e-a656-58bb25791460",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C44",
+      "claim": "A chitin tetramer (GlcNAc)4 was bound in a large interdomain groove between LysM1 and LysM3 in the Ecp6 crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, the calculated 2Fo\u2212Fc map showed a well-defined electron density for a bound chitin tetramer (GlcNAc)4 in a large interdomain groove between LysM1 and LysM3 (\u223c16 \u00c5 long and \u223c11 \u00c5 across its widest points; Figure 1B), although the protein crystallized in the absence of exogenously added chitin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of structural features observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "85dfaf63-3b5b-46bd-92d9-bcb936309407",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C45",
+      "claim": "The interdomain groove between LysM1 and LysM3 is approximately 16 \u00c5 long and 11 \u00c5 across its widest points.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, the calculated 2Fo\u2212Fc map showed a well-defined electron density for a bound chitin tetramer (GlcNAc)4 in a large interdomain groove between LysM1 and LysM3 (\u223c16 \u00c5 long and \u223c11 \u00c5 across its widest points; Figure 1B), although the protein crystallized in the absence of exogenously added chitin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "eb073cbf-47d4-439d-bf46-a0ef64ff4e08",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C46",
+      "claim": "The chitin oligomer co-purified with Ecp6 was likely derived from the cell wall of the P. pastoris expression system.",
+      "claim_type": "EXPLICIT",
+      "source": "The chitin oligomer was likely co-purified with Ecp6 and derived from the cell wall of the P. pastoris expression system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of chitin in the structure despite no exogenous addition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "204d1e34-2baa-460d-8a7c-49ac12b934a7",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C47",
+      "claim": "The observation that chitin remained adhered to Ecp6 during purification suggests it is bound with high affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that the chitin oligomer remained adhered to Ecp6 during the protein purification procedure suggests that it is bound to the groove with high affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "ee3bfbef-e7ad-4996-8525-05ac490c59df",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C48",
+      "claim": "The chitin-binding groove is shaped by amino acids 20GDTLT24 and 46PNLIEL51 of LysM1 and 150GDLFV154 and 176PSKL179 of LysM3.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the groove is shaped by the amino acids 20GDTLT24 and 46PNLIEL51 of LysM1 and 150GDLFV154 and 176PSKL179 of LysM3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of structural features observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "45e1cfb9-14bc-4134-96bd-b973e2773530",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C49",
+      "claim": "The chitin binding involves 12 hydrogen bonds between Ecp6 and the chitin tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidently, LysM1 and LysM3 of Ecp6 cooperate to bring two chitin-binding regions together, composing a novel type of binding groove in which one chitin tetramer is nearly completely buried and engaged in many noncovalent interactions, including 12 hydrogen bonds (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of structural features observed in the crystal structure and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "138a8862-b4cc-467e-a1bd-ac83e9a6510f",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C50",
+      "claim": "Chitin binding is further strengthened by noncovalent interactions among proximate residues on the complementary surfaces of LysM1 (N45 and 47NLIE50) and LysM3 (150GDLFVD155).",
+      "claim_type": "EXPLICIT",
+      "source": "The chitin binding is further strengthened by noncovalent interactions among proximate residues on the complementary surfaces of LysM1 (N45 and 47NLIE50) and LysM3 (150GDLFVD155) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of structural features observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "ead9d9c9-e6f6-48d6-a25c-ad3801405057",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C51",
+      "claim": "The solute-exposed ends of the chitin tetramer in the structure suggest that longer oligomers can also be bound to the groove.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the solute-exposed ends of the chitin tetramer in the structure suggest that longer oligomers can also be bound to the groove, in which case four GlcNAc units of a chitin oligomer make direct contact with the protein while the remaining parts of the molecule protrude into the solvent (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the structural data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "9c0eb2da-e4ff-4b94-8ead-05520d0bd015",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C52",
+      "claim": "Mutants T22R and N47K in LysM1 resulted in an autoactive protein that triggered a response of tomato cells in the absence of chitin.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the two mutants that were generated in LysM1 (T22R and N47K) resulted in an autoactive protein that triggered a response of the tomato cells, leading to medium alkalinization already in the absence of chitin (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "08f25cfb-9433-42ac-bdd4-fa546eb79d93",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C53",
+      "claim": "The induction of medium pH shift by the mutants in LysM1 was likely due to improper protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Most probably the induction of medium pH shift by the mutants in LysM1 was due to improper protein folding, as is suggested by CD spectra when compared with wild-type Ecp6 protein (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on CD spectroscopy data shown in Figure 4B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "efddacbd-4acf-47b3-9800-a19c3112c42b",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C54",
+      "claim": "The CD spectra of the two mutants in LysM3 (L152R and S177K) were very similar to that of wild-type Ecp6 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the CD spectra of the two mutants in LysM3 (L152R and S177K) were very similar to that of wild-type Ecp6 protein, indicating that they adopt the same secondary structure (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of CD spectroscopy data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "f4223f64-ba18-4e0e-b207-c6cbc1c7152b",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C55",
+      "claim": "Mutants L152R and S177K in LysM3 still prevented chitohexaose-induced medium alkalinization.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both mutants still prevented chitohexaose [(GlcNAc)6]-induced medium alkalinization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "e34924c7-2080-4586-9b4d-a2f91b7c5c4f",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C56",
+      "claim": "LysM2 contributes to the suppression of chitin-triggered immunity by P. pastoris-produced Ecp6 in the cell suspension assay.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that also LysM2 contributes to the suppression of chitin-triggered immunity by P. pastoris-produced Ecp6 in the cell suspension assay (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental results shown in Figure 4C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "ffd52e64-720d-4906-9f9d-495ac9f3b7ff",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C57",
+      "claim": "Mutants T95R and D121K in LysM2 no longer suppressed the chitin oligosaccharide-induced pH shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mutants T95R and D121K no longer suppressed the chitin oligosaccharide-induced pH shift, revealing that LysM2 contains a functional chitin-binding site that contributes to the suppression of chitin-triggered immunity in the cell suspension assay (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "3ff84bb2-eb7e-4de5-80f5-9ea190fe3e79",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C58",
+      "claim": "ITC experiments confirmed that P. pastoris-produced mutants T95R and D121K were impaired in the binding of exogenously added chitohexaose.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, ITC experiments confirmed that the P. pastoris-produced mutants T95R and D121K were impaired in the binding of exogenously added chitohexaose (Figure 5C and 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of ITC experimental results shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "467e6281-2ff3-467b-98d6-f0043117c8ed",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C59",
+      "claim": "P. pastoris-produced Ecp6 binds chitin with 1:1 stoichiometry and a dissociation constant (kd) of 4.5 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we integrated the heat measurements using a single binding site model, confirming that P. pastoris-produced Ecp6 binds chitin with 1:1 stoichiometry and a dissociation constant (kd) of 4.5 \u00b5M (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of ITC experimental results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "780f7ceb-7909-4db3-ad67-3dd98220fa53",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C60",
+      "claim": "The T22R mutant in LysM1 binds chitin with a kd of 4.69 \u00b5M and n = 0.75.",
+      "claim_type": "EXPLICIT",
+      "source": "The T22R mutant in LysM1 binds chitin with similar thermodynamic values as Ecp6 produced in P. pastoris (kd = 4.69 \u00b5M; n = 0.75; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of ITC experimental results shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "4c51d685-c01f-49ee-81c0-001e5be2eab8",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C61",
+      "claim": "Binding by the N47K mutant could be fitted to a 'two binding site' model, with the second binding displaying a kd of 5.2 \u00b5M and n = 0.984.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding by the N47K mutant could be fitted to a 'two binding site' model, revealing that the second binding displayed similar biochemical characteristics (kd = 5.2 \u00b5M; n = 0.984) as Ecp6 produced in P. pastoris (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of ITC experimental results shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "b7592890-5915-4f13-a3b6-8ac34264cf9f",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C62",
+      "claim": "Chitin-free Ecp6 was obtained from HEK293 mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As an alternative strategy, the production of Ecp6 in mammalian (HEK293) cells was pursued. A relatively small amount (4 mg) of chitin-free Ecp6 was obtained from these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method and result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "f67bbaf8-f8d1-4731-ae81-694211140a0b",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C63",
+      "claim": "Ecp6 protein produced in mammalian cells was able to suppress chitin-triggered immunity in the tomato cell suspension assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the Ecp6 protein produced in mammalian cells was able to suppress chitin-triggered immunity in the tomato cell suspension assay (Figure 6) and subsequently performed substrate affinity measurements (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "7931628d-49bc-4357-bca2-0f597d2ff56f",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C64",
+      "claim": "ITC revealed biphasic binding of the chitin hexamer (GlcNAc)6 to chitin-free Ecp6.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ITC revealed biphasic binding of the chitin hexamer (GlcNAc)6 to chitin-free Ecp6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of ITC experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "d085739a-02f1-4e42-9b46-4798497ab3bc",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C65",
+      "claim": "Chitin-free Ecp6 binds one chitin molecule with ultra-high affinity (kd = 280 pM; n = 0.99) in the first binding phase.",
+      "claim_type": "EXPLICIT",
+      "source": "A first binding phase in which one chitin molecule was bound with ultra-high affinity (kd = 280 pM; n = 0.99) occurred, followed by binding of an additional molecule with lower affinity (kd = 1.70 \u00b5M; n = 1.03) (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of ITC experimental results shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "675d4a6a-6841-470d-8146-823ea449cfe0",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C66",
+      "claim": "Chitin-free Ecp6 binds an additional chitin molecule with lower affinity (kd = 1.70 \u00b5M; n = 1.03) in the second binding phase.",
+      "claim_type": "EXPLICIT",
+      "source": "A first binding phase in which one chitin molecule was bound with ultra-high affinity (kd = 280 pM; n = 0.99) occurred, followed by binding of an additional molecule with lower affinity (kd = 1.70 \u00b5M; n = 1.03) (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of ITC experimental results shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "ac91a204-f22f-4bd5-9e50-8a7bf470b848",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C67",
+      "claim": "Both binding events of chitin-free Ecp6 displayed 1:1 stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Both binding events displayed 1:1 stoichiometry, demonstrating that the three LysM domains of a single Ecp6 monomer are collectively involved in two binding events (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of ITC experimental results shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "13c791d6-4b7e-4fcb-b42d-4109de087302",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C68",
+      "claim": "The three LysM domains of a single Ecp6 monomer are collectively involved in two binding events.",
+      "claim_type": "EXPLICIT",
+      "source": "Both binding events displayed 1:1 stoichiometry, demonstrating that the three LysM domains of a single Ecp6 monomer are collectively involved in two binding events (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the ITC experimental results shown in Figure 7B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "0e3f0747-2c6a-4471-9fd0-e47fd17143a8",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C69",
+      "claim": "The \u00b5M affinity binding event should be attributed to LysM2.",
+      "claim_type": "EXPLICIT",
+      "source": "As P. pastoris-produced Ecp6, in which the LysM1\u2013LysM3 groove is blocked by a P. pastoris chitin fragment, displayed similar characteristics as the second binding event of mammalian cell-produced Ecp6 (Figure 7A,B), we conclude that the \u00b5M affinity should be attributed to LysM2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from comparing ITC results shown in Figures 7A and 7B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "0f4bcaf1-8496-467a-80a5-9b823303647f",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C70",
+      "claim": "The HEK293-produced LysM2 mutant T95R binds a single chitin molecule with high affinity (kd = 4.95 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this hypothesis, we also produced the LysM2 mutant T95R, which only has the LysM1\u2013LysM3 site available for chitin binding, in mammalian cells. As this mutant binds a single chitin molecule with high affinity (kd = 4.95 nM) (Figure 7C), we concluded that the ultra-high chitin-binding affinity displayed by wild-type Ecp6 corresponds to the LysM1\u2013LysM3 binding groove.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of ITC experimental results shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "ee71c805-33f2-4033-a25a-ec13ea436c96",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C71",
+      "claim": "The ultra-high chitin-binding affinity displayed by wild-type Ecp6 corresponds to the LysM1\u2013LysM3 binding groove.",
+      "claim_type": "EXPLICIT",
+      "source": "As this mutant binds a single chitin molecule with high affinity (kd = 4.95 nM) (Figure 7C), we concluded that the ultra-high chitin-binding affinity displayed by wild-type Ecp6 corresponds to the LysM1\u2013LysM3 binding groove.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the ITC experimental results shown in Figure 7C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "6c5b6d36-f6cd-48e1-ab26-96bbe1e18f7c",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C72",
+      "claim": "The HEK293-produced LysM2 mutant T95R was able to prevent chitin-triggered medium alkalinization.",
+      "claim_type": "EXPLICIT",
+      "source": "We subsequently analyzed the role of the LysM1\u2013LysM3 groove in suppression of chitin-triggered immunity in the tomato cell suspension assay with the HEK293-produced LysM2 mutant T95R. As expected, this mutant protein was able to prevent chitin-triggered medium alkalinization (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of experimental results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "77c6ced7-e2ff-4031-953c-f57468459f0e",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C73",
+      "claim": "The composite LysM1\u2013LysM3 binding site provides a single binding event with ultra-high (pM) affinity for chitin binding, the highest chitin-binding affinity described in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the composite LysM1\u2013LysM3 binding site provides a single binding event with ultra-high (pM) affinity for chitin binding, the highest chitin-binding affinity described in nature, which is extremely competent to sequester chitin oligosaccharides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "4070d3ad-8fb1-49ab-8260-03f3af156dd5",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C74",
+      "claim": "Through the LysM1-LysM3 binding site, C. fulvum prevents chitin oligosaccharides from activating host immune receptors during infection of tomato.",
+      "claim_type": "EXPLICIT",
+      "source": "Through this effector activity, C. fulvum prevents chitin oligosaccharides from activating host immune receptors during infection of tomato.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "ab467ac2-d40a-42d1-8f4e-139a6016a381",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C75",
+      "claim": "The flexible loop between LysM1 and the rigid LysM2\u2013LysM3 body enables the sandwiching of four GlcNAc units of a chitin oligomer in the interface of the LysM1\u2013LysM3 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The flexible loop between LysM1 and the rigid LysM2\u2013LysM3 body enables the sandwiching of four GlcNAc units of a chitin oligomer in the interface of the LysM1\u2013LysM3 dimer by 12 hydrogen bonds and many other noncovalent interactions, resulting in ultra-high (pM) affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structural mechanism based on the crystal structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "3cc899ec-ce2f-4ab5-9c08-b95265a54be0",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C76",
+      "claim": "The intrachain LysM dimerization in Ecp6 is anticipated to be substrate induced rather than pre-formed.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the structure of the binding groove, it is anticipated that the intrachain LysM dimerization is substrate induced rather than pre-formed, as the chitin oligomer is completely buried in between the two LysM domains that are in very close proximity to make contact with the chitin oligomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "d609025a-39c6-4fc0-b012-3c1627daf124",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C77",
+      "claim": "A pre-formed binding site would require a chitin oligomer to slide along the two LysM domain binding sites, which is practically impossible.",
+      "claim_type": "EXPLICIT",
+      "source": "A pre-formed binding site would require a chitin oligomer to slide along the two LysM domain binding sites, which is practically impossible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical argument based on the structural data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "c41d3204-1c0a-4d30-a0b7-e39dd37ac7d8",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C78",
+      "claim": "The binding groove significantly opens in absence of the ligand and closes upon ligand binding, leading to substrate-induced intrachain LysM domain dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "More realistically, and considering the long and flexible linker that separates LysM1 from the LysM2\u2013LysM3 body, the binding groove significantly opens in absence of the ligand and closes upon ligand binding, leading to substrate-induced intrachain LysM domain dimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data and the flexible linker.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "4d250a2e-4e97-4df9-8d28-37deae41d270",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C79",
+      "claim": "Longer chitin oligomers may protrude from the Ecp6 protein into the solvent on both ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Longer chitin oligomers may protrude from the Ecp6 protein into the solvent on both ends, which is particularly relevant since these are considered to be the most biologically active in eliciting chitin-triggered immune responses (Felix et al., 1993; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "0575be8f-c0a1-4adf-afd9-707b43199498",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C80",
+      "claim": "Previously determined affinity constants were similar for chitin tetra-, penta-, hexa- and octamers binding to Ecp6.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previously determined affinity constants were similar for chitin tetra-, penta-, hexa- and octamers (de Jonge et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to de Jonge et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "0cf62716-3a35-4c0d-aec2-d693048deae8",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C81",
+      "claim": "As soon as Ecp6 is secreted from the plasma membrane of C. fulvum, it will sequester a chitin oligosaccharide that remains firmly attached to the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Likely, as soon as Ecp6 is secreted from the plasma membrane of C. fulvum, it will sequester a chitin oligosaccharide that remains firmly attached to the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the high affinity binding observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "f299903b-40c4-4b27-95f1-744b7d2c199b",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C82",
+      "claim": "The global arrangement of the three LysMs of AtCERK1 prevents the establishment of intrachain LysM dimerization in a similar fashion as observed in Ecp6.",
+      "claim_type": "EXPLICIT",
+      "source": "The global arrangement of the three LysMs of the Arabidopsis AtCERK1 chitin receptor, all three facing in outward direction on the surface of the protein, clearly prevents the establishment of intrachain LysM dimerization in a similar fashion as observed in Ecp6 (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on comparing the structures of Ecp6 and AtCERK1, shown in Figure 8.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "311141f7-9d94-4e8e-a51f-26069a87de41",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C83",
+      "claim": "Only a single of the three AtCERK1 LysM domains is apparently involved in substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, only a single of the three AtCERK1 LysM domains is apparently involved in substrate binding, and only a single chitin oligomer is bound by a receptor molecule (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Liu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "ca37d8f9-a079-43cd-bb6d-e286dfe9fdd0",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C84",
+      "claim": "Only a single chitin oligomer is bound by an AtCERK1 receptor molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, only a single of the three AtCERK1 LysM domains is apparently involved in substrate binding, and only a single chitin oligomer is bound by a receptor molecule (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Liu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "593738e9-a722-4d15-8af9-4437b95fae5e",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C85",
+      "claim": "AtCERK1 binds (GlcNAc)6 with a considerably lower affinity (kd = 44.8 \u00b5M) than the LysM1\u2013LysM3 binding groove of Ecp6 (kd = 280 pM).",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, AtCERK1 binds (GlcNAc)6 with a considerably lower affinity (kd = 44.8 \u00b5M; Liu et al., 2012) than the LysM1\u2013LysM3 binding groove of Ecp6 (kd = 280 pM; Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of binding affinities from different studies, with AtCERK1 data from Liu et al., 2012 and Ecp6 data from Figure 7B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "95fc390f-5bec-439b-b03b-fd4e013ccd88",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C86",
+      "claim": "A tomato receptor for chitin has not been identified until now.",
+      "claim_type": "EXPLICIT",
+      "source": "A tomato receptor for chitin has not been identified until now.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "5326823d-c541-4738-a0ca-01744b020563",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C87",
+      "claim": "Tomato cells and microsomal membranes can bind chitin oligomers with binding constants of 1.4 nM and 23 nM, respectively, based on radiolabeling assays.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has been described based on radiolabeling assays that tomato cells and microsomal membranes can bind chitin oligomers with binding constants of 1.4 nM and 23 nM, respectively (Baureithel et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Baureithel et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "477d09e1-c0b1-4069-917e-3ffb7cdb29e3",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C88",
+      "claim": "The affinities of tomato receptors for chitin are lower than that of the LysM1\u2013LysM3 binding groove of Ecp6.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, these affinities are lower than that of the LysM1\u2013LysM3 binding groove of Ecp6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of binding affinities.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "3090e97a-f9de-4388-8abb-82dc51ab3b77",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C89",
+      "claim": "C. fulvum secretes a high amount of Ecp6 effector protein, especially during the initial stages of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering also the high amount of Ecp6 effector protein that is secreted, especially during the initial stages of the infection (Bolton et al., 2008), these data collectively explain how C. fulvum, and possibly also other fungal pathogens (de Jonge and Thomma, 2009; Marshall et al., 2011; Mentlak et al., 2012), manage to suppress chitin-triggered immunity during infection of their hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bolton et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "9f4069c7-4269-4cd2-85a6-b31a5533b568",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C90",
+      "claim": "The high affinity binding and high secretion levels of Ecp6 explain how C. fulvum manages to suppress chitin-triggered immunity during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering also the high amount of Ecp6 effector protein that is secreted, especially during the initial stages of the infection (Bolton et al., 2008), these data collectively explain how C. fulvum, and possibly also other fungal pathogens (de Jonge and Thomma, 2009; Marshall et al., 2011; Mentlak et al., 2012), manage to suppress chitin-triggered immunity during infection of their hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "5120114a-b00e-4b00-9d83-dad008e1df8b",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C91",
+      "claim": "Other fungal pathogens may also manage to suppress chitin-triggered immunity during infection of their hosts through similar mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering also the high amount of Ecp6 effector protein that is secreted, especially during the initial stages of the infection (Bolton et al., 2008), these data collectively explain how C. fulvum, and possibly also other fungal pathogens (de Jonge and Thomma, 2009; Marshall et al., 2011; Mentlak et al., 2012), manage to suppress chitin-triggered immunity during infection of their hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extension based on the findings, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "910adea4-4e79-474c-9d06-692320b3adcf",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C92",
+      "claim": "AtCERK1 receptors have been suggested to bind in tandem to long chitin oligomers, prompting dimerization and activation of immune signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis, AtCERK1 receptors have been suggested to bind in tandem to long chitin oligomers, prompting dimerization and activation of immune signaling (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Liu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "b46994c6-c6eb-4040-9f36-2ef4b761050b",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C93",
+      "claim": "P. pastoris-produced Ecp6 will only sequester a small portion of the available chitin oligosaccharides at the concentrations used in the alkalinization experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the concentrations of P. pastoris-produced Ecp6 (100 nM) and chitin (10 nM) that were used in the alkalinization experiment are much lower than the LysM2 dissociation constant (4.5 \u00b5M), P. pastoris-produced Ecp6 will only sequester a small portion of the available chitin oligosaccharides, and the amount of remaining, unbound, chitin oligosaccharides should be sufficient to activate chitin-triggered immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the measured dissociation constant and experimental concentrations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "3deb16fb-1f1f-410f-b910-e28de85a5c6e",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C94",
+      "claim": "The observation that LysM2 is able to suppress chitin-triggered immunity strongly suggests that this LysM suppresses chitin-triggered immunity through another mechanism than through chitin oligosaccharide sequestration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the observation that LysM2 is able to suppress chitin-triggered immunity strongly suggests that this LysM suppresses chitin-triggered immunity through another mechanism than through chitin oligosaccharide sequestration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "5f931c96-7267-473a-b30d-4c24890b7b60",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C95",
+      "claim": "LysM2 may be involved in perturbation of the activation of chitin-triggered immunity by preventing the immune receptor dimerization required for the activation of immune signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentially, LysM2 may be involved in perturbation of the activation of chitin-triggered immunity by preventing the immune receptor dimerization that is required for the activation of immune signaling (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the experimental observations, with a citation to Liu et al., 2012.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "f1f1e5b6-ace2-48e5-8c0d-8ab1bd2d4560",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C96",
+      "claim": "Ecp6 may bind to chitin oligomers that have been bound by host immune receptor monomers, thus physically blocking host immune receptor dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Ecp6 may bind to chitin oligomers that have been bound by host immune receptor monomers, thus physically blocking host immune receptor dimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "1f870e4e-cc23-44f3-8a75-6afae9f86dd2",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C97",
+      "claim": "The C. fulvum LysM effector Ecp6 is able to suppress chitin-triggered immunity through two mechanisms: efficient chitin oligosaccharide sequestration through a ligand-induced composite LysM1\u2013LysM3 binding groove, and a mechanism exerted by LysM2 that does not involve chitin oligosaccharide sequestration but may involve perturbation of host immune receptor complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, it appears that the C. fulvum LysM effector Ecp6 is able to suppress chitin-triggered immunity through two mechanisms; efficient chitin oligosaccharide sequestration through a ligand-induced composite LysM1\u2013LysM3 binding groove, and secondly a mechanism exerted by LysM2 that does not involve chitin oligosaccharide sequestration but may involve perturbation of host immune receptor complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "b15d4ff0-c2c0-47e4-adb2-0c5671686a47",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C98",
+      "claim": "Convergent evolution towards recognition of the same ligand by molecules of taxonomically diverse organisms frequently occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Convergent evolution towards recognition of the same ligand by molecules of taxonomically diverse organisms frequently occurs, as exemplified by the perception of bacterial flagellin by the mammalian and plant immune receptors TLR5 and FLS2, although these receptors recognize different PAMP motifs within the same ligand (Felix et al., 1999; Smith et al., 2003; Chinchilla et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "6ceb56ae-bba7-4e42-b05e-88f4d48aa549",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C99",
+      "claim": "Mammalian and plant immune receptors TLR5 and FLS2 perceive bacterial flagellin but recognize different PAMP motifs within the same ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Convergent evolution towards recognition of the same ligand by molecules of taxonomically diverse organisms frequently occurs, as exemplified by the perception of bacterial flagellin by the mammalian and plant immune receptors TLR5 and FLS2, although these receptors recognize different PAMP motifs within the same ligand (Felix et al., 1999; Smith et al., 2003; Chinchilla et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "bbd7c019-4da6-432b-a6b2-dda24214b4ea",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C100",
+      "claim": "Convergent evolution has brought about different modes to interact with the same PAMP motif in taxonomically diverse organisms by structurally diverse proteins in the case of chitin perception by LysM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our study on chitin perception by LysM proteins shows that convergent evolution has brought about different modes to interact with the same PAMP motif in taxonomically diverse organisms by structurally diverse proteins (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the structural comparison shown in Figure 8.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "47be90b9-2842-4080-ae71-ccf2f4d6831a",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C101",
+      "claim": "Ecp6 crystals belonged to space group P3221.",
+      "claim_type": "EXPLICIT",
+      "source": "In this manner, large Ecp6 protein crystals that belonged to space group P3221 were obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "a102eec7-5bc3-44e6-a6d1-e592d1fe04bd",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C102",
+      "claim": "The Ecp6 structure was determined by single-wavelength anomalous dispersion (SAD).",
+      "claim_type": "EXPLICIT",
+      "source": "The structure was determined by single-wavelength anomalous dispersion (SAD) and refined to a resolution of 1.6 \u00c5 with an Rwork and Rfree of 20.3% and 22.5%, respectively (Figure 1 and Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the crystallographic method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "61ee2445-748c-4c77-a530-13ea5be88b99",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C103",
+      "claim": "The Ecp6 structure was refined with an Rwork of 20.3% and Rfree of 22.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure was determined by single-wavelength anomalous dispersion (SAD) and refined to a resolution of 1.6 \u00c5 with an Rwork and Rfree of 20.3% and 22.5%, respectively (Figure 1 and Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the crystallographic refinement statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "ddbd2893-08d2-4d43-bdea-426e6e35fa28",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C104",
+      "claim": "The three LysMs of Ecp6 share the typical \u03b2\u03b1\u03b1\u03b2-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The three LysMs of Ecp6 (LysM1\u2013LysM3) share the typical \u03b2\u03b1\u03b1\u03b2-fold, with LysM1 being separated by a long and flexible linker from a compact and rigid body formed by LysM2 and LysM3 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of structural features observed in the crystal structure shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "0d695f81-a129-4a53-b875-b7f79b157d4b",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C105",
+      "claim": "The loop between the first \u03b2-sheet and the first \u03b1-helix and the loop between the second \u03b1-helix and the second \u03b2-sheet in both LysM1 and LysM3 interact with chitin.",
+      "claim_type": "EXPLICIT",
+      "source": "The loop between the first \u03b2-sheet and the first \u03b1-helix and the loop between the second \u03b1-helix and the second \u03b2-sheet in both LysM1 and LysM3 interact with chitin (Figure 1), similar to the previously reported chitin binding by single LysM domains including LysM2 of AtCERK1 (Ohnuma et al., 2008; Koharudin et al., 2011; Liu et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of structural features observed in the crystal structure, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "ae117ac6-4bca-41c7-878c-ca36d2705ba2",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C106",
+      "claim": "The chitin binding by LysM1 and LysM3 of Ecp6 is similar to previously reported chitin binding by single LysM domains including LysM2 of AtCERK1.",
+      "claim_type": "EXPLICIT",
+      "source": "The loop between the first \u03b2-sheet and the first \u03b1-helix and the loop between the second \u03b1-helix and the second \u03b2-sheet in both LysM1 and LysM3 interact with chitin (Figure 1), similar to the previously reported chitin binding by single LysM domains including LysM2 of AtCERK1 (Ohnuma et al., 2008; Koharudin et al., 2011; Liu et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison with previous studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "6a378b5c-f8d6-4925-abe6-e7fe912569c3",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C107",
+      "claim": "Four GlcNAc units of a chitin oligomer make direct contact with the Ecp6 protein while the remaining parts of the molecule protrude into the solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the solute-exposed ends of the chitin tetramer in the structure suggest that longer oligomers can also be bound to the groove, in which case four GlcNAc units of a chitin oligomer make direct contact with the protein while the remaining parts of the molecule protrude into the solvent (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the structural data shown in Figure 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "0097e2cb-1de9-4d9c-a33c-7e1b4820229e",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C108",
+      "claim": "The high sequence and tertiary structure conservation of the three LysM domains of Ecp6 suggests that LysM2 contains a functional chitin-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the high sequence and tertiary structure conservation of the three LysM domains of Ecp6 suggests that LysM2 contains a functional chitin-binding site (Figure 1D; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on sequence and structural conservation shown in Figures 1D and 2B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "e1c23280-95a8-4a0a-8205-4b8bf0d021c1",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C109",
+      "claim": "Correct folding of the LysM2 mutants was confirmed by CD spectra that were similar to that of wild-type Ecp6 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Correct folding of the LysM2 mutants was confirmed by CD spectra that were similar to that of wild-type Ecp6 protein (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of CD spectroscopy data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "c061b6ce-45af-4024-acf3-037299f5e14f",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C110",
+      "claim": "Suppression of chitin-triggered immunity by P. pastoris-produced Ecp6 is established through the \u00b5M chitin-binding activity of LysM2.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data confirm that suppression of chitin-triggered immunity in the tomato cell suspension by P. pastoris-produced Ecp6 is established through the \u00b5M chitin-binding activity of LysM2 and explains why chitin scavenging by LysM3 mutants was not impaired.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "f877ec5c-fdf8-4704-a198-09789e633b6c",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C111",
+      "claim": "The suppression of chitin-triggered immunity by LysM2 is unlikely to work via chitin oligosaccharide sequestration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, calculation of the equilibrium between Ecp6 protein and chitin oligosaccharide levels at the concentrations that were used, and that were well below the measured dissociation constant of LysM2, reveals that only a small amount of the available chitin oligosaccharide is bound by this LysM. Consequently, the suppression of chitin-triggered immunity by LysM2 is unlikely to work via chitin oligosaccharide sequestration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on equilibrium calculations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "11a70473-468c-422e-9f7d-91933dee4287",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C112",
+      "claim": "The slightly lower dissociation constant measured for the LysM1\u2013LysM3 groove in the HEK293-produced LysM2 mutant compared to the HEK293-produced wild-type Ecp6 may be attributed to disabled cooperativity between both binding sites in the wild-type protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The slightly lower dissociation constant that is measured for the LysM1\u2013LysM3 groove in the HEK293-produced LysM2 mutant when compared with the HEK293-produced wild-type Ecp6 may be attributed to disabled cooperativity that may occur between both binding sites in the wild-type protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed difference in binding affinities.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "560d733c-4e0b-469b-94de-9bd1faef7866",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C113",
+      "claim": "The concerted action of two LysM domains results in sequestration of a chitin oligomer with ultra-high affinity in fungal LysM effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structural and biochemical analysis of the LysM effector Ecp6 has unveiled a novel mechanism for chitin binding that evolved in fungi, in which the concerted action of two LysM domains results in sequestration of a chitin oligomer with ultra-high affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and biochemical data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "388c56fe-eab8-4100-bc4b-4a8b3715a5a4",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "claim_id": "C114",
+      "claim": "The noncovalent interactions among proximate residues on the complementary surfaces of LysM1 and LysM3 are likely not sufficient to keep a pre-formed binding groove in a closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the noncovalent interactions among proximate residues on the complementary surfaces of LysM1 and LysM3 are likely not sufficient to keep a pre-formed binding groove in a closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "65872618-b974-445d-96ad-fdb943ee42d6",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structure of Ecp6 was determined to 1.6 \u00c5 resolution by SAD, revealing three LysM domains with a \u03b2\u03b1\u03b1\u03b2-fold, where LysM1 is separated from a compact LysM2-LysM3 body by a flexible linker. The structure is stabilized by four disulfide bridges and contains two glycosylation sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C35-C40, C101-C104 collectively describe the crystallographic determination and structural features of Ecp6. The resolution (1.6 \u00c5), refinement statistics (Rwork=20.3%, Rfree=22.5%), space group (P3221), and structural features (three LysM domains, disulfide bridges, glycosylation sites) are well-documented with appropriate crystallographic data and validation metrics provided in Table 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "51039176-2109-4150-84b5-a228d3a7eef8",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ecp6 binds chitin through a novel intrachain LysM dimerization mechanism involving LysM1 and LysM3, forming a deeply buried binding groove (~16 \u00c5 \u00d7 11 \u00c5) that engages chitin through 12 hydrogen bonds and extensive noncovalent interactions. This composite LysM1-LysM3 site binds chitin with ultra-high picomolar affinity (kd = 280 pM), the highest reported in nature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C44-C51, C65, C67-C68, C70-C71, C73, C75, C105, C107 describe the novel chitin-binding mechanism. The structural data (electron density maps, hydrogen bonding patterns, groove dimensions) and ITC measurements from HEK293-produced chitin-free Ecp6 (Figure 7B) provide strong convergent evidence for the picomolar affinity and the intrachain dimerization mechanism. The T95R mutant control (C70) confirms the binding site assignment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "245cd56f-f0ad-417e-a9e0-ad7d76a6d4f5",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "LysM2 of Ecp6 contains a functional chitin-binding site with micromolar affinity (kd = 4.5 \u00b5M for P. pastoris-produced Ecp6; kd = 1.70 \u00b5M for HEK293-produced Ecp6) that can suppress chitin-triggered immunity. Mutants T95R and D121K in LysM2 lost the ability to suppress immunity and showed impaired chitin binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C56-C59, C66, C69, C108-C110 describe LysM2 function. The mutagenesis data (C57-C58), ITC measurements (C59, C66), CD spectroscopy confirming proper folding (C109), and tomato cell alkalinization assays (Figure 5A) provide consistent evidence. The structural conservation argument (C108) and biphasic binding of chitin-free Ecp6 (C66) support the presence of a functional LysM2 binding site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "412e770f-0c7c-4ac2-bc66-564d06e1f99a",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "LysM2 likely suppresses chitin-triggered immunity through a mechanism other than chitin sequestration, possibly by interfering with host immune receptor dimerization. Equilibrium calculations show that at experimental concentrations, LysM2 would only sequester a small portion of available chitin oligosaccharides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9, C93-C96, C111 propose an alternative mechanism for LysM2. While the equilibrium calculations (C93) and the observation that LysM2 suppresses immunity despite low affinity (C94) are logical, the proposed mechanism of receptor interference (C95-C96) remains speculative. No direct experimental evidence (e.g., co-immunoprecipitation, receptor binding assays) is provided to demonstrate physical interference with host receptors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "22f2441e-687d-4f7d-9650-4a88bef6aac5",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LysM1 mutants T22R and N47K resulted in autoactive proteins that triggered tomato cell responses in the absence of chitin, likely due to improper protein folding as indicated by altered CD spectra. In contrast, LysM3 mutants L152R and S177K maintained proper folding and still suppressed chitin-triggered immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 describe mutagenesis results. The autoactivity of LysM1 mutants (C52), CD spectroscopy showing altered folding (C53), proper folding of LysM3 mutants (C54), and their retained suppression activity (C55) are all supported by experimental data in Figures 4A-D. The interpretation that improper folding caused autoactivity is reasonable given the CD data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "83ca315f-4768-4508-b47b-ccca76c79098",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ITC analysis of LysM1 mutants showed that T22R binds chitin with similar affinity to wild-type P. pastoris-produced Ecp6 (kd = 4.69 \u00b5M), while N47K showed biphasic binding with the second phase having similar characteristics (kd = 5.2 \u00b5M).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 report ITC measurements for LysM1 mutants shown in Figures 3D-E. The data are clearly presented with fitted curves and thermodynamic parameters. The biphasic binding of N47K (C61) is interpreted as reflecting binding to both LysM2 and the partially disrupted LysM1-LysM3 groove, which is a reasonable interpretation given that only one LysM was mutated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "867a4935-5e3e-4180-b570-ce6b8cfc73d3",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Chitin-free Ecp6 was successfully produced in HEK293 mammalian cells and retained the ability to suppress chitin-triggered immunity in tomato cell suspension assays. ITC revealed biphasic chitin binding, and the LysM2 mutant T95R also suppressed immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64, C72 describe production and functional validation of HEK293-produced Ecp6. The successful production (C62), functional activity in suppression assays (C63, C72, Figure 6), and biphasic binding (C64, Figure 7B) are all experimentally demonstrated. This alternative expression system was critical for obtaining chitin-free protein to measure the full binding capacity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "b503fd58-412a-4e52-89ae-1ec8576cc08f",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The intrachain LysM dimerization in Ecp6 is proposed to be substrate-induced rather than pre-formed, as the chitin oligomer is completely buried between LysM1 and LysM3. The flexible linker allows the binding groove to open in the absence of ligand and close upon binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78, C114 propose a substrate-induced binding mechanism. The structural arguments are logical: the complete burial of chitin (C76), the impossibility of sliding a chitin oligomer into a pre-formed closed groove (C77), the presence of a flexible linker (C78), and insufficient noncovalent interactions to maintain a closed conformation (C114) collectively support this model. However, direct experimental evidence (e.g., conformational dynamics studies) would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "74a3a407-620b-47cb-9f72-a17d2d25ef35",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The structural arrangement of AtCERK1's three LysM domains prevents intrachain LysM dimerization similar to Ecp6. Only one of AtCERK1's three LysM domains binds chitin, with a single oligomer bound per receptor molecule at considerably lower affinity (kd = 44.8 \u00b5M) than Ecp6's LysM1-LysM3 groove (kd = 280 pM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 compare Ecp6 and AtCERK1 structures. The structural comparison (C82, Figure 8) and binding characteristics of AtCERK1 (C83-C84) are supported by citations to Liu et al., 2012. The affinity comparison (C85) uses data from both the current study and the cited work. The structural basis for the different binding modes is clearly illustrated in Figure 8.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "3c17a8a1-0cb4-44ba-abae-6c8f6ae5b658",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Longer chitin oligomers can bind to Ecp6 with their ends protruding into solvent, which is biologically relevant as longer oligomers are most active in eliciting immune responses. Previously determined affinity constants were similar for chitin tetra-, penta-, hexa-, and octamers. Upon secretion, Ecp6 likely immediately sequesters chitin oligosaccharides that remain firmly attached.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 describe binding of longer chitin oligomers. The structural inference that longer oligomers can bind with protruding ends (C79, C51) is reasonable given the exposed ends of the tetramer in the structure. The similar affinities for different oligomer lengths (C80) are supported by citation to de Jonge et al., 2010. The inference about immediate sequestration upon secretion (C81) is logical given the picomolar affinity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "e038a620-38ce-4e69-8b85-76c5186573f8",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Although no tomato chitin receptor has been identified, tomato cells bind chitin with affinities (1.4-23 nM) lower than Ecp6's LysM1-LysM3 groove. Combined with high Ecp6 secretion levels during early infection, this explains how C. fulvum and possibly other fungal pathogens suppress chitin-triggered immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C91 integrate findings to explain biological function. The absence of an identified tomato receptor (C86), reported binding affinities (C87, cited from Baureithel et al., 1994), affinity comparison (C88), high Ecp6 secretion (C89, cited from Bolton et al., 2008), and the mechanistic explanation (C90) are well-supported. The extension to other fungal pathogens (C91) is appropriately presented as speculative with supporting citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "90e649c8-f110-4fb9-ab33-4d68bba44f82",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Ecp6 suppresses chitin-triggered immunity through two mechanisms: (1) efficient chitin sequestration via the ligand-induced composite LysM1-LysM3 binding groove with ultra-high affinity, and (2) a mechanism exerted by LysM2 that does not involve sequestration but may involve perturbation of host immune receptor complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97 and C113 present the main conclusions. The dual-mechanism model is well-supported by the structural data (LysM1-LysM3 groove), binding affinity measurements (picomolar for LysM1-LysM3, micromolar for LysM2), and functional assays showing both sites can suppress immunity. However, the second mechanism remains partially speculative as direct evidence for receptor interference is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "b67ff883-336c-4fc7-b781-69fa17c34057",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Convergent evolution has produced different modes of interacting with the same PAMP motif (chitin) in taxonomically diverse organisms through structurally diverse LysM proteins, contrasting with examples like flagellin recognition where different motifs are recognized by different receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100 discuss evolutionary implications. The comparison with flagellin recognition (C98-C99) is supported by appropriate citations. The conclusion about convergent evolution producing different binding modes for the same PAMP motif (C100) is well-supported by the structural comparison between Ecp6 and AtCERK1 (Figure 8) showing fundamentally different architectures for chitin binding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "897bd6ca-8251-44af-9d00-701c157637fa",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background knowledge establishing that fungi use LysM effectors to prevent chitin recognition by host immune receptors, that chitin is a fungal PAMP recognized by plant LysM-containing receptors like CEBiP and CERK1, and that the mechanism of competition for chitin binding was previously unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C33, C92 provide established background knowledge supported by appropriate citations to previous literature. These claims establish the biological context, describe known chitin receptors and their properties, and identify the knowledge gap that this study addresses. All statements are properly attributed to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "7e4e281d-5285-4c11-8bb2-214d98bf5294",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Ecp6 was heterologously produced in P. pastoris and purified. Crystal packing and gel filtration chromatography revealed an Ecp6 homodimer with a buried surface of 943 \u00c5\u00b2 at LysM2 and LysM3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C41-C43 describe protein production and oligomeric state. The production method (C34), observation of homodimer in crystal packing (C41), confirmation by gel filtration (C42), and calculated buried surface area (C43) are all supported by experimental data. The PISA calculation for buried surface area is an appropriate computational method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "7d15b3d7-a331-40a1-850f-f346205bb8b6",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The chitin binding by LysM1 and LysM3 of Ecp6 is similar to previously reported chitin binding by single LysM domains including LysM2 of AtCERK1, involving the same structural loops.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C106 compares the binding mode to previous studies. The structural similarity in terms of which loops interact with chitin is supported by the crystal structure and appropriate citations to previous NMR and crystallographic studies (Ohnuma et al., 2008; Koharudin et al., 2011; Liu et al., 2012).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    },
+    {
+      "id": "5318fb46-cc1a-4a91-b986-0da44ceb56f4",
+      "content_id": "94385fac-b809-4088-9d29-7035fbf739a8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The slightly lower dissociation constant measured for the LysM1-LysM3 groove in the HEK293-produced LysM2 mutant (kd = 4.95 nM) compared to wild-type Ecp6 (kd = 280 pM) may be attributed to disabled cooperativity between both binding sites in the wild-type protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C112 proposes cooperativity between binding sites to explain the ~18-fold difference in affinity. While this is a plausible explanation, it remains speculative without direct experimental evidence for cooperativity (e.g., Hill coefficient analysis, sequential binding studies). The difference could also arise from other factors such as subtle conformational changes in the mutant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:08:38.460910Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7c6c47cb-396b-4ab5-870f-ef25772497d1",
+      "result_id": "65872618-b974-445d-96ad-fdb943ee42d6"
+    },
+    {
+      "claim_id": "1d0d324c-529a-4fea-892d-3e87f7fce4cb",
+      "result_id": "65872618-b974-445d-96ad-fdb943ee42d6"
+    },
+    {
+      "claim_id": "7fbabd32-d490-489e-bc50-54b47cae3562",
+      "result_id": "65872618-b974-445d-96ad-fdb943ee42d6"
+    },
+    {
+      "claim_id": "2f9dbfe1-0576-4662-a196-e9283dd7093a",
+      "result_id": "65872618-b974-445d-96ad-fdb943ee42d6"
+    },
+    {
+      "claim_id": "c68a6698-23fc-43c0-86a7-abae358f2ee3",
+      "result_id": "65872618-b974-445d-96ad-fdb943ee42d6"
+    },
+    {
+      "claim_id": "dea63162-ecbf-4862-bd82-c72fb8ec99b9",
+      "result_id": "65872618-b974-445d-96ad-fdb943ee42d6"
+    },
+    {
+      "claim_id": "dc25319e-925d-4bba-a84a-c5bf22860973",
+      "result_id": "65872618-b974-445d-96ad-fdb943ee42d6"
+    },
+    {
+      "claim_id": "47be90b9-2842-4080-ae71-ccf2f4d6831a",
+      "result_id": "65872618-b974-445d-96ad-fdb943ee42d6"
+    },
+    {
+      "claim_id": "a102eec7-5bc3-44e6-a6d1-e592d1fe04bd",
+      "result_id": "65872618-b974-445d-96ad-fdb943ee42d6"
+    },
+    {
+      "claim_id": "61ee2445-748c-4c77-a530-13ea5be88b99",
+      "result_id": "65872618-b974-445d-96ad-fdb943ee42d6"
+    },
+    {
+      "claim_id": "ddbd2893-08d2-4d43-bdea-426e6e35fa28",
+      "result_id": "65872618-b974-445d-96ad-fdb943ee42d6"
+    },
+    {
+      "claim_id": "3bd0d09a-515e-4c6f-97a0-38638aba769f",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "3cab457e-b8c4-4777-8cf9-4360efead59b",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "719f5925-71c8-41a8-b363-abd54563b218",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "145d08e6-b3ad-419e-a656-58bb25791460",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "85dfaf63-3b5b-46bd-92d9-bcb936309407",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "eb073cbf-47d4-439d-bf46-a0ef64ff4e08",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "204d1e34-2baa-460d-8a7c-49ac12b934a7",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "ee3bfbef-e7ad-4996-8525-05ac490c59df",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "45e1cfb9-14bc-4134-96bd-b973e2773530",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "138a8862-b4cc-467e-a1bd-ac83e9a6510f",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "ead9d9c9-e6f6-48d6-a25c-ad3801405057",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "d085739a-02f1-4e42-9b46-4798497ab3bc",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "ac91a204-f22f-4bd5-9e50-8a7bf470b848",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "13c791d6-4b7e-4fcb-b42d-4109de087302",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "0f4bcaf1-8496-467a-80a5-9b823303647f",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "ee71c805-33f2-4033-a25a-ec13ea436c96",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "77c6ced7-e2ff-4031-953c-f57468459f0e",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "ab467ac2-d40a-42d1-8f4e-139a6016a381",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "0d695f81-a129-4a53-b875-b7f79b157d4b",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "6a378b5c-f8d6-4925-abe6-e7fe912569c3",
+      "result_id": "51039176-2109-4150-84b5-a228d3a7eef8"
+    },
+    {
+      "claim_id": "78b18e7a-6b6b-48f9-879c-13856a767fc5",
+      "result_id": "245cd56f-f0ad-417e-a9e0-ad7d76a6d4f5"
+    },
+    {
+      "claim_id": "79d5ccc3-e8c5-4579-8512-953ca73093d5",
+      "result_id": "245cd56f-f0ad-417e-a9e0-ad7d76a6d4f5"
+    },
+    {
+      "claim_id": "e34924c7-2080-4586-9b4d-a2f91b7c5c4f",
+      "result_id": "245cd56f-f0ad-417e-a9e0-ad7d76a6d4f5"
+    },
+    {
+      "claim_id": "ffd52e64-720d-4906-9f9d-495ac9f3b7ff",
+      "result_id": "245cd56f-f0ad-417e-a9e0-ad7d76a6d4f5"
+    },
+    {
+      "claim_id": "3ff84bb2-eb7e-4de5-80f5-9ea190fe3e79",
+      "result_id": "245cd56f-f0ad-417e-a9e0-ad7d76a6d4f5"
+    },
+    {
+      "claim_id": "467e6281-2ff3-467b-98d6-f0043117c8ed",
+      "result_id": "245cd56f-f0ad-417e-a9e0-ad7d76a6d4f5"
+    },
+    {
+      "claim_id": "675d4a6a-6841-470d-8146-823ea449cfe0",
+      "result_id": "245cd56f-f0ad-417e-a9e0-ad7d76a6d4f5"
+    },
+    {
+      "claim_id": "0e3f0747-2c6a-4471-9fd0-e47fd17143a8",
+      "result_id": "245cd56f-f0ad-417e-a9e0-ad7d76a6d4f5"
+    },
+    {
+      "claim_id": "0097e2cb-1de9-4d9c-a33c-7e1b4820229e",
+      "result_id": "245cd56f-f0ad-417e-a9e0-ad7d76a6d4f5"
+    },
+    {
+      "claim_id": "e1c23280-95a8-4a0a-8205-4b8bf0d021c1",
+      "result_id": "245cd56f-f0ad-417e-a9e0-ad7d76a6d4f5"
+    },
+    {
+      "claim_id": "c061b6ce-45af-4024-acf3-037299f5e14f",
+      "result_id": "245cd56f-f0ad-417e-a9e0-ad7d76a6d4f5"
+    },
+    {
+      "claim_id": "d137ad71-4601-452f-b430-b48bb49aeff5",
+      "result_id": "412e770f-0c7c-4ac2-bc66-564d06e1f99a"
+    },
+    {
+      "claim_id": "b46994c6-c6eb-4040-9f36-2ef4b761050b",
+      "result_id": "412e770f-0c7c-4ac2-bc66-564d06e1f99a"
+    },
+    {
+      "claim_id": "3deb16fb-1f1f-410f-b910-e28de85a5c6e",
+      "result_id": "412e770f-0c7c-4ac2-bc66-564d06e1f99a"
+    },
+    {
+      "claim_id": "5f931c96-7267-473a-b30d-4c24890b7b60",
+      "result_id": "412e770f-0c7c-4ac2-bc66-564d06e1f99a"
+    },
+    {
+      "claim_id": "f1f1e5b6-ace2-48e5-8c0d-8ab1bd2d4560",
+      "result_id": "412e770f-0c7c-4ac2-bc66-564d06e1f99a"
+    },
+    {
+      "claim_id": "f877ec5c-fdf8-4704-a198-09789e633b6c",
+      "result_id": "412e770f-0c7c-4ac2-bc66-564d06e1f99a"
+    },
+    {
+      "claim_id": "9c0eb2da-e4ff-4b94-8ead-05520d0bd015",
+      "result_id": "22f2441e-687d-4f7d-9650-4a88bef6aac5"
+    },
+    {
+      "claim_id": "08f25cfb-9433-42ac-bdd4-fa546eb79d93",
+      "result_id": "22f2441e-687d-4f7d-9650-4a88bef6aac5"
+    },
+    {
+      "claim_id": "efddacbd-4acf-47b3-9800-a19c3112c42b",
+      "result_id": "22f2441e-687d-4f7d-9650-4a88bef6aac5"
+    },
+    {
+      "claim_id": "f4223f64-ba18-4e0e-b207-c6cbc1c7152b",
+      "result_id": "22f2441e-687d-4f7d-9650-4a88bef6aac5"
+    },
+    {
+      "claim_id": "780f7ceb-7909-4db3-ad67-3dd98220fa53",
+      "result_id": "83ca315f-4768-4508-b47b-ccca76c79098"
+    },
+    {
+      "claim_id": "4c51d685-c01f-49ee-81c0-001e5be2eab8",
+      "result_id": "83ca315f-4768-4508-b47b-ccca76c79098"
+    },
+    {
+      "claim_id": "b7592890-5915-4f13-a3b6-8ac34264cf9f",
+      "result_id": "867a4935-5e3e-4180-b570-ce6b8cfc73d3"
+    },
+    {
+      "claim_id": "f67bbaf8-f8d1-4731-ae81-694211140a0b",
+      "result_id": "867a4935-5e3e-4180-b570-ce6b8cfc73d3"
+    },
+    {
+      "claim_id": "7931628d-49bc-4357-bca2-0f597d2ff56f",
+      "result_id": "867a4935-5e3e-4180-b570-ce6b8cfc73d3"
+    },
+    {
+      "claim_id": "6c5b6d36-f6cd-48e1-ab26-96bbe1e18f7c",
+      "result_id": "867a4935-5e3e-4180-b570-ce6b8cfc73d3"
+    },
+    {
+      "claim_id": "3cc899ec-ce2f-4ab5-9c08-b95265a54be0",
+      "result_id": "b503fd58-412a-4e52-89ae-1ec8576cc08f"
+    },
+    {
+      "claim_id": "d609025a-39c6-4fc0-b012-3c1627daf124",
+      "result_id": "b503fd58-412a-4e52-89ae-1ec8576cc08f"
+    },
+    {
+      "claim_id": "c41d3204-1c0a-4d30-a0b7-e39dd37ac7d8",
+      "result_id": "b503fd58-412a-4e52-89ae-1ec8576cc08f"
+    },
+    {
+      "claim_id": "388c56fe-eab8-4100-bc4b-4a8b3715a5a4",
+      "result_id": "b503fd58-412a-4e52-89ae-1ec8576cc08f"
+    },
+    {
+      "claim_id": "f299903b-40c4-4b27-95f1-744b7d2c199b",
+      "result_id": "74a3a407-620b-47cb-9f72-a17d2d25ef35"
+    },
+    {
+      "claim_id": "311141f7-9d94-4e8e-a51f-26069a87de41",
+      "result_id": "74a3a407-620b-47cb-9f72-a17d2d25ef35"
+    },
+    {
+      "claim_id": "ca37d8f9-a079-43cd-bb6d-e286dfe9fdd0",
+      "result_id": "74a3a407-620b-47cb-9f72-a17d2d25ef35"
+    },
+    {
+      "claim_id": "593738e9-a722-4d15-8af9-4437b95fae5e",
+      "result_id": "74a3a407-620b-47cb-9f72-a17d2d25ef35"
+    },
+    {
+      "claim_id": "4d250a2e-4e97-4df9-8d28-37deae41d270",
+      "result_id": "3c17a8a1-0cb4-44ba-abae-6c8f6ae5b658"
+    },
+    {
+      "claim_id": "0575be8f-c0a1-4adf-afd9-707b43199498",
+      "result_id": "3c17a8a1-0cb4-44ba-abae-6c8f6ae5b658"
+    },
+    {
+      "claim_id": "0cf62716-3a35-4c0d-aec2-d693048deae8",
+      "result_id": "3c17a8a1-0cb4-44ba-abae-6c8f6ae5b658"
+    },
+    {
+      "claim_id": "95fc390f-5bec-439b-b03b-fd4e013ccd88",
+      "result_id": "e038a620-38ce-4e69-8b85-76c5186573f8"
+    },
+    {
+      "claim_id": "5326823d-c541-4738-a0ca-01744b020563",
+      "result_id": "e038a620-38ce-4e69-8b85-76c5186573f8"
+    },
+    {
+      "claim_id": "477d09e1-c0b1-4069-917e-3ffb7cdb29e3",
+      "result_id": "e038a620-38ce-4e69-8b85-76c5186573f8"
+    },
+    {
+      "claim_id": "3090e97a-f9de-4388-8abb-82dc51ab3b77",
+      "result_id": "e038a620-38ce-4e69-8b85-76c5186573f8"
+    },
+    {
+      "claim_id": "9f4069c7-4269-4cd2-85a6-b31a5533b568",
+      "result_id": "e038a620-38ce-4e69-8b85-76c5186573f8"
+    },
+    {
+      "claim_id": "5120114a-b00e-4b00-9d83-dad008e1df8b",
+      "result_id": "e038a620-38ce-4e69-8b85-76c5186573f8"
+    },
+    {
+      "claim_id": "1f870e4e-cc23-44f3-8a75-6afae9f86dd2",
+      "result_id": "90e649c8-f110-4fb9-ab33-4d68bba44f82"
+    },
+    {
+      "claim_id": "560d733c-4e0b-469b-94de-9bd1faef7866",
+      "result_id": "90e649c8-f110-4fb9-ab33-4d68bba44f82"
+    },
+    {
+      "claim_id": "b15d4ff0-c2c0-47e4-adb2-0c5671686a47",
+      "result_id": "b67ff883-336c-4fc7-b781-69fa17c34057"
+    },
+    {
+      "claim_id": "6ceb56ae-bba7-4e42-b05e-88f4d48aa549",
+      "result_id": "b67ff883-336c-4fc7-b781-69fa17c34057"
+    },
+    {
+      "claim_id": "bbd7c019-4da6-432b-a6b2-dda24214b4ea",
+      "result_id": "b67ff883-336c-4fc7-b781-69fa17c34057"
+    },
+    {
+      "claim_id": "cbf9c21e-4ad1-42d7-88de-68b4c64861ac",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "7ea87e5f-7599-4811-ac2f-776bbff143a9",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "12fe4f72-caf9-4c22-8db0-716e945256fa",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "a64d6134-c8db-48f0-a898-765a3e28ba10",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "150cbe92-e206-47c7-9164-dada4b652e5c",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "ca514c70-0fe6-4b29-b98f-8a8772621a2e",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "321b1aae-3893-48e1-9a6c-ca6f19b6bb44",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "a0a49897-b004-4107-b073-9b8641775301",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "6e959ca9-6483-48d7-9ce5-951064d5599d",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "42d8e3aa-9cfa-4020-ab4d-8784b5a76696",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "829c8f5f-bf5b-4a15-93e4-b9302f0f8485",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "feb55c25-cae5-4942-8ea7-966f47ec0850",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "e024953b-9192-4d98-87f9-333c97f33dc6",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "bd9e0c22-018d-4fbe-a29a-acf0eafa1e11",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "4b9242d9-02f9-4870-aa33-7fb5ab23a4b9",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "492ce0a4-92b6-4682-aaad-3bdaf7b05be2",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "22560f02-9181-4e8f-af66-7183d4cfed52",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "2f11a534-4e43-4812-a96a-26c1e33e1ea8",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "c2c66a04-ca11-439f-8b31-1f8c2ed9ffa9",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "28d9ed82-c9ac-40b1-88b4-9570f78a980d",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "7fe73a7d-a404-417a-8a20-0b6624b654a8",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "55a0eba2-c1fb-477b-8bfd-2c13e4cde7f6",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "173ae3ee-a5a0-49f4-b8c6-4a3ceef3fcd7",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "71cf91ff-fe50-456b-b6e7-ccae8dff6d59",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "c6a197a1-7266-47e2-a2b9-0716a4fbc34c",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "89e32a59-296c-4ccc-9873-109ad7d510c2",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "910adea4-4e79-474c-9d06-692320b3adcf",
+      "result_id": "897bd6ca-8251-44af-9d00-701c157637fa"
+    },
+    {
+      "claim_id": "7ee05e57-6124-4d65-a6c9-b25dbaa7dded",
+      "result_id": "7e4e281d-5285-4c11-8bb2-214d98bf5294"
+    },
+    {
+      "claim_id": "222918ce-69a1-47d3-9476-91c111082c53",
+      "result_id": "7e4e281d-5285-4c11-8bb2-214d98bf5294"
+    },
+    {
+      "claim_id": "93594e40-83f8-4aa9-8ca9-86d9e1155f46",
+      "result_id": "7e4e281d-5285-4c11-8bb2-214d98bf5294"
+    },
+    {
+      "claim_id": "7c5370e9-61ab-443c-b03f-39e810815664",
+      "result_id": "7e4e281d-5285-4c11-8bb2-214d98bf5294"
+    },
+    {
+      "claim_id": "ae117ac6-4bca-41c7-878c-ca36d2705ba2",
+      "result_id": "7d15b3d7-a331-40a1-850f-f346205bb8b6"
+    },
+    {
+      "claim_id": "11a70473-468c-422e-9f7d-91933dee4287",
+      "result_id": "5318fb46-cc1a-4a91-b986-0da44ceb56f4"
+    }
+  ],
+  "comparisons": []
+}

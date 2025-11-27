@@ -13,11 +13,11 @@
       "C9",
       "C10"
     ],
-    "result": "The authors developed a genetic labeling strategy using Brn3aCKOAP and NFL-IRES-CreER alleles with tamoxifen induction to achieve sparse labeling of cutaneous sensory neurons. This approach was validated to produce functional neurons without morphological alterations.",
+    "result": "A genetic labeling strategy using Brn3aCKOAP and NFL-IRES-CreER alleles enables sparse visualization of cutaneous sensory neurons. The Brn3a+/\u2212 heterozygous state does not alter neuronal morphology or function due to compensatory feedback mechanisms.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C10 establish the genetic tools and validate their use. The Brn3a expression pattern (C1), construct design (C2-C3), sparse labeling approach (C4-C5), and validation that Brn3a+/- neurons are functionally normal (C7-C10) are all supported by appropriate citations and established knowledge. The rationale for choosing NFL-IRES-CreER over ROSA26-CreER (C6) is clearly justified.",
+    "evaluation": "Claims C1-C10 establish the genetic basis and validation of the labeling approach. The citations to prior work (C1, C2, C7-C9) support the properties of the genetic tools, and the inference that Brn3a+/\u2212 neurons are functionally normal (C10) is well-justified by the cited compensatory mechanisms.",
     "result_type": "MINOR"
   },
   {
@@ -35,11 +35,11 @@
       "C20",
       "C21"
     ],
-    "result": "The authors surveyed 719 arbors from 101 P21 back skins (1569 cm\u00b2 total) and traced 77 complete arbors using Neuromantic software. Tamoxifen dose titration at GD17 produced optimal sparse labeling at P21 when skin pigmentation is temporarily lost.",
+    "result": "The experimental approach analyzed 719 isolated arbors from 101 P21 back skins (1569 cm\u00b2) following tamoxifen titration, with 77 arbors fully traced. P21 timing exploits the telogen phase when skin pigmentation is temporarily lost, enabling optimal imaging.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C11-C21 describe the experimental dataset and methodology. The choice of P21 timing to avoid melanin interference (C12-C13) is well-justified with citations. The dose-response relationship (C14-C15) and dataset size (C16-C21) are clearly documented with supporting figures. The methodology is reproducible and well-described.",
+    "evaluation": "Claims C11-C21 describe the experimental dataset with specific quantitative details (C14, C16-C20) supported by figures. The rationale for P21 timing (C13) is well-supported by citations and imaging data (Figure 1A). The dose-response relationship (C14-C15) is clearly demonstrated.",
     "result_type": "MINOR"
   },
   {
@@ -49,238 +49,205 @@
       "C23",
       "C24",
       "C25",
-      "C26"
+      "C26",
+      "C27",
+      "C28"
     ],
-    "result": "The labeled sensory neurons represent the intersection of Brn3a and NFL expression domains, which is enriched for large-diameter axon neurons but covers only a fraction of total cutaneous arbor diversity. The observed abundances do not reflect actual abundances due to multiple biases.",
+    "result": "The labeled neuron population represents the intersection of Brn3a and NFL expression domains, enriched for large-diameter sensory neurons. This approach captures only a fraction of cutaneous sensory diversity, with multiple sources of sampling bias acknowledged.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C22-C26 appropriately acknowledge limitations of the labeling strategy. The inference that labeled neurons represent the intersection of expression domains (C22-C24) is logical and supported by citations. The recognition that the survey is incomplete (C25) and that observed abundances are biased (C26) demonstrates appropriate scientific caution and is well-reasoned.",
+    "evaluation": "Claims C22-C28 appropriately characterize the limitations of the genetic labeling approach. The inference about NFL-IRES-CreER enrichment (C24) is reasonable given neurofilament biology. The authors transparently acknowledge sampling biases (C26-C28), strengthening the interpretation of results.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C27",
-      "C28",
       "C29",
-      "C65",
-      "C66"
-    ],
-    "result": "Ten morphologically distinct cutaneous arbor types were identified through visual inspection and confirmed by statistical analysis of morphological properties including arbor area, axon length, branch points, ending types, follicle contacts, and lamination depth.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C27-C29, C65-C66 describe the classification methodology. The combination of qualitative visual inspection (C28) followed by quantitative statistical validation (C29, C66) is appropriate. The basis for classification using both discrete (ending types) and continuous (morphometric) parameters (C65) is sound and supported by Figure 8 data.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
       "C30",
       "C31",
-      "C32",
-      "C33",
-      "C34",
-      "C35"
-    ],
-    "result": "The smallest arbors (MCA, I-FACE, I-FALE) target isolated Merkel cell clusters or single guard hair follicles. At P21, 20/20 MCA arbors targeted only isolated Merkel clusters with no other labeled arbors within >350 \u03bcm, though prior work suggests individual axons can innervate multiple clusters in neonates.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C30-C35 describe small arbor morphologies with appropriate caveats. The technical limitation of axon breakage during dissection (C32) is acknowledged. The observation that P21 arbors target isolated structures (C34) is balanced against prior evidence of multi-cluster innervation in neonates (C33), showing appropriate consideration of conflicting evidence.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
-      "C36",
-      "C37",
-      "C38"
-    ],
-    "result": "Bushy ending (BE) arbors have dense, finely branched processes covering 0.5-1 mm diameter areas at 5-10 \u03bcm depth, with total axon lengths of ~10 cm and ~1,000 branch points, ramifying within a narrow stratum.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C36-C38 provide detailed morphometric characterization of BE arbors supported by Figure 3 data. The measurements of arbor area, depth, axon length, and branch points are quantitative and reproducible (as shown by the independent tracing comparison in C165). The stratification pattern is clearly documented.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C39",
-      "C40"
-    ],
-    "result": "Thick ending (TE) arbors have 20-80 branch points, sparse coverage of 300-500 \u03bcm diameter areas at ~20 \u03bcm depth, with distinctive thickening of the terminal 50-100 \u03bcm of branches.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C39-C40 characterize TE arbors with quantitative morphometric data supported by Figure 4G-J. The distinctive terminal thickening feature (C40) is clearly visible in the figures and represents a defining morphological characteristic of this arbor type.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C41",
-      "C42",
-      "C43"
-    ],
-    "result": "Low-density follicle-associated lanceolate ending (LD-FALE) arbors are sparsely branched, innervate 2-36 follicles across 1-2 mm diameter territories with 5-35 mm axon length and 5-40 branch points. The C-shaped lanceolate endings nearly always open toward the anterior.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C41-C43 characterize LD-FALE arbors with quantitative data supported by Figure 4A-D, I. The consistent anterior orientation of lanceolate endings (C43) is documented in Figure 8E and represents an important structural feature with potential functional implications.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C48",
-      "C49",
-      "C50"
-    ],
-    "result": "High-density follicle-associated lanceolate ending (HD-FALE) is the most common arbor type (~50% of AP+ arbors), localizing ~50 \u03bcm beneath skin surface and contacting ~90% of follicles within 200 \u03bcm to 1 mm diameter areas. Arbor areas range from 10\u2075 to 2.5\u00d710\u2076 \u03bcm\u00b2 with 6-153 follicles innervated.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C44-C50 provide comprehensive characterization of HD-FALE arbors supported by Figure 5 data. The abundance estimate (C44), morphometric measurements (C45-C49), and variable follicle coverage (C50) are well-documented. The substantial variability within this type (C47-C48) is appropriately noted.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
-      "C51",
-      "C52"
-    ],
-    "result": "Small area follicle-associated circumferential ending (SA-FACE) arbors are rare (8/719 arbors), contact few follicles (mean 3.8\u00b11.1), have <20 branch points, and span 200-500 \u03bcm diameter.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C51-C52 characterize SA-FACE arbors with quantitative data supported by Figure 4E,F,I. The rarity of this type (C52) is clearly documented, and the morphometric measurements (C51) are consistent with the figures.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
-      "C53",
-      "C54",
-      "C55",
-      "C56"
-    ],
-    "result": "Large area follicle-associated circumferential ending (LA-FACE) arbors contact many follicles (mean 197\u00b173) within 1-2 mm diameter territories, with 8-15 cm axon lengths and ~200 branch points. Larger arbors exhibit lower mean density of innervated follicles (19-79%, mean 57%).",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C53-C56 characterize LA-FACE arbors with quantitative data supported by Figure 6. The inverse relationship between arbor size and follicle density (C56) is documented in Figure 6E and represents an important structural principle.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C57",
-      "C58",
-      "C59",
-      "C60",
-      "C61",
-      "C62",
-      "C63",
-      "C64"
-    ],
-    "result": "Large arbors with free endings (LA-FE) comprise the largest arbor class with two stratified tiers: an inner arbor at ~70 \u03bcm depth (~3 mm diameter, 10-15 cm axon length) and an outer arbor at ~10 \u03bcm depth (~4 mm diameter, 50-100 cm axon length) connected by >50 vertical branches. The outer arbor shows numerous axon crossings while the inner arbor shows rare crossings.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C57-C64 provide detailed characterization of LA-FE arbors supported by Figure 7 and supplements. The extraordinary axon lengths (up to 1 meter total, C60) are remarkable and well-documented. The differential self-avoidance patterns between inner and outer arbors (C63-C64) represent important structural features. The scale comparison to mouse torso length (C61) provides useful context.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
-      "C67",
       "C68",
       "C69",
       "C70",
       "C71",
-      "C72"
-    ],
-    "result": "Quantitative analysis reveals different degrees of arbor area clustering: BE, LA-FACE, and LA-FE show tight clustering while HD-FALE, LD-FALE, and TE span two orders of magnitude. BE arbors show the highest length:area ratio and LD-FALE the lowest. SA-FACE and LA-FACE arbor areas are non-overlapping.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C67-C72 describe quantitative morphometric relationships supported by Figure 8A-B. The differential clustering patterns (C67-C68) and density differences (C70-C71) are clearly demonstrated. The non-overlapping distributions (C69, C72) support the validity of the classification scheme.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
+      "C72",
       "C73",
       "C74",
       "C75",
       "C76",
       "C77"
     ],
-    "result": "LA-FACE and SA-FACE differ markedly in follicle innervation (>100 vs <10) and have non-overlapping distributions in innervation index vs arbor area plots. HD-FALE and LD-FALE are not clearly distinguished by follicle number but show clear separation in innervation index vs arbor area.",
+    "result": "Ten morphologically distinct cutaneous arbor types were identified through visual inspection and confirmed by quantitative statistical analysis of morphological parameters including arbor area, axon length, branch points, and follicle innervation patterns.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C73-C77 describe quantitative distinctions between morphologically similar arbor pairs supported by Figure 8C. The use of innervation index (follicles per unit area) effectively separates types that overlap in other parameters, demonstrating sophisticated morphometric analysis.",
+    "evaluation": "Claims C29-C31 and C68-C77 establish the classification system. The combination of qualitative (C30, C68) and quantitative approaches (C31, C69-C77) with supporting data in Figure 8 provides robust evidence for the 10 arbor types. Statistical separation between closely related types (C69, C72, C76-C77) strengthens the classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The smallest arbors (MCA, I-FALE, I-FACE) target isolated Merkel cell clusters or single guard hair follicles. While axon breakage during dissection prevents absolute confirmation of single-target innervation, 20/20 MCA arbors at P21 showed isolated targeting patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 describe small arbor morphologies with appropriate caveats. The technical limitation (C34) is acknowledged, and prior evidence of multi-cluster innervation (C35) is cited. However, the P21 data (C36) showing isolated patterns in all 20 cases provides strong support for the predominant pattern, even if exceptions may exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "BE (bushy ending) arbors exhibit dense, finely branched processes covering 0.5-1 mm diameter areas at 5-10 \u03bcm depth, with ~10 cm total axon length and ~1,000 branch points, all ramifying within a narrow stratum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide detailed morphometric characterization of BE arbors supported by Figure 3. The measurements are specific and reproducibility is demonstrated (C169 shows <6% variation between independent traces). The stratification pattern (C41) is consistent across arbor types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "TE (thick ending) arbors have 20-80 branch points, sparse coverage of 300-500 \u03bcm diameter areas at ~20 \u03bcm depth, with distinctive terminal branch thickening in the final 50-100 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 describe TE arbor morphology with quantitative details supported by Figure 4G-J. The distinctive thickening feature (C44) provides a clear qualitative marker distinguishing this type from others.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "LD-FALE (low-density follicle-associated lanceolate ending) arbors sparsely innervate 2-36 follicles across 1-2 mm territories with only 5-35 mm axon length and 5-40 branch points. Lanceolate endings consistently orient with C-shaped openings facing anteriorly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 characterize LD-FALE morphology with quantitative ranges supported by Figure 4. The consistent anterior orientation (C47, Figure 8E) represents an important organizational principle with potential functional implications discussed later in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "HD-FALE arbors are the most common type (~50% of AP+ arbors), contacting ~90% of follicles within 200 \u03bcm-1 mm diameter territories at ~50 \u03bcm depth. Arbor areas range 10\u2075-2.5\u00d710\u2076 \u03bcm\u00b2 innervating 6-153 follicles, with variable circumferential coverage (30-100%) of individual follicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 provide comprehensive characterization of the most abundant arbor type, supported by Figure 5. The substantial variability within the type (C51-C52) is well-documented with mean\u00b1SD values. The variable follicle coverage (C54) has important implications for co-innervation patterns discussed later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "SA-FACE and LA-FACE arbors represent small and large variants of follicle-associated circumferential endings. SA-FACE (rare, 8/719) contacts 3.8\u00b11.1 follicles in 200-500 \u03bcm territories. LA-FACE contacts 197\u00b173 follicles in 1-2 mm territories with 8-15 cm axon length, showing inverse correlation between arbor size and follicle density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 distinguish two related arbor types with clear quantitative separation supported by Figure 6 and Figure 8C. The inverse size-density relationship (C60) is an interesting organizational principle. The rarity of SA-FACE (C55) is noted but may reflect sampling bias acknowledged elsewhere.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "LA-FE (large area free ending) arbors are the largest, with two-tiered organization: inner arbor (~70 \u03bcm depth, ~3 mm diameter, 10-15 cm length) and outer arbor (~10 \u03bcm depth, ~4 mm diameter, 50-100 cm length) connected by >50 vertical branches. Axons lack terminal specializations and show differential self-avoidance between tiers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 describe the most complex arbor type with extraordinary dimensions (up to 1 meter total length, C63) supported by Figure 7. The two-tiered organization (C61) and differential self-avoidance patterns (C66-C67) are clearly demonstrated. The comparison to mouse body size (C64) emphasizes the remarkable scale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Cutaneous sensory arbors exhibit precise laminar stratification with characteristic depths for each type: BE/LA-FE outer arbors near surface (~5-10 \u03bcm), TE at ~20 \u03bcm, follicle-associated endings at ~40-50 \u03bcm, and BE/LA-FE inner arbors at ~70 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 establish the laminar organization principle supported by Figure 8D and Figure 8\u2014supplement 1. The precise stratification with type-specific depths represents an important organizational feature with implications for stimulus detection and developmental mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "This represents the first systematic description of sensory afferent morphologies in vertebrate skin, though the survey is incomplete due to genetic labeling limitations and restriction to back skin, excluding specialized body surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 appropriately frame the contribution and limitations. The novelty claim (C82) appears justified given the comprehensive approach. The acknowledged limitations (C83-C85) regarding incomplete coverage are appropriate and strengthen rather than weaken the conclusions by defining scope clearly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Each sensory arbor exhibits high uniformity in terminal structures, with arbor types never mixing ending morphologies (lanceolate, circumferential, bushy, thick). This morphological uniformity suggests corresponding uniformity in sensory transduction apparatus, supporting a labeled-line model with at least 10 parallel representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 establish a key functional principle from morphological observations. The uniformity within arbors (C86-C88) is well-documented across 719 arbors. The inference about transduction uniformity (C90) and labeled-line organization (C91) is reasonable, though direct functional validation would strengthen these conclusions.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C78",
-      "C79",
-      "C80",
-      "C81",
-      "C82"
-    ],
-    "result": "Cutaneous sensory arbors are precisely stratified with each type having characteristic depth. BE and LA-FE outer arbors reside near the skin surface (likely within epidermis) with inner arbors at ~70 \u03bcm. TE arbors localize at ~20 \u03bcm. Follicle-associated endings reside at ~50 \u03bcm (non-guard) or ~40 \u03bcm (guard hairs).",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C78-C82 describe laminar organization supported by Figures 8D and supplement. The precise stratification of different arbor types represents an important organizational principle. The depth measurements are quantitative and consistent across multiple examples.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C83",
-      "C84",
-      "C85",
-      "C86"
-    ],
-    "result": "This work represents the first systematic description of sensory afferent morphologies in vertebrate skin, though it likely provides an incomplete picture due to limited expression of the genetic tools and exclusion of specialized body surfaces.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C83-C86 appropriately frame the contribution and limitations. The claim of being first (C83) is reasonable given the comprehensive nature of the survey. The acknowledgment of incompleteness (C84-C86) demonstrates appropriate scientific caution and is well-justified.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
-      "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C91",
-      "C92"
-    ],
-    "result": "Each sensory arbor exhibits high uniformity in terminal structures - arbors with one ending type never produce other types (with possible exception of occasional free endings in LA-FACE). This morphological uniformity argues for corresponding uniformity in sensory transduction apparatus and supports a labeled line model with at least 10 parallel representations.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C87-C92 describe a fundamental principle of arbor organization supported by comprehensive morphological observations. The uniformity of terminal structures within arbor types (C87-C89) is consistently observed across 719 arbors. The inference about transduction apparatus uniformity (C91) and labeled line organization (C92) is logical and well-supported.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R18",
-    "claim_ids": [
+      "C92",
       "C93",
       "C94",
       "C95",
@@ -288,37 +255,37 @@
       "C97",
       "C98",
       "C99",
-      "C100",
-      "C101"
+      "C100"
     ],
-    "result": "The morphologically defined arbor types likely correspond to known physiological classes: MCA to SA I/SA LTMRs, I-FALE to A-beta RA LTMRs (guard hairs), HD-FALE to A-beta RA LTMRs (awl/auchenne), I-FACE/LA-FACE/SA-FACE to circumferential endings (unknown physiology), TE to mechanoreceptors, and BE to MrgprB4+ itch neurons.",
+    "result": "Morphological arbor types likely correspond to known physiological classes: MCA to SA I/SA LTMRs, I-FALE to A-beta RA LTMRs (guard hairs), HD-FALE to A-beta RA LTMRs (awl/auchenne hairs), I-FACE/LA-FACE/SA-FACE to circumferential endings (unknown function), TE to mechanoreceptors, and BE to MrgprB4+ itch neurons.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C93-C101 propose correspondences between morphological and physiological classifications based on inference and literature comparisons. While the proposed matches are reasonable, they remain speculative without direct physiological validation. Several correspondences acknowledge unknown physiological correlates (C97), and the BE-MrgprB4 connection (C100) is based on morphological resemblance rather than definitive evidence.",
+    "evaluation": "Claims C92-C100 propose correspondences between morphological and functional types based on inference and literature. While some associations are well-supported (C92-C94), others are speculative (C95-C97, C99). The unknown physiological correlates (C96) and lack of direct functional validation limit confidence. These remain hypotheses requiring experimental confirmation.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R19",
+    "result_id": "R16",
     "claim_ids": [
+      "C101",
       "C102",
       "C103",
       "C104",
-      "C105",
-      "C106",
-      "C107",
-      "C108"
+      "C105"
     ],
-    "result": "Arbor morphologies predict receptive field properties: I-FALE/I-FACE provide single follicle resolution, LA-FE have 3-5 mm diameter fields with dense coverage, BE have 0.5-1 mm fields with even higher density, and HD-FALE have relatively low spatial resolution (~0.5-1 mm) sensing hair deflections with possible co-innervation of single follicles by 2-3 arbors.",
+    "result": "Arbor morphologies predict receptive field properties: I-FALE/I-FACE provide single-follicle resolution, LA-FE neurons have 3-5 mm fields with dense coverage, BE neurons have 0.5-1 mm fields with highest density, and HD-FALE arbors have relatively low spatial resolution sensing hair deflections.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C102-C108 make logical predictions about receptive field properties based on morphological observations. The predictions are well-reasoned and testable. The inference about HD-FALE co-innervation (C107-C108) is based on partial circumference coverage and represents a reasonable hypothesis.",
+    "evaluation": "Claims C101-C105 make reasonable predictions about receptive field properties based on arbor morphology. The inferences are logical and well-justified by the anatomical data, though direct physiological confirmation would be needed to validate these predictions. The predictions are testable and provide clear hypotheses for future work.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R20",
+    "result_id": "R17",
     "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
       "C109",
       "C110",
       "C111",
@@ -326,128 +293,139 @@
       "C113",
       "C114"
     ],
-    "result": "Lanceolate endings show consistent asymmetric orientation on follicles (C-shaped openings face anteriorly), suggesting directional mechanosensory responses. If compression and extension produce opposite responses, this structural asymmetry could provide direction-of-movement information analogous to direction-selective retinal ganglion cells but derived from structural rather than circuit mechanisms.",
+    "result": "Partial circumferential coverage by HD-FALE endings suggests co-innervation of follicles by 2-3 arbors, potentially enabling synchronous responses. The consistent asymmetric orientation of C-shaped lanceolate endings suggests directional mechanosensitivity analogous to hair cells, potentially providing information about movement direction.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C109-C114 propose a directional sensitivity mechanism based on structural asymmetry. The consistent orientation is well-documented (C109, Figure 8E), but the functional implications (C110-C114) remain speculative. The analogy to vestibular/auditory systems (C111) is reasonable but requires physiological validation. This represents an important testable hypothesis.",
+    "evaluation": "Claims C106-C114 propose functional implications of morphological features. The co-innervation inference (C106) is reasonable from partial coverage data. However, the directional sensitivity hypothesis (C110-C113) is highly speculative, based on analogy to other systems without direct evidence. These represent interesting hypotheses requiring electrophysiological validation.",
     "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "LD-FALE neurons are candidates for C-fiber neurons mediating affective touch stimuli, similar to pleasant touch responses recorded from human hairy skin by microneurography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C116 propose a specific functional role for LD-FALE based on morphological properties (sparse, widely-spaced innervation). While the human microneurography data (C116) is well-cited, the connection to LD-FALE is speculative. This hypothesis requires validation through physiological characterization and behavioral studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "LA-FACE arbors show dense follicle coverage (~60% in ~2 mm territories) with variable fiber numbers per follicle, suggesting many follicles receive input from multiple LA-FACE arbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 describe LA-FACE innervation patterns with the inference of multi-arbor convergence (C119) reasonably supported by variable staining intensity (C118). However, AP histochemistry cannot resolve individual fibers precisely, introducing some uncertainty in the quantitative estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Coverage factors (mean arbors per unit area \u00d7 arbor territory) are estimated as 1-2 for HD-FALE, 2-4 for LA-FACE, and potentially >30 for LD-FALE (upper limit). These estimates assume complete follicle coverage by endings and account for interdigitation between arbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C125 provide coverage factor estimates based on morphological measurements and assumptions. The HD-FALE estimate (C120) is best supported by cited evidence of complete follicle coverage (C121). The LA-FACE estimate (C123) is less precise, and the LD-FALE estimate (C124-C125) is highly uncertain due to competition with HD-FALE. These calculations require validation through complete mapping studies.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R21",
     "claim_ids": [
-      "C115",
-      "C116",
-      "C117"
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
     ],
-    "result": "LD-FALE neurons, with widely spaced innervated follicles (~0.5 mm intervals) incompatible with direct communication between endings, are excellent candidates for C-fiber neurons mediating affective touch stimuli, similar to 'pleasant touch' C-fibers recorded in human hairy skin.",
+    "result": "Developmental mechanisms determining arbor properties are unknown but may be tractable in planar systems like skin. Competition for limited targets could determine territory size, while axon length and branching (varying 1,000-fold) could be controlled by cytoskeletal protein regulation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C115-C117 propose a functional role for LD-FALE based on morphology and analogy to human microneurography data. The morphological observations (C115) are solid, but the functional assignment (C116) remains speculative without direct physiological validation. The comparison to human pleasant touch fibers (C117) is suggestive but not definitive.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C126-C133 discuss developmental mechanisms as speculation and future directions. The competition model (C128-C131) is supported by analogy to other systems (C129-C130), but lacks direct evidence in this system. The cytoskeletal regulation hypothesis (C133) is plausible but entirely speculative. These represent research directions rather than established results.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R22",
     "claim_ids": [
-      "C118",
-      "C119",
-      "C120"
+      "C134",
+      "C135",
+      "C136",
+      "C137"
     ],
-    "result": "LA-FACE arbors show dense follicle coverage (~60% of follicles in ~2 mm territory) with variable AP+ fiber intensity among follicles, suggesting many follicles receive fibers from two or more LA-FACE arbors.",
+    "result": "Hair follicles and associated structures are polarized along body axes under planar cell polarity pathway control. Follicles could transmit polarity information to lanceolate clusters, supported by unpublished experiments with planar cell polarity mutants.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C118-C120 describe LA-FACE innervation patterns with the inference of multi-arbor convergence (C120) based on variable staining intensity (C119). The logic is sound though the inference would be strengthened by higher resolution imaging to resolve individual fibers.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C137 propose a mechanism for lanceolate ending orientation. The follicle polarization (C134-C135) is well-established. However, the transmission to nerve endings (C136-C137) relies on unpublished data that cannot be evaluated. This interesting hypothesis requires publication of the supporting evidence for proper assessment.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R23",
     "claim_ids": [
-      "C121",
-      "C122",
-      "C123",
-      "C124",
-      "C125",
-      "C126"
+      "C138",
+      "C139",
+      "C140"
     ],
-    "result": "Coverage factors (mean area per arbor \u00d7 arbors per unit area) are estimated as 1-2 for HD-FALE, 2-4 for LA-FACE, and potentially >30 for LD-FALE (upper limit due to competition with HD-FALE). These estimates assume full circumferential occupancy of follicles by lanceolate endings.",
+    "result": "The cutaneous sensory system offers experimental advantages: accessible DRG neurons, two-dimensional skin tissue amenable to manipulation, and unique ability for single-unit recordings in awake humans correlating physiology with psychophysics.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C121-C126 estimate coverage factors based on morphological measurements and assumptions. The HD-FALE estimate (C121) is reasonably well-supported by the assumption of full circumferential occupancy (C122), which is backed by citations. The LA-FACE (C124) and LD-FALE (C125-C126) estimates involve more assumptions and uncertainty. These represent useful first approximations but require validation.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 accurately describe advantages of the cutaneous system, well-supported by citations (C140). These points provide appropriate context for why this system is valuable for the type of comprehensive anatomical analysis presented.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R24",
     "claim_ids": [
-      "C127",
-      "C128",
-      "C129",
-      "C130",
-      "C131"
+      "C141",
+      "C142",
+      "C143",
+      "C144"
     ],
-    "result": "Mechanisms determining arbor properties are unknown, but competition among arbors for limited targets (e.g., follicle circumference) could determine territory size, analogous to neuromuscular junction competition. This predicts inverse correlation between arbor territory and neuron density.",
+    "result": "The intact skin flat-mount approach offers advantages over traditional sectioning: murine skin is thin enough for complete imaging without sectioning, two-dimensional format simplifies handling and cataloging, and large areas can be surveyed to identify rare arbor types.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C127-C131 acknowledge knowledge gaps (C127) and propose developmental mechanisms. The competition model (C128-C130) is supported by analogy to documented phenomena at guard hair follicles and neuromuscular junctions. The prediction (C131) is testable but remains speculative without experimental validation.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C144 describe methodological advantages of the flat-mount approach compared to traditional sectioning methods (C141). The advantages are logical and well-justified by the experimental experience, contributing to the feasibility of the comprehensive survey.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R25",
     "claim_ids": [
-      "C132",
-      "C133"
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
     ],
-    "result": "Axon length and branch points vary over a 1,000-fold range across arbor types and could be controlled by transcriptional regulation of cytoskeletal protein abundances and ratios, in addition to local extrinsic signals.",
+    "result": "Cutaneous sensory arbor analysis has a simplifying feature compared to other neuronal reconstruction programs: minimal arbor-arbor interactions allow comprehensive neuroanatomical understanding from individual arbor reconstructions. This suggests comprehensive anatomical description of mammalian cutaneous afferents should be achievable in the near future.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C132-C133 note the remarkable morphological diversity (C132, well-documented in the data) and propose regulatory mechanisms (C133). The transcriptional control hypothesis is reasonable and supported by citation to Gallo 2011, though it remains speculative for this specific system.",
+    "evaluation": "Claims C145-C149 appropriately contextualize the work within broader neuroanatomical reconstruction efforts. The simplifying feature (C146-C147) is valid and distinguishes this system from more complex neural circuits (C148). The optimistic projection (C149) is reasonable given the progress demonstrated, though 'not-too-distant future' is imprecise.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R26",
     "claim_ids": [
-      "C134",
-      "C135",
-      "C136"
-    ],
-    "result": "Hair follicles and associated structures are polarized with respect to body axes under planar cell polarity pathway control. Each follicle could transmit polarity information to its associated lanceolate cluster, supported by unpublished experiments with planar cell polarity mutants.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C134-C135 describe established knowledge about follicle polarity. The hypothesis that follicles transmit polarity to lanceolate clusters (C136) is reasonable but relies on unpublished observations, which cannot be fully evaluated. This represents an important testable hypothesis requiring publication of the supporting data.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R27",
-    "claim_ids": [
-      "C137",
-      "C138",
-      "C139",
-      "C140",
-      "C141",
-      "C142",
-      "C143",
-      "C144",
-      "C145"
-    ],
-    "result": "The cutaneous sensory system offers experimental advantages including accessible primary neurons in DRG, two-dimensional tissue amenable to imaging and manipulation, and unique ability for human single-unit recordings. Murine skin's thinness, two-dimensional nature, and minimal arbor interactions facilitate comprehensive anatomic description.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C137-C145 describe advantages of the cutaneous system for neuroscience research. The experimental advantages (C137-C139) are well-established and supported by citations. The technical advantages for morphological analysis (C140-C142) are demonstrated by the current work. The minimal arbor interactions (C143) simplify analysis compared to other neural systems (C144). The optimistic projection about comprehensive description (C145) is reasonable given these advantages.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R28",
-    "claim_ids": [
-      "C146",
-      "C147",
-      "C148",
-      "C149",
       "C150",
       "C151",
       "C152",
@@ -469,13 +447,15 @@
       "C168",
       "C169",
       "C170",
-      "C171"
+      "C171",
+      "C172",
+      "C173"
     ],
-    "result": "Detailed methods are provided for mouse breeding, tamoxifen administration, tissue preparation, AP histochemistry, imaging, arbor tracing with Neuromantic software, and statistical analysis. Reproducibility was validated with independent tracings showing 2.17% and 5.60% differences in axon length and branch points.",
+    "result": "Detailed methods for genetic crosses, tissue processing, imaging, and tracing are provided. Key technical details include: 70\u00b0C heat inactivation of endogenous phosphatase, BBBA clearing causing ~8% Z-dimension shrinkage, semi-automated Neuromantic tracing requiring ~15 hours for large arbors, and reproducibility of 2-6% variation between independent traces.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C146-C171 provide comprehensive methodological details. The protocols are clearly described with appropriate citations. The reproducibility assessment (C165) demonstrates good technical consistency. The methods are sufficiently detailed for replication, though some details (e.g., specific Neuromantic settings) could be more explicit.",
+    "evaluation": "Claims C150-C173 provide comprehensive methodological details. The reproducibility assessment (C169) showing <6% variation is excellent. Technical limitations are acknowledged (C166-C167). The methods appear sufficiently detailed for reproduction, though some details (e.g., specific imaging parameters, software versions) could be more complete.",
     "result_type": "MINOR"
   }
 ]

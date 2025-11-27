@@ -1,0 +1,385 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes background knowledge about the integrated stress response (ISR) pathway in metazoa, where four distinct eIF2\u03b1 kinases (PERK, PKR, GCN2, and HRI) respond to different stress conditions but converge on phosphorylating serine 51 of eIF2\u03b1, leading to reduced protein synthesis and preferential translation of specific mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C9-C13 represent well-established background knowledge about the ISR pathway, supported by appropriate citations to prior literature. These claims provide necessary context for understanding the experimental work but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript describes established mechanisms of eIF2\u03b1 phosphorylation effects, including competitive inhibition of eIF2B, translational upregulation of uORF-containing mRNAs like ATF4 and CHOP, and the role of PERK in the unfolded protein response (UPR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C26 represent well-documented background knowledge about eIF2\u03b1 phosphorylation mechanisms and the UPR, appropriately supported by citations to prior work. These provide essential context but are not novel contributions of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "A high-throughput screen of 106,281 compounds using an ATF4 luciferase reporter identified 460 initial hits (0.43%), of which 187 were specific to the PERK branch of the UPR. The primary screen had a Z' factor of 0.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 describe the screening methodology and results with specific quantitative metrics (Z' factor, hit rates). The Z' factor of 0.5 indicates acceptable but not optimal assay quality. The data are presented in Figure 1 and appear internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C79",
+      "C80"
+    ],
+    "result": "ISRIB (trans-isomer) potently reverses the effects of eIF2\u03b1 phosphorylation with an IC50 of 5 nM, showing 100-fold greater potency than the cis-isomer (IC50 = 600 nM), indicating stereospecific interaction with its cellular target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30-C31, C79-C80 are supported by dose-response data in Figure 2B showing clear stereospecificity. The 100-fold difference in potency between stereoisomers strongly supports stereospecific target engagement. The low IC50 value indicates high potency, though the inference about 'tight interaction' (C80) is reasonable but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C61"
+    ],
+    "result": "ISRIB specifically blocks the PERK branch of the UPR by preventing ATF4 production without inhibiting PERK phosphorylation, XBP1 mRNA splicing, or ATF6 activation. PERK was hyper-phosphorylated in ISRIB-treated cells under ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 and C61 are supported by Western blot data (Figures 2C, 2D, 5D) and XBP1 splicing assays showing selective inhibition of PERK signaling downstream of PERK activation. The observation of PERK hyper-phosphorylation in ISRIB-treated cells is consistent with sustained ER stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "ISRIB does not block eIF2\u03b1 phosphorylation under ER stress conditions; instead, it increased eIF2\u03b1 phosphorylation after tunicamycin treatment. ISRIB alone had no effect on eIF2\u03b1 phosphorylation, indicating that ISRIB acts downstream of PERK and eIF2\u03b1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by quantitative eIF2\u03b1 phosphorylation data (Figure 3A) using an AlphaScreen assay. The unexpected finding that ISRIB increases rather than decreases eIF2\u03b1 phosphorylation is a key mechanistic insight, though the biological significance of this increase requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ISRIB sustained global translation during ER stress, abolishing the 40% drop in translation caused by thapsigargin treatment. ISRIB partially restored the halfmer population in ER-stressed cells, supporting the notion that it maintains high pre-initiation complex (PIC) levels even when eIF2\u03b1 is phosphorylated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by 35S-methionine incorporation data (Figure 3B) and polysome gradient analysis (Figure 3C, supplement 4). The restoration of halfmer peaks provides mechanistic insight into how ISRIB maintains translation capacity. However, the restoration is described as 'partial,' indicating incomplete rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "ISRIB rescued translation in cells expressing the phosphomimetic eIF2\u03b1(S51D) mutant, returning translation to levels observed in non-induced cells, demonstrating that ISRIB restores translation in cells containing either phospho-eIF2\u03b1 or eIF2\u03b1(S51D).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by polysome gradient data (Figure 3D) showing that ISRIB reverses translational attenuation caused by the phosphomimetic mutant. This is a critical control experiment demonstrating that ISRIB's effects are specific to eIF2\u03b1 phosphorylation and not due to off-target effects of ER stress inducers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "ISRIB did not reverse the translational inhibition caused by Torin-1 (an mTOR inhibitor), demonstrating that ISRIB's ability to block translational attenuation is specific to eIF2\u03b1 phosphorylation and not a general effect on translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by polysome gradient data (Figure 3E) showing that ISRIB does not affect Torin-1-mediated translational inhibition. This is an important specificity control demonstrating that ISRIB does not non-specifically enhance translation through other pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "ISRIB blocked ATF4 induction after activation of GCN2 (by amino acid starvation) or HRI (by chemical activator), demonstrating that ISRIB is a bona fide ISR inhibitor that blocks signaling downstream of all eIF2\u03b1 kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by Western blot data (Figure 3F) showing that ISRIB blocks ATF4 production induced by multiple eIF2\u03b1 kinases. This establishes ISRIB as a pan-ISR inhibitor rather than a PERK-specific inhibitor, which is a key finding for the manuscript's conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "ISRIB significantly reduced the induction of GADD34 and CHOP mRNAs in ER-stressed cells and prevented CHOP protein accumulation, demonstrating that ISRIB impairs the transcriptional network governed by ATF4 during the ISR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by qPCR data (Figure 4A) showing statistically significant reduction in CHOP and GADD34 mRNA levels (p<0.001) and immunofluorescence data (Figure 4B) showing absence of CHOP protein. These results are consistent with ISRIB blocking ATF4 production and its downstream transcriptional targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C5"
+    ],
+    "result": "ISRIB treatment of wild-type cells phenocopied eIF2\u03b1(S51A) cells in terms of reduced viability under ER stress. ISRIB alone did not affect cell viability, but caused a strong synergistic effect with ER stress, significantly reducing colony number and size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C55-C58 are supported by colony formation assays (Figure 5A) showing that ISRIB sensitizes cells to ER stress. The synergistic effect is clearly demonstrated, though quantitative statistical analysis of the colony assay is not provided. The comparison to eIF2\u03b1(S51A) cells provides important context from prior literature (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C82"
+    ],
+    "result": "The reduction in cell survival by ISRIB under ER stress resulted from activation of apoptosis, as demonstrated by significant induction of executioner caspases 3/7. Unmitigated ER stress synergizes with ISRIB to induce apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C82 are supported by caspase 3/7 activation assays (Figure 5B and supplement 1) showing increased apoptosis in cells treated with both ISRIB and ER stress inducers. The data demonstrate a clear synergistic effect, though the mechanism linking ISR inhibition to apoptosis is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C81"
+    ],
+    "result": "ER stress remains unmitigated in ISRIB-treated cells, as evidenced by sustained activation of all three UPR sensors: PERK hyper-phosphorylation, prolonged IRE1-GFP foci formation, and prolonged ATF6 proteolytic processing. ISRIB alone did not induce UPR sensors, and by blocking PERK signaling, ISRIB prevents cells from re-establishing ER homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 and C81 are supported by multiple lines of evidence: Western blots (Figure 2C, 5D), live cell imaging (Figure 5C), and XBP1 splicing data (supplement 2). The sustained activation of all three UPR branches provides strong evidence that ER stress is not resolved in ISRIB-treated cells, explaining the synergistic toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C83"
+    ],
+    "result": "ISRIB displays favorable pharmacokinetic properties with a plasma half-life of 8 hours, readily crosses the blood-brain barrier, and achieves brain concentrations of approximately 60 nM at 24 hours post-injection (several-fold above its IC50). ISRIB exhibits no overt toxicity in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 and C83 are supported by pharmacokinetic data (Figure 6A-B) showing drug levels in plasma and brain tissue. The brain penetration and sustained levels above IC50 are important for the in vivo memory studies. However, the claim of 'no overt toxicity' (C83) is based on observations during the study rather than formal toxicity testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C7"
+    ],
+    "result": "ISRIB-treated mice displayed significant enhancement in spatial learning in the Morris water maze, reaching the hidden platform significantly faster than vehicle controls (16.4\u00b14.8s vs 68.1\u00b120s, p<0.05) after 5 days of training. ISRIB-treated mice also showed significantly increased preference for the target quadrant and platform crossing in probe tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C70-C72 are supported by Morris water maze data (Figure 6C-E) with statistical significance (p<0.05). The effect size is substantial, though sample sizes are modest (N=8 per group). The use of a 'weak training protocol' is appropriate for detecting memory enhancement but may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "ISRIB-treated mice showed significantly increased freezing in contextual fear conditioning at 24 hours (long-term memory, p<0.05) compared to vehicle controls, with no differences observed in short-term memory (1 hour).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by contextual fear conditioning data (Figure 6F) showing selective enhancement of long-term but not short-term memory. The statistical significance and selective effect on long-term memory strengthen the conclusion that ISRIB specifically enhances memory consolidation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "ISRIB-treated rats showed significantly increased freezing in auditory fear conditioning at 24 hours (long-term memory, p<0.05) when presented with the conditioned tone, with no difference at 3 hours (short-term memory).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by auditory fear conditioning data (Figure 6G) in rats with direct amygdala infusion of ISRIB. The selective enhancement of long-term memory in a different brain region (amygdala vs hippocampus) and species (rats vs mice) strengthens the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C8",
+      "C84",
+      "C85"
+    ],
+    "result": "Long-term memory is selectively enhanced in ISRIB-treated animals across multiple behavioral paradigms. Memory consolidation is inherently limited by the ISR, and overriding the consequences of eIF2\u03b1 phosphorylation enhances memory consolidation in rodents, suggesting an important role of eIF2\u03b1 phosphorylation in modulating higher-order brain function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C77, C84-C85 represent the major conclusions about memory enhancement. These are well-supported by converging evidence from multiple behavioral tests (Morris water maze, contextual and auditory fear conditioning) showing selective enhancement of long-term but not short-term memory. The inference that ISR 'limits' memory consolidation is supported by the data, though the evolutionary/mechanistic basis requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "ISRIB is claimed to be the first reported antagonist of the ISR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 asserts novelty based on the authors' knowledge of the field. While ISRIB appears to be a novel compound with unique properties (acting downstream of all eIF2\u03b1 kinases), the claim of being 'first' cannot be fully verified without comprehensive literature review. The manuscript does cite salubrinal as an ISR modulator that prolongs eIF2\u03b1 phosphorylation, suggesting other ISR modulators exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The manuscript discusses potential mechanisms of ISRIB action, noting that mutations in eIF2B subunits can confer phospho-eIF2\u03b1 resistance in yeast, and that TLR4 engagement activates eIF2B in macrophages. ISRIB did not reduce phosphorylation of S539 in the eIF2B \u03b5-subunit, indicating it does not utilize this particular regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 provide mechanistic context from prior work (C86-C87) and experimental data (C88-C89) ruling out one potential mechanism. The negative result for S539 phosphorylation (Figure 3 supplement 1) is useful for narrowing down ISRIB's mechanism of action, though the actual target remains unidentified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The manuscript discusses implications for cancer therapy, noting that MEFs lacking PERK or ATF4 exhibit increased sensitivity to ER stress, PERK-/- or GCN2-/- MEFs produce smaller tumors in xenograft models, and a PERK-specific inhibitor shows antitumor activity. Both PERK and GCN2 have pro-survival roles in tumor development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 represent established knowledge from prior literature (appropriately cited) that provides context for potential therapeutic applications of ISRIB. These claims are well-supported by citations but represent discussion of prior work rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The manuscript notes that mutations in eIF2B subunits cause Childhood Ataxia with CNS Hypomyelination (CACH/VWM disease) and that a familial intellectual disability syndrome is linked to a mutation in the eIF2 \u03b3-subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 represent established knowledge from prior literature (appropriately cited) highlighting the importance of eIF2/eIF2B function in human brain disorders. These provide important context for the memory studies but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C66",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The manuscript establishes extensive background on the role of eIF2\u03b1 phosphorylation in memory consolidation, including genetic evidence from mice lacking GCN2 or PKR, effects of PKR inhibitors and salubrinal, the role of ATF4 in repressing CREB-mediated transcription of memory genes, and PERK's role in behavioral flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C65-C66, C96-C104 represent well-established background knowledge from prior literature (appropriately cited) that provides essential context for interpreting the ISRIB memory enhancement results. These claims are well-supported by citations but represent prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The manuscript speculates that ISRIB or related compounds could be beneficial as therapeutic agents for memory improvement in diseases associated with memory impairment, and proposes that evolution did not arrive at a maximally optimized process for memory consolidation, imposing a brake via eIF2\u03b1 phosphorylation that may underscore the importance of filtering memories before long-term storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C107 represent speculation about therapeutic potential and evolutionary interpretations. While the memory enhancement data support the possibility of therapeutic applications, no disease models were tested. The evolutionary interpretation (C106-C107) is plausible but highly speculative and not directly testable with the current data.",
+    "result_type": "MINOR"
+  }
+]

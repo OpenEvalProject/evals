@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C34"
+    ],
+    "result": "Neural crest cells migrate from the neural tube to form the nasal cavity, and a subset expressing both Sox10:eGFP and Ngn1:nRFP ingress into the olfactory epithelium where they differentiate exclusively into microvillous neurons (not ciliated neurons). This was demonstrated through live imaging showing cells migrating anteriorly, coalescing around the olfactory vesicle, then delaminating and intercalating into the epithelium while changing morphology and upregulating Sox10:eGFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C21-C26, and C34 provide converging evidence from live confocal imaging with multiple transgenic reporter lines (Sox10:eGFP, Ngn1:nRFP, TRPC2:Venus, OMP:RFP). The temporal sequence of migration, morphological changes, and marker colocalization are well-documented through figures and videos. The specificity is confirmed by the absence of Sox10:eGFP in ciliated neurons (C26) and the requirement for dual Sox10/Ngn1 expression for ingression (C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C75"
+    ],
+    "result": "Photoconversion-based fate mapping definitively traces individual Sox10-expressing neural crest cells from the dorsal neural tube (14-16 hpf) to their differentiation into microvillous neurons in the olfactory epithelium by 55 hpf. Photoconverted cells were never observed to become ciliated neurons, and many cells crossed the midline to contribute to the contralateral olfactory epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 and C75 describe a rigorous lineage tracing experiment using the PhOTO-N line with photoconvertible Dendra2. The temporal progression is well-documented (no labeled cells before day 1, few at 29 hpf, differentiated by 55 hpf), and the specificity is confirmed by the absence of photoconverted ciliated neurons (C39). The contralateral migration (C40) adds an unexpected but well-documented observation. The methodology is clearly described and the results are consistent across small and large photoconversion experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Laser ablation of Sox10:eGFP+/Ngn1:nRFP+ neural crest cells in the nasal cavity at 25 hpf prevents microvillous neuron formation in the olfactory epithelium, while placode-derived ciliated neurons continue to develop normally. The olfactory epithelium cannot compensate for the loss of this neural crest-derived population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 describe well-controlled laser ablation experiments with appropriate controls (unablated contralateral side, ablation of Ngn1:nRFP-negative cells). The specificity of the effect on microvillous but not ciliated neurons (C44-C45) strongly supports the conclusion that neural crest cells are the primary source of microvillous neurons and that the placode cannot compensate. The dose-response relationship (small vs. large ablations) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Sox10 protein levels increase markedly during microvillous neuron differentiation, and morpholino-mediated knockdown of Sox10 specifically depletes microvillous neurons while leaving ciliated neurons largely intact. The phenotype persists from 29 hpf through 60 hpf, and the few remaining microvillous neurons are often Sox10:eGFP-negative, suggesting they represent a minor non-neural crest population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 provide strong evidence through immunostaining (C47-C48) and loss-of-function experiments (C49-C56). The specificity of the effect on microvillous versus ciliated neurons is well-documented across multiple time points. The observation that remaining microvillous neurons lack Sox10:eGFP (C55-C56) is consistent with the earlier observation of a small Sox10:eGFP-negative microvillous population (C27-C28). However, the morpholino approach has inherent limitations (off-target effects, variable knockdown efficiency), though the authors attempt to address this with pigmentation as a surrogate marker.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Microvillous neuron formation is exquisitely sensitive to Sox10 protein levels, showing consistent reduction across all phenotypic categories (mild, moderate, severe) based on pigmentation, whereas other Sox10-dependent processes like melanocyte differentiation appear more resilient to partial Sox10 reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 describe a clever use of the colorless phenotype as a surrogate for Sox10 knockdown efficiency. The observation that microvillous neurons are depleted even in embryos with high pigmentation (C59-C60) suggests differential sensitivity of different Sox10-dependent processes. However, this interpretation relies on the assumption that pigmentation accurately reflects Sox10 levels in neural crest cells destined for the olfactory epithelium, which may not be entirely valid given tissue-specific differences in Sox10 requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Time-controlled photo-morpholino experiments demonstrate that Sox10 is specifically required during the ingression/differentiation phase (24 hpf onward) rather than only during earlier neural crest specification and migration. Knockdown at 24 hpf, after neural crest cells have populated the nasal cavity, specifically impedes microvillous neuron formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 describe elegant photo-morpholino experiments that temporally dissect Sox10 function. The 24 hpf photocleavage time point is well-justified as occurring after neural crest migration to the nasal cavity (C65), thus decoupling the role in microvillous neurogenesis from earlier roles in neural crest development. The earlier 17.5 hpf knockdown having a stronger effect (C64) is consistent with allowing more time for Sox10 protein degradation. This temporal specificity strengthens the conclusion that Sox10 directly regulates microvillous neurogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C55",
+      "C56",
+      "C80"
+    ],
+    "result": "A small number of microvillous neurons are Sox10:eGFP-negative, suggesting that a minor subset may have a separate, non-neural crest origin, possibly from the olfactory placode/vesicle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27-C28, C55-C56, and C80 identify Sox10:eGFP-negative microvillous neurons but provide only speculation about their origin. While the observation is consistent across experiments (live imaging and morpholino knockdown), no direct lineage tracing of these cells is provided. The speculation that they derive from the olfactory vesicle (C80) is reasonable but unproven. This represents an interesting observation requiring follow-up work for definitive characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C33"
+    ],
+    "result": "Sox10:eGFP-positive cells in the olfactory epithelium colocalize with neuronal markers HuC/D and express the Ngn1:nRFP reporter, confirming their neuronal identity and proneural gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C33 provide confirmatory evidence through immunostaining (HuC/D) and transgenic reporter expression (Ngn1:nRFP) that Sox10:eGFP+ cells are indeed neurons. This addresses potential concerns that Sox10+ cells might represent glia or other non-neuronal cell types. The evidence is straightforward and well-documented in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C66",
+      "C68"
+    ],
+    "result": "Sox10 plays a critical and direct role in microvillous neurogenesis in zebrafish olfactory development, as demonstrated by its expression pattern, timing of upregulation, and specific requirement during the ingression/differentiation phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C66, and C68 synthesize the loss-of-function and temporal data to conclude that Sox10 has a direct role in microvillous neurogenesis. The evidence from photo-morpholino experiments (C66) decoupling the neurogenic role from earlier developmental roles, combined with the rapid upregulation during differentiation (C47), supports a direct rather than indirect effect. However, the mechanism remains unclear\u2014Sox10 could be regulating cell fate decisions, survival, or differentiation programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The classical view that all olfactory sensory neurons derive from the olfactory placode is challenged by the current findings. Previous studies in mice suggesting neural crest contributions were inconclusive due to lack of marker specificity (Wnt1-Cre, P0-Cre), and a recent zebrafish study (Harden et al. 2012) concluded there was no neural crest contribution to olfactory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C69-C74 accurately represent the prior state of the field and identify legitimate concerns with previous lineage tracing studies. The critique of Wnt1-Cre specificity (C71, C73) is well-supported by the cited literature showing expression in non-neural crest tissues. The authors appropriately position their work as contradicting both classical assumptions and recent zebrafish work using the same Sox10:eGFP line, making their positive findings more significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Ngn1 is expressed in neurogenic placodes including the olfactory placode and is required for sensory neuron differentiation in mice. In zebrafish, Ngn1 is also expressed in neural crest cells that become sensory neurons in dorsal root ganglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 accurately cite established literature about Ngn1 expression and function. This background information appropriately contextualizes the use of the Ngn1:nRFP reporter line and explains why Ngn1 expression in neural crest-derived cells is not unexpected. The citations are appropriate and the characterization of the transgenic line as representative of endogenous expression is supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Sox10 is required for formation of multiple neural crest-derived neuronal lineages (sensory, sympathetic, enteric) as well as glia and Schwann cells. The current data demonstrate a direct effect on neurogenesis in the olfactory context, as opposed to an indirect effect through glial development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 appropriately cite the broader role of Sox10 in neural crest development and make a reasonable argument that the timing and specificity of effects in the olfactory system indicate a direct neurogenic role. The rapid upregulation during differentiation and the early time points examined (before extensive gliogenesis) support this interpretation, though the mechanism remains to be elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81"
+    ],
+    "result": "Understanding the embryonic origins of different olfactory neuron classes may provide insights into regeneration mechanisms in adults, as olfactory neurons are notable for their regenerative capacity and renewal processes may be lineage-dependent. Microvillous neuron replacement in adults might occur via a latent neural crest stem cell population in the nasal cavity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C81 are largely speculative about implications for adult regeneration. While the speculation is reasonable and well-motivated (C76 is established knowledge), no data on adult regeneration or stem cell populations are presented. These represent interesting hypotheses for future work but are not supported by the current study's data, which focuses exclusively on embryonic development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Background information on olfactory system development, neural crest and placode contributions to the peripheral nervous system, olfactory neuron types and their functions, and evolutionary diversity of olfaction across vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C20 and C82-C84 provide appropriate background context supported by citations to established literature. These claims accurately represent the state of knowledge in the field and appropriately frame the research questions. The discussion of controversies (e.g., GnRH cell origins, C18-C19) is balanced and well-cited.",
+    "result_type": "MINOR"
+  }
+]

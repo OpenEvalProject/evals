@@ -1,0 +1,2433 @@
+{
+  "submission": {
+    "id": "bab63cbd-bdea-4264-a0b7-9224b7e1d5ca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T05:42:01.467149Z",
+    "updated_at": "2025-11-27T05:42:01.467149Z"
+  },
+  "content": [
+    {
+      "id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "submission_id": "bab63cbd-bdea-4264-a0b7-9224b7e1d5ca",
+      "content_type": "manuscript",
+      "content_text": "# Kinesin-1 regulates dendrite microtubule polarity in Caenorhabditis elegans\n\n## Authors\n\n- Jing Yan<sup>1</sup>\n- Dan L Chao<sup>1</sup>\n- Shiori Toba<sup>2</sup>\n- Kotaro Koyasako<sup>3</sup>\n- Takuo Yasunaga<sup>3</sup>\n- Shinji Hirotsune<sup>2</sup>\n- Kang Shen<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biology Howard Hughes Medical Institute, Stanford University Stanford United States\n2. Department of Genetic Disease Research Graduate School of Medicine, Osaka City University Osaka Japan\n3. Department of Bioscience and Bioinformatics, Faculty of Computer Science and Systems Engineering Kyushu Institute of Technology Fukuoka Japan\n4. JST-SENTAN Japan Science and Technology Agency Kawaguchi Japan\n5. JST-CREST Japan Science and Technology Agency Kawaguchi Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn neurons, microtubules (MTs) span the length of both axons and dendrites, and the molecular motors use these intracellular \u2018highways' to transport diverse cargo to the appropriate subcellular locations. Whereas axonal MTs are organized such that the plus-end is oriented out from the cell body, dendrites exhibit a mixed MTs polarity containing both minus-end-out and plus-end-out MTs. The molecular mechanisms underlying this differential organization, as well as its functional significance, are unknown. Here, we show that kinesin-1 is critical in establishing the characteristic minus-end-out MT organization of the dendrite in vivo. In unc-116 (kinesin-1/kinesin heavy chain) mutants, the dendritic MTs adopt an axonal-like plus-end-out organization. Kinesin-1 protein is able to cross-link anti-paralleled MTs in vitro. We propose that kinesin-1 regulates the dendrite MT polarity through directly gliding the plus-end-out MTs out of the dendrite using both the motor domain and the C-terminal MT-binding domain.\n\n## Introduction\n\nNeurons are highly polarized cells that usually elaborate two sets of morphologically and functionally distinct processes: a single long axon that sends out information to its targets, and multiple shorter dendrites that receive synaptic input from the environment or other neurons. Among the many differences between axons and dendrites, one distinct feature is that they have different microtubule (MT) organization. MTs, composed of strands of tubulin polymers, are dynamic structures with two molecularly and functionally distinct ends: a plus-end that favors polymerization and supports net growth and a minus-end that favors depolymerization (Howard and Hyman, 2003). Since MTs in neurites provide the platform for intracellular transport, and molecular motors such as kinesins and dyneins migrate toward either the plus- or minus-ends, MT polarity might play an important role in determining the directionality of transport events. One way to measure MT polarity in vivo is to perform time-lapse imaging studies using the EB family members of the TIPs (Tip Interacting Proteins), which bind transiently to the growing plus-ends of MTs (Baas and Lin, 2011). Based on the behavior of EB1 in neurites, it was cohesively concluded that MTs are uniformly polarized with their plus-ends oriented toward the distal tip in axons from worm to rodents. In the dendrites, MTs are mixed in the proximal region and uniformly plus-end-out in distal parts in cultured vertebrate neurons, whereas MTs exhibit a mixed orientation with minus-ends predominantly facing the distal dendrite in worm and fly (Baas et al., 1987; Baas et al., 1988; Stepanova et al., 2003; Rolls et al., 2007; Stone et al., 2008; Kollins et al., 2009; Kapitein and Hoogenraad, 2011; Maniar et al., 2012).\n\nUnlike in nonneuronal cells, where most MTs extend out from the microtubule organization center (MTOC) that harbors the minus-ends, the majority of neuronal MTs have \u2018free-floating' ends, raising the question of whether these microtubules are locally polymerized or transported from the cell body (Baas and Lin, 2011). Based on direct observation of short MT strand movement in cultured neurons, Baas and colleagues proposed a model in which the MT-based motors dynein and several mitotic kinesins directly slide MT strands into the axon and dendrite (Baas, 1999). More recently, Jan and colleagues showed that dynein was required for the uniform plus-end-out MT organization in Drosophila sensory neuron axons (Zheng et al., 2008). In dynein mutants, about 30% of the axonal MTs exhibit a minus-end-out orientation, whereas the dendritic MT polarity remains intact. Another recent study showed that the axon-localized MT-binding protein UNC-33/CRMP plays an important role in orienting dynamic MTs in both axons and dendrites in Caenorhabditis elegans neurons (Maniar et al., 2012). In unc-33 mutants, both the axon and dendrite exhibit polarity defects. However, how predominant minus-end-out MT polarity is established in the dendrite remains largely unknown.\n\nThe signature pattern of MT polarity provides structural characteristics for axons and dendrites. In addition, the polarity pattern of MTs likely instructs the transport of motor-based polarized cargo and distribution of asymmetrical cellular material in the neuron. Thus, MT polarity might play an instrumental role in the establishment of neuronal polarity (Baas, 2002; Hoogenraad and Bradke, 2009). Here, we show that kinesin-1 is critical in generating the characteristic minus-end-out MT organization of the dendrite in vivo. Kinesin-1 (previously called kinesin heavy chain or KHC) is a plus-end-directed motor and has been reported to transport various cargoes including mitochondria, synaptic vesicles, and mRNAs (Vale, 2003; Hirokawa and Takemura, 2005). Like other kinesin family members, kinesin-1 contains an N-terminal motor domain, a coiled-coil region for dimerization, and a C-terminal tail domain for cargo binding and regulation (Vale, 2003; Adio et al., 2006). It has been showed that the kinesin-1 tail domain directly binds to MTs and mediates MT sliding in vitro (Navone et al., 1992; Andrews et al., 1993; Jolly et al., 2010; Seeger and Rice, 2010). In unc-116 (kinesin-1/kinesin heavy chain) mutants, we find that dendritic MT polarity is completely reversed and adopts an axonal-like plus-end-out organization. The consequences of this polarity reversal in the dendrite include ectopic accumulation of synaptic vesicles (SVs) and active zone proteins, and loss of dendritic enrichment of dendritic proteins. These results demonstrate that the proper polarized MT organization is essential for conferring neurite identity because it specifies the compartmental distribution of vital axonal and dendritic constituents such as SVs and neurotransmitter receptors in vivo. We also provide evidence that kinesin-1 is able to cross-link anti-parallel MTs in vitro. Combined with the structure\u2013function analyses, we propose that kinesin-1 regulates the dendrite MT polarity through directly gliding the plus-end-out MTs out of the dendrite using both the motor domain and the C-terminal MT-binding domain.\n\n## Results\n\n### MT polarity in C. elegans neurons\n\nIn order to understand the molecular mechanisms and physiological importance of differential neuronal MT organization, we studied MT organization in two bipolar neurons in C. elegans. The ventrally localized DA9 cell body elaborates two functionally distinct processes. An axon migrates to the dorsal nerve cord, where it extends anteriorly and forms presynaptic specializations, and a dendrite extends anteriorly along the ventral nerve cord (Figure 1A; White et al., 1976; Sym et al., 1999; Klassen and Shen, 2007). MT motors fused to a fluorescence tag have previously been used as indicators for MT polarity (Clark et al., 1997; Stone et al., 2008). To examine MT polarity in the DA9 neuron, we expressed fluorescent proteins fused with retrograde and anterograde motors, which should accumulate at the minus- and plus-ends of MTs, respectively. We found that YFP-tagged UNC-104/Kinesin3 exhibits dim diffuse fluorescence along the axon with dramatic accumulation at the distal tip, but is completely absent from the dendrite (Figure 1B). Conversely, DHC-1/dynein heavy chain fused with GFP shows weak staining along the dendrite with accumulation at the distal tip of the dendrite (Figure 1C). In addition, GFP fused to the slow Ncd family minus-end kinesin, KLP-16, exhibits a graded fluorescence signal from proximal to distal dendrite with accumulation at the distal tip of the dendrite (Figure 1D). The specific localization of the tagged KLP-16 motor is dependent on its motor activity, as motor-dead versions are largely diffuse through the DA9 processes (Figure 1\u2014figure supplement 1). These localization data are consistent with previous observations made in mammalian and Drosophila neurons, which suggest that MTs are uniformly plus-end-out in the axon and predominantly minus-end-out in the dendrite.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00133/elife-00133-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic diagram of the morphology of the DA9 neuron. Asterisk denotes DA9 or PHC cell body (throughout all images); D: dorsal; V: ventral; A: anterior; P: posterior. (B) and (E) Localization of UNC-104::YFP in a representative wild-type (B) or unc-116 worm (E). Note that UNC-104::YFP is enriched in the axonal tip (denoted by an arrowhead throughout) in wild-type, while it is enriched at the tips of both the axon and dendrite (dendritic tip is marked by an arrow, dashed black box and shown in higher magnification micrographs throughout) in unc-116 animals. (C) and (F) Localization of DHC-1::GFP in a representative wild-type (C) or unc-116 worm (F). (D) and (G) Localization of KLP-16::YFP in a representative wild-type (D1) or unc-116 worm (G1). The dendrite is shown in higher magnification for a wild-type (D2) or unc-116 animals (G2). (H)\u2013(J) Quantification of fractions of worms with qualitative defects in UNC-104::YFP (H), DHC-1::GFP (I), and KLP-16::YFP(J) localization in DA9 dendrite (n > 50 for each genotype). (K) Schematic diagram of the morphology of the PHC neuron. (L) and (M) Localization of KLP-16::YFP in a representative wild-type (L) or unc-116 worm (M). (N) Quantification of fractions of worms with qualitative defects in KLP-16::YFPlocalization in the PHC dendrite (n > 50 for each genotype). The scale bar represents 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00133/elife-00133-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Domain structure of KLP-16. From N to C terminus, tail domain is in green, coiled-coil region is in red, and motor domain is in blue. The numbers of amino acids are on top. (B) Amino acid sequence alignment of KLP-16 motor domain with KLP-15, NCD, and Kar3 proteins. Identical residues are labeled in blue and similar residues are labeled in orange. Functional regions within the motor domain are underlined. (C) A representative image of KLP-16 (KTH/AAA)::GFP expressed in DA9 neuron. The scale bar represents 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00133/elife-00133-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A)\u2013(C) Representative images showing KLP-16::GFP localization in wild-type (A), unc-116 (wy270) (B), and unc-116 (rh24 sb79) animals (C). Asterisk indicates cell body; arrowhead indicates the tip of DA9 dendrite. The scale bar represents 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00133/elife-00133-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A)\u2013(C) Confocal micrographs of 10 wild-type (A), unc-116 (e2310) (B), and unc-116;Ex[Pmig13::unc-116] DA9 ventral axon, cell body and dendrite, straightened and aligned along their A-P axis.\n\nTo extend these findings to other neurons, we used similar markers to examine MT polarity in the PHC sensory neurons. The two PHC neurons are bipolar with posteriorly oriented dendrites and anteriorly guided axons (Figure 1K). Consistent with the expression pattern in DA9, the plus-end kinesin UNC-104::YFP is enriched at the axonal tip of PHC, whereas the minus-end kinesin KLP-16::YFP decorates the dendrite and shows accumulation in the tip of dendrite (Figure 1L and data not shown).\n\nThe above data provide information regarding the overall steady-state polarity of MTs in neurites. To examine the polarity of dynamic MTs in the DA9 and PHC neurons, we fluorescently tagged the microtubule plus-end-tracking protein EBP-2/EB1. We observed characteristic \u2018comet' like movements of EBP-2::GFP in the dendrite and axon of both cell types by time-lapse analysis . The majority of the EBP-2::GFP comets in the axon move away from soma, whereas the majority of comets in the dendrite move toward the soma (Figure 2A\u2013D and Videos 1\u20133). Consistent with published results (Maniar et al., 2012), these data show that axonal MTs are predominantly plus-end-out and dendritic MTs are largely minus-end-out in wild-type C. elegans neurons.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00133/elife-00133-fig2-v1.jpg)\n\n**Figure 2.:** (A) and (B) Representative kymographs of moving EBP-2::GFP puncta in the PHC neuron dendrite of wild-type (A) and unc-116 animals (B). The cell body is to the left in both panels. Time runs top to bottom; arrowheads mark retrogradely moving puncta; arrows mark anterogradely moving puncta. (C) and (D) Bar graphs of the fraction of anterograde and retrograde movements in PHC (C) and DA9 neurons (D). MT, microtubule; numbers within each column denote the number of puncta counted in the corresponding categories; ***p<0.001, \u03c72 test.\n\n![Video 1.](https://cdn.elifesciences.org/articles/00133/elife-00133-media1.avi.jpg)\n\n**Video 1.:** Movement of EBP-2::GFP puncta in the ventral axon of wild-type DA9 neuron. Cell body is to the left. Displayed 10\u00d7 speed.\n\n![Video 2.](https://cdn.elifesciences.org/articles/00133/elife-00133-media2.avi.jpg)\n\n**Video 2.:** Movement of EBP-2::GFP puncta in the dendite of wild-type DA9 neuron. Cell body is to the left. Displayed 10\u00d7 speed.\n\n![Video 3.](https://cdn.elifesciences.org/articles/00133/elife-00133-media3.avi.jpg)\n\n**Video 3.:** Movement of EBP-2::GFP puncta in the dendrite of wild-type PHC neuron. Cell body is to the left. Displayed 10\u00d7 speed.\n\n### UNC-116/kinesin-1 is required for minus-end-out MT organization in the dendrite\n\nTo understand how the minus-end-out MTs are assembled and maintained in the dendrite, we examined the localization of our MT markers in the mitotic kinesin mutant zen-4/kinesin-6, which is required for mobilizing MTs in neuronal processes in vitro (Baas et al., 2006). To our surprise, we found no obvious changes in the distribution of MT polarity markers in these mutants. Instead, we found that the DA9 dendritic MT organization is altered in mutants of a related kinesin, unc-116/kinesin-1. In unc-116(e2310) mutants, UNC-104::YFP also accumulates in the tip of dendrite in addition to its normal localization at the axonal tip (Figure 1E). Furthermore, the fluorescence signals of DHC-1::GFP and KLP-16::YFP no longer accumulate at the dendrite tip; instead, fluorescence is visible only at the dendritic segment nearest the cell body (Figure 1F,G,M). These changes in the distribution of MT polarity markers suggest that dendritic MT organization has changed to an axon-like plus-end-out pattern in the unc-116 mutants. Consistently, in the same mutant dynamic MTs in the dendrites of both DA9 and PHC neurons almost completely change their behaviors, adopting a predominantly plus-end-out movement (Figure 2A\u2013C and Videos 4 and 5). These data further indicate that the unc-116/kinesin-1 mutation causes MT polarity in dendrites to become axon-like, but with no effect on MT orientation in the axon.\n\n![Video 4.](https://cdn.elifesciences.org/articles/00133/elife-00133-media4.avi.jpg)\n\n**Video 4.:** Movement of EBP-2::GFP puncta in the ventral axon of unc-116 (e2310) DA9 neuron. Cell body is to the left. Displayed 10\u00d7 speed.\n\n![Video 5.](https://cdn.elifesciences.org/articles/00133/elife-00133-media5.avi.jpg)\n\n**Video 5.:** Movement of EBP-2::GFP puncta in the dendrite of unc-116 (e2310) DA9 neuron. Cell body is to the left. Displayed 10\u00d7 speed.\n\nUNC-116 encodes the sole C. elegans ortholog of kinesin-1 (previously called kinesin heavy chain or KHC) (Siddiqui, 2002). Since complete loss of unc-116 leads to embryonic lethality and unc-116(e2310) is viable, the e2310 allele likely represents a partial loss-of-function mutant. Two additional partial loss-of-function alleles of unc-116, wy270 and rh24sb79, show similar mislocalization of MT motors in the DA9 dendrite, suggesting that this phenotype is indeed due to loss of the protein activity (Figure 1\u2014figure supplement 2). Consistent with this notion, cell autonomous expression of wild-type UNC-116 in unc-116(e2310) mutants rescued the dendritic distribution phenotype of KLP-16, indicating that UNC-116 functions in the DA9 neuron (Figure 1\u2014figure supplement 3). Taken together, these data support the idea that UNC-116's function is required for establishing the minus-end-out MT organization in the dendrite.\n\n### Synaptic vesicle and active zone proteins localize to dendrites in unc-116 mutants\n\nWhat are the consequences of MT polarity reversal in the DA9 dendrite? We first compared the development of the DA9 dendrite in wild-type and unc-116 animals. In wild-type animals, DA9 axonal outgrowth and neuromuscular junction formation occur embryonically, whereas most dendrite outgrowth takes place postembryonically starting from the L1 stage (Teichmann and Shen, 2011). Upon reaching adulthood, the DA9 axon and dendrite achieve stereotyped lengths. In the unc-116(e2310) mutants, the sequence and directionality of axonal and dendrite outgrowth as well as the length of the axon are indistinguishable from that of the wild-type strain. The length of the DA9 dendrite, however, is dramatically longer compared with wild-type animals at every stage of development (Figure 3\u2014figure supplement 1). To determine whether MT-dependent vesicle transport is affected by unc-116(e2310), we examined localization of synaptic vesicle (SV) markers. The UNC-104/Imac/kinesin3 motor traffics SVs to presynaptic specializations (Hall and Hedgecock, 1991), and synaptic vesicle proteins like RAB-3 exclusively accumulate in the axon of wild-type animals (Figure 3A). In unc-104(e1265) mutants, SV markers are completely absent from the axon, accumulating instead in the cell body and dendrite due to the activity of dynein (Figure 3C; Ou et al., 2010). Interestingly, we found that in unc-116(e2310) mutants, both the axon and dendrite contain a similar number of vesicle clusters (Figure 3E and Figure 3\u2014figure supplement 2). If this ectopic accumulation of SVs in the dendrite is due to the switch of MT polarity to axon-like plus-end-out arrangement (rather than to the activity of dynein), then the accumulation of SVs in the DA9 dendrite should depend on the UNC-104 kinesin motor. Indeed, in unc-104(e1265);unc-116(e2310) double mutants, SVs are largely absent from both processes and trapped in the cell body. These results argue that UNC-116 is not directly involved in SV transport in the DA9 neuron; rather, it creates the minus-end-out MT polarity of the dendrite. As a result of this aberrant MT polarity, the plus-end motor UNC-104 promotes locomotion of cargoes into the dendrite. If our model is correct, the unc-116 mutations should not only affect RAB-3 but also other synaptic vesicle proteins and active zone proteins. Indeed, the active zone protein SYD-2/liprin and other SV markers like SNG-1/synaptogyrin show similar ectopic localization to DA9 dendrites in the unc-116(e2310) mutants, suggesting that the changes in MT polarity affect the entire presynaptic structure (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00133/elife-00133-fig3-v1.jpg)\n\n**Figure 3.:** (A)\u2013(D) Distribution of GFP::RAB-3 puncta (left panels) and represented schematic diagrams (right panels) in wild-type (A), unc-116 (B), unc-104 (C), and unc-116;unc-104 mutant animals (D). (E) Average percentage of GFP::RAB-3 fluorescence intensity in the dendrite (n = 20). (F) Quantification of GFP::RAB-1 fluorescence intensity in the dendrite (n = 20). ***p<0.0001. Student's t-test. The scale bar represents 10 \u03bcm. Asterisk denotes DA9 cell body.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00133/elife-00133-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) and (B) Micrographs of representative wild-type (A) and unc-116 (e2310) (B) adults expressing cytoplasmic mCherry in DA9. (C) Average length of DA9 dendrite in 20 wild-type and unc-116 (e2310) adults. The scale bar represents 10 \u03bcm. Bracket indicates dendrite; error bars indicate standard deviations. ***p<0.0001. \u03c72 test.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00133/elife-00133-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) and (B) Distribution of synaptic vesicle marker GFP::RAB-3 and an active zone marker mCherry::SYD-2 in wild-type and unc-116 (e2310) mutant. The scale bar represents 10 \u03bcm. The high magnifications are shown in the right panels.\n\n### The dendrite fails to accumulate dendritic proteins in unc-116 mutants\n\nTo determine whether unc-116 and dendritic MT polarity are critical for localization of dendritic proteins, we analyzed the distribution of several dendritically targeted proteins. An acetylcholine receptor (ACR-2), a receptor tyrosine kinase (CAM-1), and a gap junction protein (FBN-1) are all reported to be dendritically enriched in DA9 (Sieburth et al., 2005; Barbagallo et al., 2010). In wild-type DA9 neurons, fluorescently tagged ACR-2, CAM-1, and FBN-1 all localize to the dendrite, cell body, and the initial part of the ventral axon. In unc-116(e2310) animals, however, these dendritic proteins accumulate within the cell body and largely disappear from the dendrite, suggesting that unc-116 is required for dendritic localization of postsynaptic proteins (Figure 4). Taken together, these data suggest that the minus-end-out MT organization in the dendrite is instructive for dendritic cargo transport by molecular motors. It discourages the plus-end motor, UNC-104, and encourage the minus-end motor, dynein, from entering and accumulating in the dendrite. This polarity mechanism is thus essential for setting up the polarized distribution of vital axonal and dendritic constituents such as SVs and neurotransmitter receptors.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00133/elife-00133-fig4-v1.jpg)\n\n**Figure 4.:** DA9 dendrite fails to accumulate dendritic proteins in unc-116 mutants. (A) and (D) Distribution of the postsynaptic neurotransmitter receptor ACR-2::GFP in wild-type (A) and unc-116 (D) animals. Bracket indicates dendrite region. (B) and (E) Localization of CAM-1::YFP in a representative wild-type (B) or unc-116 worm (E). (C) and (F) Localization of FBN-1::YFP in a representative wild-type (C) or unc-116 worm (F). (G) Quantification of CAM-1::YFP fluorescence intensity in the dendrite (n = 20). ***p<0.0001. Student's t-test. The scale bar represents 10 \u03bcm. Bracket indicates dendrite. Asterisk denotes DA9 cell body.\n\n### Kinesin-1 cross-links anti-parallel MTs in vitro\n\nThe canonical function of kinesin-1 is to transport certain cargos, such as mitochondria, along neuronal MTs. Like kinesin-1, UNC-116 is composed of an N-terminal motor domain, a putative coiled-coil dimerization stalk region, and a C-terminal tail domain that binds to kinesin light chains (KLCs), adaptors, and cargos (Vale, 2003). Interestingly, several recent biochemical and cell biology experiments have shown that part of the C-terminal tail domain of kinesin-1 binds directly to MTs (Navone et al., 1992; Dietrich et al., 2008; Seeger and Rice, 2010). It was also demonstrated that kinesin-1 could cross-link and glide MTs using in vitro assays (Andrews et al., 1993; Palacios and St Johnston, 2002; Yamada et al., 2010). To understand how UNC-116 regulates dendrite MT polarity, we considered two possible models in which UNC-116/kinesin-1 directly transport the minus-end-out MTs into dendrites or transport the plus-end-out MTs out of dendrites via interaction of its C-terminal MT-binding domain with the cargo MTs. In either scenario, it requires kinesin-1 selectively cross-link anti-parallel MTs. We first tested it using in vitro MTs bundling assay. When purified tubulins were polymerized into MTs, the MTs were found as isolated microtubules with the appearance of smooth surface under the electron microscope (Figure 5A). Addition of purified kinesin-1 complex from bovine brain to the MTs causes the dispersed MTs to adopt a more \u2018rough' surface due to the binding of kinesin-1 to MTs (Figure 5B). When both of kinesin-1 and mNUDC were added to the MTs, we found that MTs were bundled (Figure 5C). The MT bundles are superficially similar to those reconstructed from flagellar axonemal dyneins and MTs (Ueno et al., 2008). No such bundles were observed in control samples containing just taxol-stabilized MTs or in mixtures of MTs with kinesin-1 only (Figure 5B). Neighboring MTs in the bundles has an interval of \u223c80 nm. Considering kinesin-1 has a long flexible stalk (maximum \u223c80 nm; Hirokawa et al., 1989) and mNUDC is an adapter protein, it is conceivable that the cross-bridges represent a complex of kinesin-1 and mNUDC. Furthermore, we determined the polarity of the cross-linked MTs from their Moir\u00e9 patterns of protofilaments (Chretien et al., 1996), and determined orientation of 13 pairs of MTs cross-linked by kinesin-1. Nine pairs (69%) of microtubule bundles were anti-parallel with a 95% confidence interval (CI) of 39% and 91% by F-test for binominal distribution (Figure 5D-D2). The lower limit of CI exceeds 50% when a significant level is 13.4% using one-tailed F-tests. Therefore, kinesin-1-mNUDC complex tends to cross-link anti-parallel microtubule bundles.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00133/elife-00133-fig5-v1.jpg)\n\n**Figure 5.:** (A)\u2013(C) Negatively stained EM images of (A) MTs alone, (B) kinesin-1-MTs, and (C) kinesin-1-NudC-MTs. Two enlarged images are in right row. Scar bar is 100 nm from (A\u2013C), and 30 nm in the enlarged images. Note that long spanned MT bundles were observed only in (C) when the samples mixed with both Kinesin-1 and NudC. Deeply stained cross-bridging molecules are seen between adjacent MTs.Cryo-EM images of microtubules of (D) kinesin-NudC microtubles, (D1) microtubules alone and (D2) kinesin-microtubules.\n\n### UNC-116/kinesin-1 slides plus-end-out MTs out of the dendrite through its C-terminal MT-binding site\n\nThe ability of UNC-116 to slide anti-parallel MTs requires that the motor have two distinct binding sites for MTs. Indeed, the C-terminal domain of kinesin-1 has been shown to bind to MTs in addition to the N-terminal motor domain (Navone et al., 1992; Seeger and Rice, 2010). To further investigate whether the C-terminal domain of UNC-116 can bind to MTs and whether this binding is required for its function in establishing dendritic MTs, we first examined the amino acid sequence of the C-terminal region of UNC-116. Sequence alignment of UNC-116 with its corresponding fly, rat, and human homologs showed that the MT-binding site is highly conserved (Figure 6A). The positively charged residues (labeled in red) in this region have been shown to be required for MT-binding in vitro (Seeger and Rice, 2010). Given the high degree of sequence conservation of the MT-binding site, it is likely that its function in binding MTs is also conserved in worms. Furthermore, GFP-tagged C-terminal domain of UNC-116 (521\u2013863) showed colocalization with MTs when expressed in HEK293 cells, suggesting that the C-terminal domain of UNC-116 can indeed bind to MTs (data not shown).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00133/elife-00133-fig6-v1.jpg)\n\n**Figure 6.:** (A) Domain structure of UNC-116 protein with motor domain in blue, dimerization region in red, and C-terminal regulation domain in orange, length of amino acid is shown. (B) Cell-autonomous rescue of KLP-16::YFP localization. MD, mutant swapping the amino acids \u2018KTH' in P-loop of UNC-116 motor domain with \u2018AAA'; MT, mutant swapping the MT-BS in UNC-116 tail region with \u2018AAAYAA'. n > 50 per group. Error bar indicates standard deviation; ***p<0.0001, \u03c72 test. (C) and (D) MTs structure highlighted by GFP::TBA-1 in a representative wild-type (C) or unc-116 worm (D). Quantification of GFP::TBA-1 fluorescence density ratio between the dendrite and the ventral axon in wild-type and the unc-116(e2310) animals. (E) Quantification of EBP-2::GFP puncta moving frequency in the dendrite of wild type and the unc-116(e2310) animals. n > 20 per group. Error bar indicates standard deviation; **p<0.001, ***p<0.0001, Student's t-test. (F) A schematic model showing kinesin-1 cross-linking and sliding MTs out of the dendrite.\n\n![Figure 6\u2014figure supplement 1](https://cdn.elifesciences.org/articles/00133/elife-00133-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1:** (A)\u2013(C) Distribution of a mitochondria marker, TOM-20::YFP in a representative wild-type (A), unc-116 (e2310) (B), or klc-2 (km11) (C) worm. (D)\u2013(F) Localization of KLP-16::YFP in a representative wild-type (D) , klc-1 (ok2609) (E), or klc-2 (km11) worm (F). (G) Quantification of axonal TOM-20::YFP puncta number in wild-type, unc-116 (e2310), or klc-2 (km11) worms (n = 20). The scale bar represents 10 \u03bcm. Error bars indicate standard deviations. ***p<0.0001. \u03c72 test.\n\nSecond, we examined the molecular lesions in three unc-116 mutants, all of which show MT polarity defects (Figure 1\u2014figure supplement 3). The molecular lesion of e2310 is a TC5 transposon insertion. The transposon was inserted after residue 692, which truncates the C-terminal MT-binding domain (Patel et al., 1993). Point mutations are found in the motor domain in wy270 and rh24sb79 alleles, which likely result in partial loss of motor function (Yang et al., 2005 and unpublished data). These results suggest that both motor activity and C-terminal MT-binding might be required for this newly defined function of UNC-116/kinesin-1. To definitively test this, we created a mutant form of UNC-116 in which three point mutations were introduced in the C-terminal MT-binding motif. The same mutations diminish the binding of kinesin-1 C-terminal domain to MTs (Seeger and Rice, 2010). Therefore, this mutant form (UNC-116MT) might specifically lack its ability to bind to MTs with the C-terminal motif. We tested whether this form can still rescue the dendrite polarity phenotypes as well as phenotypes related to the canonical transport function of UNC-116. To assess the canonical organelle transport function of UNC-116, we examined localization of mitochondria in DA9. In wild-type animals, a mitochondrial marker TOM-20::YFP localizes to discrete puncta in both the axon and dendrite of DA9 (Figure 6\u2014figure supplement 1). In unc-116(e2310) mutants, the TOM-20 signal is completely absent from both processes and only found in the cell body (Figure 6\u2014figure supplement 1), suggesting that UNC-116 is required for transporting mitochondria to both axon and dendrite. DA9 expression of UNC-116MT efficiently rescues the TOM-20 localization defect in the axon, suggesting that this mutant form of UNC-116 can support the organelle transporting function. Interestingly, but the same transgene showed much less rescue of the MT polarity defects in the dendrite, as assayed by KLP-16 localization (Figure 6B). This result is consistent with the notion that the C-terminal MT-binding motif of UNC-116 is specifically required for the establishing dendritic MT polarity. In addition, UNC-116MT efficiently rescues the abnormally long dendrites in the unc-116(e2310) mutant, suggesting that this length phenotype is independent of the MT polarity.\n\nTo further explore the difference between the MT-polarity-related function of UNC-116 and its canonical vesicular and organelle transport function, we studied the kinesin light chains, KLC-1 and KLC-2. Consistent with previous reports, KLC-2 is required for axonal localization of TOM-20, suggesting that the KLCs are required for the organelle transport function of UNC-116 (Figure 6\u2014figure supplement 1). Interestingly, neither klc-1 or klc-2 single mutants nor klc-1; klc-2 double mutants showed any defects in MT polarity markers (Figure 6\u2014figure supplement 1), suggesting that they are dispensable for the MT polarity function of UNC-116. Indeed, the MT-gliding activity of kinesin-1 in nonpolarized Drosophila S2 cells is also independent of KLCs, suggestive of a similar mode of action in nonneuronal cells (Jolly et al., 2010). Taken together, our structure\u2013function analyses have revealed a novel function of UNC-116 in regulating dendritic MT polarity. This function requires both motor activity and C-terminal MT binding, and can be separated from the canonical vesicular and organelle trafficking function of UNC-116 both at the level of cargo-binding domains as well as the dependency on kinesin light chains.\n\nHow does UNC-116/kinesin-1 promote minus-end-out MTs configuration in the dendrite? Our genetic data so far are consistent with two models. In the first model, UNC-116/kinesin-1 directly slides minus-end-out MTs into dendrites. Alternatively, UNC-116 might slide plus-end-out MTs out of dendrite and consequently increase the percentage of the minus-end-out MTs in dendrites. In order to differentiate these two models, we analyzed the MTs concentration in the dendrite and axon. We reasoned that if UNC-116/kinesin-1 slides minus-end-out MTs into dendrite, there would be less MTs in the dendrite of mutant animals. If UNC-116/kinesin-1 slides plus-end-out MTs out of dendrite, there would be more MTs in the dendrite of mutant. We visualized the MTs structure by expressing GFP::TBA-1/ \u03b1-tubulin in the DA9 neuron. In wild-type animals, axon has higher expression of GFP::TBA-1, with a dendrite/ventral axon intensity ratio around 0.6. In unc-116(e2310) animals, axon expression of GFP::TBA-1 remains largely unchanged, whereas expression in the dendrite increases, with a dendrite/axon intensity ratio around 1.2, suggestive of excessive MTs in the unc-116 mutant dendrites (Figure 6C\u2013E). Another measure of the number of MTs is the frequency of EBP-2::GFP comets, which directly reflects the number of dynamic plus-ends. We found that EBP-2::GFP comets in the unc-116 mutant DA9 dendrite is three times more frequent comparing to wild type, further indicating there are more MTs in unc-116(e2310) dendrite (Figures 2C, 6F). Collectively, these data favor the model that UNC-116/kinesin-1 maintains minus-end-out MT polarity in dendrite through selectively sliding plus-end-out MTs out of dendrite (Figure 6G).\n\n## Discussion\n\nWe report a new function of kinesin-1 to promote the minus-end-out MT organization in the dendrite. Previous studies in neuronal cell cultures showed that intracellular transport of short MTs occurs robustly in neurites and can be driven by mitotic kinesins (Baas et al., 2006). While we did not find evidence that mitotic kinesins are required for DA9 MT organization, our data provide in vivo evidence that transport of MTs by another kinesin, kinesin-1, in the dendrite is critical for establishing or maintaining MT polarity. An interesting study in Drosophila sensory neurons showed that the minus-end motor dynein is required for the uniform plus-end-out MT organization in the axon but dispensable for dendritic MT organization (Zheng et al., 2008). A recent study in Drosophila neuron showed that another motor kinesin-2 complex is required to steer MTs growth in the dendrite branch point to maintain the uniform minus-end-out MT polarity in the dendrite (Mattie et al., 2010). Since kinesin-1 is highly conserved throughout evolution, we anticipate our findings to be a starting point for more sophisticated in vitro or in vivo analyses of MT polarity in neurons. If UNC-116/kinesin-1 slides plus-end-out MTs out of dendrites, one immediate question is how this process is restricted to dendrites. Maniar et al. (2012) recently showed that the MT-associated axon initial segment (AIS)-enriched protein UNC-33/CRMP is important for MT organization in both the axon and dendrite in worm sensory neurons. The AIS has been reported to play important roles in neuronal polarity (Hedstrom et al., 2008; Sobotzik et al., 2009). It is conceivable that AIS proteins provide critical regulatory roles for motor-based MT sliding by restricting the direction of MT transport. Interestingly, the AIS in vertebrate neurons is known to serve as a diffusion barrier for both transmembrane and cytosolic proteins. How it regulates MT transport will be an interesting question for future studies.\n\nThe compartmentalization of neurons is achieved by several cell biological mechanisms including directed intracellular trafficking, local sequestration, diffusion barriers, and transcytosis (Kennedy and Ehlers, 2006). Previous studies have also reported the existence of \u2018smart motors' that are capable of distinguishing axonal and dendritic MTs (Saito et al., 1997; Marszalek et al., 1999; Guillaud et al., 2003; Kapitein et al., 2010). The existing literature raises the question of what functional role is played by MT polarity, an important question that cannot be answered without a polarity-altering tool. The unc-116 mutants specifically affect MT polarity in dendrites, and therefore serve as useful reagents to dissect the importance of dendritic MT polarity. Our data strongly support the notion that the minus-end-out MTs in dendrites not only allow for the accumulation of dendritic proteins but are also critical for the exclusion of axonal components such as synaptic vesicles and active zone proteins. Furthermore, MT polarity appears to affect the length of the dendrite, suggesting that both the structural and transport functions of MTs depend on their polarity. Interestingly, the direction and timing of dendrite outgrowth are not affected in unc-116 mutants, suggesting that MT polarity does not play a critical role in dendrite outgrowth, a process in which the actin cytoskeleton is known to play an important role (Gao et al., 1999). Together, these data argue that polarized MT tracks play instructive roles in formation of axonal and dendritic identities, as well as in the compartmentalization of axonal and dendritic constituents such as SVs, active zone proteins, and neurotransmitter receptors.\n\n## Materials and methods\n\n### Strains and genetics\n\nWorms were raised on NGM plates at 20\u00b0C using OP50 Escherichia coli as a food source. N2 Bristol was utilized as the wild-type reference strain. The following mutant strains were obtained through the Caenorhabditics Genetics Center: FF41 unc-116(e2310) III, RB1975 klc-1(OK2609) IV, and CB1265 unc-104(e1265) II. TV6687 unc-116(rh24 sb79) III was a kind gift from Dr. McNally at University of California at Davis, TV3706 unc-116 (wy270) III, carrying a single L129 to F mutation in motor domain, (EL, unpublished data) was previously isolated from our laboratory.\n\n### Molecular biology and transgenic lines\n\nExpression clones were made in the pSM vector, a derivative of pPD49.26 (A Fire, unpublished data) with extra cloning sites (S McCarroll and CI Bargmann, unpublished data). The plasmids and transgenic strains (1\u201350 ng/\u03bcl) were generated using standard techniques and coinjected with markers Podr1::RFP or GFP (40 ng/\u03bcl): wyEx3892 [Pitr1::dhc-1::GFP], wyEx 2559 [Pitr1:: unc-104::YFP], wyEx3128 [Pitr1::klp-16::YFP], wyIs674 (Pitr1::klp-16::YFP), wyIs309 (Pmig13::klp-16::GFP), wyEx4974 [Pida-1::unc-104::GFP], wyEx4980 [Pida-1::klp-16::GFP], wyEx4978 [Pida-1::GFP::rab-3], wyEx4828 [Pdes-2::ebp-2::GFP], wyIs349 (Pmig13::loxP-ebp-2::GFP), wyIs85 (Pitr1::GFP::rab-3), wyEx2505 [Pitr1::syd-2::GFP, Pitr1::mCherry::rab-3], wyIs386 (Pitr1::acr-2::GFP), wyEx1902 [Pitr1::mCherry], wyEx403 [Pitr1::cam-1::YFP], wyEx2396 [Pitr1::fbn-1;;YFP], and wyEx2709 [Pitr1::tom-20::YFP]. Detailed subcloning information will be provided on request.\n\n### Fluorescence microscopy and confocal imaging\n\nImages of fluorescently tagged fusion proteins were captured in live C. elegans using a Plan-Apochromat 63\u00d7/1.4 objective on a Zeiss LSM510 confocal microscope system. Visual inspections and some quantification were done using a Zeiss Axioplan 2 microscope with Chroma HQ filter sets for GFP, YFP, and RFP (63\u00d7/1.4NA objective). Worms were immobilized using 10 mM levamisole (Sigma, St Louis, MO) and oriented anterior to the left and dorsal up.\n\n### Dynamic imaging\n\nDynamic imaging was performed on an inverted Zeiss Axio Observer Z1 microscope equipped with the highly sensitive QuantEM:512SC camera. A Plan-Apochromat 63\u00d7/1.4 objective was used for acquisition. L4 worms were cultured at 22\u00b0C for imaging. They were mounted onto 2% agarose pads and anesthetized with 6 mM levamisol (Sigma) for no longer than 20min. All videos were acquired over 25 s with 8 frames per second. Videos were then analyzed using the ImageJ software.\n\n### Protein purification\n\nTubulin was purified from porcine brain and polymerized to microtubules by a previously described method, then stabilized by taxol (Sloboda and Rosenbaum, 1982). Conventional kinesin (kinesin-1) was also purified from porcine brain as described before (Wagner et al., 1991). Recombinant protein for mNUDC was generated using pGEX-4T expression vector (GE Healthcare Bio-sciences). Protein purification was performed using Glutathione Sepharose 4B (GE Healthcare Bio-sciences) based on the manufacturer's recommendation. To remove GST-tag, we treated recombinant protein with Thrombin (Merck), followed by absorption of thrombin by Benzamidine Sepharose 6B (GE Healthcare Bio-sciences).\n\n### Negatively stained electron microscopy\n\nTaxol-stabilized MTs (25 \u03bcg/ml) with/without kinesin-1 (85 \u03bcg/ml), NudC (50 \u03bcg/ml), and 2 mM AMP-PNP were mixed in a test tube according to the condition then sit for 10 min. The kinesin-1 and NudC were mixed at a molar ratio of 1:5. The mixed solution of 5 \u03bcl was loaded on a hydrophilized carbon grid (75/300 mesh; VECO, Cu) to sit for 60 s in a humid chamber. Unabsorbed protein was rinsed by BRB80 buffer (80 mM Pipes-KOH, 2 mM MgSO4, 1 mM EGTA, pH 6.8) containing with 10 \u03bcM taxol. After the excess solution was blotted with a filter paper, the specimen was stained with an equal volume of 2% uranyl acetate for 40 s. The specimens were observed with a transmission electron microscope, Tecnai Spirit (FEI Co.). The microscope was operated at 120 kV. The magnification for overviewed images was \u00d721,000 and the nominal magnification was \u00d767,000. The defocusing values were usually \u22121 to \u22121.5 \u03bcm. The images were recorded using CCD (2k \u00d7 2k, Eagle1k CCD; FEI) at 30 \u03bcm/pixel corresponding to 0.47 nm. The electron dose per single image was estimated as 10 e/\u00c52.\n\n### Cryo-electron microscopy\n\nTo define the polarity of the MTs, electron cryo-microscopy was used. First frozen-hydrated specimens were prepared as follows: a 10-\u03bcl drop of purified MT/kinesin-1/NudC complex with 2 mM AMP-PNP was mounted on a holey carbon grid (Quantifoil: Mo R2/2, Germany) and blotted with filter paper to remove excess solution and make a thin aqueous layer. The grid was then plunged into ethane slush at \u2212185\u00b0C to create a thin layer of vitreous ice. The frozen-hydrated specimens were examined at liquid nitrogen temperature using a cryo-holder (CT3500; Oxford Instruments, United Kingdom) with an EF-2000 microscope (Hitachi High-Technologies, Japan) operated at 200 kV. The electron micrographs were recorded using a 2 k \u00d7 2 k CCD camera developed by TVIPS (Yasunaga and Wakabayashi, 2008) with an defocusing value of \u22123 to \u22124 \u03bcm. The electron dose per single image was estimated as approximately \u223c1400 e/\u00c52.\n\n### Image analysis\n\nThe defocusing values of all obtained images were estimated by \u2018ctfDisplay'. The images were then corrected by phase flipping after the phase contrast transfer functions (CTF) were determined from the defocusing values. Corrected images were processed by the band-pass filter (1/100 nm to 1/10 nm), and so their background noise was reduced. The polarity of microtubules was determined by checking their Moir\u00e9 patterns. Most of the image processing was performed by Eos (Yasunaga and Wakabayashi, 1996).\n",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "d5097ed0-e818-49fc-9089-e7c9cb16647c",
+      "submission_id": "bab63cbd-bdea-4264-a0b7-9224b7e1d5ca",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Franck Polleux, Scripps Research Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00133.020](https://doi.org/10.7554/eLife.00133.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cKinesin-1 regulates Microtubule Polarity in the Dendrite\u201d for consideration at eLife. Your article has been evaluated by a Senior editor and 3 reviewers, one of whom is a member of eLife's Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments based on the reviewers' reports.\n\nOverall, the reviewers found the study of potentially high significance since it tackles an important and unresolved problem in neurobiology, namely the molecular mechanisms polarizing neurons and, in particular, the role of microtubules and molecular motors in axon/dendrite specification. The discovery that kinesin-driven microtubule transport might participate to the unique microtubule orientation characterizing the dendrite in C. elegans neurons is potentially interesting and novel.\n\nHowever, at this point, the reviewers raised a number of concerns regarding the interpretation of some of the results, the validity of some the quantitative analysis, and some general aspects of the data presentation. If you can address the following major comments with new experiments, improved quantitative analysis, and revised text, we would like to consider a revised version.\n\n1. Interpretation of the data: the authors claim that the conversion of microtubule orientation (minus end distal into plus end distal) in the kinesin-1 mutant is due to the microtubule transport function of kinesin-1, which might selectively transport minus-end microtubules to the distal end of the dendrite. The reviewers propose that, based on the plus-end direction of kinesin-1 transport, an equally likely interpretation of the authors' data is that kinesin-1 may function to promote transport of plus-end microtubules out of the dendrite into the cell body. The authors conclude the reverse (that \u2018\u2026dynein moves minus-end out MT out of the axon, while kinesin-1 moves minus-end out MT into dendrites'). The authors should consider this alternative interpretation of their results that kinesin-1 moves plus-end distal MTs out of the dendrites by using their plus-end directed motor activity to transport plus-end MT towards the cell body, that is out of the dendrite In the same vein, their conclusion schema (Figure 6G) is a bit confusing in this regard: in most of the paper, the authors represent minus-end microtubules distal in dendrites and the circle represents the cell body. In Figure 6G the circle indicates the distal end of the dendrite. The authors should make sure this is not a mistake. They should try to make clearer the difference between \u2018long minus end out' MTs and the fragment/transported plus-end out MTs (maybe using a different color). The authors must discuss how they envision that kinesin-1 can establish minus end-out microtubules. If this motor were to slide microtubules along each other in dendrites, all of the microtubules would eventually collapse into the cell body. Finally, can the authors comment on the localization pattern of kinesin-1 in DA9? Is it found in the dendrite as the model in Figure 6G predicts?\n\n2. More experiments on Unc-116: the authors should be more accurate when they describe the e2310 allele of Unc-116 (kinesin-1). For example, they mention that this allele \u2018\u2026likely represents a partial loss of kinesin activity'. But then they mention the study from Patel and colleagues, suggesting that e2310 mutation affects a residue at the \u2018\u2026C-terminal end of kinesin-1 adjacent to the MT binding motif'. This is unlikely to affect kinesin-1 motor activity as suggested earlier. The authors argue that the C-terminal domain of unc-116 is likely to bind microtubules based on sequence similarity (but not identity) of the MT binding domain to homologs, but whether the C. elegans sequence binds to MTs is not known. The major model presented by the authors will be strengthened by these data if the resources are available to perform this work. Finally, does unc-116-MT rescue the dendrite elongation defect of unc-116 mutants? This experiment is relevant as the authors indicate in the Discussion that MT polarity appears to affect the length of the dendrite, when this could in principle be due to organelle trafficking roles.\n\n3. More quantification: while the data are generally high quality, certain arguments would be strengthened by additional quantification, for example quantification is lacking from main Figures 1, 4, and 5.\n\n4. One reviewer felt the authors were potentially misleading in the title and abstract by not indicating that they have investigated this in worms, rather than in mammals. The authors should improve their Introduction and how they formulate the question tackled. At the end of the first paragraph of the introduction, the authors state \u201cdendritic MTs exhibit a mixed orientation with minus-ends predominantly facing the distal dendrite\u2026\u201d. This is not correct: it has been established that in mammalian systems, microtubules are of mixed polarity in the proximal region of the dendrite but are predominantly plus end-out in the distal dendrite (Baas 1988; Stepanova 2003; Kollins 2009; etc.). This has been very nicely reviewed in Kapitein and Hoogenraad, Mol Cell Neurosci 2011. The authors should improve their Discussion and quoting of the literature. For example, there are several more recent reviews with more relevant information than the ones cited (Hirokarwa 1998; Vale 2003). More significantly, kinesin-2 has been shown to be required for minus end-out microtubule orientation in flies (Mattie et al Curr Biol 2010). The authors should cite this paper and discuss the relevance of their work to this paper.\n\n5. It seems that dendritic outgrowth of the DA9 neuron occurs during post-embryonic development, suggesting that microtubule polarity of the dendrite is set up at L1. One reviewer feels it would be appropriate to demonstrate microtubule polarity via (+) and (-) end markers and the establishment of longer dendrites at L1 through adult stages to further support their hypothesis that in unc-116 animals the dendrite takes on a longer, more axonal like configuration with reversed MT polarity.\n\n[Editors'note: during revisions the editors made the following suggestion.]\n\nThe reviewers agreed that it would be beneficial to re-include the data regarding the dendrite elongation phenotype that you removed during the first revisions:\n\n\u201c[We] raised the issue of the basis for the dendrite elongation phenotype, which the authors have sorted out, but [we] felt that entirely removing the dendrite phenotype is not the best solution in the revision since the paper now refers to a lack of all other morphological defects (dendrite axon directionality and axon growth), but awkwardly omits dendrite length. The basis of this phenotype appears complex, yet [we] feel the authors should find a way to include at least the basic observation.\u201d\n",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6dc38b45-16d7-48c2-b657-d6186f272cff",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C1",
+      "claim": "Axonal microtubules are organized with the plus-end oriented out from the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas axonal MTs are organized such that the plus-end is oriented out from the cell body, dendrites exhibit a mixed MTs polarity containing both minus-end-out and plus-end-out MTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known characteristic of axonal MT organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "f5cebc38-228c-48d2-8b64-a70d57324bc6",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C2",
+      "claim": "Dendrites exhibit a mixed microtubule polarity containing both minus-end-out and plus-end-out microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas axonal MTs are organized such that the plus-end is oriented out from the cell body, dendrites exhibit a mixed MTs polarity containing both minus-end-out and plus-end-out MTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known characteristic of dendritic MT organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "4777a855-3961-430b-9d5c-2625beea06c6",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C3",
+      "claim": "Kinesin-1 is critical in establishing the characteristic minus-end-out microtubule organization of the dendrite in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that kinesin-1 is critical in establishing the characteristic minus-end-out MT organization of the dendrite in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "354b6c2e-7a11-49f8-943b-d68b21e2f42c",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C4",
+      "claim": "In unc-116 (kinesin-1/kinesin heavy chain) mutants, the dendritic microtubules adopt an axonal-like plus-end-out organization.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-116 (kinesin-1/kinesin heavy chain) mutants, the dendritic MTs adopt an axonal-like plus-end-out organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key experimental finding stated in the abstract and demonstrated with multiple markers in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "8e6e2081-fab2-47bf-85f1-6d56bd5bedf2",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C5",
+      "claim": "Kinesin-1 protein is able to cross-link anti-paralleled microtubules in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin-1 protein is able to cross-link anti-paralleled MTs in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by electron microscopy data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "3397355b-ab7b-485e-8953-30583b77d499",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C6",
+      "claim": "Kinesin-1 regulates dendrite microtubule polarity through directly gliding the plus-end-out microtubules out of the dendrite using both the motor domain and the C-terminal microtubule-binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that kinesin-1 regulates the dendrite MT polarity through directly gliding the plus-end-out MTs out of the dendrite using both the motor domain and the C-terminal MT-binding domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the proposed mechanism stated in the abstract and supported by structure-function analyses and in vitro data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "046d8702-1db3-409e-b6dd-bfb7b880ba83",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C7",
+      "claim": "Microtubules are uniformly polarized with their plus-ends oriented toward the distal tip in axons from worm to rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the behavior of EB1 in neurites, it was cohesively concluded that MTs are uniformly polarized with their plus-ends oriented toward the distal tip in axons from worm to rodents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from previous studies using EB1 imaging.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "869ef55f-c188-4209-b382-2382d43ec2f1",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C8",
+      "claim": "In cultured vertebrate neurons, microtubules are mixed in the proximal region of dendrites and uniformly plus-end-out in distal parts.",
+      "claim_type": "EXPLICIT",
+      "source": "In the dendrites, MTs are mixed in the proximal region and uniformly plus-end-out in distal parts in cultured vertebrate neurons, whereas MTs exhibit a mixed orientation with minus-ends predominantly facing the distal dendrite in worm and fly (Baas et al., 1987; Baas et al., 1988; Stepanova et al., 2003; Rolls et al., 2007; Stone et al., 2008; Kollins et al., 2009; Kapitein and Hoogenraad, 2011; Maniar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from previous studies cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "262e852a-5e60-4792-8450-7b30a36ea993",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C9",
+      "claim": "In worm and fly dendrites, microtubules exhibit a mixed orientation with minus-ends predominantly facing the distal dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "In the dendrites, MTs are mixed in the proximal region and uniformly plus-end-out in distal parts in cultured vertebrate neurons, whereas MTs exhibit a mixed orientation with minus-ends predominantly facing the distal dendrite in worm and fly (Baas et al., 1987; Baas et al., 1988; Stepanova et al., 2003; Rolls et al., 2007; Stone et al., 2008; Kollins et al., 2009; Kapitein and Hoogenraad, 2011; Maniar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from previous studies cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "85e0a839-26bb-43e4-b871-bb8b73008a10",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C10",
+      "claim": "YFP-tagged UNC-104/Kinesin3 exhibits dim diffuse fluorescence along the axon with dramatic accumulation at the distal tip in DA9 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that YFP-tagged UNC-104/Kinesin3 exhibits dim diffuse fluorescence along the axon with dramatic accumulation at the distal tip, but is completely absent from the dendrite (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "f832da1c-d04e-42b6-bfc8-2cdef3553818",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C11",
+      "claim": "YFP-tagged UNC-104/Kinesin3 is completely absent from the dendrite in wild-type DA9 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that YFP-tagged UNC-104/Kinesin3 exhibits dim diffuse fluorescence along the axon with dramatic accumulation at the distal tip, but is completely absent from the dendrite (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "1b20a1f9-0290-4cab-a145-8d8f6fb6ce9d",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C12",
+      "claim": "DHC-1/dynein heavy chain fused with GFP shows weak staining along the dendrite with accumulation at the distal tip of the dendrite in DA9 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, DHC-1/dynein heavy chain fused with GFP shows weak staining along the dendrite with accumulation at the distal tip of the dendrite (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "7d128e75-15f7-40e7-9938-d6fe6f611006",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C13",
+      "claim": "GFP fused to the slow Ncd family minus-end kinesin, KLP-16, exhibits a graded fluorescence signal from proximal to distal dendrite with accumulation at the distal tip of the dendrite in DA9 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, GFP fused to the slow Ncd family minus-end kinesin, KLP-16, exhibits a graded fluorescence signal from proximal to distal dendrite with accumulation at the distal tip of the dendrite (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "11c68699-a297-4528-a760-b4e43024aa6f",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C14",
+      "claim": "The specific localization of the tagged KLP-16 motor is dependent on its motor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific localization of the tagged KLP-16 motor is dependent on its motor activity, as motor-dead versions are largely diffuse through the DA9 processes (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "ccbb9c96-6ef5-49a0-b01f-8a2a84bfc475",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C15",
+      "claim": "Motor-dead versions of KLP-16 are largely diffuse through the DA9 processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific localization of the tagged KLP-16 motor is dependent on its motor activity, as motor-dead versions are largely diffuse through the DA9 processes (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "10852394-4223-4638-875d-dc9743c33baa",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C16",
+      "claim": "Microtubules are uniformly plus-end-out in the axon of C. elegans DA9 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These localization data are consistent with previous observations made in mammalian and Drosophila neurons, which suggest that MTs are uniformly plus-end-out in the axon and predominantly minus-end-out in the dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the localization patterns of motor proteins and consistent with previous observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "3b6a2a87-4548-4a52-ae92-bd554f206dfa",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C17",
+      "claim": "Microtubules are predominantly minus-end-out in the dendrite of C. elegans DA9 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These localization data are consistent with previous observations made in mammalian and Drosophila neurons, which suggest that MTs are uniformly plus-end-out in the axon and predominantly minus-end-out in the dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the localization patterns of motor proteins and consistent with previous observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "c140142c-07ff-4aa3-9254-d6687104248b",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C18",
+      "claim": "The majority of the EBP-2::GFP comets in the axon move away from soma in wild-type DA9 and PHC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the EBP-2::GFP comets in the axon move away from soma, whereas the majority of comets in the dendrite move toward the soma (Figure 2A\u2013D and Videos 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from time-lapse imaging stated in the text and shown in Figure 2 and Videos 1-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "e5be9a07-0051-45c9-bb05-7b03e3733b18",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C19",
+      "claim": "The majority of EBP-2::GFP comets in the dendrite move toward the soma in wild-type DA9 and PHC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the EBP-2::GFP comets in the axon move away from soma, whereas the majority of comets in the dendrite move toward the soma (Figure 2A\u2013D and Videos 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from time-lapse imaging stated in the text and shown in Figure 2 and Videos 1-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "45ced0c6-7d0f-414e-9504-db8ef4200fd8",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C20",
+      "claim": "Axonal microtubules are predominantly plus-end-out in wild-type C. elegans neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with published results (Maniar et al., 2012), these data show that axonal MTs are predominantly plus-end-out and dendritic MTs are largely minus-end-out in wild-type C. elegans neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the EBP-2::GFP comet data and consistent with published results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "aeb86b0b-8e3d-4bab-8e26-22bfe9bf67fe",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C21",
+      "claim": "Dendritic microtubules are largely minus-end-out in wild-type C. elegans neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with published results (Maniar et al., 2012), these data show that axonal MTs are predominantly plus-end-out and dendritic MTs are largely minus-end-out in wild-type C. elegans neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the EBP-2::GFP comet data and consistent with published results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "60d3ea39-5ca6-455c-8619-9517b4d8b505",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C22",
+      "claim": "In unc-116(e2310) mutants, UNC-104::YFP accumulates in the tip of dendrite in addition to its normal localization at the axonal tip.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-116(e2310) mutants, UNC-104::YFP also accumulates in the tip of dendrite in addition to its normal localization at the axonal tip (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "c4df4bf6-55dd-4f46-8b56-f553310715f4",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C23",
+      "claim": "In unc-116 mutants, the fluorescence signals of DHC-1::GFP and KLP-16::YFP no longer accumulate at the dendrite tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the fluorescence signals of DHC-1::GFP and KLP-16::YFP no longer accumulate at the dendrite tip; instead, fluorescence is visible only at the dendritic segment nearest the cell body (Figure 1F,G,M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 1F, G, M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "73cde11a-4ea0-4677-b327-6c44c5429a76",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C24",
+      "claim": "In unc-116 mutants, DHC-1::GFP and KLP-16::YFP fluorescence is visible only at the dendritic segment nearest the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the fluorescence signals of DHC-1::GFP and KLP-16::YFP no longer accumulate at the dendrite tip; instead, fluorescence is visible only at the dendritic segment nearest the cell body (Figure 1F,G,M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 1F, G, M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "28ba9c30-a584-47e8-9576-aa9a6bbfec7c",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C25",
+      "claim": "The changes in the distribution of microtubule polarity markers in unc-116 mutants suggest that dendritic microtubule organization has changed to an axon-like plus-end-out pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes in the distribution of MT polarity markers suggest that dendritic MT organization has changed to an axon-like plus-end-out pattern in the unc-116 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental observations of motor protein localization changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "1b0daaac-06e0-47c9-9b6f-d658d068416c",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C26",
+      "claim": "In unc-116 mutants, dynamic microtubules in the dendrites of both DA9 and PHC neurons almost completely change their behaviors, adopting a predominantly plus-end-out movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, in the same mutant dynamic MTs in the dendrites of both DA9 and PHC neurons almost completely change their behaviors, adopting a predominantly plus-end-out movement (Figure 2A\u2013C and Videos 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from time-lapse imaging stated in the text and shown in Figure 2 and Videos 4-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "967f1513-12b5-4aa8-84c8-49f05e995c49",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C27",
+      "claim": "The unc-116/kinesin-1 mutation causes microtubule polarity in dendrites to become axon-like, but with no effect on microtubule orientation in the axon.",
+      "claim_type": "EXPLICIT",
+      "source": "These data further indicate that the unc-116/kinesin-1 mutation causes MT polarity in dendrites to become axon-like, but with no effect on MT orientation in the axon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the EBP-2::GFP comet data in unc-116 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "1e7d699f-a76f-4b11-8ca1-298a98581a20",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C28",
+      "claim": "UNC-116 encodes the sole C. elegans ortholog of kinesin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "UNC-116 encodes the sole C. elegans ortholog of kinesin-1 (previously called kinesin heavy chain or KHC) (Siddiqui, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "c5aa9c07-1ad3-4f85-9012-7efc56ffdd10",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C29",
+      "claim": "Complete loss of unc-116 leads to embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Since complete loss of unc-116 leads to embryonic lethality and unc-116(e2310) is viable, the e2310 allele likely represents a partial loss-of-function mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information about the unc-116 gene.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "79d23bbd-6cc2-48a3-a9fc-120bad2cd7b1",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C30",
+      "claim": "unc-116(e2310) is viable.",
+      "claim_type": "EXPLICIT",
+      "source": "Since complete loss of unc-116 leads to embryonic lethality and unc-116(e2310) is viable, the e2310 allele likely represents a partial loss-of-function mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about the e2310 allele.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "91385086-01f8-41aa-9f7e-8d4269c01b19",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C31",
+      "claim": "The e2310 allele likely represents a partial loss-of-function mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Since complete loss of unc-116 leads to embryonic lethality and unc-116(e2310) is viable, the e2310 allele likely represents a partial loss-of-function mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the viability of e2310 compared to complete loss-of-function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "01707ce2-0f04-4ea6-aa5f-5c9b0231860c",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C32",
+      "claim": "Two additional partial loss-of-function alleles of unc-116, wy270 and rh24sb79, show similar mislocalization of microtubule motors in the DA9 dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Two additional partial loss-of-function alleles of unc-116, wy270 and rh24sb79, show similar mislocalization of MT motors in the DA9 dendrite, suggesting that this phenotype is indeed due to loss of the protein activity (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "ea50fd50-56c6-4a7d-9520-22ff0b783dd1",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C33",
+      "claim": "Cell autonomous expression of wild-type UNC-116 in unc-116(e2310) mutants rescued the dendritic distribution phenotype of KLP-16.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, cell autonomous expression of wild-type UNC-116 in unc-116(e2310) mutants rescued the dendritic distribution phenotype of KLP-16, indicating that UNC-116 functions in the DA9 neuron (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from a rescue experiment stated in the text and shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "d339a9e7-7a10-40bd-b141-52e1e1703420",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C34",
+      "claim": "UNC-116 functions in the DA9 neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, cell autonomous expression of wild-type UNC-116 in unc-116(e2310) mutants rescued the dendritic distribution phenotype of KLP-16, indicating that UNC-116 functions in the DA9 neuron (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from the cell-autonomous rescue experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "eac99c54-fcdd-42b8-9e0e-0d2d85d38b37",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C35",
+      "claim": "UNC-116's function is required for establishing the minus-end-out microtubule organization in the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data support the idea that UNC-116's function is required for establishing the minus-end-out MT organization in the dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mutant phenotypes and rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "696a78a1-b4d9-4cd8-ac60-97d2c77bf3ea",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C36",
+      "claim": "In wild-type animals, DA9 axonal outgrowth and neuromuscular junction formation occur embryonically.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type animals, DA9 axonal outgrowth and neuromuscular junction formation occur embryonically, whereas most dendrite outgrowth takes place postembryonically starting from the L1 stage (Teichmann and Shen, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information about DA9 development with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "20eee34b-aff7-456b-8ad1-8d0d6c0069d8",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C37",
+      "claim": "Most dendrite outgrowth in DA9 takes place postembryonically starting from the L1 stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type animals, DA9 axonal outgrowth and neuromuscular junction formation occur embryonically, whereas most dendrite outgrowth takes place postembryonically starting from the L1 stage (Teichmann and Shen, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information about DA9 development with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "a77111f0-b319-45d5-bf92-330765699143",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C38",
+      "claim": "In the unc-116(e2310) mutants, the sequence and directionality of axonal and dendrite outgrowth are indistinguishable from that of the wild-type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the unc-116(e2310) mutants, the sequence and directionality of axonal and dendrite outgrowth as well as the length of the axon are indistinguishable from that of the wild-type strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation comparing unc-116 mutants to wild-type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "e74fe8ba-b916-4203-9773-3c907aebff91",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C39",
+      "claim": "In the unc-116(e2310) mutants, the length of the axon is indistinguishable from that of the wild-type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the unc-116(e2310) mutants, the sequence and directionality of axonal and dendrite outgrowth as well as the length of the axon are indistinguishable from that of the wild-type strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation comparing unc-116 mutants to wild-type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "82ac2367-8b3e-4671-bc57-bfba9477c7ee",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C40",
+      "claim": "The length of the DA9 dendrite is dramatically longer compared with wild-type animals at every stage of development in unc-116(e2310) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the DA9 dendrite, however, is dramatically longer compared with wild-type animals at every stage of development (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "565e488c-64f1-47e9-9ddc-180596b34e3c",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C41",
+      "claim": "The UNC-104/Imac/kinesin3 motor traffics synaptic vesicles to presynaptic specializations.",
+      "claim_type": "EXPLICIT",
+      "source": "The UNC-104/Imac/kinesin3 motor traffics SVs to presynaptic specializations (Hall and Hedgecock, 1991), and synaptic vesicle proteins like RAB-3 exclusively accumulate in the axon of wild-type animals (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "4fe6924d-ebe9-43d0-86a7-72a1760b1d45",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C42",
+      "claim": "Synaptic vesicle proteins like RAB-3 exclusively accumulate in the axon of wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The UNC-104/Imac/kinesin3 motor traffics SVs to presynaptic specializations (Hall and Hedgecock, 1991), and synaptic vesicle proteins like RAB-3 exclusively accumulate in the axon of wild-type animals (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "6f59eb4e-44f5-4a58-a80a-4b2de72fca6a",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C43",
+      "claim": "In unc-104(e1265) mutants, synaptic vesicle markers are completely absent from the axon.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-104(e1265) mutants, SV markers are completely absent from the axon, accumulating instead in the cell body and dendrite due to the activity of dynein (Figure 3C; Ou et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "e263e70d-a2fc-40aa-b8be-3b7d44ba78b4",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C44",
+      "claim": "In unc-104(e1265) mutants, synaptic vesicle markers accumulate in the cell body and dendrite due to the activity of dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-104(e1265) mutants, SV markers are completely absent from the axon, accumulating instead in the cell body and dendrite due to the activity of dynein (Figure 3C; Ou et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 3C, with a citation supporting the dynein mechanism.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "d8ee29a5-5f70-4d2c-bc16-3d0606e1c753",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C45",
+      "claim": "In unc-116(e2310) mutants, both the axon and dendrite contain a similar number of vesicle clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that in unc-116(e2310) mutants, both the axon and dendrite contain a similar number of vesicle clusters (Figure 3E and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 3E and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "44b517dc-ce94-4ba2-80bb-f104bffa1c40",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C46",
+      "claim": "In unc-104(e1265);unc-116(e2310) double mutants, synaptic vesicles are largely absent from both processes and trapped in the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in unc-104(e1265);unc-116(e2310) double mutants, SVs are largely absent from both processes and trapped in the cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from a double mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "a1bc59f4-bb4b-484a-92de-da8eb5930fac",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C47",
+      "claim": "UNC-116 is not directly involved in synaptic vesicle transport in the DA9 neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "These results argue that UNC-116 is not directly involved in SV transport in the DA9 neuron; rather, it creates the minus-end-out MT polarity of the dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the double mutant analysis showing that SV accumulation in dendrites depends on UNC-104.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "0c9f8c4e-9907-498b-b20f-679dfb051d56",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C48",
+      "claim": "UNC-116 creates the minus-end-out microtubule polarity of the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "These results argue that UNC-116 is not directly involved in SV transport in the DA9 neuron; rather, it creates the minus-end-out MT polarity of the dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the genetic analysis showing that SV mislocalization is secondary to MT polarity changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "b0d0df0a-34ba-4657-800b-e556b608d1c9",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C49",
+      "claim": "As a result of aberrant microtubule polarity in unc-116 mutants, the plus-end motor UNC-104 promotes locomotion of cargoes into the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of this aberrant MT polarity, the plus-end motor UNC-104 promotes locomotion of cargoes into the dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic epistasis analysis showing UNC-104 is required for SV accumulation in dendrites of unc-116 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "08c04893-7dfd-4565-b3da-423e6185adb1",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C50",
+      "claim": "The active zone protein SYD-2/liprin shows ectopic localization to DA9 dendrites in the unc-116(e2310) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the active zone protein SYD-2/liprin and other SV markers like SNG-1/synaptogyrin show similar ectopic localization to DA9 dendrites in the unc-116(e2310) mutants, suggesting that the changes in MT polarity affect the entire presynaptic structure (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "5ee50b7b-bb43-408c-95d7-771a64819281",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C51",
+      "claim": "Other synaptic vesicle markers like SNG-1/synaptogyrin show similar ectopic localization to DA9 dendrites in the unc-116(e2310) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the active zone protein SYD-2/liprin and other SV markers like SNG-1/synaptogyrin show similar ectopic localization to DA9 dendrites in the unc-116(e2310) mutants, suggesting that the changes in MT polarity affect the entire presynaptic structure (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "318c0f09-a2bd-41b9-b0dc-5970f7995129",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C52",
+      "claim": "The changes in microtubule polarity affect the entire presynaptic structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the active zone protein SYD-2/liprin and other SV markers like SNG-1/synaptogyrin show similar ectopic localization to DA9 dendrites in the unc-116(e2310) mutants, suggesting that the changes in MT polarity affect the entire presynaptic structure (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that multiple presynaptic proteins mislocalize to dendrites in unc-116 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "1705cd3c-ec8c-497d-8dbc-cd11a7249afd",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C53",
+      "claim": "An acetylcholine receptor (ACR-2) is dendritically enriched in DA9.",
+      "claim_type": "EXPLICIT",
+      "source": "An acetylcholine receptor (ACR-2), a receptor tyrosine kinase (CAM-1), and a gap junction protein (FBN-1) are all reported to be dendritically enriched in DA9 (Sieburth et al., 2005; Barbagallo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "fb045881-7530-48fb-89a0-498ba1b844e5",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C54",
+      "claim": "A receptor tyrosine kinase (CAM-1) is dendritically enriched in DA9.",
+      "claim_type": "EXPLICIT",
+      "source": "An acetylcholine receptor (ACR-2), a receptor tyrosine kinase (CAM-1), and a gap junction protein (FBN-1) are all reported to be dendritically enriched in DA9 (Sieburth et al., 2005; Barbagallo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "50a3cd51-ff78-4d36-a91c-836af47ae579",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C55",
+      "claim": "A gap junction protein (FBN-1) is dendritically enriched in DA9.",
+      "claim_type": "EXPLICIT",
+      "source": "An acetylcholine receptor (ACR-2), a receptor tyrosine kinase (CAM-1), and a gap junction protein (FBN-1) are all reported to be dendritically enriched in DA9 (Sieburth et al., 2005; Barbagallo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "6334de47-3aa0-48bb-b7a3-6d2cfb4aed68",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C56",
+      "claim": "In wild-type DA9 neurons, fluorescently tagged ACR-2, CAM-1, and FBN-1 all localize to the dendrite, cell body, and the initial part of the ventral axon.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type DA9 neurons, fluorescently tagged ACR-2, CAM-1, and FBN-1 all localize to the dendrite, cell body, and the initial part of the ventral axon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation of protein localization in wild-type neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "493acec1-e7fc-490f-ba67-e398ff3b7c97",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C57",
+      "claim": "In unc-116(e2310) animals, dendritic proteins ACR-2, CAM-1, and FBN-1 accumulate within the cell body and largely disappear from the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-116(e2310) animals, however, these dendritic proteins accumulate within the cell body and largely disappear from the dendrite, suggesting that unc-116 is required for dendritic localization of postsynaptic proteins (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "c5ddb350-760f-46af-8f5b-3457df14d913",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C58",
+      "claim": "unc-116 is required for dendritic localization of postsynaptic proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-116(e2310) animals, however, these dendritic proteins accumulate within the cell body and largely disappear from the dendrite, suggesting that unc-116 is required for dendritic localization of postsynaptic proteins (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that dendritic proteins fail to localize properly in unc-116 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "5c82e08a-f1db-4137-8754-e683dd9527ba",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C59",
+      "claim": "The minus-end-out microtubule organization in the dendrite is instructive for dendritic cargo transport by molecular motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that the minus-end-out MT organization in the dendrite is instructive for dendritic cargo transport by molecular motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observations of cargo mislocalization in unc-116 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "4fe9e144-0922-47b1-94d5-d396728fb7f5",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C60",
+      "claim": "Dendritic microtubule polarity discourages the plus-end motor, UNC-104, from entering and accumulating in the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "It discourages the plus-end motor, UNC-104, and encourage the minus-end motor, dynein, from entering and accumulating in the dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the localization patterns of motors in wild-type versus unc-116 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "dd73be7a-13c8-463b-b7b7-3ef6770dc9de",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C61",
+      "claim": "Dendritic microtubule polarity encourages the minus-end motor, dynein, to enter and accumulate in the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "It discourages the plus-end motor, UNC-104, and encourage the minus-end motor, dynein, from entering and accumulating in the dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the localization patterns of motors in wild-type versus unc-116 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "b9af09d4-6d02-4c10-aa29-1cd56caf0f82",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C62",
+      "claim": "The microtubule polarity mechanism is essential for setting up the polarized distribution of vital axonal and dendritic constituents such as synaptic vesicles and neurotransmitter receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "This polarity mechanism is thus essential for setting up the polarized distribution of vital axonal and dendritic constituents such as SVs and neurotransmitter receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observations that both axonal and dendritic proteins mislocalize when MT polarity is disrupted.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "d5f2db54-1d94-4519-a30d-e61ab0563b01",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C63",
+      "claim": "Kinesin-1 is composed of an N-terminal motor domain, a putative coiled-coil dimerization stalk region, and a C-terminal tail domain that binds to kinesin light chains (KLCs), adaptors, and cargos.",
+      "claim_type": "EXPLICIT",
+      "source": "Like kinesin-1, UNC-116 is composed of an N-terminal motor domain, a putative coiled-coil dimerization stalk region, and a C-terminal tail domain that binds to kinesin light chains (KLCs), adaptors, and cargos (Vale, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information about kinesin-1 structure with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "383a93d7-a089-44cc-a3dc-73dae16aaea1",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C64",
+      "claim": "Part of the C-terminal tail domain of kinesin-1 binds directly to microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, several recent biochemical and cell biology experiments have shown that part of the C-terminal tail domain of kinesin-1 binds directly to MTs (Navone et al., 1992; Dietrich et al., 2008; Seeger and Rice, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information from recent studies with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "7b449b59-185d-4fbf-9b44-68ef2dadc9d1",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C65",
+      "claim": "Kinesin-1 could cross-link and glide microtubules in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also demonstrated that kinesin-1 could cross-link and glide MTs using in vitro assays (Andrews et al., 1993; Palacios and St Johnston, 2002; Yamada et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information from in vitro studies with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "0a32b501-516a-427f-a217-2af426aebdb2",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C66",
+      "claim": "When purified tubulins were polymerized into microtubules, the microtubules were found as isolated microtubules with the appearance of smooth surface under the electron microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "When purified tubulins were polymerized into MTs, the MTs were found as isolated microtubules with the appearance of smooth surface under the electron microscope (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "f47780bf-7ac3-4800-9dff-edd3fd9fc73d",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C67",
+      "claim": "Addition of purified kinesin-1 complex from bovine brain to the microtubules causes the dispersed microtubules to adopt a more 'rough' surface due to the binding of kinesin-1 to microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of purified kinesin-1 complex from bovine brain to the MTs causes the dispersed MTs to adopt a more 'rough' surface due to the binding of kinesin-1 to MTs (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "79b3e3b2-51de-43cf-910b-311c70280ce9",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C68",
+      "claim": "When both kinesin-1 and mNUDC were added to the microtubules, microtubules were bundled.",
+      "claim_type": "EXPLICIT",
+      "source": "When both of kinesin-1 and mNUDC were added to the MTs, we found that MTs were bundled (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "166730b6-7644-40bc-b55f-8945bffc7142",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C69",
+      "claim": "No microtubule bundles were observed in control samples containing just taxol-stabilized microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "No such bundles were observed in control samples containing just taxol-stabilized MTs or in mixtures of MTs with kinesin-1 only (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "ca6c513c-9e22-46af-8d39-681dbb58c7af",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C70",
+      "claim": "No microtubule bundles were observed in mixtures of microtubules with kinesin-1 only.",
+      "claim_type": "EXPLICIT",
+      "source": "No such bundles were observed in control samples containing just taxol-stabilized MTs or in mixtures of MTs with kinesin-1 only (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "06bfcf6d-14ff-4682-affb-4a3a7dd1f9d4",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C71",
+      "claim": "Neighboring microtubules in the bundles have an interval of approximately 80 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Neighboring MTs in the bundles has an interval of \u223c80 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the electron microscopy images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "1c39439b-0290-4315-9720-a6bd93e753e9",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C72",
+      "claim": "Kinesin-1 has a long flexible stalk with a maximum length of approximately 80 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering kinesin-1 has a long flexible stalk (maximum \u223c80 nm; Hirokawa et al., 1989) and mNUDC is an adapter protein, it is conceivable that the cross-bridges represent a complex of kinesin-1 and mNUDC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "e7465f6d-21ca-4ea9-aee4-19f7ad45fff9",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C73",
+      "claim": "The cross-bridges between microtubules represent a complex of kinesin-1 and mNUDC.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering kinesin-1 has a long flexible stalk (maximum \u223c80 nm; Hirokawa et al., 1989) and mNUDC is an adapter protein, it is conceivable that the cross-bridges represent a complex of kinesin-1 and mNUDC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural properties of kinesin-1 and the spacing of microtubules in bundles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "f80c0dc1-8e2c-4cd5-b671-f7ed6753ec4f",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C74",
+      "claim": "Nine pairs (69%) of microtubule bundles were anti-parallel with a 95% confidence interval of 39% and 91%.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine pairs (69%) of microtubule bundles were anti-parallel with a 95% confidence interval (CI) of 39% and 91% by F-test for binominal distribution (Figure 5D-D2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative analysis of the polarity of cross-linked microtubules stated in the text and shown in Figure 5D-D2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "6b00a98c-6764-45d7-a248-8e6876c83600",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C75",
+      "claim": "Kinesin-1-mNUDC complex tends to cross-link anti-parallel microtubule bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, kinesin-1-mNUDC complex tends to cross-link anti-parallel microtubule bundles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the statistical analysis showing a significant preference for anti-parallel orientation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "cef3345c-7d92-4bcf-a405-d365381e0534",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C76",
+      "claim": "The C-terminal domain of kinesin-1 has been shown to bind to microtubules in addition to the N-terminal motor domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the C-terminal domain of kinesin-1 has been shown to bind to MTs in addition to the N-terminal motor domain (Navone et al., 1992; Seeger and Rice, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "7203fdf2-191d-4752-a602-e16c6d435ac9",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C77",
+      "claim": "The MT-binding site in the C-terminal region of UNC-116 is highly conserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence alignment of UNC-116 with its corresponding fly, rat, and human homologs showed that the MT-binding site is highly conserved (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from sequence alignment analysis stated in the text and shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "78fbbec3-b2bb-4956-84f8-e9b25b6e8d10",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C78",
+      "claim": "The positively charged residues in the C-terminal MT-binding region have been shown to be required for MT-binding in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The positively charged residues (labeled in red) in this region have been shown to be required for MT-binding in vitro (Seeger and Rice, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "2d627017-5551-4c33-8e62-aead073b343f",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C79",
+      "claim": "GFP-tagged C-terminal domain of UNC-116 (521\u2013863) showed colocalization with microtubules when expressed in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, GFP-tagged C-terminal domain of UNC-116 (521\u2013863) showed colocalization with MTs when expressed in HEK293 cells, suggesting that the C-terminal domain of UNC-116 can indeed bind to MTs (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from cell culture experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "efd101e8-2e75-4493-a405-6b51574404b6",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C80",
+      "claim": "The C-terminal domain of UNC-116 can bind to microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, GFP-tagged C-terminal domain of UNC-116 (521\u2013863) showed colocalization with MTs when expressed in HEK293 cells, suggesting that the C-terminal domain of UNC-116 can indeed bind to MTs (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the colocalization experiment in HEK293 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "61dfbad5-03c4-4462-8ffd-ca9999695c3a",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C81",
+      "claim": "The molecular lesion of e2310 is a TC5 transposon insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular lesion of e2310 is a TC5 transposon insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information about the e2310 allele.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "73190f6d-bcc0-4933-83a5-ba5794d56b5a",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C82",
+      "claim": "The transposon in e2310 was inserted after residue 692, which truncates the C-terminal MT-binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The transposon was inserted after residue 692, which truncates the C-terminal MT-binding domain (Patel et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "da377187-2f12-45bc-ac34-eb5661bc0695",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C83",
+      "claim": "Point mutations are found in the motor domain in wy270 and rh24sb79 alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Point mutations are found in the motor domain in wy270 and rh24sb79 alleles, which likely result in partial loss of motor function (Yang et al., 2005 and unpublished data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "d728b9c9-b3d9-4339-8373-51c902a6994a",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C84",
+      "claim": "Point mutations in wy270 and rh24sb79 alleles likely result in partial loss of motor function.",
+      "claim_type": "EXPLICIT",
+      "source": "Point mutations are found in the motor domain in wy270 and rh24sb79 alleles, which likely result in partial loss of motor function (Yang et al., 2005 and unpublished data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the location of the mutations in the motor domain.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "15acfac7-d8c8-41d9-9ed5-e6da7493dfc1",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C85",
+      "claim": "Both motor activity and C-terminal MT-binding are required for the newly defined function of UNC-116/kinesin-1 in regulating dendritic MT polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that both motor activity and C-terminal MT-binding might be required for this newly defined function of UNC-116/kinesin-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of different mutant alleles affecting different domains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "ea3acd82-86d9-496f-8cd5-3591953efb60",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C86",
+      "claim": "In wild-type animals, a mitochondrial marker TOM-20::YFP localizes to discrete puncta in both the axon and dendrite of DA9.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type animals, a mitochondrial marker TOM-20::YFP localizes to discrete puncta in both the axon and dendrite of DA9 (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "89f7847b-e62f-42e1-926b-83d4b5399ff7",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C87",
+      "claim": "In unc-116(e2310) mutants, the TOM-20 signal is completely absent from both processes and only found in the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-116(e2310) mutants, the TOM-20 signal is completely absent from both processes and only found in the cell body (Figure 6\u2014figure supplement 1), suggesting that UNC-116 is required for transporting mitochondria to both axon and dendrite.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "256227dc-a519-4148-ab3e-2c9a6929becf",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C88",
+      "claim": "UNC-116 is required for transporting mitochondria to both axon and dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-116(e2310) mutants, the TOM-20 signal is completely absent from both processes and only found in the cell body (Figure 6\u2014figure supplement 1), suggesting that UNC-116 is required for transporting mitochondria to both axon and dendrite.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that mitochondria fail to localize to processes in unc-116 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "7616f2c7-8f22-4016-8f44-3186851918bb",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C89",
+      "claim": "DA9 expression of UNC-116MT efficiently rescues the TOM-20 localization defect in the axon.",
+      "claim_type": "EXPLICIT",
+      "source": "DA9 expression of UNC-116MT efficiently rescues the TOM-20 localization defect in the axon, suggesting that this mutant form of UNC-116 can support the organelle transporting function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from a rescue experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "a0f0d4c7-3a92-498c-bafb-11c448b0c5fc",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C90",
+      "claim": "The UNC-116MT mutant form can support the organelle transporting function.",
+      "claim_type": "EXPLICIT",
+      "source": "DA9 expression of UNC-116MT efficiently rescues the TOM-20 localization defect in the axon, suggesting that this mutant form of UNC-116 can support the organelle transporting function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rescue of mitochondrial localization by UNC-116MT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "4e0b5d62-9ab7-4e93-807f-11a63eb482d5",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C91",
+      "claim": "UNC-116MT showed much less rescue of the MT polarity defects in the dendrite, as assayed by KLP-16 localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, but the same transgene showed much less rescue of the MT polarity defects in the dendrite, as assayed by KLP-16 localization (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "9dfde7f7-0036-4ceb-a23d-602702c06bfa",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C92",
+      "claim": "The C-terminal MT-binding motif of UNC-116 is specifically required for establishing dendritic MT polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the notion that the C-terminal MT-binding motif of UNC-116 is specifically required for the establishing dendritic MT polarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential rescue of mitochondrial transport versus MT polarity by UNC-116MT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "86bba21c-3156-4f20-a0fa-56c1e6d42d6e",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C93",
+      "claim": "UNC-116MT efficiently rescues the abnormally long dendrites in the unc-116(e2310) mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, UNC-116MT efficiently rescues the abnormally long dendrites in the unc-116(e2310) mutant, suggesting that this length phenotype is independent of the MT polarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from a rescue experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "10b7d16d-eb25-4a4d-850c-9a642f7aaf49",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C94",
+      "claim": "The dendrite length phenotype is independent of the MT polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, UNC-116MT efficiently rescues the abnormally long dendrites in the unc-116(e2310) mutant, suggesting that this length phenotype is independent of the MT polarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rescue of dendrite length by UNC-116MT, which does not rescue MT polarity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "37e099e8-5871-4a15-bf14-02646108d84c",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C95",
+      "claim": "KLC-2 is required for axonal localization of TOM-20.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports, KLC-2 is required for axonal localization of TOM-20, suggesting that the KLCs are required for the organelle transport function of UNC-116 (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "0ab168b7-5493-4a1e-b057-9a1245ace76e",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C96",
+      "claim": "The kinesin light chains are required for the organelle transport function of UNC-116.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports, KLC-2 is required for axonal localization of TOM-20, suggesting that the KLCs are required for the organelle transport function of UNC-116 (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the requirement of KLC-2 for mitochondrial localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "27ed96fe-99e6-4060-ab0a-4f158ecc4b3d",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C97",
+      "claim": "Neither klc-1 or klc-2 single mutants nor klc-1; klc-2 double mutants showed any defects in MT polarity markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, neither klc-1 or klc-2 single mutants nor klc-1; klc-2 double mutants showed any defects in MT polarity markers (Figure 6\u2014figure supplement 1), suggesting that they are dispensable for the MT polarity function of UNC-116.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation stated in the text and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "7a73ba39-8672-444b-a851-109488bd4ebe",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C98",
+      "claim": "Kinesin light chains are dispensable for the MT polarity function of UNC-116.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, neither klc-1 or klc-2 single mutants nor klc-1; klc-2 double mutants showed any defects in MT polarity markers (Figure 6\u2014figure supplement 1), suggesting that they are dispensable for the MT polarity function of UNC-116.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of MT polarity defects in klc mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "b42c07a2-842c-4afa-abaf-b378fc173677",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C99",
+      "claim": "The MT-gliding activity of kinesin-1 in nonpolarized Drosophila S2 cells is independent of KLCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the MT-gliding activity of kinesin-1 in nonpolarized Drosophila S2 cells is also independent of KLCs, suggestive of a similar mode of action in nonneuronal cells (Jolly et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "7ed7ba74-1562-41b7-84e6-0d738ce5f0df",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C100",
+      "claim": "UNC-116 has a novel function in regulating dendritic MT polarity that requires both motor activity and C-terminal MT binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our structure\u2013function analyses have revealed a novel function of UNC-116 in regulating dendritic MT polarity. This function requires both motor activity and C-terminal MT binding, and can be separated from the canonical vesicular and organelle trafficking function of UNC-116 both at the level of cargo-binding domains as well as the dependency on kinesin light chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structure-function analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "1e48234a-b2ce-425e-87cc-e226fc03fd53",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C101",
+      "claim": "The MT polarity function of UNC-116 can be separated from the canonical vesicular and organelle trafficking function at the level of cargo-binding domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our structure\u2013function analyses have revealed a novel function of UNC-116 in regulating dendritic MT polarity. This function requires both motor activity and C-terminal MT binding, and can be separated from the canonical vesicular and organelle trafficking function of UNC-116 both at the level of cargo-binding domains as well as the dependency on kinesin light chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential requirements for the two functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "1bf6dde8-d66e-4308-ba02-45345307fa4f",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C102",
+      "claim": "The MT polarity function of UNC-116 can be separated from the canonical vesicular and organelle trafficking function at the level of dependency on kinesin light chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our structure\u2013function analyses have revealed a novel function of UNC-116 in regulating dendritic MT polarity. This function requires both motor activity and C-terminal MT binding, and can be separated from the canonical vesicular and organelle trafficking function of UNC-116 both at the level of cargo-binding domains as well as the dependency on kinesin light chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential requirements for the two functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "21a25f32-1e84-432e-9a2a-06729d5fcb83",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C103",
+      "claim": "In wild-type animals, the axon has higher expression of GFP::TBA-1, with a dendrite/ventral axon intensity ratio around 0.6.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type animals, axon has higher expression of GFP::TBA-1, with a dendrite/ventral axon intensity ratio around 0.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement of tubulin distribution stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "c91e4207-8b67-4dd9-9a8b-96b7e7f52e1e",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C104",
+      "claim": "In unc-116(e2310) animals, axon expression of GFP::TBA-1 remains largely unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-116(e2310) animals, axon expression of GFP::TBA-1 remains largely unchanged, whereas expression in the dendrite increases, with a dendrite/axon intensity ratio around 1.2, suggestive of excessive MTs in the unc-116 mutant dendrites (Figure 6C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement stated in the text and shown in Figure 6C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "68dbbfb1-8a60-4cdd-b7cd-2f62773af26d",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C105",
+      "claim": "In unc-116(e2310) animals, GFP::TBA-1 expression in the dendrite increases, with a dendrite/axon intensity ratio around 1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-116(e2310) animals, axon expression of GFP::TBA-1 remains largely unchanged, whereas expression in the dendrite increases, with a dendrite/axon intensity ratio around 1.2, suggestive of excessive MTs in the unc-116 mutant dendrites (Figure 6C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement stated in the text and shown in Figure 6C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "46fef781-b044-412a-91ab-fe117b889cc0",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C106",
+      "claim": "There are excessive microtubules in the unc-116 mutant dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-116(e2310) animals, axon expression of GFP::TBA-1 remains largely unchanged, whereas expression in the dendrite increases, with a dendrite/axon intensity ratio around 1.2, suggestive of excessive MTs in the unc-116 mutant dendrites (Figure 6C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the increased tubulin signal in unc-116 mutant dendrites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "51c27516-7f72-4474-9d95-aa6fa39a9daf",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C107",
+      "claim": "EBP-2::GFP comets in the unc-116 mutant DA9 dendrite are three times more frequent compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that EBP-2::GFP comets in the unc-116 mutant DA9 dendrite is three times more frequent comparing to wild type, further indicating there are more MTs in unc-116(e2310) dendrite (Figures 2C, 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement stated in the text and shown in Figures 2C and 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "7f4b376f-67c8-4152-843b-3a68d088fdb0",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C108",
+      "claim": "There are more microtubules in unc-116(e2310) dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that EBP-2::GFP comets in the unc-116 mutant DA9 dendrite is three times more frequent comparing to wild type, further indicating there are more MTs in unc-116(e2310) dendrite (Figures 2C, 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the increased frequency of EBP-2::GFP comets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "19905dd5-8f2e-4777-ad0a-3d62c6401a20",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C109",
+      "claim": "UNC-116/kinesin-1 maintains minus-end-out MT polarity in dendrite through selectively sliding plus-end-out MTs out of dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data favor the model that UNC-116/kinesin-1 maintains minus-end-out MT polarity in dendrite through selectively sliding plus-end-out MTs out of dendrite (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the proposed model based on the data showing increased MT density in unc-116 mutant dendrites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "260dafdc-4d2b-423b-85c7-be15e7ad68f1",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C110",
+      "claim": "Dynein is required for the uniform plus-end-out MT organization in Drosophila sensory neuron axons.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, Jan and colleagues showed that dynein was required for the uniform plus-end-out MT organization in Drosophila sensory neuron axons (Zheng et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "fb4a7195-7498-48fa-b9b0-53364e777c67",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C111",
+      "claim": "In dynein mutants, about 30% of the axonal MTs exhibit a minus-end-out orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "In dynein mutants, about 30% of the axonal MTs exhibit a minus-end-out orientation, whereas the dendritic MT polarity remains intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "8fdbf9f8-6d11-4034-97b5-f8216b92dab2",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C112",
+      "claim": "In dynein mutants, the dendritic MT polarity remains intact.",
+      "claim_type": "EXPLICIT",
+      "source": "In dynein mutants, about 30% of the axonal MTs exhibit a minus-end-out orientation, whereas the dendritic MT polarity remains intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "7f89c879-14d5-4b4f-a8b0-f5d7cfbe9c5f",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C113",
+      "claim": "The MT-associated axon initial segment (AIS)-enriched protein UNC-33/CRMP is important for MT organization in both the axon and dendrite in worm sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Maniar et al. (2012) recently showed that the MT-associated axon initial segment (AIS)-enriched protein UNC-33/CRMP is important for MT organization in both the axon and dendrite in worm sensory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "afd5a268-3181-4440-885c-a25f7b925362",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C114",
+      "claim": "In unc-33 mutants, both the axon and dendrite exhibit polarity defects.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-33 mutants, both the axon and dendrite exhibit polarity defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "cf06f760-4d36-42d0-8a41-e464a71902a1",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C115",
+      "claim": "The minus-end-out MTs in dendrites allow for the accumulation of dendritic proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data strongly support the notion that the minus-end-out MTs in dendrites not only allow for the accumulation of dendritic proteins but are also critical for the exclusion of axonal components such as synaptic vesicles and active zone proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observations of dendritic protein mislocalization in unc-116 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "dbf3232e-8e0d-4b80-9514-550f20199574",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C116",
+      "claim": "The minus-end-out MTs in dendrites are critical for the exclusion of axonal components such as synaptic vesicles and active zone proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data strongly support the notion that the minus-end-out MTs in dendrites not only allow for the accumulation of dendritic proteins but are also critical for the exclusion of axonal components such as synaptic vesicles and active zone proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observations of axonal protein mislocalization to dendrites in unc-116 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "6fcf790d-550f-4d44-ab22-b1e24e581101",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C117",
+      "claim": "MT polarity appears to affect the length of the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, MT polarity appears to affect the length of the dendrite, suggesting that both the structural and transport functions of MTs depend on their polarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that dendrites are longer in unc-116 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "cc140ca0-8518-443f-a28a-65e6ef630d19",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C118",
+      "claim": "Both the structural and transport functions of MTs depend on their polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, MT polarity appears to affect the length of the dendrite, suggesting that both the structural and transport functions of MTs depend on their polarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the multiple phenotypes observed when MT polarity is disrupted.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "9ce3eedf-f0df-446a-9b93-25b0eb050e53",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C119",
+      "claim": "The direction and timing of dendrite outgrowth are not affected in unc-116 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the direction and timing of dendrite outgrowth are not affected in unc-116 mutants, suggesting that MT polarity does not play a critical role in dendrite outgrowth, a process in which the actin cytoskeleton is known to play an important role (Gao et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation comparing unc-116 mutants to wild-type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "093bd08c-4681-47a4-9acf-ad63ff902820",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C120",
+      "claim": "MT polarity does not play a critical role in dendrite outgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the direction and timing of dendrite outgrowth are not affected in unc-116 mutants, suggesting that MT polarity does not play a critical role in dendrite outgrowth, a process in which the actin cytoskeleton is known to play an important role (Gao et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the normal dendrite outgrowth in unc-116 mutants despite MT polarity defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "db1b8d46-8fca-4aec-ad1e-2ece3d38ac88",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C121",
+      "claim": "The actin cytoskeleton plays an important role in dendrite outgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the direction and timing of dendrite outgrowth are not affected in unc-116 mutants, suggesting that MT polarity does not play a critical role in dendrite outgrowth, a process in which the actin cytoskeleton is known to play an important role (Gao et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "78ab3c4d-fc30-43b8-b066-3c0391f18116",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C122",
+      "claim": "Polarized MT tracks play instructive roles in formation of axonal and dendritic identities.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data argue that polarized MT tracks play instructive roles in formation of axonal and dendritic identities, as well as in the compartmentalization of axonal and dendritic constituents such as SVs, active zone proteins, and neurotransmitter receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observations of cargo mislocalization when MT polarity is disrupted.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "55e66120-49b5-46bd-8122-6c05f858c8ec",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "claim_id": "C123",
+      "claim": "Polarized MT tracks play instructive roles in the compartmentalization of axonal and dendritic constituents such as SVs, active zone proteins, and neurotransmitter receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data argue that polarized MT tracks play instructive roles in formation of axonal and dendritic identities, as well as in the compartmentalization of axonal and dendritic constituents such as SVs, active zone proteins, and neurotransmitter receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observations of cargo mislocalization when MT polarity is disrupted.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cb177ea6-6778-42c3-8d2a-90af52398cdd",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about microtubule polarity in neurons across species. Axonal MTs are uniformly plus-end-out from worms to rodents, while dendritic MTs show mixed polarity that varies between vertebrates (mixed proximally, plus-end-out distally) and invertebrates (mixed with minus-end-out predominant).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C7-C9 present established knowledge from prior literature with appropriate citations. These are well-documented characteristics of neuronal MT organization that provide necessary context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "2aee013e-2031-4333-a3fd-caf7cd34c072",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In wild-type C. elegans DA9 neurons, fluorescently tagged motor proteins localize according to MT polarity: plus-end motor UNC-104 accumulates at the axon tip but is absent from dendrites, while minus-end motors (DHC-1 and KLP-16) accumulate at dendrite tips. This pattern indicates uniformly plus-end-out MTs in axons and predominantly minus-end-out MTs in dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C17 present consistent experimental observations using multiple motor protein markers (Figure 1B-D). The motor-dead control (C14-C15) validates that localization depends on motor activity. The inference about MT polarity (C16-C17) is well-supported by the motor localization patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "5f9052cd-1491-4eee-8c7c-5a5d3f3cc7ff",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Time-lapse imaging of EBP-2::GFP comets in wild-type DA9 and PHC neurons confirms MT polarity: comets move away from soma in axons (plus-end-out) and toward soma in dendrites (minus-end-out).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 present direct visualization of dynamic MT plus-ends using the established EB1 family marker (Figure 2, Videos 1-3). This provides independent confirmation of the MT polarity inferred from motor localization and is consistent with cited prior work (Maniar et al., 2012).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "8a35f2fc-27f7-41e4-bf13-d3e557c9ae72",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In unc-116 mutants, dendritic MT polarity is reversed to an axon-like plus-end-out organization. Plus-end motor UNC-104 now accumulates in dendrite tips, minus-end motors (DHC-1, KLP-16) lose dendrite tip accumulation, and EBP-2 comets predominantly move away from soma in dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 present consistent observations across multiple markers (Figures 1E-G, 2, Videos 4-5). Both steady-state motor localization and dynamic MT imaging converge on the same conclusion. The phenotype is specific to dendrites with no effect on axonal MT polarity (C27).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "5ffaac46-363d-4fb8-a6ca-0942f295a53c",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "UNC-116/kinesin-1 is required for establishing minus-end-out MT organization in dendrites. Multiple partial loss-of-function alleles show similar phenotypes, and cell-autonomous rescue confirms UNC-116 functions within the DA9 neuron.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C35 establish genetic requirements through multiple alleles (e2310, wy270, rh24sb79) and rescue experiments (Figure 1\u2014figure supplements 2-3). The viability of e2310 despite null lethality (C29-C31) appropriately identifies it as hypomorphic. Cell-autonomous rescue (C33-C34) demonstrates direct neuronal function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "83cf5715-0a1e-4863-838f-55c370496156",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In unc-116 mutants, dendrite outgrowth timing and directionality are normal, and axon length is unchanged, but dendrites are dramatically longer than wild-type at all developmental stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 describe developmental phenotypes with appropriate controls. The cited developmental timeline (C36-C37) provides context. The increased dendrite length (C40, Figure 3\u2014figure supplement 1) is a secondary consequence distinct from the MT polarity defect, as later shown by rescue experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "e921f445-91e3-47b9-a587-bd23dbf52d76",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In unc-116 mutants, synaptic vesicles accumulate ectopically in dendrites due to altered MT polarity allowing plus-end motor UNC-104 to enter dendrites. Double mutant analysis shows UNC-116 is not directly involved in SV transport but rather creates the minus-end-out MT polarity that normally excludes UNC-104 from dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C49 present a clear genetic epistasis analysis (Figure 3). The unc-104;unc-116 double mutant phenotype (C46) demonstrates that dendritic SV accumulation in unc-116 mutants requires UNC-104, establishing that the primary defect is MT polarity rather than direct cargo transport. This logic is sound and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "95386ba2-4fcc-4262-a302-29986b3cefcb",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Active zone proteins (SYD-2/liprin) and other synaptic vesicle markers (SNG-1/synaptogyrin) also show ectopic dendritic localization in unc-116 mutants, indicating that MT polarity changes affect the entire presynaptic structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 extend the SV findings to other presynaptic components (Figure 3\u2014figure supplement 2). The inference that MT polarity affects the entire presynaptic structure (C52) is reasonable given multiple independent markers show similar mislocalization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "c32db1fa-1b70-4a59-bd93-b9184c5dc2ed",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Dendritic proteins (ACR-2, CAM-1, FBN-1) fail to localize properly in unc-116 mutants, accumulating in cell bodies instead of dendrites. This demonstrates that minus-end-out MT polarity is instructive for dendritic cargo transport, encouraging minus-end motors and discouraging plus-end motors from entering dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C62 show that MT polarity affects both axonal and dendritic protein localization (Figure 4). The observations of dendritic protein mislocalization (C57) complement the axonal protein mislocalization findings. The mechanistic interpretation (C59-C62) is well-supported by the bidirectional effects on cargo distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "bbe867c3-1883-4887-9e9b-d0db29b7d669",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Kinesin-1 has a C-terminal tail domain that can bind directly to microtubules in addition to its N-terminal motor domain, and has been shown to cross-link and glide microtubules in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 present established structural and biochemical knowledge about kinesin-1 with appropriate citations. This provides necessary background for the subsequent in vitro experiments and structure-function analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "35224541-51df-4a6b-9bcd-4e4bb2284e1e",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In vitro, kinesin-1 with mNUDC cross-links microtubules into bundles with ~80 nm spacing. Analysis of MT polarity shows 69% of bundles are anti-parallel (95% CI: 39-91%), indicating kinesin-1-mNUDC complex preferentially cross-links anti-parallel microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C75 present in vitro EM data (Figure 5). While the observations are clear, the statistical analysis (C74) has a very wide confidence interval (39-91%) with the lower bound close to 50%, making the preference for anti-parallel orientation less definitive than stated. The sample size (13 pairs) is small. Additionally, the role of mNUDC is unclear\u2014it's described as an adapter protein but its necessity and mechanism are not established. The inference that cross-bridges represent kinesin-1-mNUDC complexes (C73) is reasonable but not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "f309ea0f-b7e2-412e-9e5b-99f17ca14e79",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The C-terminal MT-binding domain of UNC-116 is highly conserved across species, and the C-terminal domain (521-863) can bind to microtubules when expressed in HEK293 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C80 present sequence conservation (C77, Figure 6A) and cite prior work on MT-binding residues (C78). However, the HEK293 cell colocalization data (C79-C80) is not shown ('data not shown'), making it impossible to evaluate the quality of this evidence. While the conservation and prior literature support MT-binding capability, the lack of presented data weakens this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "049e56a5-1d1c-4734-a4ac-b90a8bf3a680",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Analysis of unc-116 alleles shows e2310 truncates the C-terminal MT-binding domain while wy270 and rh24sb79 have motor domain mutations, suggesting both motor activity and C-terminal MT-binding are required for regulating dendritic MT polarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 present molecular characterization of alleles with appropriate citations. The inference that both domains are required (C85) is reasonable given that different domain mutations produce similar phenotypes, though definitive structure-function analysis requires rescue experiments (presented later).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "be05f736-6730-4823-878f-7a43dd66e250",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Structure-function analysis using UNC-116MT (mutant C-terminal MT-binding domain) shows it rescues mitochondrial transport but not MT polarity defects, demonstrating the C-terminal MT-binding motif is specifically required for establishing dendritic MT polarity but not for organelle transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C92 present elegant structure-function analysis (Figure 6B, Figure 6\u2014figure supplement 1). The differential rescue of mitochondrial transport versus MT polarity by UNC-116MT provides strong evidence for separable functions. This is a key experiment supporting the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "5c859178-d688-4c56-8c5f-a21c5cec0989",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "UNC-116MT rescues the abnormally long dendrite phenotype, indicating dendrite length is independent of MT polarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C94 show that dendrite length can be rescued independently of MT polarity. This demonstrates that the length phenotype is a secondary consequence of other UNC-116 functions, not the MT polarity defect. The logic is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "1f75e6b4-062c-45a0-aaab-06b6d3aac3a4",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Kinesin light chains (KLCs) are required for organelle transport function of UNC-116 but are dispensable for MT polarity function. KLC-2 is required for mitochondrial localization, but klc-1;klc-2 double mutants show no MT polarity defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C98 present clear genetic separation of functions (Figure 6\u2014figure supplement 1). The klc double mutant analysis (C97-C98) definitively shows KLCs are not required for MT polarity regulation. Citation of similar findings in Drosophila S2 cells (C99) provides independent support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "75323450-960f-4cb8-8c1a-656f1101b406",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "UNC-116 has a novel function in regulating dendritic MT polarity that requires both motor activity and C-terminal MT binding, and can be separated from canonical cargo transport function at the level of cargo-binding domains and KLC dependency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C102 synthesize the structure-function analyses. The separation of functions is well-demonstrated through multiple lines of evidence: UNC-116MT rescues transport but not polarity, and klc mutants affect transport but not polarity. This is a major conclusion well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "78a296e0-a619-4e4b-9b77-4bb6e52e6c35",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "In unc-116 mutants, dendritic MT density increases (dendrite/axon tubulin ratio changes from 0.6 to 1.2, and EBP-2 comet frequency increases 3-fold), supporting a model where UNC-116 maintains minus-end-out MT polarity by selectively sliding plus-end-out MTs out of dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C109 present quantitative measurements of MT density using two independent methods: tubulin fluorescence (C103-C105, Figure 6C-E) and EBP-2 comet frequency (C107, Figures 2C, 6F). Both show increased dendritic MTs in mutants. This supports the 'sliding out' model (C109) over a 'sliding in' model, as increased MT density is consistent with failure to remove plus-end-out MTs rather than failure to import minus-end-out MTs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "b292f3da-4907-4210-9087-b165be595a42",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work has shown that dynein regulates axonal MT polarity in Drosophila (affecting axons but not dendrites), and UNC-33/CRMP affects MT organization in both axons and dendrites in C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C114 accurately cite prior work on other regulators of MT polarity. These provide important context showing that different mechanisms regulate MT polarity in different compartments and organisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "f22e345c-f0e4-4cb5-9f01-f34e9156c97a",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Minus-end-out MT polarity in dendrites is critical for both accumulating dendritic proteins and excluding axonal components (synaptic vesicles, active zone proteins). MT polarity affects dendrite length, suggesting both structural and transport functions depend on polarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C118 synthesize the functional consequences of MT polarity. The bidirectional effects on protein localization (accumulation of dendritic proteins, exclusion of axonal proteins) are well-demonstrated. The inference about structural and transport functions (C118) is reasonable given the multiple phenotypes observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "48f8aa01-7b26-4a1c-a2d5-639ab75c8ba2",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Dendrite outgrowth direction and timing are normal in unc-116 mutants, suggesting MT polarity does not play a critical role in dendrite outgrowth, a process where actin cytoskeleton is known to be important.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C119-C121 present observations about dendrite outgrowth with appropriate citation for actin's role (C121). The inference that MT polarity is not critical for outgrowth (C120) is reasonable given normal outgrowth despite polarity defects, though 'not critical' may be too strong\u2014MT polarity may still play some role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    },
+    {
+      "id": "71751348-1565-4a6b-a790-7f0dc44f003f",
+      "content_id": "221447ba-426e-4b6d-b819-b8d3b2c219a2",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Polarized MT tracks play instructive roles in formation of axonal and dendritic identities and in compartmentalization of axonal and dendritic constituents (SVs, active zone proteins, neurotransmitter receptors).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C122-C123 present the major conceptual conclusion. The extensive data on cargo mislocalization when MT polarity is disrupted strongly support this conclusion. This represents a significant advance in understanding how neuronal polarity is established and maintained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T05:42:01.467149Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6dc38b45-16d7-48c2-b657-d6186f272cff",
+      "result_id": "cb177ea6-6778-42c3-8d2a-90af52398cdd"
+    },
+    {
+      "claim_id": "f5cebc38-228c-48d2-8b64-a70d57324bc6",
+      "result_id": "cb177ea6-6778-42c3-8d2a-90af52398cdd"
+    },
+    {
+      "claim_id": "046d8702-1db3-409e-b6dd-bfb7b880ba83",
+      "result_id": "cb177ea6-6778-42c3-8d2a-90af52398cdd"
+    },
+    {
+      "claim_id": "869ef55f-c188-4209-b382-2382d43ec2f1",
+      "result_id": "cb177ea6-6778-42c3-8d2a-90af52398cdd"
+    },
+    {
+      "claim_id": "262e852a-5e60-4792-8450-7b30a36ea993",
+      "result_id": "cb177ea6-6778-42c3-8d2a-90af52398cdd"
+    },
+    {
+      "claim_id": "85e0a839-26bb-43e4-b871-bb8b73008a10",
+      "result_id": "2aee013e-2031-4333-a3fd-caf7cd34c072"
+    },
+    {
+      "claim_id": "f832da1c-d04e-42b6-bfc8-2cdef3553818",
+      "result_id": "2aee013e-2031-4333-a3fd-caf7cd34c072"
+    },
+    {
+      "claim_id": "1b20a1f9-0290-4cab-a145-8d8f6fb6ce9d",
+      "result_id": "2aee013e-2031-4333-a3fd-caf7cd34c072"
+    },
+    {
+      "claim_id": "7d128e75-15f7-40e7-9938-d6fe6f611006",
+      "result_id": "2aee013e-2031-4333-a3fd-caf7cd34c072"
+    },
+    {
+      "claim_id": "11c68699-a297-4528-a760-b4e43024aa6f",
+      "result_id": "2aee013e-2031-4333-a3fd-caf7cd34c072"
+    },
+    {
+      "claim_id": "ccbb9c96-6ef5-49a0-b01f-8a2a84bfc475",
+      "result_id": "2aee013e-2031-4333-a3fd-caf7cd34c072"
+    },
+    {
+      "claim_id": "10852394-4223-4638-875d-dc9743c33baa",
+      "result_id": "2aee013e-2031-4333-a3fd-caf7cd34c072"
+    },
+    {
+      "claim_id": "3b6a2a87-4548-4a52-ae92-bd554f206dfa",
+      "result_id": "2aee013e-2031-4333-a3fd-caf7cd34c072"
+    },
+    {
+      "claim_id": "c140142c-07ff-4aa3-9254-d6687104248b",
+      "result_id": "5f9052cd-1491-4eee-8c7c-5a5d3f3cc7ff"
+    },
+    {
+      "claim_id": "e5be9a07-0051-45c9-bb05-7b03e3733b18",
+      "result_id": "5f9052cd-1491-4eee-8c7c-5a5d3f3cc7ff"
+    },
+    {
+      "claim_id": "45ced0c6-7d0f-414e-9504-db8ef4200fd8",
+      "result_id": "5f9052cd-1491-4eee-8c7c-5a5d3f3cc7ff"
+    },
+    {
+      "claim_id": "aeb86b0b-8e3d-4bab-8e26-22bfe9bf67fe",
+      "result_id": "5f9052cd-1491-4eee-8c7c-5a5d3f3cc7ff"
+    },
+    {
+      "claim_id": "60d3ea39-5ca6-455c-8619-9517b4d8b505",
+      "result_id": "8a35f2fc-27f7-41e4-bf13-d3e557c9ae72"
+    },
+    {
+      "claim_id": "c4df4bf6-55dd-4f46-8b56-f553310715f4",
+      "result_id": "8a35f2fc-27f7-41e4-bf13-d3e557c9ae72"
+    },
+    {
+      "claim_id": "73cde11a-4ea0-4677-b327-6c44c5429a76",
+      "result_id": "8a35f2fc-27f7-41e4-bf13-d3e557c9ae72"
+    },
+    {
+      "claim_id": "28ba9c30-a584-47e8-9576-aa9a6bbfec7c",
+      "result_id": "8a35f2fc-27f7-41e4-bf13-d3e557c9ae72"
+    },
+    {
+      "claim_id": "1b0daaac-06e0-47c9-9b6f-d658d068416c",
+      "result_id": "8a35f2fc-27f7-41e4-bf13-d3e557c9ae72"
+    },
+    {
+      "claim_id": "967f1513-12b5-4aa8-84c8-49f05e995c49",
+      "result_id": "8a35f2fc-27f7-41e4-bf13-d3e557c9ae72"
+    },
+    {
+      "claim_id": "1e7d699f-a76f-4b11-8ca1-298a98581a20",
+      "result_id": "5ffaac46-363d-4fb8-a6ca-0942f295a53c"
+    },
+    {
+      "claim_id": "c5aa9c07-1ad3-4f85-9012-7efc56ffdd10",
+      "result_id": "5ffaac46-363d-4fb8-a6ca-0942f295a53c"
+    },
+    {
+      "claim_id": "79d23bbd-6cc2-48a3-a9fc-120bad2cd7b1",
+      "result_id": "5ffaac46-363d-4fb8-a6ca-0942f295a53c"
+    },
+    {
+      "claim_id": "91385086-01f8-41aa-9f7e-8d4269c01b19",
+      "result_id": "5ffaac46-363d-4fb8-a6ca-0942f295a53c"
+    },
+    {
+      "claim_id": "01707ce2-0f04-4ea6-aa5f-5c9b0231860c",
+      "result_id": "5ffaac46-363d-4fb8-a6ca-0942f295a53c"
+    },
+    {
+      "claim_id": "ea50fd50-56c6-4a7d-9520-22ff0b783dd1",
+      "result_id": "5ffaac46-363d-4fb8-a6ca-0942f295a53c"
+    },
+    {
+      "claim_id": "d339a9e7-7a10-40bd-b141-52e1e1703420",
+      "result_id": "5ffaac46-363d-4fb8-a6ca-0942f295a53c"
+    },
+    {
+      "claim_id": "eac99c54-fcdd-42b8-9e0e-0d2d85d38b37",
+      "result_id": "5ffaac46-363d-4fb8-a6ca-0942f295a53c"
+    },
+    {
+      "claim_id": "696a78a1-b4d9-4cd8-ac60-97d2c77bf3ea",
+      "result_id": "83cf5715-0a1e-4863-838f-55c370496156"
+    },
+    {
+      "claim_id": "20eee34b-aff7-456b-8ad1-8d0d6c0069d8",
+      "result_id": "83cf5715-0a1e-4863-838f-55c370496156"
+    },
+    {
+      "claim_id": "a77111f0-b319-45d5-bf92-330765699143",
+      "result_id": "83cf5715-0a1e-4863-838f-55c370496156"
+    },
+    {
+      "claim_id": "e74fe8ba-b916-4203-9773-3c907aebff91",
+      "result_id": "83cf5715-0a1e-4863-838f-55c370496156"
+    },
+    {
+      "claim_id": "82ac2367-8b3e-4671-bc57-bfba9477c7ee",
+      "result_id": "83cf5715-0a1e-4863-838f-55c370496156"
+    },
+    {
+      "claim_id": "565e488c-64f1-47e9-9ddc-180596b34e3c",
+      "result_id": "e921f445-91e3-47b9-a587-bd23dbf52d76"
+    },
+    {
+      "claim_id": "4fe6924d-ebe9-43d0-86a7-72a1760b1d45",
+      "result_id": "e921f445-91e3-47b9-a587-bd23dbf52d76"
+    },
+    {
+      "claim_id": "6f59eb4e-44f5-4a58-a80a-4b2de72fca6a",
+      "result_id": "e921f445-91e3-47b9-a587-bd23dbf52d76"
+    },
+    {
+      "claim_id": "e263e70d-a2fc-40aa-b8be-3b7d44ba78b4",
+      "result_id": "e921f445-91e3-47b9-a587-bd23dbf52d76"
+    },
+    {
+      "claim_id": "d8ee29a5-5f70-4d2c-bc16-3d0606e1c753",
+      "result_id": "e921f445-91e3-47b9-a587-bd23dbf52d76"
+    },
+    {
+      "claim_id": "44b517dc-ce94-4ba2-80bb-f104bffa1c40",
+      "result_id": "e921f445-91e3-47b9-a587-bd23dbf52d76"
+    },
+    {
+      "claim_id": "a1bc59f4-bb4b-484a-92de-da8eb5930fac",
+      "result_id": "e921f445-91e3-47b9-a587-bd23dbf52d76"
+    },
+    {
+      "claim_id": "0c9f8c4e-9907-498b-b20f-679dfb051d56",
+      "result_id": "e921f445-91e3-47b9-a587-bd23dbf52d76"
+    },
+    {
+      "claim_id": "b0d0df0a-34ba-4657-800b-e556b608d1c9",
+      "result_id": "e921f445-91e3-47b9-a587-bd23dbf52d76"
+    },
+    {
+      "claim_id": "08c04893-7dfd-4565-b3da-423e6185adb1",
+      "result_id": "95386ba2-4fcc-4262-a302-29986b3cefcb"
+    },
+    {
+      "claim_id": "5ee50b7b-bb43-408c-95d7-771a64819281",
+      "result_id": "95386ba2-4fcc-4262-a302-29986b3cefcb"
+    },
+    {
+      "claim_id": "318c0f09-a2bd-41b9-b0dc-5970f7995129",
+      "result_id": "95386ba2-4fcc-4262-a302-29986b3cefcb"
+    },
+    {
+      "claim_id": "1705cd3c-ec8c-497d-8dbc-cd11a7249afd",
+      "result_id": "c32db1fa-1b70-4a59-bd93-b9184c5dc2ed"
+    },
+    {
+      "claim_id": "fb045881-7530-48fb-89a0-498ba1b844e5",
+      "result_id": "c32db1fa-1b70-4a59-bd93-b9184c5dc2ed"
+    },
+    {
+      "claim_id": "50a3cd51-ff78-4d36-a91c-836af47ae579",
+      "result_id": "c32db1fa-1b70-4a59-bd93-b9184c5dc2ed"
+    },
+    {
+      "claim_id": "6334de47-3aa0-48bb-b7a3-6d2cfb4aed68",
+      "result_id": "c32db1fa-1b70-4a59-bd93-b9184c5dc2ed"
+    },
+    {
+      "claim_id": "493acec1-e7fc-490f-ba67-e398ff3b7c97",
+      "result_id": "c32db1fa-1b70-4a59-bd93-b9184c5dc2ed"
+    },
+    {
+      "claim_id": "c5ddb350-760f-46af-8f5b-3457df14d913",
+      "result_id": "c32db1fa-1b70-4a59-bd93-b9184c5dc2ed"
+    },
+    {
+      "claim_id": "5c82e08a-f1db-4137-8754-e683dd9527ba",
+      "result_id": "c32db1fa-1b70-4a59-bd93-b9184c5dc2ed"
+    },
+    {
+      "claim_id": "4fe9e144-0922-47b1-94d5-d396728fb7f5",
+      "result_id": "c32db1fa-1b70-4a59-bd93-b9184c5dc2ed"
+    },
+    {
+      "claim_id": "dd73be7a-13c8-463b-b7b7-3ef6770dc9de",
+      "result_id": "c32db1fa-1b70-4a59-bd93-b9184c5dc2ed"
+    },
+    {
+      "claim_id": "b9af09d4-6d02-4c10-aa29-1cd56caf0f82",
+      "result_id": "c32db1fa-1b70-4a59-bd93-b9184c5dc2ed"
+    },
+    {
+      "claim_id": "d5f2db54-1d94-4519-a30d-e61ab0563b01",
+      "result_id": "bbe867c3-1883-4887-9e9b-d0db29b7d669"
+    },
+    {
+      "claim_id": "383a93d7-a089-44cc-a3dc-73dae16aaea1",
+      "result_id": "bbe867c3-1883-4887-9e9b-d0db29b7d669"
+    },
+    {
+      "claim_id": "7b449b59-185d-4fbf-9b44-68ef2dadc9d1",
+      "result_id": "bbe867c3-1883-4887-9e9b-d0db29b7d669"
+    },
+    {
+      "claim_id": "0a32b501-516a-427f-a217-2af426aebdb2",
+      "result_id": "35224541-51df-4a6b-9bcd-4e4bb2284e1e"
+    },
+    {
+      "claim_id": "f47780bf-7ac3-4800-9dff-edd3fd9fc73d",
+      "result_id": "35224541-51df-4a6b-9bcd-4e4bb2284e1e"
+    },
+    {
+      "claim_id": "79b3e3b2-51de-43cf-910b-311c70280ce9",
+      "result_id": "35224541-51df-4a6b-9bcd-4e4bb2284e1e"
+    },
+    {
+      "claim_id": "166730b6-7644-40bc-b55f-8945bffc7142",
+      "result_id": "35224541-51df-4a6b-9bcd-4e4bb2284e1e"
+    },
+    {
+      "claim_id": "ca6c513c-9e22-46af-8d39-681dbb58c7af",
+      "result_id": "35224541-51df-4a6b-9bcd-4e4bb2284e1e"
+    },
+    {
+      "claim_id": "06bfcf6d-14ff-4682-affb-4a3a7dd1f9d4",
+      "result_id": "35224541-51df-4a6b-9bcd-4e4bb2284e1e"
+    },
+    {
+      "claim_id": "1c39439b-0290-4315-9720-a6bd93e753e9",
+      "result_id": "35224541-51df-4a6b-9bcd-4e4bb2284e1e"
+    },
+    {
+      "claim_id": "e7465f6d-21ca-4ea9-aee4-19f7ad45fff9",
+      "result_id": "35224541-51df-4a6b-9bcd-4e4bb2284e1e"
+    },
+    {
+      "claim_id": "f80c0dc1-8e2c-4cd5-b671-f7ed6753ec4f",
+      "result_id": "35224541-51df-4a6b-9bcd-4e4bb2284e1e"
+    },
+    {
+      "claim_id": "6b00a98c-6764-45d7-a248-8e6876c83600",
+      "result_id": "35224541-51df-4a6b-9bcd-4e4bb2284e1e"
+    },
+    {
+      "claim_id": "cef3345c-7d92-4bcf-a405-d365381e0534",
+      "result_id": "f309ea0f-b7e2-412e-9e5b-99f17ca14e79"
+    },
+    {
+      "claim_id": "7203fdf2-191d-4752-a602-e16c6d435ac9",
+      "result_id": "f309ea0f-b7e2-412e-9e5b-99f17ca14e79"
+    },
+    {
+      "claim_id": "78fbbec3-b2bb-4956-84f8-e9b25b6e8d10",
+      "result_id": "f309ea0f-b7e2-412e-9e5b-99f17ca14e79"
+    },
+    {
+      "claim_id": "2d627017-5551-4c33-8e62-aead073b343f",
+      "result_id": "f309ea0f-b7e2-412e-9e5b-99f17ca14e79"
+    },
+    {
+      "claim_id": "efd101e8-2e75-4493-a405-6b51574404b6",
+      "result_id": "f309ea0f-b7e2-412e-9e5b-99f17ca14e79"
+    },
+    {
+      "claim_id": "61dfbad5-03c4-4462-8ffd-ca9999695c3a",
+      "result_id": "049e56a5-1d1c-4734-a4ac-b90a8bf3a680"
+    },
+    {
+      "claim_id": "73190f6d-bcc0-4933-83a5-ba5794d56b5a",
+      "result_id": "049e56a5-1d1c-4734-a4ac-b90a8bf3a680"
+    },
+    {
+      "claim_id": "da377187-2f12-45bc-ac34-eb5661bc0695",
+      "result_id": "049e56a5-1d1c-4734-a4ac-b90a8bf3a680"
+    },
+    {
+      "claim_id": "d728b9c9-b3d9-4339-8373-51c902a6994a",
+      "result_id": "049e56a5-1d1c-4734-a4ac-b90a8bf3a680"
+    },
+    {
+      "claim_id": "15acfac7-d8c8-41d9-9ed5-e6da7493dfc1",
+      "result_id": "049e56a5-1d1c-4734-a4ac-b90a8bf3a680"
+    },
+    {
+      "claim_id": "ea3acd82-86d9-496f-8cd5-3591953efb60",
+      "result_id": "be05f736-6730-4823-878f-7a43dd66e250"
+    },
+    {
+      "claim_id": "89f7847b-e62f-42e1-926b-83d4b5399ff7",
+      "result_id": "be05f736-6730-4823-878f-7a43dd66e250"
+    },
+    {
+      "claim_id": "256227dc-a519-4148-ab3e-2c9a6929becf",
+      "result_id": "be05f736-6730-4823-878f-7a43dd66e250"
+    },
+    {
+      "claim_id": "7616f2c7-8f22-4016-8f44-3186851918bb",
+      "result_id": "be05f736-6730-4823-878f-7a43dd66e250"
+    },
+    {
+      "claim_id": "a0f0d4c7-3a92-498c-bafb-11c448b0c5fc",
+      "result_id": "be05f736-6730-4823-878f-7a43dd66e250"
+    },
+    {
+      "claim_id": "4e0b5d62-9ab7-4e93-807f-11a63eb482d5",
+      "result_id": "be05f736-6730-4823-878f-7a43dd66e250"
+    },
+    {
+      "claim_id": "9dfde7f7-0036-4ceb-a23d-602702c06bfa",
+      "result_id": "be05f736-6730-4823-878f-7a43dd66e250"
+    },
+    {
+      "claim_id": "86bba21c-3156-4f20-a0fa-56c1e6d42d6e",
+      "result_id": "5c859178-d688-4c56-8c5f-a21c5cec0989"
+    },
+    {
+      "claim_id": "10b7d16d-eb25-4a4d-850c-9a642f7aaf49",
+      "result_id": "5c859178-d688-4c56-8c5f-a21c5cec0989"
+    },
+    {
+      "claim_id": "37e099e8-5871-4a15-bf14-02646108d84c",
+      "result_id": "1f75e6b4-062c-45a0-aaab-06b6d3aac3a4"
+    },
+    {
+      "claim_id": "0ab168b7-5493-4a1e-b057-9a1245ace76e",
+      "result_id": "1f75e6b4-062c-45a0-aaab-06b6d3aac3a4"
+    },
+    {
+      "claim_id": "27ed96fe-99e6-4060-ab0a-4f158ecc4b3d",
+      "result_id": "1f75e6b4-062c-45a0-aaab-06b6d3aac3a4"
+    },
+    {
+      "claim_id": "7a73ba39-8672-444b-a851-109488bd4ebe",
+      "result_id": "1f75e6b4-062c-45a0-aaab-06b6d3aac3a4"
+    },
+    {
+      "claim_id": "b42c07a2-842c-4afa-abaf-b378fc173677",
+      "result_id": "1f75e6b4-062c-45a0-aaab-06b6d3aac3a4"
+    },
+    {
+      "claim_id": "7ed7ba74-1562-41b7-84e6-0d738ce5f0df",
+      "result_id": "75323450-960f-4cb8-8c1a-656f1101b406"
+    },
+    {
+      "claim_id": "1e48234a-b2ce-425e-87cc-e226fc03fd53",
+      "result_id": "75323450-960f-4cb8-8c1a-656f1101b406"
+    },
+    {
+      "claim_id": "1bf6dde8-d66e-4308-ba02-45345307fa4f",
+      "result_id": "75323450-960f-4cb8-8c1a-656f1101b406"
+    },
+    {
+      "claim_id": "21a25f32-1e84-432e-9a2a-06729d5fcb83",
+      "result_id": "78a296e0-a619-4e4b-9b77-4bb6e52e6c35"
+    },
+    {
+      "claim_id": "c91e4207-8b67-4dd9-9a8b-96b7e7f52e1e",
+      "result_id": "78a296e0-a619-4e4b-9b77-4bb6e52e6c35"
+    },
+    {
+      "claim_id": "68dbbfb1-8a60-4cdd-b7cd-2f62773af26d",
+      "result_id": "78a296e0-a619-4e4b-9b77-4bb6e52e6c35"
+    },
+    {
+      "claim_id": "46fef781-b044-412a-91ab-fe117b889cc0",
+      "result_id": "78a296e0-a619-4e4b-9b77-4bb6e52e6c35"
+    },
+    {
+      "claim_id": "51c27516-7f72-4474-9d95-aa6fa39a9daf",
+      "result_id": "78a296e0-a619-4e4b-9b77-4bb6e52e6c35"
+    },
+    {
+      "claim_id": "7f4b376f-67c8-4152-843b-3a68d088fdb0",
+      "result_id": "78a296e0-a619-4e4b-9b77-4bb6e52e6c35"
+    },
+    {
+      "claim_id": "19905dd5-8f2e-4777-ad0a-3d62c6401a20",
+      "result_id": "78a296e0-a619-4e4b-9b77-4bb6e52e6c35"
+    },
+    {
+      "claim_id": "260dafdc-4d2b-423b-85c7-be15e7ad68f1",
+      "result_id": "b292f3da-4907-4210-9087-b165be595a42"
+    },
+    {
+      "claim_id": "fb4a7195-7498-48fa-b9b0-53364e777c67",
+      "result_id": "b292f3da-4907-4210-9087-b165be595a42"
+    },
+    {
+      "claim_id": "8fdbf9f8-6d11-4034-97b5-f8216b92dab2",
+      "result_id": "b292f3da-4907-4210-9087-b165be595a42"
+    },
+    {
+      "claim_id": "7f89c879-14d5-4b4f-a8b0-f5d7cfbe9c5f",
+      "result_id": "b292f3da-4907-4210-9087-b165be595a42"
+    },
+    {
+      "claim_id": "afd5a268-3181-4440-885c-a25f7b925362",
+      "result_id": "b292f3da-4907-4210-9087-b165be595a42"
+    },
+    {
+      "claim_id": "cf06f760-4d36-42d0-8a41-e464a71902a1",
+      "result_id": "f22e345c-f0e4-4cb5-9f01-f34e9156c97a"
+    },
+    {
+      "claim_id": "dbf3232e-8e0d-4b80-9514-550f20199574",
+      "result_id": "f22e345c-f0e4-4cb5-9f01-f34e9156c97a"
+    },
+    {
+      "claim_id": "6fcf790d-550f-4d44-ab22-b1e24e581101",
+      "result_id": "f22e345c-f0e4-4cb5-9f01-f34e9156c97a"
+    },
+    {
+      "claim_id": "cc140ca0-8518-443f-a28a-65e6ef630d19",
+      "result_id": "f22e345c-f0e4-4cb5-9f01-f34e9156c97a"
+    },
+    {
+      "claim_id": "9ce3eedf-f0df-446a-9b93-25b0eb050e53",
+      "result_id": "48f8aa01-7b26-4a1c-a2d5-639ab75c8ba2"
+    },
+    {
+      "claim_id": "093bd08c-4681-47a4-9acf-ad63ff902820",
+      "result_id": "48f8aa01-7b26-4a1c-a2d5-639ab75c8ba2"
+    },
+    {
+      "claim_id": "db1b8d46-8fca-4aec-ad1e-2ece3d38ac88",
+      "result_id": "48f8aa01-7b26-4a1c-a2d5-639ab75c8ba2"
+    },
+    {
+      "claim_id": "78ab3c4d-fc30-43b8-b066-3c0391f18116",
+      "result_id": "71751348-1565-4a6b-a790-7f0dc44f003f"
+    },
+    {
+      "claim_id": "55e66120-49b5-46bd-8122-6c05f858c8ec",
+      "result_id": "71751348-1565-4a6b-a790-7f0dc44f003f"
+    }
+  ],
+  "comparisons": []
+}

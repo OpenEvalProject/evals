@@ -4,311 +4,209 @@
     "claim_ids": [
       "C5",
       "C6",
+      "C43",
       "C44",
       "C45",
       "C46",
-      "C47",
-      "C64",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
       "C65",
-      "C66",
-      "C67",
-      "C68",
-      "C69",
-      "C70",
-      "C71",
-      "C76",
-      "C77",
-      "C78",
-      "C79"
+      "C66"
     ],
-    "result": "Elba is a novel hetero-tripartite protein complex consisting of three proteins: Elba1 (CG12205/Bsg25A), Elba2 (CG9883), and Elba3 (CG15634). Elba1 and Elba2 share a conserved C-terminal BEN domain within a larger ~130 amino acid homology region, while Elba3 has no obvious conserved domains. The three proteins were identified through cross-affinity purification and mass spectrometry as substantially enriched candidates.",
+    "result": "Elba is a novel hetero-tripartite protein complex consisting of three proteins: Elba1 (CG12205/Bsg25A, ~41 kDa), Elba2 (CG9883, ~43 kDa), and Elba3 (CG15634, ~43 kDa). Elba1 and Elba2 share a conserved C-terminal BEN domain within a larger ~130 amino acid homology region, while Elba3 lacks obvious conserved domains but is genomically linked to Elba1. These three proteins were substantially enriched in cross-affinity purification experiments using DNA containing the Elba recognition sequence.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5-C6, C44-C47, C64-C71, C76-C79 collectively establish the identification and characterization of Elba as a hetero-tripartite complex. The cross-affinity purification strategy (C56-C63) successfully reduced non-specific binding and identified three proteins substantially enriched in mass spectrometry (C64-C65). The structural characterization through sequence analysis (C68-C71, C76-C79) and the genomic organization (C47, C75, C79) provide strong supporting evidence for the composition of this novel complex.",
+    "evaluation": "Claims C5, C6, C43-C46, C55-C60, C65-C66 are well-supported by mass spectrometry data (Table 1), sequence analysis (Figure 3), and cross-affinity purification experiments (Figure 2-3). The identification of three proteins with high spectral counts and sequence coverage, their molecular weights matching UV cross-linking data, and the presence of conserved BEN domains in Elba1 and Elba2 provide strong converging evidence for the composition of the Elba complex.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
       "C7",
-      "C48",
-      "C80",
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C85",
-      "C86"
+      "C47",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
     ],
-    "result": "All three Elba proteins are required to reconstitute DNA binding activity in vitro. Individual proteins or pairwise combinations show no DNA binding activity, but co-translation of all three proteins generates a prominent shift that co-migrates with the Elba shift from nuclear extracts and exhibits the same sequence specificity.",
+    "result": "All three Elba proteins are required to reconstitute DNA binding activity in vitro. Individual Elba proteins or pairwise combinations show no DNA binding activity, but co-translation of all three proteins generates a prominent shift that co-migrates with the Elba shift from nuclear extracts and exhibits the same sequence specificity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7, C48, C80-C86 demonstrate through in vitro translation and EMSA experiments (Figure 4A-C) that all three proteins are necessary and sufficient for DNA binding. The reconstituted complex matches the endogenous factor in both mobility and sequence specificity, providing strong evidence for the requirement of all three components. The experimental design with appropriate controls (individual proteins, pairwise combinations) strengthens this conclusion.",
+    "evaluation": "Claims C7, C47, C67-C70 are strongly supported by in vitro translation and EMSA experiments shown in Figure 4A-C. The requirement for all three proteins is demonstrated by systematic testing of individual proteins and pairwise combinations, all of which fail to bind DNA. The reconstituted complex matches the native complex in both mobility and sequence specificity, providing robust evidence for the tripartite requirement.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C51",
-      "C87",
-      "C88",
-      "C89"
+      "C50",
+      "C71",
+      "C72"
     ],
-    "result": "All three Elba proteins are present in the Elba complex detected in 0\u20136 hr nuclear extracts. Antibody supershift experiments using immune sera against each of the three proteins demonstrate that all three are components of the endogenous nuclear factor.",
+    "result": "All three Elba proteins are present in the Elba complex detected in 0-6 hr nuclear extracts. Six independent polyclonal antibodies (two against each Elba protein) all supershift the Elba band in nuclear extracts, while pre-immune sera have no effect.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C51, C87-C89 are supported by antibody supershift experiments (Figure 4D) showing that immune sera against each of the three Elba proteins supershift the Elba band from nuclear extracts, while pre-immune sera do not. This provides strong evidence that all three proteins are present in the endogenous complex. The use of two independent antibodies for each protein strengthens the specificity of these findings.",
+    "evaluation": "Claims C50, C71-C72 are well-supported by antibody supershift experiments shown in Figure 4D. The use of six independent antibodies (two per protein) provides strong evidence that all three proteins are components of the endogenous nuclear complex. The specificity is confirmed by lack of effect with pre-immune sera and lack of supershift with unrelated probes.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C49",
-      "C92",
-      "C94",
-      "C95",
-      "C135",
-      "C146"
+      "C48",
+      "C75",
+      "C77"
     ],
-    "result": "DNA binding depends upon the BEN domains in Elba1 and Elba2. Deletion of the BEN domain from either Elba1 or Elba2 eliminates DNA binding activity when the three proteins are mixed, demonstrating that the BEN domains are essential for DNA recognition.",
+    "result": "DNA binding by the Elba complex depends upon the BEN domains in Elba1 and Elba2, which are responsible for DNA recognition. Deletion of the BEN domain from either Elba1 or Elba2 completely eliminates DNA binding activity in reconstitution experiments.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C49, C92, C94-C95, C135, C146 are supported by deletion mutant experiments (Figure 5B) showing that removal of the BEN domain from either Elba1 or Elba2 abolishes DNA binding. The experiments test all combinations of BEN domain deletions, providing comprehensive evidence. However, C146 notes that sufficiency of the BEN domain alone was not demonstrated, which is an important limitation but does not undermine the conclusion about essentiality.",
+    "evaluation": "Claims C48, C75, C77 are supported by deletion mutant experiments shown in Figure 5B. The systematic deletion of BEN domains and loss of DNA binding activity provides clear evidence for their requirement. However, the authors note they could not demonstrate sufficiency of the BEN domain alone, which represents a limitation in fully characterizing the DNA binding mechanism.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C50",
-      "C93",
-      "C100",
-      "C101",
-      "C137",
-      "C138"
+      "C49",
+      "C76",
+      "C83",
+      "C82",
+      "C84"
     ],
-    "result": "Elba3 mediates the assembly of an active Elba complex by interacting with the N-terminal domains of Elba1 and Elba2. This conclusion is based on experiments showing that Elba3 cannot reconstitute DNA binding with C-terminal fragments of Elba1 and Elba2 that lack N-terminal sequences, and that GST-mediated dimerization can substitute for Elba3 function.",
+    "result": "Elba3 mediates assembly of the hetero-tripartite complex by interacting with the N-terminal domains of Elba1 and Elba2, bringing them together to form the DNA binding pocket. This is supported by observations that: (1) Elba3 cannot reconstitute activity with C-terminal fragments of Elba1 and Elba2 lacking N-termini, and (2) GST-fused C-terminal fragments do not require or interact with Elba3.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C50, C93, C100-C101, C137-C138 are supported by deletion mutant experiments (Figures 5-6) showing that: (1) Elba3 does not reconstitute binding with C-terminal fragments lacking N-termini (C100), (2) GST-mediated dimerization can bypass the need for Elba3 (C139-C141), and (3) the GST-ElbaC heterodimer is not supershifted by Elba3 (C102, C145). These converging lines of evidence support the model that Elba3 functions by bringing Elba1 and Elba2 together through N-terminal interactions.",
+    "evaluation": "Claims C49, C76, C82-C84 are supported by experiments in Figures 5-6, particularly Figure 6D showing that Elba3 cannot reconstitute activity with ElbaC proteins lacking N-termini, and Figure 6A showing that GST-Elba1C:GST-Elba2C heterodimers are not supershifted by Elba3. The model is internally consistent with the data, though the mechanism is inferred rather than directly demonstrated through protein-protein interaction assays.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C139",
-      "C140",
-      "C141",
-      "C96",
-      "C97",
-      "C98"
+      "C73",
+      "C74",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
     ],
-    "result": "The requirement for Elba3 can be circumvented by fusing a heterologous dimerization domain (GST) to the N-terminus of full-length Elba1 and Elba2. Co-translation of GST-Elba1F and GST-Elba2F generates DNA binding activity without Elba3, though the heterodimer can still interact with Elba3.",
+    "result": "GST can functionally substitute for Elba3 by promoting heterodimerization of Elba1 and Elba2. Co-translation of GST-Elba1F and GST-Elba2F generates a prominent DNA binding shift with the same sequence specificity as the native complex, while individual GST fusions fail to bind DNA. The GST-Elba1F:GST-Elba2F heterodimer can still form a trimeric complex with Elba3.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C139-C141, C96-C98 are supported by EMSA experiments (Figure 6A) showing that GST-fused full-length Elba1 and Elba2 can bind DNA without Elba3, while individual GST fusions cannot. The supershift with added Elba3 (C98, C141) demonstrates that the GST-mediated dimer retains the ability to interact with Elba3. This provides strong functional evidence for the role of Elba3 in mediating protein-protein interactions.",
+    "evaluation": "Claims C73-C74, C78-C81 are well-supported by EMSA experiments in Figure 6A-C. The ability of GST to substitute for Elba3 provides strong functional evidence for Elba3's role as a dimerization scaffold. The observation that the GST heterodimer retains the same sequence specificity as the native complex (Figure 6C) and can still interact with Elba3 (supershift in Figure 6A, lane 5) strengthens the model.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C142",
-      "C143",
-      "C144",
-      "C99"
+      "C52",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
     ],
-    "result": "The C-terminal homology regions of Elba1 and Elba2 (spanning ~130 amino acids including the BEN domain) are sufficient for DNA binding when fused to GST. The GST-Elba1C:GST-Elba2C heterodimer exhibits the same sequence specificity as the native hetero-tripartite complex.",
+    "result": "elba1 and elba3 are mid-blastula transition genes with developmentally restricted expression. Neither is expressed during oogenesis or in 0-2 hr embryos, expression peaks at the blastoderm stage (2-4 hr), and then disappears. This temporal pattern correlates with the loss of boundary activity in transgene embryos and DNA binding activity in nuclear extracts.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C142-C144, C99 are supported by EMSA experiments (Figures 6A, 6C) showing that GST-fused C-terminal fragments generate robust DNA binding with the same sequence specificity as the full complex. The inference that this represents a dimer (C143) is reasonable given that GST forms dimers but not higher-order complexes, though direct structural evidence is not provided. The sequence specificity data (C144, C99) strongly support functional equivalence to the native complex.",
+    "evaluation": "Claims C52, C87-C90 are well-supported by Northern blot data in Figure 7 and modEncode data in Figure 7\u2014figure supplement 1. The temporal expression pattern of elba1 and elba3 correlates well with the functional data on Elba DNA binding activity and boundary function. The identification of elba1 as Bsg25A, a previously described mid-blastula transition gene (Singer and Lengyel, 1997), provides independent validation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C8",
-      "C52",
-      "C125",
-      "C126",
-      "C127",
-      "C128",
-      "C129",
-      "C130",
-      "C150",
-      "C151"
+      "C91",
+      "C92"
     ],
-    "result": "All three Elba proteins are required for chromatin domain boundary function in vivo. RNAi knockdown of elba1, elba2, or elba3 disrupts the insulating activity of pHS1\u00d74 and Elba multimer transgenes in early embryos, while knockdown of the related protein Insv has no effect.",
+    "result": "elba2 and insv are expressed throughout embryogenesis and are maternally deposited. Both are expressed during oogenesis and high levels are present in 0-2 hr embryos before zygotic transcription is activated.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C8, C52, C125-C130, C150-C151 are supported by RNAi injection experiments (Figure 9, Figure 9\u2014figure supplement 1) showing that dsRNA against each elba gene compromises boundary activity, with the greatest effects for elba1 and elba3. The specificity is demonstrated by the lack of effect with insv dsRNA (C128, C151). The differential sensitivity (C129-C130) is reasonably explained by differences in maternal deposition (C131-C132). Multiple independent experiments strengthen these conclusions.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C91-C92 are supported by Northern blot data in Figure 7 showing expression of elba2 and insv during oogenesis and throughout embryogenesis. The presence of high levels in 0-2 hr embryos before zygotic transcription provides evidence for maternal deposition, though this is inferred rather than directly demonstrated through maternal effect mutant analysis.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
       "C53",
-      "C106",
-      "C107",
-      "C108",
-      "C109",
-      "C110",
-      "C111"
+      "C54",
+      "C93",
+      "C94",
+      "C95"
     ],
-    "result": "elba1 and elba3 are mid-blastula transition genes with developmentally restricted expression. Neither gene is expressed during oogenesis, mRNAs are largely absent in 0\u20132 hr embryos, expression peaks at the blastoderm stage (2\u20134 hr), and then disappears.",
+    "result": "Elba binds to its target sequences in Fab-7 and confers insulator activity only during early embryogenesis. ChIP experiments show that Elba1 and Elba2 are bound to the Fab-7 Elba sequence in 2-5 hr embryos but not in 9-12 hr embryos, and not to control sequences from twine and Sex-lethal genes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C53, C106-C111 are supported by Northern blot analysis (Figure 7, Figure 7\u2014figure supplement 1) showing the temporal expression pattern of elba1 and elba3. The identification of elba1 as a mid-blastula transition gene is supported by citation to Singer and Lengyel, 1997 (C66, C110). The expression pattern correlates with the timing of Elba DNA binding activity and boundary function, providing strong support for the developmental restriction of Elba activity.",
+    "evaluation": "Claims C53-C54, C93-C95 are supported by ChIP data in Figure 8A-B showing specific enrichment of Elba1 and Elba2 at Fab-7 in early but not late embryos, with no enrichment at control loci. The temporal pattern of chromatin binding correlates well with expression data and functional assays. The use of a modified cross-linking protocol (adapted from Nowak et al., 2005) after standard formaldehyde ChIP gave inconsistent results is appropriately documented.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C54",
-      "C118",
-      "C119",
-      "C120",
-      "C121"
+      "C8",
+      "C51",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
     ],
-    "result": "Elba binds to its target sequences in Fab-7 during early embryogenesis but not later in development. ChIP experiments show that Elba1 and Elba2 are bound to the Fab-7 Elba sequence in 2\u20135 hr embryos but not in 9\u201312 hr embryos, and Elba2 is not found at Fab-7 in older embryos despite continued elba2 expression.",
+    "result": "All three Elba proteins are required for chromatin domain boundary function in vivo. RNAi knockdown of elba1, elba2, or elba3 disrupts the UPS blocking activity of pHS1\u00d74 in transgenic embryos, while knockdown of the related insv gene has no effect. The disruption is greatest for elba1 and elba3, with smaller effects for elba2, likely due to maternal deposition of elba2 mRNA.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C54, C118-C121 are supported by ChIP experiments (Figure 8A,B) showing stage-specific binding of Elba1 and Elba2 to Fab-7 in early but not late embryos. The specificity is demonstrated by lack of binding to control loci (C119). The observation that Elba2 is not bound in older embryos despite continued expression (C121, C155) provides strong evidence that the hetero-tripartite complex is required for chromatin binding. Statistical significance is reported (p<0.05).",
+    "evaluation": "Claims C8, C51, C97-C103 are supported by RNAi injection experiments in Figure 9 and Figure 9\u2014figure supplement 1. The requirement for all three proteins is demonstrated by loss of boundary activity upon knockdown of each gene individually, with appropriate specificity controls (insv knockdown has no effect). The differential sensitivity to RNAi is reasonably explained by differences in maternal deposition. However, the variability in RNAi effects is acknowledged by the authors and represents a limitation of the approach.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C55",
-      "C27",
-      "C32",
-      "C133",
-      "C134"
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
     ],
-    "result": "Elba confers insulator activity during early embryogenesis as part of the developmentally restricted boundary activity of Fab-7. The constitutive insulator activity of the Fab-7 boundary is generated by functionally redundant sub-elements whose activity is developmentally restricted, with Elba conferring the insulating activity of the pHS1 sub-element in early embryos.",
+    "result": "Elba DNA binding activity is present in extracts from early 0-6 hr embryos but largely absent in 6-12 hr embryos. Elba recognizes an asymmetric 8-bp sequence CCAATAAG that is conserved in Fab-7 elements across Drosophila species. Mutations disrupting Elba binding compromise pHS1 insulator activity in vivo, while multimerizing the Elba sequence is sufficient to confer early insulating activity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C55, C27, C32, C133-C134 integrate multiple lines of evidence: (1) pHS1 has early-specific boundary activity (C32), (2) Elba binding correlates with this timing (C38-C39, C54), (3) mutations in the Elba sequence compromise pHS1 activity (C42, C148), (4) multimerized Elba sequences confer early insulating activity (C43, C149), and (5) RNAi knockdown of Elba proteins disrupts boundary function (C125-C130, C150). These converging lines of evidence strongly support the conclusion.",
+    "evaluation": "Claims C37-C42 are supported by EMSA experiments (Aoki et al., 2008), sequence conservation analysis, and transgene assays shown in Figure 1\u2014figure supplement 1. The temporal restriction of DNA binding activity correlates with expression data and functional assays. The sufficiency of multimerized Elba sequences and the requirement for intact Elba binding sites provide strong functional evidence linking Elba binding to boundary activity.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C40",
-      "C41",
-      "C42",
-      "C43",
-      "C148",
-      "C149"
+      "C21",
+      "C22",
+      "C23",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C36"
     ],
-    "result": "Elba recognizes an asymmetric 8-bp sequence, CCAATAAG, which is conserved in Fab-7 elements across Drosophila species. Mutations that disrupt Elba binding compromise pHS1 insulator activity, while multimerizing the Elba recognition sequence is sufficient to confer early insulating activity.",
+    "result": "The insulating activity of the Fab-7 boundary depends upon distinct, stage-specific boundary factors, with its constitutive boundary function generated by developmentally restricted sub-elements. Mutations in different pairs of GAGA sites have stage-specific effects on boundary activity, and multimerized fragments from different regions of HS1 show developmentally restricted blocking activity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C40-C43, C148-C149 are supported by prior work (Aoki et al., 2008) showing: (1) the recognition sequence and its conservation (C40-C41), (2) that mutations disrupting binding compromise activity (C42, C148), and (3) that multimerized sequences confer activity (C43, C149). These findings are referenced in Figure 1D and Figure 1\u2014figure supplement 1. While these are primarily citations to prior work, they provide essential context for the current study's findings.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C21-C23, C28-C32, C35-C36 are supported by prior work (Schweinsberg and Schedl, 2004) and transgene assays. The stage-specific effects of GAGA site mutations and the differential activity of HS1 fragments provide evidence for developmentally restricted sub-elements. However, most of this evidence comes from prior publications rather than new data in this manuscript.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R13",
-    "claim_ids": [
-      "C114",
-      "C115",
-      "C116",
-      "C117"
-    ],
-    "result": "elba2 and insv are expressed throughout embryogenesis and are maternally deposited. Both genes are expressed during oogenesis, and high levels are present in 0\u20132 hr embryos before zygotic transcription is activated.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C114-C117 are supported by Northern blot analysis (Figure 7, Figure 7\u2014figure supplement 1) showing continuous expression of elba2 and insv throughout embryogenesis and their presence in ovaries and early embryos. The inference of maternal deposition (C116-C117) is reasonable based on the presence of high levels before zygotic transcription. This contrasts with the restricted expression of elba1 and elba3 and helps explain the differential sensitivity to RNAi (C131-C132).",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C56",
-      "C57",
-      "C58",
-      "C59",
-      "C60",
-      "C61",
-      "C62",
-      "C63"
-    ],
-    "result": "A cross-affinity purification strategy was developed to overcome technical challenges in isolating the Elba factor. The strategy involved sequential purification on wild-type and mutant DNA affinity beads, which substantially reduced non-specific binding proteins and greatly increased the difference in Elba yield between wild-type and mutant beads compared to single-affinity purification.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C56-C63 describe the methodological development that enabled identification of Elba. The cross-affinity purification strategy (Figure 2) successfully addressed the problem of excess non-specific binding (C56, C59) and reduced the total number of proteins detected (C63) while enriching for Elba (C60-C61). This methodological innovation was essential for the success of the study, though it represents a technical advance rather than a primary biological finding.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C90",
-      "C91",
-      "C104"
-    ],
-    "result": "Weak DNA binding activity was observed when bacterially expressed GST-Elba1 and GST-Elba2 were mixed without Elba3, suggesting the presence of weakly active hetero-dimerization motifs in the C-terminal halves of Elba1 and Elba2 that become more accessible when the N-terminus is removed.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C90, C91, C104 describe preliminary observations and speculative interpretations. While weak binding activity was detected with Elba1C and Elba2C lacking GST (C103), the interpretation that this reflects weakly active hetero-dimerization motifs (C104) is explicitly noted as requiring further studies. The evidence is suggestive but insufficient to definitively support the proposed mechanism. Additional experiments would be needed to confirm this interpretation.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C105"
-    ],
-    "result": "Neither the N-terminal nor C-terminal halves of Elba3 supported complex formation when mixed with the other Elba proteins or supershifted the GST-Elba1F:GST-Elba2F dimer.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C105 is supported by EMSA experiments (Figure 6E) showing that neither half of Elba3 can functionally substitute for the full-length protein. This negative result helps define the functional domains of Elba3, though it does not provide positive identification of the critical regions. The result is consistent with the model that Elba3 requires intact structure for its scaffolding function.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
-      "C112",
-      "C152",
-      "C153",
-      "C154"
-    ],
-    "result": "The timing of elba1 and elba3 mRNA disappearance correlates with the loss of Elba DNA binding activity in nuclear extracts and boundary activity in transgene embryos. Elba insulating activity peaks during the blastoderm/early gastrula stage and dissipates after transcription of elba1 and elba3 ceases.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C112, C152-C154 establish the correlation between gene expression, DNA binding activity, and functional activity. The temporal correlation is supported by Northern blots (Figure 7), EMSA experiments with staged extracts, and transgene assays. While correlation does not prove causation, the multiple converging lines of evidence (expression, binding, function) and the RNAi experiments (C125-C130) provide strong support for the causal relationship.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R18",
-    "claim_ids": [
-      "C122",
-      "C123",
-      "C124",
-      "C147"
-    ],
-    "result": "Functionally redundant factors generate Fab-7 boundary activity, and the presence of these redundant elements precludes direct demonstration that Elba is needed for full Fab-7 insulating activity. However, Elba plays a more critical role in the insulating activity of the pHS1 multimer than in the intact Fab-7 boundary.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C122-C124, C147 acknowledge important limitations of the experimental system while explaining the experimental strategy. The presence of functional redundancy in Fab-7 (C122, supported by Mihaly et al., 1997) explains why the study focused on pHS1 multimers and Elba sequence multimers rather than the full Fab-7 boundary. This represents appropriate experimental design given the biological complexity of the system.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R19",
     "claim_ids": [
       "C1",
       "C2",
@@ -320,141 +218,99 @@
       "C14",
       "C15",
       "C16",
-      "C17"
-    ],
-    "result": "Background information on chromatin boundaries and their functions. Chromatin boundaries subdivide chromosomes into functionally autonomous domains and have enhancer-blocking, silencer-blocking, and DNA looping activities. Examples are provided from yeast, Drosophila, and vertebrates.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C2, C9-C17 provide established background knowledge about chromatin boundaries, supported by multiple citations to prior work. These claims establish the scientific context for the study but do not represent new findings. They are well-supported by the cited literature and represent accurate summaries of the field.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R20",
-    "claim_ids": [
-      "C3",
-      "C4",
+      "C17",
       "C18",
-      "C19"
+      "C19",
+      "C20"
     ],
-    "result": "The chromosomal domain landscape was previously assumed to be fixed, but there is growing evidence that it may be subject to tissue and stage-specific regulation. Examples include the imprinted Igf2 and H19 genes, where regulation depends on DNA methylation and CTCF-dependent boundary activity.",
+    "result": "Background on chromatin boundaries and their functions. Chromatin boundaries subdivide chromosomes into functionally autonomous domains, have enhancer-blocking and silencer-blocking activities, and play critical roles in various organisms. The regulatory domain landscape is more dynamic than previously thought and can be subject to tissue and stage-specific regulation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3-C4, C18-C19 provide background on the dynamic nature of chromatin domains, supported by citations to Bell and Felsenfeld, 2000; Witcher and Emerson, 2009; Gomes and Espinosa, 2010; and Hark et al., 2000. This establishes the conceptual framework for studying developmentally regulated boundary factors like Elba. These are accurate summaries of prior work that motivate the current study.",
+    "evaluation": "Claims C1-C2, C9-C20 represent established knowledge about chromatin boundaries supported by multiple citations to prior work. These claims provide context for the study but are not novel findings. The citations appear appropriate and the statements accurately represent the cited work.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R21",
+    "result_id": "R14",
     "claim_ids": [
-      "C20",
-      "C21",
-      "C22",
-      "C23",
       "C24",
       "C25",
       "C26",
-      "C27",
-      "C28",
-      "C29",
-      "C30",
-      "C31",
-      "C35",
-      "C36"
+      "C27"
     ],
-    "result": "Background on the Fab-7 boundary and its developmentally restricted sub-elements. Fab-7 ensures functional autonomy of iab-6 and iab-7 domains, has constitutive insulating activity, but this activity is generated by sub-elements with developmentally restricted activity, including differential requirements for GAGA factor binding sites at different developmental stages.",
+    "result": "Fab-7 can block interactions between enhancers/silencers and promoters both in the endogenous BX-C context and in reporter gene assays. The Fab-7 boundary spans 1.2 kb containing two major nuclease hypersensitive sites (HS1 and HS2) and has insulating activity throughout development in both contexts.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C20-C31, C35-C36 provide essential background on Fab-7 from prior work (primarily Schweinsberg and Schedl, 2004; Schweinsberg et al., 2004). These claims establish the biological context and rationale for identifying Elba as a developmentally restricted boundary factor. The information is well-supported by citations and provides necessary context for interpreting the current findings.",
+    "evaluation": "Claims C24-C27 are supported by prior work (Mihaly et al., 1997; Hagstrom et al., 1996) and transgene assays shown in Figure 1\u2014figure supplement 1. These claims establish the functional properties of Fab-7 that provide context for studying Elba, but represent prior knowledge rather than novel findings of this study.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R22",
+    "result_id": "R15",
     "claim_ids": [
-      "C37",
-      "C38",
-      "C39"
+      "C61",
+      "C62",
+      "C63",
+      "C64"
     ],
-    "result": "Background on the identification of Elba DNA binding activity. Only one DNA binding activity, Elba, had stage-specificity consistent with pHS1 insulating activity, being present in early 0\u20136 hr embryo extracts but largely absent in older 6\u201312 hr embryo extracts.",
+    "result": "The BEN domain has been implicated in protein-protein interactions and transcriptional regulation in prior studies. Insensitive (Insv) is a related BEN domain protein that functions in neurogenesis and Notch signaling. The elba2 and Insv transcription units are paired with each other, as are elba1 and elba3.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C37-C39 summarize prior work (Aoki et al., 2008) that identified Elba as a candidate boundary factor based on its stage-specific DNA binding activity. This provides the direct rationale for the current study's focus on purifying and characterizing the Elba factor. The information is accurately cited and provides essential context.",
+    "evaluation": "Claims C61-C64 are supported by citations to prior work on BEN domain proteins (Cha et al., 1997; Mackler et al., 2000; Wang et al., 2006; Korutla et al., 2009; Duan et al., 2011) and genomic location data in Figure 7\u2014figure supplement 1. The genomic pairing of elba genes is a novel observation that may have functional significance, though this is not explored experimentally.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R23",
+    "result_id": "R16",
     "claim_ids": [
-      "C156",
-      "C157",
-      "C158",
-      "C159",
-      "C160",
-      "C161",
-      "C162",
-      "C163",
-      "C164",
-      "C165",
-      "C166",
-      "C167",
-      "C168"
+      "C85",
+      "C86"
     ],
-    "result": "Discussion of why Fab-7 might utilize stage-specific factors. The use of stage-specific factors at Fab-7 could reflect a need to optimize combinations with other nearby BX-C boundaries or the Abdominal-B promoter. Evidence from boundary replacement and bypass experiments supports context-dependent and developmentally variable boundary activity.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C156-C168 provide speculative but well-reasoned discussion of the functional significance of stage-specific boundary factors, supported by citations to multiple studies (Hogga et al., 2001; Iampietro et al., 2008; Gohl et al., 2011; Kyrchanova et al., 2008a, 2008b, 2011; Holohan et al., 2007). The speculation is appropriately qualified (C156: \"could reflect\") and supported by relevant experimental evidence from the literature. This represents thoughtful interpretation rather than new experimental findings.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R24",
-    "claim_ids": [
-      "C169",
-      "C170",
-      "C171",
-      "C172",
-      "C173",
-      "C174",
-      "C175",
-      "C176",
-      "C177",
-      "C178",
-      "C179"
-    ],
-    "result": "Speculation about the potential functions of Elba2 and related BEN domain proteins after Elba1 and Elba3 disappear. Elba2 might function with different partners like Insv, and other BEN family members might function as insulators rather than transcriptional repressors, similar to the initial characterization of CTCF.",
+    "result": "The mixture of Elba1C and Elba2C proteins lacking GST gives a faint DNA binding shift detectable in long exposures. This suggests there are weakly active hetero-dimerization motifs in the C-terminal halves of Elba1 and Elba2 that become more accessible when the N-terminus is removed.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C169-C179 present speculative hypotheses about the broader functions of BEN domain proteins. While the speculation is reasonable and supported by some evidence (e.g., SMAR1 association with MARs, C176; CTCF initially thought to be a repressor, C174), these are explicitly presented as speculation (C169, C170, C173, C175, C177-C179 all use speculative language). The BEN domain essentiality for Elba DNA binding (C172) supports the speculation, but direct experimental evidence for these broader hypotheses is lacking. These represent interesting future directions rather than supported conclusions.",
+    "evaluation": "Claims C85-C86 are based on weak DNA binding activity observed in Figure 6D (lane 8) that is only detectable in long exposures. While the observation is documented, the interpretation that this represents hetero-dimerization motifs is speculative. The authors appropriately note that further studies are required to validate this interpretation. The weak signal and lack of follow-up experiments make this result uncertain.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R25",
+    "result_id": "R17",
     "claim_ids": [
-      "C131",
-      "C132"
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
     ],
-    "result": "The differential sensitivity to dsRNA knockdown among the three Elba proteins is explained by differences in their expression patterns. The substantial pool of maternally derived elba2 mRNAs could already be translationally engaged at the time of injection, while elba1 and elba3 expression would be turned on after dsRNA injection.",
+    "result": "The use of stage-specific factors at Fab-7 may reflect a need to optimize combinations with other nearby BX-C boundaries or the Abdominal-B promoter. Evidence from boundary bypass and replacement experiments suggests that boundaries in BX-C are closely matched with their neighbors and that boundary activity is context-dependent and varies during development.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C131-C132 provide a reasonable interpretation of the differential RNAi effects (C129-C130) based on the expression data (C107-C117). The explanation is logical and consistent with the known biology of maternal vs. zygotic gene expression. While this is an interpretation rather than a directly tested hypothesis, it represents sound reasoning based on the available data.",
+    "evaluation": "Claims C104-C112 are supported by citations to prior work (Kyrchanova et al., 2008a, 2008b, 2011; Hogga et al., 2001; Iampietro et al., 2008; Gohl et al., 2011; Holohan et al., 2007) and unpublished EMSA data. These claims provide a plausible explanation for why Fab-7 uses stage-specific factors, though C104 is explicitly speculative. The supporting evidence from boundary bypass and replacement studies is appropriately cited.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R26",
+    "result_id": "R18",
     "claim_ids": [
-      "C72",
-      "C73",
-      "C74",
-      "C75"
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
     ],
-    "result": "The BEN domain has been implicated in protein-protein interactions and transcriptional regulation in other proteins. Two other Drosophila proteins have BEN domains: a predicted Mod(mdg4)C isoform and Insensitive (Insv), which functions in neurogenesis and Notch signaling. The elba2 and Insv transcription units are paired with each other.",
+    "result": "Speculative discussion of potential functions for Elba2 and related BEN domain proteins after Elba1 and Elba3 disappear. The authors propose that Elba2 might partner with Insv or that other BEN domain proteins (including mammalian NAC proteins) might function as insulators rather than transcriptional repressors, drawing an analogy to CTCF.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C72-C75 provide relevant background on BEN domain proteins and establish connections between Elba components and related proteins. The information is supported by appropriate citations (C72: multiple references; C74: Duan et al., 2011) and genomic analysis (C75: Figure 7\u2014figure supplement 1). This contextual information helps interpret the significance of the BEN domains in Elba1 and Elba2.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C121 are explicitly speculative hypotheses about potential functions of Elba2 and related BEN domain proteins. While these speculations are informed by the findings about Elba BEN domains being essential for DNA binding (C48, C75, C77) and by prior work on related proteins, they are not tested experimentally. The authors appropriately present these as speculations and plausible ideas rather than established findings. These represent interesting hypotheses for future work but are not supported by data in this manuscript.",
     "result_type": "MINOR"
   }
 ]

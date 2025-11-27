@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors developed GRO-cap, a method combining GRO-seq with enzymatic enrichment of 5\u2032 capped nascent RNAs, to map transcription start sites (TSSs) in C. elegans. This approach identified TSSs for 31.7% of protein-coding genes, revealing that promoters are often far upstream (up to 14 kb) from previously annotated 5\u2032 ends, with 59% of outrons >200 bp and 21% >1 kb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 establish the biological challenge (trans-splicing removes TSS information), C6 and C11-C15 provide quantitative TSS mapping results supported by GRO-cap and GRO-seq data, and C61-C64 describe methodological advantages. Multiple lines of evidence (rarity of 3\u2032 UTRs/polyA sites in long outrons, continuous ChIP signal, restricted run-on length) validate the TSS calls. The method is well-validated and results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "GRO-seq experiments showed high reproducibility between biological replicates (Spearman \u03c1 > 0.94 genome-wide, \u03c1 > 0.98 across gene bodies) and correlated well with independent expression measurements from microarrays and RNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 provide quality control metrics demonstrating technical reproducibility and validation against orthogonal methods. These are standard quality assessments supported by statistical analysis and comparison with independent datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Analysis of newly mapped TSSs revealed several promoter features: many trans-spliced genes have multiple TSSs (suggesting relaxed selective pressure for single TSSs), genes use different TSSs across developmental stages, and promoters contain evolutionarily conserved core elements including TATA-box (consensus TATAWAWR) and initiator elements (consensus YCAYTY).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 describe promoter characteristics supported by GRO-cap data, sequence conservation analysis, and motif searches. The interpretation that trans-splicing removes selective pressure for single TSSs (C17) is logical but somewhat speculative. Overall, the observations are well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "3\u2032 accumulation of Pol II is abundant and more extensive in C. elegans than Drosophila, positively correlating with gene expression level. First and middle genes in operons show greater 3\u2032 accumulation than terminal genes or non-operon genes, suggesting that 3\u2032 pausing is enhanced when additional downstream processing is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 present quantitative findings about 3\u2032 Pol II accumulation supported by GRO-seq data and comparative analysis with Drosophila. The mechanistic interpretation (C27, C70) linking accumulation to RNA processing is reasonable but somewhat speculative. C71 addresses a potential technical artifact (U-richness), strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Divergent transcription from promoters lacking upstream divergent genes is common in C. elegans, with transcripts initiated 75-150 bp upstream of TSSs. The frequency appears intermediate between mammals (where it occurs at most active promoters) and Drosophila (where it is rare). Promoters with TATA elements rarely support divergent transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C28-C30 describe divergent transcription patterns supported by GRO-seq and GRO-cap data. The comparative analysis (C29) relies on appropriate citations and data comparison. The relationship between TATA elements and divergent transcription (C30) is supported by data analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C67"
+    ],
+    "result": "Promoter-proximal pausing is rare in C. elegans under normal growth conditions (0.38% of genes in wild-type embryos), unlike in other metazoans. However, 7.7% of genes exhibit 5\u2032 pausing in starved L1 larvae, demonstrating that pausing can be induced by environmental stress. The number of paused genes was not decreased in sdc-2 mutants, and paused genes were not enriched on the X chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C43-C47 provide quantitative measurements of 5\u2032 pausing supported by GRO-seq data across multiple conditions. The rarity of pausing in normal conditions and its induction by starvation are well-documented. C67 is speculative about mechanisms but appropriately qualified. The findings rule out pausing as a dosage compensation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "C. elegans dosage compensation equalizes X-chromosome gene expression between sexes by reducing Pol II recruitment to promoters of hermaphrodite X-linked genes. In sdc-2 mutants, X-linked genes show uniform 1.6-1.7-fold increase in engaged Pol II from TSSs to 3\u2032 ends, while autosomal genes show slight decrease. Multiple lines of evidence support recruitment control: uniform increase across gene length, increased hypo-phosphorylated Pol II at promoters (~2-fold by ChIP), coordinate elevation of sense and divergent transcription, and no preferential effect on elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C31-C37 establish the experimental system and quantify expression changes. C48-C56 provide converging evidence from GRO-seq, ChIP-chip, elongation density analysis, and divergent transcription that dosage compensation acts primarily at Pol II recruitment. The multiple independent lines of evidence strongly support the conclusion. The uniform increase across gene length (C48-C49) and lack of elongation effects (C51) effectively rule out post-recruitment mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Most embryonically expressed X-linked microRNAs are dosage compensated, while X-linked tRNAs are not, suggesting that RNA polymerase II is broadly sensitive to dosage compensation while RNA polymerase III is insensitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 present findings about non-coding RNA dosage compensation supported by GRO-seq data. The interpretation that Pol II vs. Pol III sensitivity explains the difference is logical given that microRNAs are Pol II transcripts and tRNAs are Pol III transcripts. This extends the main finding to additional RNA classes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The DCC binds immediately upstream of TSSs, but DCC binding to a gene is neither necessary nor sufficient for compensation of that gene. DCC binding intensity does not predict dosage compensation status, indicating the DCC can act at a distance to control gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by ChIP-seq analysis relative to newly mapped TSSs. Claims C41-C42 are supported by prior work (Jans et al., 2009) and confirmed by comparison of DCC binding with expression changes in sdc-2 mutants. The conclusion that DCC acts at a distance is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C78",
+      "C79"
+    ],
+    "result": "A separate mechanism elevates intrinsic transcription from X chromosomes in both sexes, resulting in equivalent expression between X chromosomes and autosomes after dosage compensation. In wild-type embryos, X and autosomes have nearly equivalent expression, but in sdc-2 mutants, X expression exceeds autosomal expression by 1.7-fold. This mechanism also works at the level of Pol II recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C57-C60 present evidence for X-upregulation supported by metagene analysis of GRO-seq data. The logic is sound: if X and autosomes are equivalent in wild-type but X is 1.7-fold higher in dosage compensation mutants, then X must be intrinsically upregulated. C78-C79 place this in context of prior work. The conclusion that this also involves Pol II recruitment (C60) is supported by the uniform increase across genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The authors propose that some upstream enhancer-like signatures identified by Chen et al. (2013) are actually TSSs giving rise to full-length transcripts, based on comparison with their GRO-cap and GRO-seq data showing continuous Pol II signal and lack of 3\u2032 UTRs in these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 critique and reinterpret prior work. The proposal is supported by specific examples and multiple lines of evidence (continuous GRO-seq signal, ChIP signal, lack of 3\u2032 UTRs/polyA sites). This represents a reasonable reinterpretation of published data in light of new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C80",
+      "C81"
+    ],
+    "result": "Dosage compensation mechanisms differ between nematodes and flies: worms reduce X expression by limiting Pol II recruitment to promoters, while flies increase X expression by enhancing transcription elongation. Both strategies involve chromosome-restructuring complexes (condensin-related DCC in worms, MSL complex in flies), demonstrating that multiple evolutionary solutions exist for chromosome-wide transcriptional control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C72-C77 establish the comparative context through citations to prior work. C76-C77 synthesize the comparison between worms and flies, supported by the current study's findings and cited literature. C80-C81 provide mechanistic context for how condensin-related complexes might function. The comparative conclusion is well-supported by converging evidence from both organisms.",
+    "result_type": "MAJOR"
+  }
+]

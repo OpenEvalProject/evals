@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C38",
+      "C39",
+      "C40",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "RNAi-mediated knockdown of MCU reduces mitochondrial Ca2+ current (IMiCa) by 78% without affecting mitoplast capacitance or RuR-insensitive currents, demonstrating specific reduction of the uniporter current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C38-C48 provide converging evidence from Western blot, qPCR, and electrophysiology showing that MCU knockdown specifically reduces IMiCa by 78\u00b114% (p<0.001) while maintaining mitoplast capacitance and RuR-insensitive currents. The statistical significance, appropriate controls (shGFP), and multiple validation methods support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Overexpression of wild-type MCU increases IMiCa approximately 3.4-fold while maintaining ruthenium red sensitivity and proper mitochondrial targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C50-C54 demonstrate that FLAG-tagged MCU localizes to mitochondria with proper topology (C51) and increases IMiCa ~3.4-fold (C52) while retaining RuR sensitivity (C53). The proteinase K protection assay confirms proper targeting, and capacitance measurements rule out structural artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C66",
+      "C67"
+    ],
+    "result": "A point mutation (S259A) in the putative pore domain abolishes ruthenium red sensitivity without eliminating Ca2+ conductance, and acts in a dominant-negative fashion when co-expressed with wild-type MCU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C55-C58, C60, C66-C67 show that S259A maintains current magnitude (C55) but drastically reduces RuR sensitivity (C56). The dominant-negative effect (C57-C58, C60) is evidenced by reduced RuR-inhibited fraction (148\u00b133 pA/pF) compared to endogenous (372\u00b142 pA/pF), supporting oligomeric channel assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C68",
+      "C69"
+    ],
+    "result": "MCU encodes the pore-forming subunit of the mitochondrial calcium uniporter channel, with the functional channel formed by MCU multimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C68-C69 represent the main conclusion, supported by the convergence of knockdown (reducing current), overexpression (increasing current), and mutation (altering pharmacology) experiments. The dominant-negative behavior of S259A confirms oligomeric assembly. This conclusion is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Whole-mitoplast voltage-clamping provides direct measurement of mitochondrial Ca2+ currents by recording ensemble currents from all channels in their native environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C61-C63 describe the methodological approach. This technique is well-established (C61, C63 cite Kirichok et al., 2004) and addresses limitations of prior reconstitution studies by measuring ensemble currents (C62), avoiding contaminant artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Ca2+ imaging assays cannot distinguish between modulatory effects and altered channel expression because they measure Ca2+ entry without controlling voltage, concentration gradients, or accounting for confounding factors like buffers and pH changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 provide a logical critique of Ca2+ imaging methodology. The reasoning is sound: imaging measures net Ca2+ accumulation (C22) without controlling key variables (C23), and multiple confounders exist (C24-C25). Voltage-clamping addresses these limitations (C26-C28).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Prior lipid bilayer reconstitution experiments with MCU showed some activity but failed to recapitulate characteristic uniporter properties and are prone to false positives from trace contaminants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 accurately summarize limitations of prior work. C31-C32 cite De Stefani et al., 2011 showing activity but not characteristic behavior (99% open probability, specific conductance from C33). C34-C35 cite Accardi et al., 2004 documenting false positive risks in bilayer reconstitution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Endogenous IMiCa in HEK-293T cells exhibits characteristic features including strong inward rectification and high-affinity ruthenium red blockade (87\u00b12% inhibition at 100 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 establish baseline IMiCa properties in the experimental system. The data (Figure 1C, E) demonstrate robust currents with expected biophysical properties. C41 cites established K0.5 value (20 mM) to justify experimental conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Mitoplast structure can be visualized showing the inner membrane forming both lobes while the outer membrane partially encapsulates only one lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 describe mitoplast morphology using differential interference contrast and fluorescent markers (mt-mCherry for inner membrane, MFN1-GFP for outer membrane). Figure 1A provides visual confirmation of the described structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Mitochondrial Ca2+ uptake through the uniporter regulates cell survival, ATP production, and cell death, with multiple genes (MICU1, MCU, MCUR1) identified as potential components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C12-C20 provide background knowledge supported by appropriate citations (Deluca & Engstrom 1961, Wheeler et al. 2012, Balaban 2009, Zoratti & Szabo 1995, Kirichok et al. 2004, Perocchi et al. 2010, Baughman et al. 2011, De Stefani et al. 2011, Mallilankaraman et al. 2012). This establishes the scientific context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Prior to this study, the identity of the pore-forming subunit remained uncertain because all candidate genes reduced Ca2+ uptake in imaging assays and reconstitution experiments were equivocal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 accurately describe the state of the field and motivation for the study. This is consistent with the literature cited and provides appropriate context for why the current experiments were necessary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C75"
+    ],
+    "result": "MCU possesses two transmembrane domains and highly-conserved acidic residues in a putative pore domain, with S259 being a highly-conserved serine in the pore-forming loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C75 describe MCU structural features supported by citations to Baughman et al. 2011, De Stefani et al. 2011, and Bick et al. 2012. These structural predictions informed the choice of the S259A mutation for functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C76"
+    ],
+    "result": "MCU forms oligomeric channels, and the S259A mutant previously showed preserved Ca2+ uptake but diminished inhibitor sensitivity in Ca2+-imaging experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C76 cite prior work (Baughman et al. 2011) establishing MCU oligomerization and preliminary characterization of S259A. This provides context for interpreting the dominant-negative behavior observed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C73",
+      "C74"
+    ],
+    "result": "Mitoplast capacitance serves as a surrogate for inner membrane surface area (100 \u03bcm\u00b2/pF), mitofusin-1 is an outer membrane GTPase, and PPIF is a matrix protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C73-C74 state established technical knowledge used to interpret experimental results. These are standard facts in mitochondrial biology that support proper interpretation of capacitance measurements and proteinase K protection assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Prolonged matrix exposure to Ca2+ causes activation of a significant leak component, necessitating rapid solution exchanges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 describes a technical observation that informed experimental design. This is a straightforward methodological note about Ca2+-induced permeability changes that required rapid solution exchanges.",
+    "result_type": "MINOR"
+  }
+]

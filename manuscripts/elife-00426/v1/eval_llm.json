@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C20"
+    ],
+    "result": "The Clock\u039419 mutant behavioral phenotype is significantly modified by mouse strain genetic background. Crossing Clock\u039419/+ mice to the BALB/cJ strain suppresses the period lengthening phenotype from ~0.6 hr on B6 background to ~0.3 hr on (BALB x B6)F1 background, with complete suppression in ([BALB x B6]F1 x BALB)N4 mice. This suggests at least one dominant suppressor allele exists in the BALB genome that acts semidominantly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C16, and C20 collectively demonstrate strain-dependent suppression of the Clock\u039419 phenotype with quantitative behavioral data showing dose-dependent effects across multiple genetic backgrounds. The data are internally consistent and supported by Figure 1A-B showing representative actograms and period measurements. Statistical analysis (two-way ANOVA) appropriately demonstrates significant effects of both genotype and strain background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The BALB suppression phenotype is tissue autonomous and present in both central (SCN) and peripheral (pituitary) circadian clocks. Circadian period in both Clock\u039419/+ SCN and pituitary explants was shorter in (BALB x B6)F1 animals than in B6 background mice, as measured by PER2::LUC bioluminescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by tissue explant experiments (Figure 1C) demonstrating that suppression occurs at the cellular/tissue level rather than requiring systemic factors. The use of Per2Luc reporter mice provides direct molecular readout of circadian oscillations. Two-way ANOVA shows significant effects of strain background in both tissues, confirming tissue autonomy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "A suppressor locus named Suppressor of Clock (Soc) was mapped to the 165.1\u2013190.45 Mb region of mouse chromosome 1 using QTL analysis and congenic mapping. The Soc effect is specific to Clock\u039419/+ heterozygotes, with no significant effect on wild-type or homozygous Clock\u039419 backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 describe successful positional cloning using F2 QTL mapping (222 mice, 87 SSLP markers) followed by congenic strain generation to narrow the interval to ~25 Mb. Figure 1E-F shows significant LOD scores and behavioral validation in congenic lines. The genotype-specific effect (C24) is consistent with a modifier locus rather than a general circadian regulator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Interval-specific SNP haplotype analysis across 15 inbred strains identified seven additional suppressor strains (all carrying M. domesticus haplotypes) and seven non-suppressor strains (all carrying M. musculus haplotypes), narrowing Soc to a 900-kb interval containing 22 candidate genes. This pattern confirms the hypothesis of an ancestral allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 describe a powerful haplotype mapping approach using strain distribution patterns. Figure 2A-C shows consistent phenotypic segregation with subspecific origin (Table 2), and the 900-kb interval is well-defined. The use of 2714 SNPs provides high resolution. The ancestral allele hypothesis is strongly supported by perfect concordance between phenotype and subspecific origin across 16 strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Among 22 candidate genes in the Soc interval, only Usf1 showed the expected properties: tissue-wide expression similar to clock genes, significant transactivation of Per1 and Per2 E-boxes in a dose-dependent manner without CRY inhibition, elevated transcript (~40% higher protein) in BALB strain, and upregulation of Per1, Per2, Cry1, and Cry2 in F1 background. No coding mutations exist between B6 and BALB strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C34-C40 provide multiple converging lines of evidence identifying Usf1 as the Soc gene. Expression profiling (Figure 3A), transactivation assays (Figure 3B), qPCR (Figure 3C), and Western blots (Figure 3D) all support elevated Usf1 expression and activity in suppressor strains. The lack of coding mutations (C40) points to regulatory variation. The CRY-insensitivity (C36) is mechanistically important and well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Two independent Usf1 transgenic lines on B6 background exhibited significant period-shortening in Clock\u039419/+ animals, mimicking the BALB suppressor strain's Usf1 expression levels. This demonstrates that Usf1 is the gene encoded by the Soc locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 provide the critical gain-of-function genetic proof that Usf1 is responsible for suppression. The use of two independent transgenic lines (Figure 4A-B) controls for position effects. Expression levels match the natural BALB variant, and the phenotypic rescue is significant. This is the definitive experiment establishing causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Usf1 knockout animals do not show changes in circadian period length but exhibit reduced circadian amplitude and locomotor activity levels, consistent with the dominant action of Soc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by behavioral analysis of Usf1 knockout mice (Figure 4C-D). The lack of period effect is consistent with Soc being a gain-of-function/dosage-dependent modifier. The amplitude and activity phenotypes suggest USF1 plays a modulatory role in normal circadian function. Statistical analysis appropriately shows significant differences in amplitude and activity but not period.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The Usf1 expression difference between B6 and BALB results from cis-regulatory polymorphisms causing allele-specific upregulation of the BALB transcript. Promoter analysis identified seven polymorphisms matching strain distribution, with SNPs 3 and 7 showing significantly higher BALB promoter activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 use three independent methods (sequencing, qPCR, cloning; Figure 5A-C) to demonstrate cis-regulation, which is rigorous. Promoter-reporter assays (Figure 5D-F) systematically narrow the causal variants. The identification of specific SNPs (rs31538551 and rs31538547) provides molecular resolution. However, site-directed mutagenesis (Figure 5G) shows only SNP7 has significant individual effect, suggesting combinatorial regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "CLOCK and USF1 bind to common E-boxes in circadian genes (Dbp, Per2, Per1). In Clock\u039419 mutants, USF1 occupancy increases while CLOCK\u039419 occupancy decreases despite elevated mutant protein levels. USF1 exhibits antiphase temporal binding pattern to CLOCK, peaking at night versus ZT8 for CLOCK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by ChIP-qPCR experiments (Figure 6A-C) showing competitive binding dynamics. The increased USF1 binding in mutants despite lower affinity (shown later) suggests competitive displacement. The temporal analysis (C53) reveals a previously unknown antiphase pattern that may have functional significance. Western blot controls (Figure 6B) confirm protein levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61"
+    ],
+    "result": "Wild-type CLOCK:BMAL1 binds primarily as tandem complexes (CB2) with Kd values ranging from 0.86-19 nM, while mutant CLOCK\u039419:BMAL1 binds primarily as single complexes (CB1) with Kd values of 9-48 nM, representing 2.5- to 11.8-fold reduced affinity. The reduced affinity results from both loss of cooperative tandem binding and intrinsically lower affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58, C61 present quantitative EMSA saturation binding data (Figure 7, Table 3) demonstrating mechanistic basis for suppression. The distinction between CB1 and CB2 complexes is validated by antibody supershifts (Figure 6D). Four-parameter curve fitting provides rigorous Kd estimates. The dual mechanism (loss of cooperativity + reduced affinity) is well-supported by comparing binding modes across E-boxes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C88",
+      "C89"
+    ],
+    "result": "USF1 binding affinity is similar between wild-type and Clock\u039419 genotypes, with Kd values comparable to mutant CLOCK\u039419:BMAL1. Under normal conditions, wild-type CLOCK:BMAL1 binds with much higher affinity than USF1, but in mutants the comparable affinities allow USF1 to bind more effectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60, C88-C89 provide the mechanistic explanation for suppression: USF1 can compete effectively only when CLOCK:BMAL1 affinity is reduced. The quantitative binding data (Figure 7B, Table 3) support this model. This is a key insight explaining why elevated USF1 suppresses the mutant but not wild-type phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "ChIP-Seq analysis reveals that USF1 co-occupancy with CLOCK:BMAL1 increases from 14% (497/3412 sites) in wild-type to 38% (1916/5072 sites) in Clock\u039419 mutants, a nearly 4-fold increase. USF1 binding also increases globally from 1885 to 6091 peaks. Both factors bind the canonical E-box motif CACGTG, and 23 of 41 E-boxes in 15 reference clock genes show increased USF1 binding in mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 present genome-wide validation of the competitive binding model using ChIP-Seq. The dramatic increase in co-occupancy (Figure 8A-C) and global USF1 binding is well-documented. Motif analysis (Figure 8D) confirms both factors target the same sequences. The analysis of reference clock genes (Figure 8F-G) shows functional relevance. The unexpected global increase in USF1 binding (C65) is interesting but mechanistically unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C8"
+    ],
+    "result": "USF1 acts as a partial agonist whose transcriptional regulation of circadian genes can compensate for reduced transcriptional activation by CLOCK\u039419:BMAL1. USF1 is proposed to be an important modulator of molecular and behavioral circadian rhythms in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C8 represent the central mechanistic model and main conclusion. The partial agonist model is well-supported by: (1) USF1 activates E-boxes but is not CRY-repressed, (2) elevated USF1 rescues Clock\u039419 phenotype, (3) USF1 competes for binding when CLOCK affinity is reduced, and (4) genome-wide increased occupancy in mutants. The model integrates all major findings coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The suppressor of Clock\u039419 maps to a ~900 kb interval on chromosome 1, and Usf1 is identified as the responsible gene. A SNP in the Usf1 promoter causes elevation of transcript and protein in suppressor strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 summarize the main genetic findings. These are well-supported by the combination of QTL mapping (C21), haplotype analysis (C28-C30), candidate gene analysis (C34-C40), transgenic rescue (C41-C43), and promoter analysis (C46-C49). The integration of multiple approaches provides strong evidence for Usf1 as the causal gene.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "USF1 competes with CLOCK:BMAL1 for E-box binding. The CLOCK\u039419:BMAL1 complex has reduced affinity for E-boxes, permitting increased USF1 occupancy genome-wide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 summarize the molecular mechanism. These are supported by ChIP data (C51-C53), EMSA binding affinity measurements (C54-C61), and ChIP-Seq genome-wide analysis (C62-C68). The competitive binding model is demonstrated at individual loci and genome-wide, with quantitative affinity measurements explaining the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The 40% increase in USF1 levels in suppressor strains could lead to substantial increase in DNA binding if levels are below Kd. Additionally, because PER:CRY cannot repress USF1-mediated transactivation, modest USF1 increases could activate target genes more effectively than CLOCK\u039419:BMAL1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 provide mechanistic interpretation of how modest USF1 elevation causes suppression. The dimerization argument (C73) is biochemically sound given the quadratic relationship between monomer concentration and dimer formation. The CRY-insensitivity (C74) is experimentally demonstrated (C36, Figure 3B) and provides additional mechanistic insight. These interpretations are reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "USF1 occupancy increases at CLOCK:BMAL1 sites at night when CLOCK:BMAL1 binding decreases, exhibiting antiphase temporal binding. USF1 may maintain open chromatin to facilitate subsequent CLOCK:BMAL1 binding. In Usf1 knockout mice, reduced circadian amplitude and activity show USF1 enhances circadian rhythmicity and robustness under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 is supported by temporal ChIP data (Figure 6C). However, C76 is explicitly stated as speculation requiring additional work, so it cannot be considered supported. C77 interprets knockout data (C44-C45) but the mechanistic level (cellular vs. circuit) is acknowledged as unknown. The antiphase binding pattern is interesting but its functional significance remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Binding to tandem E-box sites (spaced 6-10 nucleotides apart) appears to be cooperative. The affinity and maximal binding of CLOCK:BMAL1 vary widely among native E-box sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 describe important technical observations from EMSA experiments. Cooperativity (C86) is supported by preferential CB2 formation at tandem sites (Figure 6D-E) and cited prior work. Site-to-site variation (C87) is clearly demonstrated by the range of Kd values (0.86-19 nM for WT, Table 3) and emphasizes the importance of testing multiple sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The global interactions between CLOCK:BMAL1 and USF1 reveal an extensive and previously unknown interface linking these two transcriptional networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is a summary conclusion supported by the ChIP-Seq data showing extensive overlap (497 sites in WT, 1916 in mutants) and shared E-box motifs. The interface was previously unknown and represents a significant conceptual advance in understanding circadian regulation and metabolic gene networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C32",
+      "C33"
+    ],
+    "result": "The Clock\u039419 mutation was originally induced by ENU mutagenesis on B6 background and lengthens period ~1 hr in heterozygotes and ~4 hr in homozygotes (followed by arrhythmicity). The mutation results from an A\u2192T transversion causing exon skipping and disruption of CLOCK's C-terminal transactivation domain, leading to reduced Per and Cry mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C32-C33 describe established background information about the Clock\u039419 mutation, all cited to prior work (Vitaterna et al., 1994; King et al., 1997; Lowrey and Takahashi, 2011). These are well-established facts in the field and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The mammalian circadian clock involves CLOCK:BMAL1 activating Per and Cry transcription through E-boxes, followed by PER:CRY-mediated repression, with additional feedback loops involving ROR and REV-ERB\u03b1/\u03b2. At least 13 loci in mice affect circadian behavior through epistatic interactions, indicating additional clock-relevant genes exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 provide standard background on circadian clock mechanism and genetic complexity, all appropriately cited to prior literature. These establish the context for the current work and are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C84",
+      "C85"
+    ],
+    "result": "USF1 is a ubiquitously expressed member of the evolutionarily conserved bHLH-Zip transcription factor family that participates in regulating lipid/carbohydrate metabolism, immune responses, and cell cycle. Like CLOCK:BMAL1, USF1 binds E-box motifs to regulate transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72, C84-C85 provide background on USF1, appropriately cited to prior literature (Corre and Galibert, 2005; Ferr\u00e9-D'Amar\u00e9 et al., 1994; Ripperger and Schibler, 2006). This establishes USF1 as a plausible candidate with known E-box binding activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Variance in circadian behavior in human populations may result from polymorphisms in non-core circadian clock genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 is stated as a possibility/speculation based on inference from mouse studies. While reasonable, it is not directly tested in this manuscript and remains hypothetical. The claim appropriately uses cautious language ('it is possible that').",
+    "result_type": "MINOR"
+  }
+]

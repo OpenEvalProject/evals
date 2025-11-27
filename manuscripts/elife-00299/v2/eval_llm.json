@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The study employed a longitudinal design with two independent cohorts (119 males and 128 females) receiving influenza vaccination, with genome-wide SNP genotyping, serial gene expression measurements at days 0, 1, 3, and 14, and antibody titer measurements at days 0, 14, and 28. Extensive quality control procedures were implemented including exclusion of related individuals, population stratification assessment, and batch effect controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design and methods are well-documented with appropriate sample sizes, validation cohort, quality control measures (call rates >0.99, HWE filtering, relatedness checks, population stratification assessment), and standardized processing protocols. The longitudinal design with serial measurements and independent validation cohort strengthens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Multiple genes show evidence of both genetic regulation of expression (eQTL) and transcriptional response to vaccination. Using stringent thresholds (genotype effect p<5\u00d710\u207b\u2078, day effect p<0.01), 78 unique genes passed validation in both cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide clear statistical thresholds and validation across independent cohorts. The use of both lenient and stringent thresholds with consistent validation strengthens the findings. The statistical approach is appropriate for the multiple testing burden in eQTL analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "At multiple loci, the magnitude of genetic effects on gene expression is enhanced or only apparent after vaccination. Analysis of 5,155 validated eQTL SNP-transcript pairs across time points revealed that increased genotype effect strength (slope) rather than decreased within-genotype variance drives the observed changes in R\u00b2g. This pattern was consistent between cohorts (Spearman correlation = 0.25, p<2\u00d710\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims demonstrate a novel finding about dynamic genetic effects post-vaccination, supported by appropriate statistical analysis decomposing R\u00b2g changes into slope and variance components. The consistency across cohorts and the mechanistic insight (slope vs. variance) strengthen the conclusion. Figure 2 provides visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Content analysis of 98 genes (union of genes with strongest eQTL/transcriptional response and those with increased genetic effect post-vaccination) showed significant enrichment for genes involved in antigen processing and presentation, cytotoxic T-lymphocyte-mediated apoptosis, dendritic cell maturation, and membrane trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pathway enrichment analysis is supported by appropriate bioinformatics tools (DAVID, IPA) and shows biologically coherent results. The enrichment for immune-related pathways is consistent with the vaccination stimulus. However, specific enrichment p-values are not provided in the claims, though Figure 3 suggests statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C126"
+    ],
+    "result": "301 transcripts showed significant correlation between gene expression and antibody response magnitude in combined analysis of both cohorts (F-statistic p<0.01, maximum average correlation >0.15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis is appropriately conducted with clear statistical thresholds. The use of combined cohort analysis and the Titer Response Index (which accounts for pre-vaccination titers) strengthens the findings. The correlation thresholds appear reasonable for biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "20 genes show the strongest evidence of genetic variation influencing immune response to vaccination, meeting stringent criteria for genotype-expression association (p<5\u00d710\u207b\u2078), expression-antibody correlation (p<0.05), and either transcriptional response or change in genetic effect magnitude. Remarkably, seven of these genes encode proteins involved in intracellular antigen transport and processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration of multiple lines of evidence (eQTL, transcriptional response, expression-antibody correlation) with validation in independent cohorts provides strong support. The enrichment for antigen processing genes (7/20 = 35%) is striking and biologically coherent. However, the expression-antibody correlation threshold (p<0.05) is less stringent than the eQTL threshold, which could be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The 137 eQTL SNPs from the 20 identified loci show marked deviation from the empirical null distribution in QQ plots, indicating enrichment for true genetic associations with antibody response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The QQ plot analysis (Figure 6) provides appropriate evidence for enrichment of true associations. The deviation from the null distribution supports that the integrative approach successfully identified loci genuinely associated with vaccine response rather than false positives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C70",
+      "C73"
+    ],
+    "result": "Causal modeling analysis suggests patterns in the data trend toward a causal model (genotype\u2192expression\u2192antibody response) compared to a reactive model, but the sample size is insufficient for definitive conclusions about causality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge the limitation of sample size for causal inference (C54, C70). The causal modeling framework is methodologically sound, but the power analysis (Figure 7C) clearly indicates insufficient power. The honest assessment of this limitation is appropriate and prevents overinterpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C61"
+    ],
+    "result": "The results suggest that variation in genes involved in antigen processing and intracellular trafficking is an important determinant of vaccine immunogenicity. Many identified genes encode proteins with general roles in membrane trafficking rather than immune-specific functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the convergent evidence from eQTL analysis, pathway enrichment, and expression-antibody correlations. The finding that non-immune-specific trafficking genes influence vaccine response is novel and supported by the data, though the mechanistic basis requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "A longitudinal, integrative genomic analysis study design applied to clinical intervention is an efficient alternative to cross-sectional methods for identifying genes involved in complex traits. The dynamic measurements allow detection of genetic effects enhanced or revealed by experimental perturbation, providing specificity not achievable by cross-sectional eQTL or GWAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design successfully demonstrates advantages of the longitudinal approach, particularly in detecting dynamic genetic effects (C36-C40). The repeated measures design effectively accounts for individual variation. However, the claim of 'efficiency' relative to cross-sectional methods is somewhat subjective and not directly quantified through comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C72"
+    ],
+    "result": "The study has important limitations: it excluded populations most likely to have poor vaccine response (children, elderly, severely ill), used ethnically homogeneous samples to minimize stratification, and requires additional studies to determine generalizability to other populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge key limitations. The restriction to healthy young adults and single ethnicity limits generalizability but was justified for methodological reasons (reducing confounding). The honest assessment of these limitations is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Antibody titer changes post-vaccination are negatively correlated with pre-vaccination titers, and responses to individual viral antigens are correlated within individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established phenomena in vaccine immunology (C103 is stated as known). The observation of within-individual correlation across antigens (C104) justifies the use of the Titer Response Index to integrate responses. These claims support the analytical approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C67",
+      "C74"
+    ],
+    "result": "The identified genes could serve as starting points for developing predictive biomarkers or novel vaccine adjuvants targeting membrane trafficking proteins. The approach could be applied to other interventions such as drug or dietary responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative claims about potential applications (evidence_type: SPECULATION). While the suggestions are reasonable given the findings, they represent future directions rather than demonstrated results. No validation of predictive biomarkers or adjuvant strategies is presented. The claims appropriately use conditional language ('could', 'would be').",
+    "result_type": "MINOR"
+  }
+]

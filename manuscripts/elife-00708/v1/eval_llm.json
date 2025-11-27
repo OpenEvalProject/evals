@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Her2 is a unique member of the EGFR family that does not bind ligands or homodimerize under normal conditions, but activates through heterodimerization with ligand-bound EGFR or Her3. The Her3\u2013Her2 heterodimer is particularly prevalent and potent in signaling, playing pivotal roles in development and being implicated in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C8-C11, C15-C22) are well-established background knowledge supported by multiple citations to published literature. They describe the basic biology and clinical significance of Her2 and are not contested in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "EGFR family receptors activate through ligand-promoted dimerization involving allosteric interactions across extracellular, transmembrane, and intracellular domains. Domain II constitutes most of the dimer interface, and its conformation (bent in ligand-free, straight in ligand-bound states) is critical to dimerization. Her2's domain II is constitutively bent, consistent with its poor homodimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C4-C7, C23-C30) describe well-established structural features of EGFR family receptors supported by multiple crystallographic studies and citations. The relationship between domain II conformation and dimerization is well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The EGFR family evolved from a single member in invertebrates to two members in early vertebrates through gene duplication, and further duplication generated the four members in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C12-C14) describe the evolutionary history of the EGFR family and are supported by citation to published work (Stein and Staros, 2000). This is established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "No crystal structure exists for human EGFR family heterodimers with a single ligand bound. In contrast, dEGFR crystal structures reveal asymmetric dimers with only one fully formed ligand binding site, differing from symmetric human EGFR family structures. Additionally, dEGFR has a fifth domain absent in human EGFR family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C31-C36) accurately describe the state of structural knowledge and key differences between dEGFR and human EGFR family receptors, supported by citations to crystal structures. This establishes the motivation for the computational study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "MD simulations of dEGFR correctly reproduced the gap in the dimer interface observed in ligand-free crystal structures. When ligands were removed from the 2-ligand dEGFR structure, a substantial gap developed, the conformation resembled ligand-free crystal structures, and the buried surface area decreased significantly, consistent with experimental structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C47-C54) demonstrate that the simulation methodology can reproduce known structural features of dEGFR, providing validation for the approach. The simulations match crystal structure observations (Figures 2A-C), establishing credibility for subsequent predictions about Her2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Simulations of 1-ligand EGFR homodimers (modeled by removing one ligand from 2-ligand crystal structures) showed asymmetric conformations where the ligand-free subunit's domain II bent and resembled Her2 monomer structure. A single bound ligand was sufficient to maintain stable dimer interfaces without substantial decrease in buried surface area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C55-C63) describe simulation results that are internally consistent and supported by quantitative data (Figures 3B-E). The finding that domain II bending angles in simulations (~150-160\u00b0) match Her2 crystal structure (156\u00b0) provides validation. Agreement with prior MD study (Tynan et al., 2011) and experimental findings (Liu et al., 2012) strengthens support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Simulations showed that ligand-bound EGFR\u2013Her2 heterodimers are stable with intact interfaces, while ligand-free heterodimers and Her2 homodimers develop large gaps in the dimer interface due to domain II bending. The buried surface area decreases from ~3500 \u00c5\u00b2 to ~2600 \u00c5\u00b2 when the gap opens, similar to the mechanism observed in dEGFR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C37, C64-C69, C72-C74) present the core simulation findings for Her2 dimers, supported by quantitative data (Figure 4) and consistent observations across independent simulations. The parallel to dEGFR provides mechanistic coherence. However, these are computational predictions without direct experimental validation for Her2 heterodimers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C70",
+      "C71"
+    ],
+    "result": "When ligands are removed from Her2 heterodimers in simulations, gaps develop in the dimer interface due to bending of domain IIs in both subunits. This gap reduces the interface area and explains weak homodimerization of Her2, paralleling the mechanism in dEGFR where the gap reduces affinity ~30-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C38-C44, C70-C71) connect simulation observations to mechanistic explanations for Her2's dimerization properties. The structural mechanism is consistent across dEGFR crystal structures and Her2 simulations. The quantitative interface area measurements support the interpretation, though the affinity comparison relies on dEGFR experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Simulations of Her3\u2013Her2 heterodimers showed stable interfaces when HRG ligand was bound to Her3, but gaps emerged when the ligand was removed as Her3's domain II bent. This suggests Her3\u2013Her2 heterodimerization is promoted by ligand-induced interface stabilization, similar to EGFR\u2013Her2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C75-C78) extend the findings to Her3\u2013Her2 heterodimers, showing consistent behavior with EGFR\u2013Her2 (Figure 5). The parallel mechanism across different heterodimers strengthens the overall model, though these are computational predictions for a modeled structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C59",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The simulations demonstrate that a single bound ligand is sufficient to stabilize EGFR family dimers and that the activation mechanism conserves dEGFR's capacity to form stable asymmetric dimers. Ligand binding acts as a wedge to straighten domain II, and both domain IIs must be bent for gaps to open. This structural mechanism for dimerization control has been evolutionarily preserved from Drosophila to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C45-C46, C59, C98-C107) present the overarching conclusions about evolutionary conservation and mechanism. They are supported by consistent observations across dEGFR, EGFR, Her2, and Her3 simulations, agreement with experimental data (Liu et al., 2012), and structural analysis. The evolutionary conservation argument is strengthened by the parallel behavior across species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Simulations identified specific hydrogen bonds between Gln194 of ligand-bound subunits and Cys213/His215 of ligand-free subunits that stabilize asymmetric dimers. Gln194 is conserved in ligand-binding receptors (EGFR, Her3, Her4, dEGFR) but not Her2. Mutations of these residues may hinder dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C79-C84) identify specific molecular interactions from simulations (Figure 6A-B) and connect them to sequence conservation patterns. The correlation between Gln194 conservation and ligand-binding capability is compelling. However, the mutation predictions (C83-C84) are speculative and require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Simulations revealed stable interactions between Arg228 of EGFR/Her3 and Glu243 of Her2 (salt bridge or water bridge). Arg228 is present only in EGFR and Her3, while Glu243 is unique to Her2 among EGFR family members, suggesting Her2 has been fine-tuned for heterodimerization with EGFR and Her3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C85-C89) identify Her2-specific interactions from simulations (Figure 6B) and correlate them with sequence patterns showing complementarity between Her2's dimerization partners. The evolutionary interpretation (C89) is reasonable but somewhat speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Experimental data shows Her2 heterodimers are weaker than EGFR/Her4/dEGFR homodimers. Simulations suggest this is due to unique dynamics in Her2's dimerization arm, specifically the absence of a stabilizing cation-\u03c0 interaction (Tyr251-Arg285) because Her2 has Leu291 instead of the conserved Arg285. An L291R mutation may strengthen Her2 heterodimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C97 attempt to explain experimental observations of weaker Her2 heterodimerization through simulation analysis. While the sequence difference (Leu291 vs Arg285) is real and the simulation shows differential dynamics (Figure 6C), the causal link is not definitively established. The mutation predictions (C96-C97) are highly speculative without experimental testing. The mechanism is plausible but requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The sequence identity between EGFR and Her2/Her3 ectodomains is 40-41% overall, and 50%/46% respectively in the domain II dimerization region (residues 240-309).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C108-C110) provide quantitative sequence similarity data that justifies the homology modeling approach. The values are verifiable from sequence alignments (Figure 6A) and support the modeling methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Repeated simulations of the same systems produced largely similar results, with consistent gap development in ligand-free EGFR\u2013Her2 dimers across independent simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C114-C115) address simulation reproducibility, which is important for computational studies. The consistency across independent simulations (Figure 4B) strengthens confidence in the findings, though the manuscript notes some variability in gap dynamics.",
+    "result_type": "MINOR"
+  }
+]

@@ -116,7 +116,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations and represents established anatomical knowledge.",
+    "evidence": "This is supported by multiple citations and represents established anatomical knowledge.",
     "evidence_type": [
       "CITATION",
       "KNOWLEDGE"
@@ -158,7 +158,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations and represents a key conceptual point in the field.",
+    "evidence": "This is supported by citations and represents a theoretical consideration.",
     "evidence_type": [
       "CITATION",
       "INFERENCE"
@@ -172,10 +172,10 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a theoretical interpretation supported by citations to prior work.",
+    "evidence": "This is a theoretical model supported by citations to prior work.",
     "evidence_type": [
       "CITATION",
-      "INFERENCE"
+      "SPECULATION"
     ]
   },
   {
@@ -186,9 +186,10 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on theoretical considerations about information processing.",
+    "evidence": "This is a theoretical inference about computational capacity.",
     "evidence_type": [
-      "INFERENCE"
+      "INFERENCE",
+      "SPECULATION"
     ]
   },
   {
@@ -226,7 +227,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations to prior electrophysiological studies.",
+    "evidence": "This is supported by citations to prior studies.",
     "evidence_type": [
       "CITATION"
     ]
@@ -239,7 +240,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by a citation and represents a shift in theoretical interpretation.",
+    "evidence": "This is supported by a citation and describes a shift in theoretical models.",
     "evidence_type": [
       "CITATION",
       "INFERENCE"
@@ -295,7 +296,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on the anatomical connectivity, supported by citations to corollary discharge literature.",
+    "evidence": "This is an inference supported by citations to theoretical and empirical work on corollary discharges.",
     "evidence_type": [
       "CITATION",
       "INFERENCE"
@@ -309,7 +310,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations and represents established knowledge about corollary discharges.",
+    "evidence": "This is supported by citations and represents established knowledge about neural circuits.",
     "evidence_type": [
       "CITATION",
       "KNOWLEDGE"
@@ -337,28 +338,41 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the experimental data showing selective expression in these nuclei.",
+    "evidence": "This is supported by the experimental design and validation shown in Figure 1\u2014figure supplement 1.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C26",
-    "claim": "The Cre-dependent reporter expression in the Slc17a7-IRES-Cre mouse recapitulates the selective expression pattern of the Slc17a7 locus as reported in the Allen Institute Anatomic Gene Expression Atlas database.",
+    "claim": "The Cre-dependent reporter expression in Slc17a7-IRES-Cre mice recapitulates the selective expression pattern of the Slc17a7 locus.",
     "claim_type": "EXPLICIT",
     "source": "The Cre-dependent reporter expression in this mouse recapitulates the selective expression pattern of the Slc17a7 locus as reported in the Allen Institute Anatomic Gene Expression Atlas database (Figure 1\u2014figure supplement 1).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is supported by comparison with database information and shown in Figure 1\u2014figure supplement 1.",
+    "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1 comparing the mouse line to database expression patterns.",
     "evidence_type": [
-      "DATA",
-      "CITATION"
+      "DATA"
     ]
   },
   {
     "claim_id": "C27",
+    "claim": "Stereotaxic injection of different Cre-dependent reporter viruses into ECN and BPN resulted in selective and distinguishable labeling of these nuclei.",
+    "claim_type": "EXPLICIT",
+    "source": "Taking advantage of selective Cre expression and the approximate 4-mm separation between the ECN and the BPN, we stereotaxically injected different Cre-dependent reporter viruses into each nucleus of the Slc17a7-IRES-Cre mice (Figure 1A). This strategy resulted in selective and distinguishable labeling of the ECN and the BPN (Figure 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the experimental data shown in Figure 1A-B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
     "claim": "ECN inputs primarily project to the ipsilateral cerebellar vermis.",
     "claim_type": "EXPLICIT",
     "source": "As has been previously reported, at a gross level the ECN and BPN target mostly non-overlapping regions of the cerebellum (Akintunde and Eisenman, 1994; Serapide et al., 1994, 2001). ECN inputs primarily project to the ipsilateral cerebellar vermis and BPN inputs bilaterally terminate in the cerebellar hemispheres (Figure 1C,D).",
@@ -366,22 +380,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is supported by citations to prior work and confirmed by the imaging data in Figure 1C,D.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C28",
-    "claim": "BPN inputs bilaterally terminate in the cerebellar hemispheres.",
-    "claim_type": "EXPLICIT",
-    "source": "As has been previously reported, at a gross level the ECN and BPN target mostly non-overlapping regions of the cerebellum (Akintunde and Eisenman, 1994; Serapide et al., 1994, 2001). ECN inputs primarily project to the ipsilateral cerebellar vermis and BPN inputs bilaterally terminate in the cerebellar hemispheres (Figure 1C,D).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is supported by citations to prior work and confirmed by the imaging data in Figure 1C,D.",
+    "evidence": "This is supported by citations to prior work and confirmed by data in Figure 1C,D.",
     "evidence_type": [
       "DATA",
       "CITATION"
@@ -389,9 +388,24 @@
   },
   {
     "claim_id": "C29",
+    "claim": "BPN inputs bilaterally terminate in the cerebellar hemispheres.",
+    "claim_type": "EXPLICIT",
+    "source": "As has been previously reported, at a gross level the ECN and BPN target mostly non-overlapping regions of the cerebellum (Akintunde and Eisenman, 1994; Serapide et al., 1994, 2001). ECN inputs primarily project to the ipsilateral cerebellar vermis and BPN inputs bilaterally terminate in the cerebellar hemispheres (Figure 1C,D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by citations to prior work and confirmed by data in Figure 1C,D.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
     "claim": "ECN and BPN axons co-terminate in many areas of the cerebellum including the vermis, lateral vermis, simple lobule, paraflocculus, Crus1, Crus2, paramedian lobule, and copula of the pyramis.",
     "claim_type": "EXPLICIT",
-    "source": "Such areas include the vermis, lateral vermis, simple lobule, paraflocculus, Crus1, Crus2, paramedian lobule, and copula of the pyramis (Figure 1D).",
+    "source": "However, strong viral-reporter expression and high-resolution, large-area confocal microscopy revealed many areas of the cerebellum where ECN and BPN axons co-terminate. Such areas include the vermis, lateral vermis, simple lobule, paraflocculus, Crus1, Crus2, paramedian lobule, and copula of the pyramis (Figure 1D).",
     "source_type": [
       "TEXT",
       "IMAGE"
@@ -402,7 +416,7 @@
     ]
   },
   {
-    "claim_id": "C30",
+    "claim_id": "C31",
     "claim": "Within co-termination areas, ECN and BPN axons terminate within very close proximity (<50 \u00b5m), well within the length of the dendritic arbors of granule cells.",
     "claim_type": "EXPLICIT",
     "source": "Within these areas, ECN and BPN axons terminate within very close proximity (<50 \u00b5m), well within the length of the dendritic arbors of granule cells (Figure 1D, inset).",
@@ -416,7 +430,7 @@
     ]
   },
   {
-    "claim_id": "C31",
+    "claim_id": "C32",
     "claim": "A mossy fiber terminal synapses with granule cell dendrites within a glomerulus.",
     "claim_type": "EXPLICIT",
     "source": "A mossy fiber terminal synapses with granule cell dendrites within a glomerulus (Ekerot and Jorntell, 2008; Arenz et al., 2009).",
@@ -430,7 +444,7 @@
     ]
   },
   {
-    "claim_id": "C32",
+    "claim_id": "C33",
     "claim": "Inside a glomerulus, the claw-footed dendrites of granule cells wrap around and make multiple synaptic contacts with the single, large, mossy fiber termination.",
     "claim_type": "EXPLICIT",
     "source": "Inside a glomerulus, the claw-footed dendrites of granule cells wrap around and make multiple synaptic contacts with the single, large, mossy fiber termination.",
@@ -443,23 +457,10 @@
     ]
   },
   {
-    "claim_id": "C33",
-    "claim": "The synaptic arrangement in glomeruli allows determination with light microscopy whether ECN and BPN mossy fibers converge onto single granule cells.",
-    "claim_type": "EXPLICIT",
-    "source": "This synaptic arrangement allows us to determine, with light microscopy, whether ECN and BPN mossy fibers converge onto single granule cells.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is an inference based on the anatomical structure and the resolution of the imaging technique.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
     "claim_id": "C34",
     "claim": "The TCGO mouse line expresses tetracycline transactivator and mCitrine in a subset of granule cells.",
     "claim_type": "EXPLICIT",
-    "source": "This screen identified one mouse line, TCGO, which expresses tetracycline transactivator and mCitrine in a subset of granule cells.",
+    "source": "Alternatively, we screened enhancer-trap mouse lines for an expression pattern where granule cells are labeled in a sparse, 'Golgi stain-like' fashion. This screen identified one mouse line, TCGO, which expresses tetracycline transactivator and mCitrine in a subset of granule cells.",
     "source_type": [
       "TEXT"
     ],
@@ -476,21 +477,21 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is based on observations across multiple animals.",
+    "evidence": "This is an observation from the experimental characterization of the mouse line.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C36",
-    "claim": "40% of proprioceptive granule cells (2429/5997 in two animals) made obvious synapses with both ECN and BPN inputs.",
+    "claim": "40% of proprioceptive granule cells made obvious synapses with both ECN and BPN inputs.",
     "claim_type": "EXPLICIT",
     "source": "Based on results from one annotator, 40% of proprioceptive granule cells (2429/5997 in two animals) made obvious synapses (see 'Materials and methods') with both ECN and BPN inputs (Figure 2E).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a quantitative finding from the anatomical analysis shown in Figure 2E.",
+    "evidence": "This is a quantitative finding from the anatomical analysis presented in the study.",
     "evidence_type": [
       "DATA"
     ]
@@ -545,7 +546,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference drawn from the cellular-level mapping data.",
+    "evidence": "This is an inference drawn from the granule cell classification data in vermal regions.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -587,7 +588,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an interpretation of the quantitative mapping data showing high EB percentages in these regions.",
+    "evidence": "This is an interpretation of the high percentage of EB granule cells in these regions.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -595,20 +596,6 @@
   },
   {
     "claim_id": "C44",
-    "claim": "Differences in the extent and patterns of ECN and BPN convergence suggest that the cerebellum handles proprioceptive information with regional specificity.",
-    "claim_type": "EXPLICIT",
-    "source": "Differences in the extent and patterns of ECN and BPN convergence suggest that the cerebellum handles proprioceptive information with regional specificity.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is an inference drawn from the regional variation in convergence patterns.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C45",
     "claim": "ECN inputs carry forelimb and upper body proprioceptive information to cerebellar granule cells.",
     "claim_type": "EXPLICIT",
     "source": "ECN inputs carry forelimb and upper body proprioceptive information to cerebellar granule cells (Campbell et al., 1974; Akintunde and Eisenman, 1994; Quy et al., 2011).",
@@ -622,20 +609,20 @@
     ]
   },
   {
-    "claim_id": "C46",
+    "claim_id": "C45",
     "claim": "Nearly every paramedian, proprioceptive granule cell receives BPN inputs.",
     "claim_type": "EXPLICIT",
     "source": "We focused on the paramedian lobule as the projection target since nearly every paramedian, proprioceptive granule cell receives BPN inputs.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is based on the mapping data showing high EB percentages in the paramedian lobule.",
+    "evidence": "This is based on the mapping data showing high EB granule cell percentage in paramedian lobule.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C47",
+    "claim_id": "C46",
     "claim": "EGFP-labeled neurons were restricted to lateral agranular cortex, consistent with M1 identity.",
     "claim_type": "EXPLICIT",
     "source": "EGFP-labeled neurons were restricted to lateral agranular cortex, consistent with M1 identity (Figure 6B) (Tennant et al., 2011).",
@@ -643,14 +630,14 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is supported by the imaging data in Figure 6B and citation to prior work on M1 anatomy.",
+    "evidence": "This is supported by the anatomical data in Figure 6B and citation to prior work on M1 anatomy.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C48",
+    "claim_id": "C47",
     "claim": "The majority of pontine inputs to the paramedian lobule originate from the medial-ventral BPN.",
     "claim_type": "EXPLICIT",
     "source": "The majority of pontine inputs to the paramedian lobule originate from the medial-ventral BPN (Figure 6C, upper).",
@@ -664,7 +651,7 @@
     ]
   },
   {
-    "claim_id": "C49",
+    "claim_id": "C48",
     "claim": "Retrogradely-labeled BPN neurons are situated in dense fields of M1 axons.",
     "claim_type": "EXPLICIT",
     "source": "Retrogradely-labeled BPN neurons are situated in dense fields of M1 axons (Figure 6C, lower; Figure 6D).",
@@ -678,7 +665,7 @@
     ]
   },
   {
-    "claim_id": "C50",
+    "claim_id": "C49",
     "claim": "Cortical axons containing presynaptic vesicle proteins were in close proximity to retrogradely labeled pontine neurons.",
     "claim_type": "EXPLICIT",
     "source": "Cortical axons containing presynaptic vesicle proteins (Bellocchio et al., 1998) were in close proximity to retrogradely labeled pontine neurons; these M1 terminals were also associated with post-synaptic densities of BPN neurons (Naisbitt et al., 1999) (Figure 6E).",
@@ -686,14 +673,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is supported by the immunohistochemistry data shown in Figure 6E and citations to marker papers.",
+    "evidence": "This is supported by the immunohistochemical data shown in Figure 6E.",
     "evidence_type": [
-      "DATA",
-      "CITATION"
+      "DATA"
     ]
   },
   {
-    "claim_id": "C51",
+    "claim_id": "C50",
     "claim": "Putative M1 synaptic inputs were identified on rabies-labeled BPN neurons in 3/3 animals.",
     "claim_type": "EXPLICIT",
     "source": "Putative M1 synaptic inputs were identified on rabies-labeled BPN neurons (minimum 10 synaptic partners analyzed per mouse) in 3/3 animals.",
@@ -706,7 +692,7 @@
     ]
   },
   {
-    "claim_id": "C52",
+    "claim_id": "C51",
     "claim": "Forelimb/upper body pathways separately carrying corollary discharges and proprioceptive information are aligned in cerebellar cortex.",
     "claim_type": "EXPLICIT",
     "source": "Therefore, forelimb/upper body pathways separately carrying corollary discharges and proprioceptive information are aligned in cerebellar cortex.",
@@ -720,40 +706,54 @@
     ]
   },
   {
-    "claim_id": "C53",
+    "claim_id": "C52",
     "claim": "Axonal connections carrying pontine information directly converge with proprioceptive pathways onto individual granule cells.",
     "claim_type": "EXPLICIT",
     "source": "Our results indicate that axonal connections carrying pontine information directly converge with proprioceptive pathways onto individual granule cells.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is the primary finding of the study supported by the anatomical data.",
+    "evidence": "This is a summary of the primary finding supported by the anatomical data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C54",
+    "claim_id": "C53",
     "claim": "The percentage of proprioceptive granule cells exhibiting convergence with BPN inputs varied across cerebellar areas.",
     "claim_type": "EXPLICIT",
     "source": "The percentage of proprioceptive granule cells exhibiting such convergence varied across cerebellar areas.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the regional mapping data in Figures 3-5.",
+    "evidence": "This is supported by the regional mapping data shown in Figures 3-5.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C55",
-    "claim": "These findings establish the multimodal nature of granule cells.",
+    "claim_id": "C54",
+    "claim": "The findings establish the multimodal nature of granule cells.",
     "claim_type": "EXPLICIT",
     "source": "These findings establish the multimodal nature of granule cells and locate a merging of sensory and corollary pathways in specific cerebellar subregions.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an interpretation of the convergence data as evidence for multimodality.",
+    "evidence": "This is a conclusion drawn from the convergence data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The findings locate a merging of sensory and corollary pathways in specific cerebellar subregions.",
+    "claim_type": "EXPLICIT",
+    "source": "These findings establish the multimodal nature of granule cells and locate a merging of sensory and corollary pathways in specific cerebellar subregions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the regional mapping and M1 tracing data.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -761,20 +761,21 @@
   },
   {
     "claim_id": "C56",
-    "claim": "The findings locate a merging of sensory and corollary pathways in specific cerebellar subregions.",
+    "claim": "The number of granule cells far exceeds the number of their mossy fiber inputs.",
     "claim_type": "EXPLICIT",
-    "source": "These findings establish the multimodal nature of granule cells and locate a merging of sensory and corollary pathways in specific cerebellar subregions.",
+    "source": "Since the number of granule cells far exceeds the number of their mossy fiber inputs, granule cells are in a position to potentially permute combinations of afferent inputs in the cerebellum (Marr, 1969; Blomfield and Marr, 1970; Albus, 1971).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the regional mapping and M1 tracing data.",
+    "evidence": "This is supported by citations and represents established anatomical knowledge.",
     "evidence_type": [
-      "DATA"
+      "CITATION",
+      "KNOWLEDGE"
     ]
   },
   {
     "claim_id": "C57",
-    "claim": "David Marr and James Albus proposed that by mixing mossy fiber inputs, granule cells could perform 'expansion recoding', enabling them to contribute to pattern separation and motor learning.",
+    "claim": "David Marr and James Albus proposed that by mixing mossy fiber inputs, granule cells could perform 'expansion recoding'.",
     "claim_type": "EXPLICIT",
     "source": "David Marr and James Albus proposed that by mixing mossy fiber inputs, granule cells could perform such 'expansion recoding', enabling them to contribute to pattern separation and consequently to be fundamental for motor learning (Marr, 1969; Blomfield and Marr, 1970; Albus, 1971).",
     "source_type": [
@@ -794,7 +795,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an interpretation of the Marr-Albus theory.",
+    "evidence": "This is an interpretation of the Marr-Albus theoretical model.",
     "evidence_type": [
       "CITATION",
       "INFERENCE"
@@ -808,7 +809,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations to prior work and represents a shift in interpretation.",
+    "evidence": "This is supported by citations to prior work and describes a shift in theoretical interpretation.",
     "evidence_type": [
       "CITATION"
     ]
@@ -821,7 +822,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference about the computational implications of the functional reassignment.",
+    "evidence": "This is an inference about the computational implications of different functional models.",
     "evidence_type": [
       "INFERENCE"
     ]
@@ -855,7 +856,7 @@
   },
   {
     "claim_id": "C63",
-    "claim": "The current analysis has yielded the first direct evidence that a large number of mammalian cerebellar granule cells receive inputs from both pontine and primary sensory sources.",
+    "claim": "The current study yields the first direct evidence that a large number of mammalian cerebellar granule cells receive inputs from both pontine and primary sensory sources.",
     "claim_type": "EXPLICIT",
     "source": "This analysis has yielded the first direct evidence that a large number of mammalian cerebellar granule cells receive inputs from both pontine and primary sensory sources.",
     "source_type": [
@@ -868,13 +869,13 @@
   },
   {
     "claim_id": "C64",
-    "claim": "The results provide a map of where multimodal convergence occurs and does not occur over the expanse of the cerebellar cortex.",
+    "claim": "The current study provides a map of where multimodal convergence occurs and does not occur over the expanse of the cerebellar cortex.",
     "claim_type": "EXPLICIT",
     "source": "Our results also provide a map of where this variety of multimodal convergence occurs and does not occur over the expanse of the cerebellar cortex.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the comprehensive mapping data in Figures 3-5.",
+    "evidence": "This is supported by the regional mapping data in Figures 3-5.",
     "evidence_type": [
       "DATA"
     ]
@@ -900,7 +901,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on observations in multiple species and brain regions.",
+    "evidence": "This is an inference drawn from comparative observations across species and brain regions.",
     "evidence_type": [
       "CITATION",
       "INFERENCE"
@@ -914,7 +915,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is based on observations during the anatomical analysis.",
+    "evidence": "This is an observation from the experimental data and its implications.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -943,7 +944,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations and represents established theory about cerebellar learning.",
+    "evidence": "This is supported by citations and represents established theoretical and experimental knowledge.",
     "evidence_type": [
       "CITATION",
       "KNOWLEDGE"
@@ -957,9 +958,10 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference about the computational implications of unimodal inputs.",
+    "evidence": "This is a theoretical inference about the computational implications of unimodal inputs.",
     "evidence_type": [
-      "INFERENCE"
+      "INFERENCE",
+      "SPECULATION"
     ]
   },
   {
@@ -970,7 +972,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference about the computational implications of multimodal inputs.",
+    "evidence": "This is an inference drawn from the multimodal convergence findings.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -978,7 +980,7 @@
   },
   {
     "claim_id": "C72",
-    "claim": "Prefabricating simple associations in granule cells may enable Purkinje cells to perform more complex learning operations, analogous to the enhanced learning capacity of a multilayer perceptron over a single layer perceptron.",
+    "claim": "Prefabricating simple associations in granule cells may enable Purkinje cells to perform more complex learning operations.",
     "claim_type": "EXPLICIT",
     "source": "Prefabricating simple associations in granule cells may enable Purkinje cells to perform more complex learning operations, analogous to the enhanced learning capacity of a multilayer perceptron over a single layer perceptron (Minsky and Papert, 1969).",
     "source_type": [
@@ -999,14 +1001,14 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This represents general knowledge about motor control.",
+    "evidence": "This represents established knowledge about motor control requirements.",
     "evidence_type": [
       "KNOWLEDGE"
     ]
   },
   {
     "claim_id": "C74",
-    "claim": "Proprioception is particularly well suited to provide input to the brain's sensory model of body position and kinematics by signaling muscle stretch and tendon tension.",
+    "claim": "Proprioception is particularly well suited to provide input to the brain's sensory model of body position and kinematics.",
     "claim_type": "EXPLICIT",
     "source": "By signaling muscle stretch and tendon tension, proprioception is particularly well suited to provide input to the brain's sensory model of body position and kinematics (Bosco and Poppele, 2001; Dietz, 2002).",
     "source_type": [
@@ -1040,7 +1042,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations and represents established theory about motor control.",
+    "evidence": "This is supported by citations and represents established theoretical knowledge.",
     "evidence_type": [
       "CITATION",
       "KNOWLEDGE"
@@ -1054,10 +1056,9 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This represents established theory about forward models.",
+    "evidence": "This represents established theoretical knowledge about forward models.",
     "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
+      "KNOWLEDGE"
     ]
   },
   {
@@ -1068,26 +1069,13 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This represents established theory about corollary discharges.",
+    "evidence": "This represents established theoretical knowledge about corollary discharges.",
     "evidence_type": [
       "KNOWLEDGE"
     ]
   },
   {
     "claim_id": "C79",
-    "claim": "Where and how corollary discharges are converted from motor to sensory coordinates in the nervous system is largely unknown.",
-    "claim_type": "EXPLICIT",
-    "source": "To accomplish this mimicry, corollary discharges must be converted from motor to sensory coordinates, but where and how this occurs in the nervous system is largely unknown.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This represents a gap in current knowledge.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C80",
     "claim": "Theory and perturbation studies suggest somatic forward models reside in the cerebellum.",
     "claim_type": "EXPLICIT",
     "source": "Theory and perturbation studies suggest somatic forward models reside in the cerebellum (Miall et al., 1993, 2007; Miall, 1998; Wolpert et al., 1998; Blakemore et al., 2000; Pasalar et al., 2006; Ebner and Pasalar, 2008; Ito, 2008; Lesage et al., 2012).",
@@ -1096,25 +1084,24 @@
     ],
     "evidence": "This is supported by multiple citations to theoretical and experimental work.",
     "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
+      "CITATION"
     ]
   },
   {
-    "claim_id": "C81",
+    "claim_id": "C80",
     "claim": "Proprioceptive and corollary discharge pathways converge on individual granule cells.",
     "claim_type": "EXPLICIT",
     "source": "We show that proprioceptive and corollary discharge pathways converge on individual granule cells.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is the primary finding of the study supported by the anatomical data.",
+    "evidence": "This is a summary of the primary finding supported by the anatomical data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C82",
+    "claim_id": "C81",
     "claim": "Granule cells can generate action potentials in response to a single mossy fiber input.",
     "claim_type": "EXPLICIT",
     "source": "Granule cells can generate action potentials in response to a single mossy fiber input (Rancz et al., 2007).",
@@ -1123,33 +1110,32 @@
     ],
     "evidence": "This is supported by a citation to prior physiological work.",
     "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
+      "CITATION"
     ]
   },
   {
-    "claim_id": "C83",
+    "claim_id": "C82",
     "claim": "Inputs of different modalities can potentially substitute for one another to fire a granule cell.",
     "claim_type": "EXPLICIT",
     "source": "Therefore, inputs of different modalities can potentially substitute for one another to fire a granule cell.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on the physiological properties of granule cells and their multimodal inputs.",
+    "evidence": "This is an inference drawn from the physiological properties of granule cells and their multimodal inputs.",
     "evidence_type": [
-      "INFERENCE",
-      "CITATION"
+      "CITATION",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C84",
-    "claim": "BPN neurons driven by cortical motor commands that do not directly participate in movement generation can be considered to carry corollary discharges by definition.",
+    "claim_id": "C83",
+    "claim": "BPN neurons driven by cortical motor commands that do not directly participate in movement generation can be considered to carry corollary discharges.",
     "claim_type": "EXPLICIT",
-    "source": "Since these BPN neurons will be driven by cortical motor commands that do not directly participate in movement generation, by definition they can be considered to carry corollary discharges.",
+    "source": "A motor command is initiated in forelimb/upper body M1 and delivered to motor output centers and the BPN by corticofugal axons. Since these BPN neurons will be driven by cortical motor commands that do not directly participate in movement generation, by definition they can be considered to carry corollary discharges.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on the anatomical connectivity and the definition of corollary discharge.",
+    "evidence": "This is an inference based on the definition of corollary discharges and the anatomical connectivity.",
     "evidence_type": [
       "DATA",
       "INFERENCE",
@@ -1157,7 +1143,7 @@
     ]
   },
   {
-    "claim_id": "C85",
+    "claim_id": "C84",
     "claim": "Pontine corollary discharges may be processed similar to proprioceptive signals that synapse on the same granule cells.",
     "claim_type": "EXPLICIT",
     "source": "Pontine corollary discharges will stimulate these granule cells, generate parallel fiber output to Purkinje cells, and may be processed similar to proprioceptive signals that synapse on the same granule cells.",
@@ -1171,7 +1157,7 @@
     ]
   },
   {
-    "claim_id": "C86",
+    "claim_id": "C85",
     "claim": "Hijacking the proprioceptive pathway could effectively convert the corollary message from motor to sensory coordinates.",
     "claim_type": "EXPLICIT",
     "source": "Although speculative, hijacking this pathway could effectively convert the corollary message from motor to sensory coordinates, and thus in the appropriate reference frame to produce proprioceptive predictions.",
@@ -1185,21 +1171,21 @@
     ]
   },
   {
-    "claim_id": "C87",
+    "claim_id": "C86",
     "claim": "Corollary discharge-driven predictions will contain some degree of error.",
     "claim_type": "EXPLICIT",
     "source": "Corollary discharge-driven predictions will contain some degree of error, which is thought to be computed by comparing pure sensory models against forward models (Mazzoni and Krakauer, 2006; Shadmehr et al., 2010).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations and represents established theory about motor control.",
+    "evidence": "This is supported by citations and represents theoretical knowledge about motor control.",
     "evidence_type": [
       "CITATION",
       "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C88",
+    "claim_id": "C87",
     "claim": "Areas containing granule cells where corollary and sensory information converge might represent components of forward models.",
     "claim_type": "EXPLICIT",
     "source": "As described above, areas containing granule cells where corollary and sensory information converge might represent components of forward models.",
@@ -1213,7 +1199,7 @@
     ]
   },
   {
-    "claim_id": "C89",
+    "claim_id": "C88",
     "claim": "Areas where proprioceptive streams are isolated from corollary/pontine information may represent what actually occurred and thus may drive pure sensory models.",
     "claim_type": "EXPLICIT",
     "source": "Other areas where proprioceptive streams are isolated from corollary/pontine information may represent what actually occurred and thus may drive pure sensory models.",
@@ -1227,21 +1213,7 @@
     ]
   },
   {
-    "claim_id": "C90",
-    "claim": "Common downstream targets of identified forward and sensory models may represent loci where intended and actual actions are compared and thus where error signals are generated.",
-    "claim_type": "EXPLICIT",
-    "source": "Common downstream targets of these identified forward and sensory models may represent loci where intended and actual actions are compared and thus where error signals are generated.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a speculative inference about where error computation might occur.",
-    "evidence_type": [
-      "INFERENCE",
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C91",
+    "claim_id": "C89",
     "claim": "Corollary and sensory information has been shown to converge in the first stage of proprioceptive processing\u2014in the precerebellar neurons of the spinal cord.",
     "claim_type": "EXPLICIT",
     "source": "Previously, corollary and sensory information has been shown to converge in the first stage of proprioceptive processing\u2014in the precerebellar neurons of the spinal cord (Hongo and Okada, 1967; Hongo et al., 1967; Hantman and Jessell, 2010).",
@@ -1254,41 +1226,43 @@
     ]
   },
   {
-    "claim_id": "C92",
-    "claim": "One synapse further up the proprioceptive pathway\u2014at cerebellar granule cells\u2014convergence of corollary and sensory information occurs again.",
+    "claim_id": "C90",
+    "claim": "The proprioceptive pathway appears to be intersected by corollary discharges at multiple stages.",
     "claim_type": "EXPLICIT",
-    "source": "The present findings indicate that one synapse further up the proprioceptive pathway\u2014at cerebellar granule cells\u2014this convergence occurs again.",
+    "source": "The proprioceptive pathway appears to be intersected by corollary discharges at multiple stages.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is the primary finding of the study.",
+    "evidence": "This is an inference drawn from the current findings combined with prior work on spinal convergence.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "CITATION",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C93",
+    "claim_id": "C91",
     "claim": "Motor inputs at each level of the proprioceptive pathway will produce unique transformations of the sensory streams.",
     "claim_type": "EXPLICIT",
     "source": "Neurons of each of these stages are distinguished by their inputs and intrinsic properties. Therefore, motor inputs at each level will produce unique transformations of the sensory streams and thus potentially embody nodes within a hierarchical motor-informed sensory processing system.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference about the computational implications of convergence at multiple levels.",
+    "evidence": "This is a speculative inference about the functional implications of multi-stage convergence.",
     "evidence_type": [
       "INFERENCE",
       "SPECULATION"
     ]
   },
   {
-    "claim_id": "C94",
-    "claim": "The findings confirm a key prediction made nearly a half a century ago by David Marr and James Albus about the associative faculty of cerebellar granule cells.",
+    "claim_id": "C92",
+    "claim": "The findings confirm a key prediction made by David Marr and James Albus about the associative faculty of cerebellar granule cells.",
     "claim_type": "EXPLICIT",
     "source": "Our findings confirm a key prediction made nearly a half a century ago by David Marr and James Albus about the associative faculty of the most abundant neuron type in the mammalian brain.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an interpretation of the findings in relation to historical theoretical predictions.",
+    "evidence": "This is a conclusion drawn from the multimodal convergence findings in relation to theoretical predictions.",
     "evidence_type": [
       "DATA",
       "INFERENCE",
@@ -1296,27 +1270,27 @@
     ]
   },
   {
-    "claim_id": "C95",
+    "claim_id": "C93",
     "claim": "The multimodal capacity of cerebellar granule cells calls for a systematic investigation of the possible mixtures of mossy fiber inputs throughout the cerebellum.",
     "claim_type": "EXPLICIT",
     "source": "The multimodal capacity of cerebellar granule cells calls for a systematic investigation of the possible mixtures of mossy fiber inputs throughout the cerebellum.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a recommendation for future research based on the findings.",
+    "evidence": "This is a recommendation for future research based on the current findings.",
     "evidence_type": [
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C96",
-    "claim": "By defining the areas of the cerebellum where corollary and sensory information potentially converge, the study has uncovered a rich new system to understand the logic of corollary discharges in motor control.",
+    "claim_id": "C94",
+    "claim": "The study has uncovered a rich new system to understand the logic of corollary discharges in motor control.",
     "claim_type": "EXPLICIT",
     "source": "Finally, by defining the areas of the cerebellum where corollary and sensory information potentially converge, we have uncovered a rich new system to understand the logic of corollary discharges in motor control and perhaps other brain functions.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an interpretation of the broader significance of the findings.",
+    "evidence": "This is a conclusion about the broader implications of the findings.",
     "evidence_type": [
       "DATA",
       "INFERENCE"

@@ -1,0 +1,1557 @@
+{
+  "submission": {
+    "id": "d3867bb3-7a7c-4f77-8195-f82096a73342",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-27T06:03:40.590464Z",
+    "updated_at": "2025-11-27T06:03:40.590464Z"
+  },
+  "content": [
+    {
+      "id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "submission_id": "d3867bb3-7a7c-4f77-8195-f82096a73342",
+      "content_type": "manuscript",
+      "content_text": "# Intraflagellar transport drives flagellar surface motility\n\n## Authors\n\n- Sheng Min Shih<sup>1</sup>\n- Benjamin D Engel<sup>2</sup>\n- Fatih Kocabas<sup>3</sup>\n- Thomas Bilyard<sup>1</sup>\n- Arne Gennerich<sup>4</sup>\n- Wallace F Marshall<sup>2</sup>\n- Ahmet Yildiz<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Physics University of California, Berkeley Berkeley United States\n2. Department of Biochemistry University of California, San Francisco San Francisco United States\n3. Department of Internal Medicine University of Texas Southwestern Medical Center Dallas United States\n4. Anatomy and Structural Biology Albert Einstein College of Medicine Bronx United States\n5. Department of Molecular Cell Biology University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe assembly and maintenance of all cilia and flagella require intraflagellar transport (IFT) along the axoneme. IFT has been implicated in sensory and motile ciliary functions, but the mechanisms of this relationship remain unclear. Here, we used Chlamydomonas flagellar surface motility (FSM) as a model to test whether IFT provides force for gliding of cells across solid surfaces. We show that IFT trains are coupled to flagellar membrane glycoproteins (FMGs) in a Ca2+-dependent manner. IFT trains transiently pause through surface adhesion of their FMG cargos, and dynein-1b motors pull the cell towards the distal tip of the axoneme. Each train is transported by at least four motors, with only one type of motor active at a time. Our results demonstrate the mechanism of Chlamydomonas gliding motility and suggest that IFT plays a major role in adhesion-induced ciliary signaling pathways.\n\n## Introduction\n\nCilia and flagella are microtubule-based organelles that power the locomotion of many organisms, generate fluid flow over multiciliated surfaces, and mediate cell signaling (Liem et al., 2012). In order to assemble and maintain cilia, ciliary proteins are transported from cytoplasm to the tip by IFT along axonemes (Kozminski et al., 1993). In IFT, linear arrays of multiprotein complexes (IFT trains) are transported by kinesin-2 and dynein-1b in anterograde and retrograde directions, respectively (Cole et al., 1998; Porter et al., 1999). IFT is a universal mechanism for nearly all eukaryotic cilia and flagella, and defects in this process are linked to a wide range of human diseases, including polycystic kidney disease, retinal degeneration (Rosenbaum and Witman, 2002; Ishikawa and Marshall, 2011), and Bardet-Biedl syndrome (Ou et al., 2005; Lechtreck et al., 2009, 2013; Wei et al., 2012).\n\nSeveral studies have suggested that IFT not only transports material between the cell body and the flagellar tip, but also interacts dynamically with the flagellar membrane (Kozminski et al., 1993) to regulate diverse ciliary functions including motility, mating, sensing extracellular signals and influencing developmental decisions (Huangfu et al., 2003; Snell et al., 2004; Pedersen and Rosenbaum, 2008; Ishikawa and Marshall, 2011). However, it has remained unclear how transport of IFT trains underneath the flagellar membrane transmits force to components at the exterior of the flagellar membrane.\n\nIn order to investigate interactions between IFT and the ciliary surface, we used Chlamydomonas reinhardtii gliding motility as a model system. In Chlamydomonas, the flagellar surface is highly dynamic; polystyrene microspheres and other inanimate small objects adhere to and are moved bidirectionally along the flagellar surface, and cells glide over solid surfaces via adhesion of their flagella (Lewin, 1952; Bloodgood, 1981). Gliding motility is central to understanding the function and evolution of cilia, as it may have existed in early cilia before the establishment of axonemal beating. There are indications that gliding and FMG1-B motility are driven by the same process (Bloodgood, 2009), because they move at comparable speeds and both require ligation of the major flagellar surface protein, FMG1-B, into large clusters (Bloodgood and Workman, 1984), accompanied by a Ca2+-dependent signaling pathway (Bloodgood and Salomonsky, 1994). Microsphere movement is considered a more easily assayed and quantitated surrogate for the force transduction system that drives whole cell gliding motility. However, gliding is driven by the pulling motion of the leading flagellum, whereas FMG1-B movement is bidirectional (Bloodgood, 2009), implying that the two motilities could employ different motors.\n\nIt has been proposed that IFT provides the force for gliding motility (Bloodgood, 2009). IFT trains make multiple connections with the flagellar membrane (Pigino et al., 2009) and carry several ciliary and flagellar membrane proteins (Qin et al., 2005; Huang et al., 2007; Lechtreck et al., 2009, 2013). Inactivation of kinesin-2 in the temperature-sensitive (ts) mutant fla10ts stops both IFT and gliding motility (Kozminski et al., 1995). While these results suggest that kinesin-2 serves as the anterograde motor responsible for both microsphere movement and gliding motility (Kozminski et al., 1995; Laib et al., 2009), the retrograde motor for these motilities has not been clearly identified. Mutations in the LC8 subunit of dynein do not abolish FMG1-B movement (Pazour et al., 1998), and other flagellar motors, such as the minus-end directed kinesin KCBP (Dymek et al., 2006), have been proposed to drive FSM (Bloodgood, 2009).\n\nSeveral studies have raised arguments against this model. IFT motility differs significantly from FSM in that trains move faster and more processively along the length of the flagellum (Kozminski et al., 1993; Bloodgood, 2009). FSM requires micromolar levels of free calcium, whereas IFT is Ca2+-independent (Kozminski et al., 1993; Bloodgood, 2009). Sexual agglutinins were observed to migrate from the cell body into flagella in the absence of IFT (Pan and Snell, 2002). Therefore, evidence supporting the role of IFT in gliding motility is indirect and the precise functions of IFT, molecular motors, FMG1-B and Ca2+ in FSM remain unclear.\n\n## Results\n\nTo dissect the mechanism of FSM, we directly observed IFT, FMG1-B and gliding motilities using single-molecule imaging techniques. We monitored the movement of individual IFT trains by using total internal reflection fluorescence (TIRF) illumination to image paralyzed-flagella (pf) mutant cells that had adhered to the glass surface with both flagella. To establish a link between FMG1-B transport and IFT, we simultaneously tracked the movement of FMG1-B antibody-coated fluorescent beads (200 nm diameter, dark red) and IFT27-GFP in the pf18 strain. The beads performed short processive runs with reversals of direction whereas IFT trains moved in a regular and unidirectional manner. Multicolor kymography analysis shows that the beads transiently dissociated from one IFT train, diffused for a period of time and then bound to another IFT train (Figure 1A, Video 1) similar to the movement of extraflagellar particles observed along the flagellar membrane (Dentler, 2005). Diffraction-limited images of beads and IFT trains were fitted to a two-dimensional Gaussian to achieve a higher localization precision (Yildiz et al., 2003). Figure 1B shows the colocalization of a membrane-attached bead with an individual IFT train as it moves unidirectionally for >500 nm. The movements of the bead and the colocalized IFT trains correlate strongly (>0.99) with each other during the processive run (N = 30, see Figure 1\u2014figure supplement 1 for more examples), excluding the possibility that microspheres coincidentally moved together with IFT trains. We measured the distance between microspheres and the nearest IFT trains moving in the same direction for both the experimental data and randomly generated kymographs. The Kolmogorov-Smirnov test (p=7 \u00d7 10\u22129, Figure 1C) demonstrates that IFT trains colocalize with FMG1-B along the flagellar membrane (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig1-v1.jpg)\n\n**Figure 1.:** (A) (Top) Simultaneous tracking of anti-FMG1-B beads (red) and IFT27-GFP (green). (Bottom) Kymographs show that bead motility colocalizes with IFT trains during processive runs. Between the runs, the bead transiently attaches to and detaches from IFT trains. The white arrows indicate the IFT trains transporting the bead. (B) Two-dimensional Gaussian fitting of the bead and IFT trains show that bead motility correlates strongly (>0.99) with the movement of individual anterograde (green shaded region) and retrograde (blue shaded region) IFT trains. The bead moves at similar speeds to IFT trains in both anterograde and retrograde directions. (C) Comparison of distances from beads to the closest IFT train moving in the same direction (grey bars) to the predicted distribution without correlation (null hypothesis, black line). Kolmogorov-Smirnov statistics indicate that bead and IFT train positions strongly correlate with each other. (D) A model for IFT particles transporting FMG1-B. The bead is attached to FMG1-B in the flagellar membrane through antibody linkages (not to scale).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013C) Three additional examples for colocalization and correlated movement of IFT trains (IFT27 GFP) and beads. (D) Two-dimensional Gaussian fitting reveals the position of the bead and IFT individual trains as a function of time. Bead motility correlates strongly with the movement of individual IFT trains.\n\n![Video 1.](https://cdn.elifesciences.org/articles/00744/elife-00744-media1.avi.jpg)\n\n**Video 1.:** The left channel shows fluorescent beads coated with anti-FMG1-B. One bead displays bidirectional movement along the flagellum. The middle channel shows the movement of IFT trains within the IFT27-GFP pf18 cell. The right channel is the superimposed image of the two channels (IFT: green, bead: red). Movement of the bead colocalizes with that of individual IFT trains. The data was collected at 5 frames/s. The size of a single channel is 6.8 \u00d7 19.1 \u00b5m.\n\nWe next investigated whether IFT plays a direct role in gliding motility by monitoring individual IFT trains in IFT20-GFP and IFT27-GFP pf18 cells as they glided on coverslips. A small fraction of IFT trains displayed rare pauses (0.125 s\u22121 per cell, Ncells = 23, Npauses = 247) as they moved either in the retrograde or anterograde direction. Remarkably, the pausing of IFT trains was required for the initiation of whole-cell movements (Figure 2A, Figure 2\u2014figure supplements 1 and 2). We did not observe the start of a gliding event without a paused IFT train. We were able to determine the directionality of 60% of the paused IFT trains, and all of the trains correspondent to the initiation of gliding motility stopped moving during retrograde transport (N = 148). To rule out the possibility that IFT pausing events and initiation of gliding motility are simply coincidental, we quantified the lag time between the pausing of the last retrograde IFT train and the initiation of gliding motility. The average lag time was 0.48 \u00b1 0.05 s. In comparison, we observed individual IFT pausing events (including both anterograde and retrograde pauses) every 8.25 \u00b1 0.96 s per cell (Figure 2\u2014figure supplement 3). The Student\u2019s t-test excludes the null hypothesis that the timing of retrograde IFT pausing and gliding motility are independent of each other (p<0.0001). Anterograde trains also displayed rare pauses (\u223c0.02 s\u22121 per cell, N = 27), but we never observed pausing of an anterograde train before the initiation of gliding motility.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig2-v1.jpg)\n\n**Figure 2.:** (A) (Left) Kymograph of a gliding IFT20-GFP cell. A single retrograde IFT train transiently pauses (red arrow) and initiates the gliding movement of the cell toward the paused train. (Right) A schematic representing the timing and trajectory of the paused IFT train (red curve) in the gliding cell shown on the left. (B) (Left) Kymograph of an IFT27-GFP cell, pseudo-colored to show the corresponding velocity of each IFT train. Multiple IFT trains (red arrows) pause (green color) prior to gliding motility. The cell glides until it reaches the paused IFT trains. (Right) A schematic representing the timing and trajectories of the paused IFT trains (red curves) in the gliding cell shown on the left. (C) Gliding of uniflagellate cells under bright field illumination. A uniflagellate pf18 cell glides unidirectionally toward its flagellum. A uniflagellate dhc1b-3ts cell displays bidirectional gliding at the restrictive temperature. Red and blue arrowheads represent forward (flagellum in the lead) and backward (cell body in the lead) gliding directions. (D) All of the uniflagellate pf18 cells glided with the flagellum in the lead. Heat inactivation of dynein-1b in dhc1b-3ts cells at 37\u00b0C resulted in a 46% reduction in gliding frequency (N = 35) and led to bidirectional gliding motility. 8% of the cells glided with the flagellum leading the cell body (0.34 \u00b1 0.09 \u00b5m/s, mean \u00b1 SEM), while 23% glided with the cell body leading the flagellum (0.47 \u00b1 0.16 \u00b5m/s). 23% of the cells displayed saltatory gliding movement. (E) Uniflagellate cells glided \u223c20% faster than biflagellate cells. Inhibition of dynein-1b (dhc1b-3ts) resulted in a fivefold decrease in gliding speed, whereas inhibition of kinesin-2 (pf1 fla10-1ts) led to a twofold speed increase (mean \u00b1 SEM). In temperature-insensitive paralyzed (pf18) and WT cells, changes in gliding speed between permissive and restrictive temperatures were negligible. (F) A model for gliding motility. Retrograde IFT trains adhere to the glass surface through FMG1-B, and the surface-tethered dynein motors pull the cell body through microtubules toward the flagellar tip.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Multiple retrograde IFT trains pause in the leading flagellum prior to gliding motility.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The original kymograph of an IFT27-GFP cell during gliding motility. (B) Magnitude of the fast Fourier transform of the kymograph. (C) Mask with colors assigned to different slopes. (D) The pattern in Fourier space was color-coded using the mask. Green and red colors represent anterograde and retrograde IFT, blue represents paused IFT trains. Only the magnitude is shown. (E) Inverse Fourier transform of the colored Fourier pattern in (C) shows the kymograph with trajectories colored by slope.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) A kymograph of IFT trains in a uniflagellate gliding cell. (B) A schematic representing the timing and trajectories of paused IFT trains in the gliding cell shown in (A). Arrows show the time interval between the pausing of the retrograde IFT train and the start of gliding motility. (C) The histogram shows the time between the start of gliding motility and the pausing time of the last retrograde IFT train in the leading flagellum. The histogram was fitted to a single exponential decay (blue curve). Average lag time is 0.48 \u00b1 0.05 s (N = 36), which is significantly shorter than the average time between individual IFT pausing events (8 s).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A)\u2013(C) Multiple retrograde IFT trains pause prior to gliding motility.\n\nIn 24% of all cases (N = 50), a single paused train appeared sufficient to pull the entire cell (Figure 2A, Video 2). In other cases, multiple trains paused before the start of gliding motility (Figure 2B, Video 2). Pauses occurred in the leading flagellum, and cells moved in the opposite direction relative to the transport trajectory of the paused trains. In uniflagellate IFT27-GFP pf18 cells, we also always observed pausing of single or multiple IFT trains before the initiation of gliding motility (Figure 2\u2014figure supplement 4). Gliding motility either stopped when paused IFT trains resumed movement (Figure 2A), or continued until the cell bodies reached the paused trains (Figure 2B). We never observed the cell body gliding further than the position of the paused IFT train(s).\n\n![Video 2.](https://cdn.elifesciences.org/articles/00744/elife-00744-media2.avi.jpg)\n\n**Video 2.:** A, Gliding motility of an IFT20-GFP cell on a glass surface. A single IFT train tethered to the surface (arrow) immediately preceding the initiation of gliding motility. The size of the window is 24.1 \u00d7 24.9 \u00b5m. The data was collected at 5 frames/s. B, Gliding motility of an IFT27-GFP cell on a glass surface. Multiple IFT trains became surface-tethered (arrows), providing force for gliding motility. The size of the window is 24.5 \u00d7 24.9 \u00b5m. The data was collected at 5 frames/s.\n\nWe found compelling evidence that dynein-1b is the primary motor responsible for gliding motility. First, uniflagellate pf18 cells always glided with the flagellum leading the cell body at 1.49 \u00b1 0.10 \u00b5m/s (mean \u00b1 SEM) (Figure 2C\u2013E, Video 3) (Bloodgood, 2009), suggesting that gliding motility is driven by pulling forces generated through a minus end directed microtubule motor. In contrast to pf18 cells, uniflagellate dynein-1b ts cells (dhc1b-3ts) (Engel et al., 2012) were unable to display robust gliding at restrictive temperatures (Figure 2C, Video 3). We observed only short-range (<500 nm) gliding-like motion in 54% of these cells, compared to robust unidirectional gliding motility observed over 5 \u00b5m in pf18 cells. These short-range motions were bidirectional (Figure 2D) and significantly slower (forward: 0.35 \u00b1 0.09 \u00b5m/s, backward: 0.47 \u00b1 0.16 \u00b5m/s) than the gliding speed of pf18 cells (Figure 2E). Second, inactivation of dynein-1b in biflagellate dhc1b-3ts cells decreased the fraction of gliding cells from 100% to 52% and reduced the gliding speed from 0.86 \u00b1 0.08 \u00b5m/s to 0.18 \u00b1 0.03 \u00b5m/s. In contrast, inactivation of kinesin-2 in fla10ts cells resulted in a twofold increase in gliding speed (Figure 2E), indicating that kinesin plays an inhibitory role during dynein-1b driven gliding motility. These results agree with our observations that the pausing of anterograde trains does not initiate gliding motility.\n\n![Video 3.](https://cdn.elifesciences.org/articles/00744/elife-00744-media3.avi.jpg)\n\n**Video 3.:** Uniflagellate WT and dhc1b-3 Chlamydomonas cells glide with the flagellum in the lead. The size of the whole window is 47.0 \u00d7 11.9 \u00b5m. The data was collected at 10 frames/s under a bright-field microscope.\n\nTo further test the role of dynein-1b in gliding motility, we treated the cells with a small molecule inhibitor of dynein, ciliobrevin D (Firestone et al., 2012). We varied ciliobrevin D concentration between 0\u2013150 \u00b5M and monitored IFT in cells adhered both of their flagella to surface 2 min after drug treatment (Figure 3A, Figure 3\u2014figure supplement 1, Video 4). Both anterograde and retrograde IFT train frequencies dropped with increasing concentrations of ciliobrevin D (Figure 3B), and at >100 \u00b5M ciliobrevin D we observed accumulation of IFT trains at the flagellar tip (see example kymograph in Figure 3A). At 150 \u00b5M ciliobrevin D, retrograde IFT frequency was reduced by 92% compared to the 70% decrease observed after 6 hr of heat inactivation of dhc1b-3ts cells (Engel et al., 2012). The velocities of retrograde and anterograde trains also decreased by 60% and 36%, respectively (Figure 3C). Importantly, inhibition of dynein-1b resulted in a significant reduction in the speed (79%) and frequency (79%) of gliding motility (N = 50, Figure 3D). These results further support our conclusion that dynein-1b motors produce the force for gliding motility.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig3-v1.jpg)\n\n**Figure 3.:** (A) Kymographs of IFT20-GFP cells treated with varying concentrations of ciliobrevin D. Images were acquired 5 min after addition of ciliobrevin D. (B and C) Frequency and speed of retrograde and anterograde IFT trains at different ciliobrevin D concentrations. The frequency of retrograde IFT was reduced by 92% at 150 \u00b5M ciliobrevin D. (D) The speed and fraction of gliding cells decreased by 79% at 150 \u00b5M ciliobrevin D.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig3-figsupp1-v1.jpg)\n\n![Video 4.](https://cdn.elifesciences.org/articles/00744/elife-00744-media4.avi.jpg)\n\n**Video 4.:** IFT27-GFP pf18 cells were immobilized on a glass coverslip. 0\u2013150 \u00b5M ciliobrevin D was added to the cell culture and the movies were recorded at 10 frames/s within 2\u201310 min of drug treatment.\n\nBased on these results, we propose a model to describe the functions of IFT motors, IFT trains and FMG1-B transport in gliding motility (Figure 2F). Surface adhesion of the FMG1-B cargo through its large extracellular carbohydrate domain (Bloodgood, 2009) stops the retrograde IFT train. Dynein motors previously engaged in transporting the paused IFT train exert force towards the microtubule minus end, causing the whole cell to move toward the plus-end flagellar tip. Thus, gliding motility works similarly to microtubule gliding assays, in which surface-immobilized dyneins glide microtubules with their plus-end tips in the lead.\n\nTo investigate how cells reverse gliding direction, we developed a kymography method for monitoring IFT trains as the cells reorient their flagella during gliding (Figure 4A\u2013B, Video 5). During 60% of reversals (N = 40), the cell lifted one of its flagella and the paused IFT trains on the surface-adhered flagellum drove the motility (Bloodgood, 2009). In other cases, single or multiple paused IFT trains accumulated in one flagellum, and the cell body glided toward this cluster until the paused trains either detached from the glass surface or reached the flagellar base. We also observed cases with paused IFT trains in both flagella where the cell remained immotile, likely due to the balance of forces between bound dynein-1b motors (Figure 4C\u2013D). There were no indications of coordination of the pausing events between the two flagella. Different modes of reversals in gliding motility may allow cells to search through the environment by a random walk when they adhere both of their flagella, and to move in unidirectional manner by lifting one of the flagella.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig4-v1.jpg)\n\n**Figure 4.:** (A) The average intensity of all the frames in the first 60 s of Video 5 of an IFT27-GFP pf18 cell, showing the path of the gliding flagella. (B) To monitor IFT trains while the cells alter their flagellar orientation in gliding motility, different curves were plotted before and after cells reoriented their flagella (red dotted lines). Each curve shares at least one common point with previous and subsequent curves. Intermediary frames were analyzed by interpolation of the assigned curves, and the intensity along the line in each frame was stacked according to the fixed point (yellow dot). (C) A kymograph generated by this method reveals multiple ways that the cell can control gliding direction. (i) When the cell lifts one flagellum (red arrow), the cell body moves toward the surface-attached flagellum. When both flagella are attached to the surface, gliding direction is determined by the balance of forces exerted by surface-tethered IFT trains. (ii) The cell glides toward the flagellum with more paused IFT particles (yellow arrow). (iii) When there are equal numbers of surface-tethered IFT particles in both flagella (cyan arrow), opposite forces cancel out and the cell remains stationary. (D) A schematic model representing the three different modes (i, ii, iii) of gliding direction reversal observed in (C).\n\n![Video 5.](https://cdn.elifesciences.org/articles/00744/elife-00744-media5.avi.jpg)\n\n**Video 5.:** Gliding motility of an IFT27-GFP cell on a glass surface. The cell changes the direction and speed of gliding motility either by raising one of its flagella or by the pausing of one or more IFT trains relative to the glass surface. The data was collected at 10 frames/s. The size of the window is 33.9 \u00d7 23.7 \u00b5m.\n\nGliding motility in C. reinhardtii is controlled by a Ca2+-calmodulin regulated kinase and requires micromolar levels of Ca2+ in the media (Bloodgood and Spano, 2002). We tested whether the pausing of IFT trains depends on Ca2+ (Figure 5A\u2013B) by analyzing the kymographs of IFT at different Ca2+ concentrations. To quantify pausing in flagella, we used Fourier space direction analysis (FSDA, see Figure 2\u2014figure supplement 2) to separate the traces of paused IFT trains and moving IFT trains into two kymographs. Kymographs of paused IFT trains in Figure 5A,B show that pausing along the length of the flagellum was significantly reduced in Ca2+-deprived cells (see additional examples in Figure 5\u2014figure supplement 1). After Ca2+ depletion, IFT trains rarely paused in the middle regions of flagella and accumulated at the base (Figure 5B, middle). Figure 5C plots the total fluorescence intensity of paused IFT trains (Ncells = 30 for each case) along the lengths of flagella at different Ca2+ levels. The frequency of pausing in Ca2+-deprived cells was significantly lower than IFT pausing in cells at a normal Ca2+ concentration. In regular TAP media (free [Ca2+] = 0.34 mM), 95% of all surface-adhered cells displayed gliding motility and individual pausing events were observed every \u223c8 s per flagellum, on average. In contrast, both the fraction of gliding cells and IFT pausing frequency were reduced by \u223c10-fold at <1 \u00b5M Ca2+ (Figure 5D). Next, we compared the IFT pausing frequencies in gliding and non-gliding cells at different Ca2+ levels. The pausing frequency in non-gliding cells was low and independent of Ca2+ concentration. In contrast, the pausing frequency in gliding cells was high at normal Ca2+ levels and gradually declined to match that of non-gliding cells as the Ca2+ concentration decreased below 1 nM (Figure 5E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig5-v1.jpg)\n\n**Figure 5.:** (A) (Left) Kymograph of an IFT27-GFP cell adhering both of its flagella in the presence of 0.34 mM free Ca2+. Pausing (middle) and moving (right) IFT trains were split into separate kymographs by FSDA analysis. IFT trains pause frequently along the length of the flagellum and drive gliding motility. (B) When cells are deprived of free Ca2+, immotile IFT trains accumulate near the cell body and do not display frequent pauses between the flagellar base and the tip. (C) The average fluorescence intensity of \u2018pausing IFT trains\u2019 in kymographs relative to the length of the flagellum (N = 6 cells for each condition). Cells in 0.34 mM Ca2+ show robust pausing uniformly along the length of the flagellum. In contrast, Ca2+-deprived cells show significantly reduced pausing events. Background fluorescence was excluded from the analysis. (D) IFT pausing frequency and the fraction of gliding cells as a function of free Ca2+ concentration. The free Ca2+ concentration was controlled through Ca2+-EGTA buffering. (E) IFT pausing frequency of gliding and non-gliding cells as a function of free Ca2+. At 0.34 mM Ca2+, the IFT pausing frequency in gliding cells is very high compared to non-gliding cells. In Ca2+-deprived cells, the pausing frequency in gliding cells is reduced to the residual level of pausing events observed in non-gliding cells.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Two additional examples for kymographs of IFT27-GFP cells adhering both flagella to the surface in the presence of 0.34 mM free Ca2+. Pausing (middle) and moving (right) IFT trains were split to separate kymographs by FSDA analysis. IFT trains pause frequently along the length of flagellum and drive gliding motility. (B) Two additional examples for kymographs of IFT27-GFP cells adhering both flagella to the surface when cells are deprived of free Ca2+. IFT trains accumulate near the cell body and do not display frequent pauses between the flagellar base and the tip.\n\nIn Ca2+-deprived cells, the beads freely diffused on the flagellar membrane but did not move processively by IFT trains (not shown). Thus, we propose that Ca2+ is required for attachment of FMG1-B to IFT trains, not for the activation of a motor protein that provides force for gliding, as previously suggested (Bloodgood, 2009). As the flagellar membrane is enriched with a PKD2-like Ca2+ channel (Pazour et al., 2005; Huang et al., 2007), Ca2+ signaling at flagellar adhesion sites may play a role in controlling the directionality and timing of gliding movement.\n\nTo measure the forces exerted by motors bound to individual IFT trains, we tracked the movement of FMG1-B-antibody coated bead motility using an optical trap. To rule out the possibility that loads exerted by the trap might disrupt the linkage between IFT and FMG1-B, we performed TIRF imaging of IFT27-GFP and optical trapping of beads simultaneously (Figure 6A). We observed that IFT trains remained colocalized with trapped beads when subjected to external forces (Figure 6B; see Figure 6\u2014figure supplement 1 for additional examples). The average offset between the positions of the trapped beads and colocalized IFT trains was 280 \u00b1 10 nm (N = 11). This is due to the fact that the beads (920 nm diameter) and IFT trains (200\u20131000 nm in length) (Pigino et al., 2009) are large objects relative to the resolution of conventional fluorescence imaging (approximately 200\u2013250 nm) and the forces that stretch the bead-FMG1-B-IFT linkage displace the center of the bead from the IFT train (see the schematics in Figure 6\u2014figure supplement 2). The trap measurements correspond to forces generated by IFT motors and provide direct evidence that IFT transports FMG1-B. Since beads are outside the cell, but are physically linked to the action of IFT trains, the assay combines the advantages of precise in vitro trapping with the ability to manipulate IFT motility under load.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic representation of combined optical trapping of bead motility and fluorescent tracking of IFT. (B) Simultaneous tracking of IFT27-GFP and bead motility. At t = 3 s, the microscope stage was moved to bring the flagellum underneath the trapped bead. An IFT train stalls at the trap position (t = 5\u20138 s) and stays adhered to the bead until the bead escapes the trap (t = 10 s). The CCD camera is toggled between fluorescence and bright field imaging to monitor IFT trains as well as the bead when it is out of the detection range. (C) Displacement records of bead motility show successive runs including stalling (inset) and releasing events. (D) The peak force distributions and statistics (mean \u00b1 SEM) of stalling and releasing events in pf18 cells. IFT particles exert 25\u201330 pN of peak forces with slightly less force produced in the anterograde direction.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) A single anterograde IFT train stalls directly underneath the trapped bead for 20 s. (B and C) The bead shows multiple runs and escapes the trap. The optical trapping beam was on throughout the duration of the kymograph.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Schematic for an in vitro fixed-trap assay with a single motor bound to a microtubule. (B) Schematic for the optical trap assay of Chlamydomonas bead motility (roughly to scale). In both (A and B), there is a large offset between the bead center and the motor/cargo. The size of the offset depends on tether length, the bead diameter and the length of IFT train. (C) Histogram for the separation between the bead center and IFT position in the combined optical trap and fluorescence experiment. We observe up to 500 nm offset between an IFT train (\u223c400 nm in length) and the polystyrene bead (900 nm in diameter). The average separation between the bead and IFT is 280 nm.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (Top) Displacement records of bead motility in fla10ts cells show successive runs, stalling and releasing events along the anterograde direction at permissive temperatures. (Bottom) The bead motility in fla10ts cells displays runs, stalling and releasing events mostly along the retrograde direction at restrictive temperatures.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** (A) The fraction of beads moving along the flagellar surface as a function of the antibody concentration on the bead surface. (B) The fraction of stall, release and escape events along the anterograde and retrograde directions in optical trapping assays as a function of antibody concentration used to coat the bead surface. (C) Histograms of peak forces measured in the optical trap assay along the anterograde and retrograde directions in WT cells. 1 \u00b5m diameter polystyrene beads were coated with 0.05, 0.5 and 10 mg/ml FMG1-B antibody.\n\nIn a fixed trap assay, \u223c50% of processive bead movements terminated with a stall before returning to the trap center (Figure 6C, Figure 6\u2014figure supplement 3). We did not observe a significant difference between the force values of stall and release events. This suggests that motors attached to an IFT train may not be able to reach their maximum stall force, defined as the stall force of a single motor multiplied by the number of bound motors (Shubeita et al., 2008). Histograms of peak forces (Figure 6D) show that anterograde and retrograde IFT trains moved against 21.4 \u00b1 0.7 pN and 25.2 \u00b1 1.3 pN (SEM), respectively. Forces exerted on IFT trains well exceed the force-generation capability of a single motor. Previous studies demonstrated that multiple motors produce larger forces, move with higher velocities under load and carry cargos further than a single kinesin or dynein motor (Mallik et al., 2005; Vershinin et al., 2007). It remains controversial whether motor stall forces are additive at low motor copy numbers (Vershinin et al., 2007) or whether multiple motors tend to transport their cargo using only one load-bearing motor at a time (Jamison et al., 2010). Therefore, we believe that peak forces in our experiment represent a lower boundary for estimates of motor copy number. Assuming that IFT motors produce 6\u20137 pN forces (Gennerich et al., 2007; Brunnbauer et al., 2010), we estimate that at least four motors transport IFT trains at a time, in agreement with previously reported values (Engel et al., 2009b). It is possible that multiple motor engagements enhance the run length of individual IFT trains, allowing them to traverse the length of a flagellum. In addition, the fast transport of IFT trains in a viscous cellular environment and IFT\u2019s role in FSM may require forces larger than single motor stall forces.\n\nThe measured forces in both directions only marginally changed (<20%) under different bead antibody-coating conditions (Figure 6\u2014figure supplement 4). This result argues against the possibility that antibody-coating of the beads leads to the crosslinking of more than one IFT trains, which would be expected to multiply the average peak force. 20% of retrograde runs escaped the trap by producing more than 80 pN of force, presumably via clustering of FMG1-B (Bloodgood, 2009), while <1% escape events were observed in the anterograde direction.\n\nWe next investigated why the speed of gliding motility (1.49 \u00b1 0.10 \u00b5m/s, SEM) is significantly slower than that of retrograde IFT (2.96 \u00b1 0.14 \u00b5m/s), even though both processes are powered by dynein-1b motors actively transporting IFT trains. IFT trains that carry 1-\u03bcm beads moved \u223c30% slower than IFT trains that were not associated with the beads (two-tailed Student\u2019s t-test, p = 2.1 \u00d7 10\u22129 (anterograde) and 1.8 \u00d7 10\u221211 (retrograde), Figure 7A). We reasoned that the viscous drag of the membrane may slow down IFT trains transporting FMG1-B clusters and led to the observed differences in speed between IFT and FSM. To estimate the drag constant of the bead-IFT complex, we analyzed individual stalling events in the optical trap assay (Figure 7B) and measured the recoil time of the bead after a stall (Figure 7C). The average drag constant of the bead-IFT complex was found to be 8.0 \u00b1 2.8 pN s/\u03bcm (SEM, N = 30).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig7-v1.jpg)\n\n**Figure 7.:** (A) The average speed of FMG1-B antibody-coated beads and IFT trains. Coating of the coverslip surface with 0.7 mg/ml polylysine led to a \u223c20% reduction in the speed of IFT motility (two tailed t-test, p=5.2 \u00d7 10\u221214 [anterograde] and 5.6 \u00d7 10\u22126 [retrograde]). IFT trains that carry 0.2-\u03bcm beads move at 10\u201330% slower speeds than IFT trains that are not associated with the beads (p=1.1 \u00d7 10\u22122 [anterograde] and 7.2 \u00d7 10\u22125 [retrograde]). IFT trains that carry 0.2-\u03bcm beads move at similar speeds to beads (p=0.4 [anterograde] and 0.6 [retrograde]) (error bars represent SEM). (B) A typical example for stalling of bead motility by the optical trap. The bead recovers slowly to the trap center after a stall (rectangular box). (C) The recoiling of a trapped bead to the trap center after a stall was fitted to single exponential decay. The mean drag constant of the bead-FMG1-B-IFT complex is 8.0 \u00b1 0.28 pN s/\u00b5m. (D) The IFT-bead complex experiences large drag forces as the IFT train moves several micrometers per second inside the flagellum (not to scale).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) A polystyrene bead was trapped by the laser beam and brought on top of a surface-immobilized flagellum. After the bead was bound to FMG-1B, the trap was oscillated 500 nm back and forth along the flagellar surface in a square wave pattern. Trap stiffness was set to 0.07 pN/nm. Due to the viscous drag of the membrane, the bead displays a relaxation curve when it follows the trap. (B) The recoiling of a trapped bead to the trap center after a stall was fitted to single exponential decay. The mean drag constant of the bead-FMG1-B-IFT complex is 8.4 \u00b1 4.2 pN.s/\u00b5m.\n\nWe hypothesized that the large drag constants we measured were due to the interaction between the bead and the membrane. Our results rule out the possibility that microtubule motors step backwards during the recoiling of the bead, as the average bead velocity was 20 \u00b5m/s (an order of magnitude faster than that of dynein and kinesin) and there were no detectable backward steps. To rule out other possible interactions between IFT trains and axonemes, we oscillated individual beads on a flagellar membrane surface in a square wave pattern and measured the recoiling time when the beads are decoupled from IFT (Figure 7\u2014figure supplement 1). The average viscous drag constant was 8.4 \u00b1 4.2 pN.s/\u00b5m, which is similar to the drag that beads experience when they interact with IFT trains. Anterograde and retrograde trains moving at 2\u20133 \u00b5m/s would experience 16\u201324 pN resistive forces, comparable to the total motor force exerted on a single IFT train (Figure 7D). Therefore, IFT is subjected to a high drag force when it carries a large bead along the flagellar surface, which leads to the reduction of transport velocity.\n\nWe next investigated how kinesin-2 activity reduces the speed of gliding motility (Figure 2E). This could theoretically be explained by a tug-of-war between active kinesin and dynein motors that are both present on the same IFT train. Alternatively, kinesin-2 and dynein-1b motors may be exclusively active on anterograde and retrograde cargos, respectively, and pausing of anterograde trains could produce forces that oppose the gliding forces of paused retrograde trains. To distinguish between tug-of-war and coordinated transport mechanisms, we examined how inhibition of one class of motors affected the forces exerted on IFT trains traveling in the opposite direction (Laib et al., 2009). At permissive temperatures, the peak forces of IFT in fla10-1ts and dhc1b-3ts were in close agreement with wild-type (WT) cells. Heat-inactivation of kinesin-2 reduced the frequency of anterograde runs by 66%, but did not alter the peak forces on retrograde runs (Laib et al., 2009) (Figure 8A). Similarly, heat inactivation of dynein-1b significantly reduced the ratio of retrograde to anterograde transport events (0.15), but had minimal effect on the peak forces of anterograde runs (Figure 8B). These results exclude a tug-of-war mechanism in IFT, which would lead to an increase of force from motors walking in one direction upon inactivation of the motors walking in the opposite direction. Instead, only one type of a motor remains active on IFT trains at a time, which is consistent with the result that retrograde speed of fla10-1ts does not change after kinesin-2 is inactivated. We propose that kinesin-2 on paused anterograde trains slows down gliding motility by exerting forces in the opposite direction to that of dynein-1b on paused retrograde trains.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00744/elife-00744-fig8-v1.jpg)\n\n**Figure 8.:** (A) Peak force histograms for IFT movement in pf1 fla10ts cells at 22\u00b0C and 34\u00b0C. Stalling events are less common than the release of the bead. The frequency of anterograde IFT trains is reduced after switching the temperature to 34\u00b0C. Forces along the retrograde direction remain unaltered after the inhibition of kinesin-2 (mean \u00b1 SEM). (B) Peak force histograms for IFT in dhc1b-3ts. The frequency and force production of retrograde IFT trains are reduced after switching the temperature to 34\u00b0C. Forces along the anterograde direction remain unaltered after the inhibition of dynein-1b (mean \u00b1 SEM).\n\n## Discussion\n\nWe present direct evidence for the mechanism of IFT-mediated cell-surface interactions using Chlamydomonas gliding motility and FMG1-B transport as a model system. In Chlamydomonas, IFT trains carry FMG1-B as a cargo. The interaction between IFT trains and FMG1-B clusters is transient, as FMG1-B boards moving trains but usually unloads and diffuses away before the trains arrive at the flagellar base or tip. During gliding motility, IFT trains pause due to attachment of the FMG1-B cargo to the surface, and the dynein-1b motors engaged to the paused IFT trains generate pulling forces along the microtubule long axis. While the majority of organismal motilities rely on the actin cytoskeleton or axonemal beating, gliding motility in C. reinhardtii is distinct in that it is powered by intracellular transport machinery along microtubules. By providing surface adhesion points, FMG1-B performs an analogous function to integrins in mammalian cell motility (Bloodgood, 2009; Lecuit et al., 2011).\n\nOur results also demonstrate how different types of flagellar motility in Chlamydomonas have distinct characteristics despite being driven by the same forces. First, we showed that viscous drag of the membrane slows down the motility of IFT trains that carry FMG1-B-conjugated beads, causing gliding motility and FMG1-B transport to proceed slower than IFT. Second, previous work showed that IFT is unaffected by changes in environmental Ca2+ concentration (Bloodgood and Salomonsky, 1990; Kozminski et al., 1993), whereas gliding motility is Ca2+-dependent (Bloodgood and Salomonsky, 1990; Kozminski et al., 1993). This raised the possibility that Ca2+ may be required to activate a specific motor protein that provides force for gliding (Bloodgood, 2009). Our results are inconsistent with this hypothesis. We found that the presence of free Ca2+ leads to frequent pauses in IFT motility at flagellar adhesion sites. In the absence of Ca2+, IFT moves unidirectionally without interruptions, suggesting that attachment of FMG1-B to IFT trains is regulated by a Ca2+-dependent signaling pathway. The signaling pathway responsible for linking FMG1-B to IFT remains unclear. There is evidence that surface adhesion or crosslinking of FMG1-B into large clusters induces dephosphorylation of a transmembrane protein that co-immunoprecipitates with FMG1-B (Bloodgood and Salomonsky, 1994, 1998). The complex may be regulated by a calcium-calmodulin dependent gliding associated kinase (GAK), which is required for the gliding motility (Bloodgood and Spano, 2002). Further investigation is required to identify the rest of the signaling pathway regulating IFT-flagellar surface interactions.\n\nOur force measurements show a number of similarities and differences with earlier published work. In a previous trapping assay, beads nonspecifically adsorbed to the flagellar membrane were found to exert 60 pN average peak forces (Laib et al., 2009). In contrast, our measured peaked forces are significantly lower (20\u201330 pN) than these values. Laib et al. could not determine whether their force measurements reflect the forces produced by motors attached to IFT trains or by motors that are directly bound to FMG1-B clusters. Our experiments directly link optical trap recordings of bead motility to forces generated by flagellar motors attached to IFT trains (Figure 1), enabling us to propose physical models for the coordination of IFT and its role in FSM. In agreement with Laib et al., we observe reciprocal coordination of motors during anterograde transport. Additionally, our measurements of dynein-1b inactivation verify that motors do not engage in a tug-of-war while travelling in the retrograde direction.\n\nThe mechanism we described for IFT pausing and force generation has broad implications for the traffic of ciliary sensory proteins as well as cell signaling at ciliary membrane adhesion points (Wang et al., 2006). For example, IFT is required for signal transduction during the mating of ciliated organisms. The initial interaction between gametes of two mating types in Chlamydomonas can occur at any point along their flagellar membranes, but the tips of their flagella must be aligned and locked before activating gametic fusion (Homan et al., 1987). Since IFT trains transport sexual agglutinins within the flagellar membrane of gametic cells (Ferris et al., 2005), adhesion between sexual agglutinins of opposite cell types may stall retrograde IFT movement. As a result, forces produced by IFT trains would move the flagellar contact points until a balance of forces is achieved when the flagella are properly aligned with respect to each other. Indeed, microspheres have been observed to move and accumulate at the flagellar tips during mating (Hoffman and Goodenough, 1980). We propose that the absence of retrograde bead movement may be related to the formation of adhesion contacts between the flagella and pausing of retrograde IFT trains.\n\nCilia in the retina, liver, and kidney cells were recently observed to make direct physical contacts, which may serve as \u2018bridges\u2019 for signaling networks between many cells (Ott et al., 2012). These contacts are tight adhesions between the ciliary membranes, mediated by N-linked glycoproteins. It is possible that IFT exerts force on cell-cell adhesion sites and determines the positioning of these adhesion sites by moving them along the length of the cilium. Ca2+ signaling at flagellar adhesion sites may play a major role in regulating attachment to IFT trains and controlling the direction of force generation. We believe that the assay we developed will be a starting point for deciphering the role of IFT in the signaling, mating and development of ciliated cells.\n\n## Materials and methods\n\n### Strains and culture conditions\n\nVegetative C. reinhardtii cells were grown in Tris-acetate-phosphate (TAP) media in an illuminated plant growth chamber at 22\u00b0C. WT mt+ (cc125), pf18 mt\u2212 (cc1297), and pf18 mt+ (cc1036) strains were obtained from the Chlamydomonas Resource Center. The IFT20-GFP \u0394IFT20 strain was provided by K Lechtreck and G Witman. The IFT27-GFP mt+ strain and pf1 fla10-1ts were provided by J Rosenbaum. IFT27-GFP pf18 strain was generated through crosses (Engel et al., 2009b). pf1 fla10-1ts cells were incubated at 37\u00b0C for 15 min for heat inactivation of kinesin-2, and the movies were recorded within 30 min at 37\u00b0C, before the complete impairment of IFT and the start of flagellar resorption (Kozminski et al., 1993). In the dhc1b-3ts mt- mutant strain (cc4422) (Engel et al., 2012), dynein-1b is inhibited after 6 hr incubation at 37\u00b0C. Paralyzed flagella (pf) strains and paralyzing compounds (Engel et al., 2011) were utilized to impair swimming motility. Ciliobrevin D was dissolved in DMSO and then added to the pf18 cell culture to inhibit dynein activity. IFT and gliding motility were recorded simultaneously 2 min after addition of 0\u2013150 \u00b5M ciliobrevin D to the flow chamber.\n\n### Single-molecule fluorescence imaging\n\nThe IFT and FSM imaging assays were performed with an objective-type TIRF microscope (DeWitt et al., 2012). The GFP signal was recorded by an electron multiplied charge-coupled device (EM-CCD) camera, with an effective pixel size of 106 nm. IFT27-GFP pf18 and IFT20-GFP \u0394IFT20 strains were used for tracking individual IFT trains (Engel et al., 2009a). The sample chamber was pre-treated with 0.7 mg/ml poly-L-lysine to adhere flagella on a glass surface. 15 \u00b5l cells in TAP media were applied to cover glass and inverted onto slides. Gliding motility assays were performed without polylysine treatment and cells were imaged under bright-field illumination. ts mutants were assayed at permissive (22\u00b0C) and restrictive (37\u00b0C) conditions by controlling the temperature with an objective heater (Bioptechs). Because paralyzed cells glide 30\u201340% faster than non-paralyzed cells (Bloodgood, 1995), gliding speeds of ts mutants of kinesin-2 (pf1 fla10-1ts) and dynein-1b (dhc1b-3ts) were compared to those of both pf18 and WT cells at permissive (22\u00b0C) and restrictive (37\u00b0C) temperatures.\n\n### Bead-motility imaging\n\nTo visualize bead movement along the flagellar surface, 200 nm carboxyl-modified nile-red fluorescent beads (Invitrogen) were coated with anti-FMG1-B antibody (Bloodgood et al., 1986) by EDC-NHS cross linking. 1 ml pf18 cell culture was spun down at 400g for 1 min and resuspended in 100 \u00b5l fivefold diluted TAP media. 1 \u00b5l bead stock solution (25 mg/ml) was then added to 20 \u00b5l of resuspended cell culture and the mixture was incubated in ice for 10 min, in order to slow down IFT movement for bead attachment. 1 \u00b5l of 20 mM CaCl2 was then added, the cell culture was incubated at room temperature for 10 min for bead movement to recover. To immobilize cells on a glass surface, the cover glasses (18 \u00d7 18 mm) were pre-treated with 0.7 mg/ml poly-L-lysine (MW = 150\u2013300 kDa; Sigma) for 5 min. The nile-red bead fluorescence was recorded with Andor iXon 128 \u00d7 128 EM-CCD at 400 \u00b5s per frame. To prevent deflagellation of cells under intense (100 mW) laser illumination, only the flagellar regions of immobilized cells were excited. Flagellar membrane adsorption of carboxylated 100 nm-beads was significantly reduced without antibody crosslinking (\u223c50-fold), and only two bead motility events were observed in 500 cells.\n\n### Multicolor-tracking assays\n\nTo simultaneously monitor the movement of IFT trains and FMG1-B proteins, IFT27-GFP pf18 cells were incubated with anti-FMG1-B-coated dark-red beads. The GFP and dark-red bead fluorescence were simultaneously recorded at 200 ms per frame. The image was split into two fluorescent channels, which were registered to a sub-pixel accuracy (DeWitt et al., 2012) with respect to each other, prior to live-cell imaging. The crosstalk between the two fluorescent channels was below 0.1%.\n\nVarious concentrations of EGTA were added to IFT27-GFP pf18 cells grown in TAP media (contains 0.34 mM of Ca2+) and the movies were recorded within 15 min after EGTA addition. The concentration of free Ca2+ in the assay buffer as a function of added EGTA was calculated from the Chelator program (http://maxchelator.stanford.edu). Only the cells with fully grown flagella (8\u201312 \u00b5m in length) were analyzed. Immotile IFT trains from the beginning to the end of the image acquisition were excluded from data analysis. The pausing frequency was calculated from dividing the total number of pausing events by the image acquisition time.\n\n### Optical trapping assays\n\nForce measurements on bead motility were carried out with a custom-built optical trap microscope (Gennerich et al., 2007), with single molecule fluorescence detection ability. A 1064 nm laser (Coherent, Compass) was mounted on an inverted microscope equipped with a 100\u00d7 1.49 NA oil immersion objective (Nikon). The trapping beam was steered by a computer-controlled acousto-optic deflector (AA Electronics) at 20 kHz. Trap stiffness was calibrated for each bead from the amplitude of its thermal diffusion. The beads were trapped by a 400 mW 1064 nm laser beam to achieve an average spring constant of \u223c0.4 pN/nm. The bead displacement was detected by a quadrant photodiode (QPD) and recorded at 2 kHz. Experiments were carried out with the trap position fixed. Stall forces were defined as the magnitude of the opposing force that reduces the mean velocity of the cargo to 0 for more than 100 ms. Returning events with stalling periods shorter than 100 ms at peak forces were scored as releases. Movements of beads beyond the linear range of the detector (\u00b1200 nm, \u00b180 pN) were scored as escapes. The trapping assays at restrictive conditions were performed at 34\u00b0C. Optical trap microscope was equipped with a 488 nm laser beam with near-TIRF excitation to track individual trains in IFT27-GFP cells. Bright-field illumination was turned on for \u223c1 s at every 1\u20132 min to monitor the bead position along the flagella and to synchronize the PSD signal and CCD image.\n\nCarboxylated latex beads (0.92 \u00b5m diameter, Invitrogen) were coated with 0.05 mg/ml anti-carbohydrate mouse monoclonal antibody to FMG1-B for flagellar membrane attachment. Cover glasses were pre-treated with 0.7 mg/ml polylysine for 5 min. 10 \u00b5l pf18 cell culture was flowed into a flow chamber and incubated for 30 s to allow cells to attach to the cover glass. 10 \u00b5l solution including 0.2\u00d7 TAP, 1 mM CaCl2, 0.3 mg/ml BSA, and 0.1 g/l beads was then flowed into the chamber to replace the buffer. Trapped beads were positioned over surface immobilized flagella (Guilford and Bloodgood, 2013). The fraction of moving beads was measured by resting beads on the flagellar surface for 1 min.\n\nViscous drag constant between the bead and the flagellar membrane was measured by oscillating a flagellar surface attached bead \u00b1500 nm along the length of flagellum in a square wave pattern at 0.2 Hz. The connection between the bead and FMG-1B was verified by moving the trap away from the flagellum. If the bead displayed active movement powered by IFT trains during bead oscillation measurements, the bead was lifted for 0.5\u20131.0 \u03bcm to dissociate it away from IFT and then brought back to flagella.\n\n### Data analysis\n\nSpeeds were measured from linear fits to the displacement traces observed in kymographs. In order to distinguish between IFT trains moving in anterograde and retrograde directions and IFT trains pausing over a period of time, we assigned different colors to individual IFT trains as a function of their velocity by Fourier space directional analysis (Figure 2\u2014figure supplement 2). The image was then transformed back into real space to recover the kymographs. To perform IFT kymography analysis during gliding motility, we separately determined the position of IFT trains relative to the cell body, and the position of the cell body relative to the glass surface (Figure 4). Correlation between the movements of beads and IFT trains was demonstrated by rejecting the null hypothesis (IFT and bead movement was uncorrelated) using Kolmogorov-Smirnov statistics.\n",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "9b7f6d2e-8365-4ebe-b253-01d3977a69f1",
+      "submission_id": "d3867bb3-7a7c-4f77-8195-f82096a73342",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Suzanne Pfeffer, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00744.028](https://doi.org/10.7554/eLife.00744.028)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cIntraflagellar Transport Drives Flagellar Surface Motility\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission want to reveal their identity: Suzanne Pfeffer (Reviewing editor), and William Hancock and Robert Bloodgood (peer reviewers).\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission. All the comments can likely be addressed by clarification rather than any further experimental work.\n\n1) Please clarify the viscosity measurement. This measurement is important because it implies that there are 16\u201324 pN viscous drag loads on the train-glycoprotein complexes, which is a significant insight. The observation is that when trapped beads attached to moving trains stall and then release, the bead is pulled back to the center of the trap relatively slowly (if it was simply a bead in solution, the bead drag forces are such that it would return within 1ms presumably). From the exponential fit and known trap stiffness they calculate the drag coefficient. One question is, what is the mode of failure? Is it motors detaching from the microtubules or could it be glycoprotein detaching from the train? (It seems that the simultaneous imaging says that the fluorescent train comes back with the bead, but we were not able to find this.) If the train is moving back, then the assumption is that the motors don't interact with the filament at all, but dynein has been shown to backstep and it's hard to rule out other motor-microtubule interactions, so the observed viscosity may not be just from the membrane. A possible experiment would be to step or oscillate a bead bound to transmembrane glycoprotein (but not train) and pull out viscosity that way.\n\n2) The diagram of the cell body in Figure 3 was really helpful for orienting the transport directions. Can such a diagram be added to the other figures as well to orient the reader?\n\n3) It is quite difficult to see the pausing in Figure 2A/B. In the figure supplement there are some clearer examples, but the yellow highlighting in 2a makes it quite difficult to make out the pauses. The pausing is abundantly clear and quite convincing in Video 2. If the trains of interest were tracked and their position highlighted in a side-by-side Figure in 2a or possibly overlaid, that might help the reader see the paused trains. Figure 2C is difficult to understand. The odd coloring of the background is distracting, the red and blue arrows in the right panel are too small to see, and it's not described well. Perhaps thresholding to clean it up would help.\n\n4) For Figure 2\u2013figure supplement 2B, specify this is magnitude of FFT (if this is correct). Figure 2\u2013figure supplement 5 was very informative. Can it be moved to the main text. Also, the i) and ii) notations on the kymograph aren't referenced in the legend or the adjacent cartoon, where they apply.\n\n5) \u201cThe data indicate that multiple motors attached to an IFT train may not be able to reach their maximum stall force\u201d: this statement is not well supported by the data.\n\n6) Figure 5B is confusing. The bead seems to move anterograde and then retrograde and then escape, but just before escape it seems to be settling to its original position. Is the position actually the QPD signal and not the real position in those cases around +/- 200 nm because that is the extent of the linear range of the QPD? Please clarify.\n\nIt is interesting that for wt the gliding speed is independent of temperature (22 vs 37) \u2013 shouldn\u2019t motor speed vary with temperature?\n\n7) Video 1: why does the level of red fluorescence appear to vary so much from one microsphere to another in the field of view?\n\n8) The caption to Figure 5 gives the incorrect impression that the typical method of reversal of the direction of gliding motility of a Chlamydomonas involves the lifting of one flagellum off the substrate. While this can be sometimes observed, the vast majority of cases of reversals of direction are accomplished while both flagellar remain rigid and in contact with the substrate (albeit to different degrees).\n",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b8f2871f-b1b4-4c03-980f-e378b61524c4",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C1",
+      "claim": "The assembly and maintenance of all cilia and flagella require intraflagellar transport (IFT) along the axoneme.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembly and maintenance of all cilia and flagella require intraflagellar transport (IFT) along the axoneme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by the manuscript's introduction and cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "b3475af4-1a3f-4dac-b398-0b13e6cb6e5c",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C2",
+      "claim": "IFT trains are coupled to flagellar membrane glycoproteins (FMGs) in a Ca2+-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that IFT trains are coupled to flagellar membrane glycoproteins (FMGs) in a Ca2+-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that IFT pausing and FMG transport depend on Ca2+ concentration (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "067d7971-1885-4fa0-b601-ee0f9e6cecc4",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C3",
+      "claim": "IFT trains transiently pause through surface adhesion of their FMG cargos.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT trains transiently pause through surface adhesion of their FMG cargos, and dynein-1b motors pull the cell towards the distal tip of the axoneme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by direct observation of IFT train pausing during gliding motility (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "5a75e6df-126f-4e37-bc8a-15ee9b1d8147",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C4",
+      "claim": "Dynein-1b motors pull the cell towards the distal tip of the axoneme during gliding motility.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT trains transiently pause through surface adhesion of their FMG cargos, and dynein-1b motors pull the cell towards the distal tip of the axoneme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments showing that uniflagellate cells glide with the flagellum in the lead and that dynein-1b inhibition reduces gliding (Figure 2C-E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "0eb51b55-6fa7-493e-93e1-fc20af4e237f",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C5",
+      "claim": "Each IFT train is transported by at least four motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Each train is transported by at least four motors, with only one type of motor active at a time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from optical trap force measurements showing 20-30 pN forces, divided by single motor stall forces of 6-7 pN.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "2176295d-3274-4bc9-8bb6-153ef177fb73",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C6",
+      "claim": "Only one type of motor is active at a time on IFT trains.",
+      "claim_type": "EXPLICIT",
+      "source": "Each train is transported by at least four motors, with only one type of motor active at a time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments showing that inactivation of one motor type does not increase forces in the opposite direction (Figure 8).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "58edb48c-a2b1-47e8-8d43-389037ebaaed",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C7",
+      "claim": "IFT is a universal mechanism for nearly all eukaryotic cilia and flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT is a universal mechanism for nearly all eukaryotic cilia and flagella, and defects in this process are linked to a wide range of human diseases, including polycystic kidney disease, retinal degeneration (Rosenbaum and Witman, 2002; Ishikawa and Marshall, 2011), and Bardet-Biedl syndrome (Ou et al., 2005; Lechtreck et al., 2009, 2013; Wei et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "f7903500-4678-4b80-bf6a-2d4df9f87d17",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C8",
+      "claim": "Defects in IFT are linked to polycystic kidney disease, retinal degeneration, and Bardet-Biedl syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT is a universal mechanism for nearly all eukaryotic cilia and flagella, and defects in this process are linked to a wide range of human diseases, including polycystic kidney disease, retinal degeneration (Rosenbaum and Witman, 2002; Ishikawa and Marshall, 2011), and Bardet-Biedl syndrome (Ou et al., 2005; Lechtreck et al., 2009, 2013; Wei et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "d6a236ef-5fb9-421e-a592-577640645f51",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C9",
+      "claim": "IFT trains make multiple connections with the flagellar membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT trains make multiple connections with the flagellar membrane (Pigino et al., 2009) and carry several ciliary and flagellar membrane proteins (Qin et al., 2005; Huang et al., 2007; Lechtreck et al., 2009, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "ef21c884-32b0-4f0c-b00c-3965442cbc48",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C10",
+      "claim": "IFT trains carry several ciliary and flagellar membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT trains make multiple connections with the flagellar membrane (Pigino et al., 2009) and carry several ciliary and flagellar membrane proteins (Qin et al., 2005; Huang et al., 2007; Lechtreck et al., 2009, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies identifying IFT cargo proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "c56ea2e8-e42f-4262-bed1-3c652fc17859",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C11",
+      "claim": "Inactivation of kinesin-2 in the fla10ts mutant stops both IFT and gliding motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of kinesin-2 in the temperature-sensitive (ts) mutant fla10ts stops both IFT and gliding motility (Kozminski et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "ae57a5e4-8c4b-429c-a494-793db30c595a",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C12",
+      "claim": "Beads coated with anti-FMG1-B antibody colocalize with IFT trains during processive runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1B shows the colocalization of a membrane-attached bead with an individual IFT train as it moves unidirectionally for >500 nm. The movements of the bead and the colocalized IFT trains correlate strongly (>0.99) with each other during the processive run (N = 30, see Figure 1\u2014figure supplement 1 for more examples)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simultaneous tracking of beads and IFT27-GFP showing strong correlation (>0.99) in their movements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "7d58ee10-49e3-4d03-af03-e2235089cdd6",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C13",
+      "claim": "The correlation between bead and IFT train positions is statistically significant (p=7 \u00d7 10\u22129).",
+      "claim_type": "EXPLICIT",
+      "source": "The Kolmogorov-Smirnov test (p=7 \u00d7 10\u22129, Figure 1C) demonstrates that IFT trains colocalize with FMG1-B along the flagellar membrane (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by statistical analysis comparing observed distances to random distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "cf5cb977-b709-4620-8d1d-8b7044d66922",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C14",
+      "claim": "Pausing of retrograde IFT trains is required for the initiation of whole-cell gliding movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the pausing of IFT trains was required for the initiation of whole-cell movements (Figure 2A, Figure 2\u2014figure supplements 1 and 2). We did not observe the start of a gliding event without a paused IFT train.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by direct observation of IFT trains during gliding motility initiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "bcc9fa9a-1192-43d7-9321-cacad7f7e67f",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C15",
+      "claim": "All paused IFT trains that initiated gliding motility were moving in the retrograde direction.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to determine the directionality of 60% of the paused IFT trains, and all of the trains correspondent to the initiation of gliding motility stopped moving during retrograde transport (N = 148).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of 148 pausing events associated with gliding initiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "2f731394-567b-4cc4-ab95-5ecebaddd9a7",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C16",
+      "claim": "The average lag time between retrograde IFT pausing and gliding initiation is 0.48 \u00b1 0.05 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The average lag time was 0.48 \u00b1 0.05 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from analysis of the timing between IFT pausing and gliding initiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "0dcf6496-b703-446c-a176-139113e28491",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C17",
+      "claim": "Individual IFT pausing events occur every 8.25 \u00b1 0.96 s per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, we observed individual IFT pausing events (including both anterograde and retrograde pauses) every 8.25 \u00b1 0.96 s per cell (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from analysis of IFT pausing frequency in gliding cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "a1ae801b-b6e1-4bd1-980c-e86b2db01abc",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C18",
+      "claim": "The timing of retrograde IFT pausing and gliding motility are not independent (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "The Student's t-test excludes the null hypothesis that the timing of retrograde IFT pausing and gliding motility are independent of each other (p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by statistical analysis comparing lag time to overall pausing frequency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "58ac454c-d121-4c87-9fc7-acbfe3fc1968",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C19",
+      "claim": "Anterograde IFT trains display rare pauses at approximately 0.02 s\u22121 per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Anterograde trains also displayed rare pauses (\u223c0.02 s\u22121 per cell, N = 27), but we never observed pausing of an anterograde train before the initiation of gliding motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from observation of anterograde IFT trains in gliding cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "d118fd3b-b3cf-424c-9e95-4f7e9073d52c",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C20",
+      "claim": "Pausing of anterograde trains does not initiate gliding motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Anterograde trains also displayed rare pauses (\u223c0.02 s\u22121 per cell, N = 27), but we never observed pausing of an anterograde train before the initiation of gliding motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observation of all gliding initiation events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "e3a509fe-75aa-44cb-9fb6-4d73c371b2a9",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C21",
+      "claim": "In 24% of cases, a single paused IFT train is sufficient to pull the entire cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In 24% of all cases (N = 50), a single paused train appeared sufficient to pull the entire cell (Figure 2A, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of 50 gliding events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "cf3e4d87-d526-48d0-841d-287088525610",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C22",
+      "claim": "Uniflagellate pf18 cells always glide with the flagellum leading the cell body at 1.49 \u00b1 0.10 \u00b5m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "First, uniflagellate pf18 cells always glided with the flagellum leading the cell body at 1.49 \u00b1 0.10 \u00b5m/s (mean \u00b1 SEM) (Figure 2C\u2013E, Video 3) (Bloodgood, 2009)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from observation of uniflagellate pf18 cell gliding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "4dacb1ce-6dd4-454d-a95e-7567c642b6e5",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C23",
+      "claim": "Uniflagellate dynein-1b ts cells are unable to display robust gliding at restrictive temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to pf18 cells, uniflagellate dynein-1b ts cells (dhc1b-3ts) (Engel et al., 2012) were unable to display robust gliding at restrictive temperatures (Figure 2C, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by observation of dhc1b-3ts cells at 37\u00b0C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "1e696289-5e43-4cfd-a782-633118b4d455",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C24",
+      "claim": "Only 54% of dhc1b-3ts cells display short-range gliding-like motion at restrictive temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed only short-range (<500 nm) gliding-like motion in 54% of these cells, compared to robust unidirectional gliding motility observed over 5 \u00b5m in pf18 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from observation of dhc1b-3ts cells at restrictive temperature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "1316c8ad-f4e8-4190-8d03-a9440624b547",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C25",
+      "claim": "Short-range gliding motions in dhc1b-3ts cells are bidirectional and significantly slower than pf18 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These short-range motions were bidirectional (Figure 2D) and significantly slower (forward: 0.35 \u00b1 0.09 \u00b5m/s, backward: 0.47 \u00b1 0.16 \u00b5m/s) than the gliding speed of pf18 cells (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from analysis of dhc1b-3ts cell motility at restrictive temperature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "02170624-836f-4143-9226-9b0a2a51cc90",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C26",
+      "claim": "Inactivation of dynein-1b in biflagellate dhc1b-3ts cells decreased the fraction of gliding cells from 100% to 52%.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, inactivation of dynein-1b in biflagellate dhc1b-3ts cells decreased the fraction of gliding cells from 100% to 52% and reduced the gliding speed from 0.86 \u00b1 0.08 \u00b5m/s to 0.18 \u00b1 0.03 \u00b5m/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by comparing gliding at permissive and restrictive temperatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "30bc70de-4f65-4553-b0a3-d8ab53221951",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C27",
+      "claim": "Inactivation of dynein-1b reduced gliding speed from 0.86 \u00b1 0.08 \u00b5m/s to 0.18 \u00b1 0.03 \u00b5m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, inactivation of dynein-1b in biflagellate dhc1b-3ts cells decreased the fraction of gliding cells from 100% to 52% and reduced the gliding speed from 0.86 \u00b1 0.08 \u00b5m/s to 0.18 \u00b1 0.03 \u00b5m/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by comparing gliding speeds at permissive and restrictive temperatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "adb041ec-4b3d-4e5c-b20c-9892ac4eac49",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C28",
+      "claim": "Inactivation of kinesin-2 in fla10ts cells resulted in a twofold increase in gliding speed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, inactivation of kinesin-2 in fla10ts cells resulted in a twofold increase in gliding speed (Figure 2E), indicating that kinesin plays an inhibitory role during dynein-1b driven gliding motility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by comparing gliding speeds at permissive and restrictive temperatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "7b40009b-43fd-415f-a8b9-0b90e92e518a",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C29",
+      "claim": "Kinesin-2 plays an inhibitory role during dynein-1b driven gliding motility.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, inactivation of kinesin-2 in fla10ts cells resulted in a twofold increase in gliding speed (Figure 2E), indicating that kinesin plays an inhibitory role during dynein-1b driven gliding motility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that kinesin-2 inactivation increases gliding speed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "b45b5f69-5ab1-477c-9b4a-c244b2842451",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C30",
+      "claim": "At 150 \u00b5M ciliobrevin D, retrograde IFT frequency was reduced by 92%.",
+      "claim_type": "EXPLICIT",
+      "source": "At 150 \u00b5M ciliobrevin D, retrograde IFT frequency was reduced by 92% compared to the 70% decrease observed after 6 hr of heat inactivation of dhc1b-3ts cells (Engel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from analysis of IFT frequency after ciliobrevin D treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "d4d698b9-2068-4dbf-bf3a-44644f2f6d39",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C31",
+      "claim": "Ciliobrevin D treatment reduced retrograde IFT velocity by 60% and anterograde velocity by 36%.",
+      "claim_type": "EXPLICIT",
+      "source": "The velocities of retrograde and anterograde trains also decreased by 60% and 36%, respectively (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from analysis of IFT velocities after ciliobrevin D treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "ba2311a7-84b3-418e-9416-07648050cc7f",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C32",
+      "claim": "Inhibition of dynein-1b with ciliobrevin D resulted in 79% reduction in gliding speed and 79% reduction in gliding frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, inhibition of dynein-1b resulted in a significant reduction in the speed (79%) and frequency (79%) of gliding motility (N = 50, Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from analysis of gliding motility after ciliobrevin D treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "b25b338e-b1c1-4524-8456-d0efaf64516f",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C33",
+      "claim": "During 60% of gliding reversals, the cell lifts one of its flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "During 60% of reversals (N = 40), the cell lifted one of its flagella and the paused IFT trains on the surface-adhered flagellum drove the motility (Bloodgood, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from analysis of 40 reversal events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "201d81a8-08d2-4b29-8d18-26bf7b7c3a8b",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C34",
+      "claim": "At normal Ca2+ concentration (0.34 mM), 95% of all surface-adhered cells displayed gliding motility.",
+      "claim_type": "EXPLICIT",
+      "source": "In regular TAP media (free [Ca2+] = 0.34 mM), 95% of all surface-adhered cells displayed gliding motility and individual pausing events were observed every \u223c8 s per flagellum, on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from observation of cells in normal TAP media.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "1364f8d8-b9f2-4ed7-a9bf-40d78663a314",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C35",
+      "claim": "At <1 \u00b5M Ca2+, both the fraction of gliding cells and IFT pausing frequency were reduced by approximately 10-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both the fraction of gliding cells and IFT pausing frequency were reduced by \u223c10-fold at <1 \u00b5M Ca2+ (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from analysis of cells in Ca2+-depleted media.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "3232eea5-0e80-491c-93e8-32c13c2a6fb0",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C36",
+      "claim": "Ca2+ is required for attachment of FMG1-B to IFT trains, not for activation of motor proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that Ca2+ is required for attachment of FMG1-B to IFT trains, not for the activation of a motor protein that provides force for gliding, as previously suggested (Bloodgood, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that IFT continues normally without Ca2+ but beads do not move processively.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "b563ef82-370f-4e8e-8fac-0fffed9619eb",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C37",
+      "claim": "IFT trains remained colocalized with trapped beads when subjected to external forces.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that IFT trains remained colocalized with trapped beads when subjected to external forces (Figure 6B; see Figure 6\u2014figure supplement 1 for additional examples).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simultaneous TIRF imaging and optical trapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "1416f584-b972-4c81-b4a6-1ca7e1d1937d",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C38",
+      "claim": "The average offset between trapped beads and colocalized IFT trains was 280 \u00b1 10 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The average offset between the positions of the trapped beads and colocalized IFT trains was 280 \u00b1 10 nm (N = 11).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from simultaneous tracking of beads and IFT trains during optical trapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "cc44bf58-146c-470c-b3e2-15584595b88e",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C39",
+      "claim": "Anterograde IFT trains moved against 21.4 \u00b1 0.7 pN peak forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Histograms of peak forces (Figure 6D) show that anterograde and retrograde IFT trains moved against 21.4 \u00b1 0.7 pN and 25.2 \u00b1 1.3 pN (SEM), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from optical trap force measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "87830ef2-3fb7-4bba-b9c8-7d330f73cf1b",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C40",
+      "claim": "Retrograde IFT trains moved against 25.2 \u00b1 1.3 pN peak forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Histograms of peak forces (Figure 6D) show that anterograde and retrograde IFT trains moved against 21.4 \u00b1 0.7 pN and 25.2 \u00b1 1.3 pN (SEM), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from optical trap force measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "db36062b-5408-4a03-8b34-7b48d90231c7",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C41",
+      "claim": "20% of retrograde runs escaped the trap by producing more than 80 pN of force.",
+      "claim_type": "EXPLICIT",
+      "source": "20% of retrograde runs escaped the trap by producing more than 80 pN of force, presumably via clustering of FMG1-B (Bloodgood, 2009), while <1% escape events were observed in the anterograde direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from analysis of optical trap escape events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "8bd8aba6-7614-41bc-9bc9-54da3c04e442",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C42",
+      "claim": "Less than 1% of anterograde runs escaped the trap.",
+      "claim_type": "EXPLICIT",
+      "source": "20% of retrograde runs escaped the trap by producing more than 80 pN of force, presumably via clustering of FMG1-B (Bloodgood, 2009), while <1% escape events were observed in the anterograde direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from analysis of optical trap escape events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "497d0d95-38ae-44ab-8baa-207da9c707c9",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C43",
+      "claim": "The speed of gliding motility (1.49 \u00b1 0.10 \u00b5m/s) is significantly slower than that of retrograde IFT (2.96 \u00b1 0.14 \u00b5m/s).",
+      "claim_type": "EXPLICIT",
+      "source": "We next investigated why the speed of gliding motility (1.49 \u00b1 0.10 \u00b5m/s, SEM) is significantly slower than that of retrograde IFT (2.96 \u00b1 0.14 \u00b5m/s), even though both processes are powered by dynein-1b motors actively transporting IFT trains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from comparison of gliding and IFT speeds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "8c117d0b-d196-4516-8b14-4fb6e7c03a98",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C44",
+      "claim": "IFT trains that carry 1-\u03bcm beads moved approximately 30% slower than IFT trains not associated with beads.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT trains that carry 1-\u03bcm beads moved \u223c30% slower than IFT trains that were not associated with the beads (two-tailed Student's t-test, p = 2.1 \u00d7 10\u22129 (anterograde) and 1.8 \u00d7 10\u221211 (retrograde), Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from comparison of IFT speeds with and without beads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "02dd95b5-f09d-431d-baa6-7fb7c7331b30",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C45",
+      "claim": "The average drag constant of the bead-IFT complex was 8.0 \u00b1 2.8 pN s/\u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The average drag constant of the bead-IFT complex was found to be 8.0 \u00b1 2.8 pN s/\u03bcm (SEM, N = 30).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from analysis of bead recoil after stalling in optical trap.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "b9eb4994-8c19-493c-93c0-dcf299757a33",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C46",
+      "claim": "Anterograde and retrograde trains moving at 2\u20133 \u00b5m/s would experience 16\u201324 pN resistive forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Anterograde and retrograde trains moving at 2\u20133 \u00b5m/s would experience 16\u201324 pN resistive forces, comparable to the total motor force exerted on a single IFT train (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the measured drag constant and IFT velocity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "4df2b0dd-5aca-4227-a3d7-343d5eeb017c",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C47",
+      "claim": "Heat-inactivation of kinesin-2 reduced the frequency of anterograde runs by 66% but did not alter the peak forces on retrograde runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Heat-inactivation of kinesin-2 reduced the frequency of anterograde runs by 66%, but did not alter the peak forces on retrograde runs (Laib et al., 2009) (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from optical trap experiments with fla10-1ts cells at restrictive temperature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "3415927c-e58e-4c8d-b422-96cddc45b12c",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C48",
+      "claim": "Heat inactivation of dynein-1b significantly reduced the ratio of retrograde to anterograde transport events to 0.15.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, heat inactivation of dynein-1b significantly reduced the ratio of retrograde to anterograde transport events (0.15), but had minimal effect on the peak forces of anterograde runs (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from optical trap experiments with dhc1b-3ts cells at restrictive temperature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "e1acba40-963a-4650-9000-2e16a7fb105a",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C49",
+      "claim": "Heat inactivation of dynein-1b had minimal effect on the peak forces of anterograde runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, heat inactivation of dynein-1b significantly reduced the ratio of retrograde to anterograde transport events (0.15), but had minimal effect on the peak forces of anterograde runs (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from optical trap experiments with dhc1b-3ts cells at restrictive temperature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "96e8fbd8-f74a-4ab2-bee1-b89b4f59810e",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C50",
+      "claim": "Only one type of motor remains active on IFT trains at a time.",
+      "claim_type": "EXPLICIT",
+      "source": "These results exclude a tug-of-war mechanism in IFT, which would lead to an increase of force from motors walking in one direction upon inactivation of the motors walking in the opposite direction. Instead, only one type of a motor remains active on IFT trains at a time, which is consistent with the result that retrograde speed of fla10-1ts does not change after kinesin-2 is inactivated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that inactivating one motor type does not increase forces in the opposite direction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "a705fbe4-6846-4676-a515-960ce3e6ebd7",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C51",
+      "claim": "Kinesin-2 on paused anterograde trains slows down gliding motility by exerting forces in the opposite direction to dynein-1b on paused retrograde trains.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that kinesin-2 on paused anterograde trains slows down gliding motility by exerting forces in the opposite direction to that of dynein-1b on paused retrograde trains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed to explain why kinesin-2 inactivation increases gliding speed.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "c6e648ae-b325-4322-8319-eb3a4ac1d424",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C52",
+      "claim": "IFT trains carry FMG1-B as a cargo in Chlamydomonas.",
+      "claim_type": "EXPLICIT",
+      "source": "In Chlamydomonas, IFT trains carry FMG1-B as a cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by colocalization experiments showing beads coated with FMG1-B antibody moving with IFT trains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "e78ac6c6-bed4-44ae-aeae-683bd34e41a8",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C53",
+      "claim": "The interaction between IFT trains and FMG1-B clusters is transient.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between IFT trains and FMG1-B clusters is transient, as FMG1-B boards moving trains but usually unloads and diffuses away before the trains arrive at the flagellar base or tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in experiments showing beads transiently associating with and dissociating from IFT trains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "fe92744a-e414-4e1c-b04f-94b9dc9c33f3",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C54",
+      "claim": "During gliding motility, IFT trains pause due to attachment of the FMG1-B cargo to the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "During gliding motility, IFT trains pause due to attachment of the FMG1-B cargo to the surface, and the dynein-1b motors engaged to the paused IFT trains generate pulling forces along the microtubule long axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by observation of IFT pausing during gliding and the requirement of dynein-1b for gliding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "8e540c46-b805-429b-b34d-71ce5628fd54",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C55",
+      "claim": "Gliding motility in C. reinhardtii is powered by intracellular transport machinery along microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "While the majority of organismal motilities rely on the actin cytoskeleton or axonemal beating, gliding motility in C. reinhardtii is distinct in that it is powered by intracellular transport machinery along microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experiments showing IFT and dynein-1b drive gliding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "83852c16-c2d4-44ed-ba40-c915179cabdc",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C56",
+      "claim": "FMG1-B performs an analogous function to integrins in mammalian cell motility.",
+      "claim_type": "EXPLICIT",
+      "source": "By providing surface adhesion points, FMG1-B performs an analogous function to integrins in mammalian cell motility (Bloodgood, 2009; Lecuit et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analogy drawn based on the adhesion function of FMG1-B.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "b23ee591-6e89-445e-8858-901629ff54e3",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C57",
+      "claim": "Viscous drag of the membrane slows down the motility of IFT trains that carry FMG1-B-conjugated beads.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we showed that viscous drag of the membrane slows down the motility of IFT trains that carry FMG1-B-conjugated beads, causing gliding motility and FMG1-B transport to proceed slower than IFT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by measurements of drag constants and speed reductions when IFT carries beads.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "baed1f33-5011-44af-aba9-bb48116bdcd5",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C58",
+      "claim": "IFT is unaffected by changes in environmental Ca2+ concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, previous work showed that IFT is unaffected by changes in environmental Ca2+ concentration (Bloodgood and Salomonsky, 1990; Kozminski et al., 1993), whereas gliding motility is Ca2+-dependent (Bloodgood and Salomonsky, 1990; Kozminski et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "628f1b3a-c90f-4b91-b759-c4614c532ce1",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C59",
+      "claim": "Gliding motility is Ca2+-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, previous work showed that IFT is unaffected by changes in environmental Ca2+ concentration (Bloodgood and Salomonsky, 1990; Kozminski et al., 1993), whereas gliding motility is Ca2+-dependent (Bloodgood and Salomonsky, 1990; Kozminski et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and confirmed by experiments in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "2dcf307f-bb07-4d62-b5fe-d0caf950080e",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C60",
+      "claim": "The presence of free Ca2+ leads to frequent pauses in IFT motility at flagellar adhesion sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the presence of free Ca2+ leads to frequent pauses in IFT motility at flagellar adhesion sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments showing increased IFT pausing at normal Ca2+ levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "450d34bb-c0e0-4d0c-a6fa-7886642d67ce",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C61",
+      "claim": "In the absence of Ca2+, IFT moves unidirectionally without interruptions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Ca2+, IFT moves unidirectionally without interruptions, suggesting that attachment of FMG1-B to IFT trains is regulated by a Ca2+-dependent signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments showing reduced IFT pausing in Ca2+-depleted cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "92312099-8b1c-4915-8681-44c0d49dd135",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C62",
+      "claim": "Attachment of FMG1-B to IFT trains is regulated by a Ca2+-dependent signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Ca2+, IFT moves unidirectionally without interruptions, suggesting that attachment of FMG1-B to IFT trains is regulated by a Ca2+-dependent signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Ca2+ affects IFT pausing but not IFT movement itself.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "1a974df9-4f6f-43af-a2e5-238a767277b3",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C63",
+      "claim": "Surface adhesion or crosslinking of FMG1-B into large clusters induces dephosphorylation of a transmembrane protein that co-immunoprecipitates with FMG1-B.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that surface adhesion or crosslinking of FMG1-B into large clusters induces dephosphorylation of a transmembrane protein that co-immunoprecipitates with FMG1-B (Bloodgood and Salomonsky, 1994, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "8b8cc596-bdca-421d-af6c-ba6dccb2c5f3",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C64",
+      "claim": "The complex may be regulated by a calcium-calmodulin dependent gliding associated kinase (GAK), which is required for gliding motility.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex may be regulated by a calcium-calmodulin dependent gliding associated kinase (GAK), which is required for the gliding motility (Bloodgood and Spano, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "7c0f2c5c-40b1-42e6-8063-81db5a345e35",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C65",
+      "claim": "In a previous trapping assay, beads nonspecifically adsorbed to the flagellar membrane exerted 60 pN average peak forces.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous trapping assay, beads nonspecifically adsorbed to the flagellar membrane were found to exert 60 pN average peak forces (Laib et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "4d7e9a54-6d46-4f9f-a7c0-74da58b74c14",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C66",
+      "claim": "IFT is required for signal transduction during the mating of ciliated organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, IFT is required for signal transduction during the mating of ciliated organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example of IFT's role in signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "ae0c761a-0f52-4aad-b9c9-a3915557d77f",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C67",
+      "claim": "IFT trains transport sexual agglutinins within the flagellar membrane of gametic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since IFT trains transport sexual agglutinins within the flagellar membrane of gametic cells (Ferris et al., 2005), adhesion between sexual agglutinins of opposite cell types may stall retrograde IFT movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "ebad7047-88f1-4e75-a5fb-03463b30cbdd",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C68",
+      "claim": "Adhesion between sexual agglutinins of opposite cell types may stall retrograde IFT movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Since IFT trains transport sexual agglutinins within the flagellar membrane of gametic cells (Ferris et al., 2005), adhesion between sexual agglutinins of opposite cell types may stall retrograde IFT movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed as a mechanism for flagellar alignment during mating.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "f886c02f-ef0b-4ced-b9be-64222b7433d7",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C69",
+      "claim": "Microspheres have been observed to move and accumulate at the flagellar tips during mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, microspheres have been observed to move and accumulate at the flagellar tips during mating (Hoffman and Goodenough, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "abf27ce5-85de-451c-8e3c-4aafef912196",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C70",
+      "claim": "Cilia in the retina, liver, and kidney cells make direct physical contacts that may serve as 'bridges' for signaling networks between many cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cilia in the retina, liver, and kidney cells were recently observed to make direct physical contacts, which may serve as 'bridges' for signaling networks between many cells (Ott et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "58be8042-5bf3-4484-b7b5-30bf80815682",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C71",
+      "claim": "These contacts are tight adhesions between the ciliary membranes, mediated by N-linked glycoproteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These contacts are tight adhesions between the ciliary membranes, mediated by N-linked glycoproteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of ciliary contacts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "8935bb62-1bbb-4e47-8617-46e9bab9b3bd",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C72",
+      "claim": "IFT may exert force on cell-cell adhesion sites and determine the positioning of these adhesion sites by moving them along the length of the cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that IFT exerts force on cell-cell adhesion sites and determines the positioning of these adhesion sites by moving them along the length of the cilium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed as a potential mechanism based on the findings of this study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "32d28776-2930-4cd7-a4c5-407e35cc677d",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "claim_id": "C73",
+      "claim": "Ca2+ signaling at flagellar adhesion sites may play a major role in regulating attachment to IFT trains and controlling the direction of force generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+ signaling at flagellar adhesion sites may play a major role in regulating attachment to IFT trains and controlling the direction of force generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed based on the Ca2+-dependent nature of IFT pausing and gliding.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b8127d91-4943-44a4-84bb-878e67fb2df0",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "IFT trains carry FMG1-B as cargo, with beads coated with anti-FMG1-B antibody colocalizing with IFT trains during processive runs (correlation >0.99, p=7\u00d710\u207b\u2079). The interaction is transient, with FMG1-B boarding and unloading from moving trains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C13 provide strong quantitative evidence for colocalization (correlation >0.99, statistically significant p-value), while C52 and C53 describe the cargo relationship and transient nature. The multicolor tracking experiments and statistical analysis provide robust support for this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "9dff0efb-497b-4ac9-a185-03d70070c00f",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Pausing of retrograde IFT trains is required for initiation of gliding motility. All paused trains that initiated gliding were retrograde (N=148), with a lag time of 0.48\u00b10.05 s, significantly shorter than the 8.25\u00b10.96 s interval between pausing events (p<0.0001). Anterograde pausing does not initiate gliding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 provide converging evidence with appropriate sample sizes (N=148 for directionality, statistical test with p<0.0001). The temporal correlation analysis (C16-C18) and directional specificity (C15, C20) strongly support the conclusion. C21 adds that single trains can be sufficient in 24% of cases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "e00406e3-25fa-4f1f-92e5-034dfffc196a",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Dynein-1b is the primary motor for gliding motility. Uniflagellate pf18 cells glide at 1.49\u00b10.10 \u00b5m/s with flagellum leading. Dynein-1b inactivation (genetic or pharmacological) reduces gliding speed and frequency by 79-92%, while kinesin-2 inactivation increases gliding speed twofold, indicating kinesin-2 plays an inhibitory role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent lines of evidence support this result: uniflagellate cell behavior (C22-C25), biflagellate temperature-sensitive mutants (C26-C27), kinesin-2 mutants (C28-C29), and ciliobrevin D inhibition (C30-C32). The convergence of genetic and pharmacological approaches with consistent quantitative measurements provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "d50f4e02-10d2-48fc-847f-1c34e3e9cc41",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "IFT-FMG coupling is Ca\u00b2\u207a-dependent. At normal Ca\u00b2\u207a (0.34 mM), 95% of cells display gliding and frequent IFT pausing. At <1 \u00b5M Ca\u00b2\u207a, both gliding and pausing frequency are reduced ~10-fold. Ca\u00b2\u207a is required for FMG1-B attachment to IFT trains, not motor activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 provide quantitative dose-response data showing Ca\u00b2\u207a-dependence of both gliding and pausing. C36, C60-C62 provide mechanistic interpretation supported by the observation that IFT continues normally without Ca\u00b2\u207a while beads don't move processively. The inference that Ca\u00b2\u207a affects cargo attachment rather than motor activity is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "02310794-124a-4a23-aaa8-abc4fce2042c",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IFT trains exert 21.4\u00b10.7 pN (anterograde) and 25.2\u00b11.3 pN (retrograde) peak forces as measured by optical trapping. IFT trains remain colocalized with trapped beads with 280\u00b110 nm offset. 20% of retrograde runs escape the trap (>80 pN), while <1% of anterograde runs escape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 describe optical trapping measurements with appropriate error estimates and sample sizes (N=11 for offset measurements). The simultaneous TIRF imaging and trapping (C37) validates that forces measured correspond to IFT trains. The asymmetry in escape events (C41-C42) is consistent with the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "eeabea7a-59a7-4981-91bc-29fd5a525003",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Each IFT train is transported by at least four motors, with only one motor type active at a time. Heat-inactivation of kinesin-2 or dynein-1b reduces frequency of respective directional transport but does not alter peak forces in the opposite direction, excluding a tug-of-war mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 estimates motor number from force measurements (20-30 pN) divided by single motor stall force (6-7 pN), yielding ~4 motors. Claims C47-C49 provide experimental evidence against tug-of-war through temperature-sensitive mutants. C50 synthesizes these observations into the coordinated transport model. The logic is sound and supported by data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "4be34074-cc4b-4a3a-9a16-7cf752617bcb",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Viscous drag of the membrane slows IFT trains carrying FMG1-B-conjugated beads. Gliding motility (1.49\u00b10.10 \u00b5m/s) is slower than retrograde IFT (2.96\u00b10.14 \u00b5m/s). IFT trains carrying 1-\u00b5m beads move ~30% slower (p<10\u207b\u2079). The drag constant is 8.0\u00b12.8 pN\u00b7s/\u00b5m, producing 16-24 pN resistive forces at 2-3 \u00b5m/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 provide direct speed measurements with statistical significance. C45 measures drag constant from bead recoil experiments. C46 calculates expected resistive forces from drag and velocity, showing they match measured motor forces. C57 synthesizes these into a coherent explanation for speed differences. The quantitative agreement supports the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "08b23095-4944-44b8-8c39-950fa8c1c9b3",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "During gliding motility, IFT trains pause through surface adhesion of FMG cargos, and dynein-1b motors pull the cell toward the distal tip. Gliding motility in C. reinhardtii is powered by intracellular transport machinery along microtubules, distinct from actin-based or axonemal beating motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims synthesize the major findings into a mechanistic model. C3-C4 describe the mechanism supported by pausing observations (C14-C21) and dynein-1b requirement (C22-C32). C54-C55 place this in broader context. The model is well-supported by the collective experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "1caee91e-9dae-4132-9efe-1763bbb4ec4c",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "During 60% of gliding reversals (N=40), cells lift one flagellum and paused IFT trains on the surface-adhered flagellum drive motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 provides a specific quantitative observation with adequate sample size (N=40 reversals). This describes one mechanism for directional control during gliding. The observation is straightforward and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "a814692d-dc8b-4be1-aa0f-cded3ed250de",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "IFT is universal for nearly all eukaryotic cilia and flagella, required for assembly and maintenance. Defects in IFT are linked to polycystic kidney disease, retinal degeneration, and Bardet-Biedl syndrome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established facts in the field supported by extensive prior literature (multiple citations provided). Claims C1, C7, and C8 provide background context rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "2f8090fb-15a8-4eaf-b049-fe647b2a06e4",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "IFT trains make multiple connections with the flagellar membrane and carry several ciliary and flagellar membrane proteins. Inactivation of kinesin-2 in fla10ts mutant stops both IFT and gliding motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 cite prior work to establish background knowledge. These are not novel findings from this manuscript but provide important context for interpreting the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "00ea4caa-55a1-494a-9443-a987c117acdd",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Anterograde IFT trains display rare pauses at approximately 0.02 s\u207b\u00b9 per cell (N=27).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 provides a quantitative measurement with sample size. This observation contrasts with retrograde pausing and supports the directional specificity of the gliding mechanism. The measurement appears straightforward.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "de983be9-0976-4530-b359-918042651c93",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Kinesin-2 on paused anterograde trains slows down gliding motility by exerting forces in the opposite direction to dynein-1b on paused retrograde trains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 proposes a mechanism to explain why kinesin-2 inactivation increases gliding speed (C28-C29). This is consistent with the coordinated transport model (C50) and the observation that only one motor type is active at a time. The proposal is logical given the experimental observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "137b552c-0ef1-4321-9496-ff31eeca36b5",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "FMG1-B performs an analogous function to integrins in mammalian cell motility by providing surface adhesion points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 draws an analogy between FMG1-B and integrins based on their adhesion functions. This is a reasonable conceptual comparison supported by the demonstrated role of FMG1-B in surface adhesion, though it remains an analogy rather than a mechanistic claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "11eb6b9b-5919-4564-88f3-eb2f9000ed6e",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "IFT is unaffected by changes in environmental Ca\u00b2\u207a concentration, whereas gliding motility is Ca\u00b2\u207a-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 cite prior work and are confirmed by experiments in this study (C34-C36, C60-C61). The distinction between IFT and gliding Ca\u00b2\u207a-dependence is important for understanding the mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "c5876341-c740-49c1-b8bd-d1dabbc9a5ae",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Surface adhesion or crosslinking of FMG1-B induces dephosphorylation of a co-immunoprecipitating transmembrane protein. The complex may be regulated by calcium-calmodulin dependent gliding associated kinase (GAK).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 cite prior work to provide context for potential signaling mechanisms. These are not findings from this manuscript but relevant background for understanding Ca\u00b2\u207a-dependent regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "9323c1ed-ecfe-4ebc-9d92-10f1afec31d5",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In a previous trapping assay, beads nonspecifically adsorbed to the flagellar membrane exerted 60 pN average peak forces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 cites prior work for comparison with current measurements (20-30 pN). The authors note their lower forces may reflect specific FMG1-B-IFT linkages versus nonspecific adhesion. This provides important context for interpreting force measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "f8fbc7dc-0f1f-4fa6-a293-7ed3557c1090",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "IFT is required for signal transduction during mating of ciliated organisms. IFT trains transport sexual agglutinins, and adhesion between agglutinins may stall retrograde IFT movement. Microspheres accumulate at flagellar tips during mating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C66 states established knowledge. C67 cites prior work on agglutinin transport. C68 proposes a speculative mechanism for flagellar alignment during mating based on the findings of this study. C69 cites an observation from prior work. The proposed mechanism (C68) is plausible but remains speculative without direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    },
+    {
+      "id": "3405dff5-fd85-4417-8f7e-b10a1b77b44d",
+      "content_id": "243defe7-9f25-4768-bc38-e1467eca1ba3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Cilia in retina, liver, and kidney cells make direct physical contacts mediated by N-linked glycoproteins. IFT may exert force on cell-cell adhesion sites and determine their positioning. Ca\u00b2\u207a signaling at adhesion sites may regulate attachment to IFT trains and control force generation direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C71 cite recent work on ciliary contacts. C72-C73 propose speculative extensions of the current findings to other biological contexts. While these proposals are reasonable extrapolations, they lack direct experimental support in this manuscript and remain hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-27T06:03:40.590464Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ae57a5e4-8c4b-429c-a494-793db30c595a",
+      "result_id": "b8127d91-4943-44a4-84bb-878e67fb2df0"
+    },
+    {
+      "claim_id": "7d58ee10-49e3-4d03-af03-e2235089cdd6",
+      "result_id": "b8127d91-4943-44a4-84bb-878e67fb2df0"
+    },
+    {
+      "claim_id": "c6e648ae-b325-4322-8319-eb3a4ac1d424",
+      "result_id": "b8127d91-4943-44a4-84bb-878e67fb2df0"
+    },
+    {
+      "claim_id": "e78ac6c6-bed4-44ae-aeae-683bd34e41a8",
+      "result_id": "b8127d91-4943-44a4-84bb-878e67fb2df0"
+    },
+    {
+      "claim_id": "cf5cb977-b709-4620-8d1d-8b7044d66922",
+      "result_id": "9dff0efb-497b-4ac9-a185-03d70070c00f"
+    },
+    {
+      "claim_id": "bcc9fa9a-1192-43d7-9321-cacad7f7e67f",
+      "result_id": "9dff0efb-497b-4ac9-a185-03d70070c00f"
+    },
+    {
+      "claim_id": "2f731394-567b-4cc4-ab95-5ecebaddd9a7",
+      "result_id": "9dff0efb-497b-4ac9-a185-03d70070c00f"
+    },
+    {
+      "claim_id": "0dcf6496-b703-446c-a176-139113e28491",
+      "result_id": "9dff0efb-497b-4ac9-a185-03d70070c00f"
+    },
+    {
+      "claim_id": "a1ae801b-b6e1-4bd1-980c-e86b2db01abc",
+      "result_id": "9dff0efb-497b-4ac9-a185-03d70070c00f"
+    },
+    {
+      "claim_id": "d118fd3b-b3cf-424c-9e95-4f7e9073d52c",
+      "result_id": "9dff0efb-497b-4ac9-a185-03d70070c00f"
+    },
+    {
+      "claim_id": "e3a509fe-75aa-44cb-9fb6-4d73c371b2a9",
+      "result_id": "9dff0efb-497b-4ac9-a185-03d70070c00f"
+    },
+    {
+      "claim_id": "cf3e4d87-d526-48d0-841d-287088525610",
+      "result_id": "e00406e3-25fa-4f1f-92e5-034dfffc196a"
+    },
+    {
+      "claim_id": "4dacb1ce-6dd4-454d-a95e-7567c642b6e5",
+      "result_id": "e00406e3-25fa-4f1f-92e5-034dfffc196a"
+    },
+    {
+      "claim_id": "1e696289-5e43-4cfd-a782-633118b4d455",
+      "result_id": "e00406e3-25fa-4f1f-92e5-034dfffc196a"
+    },
+    {
+      "claim_id": "1316c8ad-f4e8-4190-8d03-a9440624b547",
+      "result_id": "e00406e3-25fa-4f1f-92e5-034dfffc196a"
+    },
+    {
+      "claim_id": "02170624-836f-4143-9226-9b0a2a51cc90",
+      "result_id": "e00406e3-25fa-4f1f-92e5-034dfffc196a"
+    },
+    {
+      "claim_id": "30bc70de-4f65-4553-b0a3-d8ab53221951",
+      "result_id": "e00406e3-25fa-4f1f-92e5-034dfffc196a"
+    },
+    {
+      "claim_id": "adb041ec-4b3d-4e5c-b20c-9892ac4eac49",
+      "result_id": "e00406e3-25fa-4f1f-92e5-034dfffc196a"
+    },
+    {
+      "claim_id": "7b40009b-43fd-415f-a8b9-0b90e92e518a",
+      "result_id": "e00406e3-25fa-4f1f-92e5-034dfffc196a"
+    },
+    {
+      "claim_id": "b45b5f69-5ab1-477c-9b4a-c244b2842451",
+      "result_id": "e00406e3-25fa-4f1f-92e5-034dfffc196a"
+    },
+    {
+      "claim_id": "d4d698b9-2068-4dbf-bf3a-44644f2f6d39",
+      "result_id": "e00406e3-25fa-4f1f-92e5-034dfffc196a"
+    },
+    {
+      "claim_id": "ba2311a7-84b3-418e-9416-07648050cc7f",
+      "result_id": "e00406e3-25fa-4f1f-92e5-034dfffc196a"
+    },
+    {
+      "claim_id": "b3475af4-1a3f-4dac-b398-0b13e6cb6e5c",
+      "result_id": "d50f4e02-10d2-48fc-847f-1c34e3e9cc41"
+    },
+    {
+      "claim_id": "201d81a8-08d2-4b29-8d18-26bf7b7c3a8b",
+      "result_id": "d50f4e02-10d2-48fc-847f-1c34e3e9cc41"
+    },
+    {
+      "claim_id": "1364f8d8-b9f2-4ed7-a9bf-40d78663a314",
+      "result_id": "d50f4e02-10d2-48fc-847f-1c34e3e9cc41"
+    },
+    {
+      "claim_id": "3232eea5-0e80-491c-93e8-32c13c2a6fb0",
+      "result_id": "d50f4e02-10d2-48fc-847f-1c34e3e9cc41"
+    },
+    {
+      "claim_id": "2dcf307f-bb07-4d62-b5fe-d0caf950080e",
+      "result_id": "d50f4e02-10d2-48fc-847f-1c34e3e9cc41"
+    },
+    {
+      "claim_id": "450d34bb-c0e0-4d0c-a6fa-7886642d67ce",
+      "result_id": "d50f4e02-10d2-48fc-847f-1c34e3e9cc41"
+    },
+    {
+      "claim_id": "92312099-8b1c-4915-8681-44c0d49dd135",
+      "result_id": "d50f4e02-10d2-48fc-847f-1c34e3e9cc41"
+    },
+    {
+      "claim_id": "b563ef82-370f-4e8e-8fac-0fffed9619eb",
+      "result_id": "02310794-124a-4a23-aaa8-abc4fce2042c"
+    },
+    {
+      "claim_id": "1416f584-b972-4c81-b4a6-1ca7e1d1937d",
+      "result_id": "02310794-124a-4a23-aaa8-abc4fce2042c"
+    },
+    {
+      "claim_id": "cc44bf58-146c-470c-b3e2-15584595b88e",
+      "result_id": "02310794-124a-4a23-aaa8-abc4fce2042c"
+    },
+    {
+      "claim_id": "87830ef2-3fb7-4bba-b9c8-7d330f73cf1b",
+      "result_id": "02310794-124a-4a23-aaa8-abc4fce2042c"
+    },
+    {
+      "claim_id": "db36062b-5408-4a03-8b34-7b48d90231c7",
+      "result_id": "02310794-124a-4a23-aaa8-abc4fce2042c"
+    },
+    {
+      "claim_id": "8bd8aba6-7614-41bc-9bc9-54da3c04e442",
+      "result_id": "02310794-124a-4a23-aaa8-abc4fce2042c"
+    },
+    {
+      "claim_id": "0eb51b55-6fa7-493e-93e1-fc20af4e237f",
+      "result_id": "eeabea7a-59a7-4981-91bc-29fd5a525003"
+    },
+    {
+      "claim_id": "2176295d-3274-4bc9-8bb6-153ef177fb73",
+      "result_id": "eeabea7a-59a7-4981-91bc-29fd5a525003"
+    },
+    {
+      "claim_id": "4df2b0dd-5aca-4227-a3d7-343d5eeb017c",
+      "result_id": "eeabea7a-59a7-4981-91bc-29fd5a525003"
+    },
+    {
+      "claim_id": "3415927c-e58e-4c8d-b422-96cddc45b12c",
+      "result_id": "eeabea7a-59a7-4981-91bc-29fd5a525003"
+    },
+    {
+      "claim_id": "e1acba40-963a-4650-9000-2e16a7fb105a",
+      "result_id": "eeabea7a-59a7-4981-91bc-29fd5a525003"
+    },
+    {
+      "claim_id": "96e8fbd8-f74a-4ab2-bee1-b89b4f59810e",
+      "result_id": "eeabea7a-59a7-4981-91bc-29fd5a525003"
+    },
+    {
+      "claim_id": "497d0d95-38ae-44ab-8baa-207da9c707c9",
+      "result_id": "4be34074-cc4b-4a3a-9a16-7cf752617bcb"
+    },
+    {
+      "claim_id": "8c117d0b-d196-4516-8b14-4fb6e7c03a98",
+      "result_id": "4be34074-cc4b-4a3a-9a16-7cf752617bcb"
+    },
+    {
+      "claim_id": "02dd95b5-f09d-431d-baa6-7fb7c7331b30",
+      "result_id": "4be34074-cc4b-4a3a-9a16-7cf752617bcb"
+    },
+    {
+      "claim_id": "b9eb4994-8c19-493c-93c0-dcf299757a33",
+      "result_id": "4be34074-cc4b-4a3a-9a16-7cf752617bcb"
+    },
+    {
+      "claim_id": "b23ee591-6e89-445e-8858-901629ff54e3",
+      "result_id": "4be34074-cc4b-4a3a-9a16-7cf752617bcb"
+    },
+    {
+      "claim_id": "067d7971-1885-4fa0-b601-ee0f9e6cecc4",
+      "result_id": "08b23095-4944-44b8-8c39-950fa8c1c9b3"
+    },
+    {
+      "claim_id": "5a75e6df-126f-4e37-bc8a-15ee9b1d8147",
+      "result_id": "08b23095-4944-44b8-8c39-950fa8c1c9b3"
+    },
+    {
+      "claim_id": "fe92744a-e414-4e1c-b04f-94b9dc9c33f3",
+      "result_id": "08b23095-4944-44b8-8c39-950fa8c1c9b3"
+    },
+    {
+      "claim_id": "8e540c46-b805-429b-b34d-71ce5628fd54",
+      "result_id": "08b23095-4944-44b8-8c39-950fa8c1c9b3"
+    },
+    {
+      "claim_id": "b25b338e-b1c1-4524-8456-d0efaf64516f",
+      "result_id": "1caee91e-9dae-4132-9efe-1763bbb4ec4c"
+    },
+    {
+      "claim_id": "b8f2871f-b1b4-4c03-980f-e378b61524c4",
+      "result_id": "a814692d-dc8b-4be1-aa0f-cded3ed250de"
+    },
+    {
+      "claim_id": "58edb48c-a2b1-47e8-8d43-389037ebaaed",
+      "result_id": "a814692d-dc8b-4be1-aa0f-cded3ed250de"
+    },
+    {
+      "claim_id": "f7903500-4678-4b80-bf6a-2d4df9f87d17",
+      "result_id": "a814692d-dc8b-4be1-aa0f-cded3ed250de"
+    },
+    {
+      "claim_id": "d6a236ef-5fb9-421e-a592-577640645f51",
+      "result_id": "2f8090fb-15a8-4eaf-b049-fe647b2a06e4"
+    },
+    {
+      "claim_id": "ef21c884-32b0-4f0c-b00c-3965442cbc48",
+      "result_id": "2f8090fb-15a8-4eaf-b049-fe647b2a06e4"
+    },
+    {
+      "claim_id": "c56ea2e8-e42f-4262-bed1-3c652fc17859",
+      "result_id": "2f8090fb-15a8-4eaf-b049-fe647b2a06e4"
+    },
+    {
+      "claim_id": "58ac454c-d121-4c87-9fc7-acbfe3fc1968",
+      "result_id": "00ea4caa-55a1-494a-9443-a987c117acdd"
+    },
+    {
+      "claim_id": "a705fbe4-6846-4676-a515-960ce3e6ebd7",
+      "result_id": "de983be9-0976-4530-b359-918042651c93"
+    },
+    {
+      "claim_id": "83852c16-c2d4-44ed-ba40-c915179cabdc",
+      "result_id": "137b552c-0ef1-4321-9496-ff31eeca36b5"
+    },
+    {
+      "claim_id": "baed1f33-5011-44af-aba9-bb48116bdcd5",
+      "result_id": "11eb6b9b-5919-4564-88f3-eb2f9000ed6e"
+    },
+    {
+      "claim_id": "628f1b3a-c90f-4b91-b759-c4614c532ce1",
+      "result_id": "11eb6b9b-5919-4564-88f3-eb2f9000ed6e"
+    },
+    {
+      "claim_id": "1a974df9-4f6f-43af-a2e5-238a767277b3",
+      "result_id": "c5876341-c740-49c1-b8bd-d1dabbc9a5ae"
+    },
+    {
+      "claim_id": "8b8cc596-bdca-421d-af6c-ba6dccb2c5f3",
+      "result_id": "c5876341-c740-49c1-b8bd-d1dabbc9a5ae"
+    },
+    {
+      "claim_id": "7c0f2c5c-40b1-42e6-8063-81db5a345e35",
+      "result_id": "9323c1ed-ecfe-4ebc-9d92-10f1afec31d5"
+    },
+    {
+      "claim_id": "4d7e9a54-6d46-4f9f-a7c0-74da58b74c14",
+      "result_id": "f8fbc7dc-0f1f-4fa6-a293-7ed3557c1090"
+    },
+    {
+      "claim_id": "ae0c761a-0f52-4aad-b9c9-a3915557d77f",
+      "result_id": "f8fbc7dc-0f1f-4fa6-a293-7ed3557c1090"
+    },
+    {
+      "claim_id": "ebad7047-88f1-4e75-a5fb-03463b30cbdd",
+      "result_id": "f8fbc7dc-0f1f-4fa6-a293-7ed3557c1090"
+    },
+    {
+      "claim_id": "f886c02f-ef0b-4ced-b9be-64222b7433d7",
+      "result_id": "f8fbc7dc-0f1f-4fa6-a293-7ed3557c1090"
+    },
+    {
+      "claim_id": "abf27ce5-85de-451c-8e3c-4aafef912196",
+      "result_id": "3405dff5-fd85-4417-8f7e-b10a1b77b44d"
+    },
+    {
+      "claim_id": "58be8042-5bf3-4484-b7b5-30bf80815682",
+      "result_id": "3405dff5-fd85-4417-8f7e-b10a1b77b44d"
+    },
+    {
+      "claim_id": "8935bb62-1bbb-4e47-8617-46e9bab9b3bd",
+      "result_id": "3405dff5-fd85-4417-8f7e-b10a1b77b44d"
+    },
+    {
+      "claim_id": "32d28776-2930-4cd7-a4c5-407e35cc677d",
+      "result_id": "3405dff5-fd85-4417-8f7e-b10a1b77b44d"
+    }
+  ],
+  "comparisons": []
+}

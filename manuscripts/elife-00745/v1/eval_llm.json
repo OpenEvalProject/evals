@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The crystal structures of Nup188N (residues 1-1160) and Nup188C (residues 1445-1827) were solved to 2.65 \u00c5 and 3.0 \u00c5 resolution, respectively, using SAD phasing. Nup188N forms a closed ring structure built from 52 stacked helices organized into three subdomains, with a latch interface covering 1511 \u00c5\u00b2. It contains an SH3-like domain with a circular permutation that is conserved across Nup188 orthologs but lacks canonical SH3 peptide-binding residues. Nup188C is a right-handed arc-shaped superhelical structure with 19 helices forming 6 helical repeats. The two copies in the asymmetric unit show different curvatures, indicating intrinsic flexibility. Single-particle EM analysis of full-length MtNup188 demonstrates multiple conformations and dimensions consistent with a model connecting the two crystallized fragments (~170 \u00c5 length, ~85 \u00c5 ring diameter).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystallographic data are well-documented with appropriate resolution, phasing methods, and refinement statistics (Table 1). The structural features are directly observed in the crystal structures and supported by EM analysis. The SH3-like domain identification is based on structural similarity and sequence conservation analysis. The flexibility observed in both crystal structures and EM is consistent across multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Nup188 and Nup192 are paralogous proteins sharing ~15% sequence identity that likely originated from an early gene duplication event. Single-particle EM analysis shows that MtNup192 has very similar overall morphology to Nup188 (ring structure ~90 \u00c5 diameter, length ~185 \u00c5) and also exhibits flexibility with coexisting 'open' and 'closed' conformations. The SH3-like domain is specific to Nup188 and cannot be detected in Nup192 by sequence analysis or secondary structure prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural similarity between Nup188 and Nup192 is directly demonstrated by EM analysis (Figure 3C). The sequence identity is calculated from sequence comparison. The absence of the SH3-like domain in Nup192 is supported by both sequence analysis and secondary structure prediction. The cited phylogenetic study supports the paralog relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Structural similarity searches reveal that Nup188 shares distant structural similarity with nuclear transport receptors (NTRs). Subdomain III of Nup188N superimposes with importin-\u03b1 (RMSD 3.6 \u00c5, 276 C-\u03b1 positions) and importin-\u03b2 (RMSD 4.5 \u00c5, 263 C-\u03b1 positions). Nup188C superimposes with importin-\u03b1 (RMSD 3.2 \u00c5, 208 C-\u03b1 positions) and importin-\u03b2 (RMSD 3.7 \u00c5, 212 C-\u03b1 positions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural similarity is quantified with specific RMSD values and number of aligned positions, which are standard metrics for structural comparison. The similarity is described as 'distant' which is appropriate given the RMSD values of 3-4.5 \u00c5. The data are directly calculated from structural superposition and shown in Figure 3D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Both MtNup188 and MtNup192 specifically bind to wild-type FG-repeat regions in pulldown assays, showing strong enrichment comparable to the nuclear transport receptor ScKap95. Neither protein binds significantly to the Nup116(348-458)10xFA mutant lacking key phenylalanine residues. ScKap95 and MtNup192 are efficiently eluted with 1M NaCl, while MtNup188 shows relatively inefficient elution from Nup100(1-310) and Nup100(1-610), suggesting tighter or more hydrophobic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FG-binding data are directly observed from pulldown assays shown in Figure 4A,B with quantified enrichment values. The specificity is demonstrated by lack of binding to the FA mutant and to 3xGFP negative control. The differential salt elution behavior is documented in Figure 4\u2014figure supplement 1B. All controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Neither MtNup188 nor MtNup192 forms a stable complex with RanGTP in gel filtration binding assays, whereas the nuclear transport receptor ScKap95 binds robustly to RanGTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of RanGTP binding is directly demonstrated by gel filtration analysis shown in Figure 4C,D. The positive control (ScKap95) shows robust binding, validating the assay conditions. This distinguishes Nup188/192 from canonical NTRs that bind RanGTP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "YFP-MtNup188 and YFP-MtNup192 (~220 kDa) accumulate in intact nuclei in digitonin-permeabilized HeLa cells even without a nuclear transport mixture, mimicking YFP-importin-\u03b2 behavior. Nuclear uptake is completely blocked by WGA (a broad NPC transport inhibitor) and strongly inhibited by unlabeled importin-\u03b2, demonstrating that translocation occurs through NPCs. Since the proteins are far above the ~40-60 kDa diffusion permeability cutoff, the efficient nuclear translocation cannot be explained by passive diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nuclear translocation is directly observed by quantitative fluorescence microscopy (Figure 5). Appropriate controls are included: 3xGFP (negative control showing no translocation), YFP-importin-\u03b2 (positive control), WGA inhibition, and competition with unlabeled importin-\u03b2. The size argument is valid based on known NPC permeability limits. Only intact nuclei (excluding TRITC-dextran) were analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Kinetic measurements show that YFP-MtNup188 and YFP-MtNup192 translocate slower than YFP-importin-\u03b2 but their translocation rates exceed 3xGFP by at least 30-fold, indicating facilitated diffusion. Pre-treatment with RanGTP increases YFP-MtNup188 translocation rate but has no effect on YFP-MtNup192. After RanGTP pre-treatment, the translocation kinetics of both proteins are approximately equal but still ~4-fold below YFP-importin-\u03b2, suggesting the slower rates are intrinsic properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The translocation kinetics are quantified from time-lapse imaging with appropriate curve fitting (Figure 6). The 30-fold difference from passive diffusion (3xGFP) is statistically significant and supports facilitated transport. The Ran pre-wash experiments provide mechanistic insight. Sample sizes are adequate (>30 nuclei per condition) and statistical tests are applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Both MtNup188 and MtNup192 accumulate within nuclei in the absence of exogenous energy without reaching saturation during the experimental timeframe, unlike importin-\u03b2. Both proteins continue to accumulate even after 10-fold dilution, suggesting they have strong intranuclear binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The continued accumulation is directly observed in kinetic measurements (Figure 6) and dilution experiments (Figure 6\u2014figure supplement 2). The behavior differs from importin-\u03b2, which requires energy for nuclear export. The inference of strong intranuclear binding sites is reasonable based on the continued accumulation after dilution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "MtNup188 and MtNup192 translocate across NPCs by facilitated diffusion without a requirement for other cytosolic factors, sharing functional characteristics with NTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the combined evidence from nuclear translocation assays: (1) translocation occurs through NPCs (WGA-sensitive, importin-\u03b2 competition), (2) rates exceed passive diffusion by >30-fold, (3) no cytosolic factors are required, and (4) proteins are above the size cutoff for passive diffusion. The data collectively demonstrate facilitated diffusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The topology of Nup188 is distinctly different from all other scaffold nucleoporins except Nup192, in that it appears to be inherently flexible, as demonstrated by structural and EM analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The flexibility is demonstrated by multiple lines of evidence: (1) different curvatures of two Nup188C copies in the asymmetric unit, (2) multiple conformations observed in single-particle EM, and (3) comparison with other scaffold nucleoporins that have structural features preventing flexibility. The conclusion is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C105"
+    ],
+    "result": "The findings blur the existing dogma of a clear distinction between stationary nucleoporins and soluble NTRs. The combination of shared FG-binding activity, common NPC translocation properties, and general structural similarity suggest that Nup188, Nup192, and NTRs might have a common evolutionary origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the functional similarities (FG-binding, NPC translocation) and structural similarities are well-documented, the evolutionary relationship is explicitly stated as speculation ('tempting to speculate'). The structural similarity is described as 'distant' and 'general' rather than specific. The RMSD values (3-4.5 \u00c5) indicate general rather than close structural relationship. The lack of RanGTP binding and other differences from canonical NTRs complicate the evolutionary argument. Additional phylogenetic analysis would be needed to support the evolutionary claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Depletion of Nup188 increases the size limit for transport of inner nuclear membrane proteins, but removal of Nup205 (Nup192 homolog in vertebrates) does not have this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is supported by a cited study (Theerthagiri et al., 2010). The claim accurately represents prior work and is used to support functional differences between the two paralogs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Once incorporated into NPCs, Nup188 and Nup192 are unlikely to shuttle across the nuclear envelope. They are very stable NPC components, as suggested by the very low mobility and exceptionally slow protein turnover of their common binding partner Nup93 in vertebrate NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference about stability is supported by cited studies on Nup93 mobility and turnover (Rabut et al., 2004; Savas et al., 2012). The reasoning that binding partners with low mobility suggest stability of Nup188/192 is logical, though indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The NTR-like activity of Nup188 and Nup192 could be critical for de novo NPC biosynthesis during interphase nuclear growth or closed mitosis, when nuclear translocation of NPC components through existing pores might be necessary for new NPC assembly in intact nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as speculation ('could be critical', 'might be critical'). While the hypothesis is reasonable given the demonstrated translocation ability and cited references about NPC assembly, no direct experimental evidence is provided to test this specific function. The claim remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "FG-scaffold interactions could be important for NPC structural integrity by enabling connections between subcomplexes, or for organizing the FG meshwork within the NPC channel. FG domain interactions with scaffold nucleoporins could connect FG-repeat regions to the NPC wall, questioning models where FG-repeats function exclusively within the central channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly presented as speculative hypotheses ('could be', 'could possibly be', 'might also play a role'). While the FG-binding ability is demonstrated and one cited study shows co-purification of scaffold nups with NTRs using FG-repeats as bait, no direct experimental evidence is provided to test these specific structural or organizational roles. These remain plausible but untested hypotheses.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In vivo STDP protocols bidirectionally modify neuronal responses in a timing-dependent manner. Positive timing (postsynaptic AP after presynaptic activation) increased peak voltage amplitude by 22.5\u00b18.7% (p=0.025), while negative timing (postsynaptic AP before presynaptic activation) decreased peak voltage amplitude by 26.4\u00b14.6% (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C45-C47 provide converging evidence for bidirectional STDP effects with appropriate statistical support (n=15 for positive timing, n=17 for negative timing). The experimental design controls for membrane potential state (down-state triggered stimulation, C36) and the results show statistically significant changes in the predicted directions based on classical STDP rules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Positive timing STDP protocols convert subthreshold responses to suprathreshold spiking responses. Over 50% of neurons (8/15) transitioned from non-spiking to spiking, with an overall increase of 0.11\u00b10.06 APs per stimulus (p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 demonstrate a major functional consequence of STDP: conversion of subthreshold to suprathreshold responses. The effect is robust (8/15 neurons showed complete transition) with appropriate statistical testing. Single-neuron significance was achieved in 4 cases despite low firing rates, and the effect remained significant after removing outliers (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Negative timing STDP protocols reduce stimulus-evoked spiking. The average number of APs decreased from 0.84\u00b10.23 to 0.18\u00b10.10 per stimulus (p=0.04, n=15), with 12/15 neurons showing decreased spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 demonstrate that negative timing protocols reduce spiking responses, complementing the positive timing results. The effect is statistically significant at the population level and in 4 individual neurons. This bidirectional control of spiking is a key prediction of STDP theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Changes in spiking responses after STDP induction are not due to changes in baseline neuronal properties or spontaneous drift. Control experiments and analyses rule out contributions from membrane potential depolarization (p=0.61), input resistance changes (p=0.16), and spontaneous changes over time (p=0.20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 provide essential control analyses demonstrating that observed effects are specifically due to the STDP protocol. The lack of correlation between baseline property changes and spiking changes, combined with negative control experiments (C59) and robustness checks (C60), strengthen the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "STDP effects transfer to adjacent stimulus positions in a spatially graded manner for positive timing protocols. Adjacent positions showed increases of 0.10\u00b10.05 APs per stimulus (p=0.02), and the suprathreshold response center shifted toward the paired position (R=0.81, p=0.008).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 demonstrate spatial structure in STDP effects, with transfer diminishing with distance from the paired position. The strong correlation (R=0.81) between pairing position and response center shift provides quantitative support. This spatial transfer is consistent with overlapping receptive field inputs and is reproduced in computational models (C76, C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Negative timing protocols show weaker and less consistent spatial transfer effects. Suprathreshold response centers tended to move away from the pairing position but changes were not significant (p=0.70). Subthreshold response centers for positive timing showed modest shifts (R=0.53, p=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 document the spatial extent of negative timing effects and subthreshold changes. While effects are weaker than for positive timing suprathreshold responses, the consistency with the overall pattern and statistical reporting of non-significant trends appropriately characterizes the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "STDP protocols induce biphasic changes in membrane potential as a continuous function of time relative to the pairing spike. The average change showed potentiation 64.5 ms before the spike (0.84 mV, p=0.04) and depression 43.5 ms after (1.4 mV, p=0.01), with effects strongest at the paired position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 reveal a more complex temporal structure than traditional STDP curves, with peaks displaced from t=0. This is a novel finding that differs from in vitro studies (C73, C95) but is well-supported by the data analysis approach of examining the full time course rather than just peak amplitudes. The biphasic pattern is statistically significant and spatially structured (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Computational modeling demonstrates that presynaptic temporal jitter of ~40 ms is necessary and sufficient to reproduce the broadened biphasic STDP curve observed in vivo. The model also reproduces spatial transfer of plasticity effects to neighboring positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C74-C77 provide computational support for the experimental findings. The model successfully reproduces key features (biphasic curve shape, peak timing, spatial transfer) only when realistic jitter is included. This mechanistic explanation for the discrepancy with in vitro studies is well-reasoned, though alternative explanations are acknowledged (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The timing dependence of peak voltage changes differs from in vitro STDP studies, with largest changes scattered 0-50 ms on either side of t=0 rather than concentrated near t=0. This discrepancy is attributed to the complexity of in vivo visual responses involving avalanches of inhibitory and excitatory synaptic events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C95-C97 identify and explain a key difference from prior in vitro work. The interpretation is reasonable given the known complexity of in vivo responses (citations to Hirsch et al., 1998; Okun and Lampl, 2008) and is supported by the computational modeling results (C74-C77). However, the explanation remains somewhat speculative as the exact synaptic mechanisms were not directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Small voltage changes (~2 mV) induced by STDP are sufficient to significantly alter stimulus-evoked spiking probability. This sensitivity is consistent with prior studies showing that cortical pyramidal neurons can rapidly change firing rates in response to small somatic voltage changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 address an important question about the functional significance of small voltage changes. The experimental observation (C98) is well-supported, and the interpretation is bolstered by citations to relevant prior work (C100-C101). However, the mechanistic basis for this sensitivity in vivo remains somewhat uncertain as acknowledged in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C42",
+      "C43",
+      "C107",
+      "C108"
+    ],
+    "result": "The study employed rigorous methodological controls including down-state triggered stimulation, precise targeting of L2/3 pyramidal neurons in primary visual cortex using intrinsic imaging and two-photon microscopy, and individualized timing of pairing spikes based on each neuron's response properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C32, C34-C36, C42-C43, C107-C108 describe key methodological features that strengthen the study. The down-state triggering reduces variability (supported by citations C30-C31), the targeting approach addresses known limitations of stereotaxic coordinates alone (C33), and the individualized timing accounts for inter-neuronal variability in response timing (C40-C41).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C69",
+      "C81"
+    ],
+    "result": "STDP protocols induce a rearrangement of sub- and suprathreshold receptive field structure, with spatial transfer explained by partial overlap of inputs activated by different stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C78, C81 synthesize the spatial aspects of the findings. The conclusion is well-supported by the experimental data on spatial transfer (C61-C68) and computational modeling (C76, C78). The mechanism of overlapping inputs is reasonable and consistent with known receptive field organization (C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C82",
+      "C102",
+      "C103"
+    ],
+    "result": "An STDP protocol using fewer than 50 paired APs can convert neurons from non-spiking to spiking, increase or decrease existing spiking responses, and rearrange receptive field structure. These findings extend prior in vivo STDP studies from the subthreshold to suprathreshold domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80, C82, C102-C103 summarize the main experimental findings. The results are well-supported by the data presented throughout (particularly C49-C56 for spiking changes, C61-C69 for receptive field rearrangement). The claim of extending prior work to the suprathreshold domain (C82) is justified given that previous in vivo studies were limited to subthreshold changes (C19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C83",
+      "C84",
+      "C93"
+    ],
+    "result": "STDP rules can modify output patterns of sensory neurons, with single-AP timing playing a crucial role in sensory coding and plasticity. This provides experimental validation for theoretical predictions linking STDP to receptive field plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C83-C84, C93 present the broader implications of the findings. The conclusions are well-supported by the experimental data and appropriately contextualized with respect to prior theoretical work (C17-C18, C84). The claim that this provides a bridge between population-level receptive field changes and single-neuron STDP (C83) is reasonable given the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The low firing rates used in the STDP protocols are physiologically relevant and this form of plasticity may represent a general mechanism for neurons joining or leaving cell assemblies, with direct implications for circuit function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86, C104-C106 make broader speculative claims about the general significance of the findings. While the firing rates are indeed similar to those observed in awake animals (C85, supported by citations), the proposals about cell assemblies (C86, C104-C105) and circuit implications (C106) are largely speculative extrapolations beyond what the data directly demonstrate. These are reasonable hypotheses but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study cannot exclude that purely subthreshold voltage manipulation could produce similar or stronger effects. STDP represents one manifestation of Hebbian plasticity that also includes rate-dependent and voltage-dependent forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 appropriately acknowledge limitations and place the findings in a broader theoretical context. The acknowledgment that subthreshold voltage manipulation alone might be sufficient (C87) is an important caveat supported by relevant citations. The contextualization within general Hebbian plasticity theory (C88-C89) is appropriate and well-cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction establishes the theoretical and empirical context for the study, including the properties of STDP, the state of evidence for in vivo STDP, and the suitability of visual cortex for studying plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C28 provide background context supported by appropriate citations to prior work. These claims establish the motivation for the study by noting that while STDP is theoretically appealing and well-characterized in vitro, evidence for functional consequences in vivo remains limited and controversial (C19-C23). The characterization of visual cortex plasticity (C24-C28) appropriately justifies the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Optimality theories of STDP propose that pre-before-post LTP strengthens causal links between input and output, with optimal timing related to PSP rise time. However, there is no similar optimality theory for spike-triggered depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 discuss theoretical frameworks for understanding STDP, supported by multiple citations to theoretical work. The observation that optimality theories lack a clear rationale for spike-triggered depression (C92) is an interesting theoretical point that contextualizes the experimental findings on negative timing effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Visual responses in L2/3 neurons of young rats show characteristic features including broad receptive fields, variable response timing and amplitude across neurons, and sensitivity to membrane potential state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C37-C41 describe properties of the recorded neurons and their responses, supported by appropriate citations to prior work. These observations justify key methodological choices (e.g., down-state triggering, individualized timing) and establish the baseline characteristics of the system under study.",
+    "result_type": "MINOR"
+  }
+]

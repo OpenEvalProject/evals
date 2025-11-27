@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12"
+    ],
+    "result": "Kataegis is a novel form of localized hypermutation in breast cancer characterized by clusters of same-strand C:G mutations spaced one to several hundred nucleotides apart over kilobase-sized regions, often associated with DNA rearrangements. More than half of 21 sequenced breast cancers contained kataegis, with mutations occurring nearly exclusively at C residues preceded by 5'-T.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C11, and C12 are well-supported by citation to prior whole genome sequencing studies (Nik-Zainal et al., 2012). These claims describe established findings from published breast cancer genomic data and represent prior work rather than novel findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C64",
+      "C99",
+      "C100",
+      "C103",
+      "C104"
+    ],
+    "result": "Kataegis can result from AID/APOBEC-catalyzed cytidine deamination in the vicinity of DNA breaks, likely through action on single-stranded DNA exposed during resection. Cancer-like kataegis can be recapitulated in yeast expressing AID/APOBEC deaminases, where it largely depends on uracil excision by UNG, and can be nucleated by I-SceI-induced breaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8, C64, C99-C100, C103-C104 are strongly supported by experimental data from yeast genome sequencing (C24-C42, Figure 1), UNG-deficiency experiments (C56-C62, Figure 2B-C), and I-SceI break induction experiments (C65-C66, Figure 2D). The mechanistic model linking deamination, UNG-mediated uracil excision, abasic site formation, and DNA breaks is well-supported by genetic and molecular evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Expression of AID/APOBEC family members in yeast generates genome-wide mutations with bimodal distribution: 52% singlet mutations (median IMD 156 kb) and 48% proximal mutations (median IMD 727 bp). In AID* transformants, 75% of proximal mutations form clusters (\u22655 mutations) extending over 6-15 kb with up to 26 mutations per cluster, showing >88% strand coordination. Similar patterns were observed with APOBEC3A, 3B, and 3G*.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C42 are well-supported by genome sequencing data from multiple yeast transformants (Figure 1A-F). The bimodal distribution, cluster characteristics, and strand polarity are quantitatively documented with appropriate statistical analysis (k-means clustering, Monte Carlo simulation). Sample sizes appear adequate (40 AID* transformants analyzed).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C112"
+    ],
+    "result": "In yeast AID* transformants, 76% of mutations are C\u2192T transitions, but transversions are preferentially associated with kataegic stretches (54% of kataegic vs 13% of unclustered mutations). Transversions show a 4-10 fold bias for C\u2192G over C\u2192A substitutions, consistent with REV1-mediated translesion synthesis. Deficiency in either REV1 or UNG dramatically reduces transversion frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 and C112 are supported by mutational spectrum analysis (Figure 2A, Table 1) and genetic experiments with REV1 and UNG deficient strains. The mechanistic interpretation linking C\u2192T transitions to direct replication over uracil and transversions to REV1-mediated bypass of abasic sites is well-reasoned and supported by established knowledge of these pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "UNG deficiency results in a fourfold increase in total mutation load but a dramatic reduction in kataegis. The percentage of proximal mutations falls from 48% to 18%, clustered mutations decrease from 274/1064 to 28/2088, and median IMD increases from 13 kb to 41 kb despite higher mutation load. Kataegis is substantially but not completely eliminated in UNG-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 are strongly supported by genome sequencing data from UNG-deficient yeast strains (Figure 2B-C, Supplementary file 1B). The paradoxical increase in total mutations but decrease in clustering is well-documented quantitatively. However, the mechanistic interpretation (C53, C104) that increased mutations reflect diminished repair is reasonable but somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Induction of I-SceI expression increases the frequency of deaminase-dependent mutations at the linked CAN1 locus. In the presence of APOBEC3G*, induction of a double-strand break increases the probability that mutations in its vicinity are kataegic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by experimental data from I-SceI induction experiments (Figure 2D, Figure 2\u2014figure supplement 1). The increased mutation frequency near the I-SceI cut site and the enrichment of kataegic mutations provide direct evidence that DNA breaks can nucleate kataegis. The experiment is well-controlled with appropriate comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Breast cancer kataegic clusters are distributed over a similar range of lengths as yeast clusters but contain 2-5 fold higher mutation density (mean IMD 209-763 bp in cancers vs 1220 bp in yeast). In tumors PD4103a, PD4107a, and PD4199a, >91% of kataegic C mutations are preceded by T, with mild sensitivity to position -2 base (A:C:G:T = 32:20:19:29 vs genome average 30:20:20:30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C76 are supported by comparative analysis of breast cancer and yeast genome sequencing data (Figure 3A-C, Figure 3\u2014figure supplements 2-4). The quantitative comparisons of cluster lengths, mutation densities, and sequence contexts are well-documented. The analysis appropriately accounts for genomic base composition when assessing sequence preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Genome-wide mutation analysis in yeast confirms previously identified sequence preferences for AID (5'-WRC), APOBEC3C (5'-TYC), and APOBEC3G (5'-CCC). APOBEC3A and APOBEC3B both strongly prefer T at position -1 (91%) but show mild discrimination at position -2 (APOBEC3A: A:C:G:T = 25:26:7:42; APOBEC3B: A:C:G:T = 35:14:20:31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 are supported by genome-wide mutation context analysis in yeast transformants (Figure 3B). The large number of mutations analyzed genome-wide provides robust statistical power for determining sequence preferences. The findings for APOBEC3A and APOBEC3B represent novel characterization of their sequence specificity, while results for other deaminases confirm prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C88",
+      "C89",
+      "C119"
+    ],
+    "result": "APOBEC3B and APOBEC3A are the deaminases whose mutational signatures most closely match breast cancer kataegic mutations. APOBEC3B fits extremely well with kataegis in PD4107a and PD4103a, while APOBEC3A fits better with PD4199a (all p<0.005). These are the only characterized deaminases whose target specificity matches breast cancer kataegis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C88-C89, and C119 are supported by statistical comparison of mutation contexts between yeast and breast cancer samples (Figure 3D). The p-values <0.005 indicate statistically significant similarity. However, the analysis would benefit from correction for multiple testing given the number of comparisons performed. The conclusion is strengthened by the fact that no other characterized deaminases show similar specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C97",
+      "C98",
+      "C123"
+    ],
+    "result": "APOBEC3B and/or APOBEC3A are implicated in breast cancer hypermutation. APOBEC3B shows the highest and broadest expression in breast cancer cell lines, and its enforced expression (like APOBEC3A) causes loss of viability, \u03b3H2AX induction, and 53BP1 foci formation in KBM7 cells. Expression can be enhanced by phorbol ester or interferon alpha treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C91-C93, C95, C97-C98, and C123 are supported by multiple lines of evidence: mutational signature matching (C88-C89), expression analysis in breast cancer cell lines (Figure 4C), and functional assays showing DNA damage induction (Figure 4A-B). The convergence of evidence from different experimental approaches strengthens the conclusion. However, the claim remains somewhat inferential as direct evidence of APOBEC3B/A causing kataegis in actual breast tumors is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C117",
+      "C118"
+    ],
+    "result": "A marked bias towards 5'-T is seen among singlet C mutations in several breast tumors (PD4199a, PD4005a, PD4120a). Cancers with large kataegic stretches additionally contain multiple smaller clusters with T-C mutations, suggesting kataegis may signal wider APOBEC-mediated mutagenesis in some tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C117, and C118 are supported by analysis of breast cancer genome sequencing data (Figure 3C, Figure 3\u2014figure supplements 2-4). The observation of TC-biased singlet mutations is well-documented. However, the interpretation that this signals wider APOBEC involvement (C118) is speculative, though reasonable given the data. The claim would be strengthened by quantitative analysis of the proportion of genome-wide mutations showing this signature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C77",
+      "C78",
+      "C79",
+      "C94",
+      "C96"
+    ],
+    "result": "Background information on AID/APOBEC family: These enzymes deaminate cytosine in single-stranded DNA substrates and function in adaptive and innate immunity. AID acts on immunoglobulin loci in B cells; seven human APOBEC3 members act on viral DNA (usually in cytoplasm). Off-target AID activity causes mutations in B cell tumors. AID is the only family member known to act physiologically on endogenous nuclear DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C22, C77-C79, C94, and C96 represent established knowledge about AID/APOBEC family function, supported by appropriate citations to review articles and primary literature. These are background claims that provide context for the study rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23",
+      "C107",
+      "C115",
+      "C124"
+    ],
+    "result": "Speculative claims about APOBEC involvement in cancer: Other APOBEC family members might occasionally access the nucleus and cause cancer-associated genomic damage. APOBEC-catalyzed kataegic deamination might itself lead to DNA breaks in cancer cells. Other processes exposing single-stranded DNA (replication fork stalling, R-loops) could predispose to kataegis. Other APOBEC3s might contribute to genome mutation in other tumor types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23, C107, C115, and C124 are explicitly speculative and acknowledged as such by the authors. While supported by citations suggesting these possibilities and consistent with the mechanistic model developed in the paper, they represent hypotheses for future investigation rather than demonstrated findings. The speculation is reasonable but requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "REV1 deficiency causes an overall decrease in average total mutation load in AID* transformants, which might reflect possible non-catalytic roles of REV1 during DNA damage repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 is supported by genome sequencing data from REV1-deficient strains. However, the mechanistic interpretation in C55 is speculative and supported only by citation to prior work on REV1's non-catalytic functions. The unexpected decrease in mutation load (rather than just change in mutation spectrum) requires further investigation to determine the underlying mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The lengths of kataegic stretches (6-15 kb) are similar to the extent of resection during yeast DNA break repair. The distances between adjacent mutations within clusters (averaging 1.2 kb) might reflect that deaminases both jump and slide on single-stranded DNA, acting with low efficiency at each cytidine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by comparison of kataegis data with cited literature on DNA resection (Paull, 2010). Claim C102 is more speculative but supported by citation to prior work on deaminase processivity (Chelico et al., 2006). The interpretation is reasonable but represents a mechanistic hypothesis rather than directly demonstrated finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C113",
+      "C114",
+      "C116"
+    ],
+    "result": "Speculative mechanistic interpretations: Residual kataegis in UNG-deficient cells might reflect spontaneous breaks through other means. Singlet uracils may encounter UNG during base excision repair (non-mutagenic), while C\u2192T transitions result from replication over non-excised uracil. UNG action on uracil in exposed single-stranded DNA may yield abasic sites replicated over by translesion polymerases. Higher mutation density in cancer vs yeast kataegis could reflect differences in deaminase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105, C113-C114, and C116 are explicitly speculative mechanistic interpretations. While consistent with the data and based on established knowledge of DNA repair pathways, these represent hypotheses that require additional experimental validation. The speculation is reasonable but the claims cannot be considered fully supported without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The finding that double-strand breaks nucleate kataegis in yeast is consistent with the association of kataegis and rearrangements in breast cancer. Mutation signatures near I-SceI breaks implicate APOBEC3 activity rather than error-prone polymerases. This represents a specialized example of localized hypermutation during homologous recombination, similar to alkylating agent-induced mutation clusters described by Gordenin and colleagues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C108-C111 appropriately connect the yeast experimental findings to breast cancer observations and place the work in context of prior studies on mutation clustering during DNA repair. The interpretation is well-supported by the data and appropriate citations. However, C106 and C111 involve some inference in connecting yeast and human systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The implication of APOBEC3A is consistent with prior studies showing it can mutate viral DNA and cause genomic damage in the nucleus. After manuscript submission, Burns et al. demonstrated that APOBEC3B expression correlates with a T-C mutator phenotype in primary breast cancer tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 appropriately cite prior work supporting the plausibility of APOBEC3A/B involvement in cancer mutagenesis. The citation to Burns et al. (2013) provides independent corroboration of the APOBEC3B findings published after this manuscript was submitted, strengthening the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Double-strand breaks are a common feature of tumor development. The AID/APOBEC family has undergone considerable expansion in primates. These facts raise questions about whether kataegis occurs in other tumor types and whether it contributed to recent genome evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 represent established knowledge that provides context for discussing the broader implications of the findings. These are appropriately cited background facts used to frame future research directions rather than novel findings from this study.",
+    "result_type": "MINOR"
+  }
+]

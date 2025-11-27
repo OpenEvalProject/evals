@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors developed an ensemble refinement method that uses time-averaged MD simulations with X-ray restraints, partitioning global disorder into a TLS model while sampling local atomic fluctuations. The method was implemented with specific parameters including temperature control, solvent modeling, and parameter optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C29, C32-C36, and C40-C44 collectively describe a coherent methodological approach that is well-documented with technical details. The separation of global and local disorder (C28-C29, C34-C36) and the use of time-averaged restraints (C32-C33) represent a novel technical solution to previous overfitting problems, supported by implementation details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C45",
+      "C53"
+    ],
+    "result": "Ensemble refinement of 20 protein datasets (1.1-3.1 \u00c5 resolution, 50-1,004 residues) improved cross-validated Rfree values by 0.3-4.9% (mean 1.8%) compared to single-structure models, demonstrating better fit to X-ray data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C37-C39, C45, and C53 provide consistent quantitative evidence from a systematic study of 20 datasets. The use of cross-validated Rfree as the validation metric (C3, C45, C53) is appropriate, and the improvements are documented in Table 1. The range and mean improvements are consistently reported across multiple claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C55",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The ensemble refinement method yields reproducible results, with correlations above 0.99 for 1.5 \u00c5 resolution data and above 0.95 for lower resolutions in independent runs with different random seeds. Starting structure choice had no significant effect on outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C55, C72-C74 demonstrate rigorous validation through multiple independent runs (10 repeats with different random seeds) and testing with different starting structures from three refinement programs. The high correlation coefficients (>0.99 at high resolution, >0.95 at lower resolution) provide strong quantitative evidence for reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The improvement in Rfree, number of structures in the final ensemble, and averaging time \u03c4x increased with resolution, while pTLS and Tbath parameters showed no correlation with resolution. Ensemble models reduced rms fluctuations in difference maps by 0-41% (average 12%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 describe systematic trends and improvements supported by Figure 2 and Table 2. The resolution-dependent trends (C56) and lack of correlation for other parameters (C57) are clearly documented, and the electron-density improvements (C58-C59) provide additional validation beyond R-values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Validation using high-quality experimental phases for mannose-binding protein (1YTT) showed the ensemble model achieved a correlation coefficient of 0.903 with experimentally phased maps (vs. 0.873-0.895 for single structures), with 11 residues improving by >0.1 in correlation coefficient and reproducing previously identified structural details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 describe independent validation using experimental phases, which is a gold standard for crystallographic validation. The improvements in correlation coefficients (C61-C63) and reproduction of previously identified features (C64) provide strong evidence that the ensemble models capture real structural information rather than overfitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Ensemble models showed improved stereochemical quality at centroids (bond lengths, angles, dihedrals improved by 0.002 \u00c5, 0.26\u00b0, 6.6\u00b0 respectively) but increased deviations when considering full distributions. High-energy conformations occurred transiently in flexible regions, with lower Rfree correlating with better Ramachandran statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 provide a nuanced assessment of stereochemical quality, acknowledging both improvements (C67) and increased variability (C68) in ensemble models. The observation that high-energy conformations are transient and localized to flexible regions (C69-C70) is consistent with the physical interpretation of ensembles, and the correlation with Rfree (C71) validates the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Analysis of non-crystallographic symmetry (NCS) copies showed similar atomic fluctuations in magnitude and location for related copies in areas not affected by crystal packing, with variations in overall disorder well accounted for by TLS models. Temperature-dependent disorder differences were also captured by TLS adjustments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 demonstrate that the derived atomic fluctuations are molecular properties rather than artifacts of crystal packing or data collection conditions. The NCS analysis (C75-C77) provides internal validation, while the temperature comparison (C78) shows the method correctly partitions global from local disorder. This supports the interpretation that fluctuations are molecular traits (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Most proteins display well-ordered cores with flexible surface residues, but three cases (1BV1, 1X6P, 3K0N) exhibited 'molten cores' with 11-16 highly flexible internal residues. These molten cores are likely functionally relevant for ligand binding (1BV1), protomer assembly (1X6P), or enzyme activity (3K0N), with the 3K0N molten core present at ambient but not cryogenic temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C80-C93 describe novel observations of molten cores in folded proteins. While the structural observations are supported by the ensemble data (C81-C82, C85-C86, C89-C90), the functional interpretations (C83-C84, C88, C92) are largely speculative. The temperature dependence for 3K0N (C90-C91) provides stronger evidence for functional relevance, but direct functional validation is lacking. The phenomenon is interesting but requires additional experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "For proline isomerase at 288 K, ensemble refinement revealed flexible core residues linked to active-site dynamics through \u03b2-sheet H-bonding networks. Active-site residues (Arg55, Met61, Ser99, Phe113) showed ~10% minor conformations consistent with NMR data, and mutations affecting these dynamics reduce activity ~300-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C102 integrate ensemble refinement results with prior NMR data (C94, C100-C101) and mutational studies (C101) to support a mechanistic model. The 10% minor conformation (C100) matches NMR observations, and the connection between core flexibility and active-site dynamics (C97-C99) is structurally detailed. The consistency with independent experimental data (NMR, mutagenesis) strongly supports the functional interpretation (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "HIV protease exhibits flexible substrate-binding pockets in the apo state that become ordered upon high-affinity ligand binding (KD = 41 pM). Concomitantly, catalytic residues (Asp25) freeze while specific core residues (Cys95, Leu97) become disordered, suggesting entropy compensation where entropy lost by active-site ordering is compensated by increased disorder in core residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C114 describe order-disorder transitions upon ligand binding supported by ensemble comparisons of apo and bound states. The observation that Leu97 becomes more disordered upon binding (C110) is independently supported by NMR data (C111), and the entropy compensation mechanism (C112-C113) is consistent with similar observations in calmodulin. The structural details and consistency with independent data support this mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Ensemble refinement of Abl kinase complexes with Imatinib (37 nM affinity) and PD173955 (100 nM affinity) revealed variable H-bonding for some ligand moieties and well-ordered interactions for others, with the activation loop highly disordered in the Imatinib complex. The ensembles indicate which drug-target interactions are tight versus loose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C125 demonstrate application of ensemble refinement to drug-target complexes. The observations of variable vs. ordered H-bonding (C121-C122), reproduction of known water networks (C123), and activation loop disorder (C124) are supported by the ensemble data and consistent with prior NMR observations (C124). The interpretation that ensembles reveal interaction quality (C125) is reasonable for structure-based drug design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C151",
+      "C152"
+    ],
+    "result": "The ensemble refinement method extracts more structural information from X-ray data than traditional single-structure methods, providing comprehensive descriptions of molecular dynamics that complement high-resolution structural information and minimize risks of over-interpretation. Comparative analyses of different states are particularly useful for identifying mechanistically relevant dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130, C151-C152 represent the overarching conclusions of the study. These are well-supported by the collective evidence from improved R-values (C3-C4), validation studies (C60-C65), reproducibility tests (C72-C74), and functional insights (C93-C114). The claim that ensemble models provide more comprehensive descriptions (C128) and minimize over-interpretation (C129) is justified by the data, though C152 about broader impact is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The method's key innovation is partitioning global disorder into a TLS model, allowing shorter relaxation times (0.25-2 ps vs. 16 ps previously) and limiting overfitting. The method is applicable to data from 1.5-2.6 \u00c5 resolution with high reliability indicated by Rfree improvements and reproducibility, but is not suitable for highly disordered regions or lower resolution data where detailed interpretation becomes unreliable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C144 provide a balanced assessment of the method's capabilities and limitations. The comparison with previous approaches (C134-C135) is well-documented, the resolution range (C136-C137) is supported by the 20-dataset study, and the limitations (C139, C141-C144) are honestly acknowledged. The recognition that the method works best for ordered regions with dynamics (C144) rather than truly disordered regions (C141-C142) is an important and well-supported caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Single-structure models from X-ray data inadequately account for functionally important protein dynamics. While protein dynamics are well-established by multiple biophysical methods, most PDB entries are static structures despite extensive disorder. Previous time-averaged refinement methods showed overfitting problems, motivating the need for improved approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C26 establish the scientific context and motivation for the study. These claims are well-supported by appropriate citations to the literature (C9-C10, C19, C21-C26) and accurately describe the state of the field. The identification of overfitting in previous methods (C26) and the limitations of current approaches (C20-C22) provide clear justification for the new method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C31",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Ensemble refinement reveals that some proteins exhibit molten cores supporting functionally important dynamics, order-disorder transitions in HIV protease suggest entropy compensation mechanisms, and differences between cryo and ambient temperature data indicate that flash freezing removes functionally relevant dynamics. Overall, the method extracts dynamical details enabling comprehensive understanding of structure-dynamics-function relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-C8, C31, C145-C150 represent high-level conclusions about functional implications. While the structural observations are supported (molten cores, order-disorder transitions), the functional interpretations are often speculative (C6, C146-C147). The temperature effect (C149-C150) is better supported by direct comparison. These conclusions would benefit from additional functional validation experiments to move from correlation to causation.",
+    "result_type": "MAJOR"
+  }
+]
